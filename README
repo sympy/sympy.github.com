@@ -1,0 +1,9 @@
+SymPy webpages
+--------------
+
+These are SymPy webpages served at:
+
+http://sympy.org/
+
+using github. Currently it only redirects to the sympy googlecode page, until
+we create some nice pages.
