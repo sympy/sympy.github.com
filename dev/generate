@@ -1,0 +1,28 @@
+#! /usr/bin/env python
+
+import os
+import hashlib
+
+from django.utils.encoding import smart_str
+from jinja2 import Environment, FileSystemLoader
+
+def md5_filter(value):
+    return hashlib.md5(value).hexdigest()
+
+env = Environment(loader=FileSystemLoader('templates'))
+env.filters["md5"] = md5_filter
+
+templates = [
+    "index.html",
+    "download.html",
+    "docs.html",
+    "development.html",
+    ]
+
+for template in templates:
+    t = env.get_template(template)
+    print "Processing '%s'" % template
+    name = os.path.splitext(template)[0]
+    s = t.render({name + "_active": "active"})
+    s = smart_str(s)
+    open(template, "w").write(s)

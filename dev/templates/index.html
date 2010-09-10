@@ -1,0 +1,89 @@
+{% from "macros" import video %}
+{% extends "base.html" %}
+
+{% block title %}SymPy{% endblock %}
+
+{% block content %}
+
+<h2 class="title">About</h2>
+<div class="inner">
+<p class="first">
+SymPy is a Python library for symbolic mathematics. It aims to become a
+full-featured computer algebra system (CAS) while keeping the code as simple as
+possible in order to be comprehensible and easily extensible. SymPy is written
+entirely in Python and does not require any external libraries.
+</p>
+</div>
+
+<h2 class="title">Features</h2>
+<div class="inner">
+<p class="first">
+SymPy core capabilities include:
+<ul>
+    <li>basic arithmetics <code>*,/,+,-,**</code></li>
+    <li>basic simplification (like <code>a*b*b + 2*b*a*b -&gt; 3*a*b^2)</code></li>
+    <li>expansion (like <code>(a+b)^2 -&gt; a^2 + 2*a*b + b^2</code>)</li>
+    <li>functions (exp, ln, ...)</li>
+    <li>complex numbers (like exp(I*x).expand(complex=True) -&gt;
+    cos(x)+I*sin(x))</li>
+    <li>differentiation</li>
+    <li>taylor (laurent) series</li>
+    <li>substitution (like <code>x -&gt; ln(x)</code>, or
+        <code>sin -&gt; cos</code>)</li>
+    <li>arbitrary precision integers, rationals and floats</li>
+    <li>noncommutative symbols</li>
+    <li>pattern matching</li>
+</ul>
+</p>
+<p>
+Then there are SymPy modules for these tasks:
+<ul>
+    <li>more functions (sin, cos, tan, atan, asin, acos, factorial, zeta,
+    legendre)</li>
+    <li>limits (like <code>limit(x*log(x), x, 0) -&gt; 0</code>)</li>
+    <li>integration using extended Risch-Norman heuristic</li>
+    <li>polynomials (division, gcd, square free decomposition, groebner
+    bases, factorization)
+    <li>solvers (algebraic, difference and differential equations, and systems
+    of equations)</li>
+    <li>symbolic matrices (determinants, LU decomposition...)</li>
+    <li>Pauli and Dirac algebra</li>
+    <li>geometry module</li>
+    <li>plotting (2D and 3D)</li>
+</ul>
+</p>
+</div>
+
+{% endblock %}
+
+
+{% block sidebar %}
+
+<div class="block">
+  <h3>News</h3>
+  <div class="content">
+<p>
+<span class="date">17 Mar 2010</span> Version 0.6.7 released (<a href="http://code.google.com/p/sympy/wiki/Changes">changes</a>)<br/>
+<span class="date">20 Dec 2009</span> Version 0.6.6 released (<a href="http://code.google.com/p/sympy/wiki/Changes">changes</a>)<br/>
+<span class="date">26 Sep 2009</span> Final page about the <a href="http://code.google.com/p/sympy/wiki/GSoC2009">2009 Google Summer of Code in SymPy</a> is
+available.
+</p>
+  </div>
+</div>
+
+<div class="block">
+  <h3>Quick Links</h3>
+  <div class="content">
+<p>
+<a href="http://docs.sympy.org/">Documentation</a></br>
+<a href="http://code.google.com/p/sympy/downloads/list">Downloads (source tarballs)</a></br>
+<a href="http://code.google.com/p/sympy/wiki/DownloadInstallation?tm=2">Downloads (packages for distributions)</a></br>
+<a href="http://github.com/sympy/sympy">Source code</a></br>
+<a href="http://code.google.com/p/sympy/">Google Code Page</a></br>
+<a href="http://github.com/sympy/sympy/wiki">Wiki</a></br>
+<a href="http://live.sympy.org/">Try SymPy online now</a></br>
+</p>
+  </div>
+</div>
+
+{% endblock %}

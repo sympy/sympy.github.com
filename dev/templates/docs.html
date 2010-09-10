@@ -1,0 +1,29 @@
+{% from "macros" import video %}
+{% extends "base.html" %}
+
+{% block title %}Documentation{% endblock %}
+
+{% block content %}
+
+<h2 class="title">Documentation</h2>
+<div class="inner">
+<p class="first">
+Main documentation is: <a href="http://docs.sympy.org/">docs.sympy.org</a>
+</p>
+</div>
+
+{% endblock %}
+
+
+{% block sidebar %}
+
+<div class="block">
+  <h3>Sphinx</h3>
+  <div class="content">
+    <p>
+    The documentation is maintained using the <a href="http://sphinx.pocoo.org/">Sphinx</a> Python documentation generator.
+    </p>
+  </div>
+</div>
+
+{% endblock %}
