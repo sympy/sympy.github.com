@@ -14,3 +14,9 @@ Web in development
 Webpages in development are here:
 
 http://sympy.org/dev/
+
+to modify them, do::
+
+    cd dev
+    # edit the pages
+    ./generate
