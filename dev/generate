@@ -16,6 +16,7 @@ templates = [
     "index.html",
     "download.html",
     "docs.html",
+    "support.html",
     "development.html",
     ]
 

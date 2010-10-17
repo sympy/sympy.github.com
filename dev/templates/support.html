@@ -1,0 +1,51 @@
+{% from "macros" import video %}
+{% extends "base.html" %}
+
+{% block title %}Support{% endblock %}
+
+{% block content %}
+
+<h2 class="title">General</h2>
+<div class="inner">
+<p class="first">
+Below you can find several ways to get help.
+</p>
+<p>
+<ul>
+<li> SymPy <a href="http://docs.sympy.org">Documentation</a></li>
+<li> Main <a href="http://groups.google.com/group/sympy">mailinglist</a> </li>
+<li><a href="http://code.google.com/p/sympy/issues/list">Issues tracker</a>.
+    </li>
+<li>IRC channel: #sympy at freenode</li>
+</ul>
+</p>
+<h2>More Specific</h2>
+<p>
+<ul>
+<li> SymPy <a href="http://docs.sympy.org/tutorial.html">tutorial</a></li>
+<li> Main <a href="http://wiki.sympy.org/wiki/FAQ">FAQ</a> </li>
+<li><a href="http://docs.sympy.org/gotchas.html">Gotchas and Pitfalls</a>
+    </li>
+</ul>
+</p>
+</div>
+
+{% endblock %}
+
+
+{% block sidebar %}
+
+<div class="block">
+  <h3>Git Repository</h3>
+  <div class="content">
+    <p>
+    Main git repository:<br/>
+    <code>git clone git://github.com/sympy/sympy.git</code>
+    </p>
+    <p>
+    Online access: <a href="http://github.com/sympy/sympy">github.com/sympy/sympy</a>
+    </p>
+  </div>
+</div>
+
+{% endblock %}
