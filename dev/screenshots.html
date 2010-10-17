@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Support</title>
+    <title>Screenshots</title>
     <link rel="stylesheet" href="media/base.css" type="text/css" media="screen" />
     <link rel="stylesheet" id="current-theme" href="media/style.css" type="text/css" media="screen" />
 </head>
@@ -19,8 +19,8 @@
             <li class=" first"><a href="index.html">Main Page</a></li>
             <li class=" first"><a href="download.html">Download</a></li>
             <li class=" first"><a href="docs.html">Documentation</a></li>
-            <li class="active first"><a href="support.html">Support</a></li>
-            <li class=" first"><a href="screenshots.html">Screenshots</a></li>
+            <li class=" first"><a href="support.html">Support</a></li>
+            <li class="active first"><a href="screenshots.html">Screenshots</a></li>
             <li class=" first"><a href="development.html">Development</a></li>
         </ul>
         
@@ -33,29 +33,18 @@
             <div class="content">
                 
 
-<h2 class="title">General</h2>
+<h2 class="title">Python Session</h2>
 <div class="inner">
 <p class="first">
-Below you can find several ways to get help.
+<pre>
+>>> from sympy import Symbol, cos
+>>> x = Symbol('x')
+>>> e = 1/cos(x)
+>>> print e.series(x, 0, 10)
+1 + (1/2)*x**2 + (5/24)*x**4 + (61/720)*x**6 + (277/8064)*x**8 + O(x**10)
+</pre>
 </p>
-<p>
-<ul>
-<li> SymPy <a href="http://docs.sympy.org">Documentation</a></li>
-<li> Main <a href="http://groups.google.com/group/sympy">mailinglist</a> </li>
-<li><a href="http://code.google.com/p/sympy/issues/list">Issues tracker</a>.
-    </li>
-<li>IRC channel: #sympy at freenode</li>
-</ul>
-</p>
-<h2>More Specific</h2>
-<p>
-<ul>
-<li> SymPy <a href="http://docs.sympy.org/tutorial.html">tutorial</a></li>
-<li> Main <a href="http://wiki.sympy.org/wiki/FAQ">FAQ</a> </li>
-<li><a href="http://docs.sympy.org/gotchas.html">Gotchas and Pitfalls</a>
-    </li>
-</ul>
-</p>
+
 </div>
 
 
@@ -69,21 +58,7 @@ Below you can find several ways to get help.
       </div>
       <div id="sidebar">
         
-
-<div class="block">
-  <h3>Git Repository</h3>
-  <div class="content">
-    <p>
-    Main git repository:<br/>
-    <code>git clone git://github.com/sympy/sympy.git</code>
-    </p>
-    <p>
-    Online access: <a href="http://github.com/sympy/sympy">github.com/sympy/sympy</a>
-    </p>
-  </div>
-</div>
-
-
+        
       </div>
       <div class="clear"></div>
     </div>

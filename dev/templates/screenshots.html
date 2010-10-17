@@ -1,0 +1,22 @@
+{% from "macros" import video %}
+{% extends "base.html" %}
+
+{% block title %}Screenshots{% endblock %}
+
+{% block content %}
+
+<h2 class="title">Python Session</h2>
+<div class="inner">
+<p class="first">
+<pre>
+>>> from sympy import Symbol, cos
+>>> x = Symbol('x')
+>>> e = 1/cos(x)
+>>> print e.series(x, 0, 10)
+1 + (1/2)*x**2 + (5/24)*x**4 + (61/720)*x**6 + (277/8064)*x**8 + O(x**10)
+</pre>
+</p>
+
+</div>
+
+{% endblock %}
