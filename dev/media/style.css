@@ -77,6 +77,10 @@ hr {
   padding: 7px 7px 0 7px; 
 }
 
+#main-navigation ul li:hover {
+  background-color: #90C95F;
+}
+
 #main-navigation ul li {
   background: #91B96F;
   margin-right: 7px;
