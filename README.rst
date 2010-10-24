@@ -5,18 +5,6 @@ These are SymPy webpages served at:
 
 http://sympy.org/
 
-using github. Currently it only redirects to the sympy googlecode page, until
-we create some nice pages.
+using github. To modify them, edit the templates in the ``templates`` dir and::
 
-Web in development
-------------------
-
-Webpages in development are here:
-
-http://sympy.org/dev/
-
-to modify them, do::
-
-    cd dev
-    # edit the pages
     ./generate
