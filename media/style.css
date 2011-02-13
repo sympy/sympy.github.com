@@ -141,6 +141,14 @@ padding: 8px 12px;
   background: #81B953;
 }
 
+#quicklinks ul {
+  padding-left: 20px;
+}
+
+#quicklinks ul li {
+  list-style-type: square;
+}
+
 #footer .block {  
   color: #FFF;
   background: #3B5526;
