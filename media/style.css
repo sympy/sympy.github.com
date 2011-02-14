@@ -3,6 +3,8 @@
 .hightlight { background-color:#d6e7c7; }
 
 a:link, a:visited, a:hover, a:active { color: #81B953; } 
+a:link, a:visited, a:active { text-decoration: none; }
+a:hover { text-decoration: underline; }
 h1, h2, h3 { color: #3B5526; }
 a { -moz-outline: none; }
 
@@ -62,13 +64,6 @@ hr {
 #sidebar ul li a:visited {
   background: #FFF;
   border-bottom: 1px solid #F0F0EE;
-  text-decoration: none;
-}
-
-#sidebar ul li a:hover, 
-#sidebar ul li a:active {
-  background: #D3E8C1;
-  color: #FFF;
 }
 
 #main-navigation {
@@ -143,10 +138,6 @@ padding: 8px 12px;
 
 #quicklinks ul {
   padding-left: 20px;
-}
-
-#quicklinks ul li {
-  list-style-type: square;
 }
 
 #footer .block {  
