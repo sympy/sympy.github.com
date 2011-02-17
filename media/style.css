@@ -75,15 +75,22 @@ hr {
 
 #main-navigation ul li:hover {
   background-color: #81B953;
-  border-bottom: 5px solid #81B953;
 }
 
 #main-navigation ul li {
-  margin: 0 7px 0 7px;
+  margin: 4px 0px 4px 4px;
+  -moz-border-radius-topleft: 4px;
+  -webkit-border-top-left-radius: 4px;
+  -moz-border-radius-topright: 4px;
+  -webkit-border-top-right-radius: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -webkit-border-bottom-right-radius: 4px;
 }
 
 #main-navigation ul li a {
-  padding: 10px 10px 4px 10px;
+  padding: 6px 10px 6px 10px;
   font-weight: bold;
   font-size: 1.1em;
 }
@@ -115,8 +122,15 @@ hr {
 #main-navigation ul li.active a:visited, 
 #main-navigation ul li.active a:hover, 
 #main-navigation ul li.active a:active {
-  color: #FFF;
-  border-bottom: 5px solid #81B953;
+  background-color: #81B953;
+  -moz-border-radius-topleft: 4px;
+  -webkit-border-top-left-radius: 4px;
+  -moz-border-radius-topright: 4px;
+  -webkit-border-top-right-radius: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -webkit-border-bottom-right-radius: 4px;
 }
 
 .secondary-navigation {
@@ -257,7 +271,6 @@ ul.list li .item .avatar {
 #box .block h2 {
   color: #fff;
   background: #3B5526;
-  border-bottom: 5px solid #81b953;
 }
 
 #box .block .content { border: 1px solid #81b953; border}
