@@ -20,7 +20,6 @@ hr {
 }
 
 #header {
-  background: #c9deb7;
 
 }
 
@@ -60,34 +59,43 @@ hr {
 }
 
 
-#sidebar ul li a:link, 
+#sidebar ul li a:link,
 #sidebar ul li a:visited {
   background: #FFF;
   border-bottom: 1px solid #F0F0EE;
 }
 
 #main-navigation {
-  background: #44721e;
-  margin-right: 20px;
-  padding: 7px 7px 0 7px; 
+  background: #3B5526;
+  -moz-border-radius-bottomleft: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -webkit-border-bottom-right-radius: 4px;
 }
 
 #main-navigation ul li:hover {
-  background-color: #90C95F;
+  background-color: #5B7745;
 }
 
 #main-navigation ul li {
-  background: #91B96F;
-  margin-right: 7px;
+  margin: 4px 0px 4px 4px;
+  -moz-border-radius-topleft: 4px;
+  -webkit-border-top-left-radius: 4px;
+  -moz-border-radius-topright: 4px;
+  -webkit-border-top-right-radius: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -webkit-border-bottom-right-radius: 4px;
 }
 
 #main-navigation ul li a {
-  padding: 10px 10px 5px 10px;
+  padding: 6px 10px 6px 10px;
+  font-weight: bold;
+  font-size: 1.1em;
 }
 
 #main-navigation ul li.active {
-  background: #e4ebe4;
-  border: 1px solid #91B96F;
   border-bottom: none;
   font-weight: bold;
 }
@@ -114,7 +122,15 @@ hr {
 #main-navigation ul li.active a:visited, 
 #main-navigation ul li.active a:hover, 
 #main-navigation ul li.active a:active {
-  color: #262626;
+  background-color: #81B953;
+  -moz-border-radius-topleft: 4px;
+  -webkit-border-top-left-radius: 4px;
+  -moz-border-radius-topright: 4px;
+  -webkit-border-top-right-radius: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -webkit-border-bottom-right-radius: 4px;
 }
 
 .secondary-navigation {
@@ -255,7 +271,6 @@ ul.list li .item .avatar {
 #box .block h2 {
   color: #fff;
   background: #3B5526;
-  border-bottom: 5px solid #81b953;
 }
 
 #box .block .content { border: 1px solid #81b953; border}
@@ -267,7 +282,7 @@ ul.list li .item .avatar {
 
 /* rounded borders */
 
-#main, #main-navigation, #main-navigation li, 
+#main, #main-navigation,
 .secondary-navigation, #main .block, #sidebar .block, 
 #sidebar h3, ul.list li, #footer .block, 
 .form input.button, #box .block, #box .block h2 {
