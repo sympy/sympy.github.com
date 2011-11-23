@@ -1,83 +1,79 @@
 {% from "macros" import video %}
 {% extends "base.html" %}
 
-{% block title %}Development{% endblock %}
+{% block title %}Развитие{% endblock %}
 
 {% block content %}
 
-<h2 class="title">Development</h2>
+<h2 class="title">Развитие</h2>
 <div class="inner">
 <p class="first">
-We are interested in any contribution. There are many ways how you can
-contribute:
+Заинтересовани сме от каквато и да е помощ. Има много начини да допринесете:
 <ul>
     <li>
-If you wrote anything interesting using SymPy, please send us a patch with the
-code (see below for more information).
+	Ако напишете нещо интересно използващо SimPy, моля изпратете ни пач с кода (погледнете надолу за повече информация)
 </li>
 
 <li>
-If you found a bug (or just want to let us know what you think), tell us on the
-<a href="http://groups.google.com/group/sympy">mailinglist</a>. You can also
-add a bug report (or a comment) into the <a href="http://code.google.com/p/sympy/issues/list">issues</a>.
+Ако сте намерили бъг (или просто искате да ни усведомите какво мислите), моля, осведомете ни ни на 
+<a href="http://groups.google.com/group/sympy">пощата</a>. Можете също да подадете сигнал за бъг (или коментар)на страницата ни за
+ <a href="http://code.google.com/p/sympy/issues/list">проблеми</a>.
 </li>
-<li>You can blog about how you use SymPy.</li>
-<li>You can help us write documentation (just send us a patch).</li>
-<li>You can help people on our <a href="http://groups.google.com/group/sympy">mailinglist</a>.</li>
-<li>You can help with reviewing patches.</li>
-<li>You can send us patches with bug fixes or new features.</li>
+<li>Можете да блогвате за това как използвате SymPy.</li>
+<li>Можете да ни помогнете като напишете документация (просто ни изпратете пач).</li>
+<li>Можете да помагате на хора на нашия <a href="http://groups.google.com/group/sympy">пощенски лист</a>.</li>
+<li>Можете да помогнете като тествате пачове.</li>
+<li>Можете да ни изпратите пачове с оправени проблеми или нови функционалности.</li>
 </ul>
 </p>
 <p>
-The best way to contribute code or documentation is to send us a patch.
+Най-добрият начин да допринесете код или документация е да ни изпратите пач.
 </p>
 </div>
 
-<h2 class="title">How to Send a Patch</h2>
+<h2 class="title">Как да изпратим пач</h2>
 <div class="inner">
 <p class="first">
-The best way is to send a github pull request
-against the <a href="http://github.com/sympy/sympy">sympy/sympy</a> repository.
-We'll review it and push it in.
+Най-добрият начин е да ни изпратите github запитване срещу
+<a href="http://github.com/sympy/sympy">sympy/sympy</a> хранилището.
+Ще го погледнем и ще го добавим.
 </p>
 
 <p>
-If you need help with git, github, pull requests, patches, coding, SymPy or
-anything related, just send us an email to the mailinglist
-or ask on IRC (our channel is <a href="irc://irc.freenode.net/sympy">#sympy at freenode</a>), we'll help.
-Also, you can read our instructions
+Ако имате нужда от помощ с git, github, pull requests, пачове, кодиране, SymPy или 
+каквото и да е било свързано, просто ни изпратете имейл до нашия списък с писма или може да ни попитате в IRC
+ (нашият канал е <a href="irc://irc.freenode.net/sympy">#sympy at freenode</a>), ще ви помогнем.
+Също така може да прочетете нашите инструкции
 <a href="https://github.com/sympy/sympy/wiki/Development-workflow">
-how to prepare patches</a> using git and github.
+как да подготвим пачове</a> използвайки git и github.
 </p>
 
 <p>
-The github pull request is a preferred method, as that makes it easy for us to
-review and push the code in. That said,
-you can also clone the latest git repository (see the link on the right), prepare a branch with
-your code, upload it somewhere (for example <a
-    href="http://github.com/">github</a>) and send us a link to the <a
+Github pull request е предпочитан метод, тъй като това ни улеснява да прегледаме и
+да поставим кода ви вътре. Това ще рече, че вие също така можете да клонирате последната версия на git хранилището 
+(вижте линка вдясно), да разширите своя код и да го качите някъде (например <a
+    href="http://github.com/">github</a>) и да ни изпратите линк до <a
     href="http://groups.google.com/group/sympy-patches">sympy-patches</a>
-mailinglist, or you can even send us raw patches --- but it will be more work
-for us to integrate it.
+mailinglist, или дори може да ни изпратите необработени пачове --- но ще ни затрудните да го интегрираме.
 </p>
 
 <p>
-SymPy has a broad development team:
+SymPy има широк екип от разработчици: 
 <a href="
 http://docs.sympy.org/0.7.1/aboutus.html#sympy-development-team
 ">
 http://docs.sympy.org/0.7.1/aboutus.html#sympy-development-team
-</a>, send us a patch and your name will appear there too.
+</a>, изпратете ни пач и вашето име ще се появи там.
 </p>
 
 </div>
-<h2 class="title">Sources of the Webpages</h2>
+<h2 class="title">Източници на уеб страниците</h2>
 <div class="inner">
 <p class="first">
-Sources of these webpages are at:
+Източниците на тези уеб страници са на:
 <a href="http://github.com/sympy/sympy.github.com">http://github.com/sympy/sympy.github.com</a>
 </p>
-Feel free to send us patches with improvements.
+Чувствайте се свободни да ни изпратите пачове с подобрения.
 </div>
 
 {% endblock %}
@@ -86,14 +82,14 @@ Feel free to send us patches with improvements.
 {% block sidebar %}
 
 <div class="block">
-  <h3>Git Repository</h3>
+  <h3>Git Хранилище</h3>
   <div class="content">
     <p>
-    Main git repository:<br/>
+    Основно git хранилище:<br/>
     <code>git clone git://github.com/sympy/sympy.git</code>
     </p>
     <p>
-    Online access: <a href="http://github.com/sympy/sympy">github.com/sympy/sympy</a>
+    Онлайн достъп: <a href="http://github.com/sympy/sympy">github.com/sympy/sympy</a>
     </p>
   </div>
 </div>
