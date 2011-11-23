@@ -5,52 +5,52 @@
 
 {% block content %}
 
-<h2 class="title">Относно</h2>
+<h2 class="title">РћС‚РЅРѕСЃРЅРѕ</h2>
 <div class="inner">
 <p class="first">
-SymPy е библиотека на Python за символна математика.
-Тя цели да стане пълнофункционална алгебрична система (CAS), като поддържа кода възможно най-опростен с цел да бъде разбираем и лесен за разширяване.
-SymPy е изцяло написана на Python и не изисква външни библиотеки.
+SymPy Рµ Р±РёР±Р»РёРѕС‚РµРєР° РЅР° Python Р·Р° СЃРёРјРІРѕР»РЅР° РјР°С‚РµРјР°С‚РёРєР°.
+РўСЏ С†РµР»Рё РґР° СЃС‚Р°РЅРµ РїСЉР»РЅРѕС„СѓРЅРєС†РёРѕРЅР°Р»РЅР° Р°Р»РіРµР±СЂРёС‡РЅР° СЃРёСЃС‚РµРјР° (CAS), РєР°С‚Рѕ РїРѕРґРґСЉСЂР¶Р° РєРѕРґР° РІСЉР·РјРѕР¶РЅРѕ РЅР°Р№-РѕРїСЂРѕСЃС‚РµРЅ СЃ С†РµР» РґР° Р±СЉРґРµ СЂР°Р·Р±РёСЂР°РµРј Рё Р»РµСЃРµРЅ Р·Р° СЂР°Р·С€РёСЂСЏРІР°РЅРµ.
+SymPy Рµ РёР·С†СЏР»Рѕ РЅР°РїРёСЃР°РЅР° РЅР° Python Рё РЅРµ РёР·РёСЃРєРІР° РІСЉРЅС€РЅРё Р±РёР±Р»РёРѕС‚РµРєРё.
 </p>
 </div>
 
-<h2 class="title">Функционалности</h2>
+<h2 class="title">Р¤СѓРЅРєС†РёРѕРЅР°Р»РЅРѕСЃС‚Рё</h2>
 <div class="inner">
 <p class="first">
-Възможностите на ядрото на SymPy включват:
+Р’СЉР·РјРѕР¶РЅРѕСЃС‚РёС‚Рµ РЅР° СЏРґСЂРѕС‚Рѕ РЅР° SymPy РІРєР»СЋС‡РІР°С‚:
 <ul>
-    <li>базова аритметика <code>*,/,+,-,**</code></li>
-    <li>базово опростяване (например <code>a*b*b + 2*b*a*b -&gt; 3*a*b**2)</code></li>
-    <li>обяснения (като <code>(a+b)**2 -&gt; a**2 + 2*a*b + b**2</code>)</li>
-    <li>функции (exp, ln, ...)</li>
-    <li>комплексни числа (като exp(I*x).expand(complex=True) -&gt;
+    <li>Р±Р°Р·РѕРІР° Р°СЂРёС‚РјРµС‚РёРєР° <code>*,/,+,-,**</code></li>
+    <li>Р±Р°Р·РѕРІРѕ РѕРїСЂРѕСЃС‚СЏРІР°РЅРµ (РЅР°РїСЂРёРјРµСЂ <code>a*b*b + 2*b*a*b -&gt; 3*a*b**2)</code></li>
+    <li>РѕР±СЏСЃРЅРµРЅРёСЏ (РєР°С‚Рѕ <code>(a+b)**2 -&gt; a**2 + 2*a*b + b**2</code>)</li>
+    <li>С„СѓРЅРєС†РёРё (exp, ln, ...)</li>
+    <li>РєРѕРјРїР»РµРєСЃРЅРё С‡РёСЃР»Р° (РєР°С‚Рѕ exp(I*x).expand(complex=True) -&gt;
     cos(x)+I*sin(x))</li>
-    <li>разграничаване</li>
-    <li>серии на taylor (laurent)</li>
-    <li>заместване (като <code>x -&gt; ln(x)</code>, или
+    <li>СЂР°Р·РіСЂР°РЅРёС‡Р°РІР°РЅРµ</li>
+    <li>СЃРµСЂРёРё РЅР° taylor (laurent)</li>
+    <li>Р·Р°РјРµСЃС‚РІР°РЅРµ (РєР°С‚Рѕ <code>x -&gt; ln(x)</code>, РёР»Рё
         <code>sin -&gt; cos</code>)</li>
-    <li>случайни цели, рационални и с плаваща запетая числа</li>
-    <li>некомуникативни символи</li>
-    <li>сравняване на модели</li>
+    <li>СЃР»СѓС‡Р°Р№РЅРё С†РµР»Рё, СЂР°С†РёРѕРЅР°Р»РЅРё Рё СЃ РїР»Р°РІР°С‰Р° Р·Р°РїРµС‚Р°СЏ С‡РёСЃР»Р°</li>
+    <li>РЅРµРєРѕРјСѓРЅРёРєР°С‚РёРІРЅРё СЃРёРјРІРѕР»Рё</li>
+    <li>СЃСЂР°РІРЅСЏРІР°РЅРµ РЅР° РјРѕРґРµР»Рё</li>
 </ul>
 </p>
 <p>
-След това има три SymPy модула за следните задачи:
+РЎР»РµРґ С‚РѕРІР° РёРјР° С‚СЂРё SymPy РјРѕРґСѓР»Р° Р·Р° СЃР»РµРґРЅРёС‚Рµ Р·Р°РґР°С‡Рё:
 <ul>
-    <li>повече функции (sin, cos, tan, atan, asin, acos, factorial, zeta,
+    <li>РїРѕРІРµС‡Рµ С„СѓРЅРєС†РёРё (sin, cos, tan, atan, asin, acos, factorial, zeta,
     legendre)</li>
-    <li>ограничения (като <code>limit(x*log(x), x, 0) -&gt; 0</code>)</li>
-    <li>интеграция, използвайки разширените алгоритми на Risch-Norman</li>
-    <li>полиноми (деление, gcd, свободна декомпресия на квадрати, бази на groebner, факторизация)
-    <li>калкулатори (алгебрични, различни и диференциални равенства и системи равенства)</li>
-    <li>символни матрици (детерминанти, LU разлагане...)</li>
-    <li>mpmath (мултипрецизна аритметика за числа с плаваща запетая)</li>
-    <li>геометрична алгебра (GA)</li>
-    <li>алгебра на Pauli и Dirac</li>
-    <li>квантова физика</li>
-    <li>геометричен модул</li>
-    <li>планове (2D and 3D)</li>
-    <li>генериране на код (C, Fortran, LaTeX)</li>
+    <li>РѕРіСЂР°РЅРёС‡РµРЅРёСЏ (РєР°С‚Рѕ <code>limit(x*log(x), x, 0) -&gt; 0</code>)</li>
+    <li>РёРЅС‚РµРіСЂР°С†РёСЏ, РёР·РїРѕР»Р·РІР°Р№РєРё СЂР°Р·С€РёСЂРµРЅРёС‚Рµ Р°Р»РіРѕСЂРёС‚РјРё РЅР° Risch-Norman</li>
+    <li>РїРѕР»РёРЅРѕРјРё (РґРµР»РµРЅРёРµ, gcd, СЃРІРѕР±РѕРґРЅР° РґРµРєРѕРјРїСЂРµСЃРёСЏ РЅР° РєРІР°РґСЂР°С‚Рё, Р±Р°Р·Рё РЅР° groebner, С„Р°РєС‚РѕСЂРёР·Р°С†РёСЏ)
+    <li>РєР°Р»РєСѓР»Р°С‚РѕСЂРё (Р°Р»РіРµР±СЂРёС‡РЅРё, СЂР°Р·Р»РёС‡РЅРё Рё РґРёС„РµСЂРµРЅС†РёР°Р»РЅРё СЂР°РІРµРЅСЃС‚РІР° Рё СЃРёСЃС‚РµРјРё СЂР°РІРµРЅСЃС‚РІР°)</li>
+    <li>СЃРёРјРІРѕР»РЅРё РјР°С‚СЂРёС†Рё (РґРµС‚РµСЂРјРёРЅР°РЅС‚Рё, LU СЂР°Р·Р»Р°РіР°РЅРµ...)</li>
+    <li>mpmath (РјСѓР»С‚РёРїСЂРµС†РёР·РЅР° Р°СЂРёС‚РјРµС‚РёРєР° Р·Р° С‡РёСЃР»Р° СЃ РїР»Р°РІР°С‰Р° Р·Р°РїРµС‚Р°СЏ)</li>
+    <li>РіРµРѕРјРµС‚СЂРёС‡РЅР° Р°Р»РіРµР±СЂР° (GA)</li>
+    <li>Р°Р»РіРµР±СЂР° РЅР° Pauli Рё Dirac</li>
+    <li>РєРІР°РЅС‚РѕРІР° С„РёР·РёРєР°</li>
+    <li>РіРµРѕРјРµС‚СЂРёС‡РµРЅ РјРѕРґСѓР»</li>
+    <li>РїР»Р°РЅРѕРІРµ (2D and 3D)</li>
+    <li>РіРµРЅРµСЂРёСЂР°РЅРµ РЅР° РєРѕРґ (C, Fortran, LaTeX)</li>
 </ul>
 </p>
 </div>
@@ -61,46 +61,46 @@ SymPy е изцяло написана на Python и не изисква външни библиотеки.
 {% block sidebar %}
 
 <div class="block">
-  <h3>Свали сега</h3>
+  <h3>РЎРІР°Р»Рё СЃРµРіР°</h3>
   <div class="content">
 <p>
-Издания: <a href="http://code.google.com/p/sympy/downloads/list">Google Code сваляния</a><br/>
-Последни git версии: <a href="http://github.com/sympy/sympy">github.com/sympy/sympy</a>
+РР·РґР°РЅРёСЏ: <a href="http://code.google.com/p/sympy/downloads/list">Google Code СЃРІР°Р»СЏРЅРёСЏ</a><br/>
+РџРѕСЃР»РµРґРЅРё git РІРµСЂСЃРёРё: <a href="http://github.com/sympy/sympy">github.com/sympy/sympy</a>
 </p>
   </div>
 </div>
 
 <div class="block">
-  <h3>Новини</h3>
+  <h3>РќРѕРІРёРЅРё</h3>
   <div class="content">
 <p>
-<span class="date">29 Jul 2011</span> Версия 0.7.1 излезе (<a href="https://github.com/sympy/sympy/wiki/Release-Notes-for-0.7.1">промени</a>)<br/>
-<span class="date">28 Jun 2011</span> Версия 0.7.0 излезе (<a href="https://github.com/sympy/sympy/wiki/Release-Notes-for-0.7.0">промени</a>)<br/>
-<span class="date">18 Mar 2011</span> SymPy е приет като <a href="http://www.google-melange.com/gsoc/org/show/google/gsoc2011/sympy">наставителна компания</a> за Google Summer of Code 2011<br/>
-<span class="date">23 Oct 2010</span> Нов уеб сайт излезе на sympy.org<br/>
-<span class="date">17 Mar 2010</span> Версия 0.6.7 излезе (<a href="http://code.google.com/p/sympy/wiki/Changes">промени</a>)<br/>
-<span class="date">20 Dec 2009</span> Версия 0.6.6 излезе (<a href="http://code.google.com/p/sympy/wiki/Changes">промени</a>)<br/>
-<span class="date">26 Sep 2009</span> Последна страница относно <a href="http://code.google.com/p/sympy/wiki/GSoC2009">2009 Google Summer of Code in SymPy</a> е
-налична.
+<span class="date">29 Jul 2011</span> Р’РµСЂСЃРёСЏ 0.7.1 РёР·Р»РµР·Рµ (<a href="https://github.com/sympy/sympy/wiki/Release-Notes-for-0.7.1">РїСЂРѕРјРµРЅРё</a>)<br/>
+<span class="date">28 Jun 2011</span> Р’РµСЂСЃРёСЏ 0.7.0 РёР·Р»РµР·Рµ (<a href="https://github.com/sympy/sympy/wiki/Release-Notes-for-0.7.0">РїСЂРѕРјРµРЅРё</a>)<br/>
+<span class="date">18 Mar 2011</span> SymPy Рµ РїСЂРёРµС‚ РєР°С‚Рѕ <a href="http://www.google-melange.com/gsoc/org/show/google/gsoc2011/sympy">РЅР°СЃС‚Р°РІРёС‚РµР»РЅР° РєРѕРјРїР°РЅРёСЏ</a> Р·Р° Google Summer of Code 2011<br/>
+<span class="date">23 Oct 2010</span> РќРѕРІ СѓРµР± СЃР°Р№С‚ РёР·Р»РµР·Рµ РЅР° sympy.org<br/>
+<span class="date">17 Mar 2010</span> Р’РµСЂСЃРёСЏ 0.6.7 РёР·Р»РµР·Рµ (<a href="http://code.google.com/p/sympy/wiki/Changes">РїСЂРѕРјРµРЅРё</a>)<br/>
+<span class="date">20 Dec 2009</span> Р’РµСЂСЃРёСЏ 0.6.6 РёР·Р»РµР·Рµ (<a href="http://code.google.com/p/sympy/wiki/Changes">РїСЂРѕРјРµРЅРё</a>)<br/>
+<span class="date">26 Sep 2009</span> РџРѕСЃР»РµРґРЅР° СЃС‚СЂР°РЅРёС†Р° РѕС‚РЅРѕСЃРЅРѕ <a href="http://code.google.com/p/sympy/wiki/GSoC2009">2009 Google Summer of Code in SymPy</a> Рµ
+РЅР°Р»РёС‡РЅР°.
 </p>
   </div>
 </div>
 
 <div id="quicklinks" class="block">
-  <h3>Бързи връзки</h3>
+  <h3>Р‘СЉСЂР·Рё РІСЂСЉР·РєРё</h3>
   <div class="content">
     <p>
       <ul>
-        <li><a href="http://docs.sympy.org/">Документация</a></li>
-        <li><a href="http://code.google.com/p/sympy/downloads/list">Сваляния (източник на архиви)</a></li>
-        <li><a href="http://code.google.com/p/sympy/wiki/DownloadInstallation?tm=2">Сваляния (Пакети за дистрибуции)</a></li>
-        <li><a href="http://groups.google.com/group/sympy">Пощенски лист</a></li>
-        <li><a href="http://github.com/sympy/sympy">Сорс код</a></li>
-        <li><a href="http://code.google.com/p/sympy/issues/list">Следена за проблеми</a></li>
-        <li><a href="http://code.google.com/p/sympy/">Google Code страница</a></li>
+        <li><a href="http://docs.sympy.org/">Р”РѕРєСѓРјРµРЅС‚Р°С†РёСЏ</a></li>
+        <li><a href="http://code.google.com/p/sympy/downloads/list">РЎРІР°Р»СЏРЅРёСЏ (РёР·С‚РѕС‡РЅРёРє РЅР° Р°СЂС…РёРІРё)</a></li>
+        <li><a href="http://code.google.com/p/sympy/wiki/DownloadInstallation?tm=2">РЎРІР°Р»СЏРЅРёСЏ (РџР°РєРµС‚Рё Р·Р° РґРёСЃС‚СЂРёР±СѓС†РёРё)</a></li>
+        <li><a href="http://groups.google.com/group/sympy">РџРѕС‰РµРЅСЃРєРё Р»РёСЃС‚</a></li>
+        <li><a href="http://github.com/sympy/sympy">РЎРѕСЂСЃ РєРѕРґ</a></li>
+        <li><a href="http://code.google.com/p/sympy/issues/list">РЎР»РµРґРµРЅР° Р·Р° РїСЂРѕР±Р»РµРјРё</a></li>
+        <li><a href="http://code.google.com/p/sympy/">Google Code СЃС‚СЂР°РЅРёС†Р°</a></li>
         <li><a href="http://github.com/sympy/sympy/wiki">Wiki</a></li>
-        <li><a href="http://live.sympy.org/">Пробвай SymPy онлайн сега</a></li>
-        <li><a href="http://sympy.blogspot.com/">Официален SymPy блог</a></li>
+        <li><a href="http://live.sympy.org/">РџСЂРѕР±РІР°Р№ SymPy РѕРЅР»Р°Р№РЅ СЃРµРіР°</a></li>
+        <li><a href="http://sympy.blogspot.com/">РћС„РёС†РёР°Р»РµРЅ SymPy Р±Р»РѕРі</a></li>
         <li><a href="http://planet.sympy.org/">Planet SymPy</a></li>
       </ul>
     </p>
