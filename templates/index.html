@@ -5,55 +5,53 @@
 
 {% block content %}
 
-<h2 class="title">About</h2>
+<h2 class="title">Opis</h2>
 <div class="inner">
 <p class="first">
-SymPy is a Python library for symbolic mathematics. It aims to become a
-full-featured computer algebra system (CAS) while keeping the code as simple as
-possible in order to be comprehensible and easily extensible. SymPy is written
-entirely in Python and does not require any external libraries.
+SymPy jest biblioteką Pythona do matematyki symbolicznej. Jej celem jest stanie się w pełni
+funkcjonalnym system algebry komputerowej (CAS) przy zachowaniu kodu tak prostego, jak to
+tylko możliwe, aby być zrozumiała i łatwo rozszerzalna. SymPy jest w całości napisana w
+Pythonie i nie wymaga żadnych zewnętrznych bibliotek. 
 </p>
 </div>
 
-<h2 class="title">Features</h2>
+<h2 class="title">Cechy</h2>
 <div class="inner">
 <p class="first">
-SymPy core capabilities include:
+Możliwości SymPy: 
 <ul>
-    <li>basic arithmetics <code>*,/,+,-,**</code></li>
-    <li>basic simplification (like <code>a*b*b + 2*b*a*b -&gt; 3*a*b**2)</code></li>
-    <li>expansion (like <code>(a+b)**2 -&gt; a**2 + 2*a*b + b**2</code>)</li>
-    <li>functions (exp, ln, ...)</li>
-    <li>complex numbers (like exp(I*x).expand(complex=True) -&gt;
+    <li>podstawowa arytmetyka <code>*,/,+,-,**</code></li>
+    <li>podstawowe uproszczenia (jak <code>a*b*b + 2*b*a*b -&gt; 3*a*b**2)</code></li>
+    <li>rozwijanie (jak <code>(a+b)**2 -&gt; a**2 + 2*a*b + b**2</code>)</li>
+    <li>funkcje (exp, ln, ...)</li>
+    <li>liczby zespolone (jak exp(I*x).expand(complex=True) -&gt;
     cos(x)+I*sin(x))</li>
-    <li>differentiation</li>
-    <li>taylor (laurent) series</li>
-    <li>substitution (like <code>x -&gt; ln(x)</code>, or
+    <li>różniczkowanie</li>
+    <li>szereg Taylora/Laurenta</li>
+    <li>podstawienie (jak <code>x -&gt; ln(x)</code> lub
         <code>sin -&gt; cos</code>)</li>
-    <li>arbitrary precision integers, rationals and floats</li>
-    <li>noncommutative symbols</li>
-    <li>pattern matching</li>
+    <li>dowolna precyzja liczb całkowitych, wymiernych i zmiennoprzecinkowych</li>
+    <li>nieprzemienne symbole</li>
+    <li>dopasowanie do wzorca</li>
 </ul>
 </p>
 <p>
-Then there are SymPy modules for these tasks:
+Moduły do SymPy to dodatkowo: 
 <ul>
-    <li>more functions (sin, cos, tan, atan, asin, acos, factorial, zeta,
+    <li>więcej funkcji (sin, cos, tan, atan, asin, acos, factorial, zeta,
     legendre)</li>
-    <li>limits (like <code>limit(x*log(x), x, 0) -&gt; 0</code>)</li>
-    <li>integration using extended Risch-Norman heuristic</li>
-    <li>polynomials (division, gcd, square free decomposition, groebner
-    bases, factorization)
-    <li>solvers (algebraic, difference and differential equations, and systems
-    of equations)</li>
-    <li>symbolic matrices (determinants, LU decomposition...)</li>
-    <li>mpmath (multiprecision floating-point arithmetic)</li>
-    <li>geometric algebra (GA)</li>
-    <li>Pauli and Dirac algebra</li>
-    <li>quantum physics</li>
-    <li>geometry module</li>
-    <li>plotting (2D and 3D)</li>
-    <li>code generation (C, Fortran, LaTeX)</li>
+    <li>limity (jak <code>limit(x*log(x), x, 0) -&gt; 0</code>)</li>
+    <li>integracja za pomocą rozszerzonej heurystyki Risch-Normana</li>
+    <li>wielomiany (podział, NWD, rozkład bez pierwiastków, bazy Grobnera, rozkład na czynniki)</li>
+    <li>metody rozwiązywania (algebraiczne, różnice, równania różniczkowe i układy równań)</li>
+    <li>symboliczne macierze (wyznaczniki, metoda LU...)</li>
+    <li>mpmath (arytmetyka zmiennoprzecinkowa z dużą dokładnością)</li>
+    <li>algebra geometryczna (GA)</li>
+    <li>algebra Pauliego i Diraca</li>
+    <li>fizyka kwantowa</li>
+    <li>moduł geometrii</li>
+    <li>kreślenie (2D i 3D)</li>
+    <li>generowanie kodu (C, Fortran, LaTeX)</li>
 </ul>
 </p>
 </div>
@@ -64,47 +62,46 @@ Then there are SymPy modules for these tasks:
 {% block sidebar %}
 
 <div class="block">
-  <h3>Download Now</h3>
+  <h3>Pobierz SymPy</h3>
   <div class="content">
 <p>
-Releases: <a href="http://code.google.com/p/sympy/downloads/list">Google Code downloads</a><br/>
-Latest git version: <a href="http://github.com/sympy/sympy">github.com/sympy/sympy</a>
+Wydania: <a href="http://code.google.com/p/sympy/downloads/list">pobierz w Google Code</a><br/>
+Najnowsza wersja git: <a href="http://github.com/sympy/sympy">github.com/sympy/sympy</a>
 </p>
   </div>
 </div>
 
 <div class="block">
-  <h3>News</h3>
+  <h3>Aktualności</h3>
   <div class="content">
 <p>
-<span class="date">29 Jul 2011</span> Version 0.7.1 released (<a href="https://github.com/sympy/sympy/wiki/Release-Notes-for-0.7.1">changes</a>)<br/>
-<span class="date">28 Jun 2011</span> Version 0.7.0 released (<a href="https://github.com/sympy/sympy/wiki/Release-Notes-for-0.7.0">changes</a>)<br/>
-<span class="date">18 Mar 2011</span> SymPy is accepted as a <a href="http://www.google-melange.com/gsoc/org/show/google/gsoc2011/sympy">mentoring organization</a> for Google Summer of Code 2011<br/>
-<span class="date">23 Oct 2010</span> New website launched at sympy.org<br/>
-<span class="date">17 Mar 2010</span> Version 0.6.7 released (<a href="http://code.google.com/p/sympy/wiki/Changes">changes</a>)<br/>
-<span class="date">20 Dec 2009</span> Version 0.6.6 released (<a href="http://code.google.com/p/sympy/wiki/Changes">changes</a>)<br/>
-<span class="date">26 Sep 2009</span> Final page about the <a href="http://code.google.com/p/sympy/wiki/GSoC2009">2009 Google Summer of Code in SymPy</a> is
-available.
+<span class="date">29 lip 2011</span> Wydano wersję 0.7.1 (<a href="https://github.com/sympy/sympy/wiki/Release-Notes-for-0.7.1">zmiany</a>)<br/>
+<span class="date">28 cze 2011</span> Wydano wersję 0.7.0 (<a href="https://github.com/sympy/sympy/wiki/Release-Notes-for-0.7.0">zmiany</a>)<br/>
+<span class="date">18 mar 2011</span> SymPy została zaakceptowana jako <a href="http://www.google-melange.com/gsoc/org/show/google/gsoc2011/sympy">organizacja mentorska</a> w Google Summer of Code 2011<br/>
+<span class="date">23 paź 2010</span> Uruchomiono nową stronę na sympy.org<br/>
+<span class="date">17 mar 2010</span> Wydano wersję 0.6.7 (<a href="http://code.google.com/p/sympy/wiki/Changes">zmiany</a>)<br/>
+<span class="date">20 lip 2009</span> Wydano wersję 0.6.6 (<a href="http://code.google.com/p/sympy/wiki/Changes">zmiany</a>)<br/>
+<span class="date">26 wrz 2009</span> Finalna strona o <a href="http://code.google.com/p/sympy/wiki/GSoC2009">2009 Google Summer of Code w SymPy</a> została ukończona.
 </p>
   </div>
 </div>
 
 <div id="quicklinks" class="block">
-  <h3>Quick Links</h3>
+  <h3>Szybkie linki</h3>
   <div class="content">
     <p>
       <ul>
-        <li><a href="http://docs.sympy.org/">Documentation</a></li>
-        <li><a href="http://code.google.com/p/sympy/downloads/list">Downloads (source tarballs)</a></li>
-        <li><a href="http://code.google.com/p/sympy/wiki/DownloadInstallation?tm=2">Downloads (packages for distributions)</a></li>
-        <li><a href="http://groups.google.com/group/sympy">Mailinglist</a></li>
-        <li><a href="http://github.com/sympy/sympy">Source code</a></li>
+        <li><a href="http://docs.sympy.org/">Dokumentacja</a></li>
+        <li><a href="http://code.google.com/p/sympy/downloads/list">Pobieranie (źródłowe tarballe)</a></li>
+        <li><a href="http://code.google.com/p/sympy/wiki/DownloadInstallation?tm=2">Pobieranie (pakiety dla dystrybucji)</a></li>
+        <li><a href="http://groups.google.com/group/sympy">Lista mailingowa</a></li>
+        <li><a href="http://github.com/sympy/sympy">Kod źródłowy</a></li>
         <li><a href="http://code.google.com/p/sympy/issues/list">Issues tracker</a></li>
-        <li><a href="http://code.google.com/p/sympy/">Google Code Page</a></li>
+        <li><a href="http://code.google.com/p/sympy/">Strona w Google Code</a></li>
         <li><a href="http://github.com/sympy/sympy/wiki">Wiki</a></li>
-        <li><a href="http://live.sympy.org/">Try SymPy online now</a></li>
-        <li><a href="http://sympy.blogspot.com/">Official SymPy blog</a></li>
-        <li><a href="http://planet.sympy.org/">Planet SymPy</a></li>
+        <li><a href="http://live.sympy.org/">Przetestuj SymPy online</a></li>
+        <li><a href="http://sympy.blogspot.com/">Oficjalny blog SymPy</a></li>
+        <li><a href="http://planet.sympy.org/">Planeta SymPy</a></li>
       </ul>
     </p>
   </div>
