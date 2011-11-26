@@ -1,83 +1,84 @@
 {% from "macros" import video %}
 {% extends "base.html" %}
 
-{% block title %}Development{% endblock %}
+{% block title %}Vývoj{% endblock %}
 
 {% block content %}
 
-<h2 class="title">Development</h2>
+<h2 class="title">Vývoj</h2>
 <div class="inner">
 <p class="first">
-We are interested in any contribution. There are many ways how you can
-contribute:
+Máme zájem o jakoukoliv pomoc. Je spoustu způsobů, jak přispět:
 <ul>
     <li>
-If you wrote anything interesting using SymPy, please send us a patch with the
-code (see below for more information).
+Pokud jste napsali cokoliv zajímavého s pomocí SymPy, prosím pošlete nám patch
+s tímto kódem (více informací níže).
 </li>
 
 <li>
-If you found a bug (or just want to let us know what you think), tell us on the
-<a href="http://groups.google.com/group/sympy">mailinglist</a>. You can also
-add a bug report (or a comment) into the <a href="http://code.google.com/p/sympy/issues/list">issues</a>.
+Pokud jste objevili chybu (nebo nám jednoduše chcete dát vědět svůj názor),
+řekněte nám ho na
+<a href="http://groups.google.com/group/sympy">mailinglistu</a>.
+Můžete také přidat hlášení chyby (nebo komentář)
+k <a href="http://code.google.com/p/sympy/issues/list">problémům</a>.
 </li>
-<li>You can blog about how you use SymPy.</li>
-<li>You can help us write documentation (just send us a patch).</li>
-<li>You can help people on our <a href="http://groups.google.com/group/sympy">mailinglist</a>.</li>
-<li>You can help with reviewing patches.</li>
-<li>You can send us patches with bug fixes or new features.</li>
+<li>Můžete blogovat o tom, jak používáte SymPy.</li>
+<li>Můžete nám pomoci psát dokumentaci (stačí poslat patch).</li>
+<li>Můžete pomoci lidem v našem <a href="http://groups.google.com/group/sympy">mailinglistu</a>.</li>
+<li>Můžete pomoci s revizí patchů.</li>
+<li>Můžete nám poslat patche s opravami chyb nebo novými funkcemi.</li>
 </ul>
 </p>
 <p>
-The best way to contribute code or documentation is to send us a patch.
+Nejlepší způsob, jak přispět ke kódu nebo k dokumentaci je posláním patche.
 </p>
 </div>
 
-<h2 class="title">How to Send a Patch</h2>
+<h2 class="title">Jak poslat Patch</h2>
 <div class="inner">
 <p class="first">
-The best way is to send a github pull request
-against the <a href="http://github.com/sympy/sympy">sympy/sympy</a> repository.
-We'll review it and push it in.
+Nejlepší způsob je poslat na github pull request na
+<a href="http://github.com/sympy/sympy">sympy/sympy</a> repozitář. My ho
+zkontrolujeme a přidáme.
 </p>
 
 <p>
-If you need help with git, github, pull requests, patches, coding, SymPy or
-anything related, just send us an email to the mailinglist
-or ask on IRC (our channel is <a href="irc://irc.freenode.net/sympy">#sympy at freenode</a>), we'll help.
-Also, you can read our instructions
+Pokud potřebujete pomoci s gitem, githubem, pull requesty, patchy,
+vytvářením kódu, SymPy nebo čímkoliv souvisejícím, jednoduše napište email na
+mailinglistu nebo se zeptejte na IRC (náš kanál je
+<a href="irc://irc.freenode.net/sympy">#sympy at freenode</a>), my pomůžeme.
+Také si můžete přečíst intrukce,
 <a href="https://github.com/sympy/sympy/wiki/Development-workflow">
-how to prepare patches</a> using git and github.
+jak připravovat patche</a> s použitím gitu a githubu.
 </p>
 
 <p>
-The github pull request is a preferred method, as that makes it easy for us to
-review and push the code in. That said,
-you can also clone the latest git repository (see the link on the right), prepare a branch with
-your code, upload it somewhere (for example <a
-    href="http://github.com/">github</a>) and send us a link to the <a
-    href="http://groups.google.com/group/sympy-patches">sympy-patches</a>
-mailinglist, or you can even send us raw patches --- but it will be more work
-for us to integrate it.
+Github pull request je námi preferovaný způsob, protože je pro nás jednoduché
+zkontrolovat a zapojit váš kód. Můžete ovšem také naklonovat nejnovější
+git repozitář (viz odkaz vpravo), připravit úsek s vaším kódem, nahrát ho někam
+(například na <a href="http://github.com/">github</a>) a poslat nám odkaz na
+<a href="http://groups.google.com/group/sympy-patches">sympy-patches</a>
+mailinglist nebo nám můžete dokonce poslat přímo samotný patch --- ale dá nám
+pak více práce ho zapojit.
 </p>
 
 <p>
-SymPy has a broad development team:
+SymPy má početný vývojářský tým:
 <a href="
 http://docs.sympy.org/0.7.1/aboutus.html#sympy-development-team
 ">
 http://docs.sympy.org/0.7.1/aboutus.html#sympy-development-team
-</a>, send us a patch and your name will appear there too.
+</a>, pošlete nám patch a vaše jméno se na něm také objeví.
 </p>
 
 </div>
-<h2 class="title">Sources of the Webpages</h2>
+<h2 class="title">Zdrojový kód Webových stránek</h2>
 <div class="inner">
 <p class="first">
-Sources of these webpages are at:
+Zdrojový kód těchto webových stránek je na:
 <a href="http://github.com/sympy/sympy.github.com">http://github.com/sympy/sympy.github.com</a>
 </p>
-Feel free to send us patches with improvements.
+Nezdráhejte se nám poslat patch s vylepšeními.
 </div>
 
 {% endblock %}
@@ -86,14 +87,14 @@ Feel free to send us patches with improvements.
 {% block sidebar %}
 
 <div class="block">
-  <h3>Git Repository</h3>
+  <h3>Git Repozitář</h3>
   <div class="content">
     <p>
-    Main git repository:<br/>
+    Hlavní git repozitář:<br/>
     <code>git clone git://github.com/sympy/sympy.git</code>
     </p>
     <p>
-    Online access: <a href="http://github.com/sympy/sympy">github.com/sympy/sympy</a>
+    Online přístup: <a href="http://github.com/sympy/sympy">github.com/sympy/sympy</a>
     </p>
   </div>
 </div>
