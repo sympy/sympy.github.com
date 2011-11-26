@@ -4,7 +4,7 @@
 
 a:link, a:visited, a:hover, a:active { color: #66AACC; } 
 a:link, a:visited, a:active { text-decoration: none; }
-a:hover { text-decoration: underline; }
+a:hover { font-size:125%; text-decoration: underline; }
 h1, h2, h3 { color: #3B5526; }
 a { -moz-outline: none; }
 
@@ -44,33 +44,25 @@ hr {
 #main .block .content {
   background: #FFF;
   padding-top: 1px;
+-moz-border-radius-topleft: 4px;
+-webkit-border-top-left-radius: 4px;
+-moz-border-radius-topright: 4px;
+-webkit-border-top-right-radius: 4px;
+-moz-border-radius-bottomleft: 4px;
+-webkit-border-bottom-left-radius: 4px;
+-moz-border-radius-bottomright: 4px;
+-webkit-border-bottom-right-radius: 4px;
+-moz-box-shadow: 10px 10px 5px #888;
+-webkit-box-shadow: 10px 10px 5px #888;
+box-shadow: 10px 10px 5px #888;
 }
 
 #main .block .content h2 {
   margin-left: 15px;
 }
 
-#main .content { border: 1px solid #81B953;}
-
-#sidebar .block {
-  background: #FFF;
-  border: none;
-}
-
-#sidebar h3 {  
-  padding: 8px 12px;
-  background: #3B5526;
-  color: #FFF;
-  font-weight: bold;
-  border-bottom: 5px solid #81B953;
-}
-
-
-#sidebar ul li a:link,
-#sidebar ul li a:visited {
-  background: #FFF;
-  border-bottom: 1px solid #F0F0EE;
-}
+#main .content {
+ border: 1px solid #81B953;}
 
 #main-navigation {
   background: #3B5526;
@@ -329,3 +321,165 @@ ul.list li .item .avatar {
     float:left;
     margin-right: 8px;
 }
+
+
+			#mainpage {
+			min-width:1960px;
+			min-height:500px;
+			padding:0 20px;
+			margin-top:20px;
+			}
+			#left {
+			padding:6px 6px 6px 6px;
+			background-color:white;
+			min-width:500px;
+			max-width:60%;
+			float:left;
+			border-color:#81B953;
+			border-width:2px;
+			border-style:solid;
+			margin: 4px 0px 4px 4px;
+			-moz-border-radius-topleft: 4px;
+			-webkit-border-top-left-radius: 4px;
+			-moz-border-radius-topright: 4px;
+			-webkit-border-top-right-radius: 4px;
+			-moz-border-radius-bottomleft: 4px;
+			-webkit-border-bottom-left-radius: 4px;
+			-moz-border-radius-bottomright: 4px;
+			-webkit-border-bottom-right-radius: 4px;
+			-moz-box-shadow: 10px 10px 5px #888;
+			-webkit-box-shadow: 10px 10px 5px #888;
+			box-shadow: 10px 10px 5px #888;
+			}
+			#right {
+			padding:6px 6px 6px 6px;
+			overflow:hidden;
+			border-color:#81B953;
+			border-width:1px;
+			border-style:solid;
+			background-color:white;
+			max-width:28%;
+			float:right;
+			margin-top:-712px;
+			margin-right:5px;
+  			-moz-border-radius-topleft: 4px;
+  			-webkit-border-top-left-radius: 4px;
+  			-moz-border-radius-topright: 4px;
+  			-webkit-border-top-right-radius: 4px;
+  			-moz-border-radius-bottomleft: 4px;
+  			-webkit-border-bottom-left-radius: 4px;
+  			-moz-border-radius-bottomright: 4px;
+  			-webkit-border-bottom-right-radius: 4px;
+			-moz-box-shadow: 10px 10px 5px #888;
+			-webkit-box-shadow: 10px 10px 5px #888;
+			box-shadow: 10px 10px 5px #888;
+			}
+			#about {
+			padding: 0px 5px 5px 5px;
+			height:35px;
+			overflow:hidden;
+			-moz-transition: all .5s ease-out;
+			-webkit-transition: all .5s ease-out;
+			-o-transition: all .5s ease-out;
+			transition: all .5s ease-out;
+			border-style:solid;
+			border-width:1px;
+			background-color:#e4ebe4;
+			  -moz-border-radius-topleft: 4px;
+  			-webkit-border-top-left-radius: 4px;
+  			-moz-border-radius-topright: 4px;
+  			-webkit-border-top-right-radius: 4px;
+  			-moz-border-radius-bottomleft: 4px;
+  			-webkit-border-bottom-left-radius: 4px;
+  			-moz-border-radius-bottomright: 4px;
+  			-webkit-border-bottom-right-radius: 4px;
+			}
+			#about:hover {
+			height:80px;
+			overflow:hidden;
+			       -moz-transition: all .5s ease-in;
+    			-webkit-transition: all .5s ease-in;
+    			-o-transition: all .5s ease-in;
+    			transition: all .5s ease-in;
+			}
+			#other_shells {
+			padding: 0px 5px 5px 5px;
+			height:35px;
+			overflow:hidden;
+			-moz-transition: all .5s ease-out;
+			-webkit-transition: all .5s ease-out;
+			-o-transition: all .5s ease-out;
+			transition: all .5s ease-out;
+			border-style:solid;
+			border-width:1px;
+			background-color:#e4ebe4;
+			  -moz-border-radius-topleft: 4px;
+  			-webkit-border-top-left-radius: 4px;
+  			-moz-border-radius-topright: 4px;
+  			-webkit-border-top-right-radius: 4px;
+  			-moz-border-radius-bottomleft: 4px;
+  			-webkit-border-bottom-left-radius: 4px;
+  			-moz-border-radius-bottomright: 4px;
+  			-webkit-border-bottom-right-radius: 4px;
+			}
+			#other_shells:hover {
+			height:150px;
+			overflow:hidden;
+			       -moz-transition: all .5s ease-in;
+    			-webkit-transition: all .5s ease-in;
+    			-o-transition: all .5s ease-in;
+    			transition: all .5s ease-in;
+			}
+			#example {
+			padding: 0px 5px 5px 5px;
+			height:35px;
+			overflow:hidden;
+			-moz-transition: all .5s ease-out;
+			-webkit-transition: all .5s ease-out;
+			-o-transition: all .5s ease-out;
+			transition: all .5s ease-out;
+			border-style:solid;
+			border-width:1px;
+			background-color:#e4ebe4;
+			-moz-border-radius-topleft: 4px;
+  			-webkit-border-top-left-radius: 4px;
+  			-moz-border-radius-topright: 4px;
+  			-webkit-border-top-right-radius: 4px;
+  			-moz-border-radius-bottomleft: 4px;
+  			-webkit-border-bottom-left-radius: 4px;
+  			-moz-border-radius-bottomright: 4px;
+  			-webkit-border-bottom-right-radius: 4px;
+			}
+			#example:hover {
+			height:215px;
+			overflow:hidden;
+			       -moz-transition: all .5s ease-in;
+    			-webkit-transition: all .5s ease-in;
+   			-o-transition: all .5s ease-in;
+    			transition: all .5s ease-in;
+	}
+	.right_title {
+	font-size:35px;
+	font-weight:bold;
+	font-family: "Raleway";
+	text-align:center;
+	margin-bottom:15px;
+	}
+	.t {
+	float:left;
+	}
+	.arrow {
+	float:right;
+	text-align:center;
+	margin-right:10px;
+	margin-top:7.5px;
+	}
+	.content {
+	margin-top:45px;
+	}
+	#w3_validator {
+	position:fixed;
+	bottom:5px;
+	right:5px;
+	}
+			
