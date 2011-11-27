@@ -75,7 +75,7 @@ msgid ""
 "code (see below for more information)"
 msgstr ""
 "Pokud jste napsali cokoliv zajímavého s pomocí SymPy, prosím pošlete nám "
-"patch s tímto kódem (více informací níže)."
+"patch s tímto kódem (více informací níže)"
 
 #: templates/development.html:20
 msgid ""
