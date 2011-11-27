@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2011-11-27 12:26-0800\n"
-"PO-Revision-Date: 2011-11-27 14:26-0800\n"
+"POT-Creation-Date: 2011-11-27 14:31-0800\n"
+"PO-Revision-Date: 2011-11-27 14:34-0800\n"
 "Last-Translator: \n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -390,6 +390,14 @@ msgstr "Vydaná verze %(v)s"
 #: templates/index.html:86
 msgid "changes"
 msgstr "změny"
+
+#: templates/index.html:83
+msgid "SymPy is accepted as a <a href=\"http://www.google-melange.com/gsoc/org/show/google/gsoc2011/sympy\">mentoring organization</a> for Google Summer of Code 2011"
+msgstr "SymPy je přijato jako <a href=\"http://www.google-melange.com/gsoc/org/show/google/gsoc2011/sympy\">mentorující organizace</a> pro Google Summer of Code 2011"
+
+#: templates/index.html:84
+msgid "New website launched at sympy.org"
+msgstr "Spuštěn nový web na sympy.org"
 
 #: templates/index.html:87
 #, python-format
