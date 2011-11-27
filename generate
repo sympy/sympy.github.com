@@ -23,7 +23,7 @@ templates = [
     "development.html",
     ]
 
-for language in ["en", "cs"]:
+for language in ["en", "cs", "de"]:
     print "Generating '%s' pages" % language
 
     if language == "en":
