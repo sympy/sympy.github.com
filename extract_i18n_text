@@ -1,0 +1,5 @@
+#! /bin/sh
+
+set -e
+
+pybabel -v extract -F babel.cfg . -o i18n/sympy.org.pot
