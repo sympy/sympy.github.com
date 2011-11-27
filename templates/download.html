@@ -1,36 +1,36 @@
 {% from "macros" import video %}
 {% extends "base.html" %}
 
-{% block title %}Download{% endblock %}
+{% block title %}{% trans %}Download{% endtrans %}{% endblock %}
 
 {% block content %}
 
-<h2 class="title">Source Tarballs (Releases)</h2>
+<h2 class="title">{% trans %}Source Tarballs (Releases){% endtrans %}</h2>
 <div class="inner">
 <p class="first">
-<a href="http://code.google.com/p/sympy/downloads/list">Downloads</a>
-(at Google Code page)
+<a href="http://code.google.com/p/sympy/downloads/list">{% trans %}Downloads{% endtrans %}</a>
+({% trans %}at Google Code page{% endtrans %})
 </p>
 </div>
 
-<h2 class="title">Packages for Distributions</h2>
+<h2 class="title">{% trans %}Packages for Distributions{% endtrans %}</h2>
 <div class="inner">
 <p class="first">
-<a href="http://code.google.com/p/sympy/wiki/DownloadInstallation?tm=2">Downloads</a>
-(at Google Code page)
+<a href="http://code.google.com/p/sympy/wiki/DownloadInstallation?tm=2">{% trans %}Downloads{% endtrans %}</a>
+({% trans %}at Google Code page{% endtrans %})
 </p>
 </div>
 
-<h2 class="title">Git Version</h2>
+<h2 class="title">{% trans %}Git Version{% endtrans %}</h2>
 <div class="inner">
 <p class="first">
-Main git repository:
+{% trans %}Main git repository{% endtrans %}:
 <pre>
 git clone git://github.com/sympy/sympy.git
 </pre>
 </p>
 <p>
-Browse online:
+{% trans %}Browse online{% endtrans %}:
 <a href="http://github.com/sympy/sympy">github.com/sympy/sympy</a>
 </p>
 </div>
