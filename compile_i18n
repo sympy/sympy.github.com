@@ -1,0 +1,6 @@
+#! /bin/sh
+
+set -e
+
+cd i18n
+msgfmt cs.po -o cs.mo
