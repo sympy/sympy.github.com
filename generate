@@ -2,6 +2,7 @@
 
 import os
 import hashlib
+from gettext import gettext, ngettext
 
 from django.utils.encoding import smart_str
 from jinja2 import Environment, FileSystemLoader
@@ -9,8 +10,10 @@ from jinja2 import Environment, FileSystemLoader
 def md5_filter(value):
     return hashlib.md5(value).hexdigest()
 
-env = Environment(loader=FileSystemLoader('templates'))
+env = Environment(loader=FileSystemLoader('templates'),
+        extensions=['jinja2.ext.i18n'])
 env.filters["md5"] = md5_filter
+env.install_gettext_callables(gettext, ngettext)
 
 templates = [
     "index.html",
