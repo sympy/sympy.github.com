@@ -26,5 +26,5 @@ for template in templates:
     print "Processing '%s'" % template
     name = os.path.splitext(template)[0]
     s = t.render({name + "_active": "active"})
-    s = smart_str(s)
+    s = smart_str(s) + "\n"
     open(template, "w").write(s)
