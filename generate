@@ -2,7 +2,7 @@
 
 import os
 import hashlib
-from gettext import gettext, ngettext
+from gettext import GNUTranslations
 
 from django.utils.encoding import smart_str
 from jinja2 import Environment, FileSystemLoader
@@ -12,8 +12,8 @@ def md5_filter(value):
 
 env = Environment(loader=FileSystemLoader('templates'),
         extensions=['jinja2.ext.i18n'])
+env.install_null_translations()
 env.filters["md5"] = md5_filter
-env.install_gettext_callables(gettext, ngettext)
 
 templates = [
     "index.html",
@@ -24,6 +24,8 @@ templates = [
     "development.html",
     ]
 
+# First generate the English pages:
+
 for template in templates:
     t = env.get_template(template)
     print "Processing '%s'" % template
@@ -31,3 +33,18 @@ for template in templates:
     s = t.render({name + "_active": "active"})
     s = smart_str(s)
     open(template, "w").write(s)
+
+# Now generate the translated pages:
+
+# Setup the i18n:
+translations = GNUTranslations(open("i18n/cs.mo"))
+env.install_gettext_translations(translations)
+print "Generating '%s' translation" % "cs"
+
+for template in templates:
+    t = env.get_template(template)
+    print "    Processing '%s'" % template
+    name = os.path.splitext(template)[0]
+    s = t.render({name + "_active": "active"})
+    s = smart_str(s)
+    open(os.path.join("cs", template), "w").write(s)
