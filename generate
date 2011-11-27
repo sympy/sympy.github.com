@@ -12,7 +12,6 @@ def md5_filter(value):
 
 env = Environment(loader=FileSystemLoader('templates'),
         extensions=['jinja2.ext.i18n'])
-env.install_null_translations()
 env.filters["md5"] = md5_filter
 
 templates = [
@@ -24,27 +23,21 @@ templates = [
     "development.html",
     ]
 
-# First generate the English pages:
+for language in ["en", "cs"]:
+    print "Generating '%s' pages" % language
 
-for template in templates:
-    t = env.get_template(template)
-    print "Processing '%s'" % template
-    name = os.path.splitext(template)[0]
-    s = t.render({name + "_active": "active"})
-    s = smart_str(s)
-    open(template, "w").write(s)
+    if language == "en":
+        # The templates are written in English, so they don't need to be
+        # translated
+        env.install_null_translations()
+    else:
+        translations = GNUTranslations(open("i18n/%s.mo" % language))
+        env.install_gettext_translations(translations)
 
-# Now generate the translated pages:
-
-# Setup the i18n:
-translations = GNUTranslations(open("i18n/cs.mo"))
-env.install_gettext_translations(translations)
-print "Generating '%s' translation" % "cs"
-
-for template in templates:
-    t = env.get_template(template)
-    print "    Processing '%s'" % template
-    name = os.path.splitext(template)[0]
-    s = t.render({name + "_active": "active"})
-    s = smart_str(s)
-    open(os.path.join("cs", template), "w").write(s)
+    for template in templates:
+        t = env.get_template(template)
+        print "    Processing '%s'" % template
+        name = os.path.splitext(template)[0]
+        s = t.render({name + "_active": "active"})
+        s = smart_str(s)
+        open(os.path.join(language, template), "w").write(s)
