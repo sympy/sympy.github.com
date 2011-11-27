@@ -1,16 +1,16 @@
 {% from "macros" import video %}
 {% extends "base.html" %}
 
-{% block title %}Documentation{% endblock %}
+{% block title %}{% trans %}Documentation{% endtrans %}{% endblock %}
 
 {% block content %}
 
-<h2 class="title">Documentation</h2>
+<h2 class="title">{% trans %}Documentation{% endtrans %}</h2>
 <div class="inner">
 <p class="first">
-The documentation is maintained using the <a href="http://sphinx.pocoo.org/">Sphinx</a> Python documentation generator.
+{% trans url='http://sphinx.pocoo.org/' %}The documentation is maintained using the <a href="{{ url }}">Sphinx</a> Python documentation generator.{% endtrans %}
 
-You can find it at: <a href="http://docs.sympy.org/">docs.sympy.org</a>
+{% trans %}You can find it at{% endtrans %}: <a href="http://docs.sympy.org/">docs.sympy.org</a>
 </p>
 </div>
 

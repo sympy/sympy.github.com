@@ -1,11 +1,11 @@
 {% from "macros" import video %}
 {% extends "base.html" %}
 
-{% block title %}Screenshots{% endblock %}
+{% block title %}{% trans %}Screenshots{% endtrans %}{% endblock %}
 
 {% block content %}
 
-<h2 class="title">Python Session</h2>
+<h2 class="title">{% trans %}Python Session{% endtrans %}</h2>
 <div class="inner">
 <p class="first">
 <pre>
@@ -18,7 +18,7 @@
 </p>
 </div>
 
-<h2 class="title">ISymPy Session</h2>
+<h2 class="title">{% trans %}ISymPy Session{% endtrans %}</h2>
 <div class="inner">
 <p class="first">
 <pre>
