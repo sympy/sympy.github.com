@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>{% block title %}Repositories{% endblock %}</title>
+    <title>{% block title %}{% endblock %}</title>
     <link rel="stylesheet" href="../media/base.css" type="text/css" media="screen" />
     <link rel="stylesheet" id="current-theme" href="../media/style.css" type="text/css" media="screen" />
 </head>
@@ -51,11 +51,11 @@
               &nbsp;
               &nbsp;
               &nbsp;
-              This page is open source. Fork <a href="https://github.com/sympy/sympy.github.com">the project on GitHub</a> to edit it.
+              {% trans url='https://github.com/sympy/sympy.github.com' %}This page is open source. Fork <a href="{{ url }}">the project on GitHub</a> to edit it.{% endtrans %}
               &nbsp;
               &nbsp;
               &nbsp;
-              Languages (beta):
+              {% trans %}Languages{% endtrans %} (beta):
               <a href="../cs/index.html">[Cs]</a>,
               <a href="../de/index.html">[De]</a>,
               <a href="../en/index.html">[En]</a>
