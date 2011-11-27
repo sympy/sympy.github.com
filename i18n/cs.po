@@ -37,16 +37,16 @@ msgstr "Podpora"
 
 #: templates/base.html:33 templates/screenshots.html:4
 msgid "Screenshots"
-msgstr ""
+msgstr "Screenshoty"
 
 #: templates/base.html:34 templates/development.html:4
 #: templates/development.html:8
 msgid "Development"
-msgstr ""
+msgstr "Vývoj"
 
 #: templates/base.html:35
 msgid "Online Shell"
-msgstr ""
+msgstr "Online Konzole"
 
 #: templates/base.html:54
 #, python-format
@@ -54,16 +54,19 @@ msgid ""
 "This page is open source. Fork <a href=\"%(url)s\">the project on GitHub</a> "
 "to edit it."
 msgstr ""
+"Tato stránka je open source. Založte fork <a href=\"%(url)s\">projektu na "
+"GitHubu</a> k její editaci."
 
 #: templates/base.html:58
 msgid "Languages"
-msgstr ""
+msgstr "Jazyky"
 
 #: templates/development.html:11
 msgid ""
 "We are interested in any contribution. There are many ways how you can\n"
 "contribute"
 msgstr ""
+"Máme zájem o jakoukoliv pomoc. Je spousta způsobů, jak přispět"
 
 #: templates/development.html:15
 msgid ""
@@ -71,6 +74,8 @@ msgid ""
 "the\n"
 "code (see below for more information)"
 msgstr ""
+"Pokud jste napsali cokoliv zajímavého s pomocí SymPy, prosím pošlete nám "
+"patch s tímto kódem (více informací níže)."
 
 #: templates/development.html:20
 msgid ""
