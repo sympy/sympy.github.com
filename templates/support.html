@@ -1,14 +1,14 @@
 {% from "macros" import video %}
 {% extends "base.html" %}
 
-{% block title %}Support{% endblock %}
+{% block title %}{% trans %}Support{% endtrans %}{% endblock %}
 
 {% block content %}
 
-<h2 class="title">General</h2>
+<h2 class="title">{% trans %}General{% endtrans %}</h2>
 <div class="inner">
 <p class="first">
-Below you can find several ways to get help:
+{% trans %}Below you can find several ways to get help{% endtrans %}:
 </p>
 <p>
 <ul>
@@ -21,7 +21,7 @@ Below you can find several ways to get help:
 </p>
 </div>
 
-<h2 class="title">More Specific</h2>
+<h2 class="title">{% trans %}More Specific{% endtrans %}</h2>
 <div class="inner">
 <p class="first">
 <ul>
