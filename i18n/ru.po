@@ -1,0 +1,502 @@
+# Translations template for PROJECT.
+# Copyright (C) 2011 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2011-11-27 14:31-0800\n"
+"PO-Revision-Date: 2011-11-30 23:54+0200\n"
+"Last-Translator: kosyo\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 0.9.6\n"
+
+#: templates/base.html:29
+msgid "Main Page"
+msgstr "Главная страница"
+
+#: templates/base.html:30
+#: templates/download.html:4
+msgid "Download"
+msgstr "Скачать"
+
+#: templates/base.html:31
+#: templates/docs.html:4
+#: templates/docs.html:8
+#: templates/index.html:97
+msgid "Documentation"
+msgstr "Документация"
+
+#: templates/base.html:32
+#: templates/support.html:4
+msgid "Support"
+msgstr "Поддержка"
+
+#: templates/base.html:33
+#: templates/screenshots.html:4
+msgid "Screenshots"
+msgstr "Скриншоты"
+
+#: templates/base.html:34
+#: templates/development.html:4
+#: templates/development.html:8
+msgid "Development"
+msgstr "Разработка"
+
+#: templates/base.html:35
+msgid "Online Shell"
+msgstr "Интернет терминал"
+
+#: templates/base.html:54
+#, python-format
+msgid "This page is open source. Fork <a href=\"%(url)s\">the project on GitHub</a> to edit it."
+msgstr "Этой страницы явлется отвореным кодом. Посмотрите <a href=\"%(url)s\">проект GitHub</a> для редактироват его."
+
+#: templates/base.html:58
+msgid "Languages"
+msgstr "Языки"
+
+#: templates/development.html:11
+msgid ""
+"We are interested in any contribution. There are many ways how you can\n"
+"contribute"
+msgstr ""
+"Мы заинтересованные всё содействие. Есть много способы что бы\n"
+"содействоват"
+
+#: templates/development.html:15
+msgid ""
+"If you wrote anything interesting using SymPy, please send us a patch with the\n"
+"code (see below for more information)"
+msgstr ""
+"Если вы сделаете что-то интересное използаованием SymPy, пожалуйста отправте нам патча\n"
+"кодом (посмотрите ниже для более информации)"
+
+#: templates/development.html:20
+msgid ""
+"If you found a bug (or just want to let us know what you think), tell us on the\n"
+"<a href=\"http://groups.google.com/group/sympy\">mailinglist</a>"
+msgstr ""
+"Если вы нашли ошибку (или просто хотите сказать нам что вы думаете), скажите нам\n"
+"<a href=\"http://groups.google.com/group/sympy\">рассылку</a>"
+
+#: templates/development.html:21
+msgid ""
+"You can also\n"
+"add a bug report (or a comment) into the <a href=\"http://code.google.com/p/sympy/issues/list\">issues</a>."
+msgstr ""
+"Вы тоже можно\n"
+"написать отчет для ошибки (или комментарий) в <a href=\"http://code.google.com/p/sympy/issues/list\">список проблемов</a>."
+
+#: templates/development.html:24
+msgid "You can blog about how you use SymPy"
+msgstr "Вы можно посмотрите в блогу как ползуется SymPy"
+
+#: templates/development.html:25
+msgid "You can help us write documentation (just send us a patch)"
+msgstr "Вы можно помагите нам с писанием документации (просто отправте нам патча)"
+
+#: templates/development.html:26
+msgid "You can help people on our <a href=\"http://groups.google.com/group/sympy\">mailinglist</a>"
+msgstr "Вы можно помогите люди в <a href=\"http://groups.google.com/group/sympy\">нашей рассылки</a>"
+
+#: templates/development.html:27
+msgid "You can help with reviewing patches"
+msgstr "Вы можно помагите с обзором патчей"
+
+#: templates/development.html:28
+msgid "You can send us patches with bug fixes or new features"
+msgstr "Вы можно отправит нам патча с исправленами ошибкы или новые функции"
+
+#: templates/development.html:32
+msgid "The best way to contribute code or documentation is to send us a patch"
+msgstr "Самый подходящий способ содействоват нам для кода или документации отправит нам патч"
+
+#: templates/development.html:36
+msgid "How to Send a Patch"
+msgstr "Как отправить патч"
+
+#: templates/development.html:39
+msgid ""
+"The best way is to send a github pull request\n"
+"against the <a href=\"http://github.com/sympy/sympy\">sympy/sympy</a> repository.\n"
+"We'll review it and push it in."
+msgstr ""
+"Самый подходяший способ отправить github запросой\n"
+"<a href=\"http://github.com/sympy/sympy\">sympy/sympy</a>для хранилищей.\n"
+"Мы рассмотрим ей и нажмите на него."
+
+#: templates/development.html:45
+msgid ""
+"If you need help with git, github, pull requests, patches, coding, SymPy or\n"
+"anything related, just send us an email to the mailinglist\n"
+"or ask on IRC (our channel is <a href=\"irc://irc.freenode.net/sympy\">#sympy at freenode</a>), we'll help."
+msgstr ""
+"Если вы хотите помощь для git, github, запросы, патчы, кодирование, SymPy или\n"
+"что-то связано, просто отправте нам электронной почти на рассылку\n"
+"или спросите на IRC (наш канал находится <a href=\"irc://irc.freenode.net/sympy\">#sympy на freenode</a>), мы поможем вам."
+
+#: templates/development.html:48
+msgid ""
+"Also, you can read our instructions\n"
+"<a href=\"https://github.com/sympy/sympy/wiki/Development-workflow\">\n"
+"how to prepare patches</a> using git and github."
+msgstr ""
+"Так же вы можно прочитать инструкции\n"
+"<a href=\"https://github.com/sympy/sympy/wiki/Development-workflow\">\n"
+"как  сделаем патча</a> изпользоват git и github."
+
+#: templates/development.html:54
+msgid ""
+"The github pull request is a preferred method, as that makes it easy for us to\n"
+"review and push the code in. That said,\n"
+"you can also clone the latest git repository (see the link on the right), prepare a branch with\n"
+"your code, upload it somewhere (for example <a\n"
+"    href=\"http://github.com/\">github</a>) and send us a link to the <a\n"
+"    href=\"http://groups.google.com/group/sympy-patches\">sympy-patches</a>\n"
+"mailinglist, or you can even send us raw patches --- but it will be more work\n"
+"for us to integrate it."
+msgstr ""
+"Github тянуть запрос привилегированный метод, это делает легко нам для\n"
+"обзора и задвинуть код внутри.  Это означает что вы можно клонировать последное git хранилище (посмотрите ссылка справа), подготовить ветки с\n"
+"вашей коде, загрузить его где-то (примерна <a\n"
+"    href=\"http://github.com/\">github</a>) и отправте нам  <a\n"
+"    href=\"http://github.com/\">github</a>) и отправте нам  <a\n"
+"    href=\"http://github.com/\">github</a>)и отправте нам ссылку  <a\n"
+"    href=\"http://groups.google.com/group/sympy-patches\">sympy патчы</a>\n"
+"рассылку или ты можно отправить сырые патчи --- но это будет больше работы\n"
+"для нам, что бы интегрировать её."
+
+#: templates/development.html:65
+msgid ""
+"SymPy has a broad development team:\n"
+"<a href=\"\n"
+"http://docs.sympy.org/0.7.1/aboutus.html#sympy-development-team\n"
+"\">\n"
+"http://docs.sympy.org/0.7.1/aboutus.html#sympy-development-team\n"
+"</a>, send us a patch and your name will appear there too."
+msgstr "Github "
+
+#: templates/development.html:74
+msgid "Sources of the Webpages"
+msgstr "Изходящие код страницы"
+
+#: templates/development.html:77
+msgid "Sources of these webpages are at"
+msgstr "Изходящие коды этой страницы находится на"
+
+#: templates/development.html:80
+msgid "Feel free to send us patches with improvements."
+msgstr "Не стесняитесь отправить нам пач с подобрениям."
+
+#: templates/development.html:89
+msgid "Git Repository"
+msgstr "Git хранилище"
+
+#: templates/development.html:92
+#: templates/download.html:27
+msgid "Main git repository"
+msgstr "Главной git хранилище"
+
+#: templates/development.html:96
+msgid "Online access"
+msgstr "Интернет доступа"
+
+#: templates/docs.html:11
+#, python-format
+msgid "The documentation is maintained using the <a href=\"%(url)s\">Sphinx</a> Python documentation generator."
+msgstr "Документация поддерживает използования <a href=\"%(url)s\">Sphinx</a> Python генератор документации."
+
+#: templates/docs.html:13
+msgid "You can find it at"
+msgstr "Ты можно наити на"
+
+#: templates/download.html:8
+msgid "Source Tarballs (Releases)"
+msgstr "архивы исходных текстов (релизы)"
+
+#: templates/download.html:11
+#: templates/download.html:19
+msgid "Downloads"
+msgstr "Загрузка"
+
+#: templates/download.html:12
+#: templates/download.html:20
+msgid "at Google Code page"
+msgstr "на Google Code страницы"
+
+#: templates/download.html:16
+msgid "Packages for Distributions"
+msgstr "пакеты для распространения"
+
+#: templates/download.html:24
+msgid "Git Version"
+msgstr "Git версии"
+
+#: templates/download.html:33
+msgid "Browse online"
+msgstr "Обзор онлайн"
+
+#: templates/index.html:8
+msgid "About"
+msgstr "Относительно"
+
+#: templates/index.html:11
+msgid ""
+"SymPy is a Python library for symbolic mathematics. It aims to\n"
+"become a full-featured computer algebra system (CAS) while keeping the code as\n"
+"simple as possible in order to be comprehensible and easily extensible. SymPy\n"
+"is written entirely in Python and does not require any external libraries."
+msgstr ""
+"SymPy является Python библиотеку для символной математики. Её цель является\n"
+" становится полнофункциональный системы компьютерной алгебры (CAS) сохраняя этом коде\n"
+" как можно более простым для того, чтобы становится понятный и легко разширяемый. SymPy\n"
+" написаная только Python и не дают возможность включается внешние библиотекы."
+
+#: templates/index.html:19
+msgid "Features"
+msgstr "Особенности"
+
+#: templates/index.html:22
+msgid "SymPy core capabilities include:"
+msgstr "основные возможности SymPy включают:"
+
+#: templates/index.html:24
+msgid "basic arithmetics"
+msgstr "основные арифметики"
+
+#: templates/index.html:25
+msgid "basic simplification"
+msgstr "основное упрощение"
+
+#: templates/index.html:25
+#: templates/index.html:26
+#: templates/index.html:28
+#: templates/index.html:32
+#: templates/index.html:44
+msgid "like"
+msgstr "что-то подобное"
+
+#: templates/index.html:26
+msgid "expansion"
+msgstr "расширение"
+
+#: templates/index.html:27
+msgid "functions"
+msgstr "функции"
+
+#: templates/index.html:28
+msgid "complex numbers"
+msgstr "комплексных чисел"
+
+#: templates/index.html:30
+msgid "differentiation"
+msgstr "различение"
+
+#: templates/index.html:31
+msgid "taylor (laurent) series"
+msgstr "тейлора (лорана) серии"
+
+#: templates/index.html:32
+msgid "substitution"
+msgstr "подмена"
+
+#: templates/index.html:32
+msgid "or"
+msgstr "или"
+
+#: templates/index.html:34
+msgid "arbitrary precision integers, rationals and floats"
+msgstr "произвольные точные целые числа, рациональные и с  плавающей точкой"
+
+#: templates/index.html:35
+msgid "noncommutative symbols"
+msgstr "некоммутативных символовнекоммутативных символовнекоммутативных символовнекоммутативных символов"
+
+#: templates/index.html:36
+msgid "pattern matching"
+msgstr "шаблону"
+
+#: templates/index.html:40
+msgid "Then there are SymPy modules for these tasks:"
+msgstr "Тогда имеется SymPy модуль етих заданиях:"
+
+#: templates/index.html:42
+msgid ""
+"more functions (sin, cos, tan, atan, asin, acos, factorial, zeta,\n"
+"    legendre)"
+msgstr ""
+"более функции (sin, cos, tan, atan, asin, acos, factorial, zeta,\n"
+"    legendre)"
+
+#: templates/index.html:44
+msgid "limits"
+msgstr "рамки"
+
+#: templates/index.html:45
+msgid "integration using extended Risch-Norman heuristic"
+msgstr "Интеграция с использованием расширенных Риша-Нормана эвристический"
+
+#: templates/index.html:46
+msgid ""
+"polynomials (division, gcd, square free decomposition, groebner\n"
+"    bases, factorization)"
+msgstr "полиномы (деление, НОД, квадратное свободное разложение, гребнера\n"
+
+#: templates/index.html:48
+msgid ""
+"solvers (algebraic, difference and differential equations, and systems\n"
+"    of equations)"
+msgstr ""
+"решающее устройство (алгебраических, разностных и дифференциальных уравнений и системы\n"
+" уравнений)"
+
+#: templates/index.html:50
+msgid "symbolic matrices (determinants, LU decomposition...)"
+msgstr "символической матриц (детерминанты, LU разложения ...)"
+
+#: templates/index.html:51
+msgid "mpmath (multiprecision floating-point arithmetic)"
+msgstr "mpmath (мултиточный арифметики с плавающей точкой)"
+
+#: templates/index.html:52
+msgid "geometric algebra (GA)"
+msgstr "геометрическая алгебра (GA)"
+
+#: templates/index.html:53
+msgid "Pauli and Dirac algebra"
+msgstr "Паули и Дирака алгебры"
+
+#: templates/index.html:54
+msgid "quantum physics"
+msgstr "квантовая физика"
+
+#: templates/index.html:55
+msgid "geometry module"
+msgstr "модуль геометрии"
+
+#: templates/index.html:56
+msgid "plotting (2D and 3D)"
+msgstr "монтаж (2D and 3D)"
+
+#: templates/index.html:57
+msgid "code generation (C, Fortran, LaTeX)"
+msgstr "код создавать (C, Fortran, LaTeX)"
+
+#: templates/index.html:68
+msgid "Download Now"
+msgstr "Загрузить сейчас"
+
+#: templates/index.html:71
+msgid "Releases"
+msgstr "Релизы"
+
+#: templates/index.html:71
+msgid "Google Code downloads"
+msgstr "Google Code загрузка"
+
+#: templates/index.html:72
+msgid "Latest git version"
+msgstr "Последаная git версия"
+
+#: templates/index.html:78
+msgid "News"
+msgstr "Новости"
+
+#: templates/index.html:81
+#: templates/index.html:82
+#: templates/index.html:85
+#: templates/index.html:86
+#, python-format
+msgid "Version %(v)s released"
+msgstr "Выпустили %(v) версии"
+
+#: templates/index.html:81
+#: templates/index.html:82
+#: templates/index.html:85
+#: templates/index.html:86
+msgid "changes"
+msgstr "изменения"
+
+#: templates/index.html:83
+msgid "SymPy is accepted as a <a href=\"http://www.google-melange.com/gsoc/org/show/google/gsoc2011/sympy\">mentoring organization</a> for Google Summer of Code 2011"
+msgstr "SymPy воспринимается как <a href=\"http://www.google-melange.com/gsoc/org/show/google/gsoc2011/sympy\">наставническая организация</a> для Google Summer of Code 2011"
+
+#: templates/index.html:84
+msgid "New website launched at sympy.org"
+msgstr "Новый веб-сайт запущены на sympy.org"
+
+#: templates/index.html:87
+#, python-format
+msgid "Final page about the <a href=\"%(url)s\">2009 Google Summer of Code in SymPy</a> is available."
+msgstr "Окончательная страница для <a href=\"%(url)s\">2009 Google Summer of Code в SymPy</a> имеется."
+
+#: templates/index.html:93
+msgid "Quick Links"
+msgstr "Навигация"
+
+#: templates/index.html:98
+msgid "Downloads (source tarballs)"
+msgstr "Загрузка (архивы исходных текстов)"
+
+#: templates/index.html:99
+msgid "Downloads (packages for distributions)"
+msgstr "Загрузка (пакеты для распространения)"
+
+#: templates/index.html:100
+msgid "Mailinglist"
+msgstr "Рассылку"
+
+#: templates/index.html:101
+msgid "Source code"
+msgstr "Исходный код"
+
+#: templates/index.html:102
+msgid "Issues tracker"
+msgstr "Страницу с проблемами"
+
+#: templates/index.html:103
+msgid "Google Code Page"
+msgstr "Google Code страница"
+
+#: templates/index.html:104
+msgid "Wiki"
+msgstr "Уики"
+
+#: templates/index.html:105
+msgid "Try SymPy online now"
+msgstr "Попробуйте сейчас sympy"
+
+#: templates/index.html:106
+msgid "Official SymPy blog"
+msgstr "Официальный блог sympy"
+
+#: templates/index.html:107
+msgid "Planet SymPy"
+msgstr "Планета SymPy"
+
+#: templates/screenshots.html:8
+msgid "Python Session"
+msgstr "Python сессия"
+
+#: templates/screenshots.html:21
+msgid "ISymPy Session"
+msgstr "ISymPy сессия"
+
+#: templates/support.html:8
+msgid "General"
+msgstr "Главный"
+
+#: templates/support.html:11
+msgid "Below you can find several ways to get help"
+msgstr "Ниже ты можна найти несколько путя получит помощь"
+
+#: templates/support.html:24
+msgid "More Specific"
+msgstr "Более определенный"
+
