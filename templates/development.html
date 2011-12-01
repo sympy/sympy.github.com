@@ -1,83 +1,84 @@
 {% from "macros" import video %}
 {% extends "base.html" %}
 
-{% block title %}Development{% endblock %}
+{% block title %}Entwicklung{% endblock %}
 
 {% block content %}
 
-<h2 class="title">Development</h2>
+<h2 class="title">Entwicklung</h2>
 <div class="inner">
 <p class="first">
-We are interested in any contribution. There are many ways how you can
-contribute:
+Wir sind an jeder Beteiligung interessiert. Es gibt viele Möglichkeiten, etwas zu SymPy
+beizutragen:
 <ul>
     <li>
-If you wrote anything interesting using SymPy, please send us a patch with the
-code (see below for more information).
+Wenn Du Interessantes mit Hilfe von SymPy umgesetzt hast, sende uns bitte
+einen Patch mit dem Code (weitere Informationen siehe unten).
 </li>
 
 <li>
-If you found a bug (or just want to let us know what you think), tell us on the
-<a href="http://groups.google.com/group/sympy">mailinglist</a>. You can also
-add a bug report (or a comment) into the <a href="http://code.google.com/p/sympy/issues/list">issues</a>.
+Wenn Du einen Fehler gefunden hast (oder uns einfach sagen möchtest was Du denkst),
+erzähle es uns in unserer <a href="http://groups.google.com/group/sympy">Mailing List</a>.
+Außerdem kannst du unsere <a href="http://code.google.com/p/sympy/issues/list">Liste an gefundenen Fehlern</a> vervollständigen.
 </li>
-<li>You can blog about how you use SymPy.</li>
-<li>You can help us write documentation (just send us a patch).</li>
-<li>You can help people on our <a href="http://groups.google.com/group/sympy">mailinglist</a>.</li>
-<li>You can help with reviewing patches.</li>
-<li>You can send us patches with bug fixes or new features.</li>
+<li>Du kannst darüber bloggen, wie man SymPy benutzt.</li>
+<li>Du kannst uns helfen, die Dokumentation zu schreiben (sende uns einfach einen Patch).</li>
+<li>Du kannst Leuten in unserer <a href="http://groups.google.com/group/sympy">Mailing List</a> helfen.</li>
+<li>Du kannst uns helfen, die Patches zu begutachten.</li>
+<li>Du kannst uns Patches mit Fehlerkorrekturen oder neuen Features senden.</li>
 </ul>
 </p>
 <p>
-The best way to contribute code or documentation is to send us a patch.
+Am effektivsten hilfst du, indem du uns einen Patch schickst.
 </p>
 </div>
 
-<h2 class="title">How to Send a Patch</h2>
+<h2 class="title">Einsenden von Patches</h2>
 <div class="inner">
 <p class="first">
-The best way is to send a github pull request
-against the <a href="http://github.com/sympy/sympy">sympy/sympy</a> repository.
-We'll review it and push it in.
+Am besten ist es, einen github pull request an das <a href="http://github.com/sympy/sympy">sympy/sympy</a>
+Repository zu senden.
+Wir werden ihn dann begutachten und einfügen.
 </p>
 
 <p>
-If you need help with git, github, pull requests, patches, coding, SymPy or
-anything related, just send us an email to the mailinglist
-or ask on IRC (our channel is <a href="irc://irc.freenode.net/sympy">#sympy at freenode</a>), we'll help.
-Also, you can read our instructions
+Falls Du Hilfe mit git, github, pull requests, Patches, Programmieren, SymPy oder
+verwandten Themen brauchst, sende uns einfach eine Email an unsere Mailing List
+oder frage in unserem IRC Channel (<a href="irc://irc.freenode.net/sympy">#sympy auf freenode</a>),
+wir werden dir helfen.
+Außerdem kannst Du unsere Anleitung
 <a href="https://github.com/sympy/sympy/wiki/Development-workflow">
-how to prepare patches</a> using git and github.
+Wie man Patches mit git und github vorbereitet</a> lesen.
 </p>
 
 <p>
-The github pull request is a preferred method, as that makes it easy for us to
-review and push the code in. That said,
-you can also clone the latest git repository (see the link on the right), prepare a branch with
-your code, upload it somewhere (for example <a
-    href="http://github.com/">github</a>) and send us a link to the <a
+github pull requests sind die bevorzugte Methode, da es für uns so am
+einfachsten ist, den Code zu begutachten und zu pushen. Abgesehen davon kannst
+Du auch die aktuellste git-Repository klonen (siehe Link rechts), einen neuen
+Zweig mit deinem Code vorbereiten und irgendwo hochladen (zum Beispiel <a
+    href="http://github.com/">github</a>), und uns einen Link an den <a
     href="http://groups.google.com/group/sympy-patches">sympy-patches</a>
-mailinglist, or you can even send us raw patches --- but it will be more work
-for us to integrate it.
+Email-Verteiler, oder auch nur den Code selbst senden --- letzteres ist jedoch
+aufwändiger zu integrieren.
 </p>
 
 <p>
-SymPy has a broad development team:
+SymPy hat ein großes Entwicklungsteam:
 <a href="
 http://docs.sympy.org/0.7.1/aboutus.html#sympy-development-team
 ">
 http://docs.sympy.org/0.7.1/aboutus.html#sympy-development-team
-</a>, send us a patch and your name will appear there too.
+</a>. Schick' uns einen Patch, und auch dein Name erscheint dort.
 </p>
 
 </div>
-<h2 class="title">Sources of the Webpages</h2>
+<h2 class="title">Quelltexte der Webseiten</h2>
 <div class="inner">
 <p class="first">
-Sources of these webpages are at:
+Quelltexte dieser Webseiten findest Du hier:
 <a href="http://github.com/sympy/sympy.github.com">http://github.com/sympy/sympy.github.com</a>
 </p>
-Feel free to send us patches with improvements.
+Zögere nicht uns einen Patch mit Verbesserungen zukommen zu lassen.
 </div>
 
 {% endblock %}
@@ -89,11 +90,11 @@ Feel free to send us patches with improvements.
   <h3>Git Repository</h3>
   <div class="content">
     <p>
-    Main git repository:<br/>
+    git Haupt-Repository:<br/>
     <code>git clone git://github.com/sympy/sympy.git</code>
     </p>
     <p>
-    Online access: <a href="http://github.com/sympy/sympy">github.com/sympy/sympy</a>
+    Online-Zugriff: <a href="http://github.com/sympy/sympy">github.com/sympy/sympy</a>
     </p>
   </div>
 </div>

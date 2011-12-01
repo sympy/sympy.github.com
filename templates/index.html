@@ -5,55 +5,54 @@
 
 {% block content %}
 
-<h2 class="title">About</h2>
+<h2 class="title">Beschreibung</h2>
 <div class="inner">
 <p class="first">
-SymPy is a Python library for symbolic mathematics. It aims to become a
-full-featured computer algebra system (CAS) while keeping the code as simple as
-possible in order to be comprehensible and easily extensible. SymPy is written
-entirely in Python and does not require any external libraries.
+SymPy ist eine Python-Library für symbolische Mathematik.
+Ziel des Porjekts ist es, ein komplettes komplettes Computeralgebra-System (CAS),
+mit möglichst einfach gehaltenem Code, zu entwickeln, sodass es später leicht
+verständlich und gut erweiterbar ist. SymPy ist vollständig in Python geschrieben
+und benötigt keine externen Libraries.
 </p>
 </div>
 
 <h2 class="title">Features</h2>
 <div class="inner">
 <p class="first">
-SymPy core capabilities include:
+Die SymPy-Basis enthält folgende Funktionen:
 <ul>
-    <li>basic arithmetics <code>*,/,+,-,**</code></li>
-    <li>basic simplification (like <code>a*b*b + 2*b*a*b -&gt; 3*a*b**2)</code></li>
-    <li>expansion (like <code>(a+b)**2 -&gt; a**2 + 2*a*b + b**2</code>)</li>
-    <li>functions (exp, ln, ...)</li>
-    <li>complex numbers (like exp(I*x).expand(complex=True) -&gt;
+    <li>Einfache Artihmetik <code>*,/,+,-,**</code></li>
+    <li>Grundlegende Vereinfachungen (wie <code>a*b*b + 2*b*a*b -&gt; 3*a*b**2)</code></li>
+    <li>Expansion (wie <code>(a+b)**2 -&gt; a**2 + 2*a*b + b**2</code>)</li>
+    <li>Funktionen (exp, ln, ...)</li>
+    <li>Komplexe Zahlen (wie exp(I*x).expand(complex=True) -&gt;
     cos(x)+I*sin(x))</li>
-    <li>differentiation</li>
-    <li>taylor (laurent) series</li>
-    <li>substitution (like <code>x -&gt; ln(x)</code>, or
+    <li>Differenzieren</li>
+    <li>Taylorreihen (Laurent-Reihen)</li>
+    <li>Substitution (wie <code>x -&gt; ln(x)</code>, oder
         <code>sin -&gt; cos</code>)</li>
-    <li>arbitrary precision integers, rationals and floats</li>
-    <li>noncommutative symbols</li>
-    <li>pattern matching</li>
+    <li>Beliebig genaue Ganzzahlen, Festkommazahlen und rationale Zahlen</li>
+    <li>Nichtkommutative Symbole</li>
+    <li>Pattern Matching</li>
 </ul>
 </p>
 <p>
-Then there are SymPy modules for these tasks:
+Außerdem gibt es SymPy-Module für folgende Aufgaben:
 <ul>
-    <li>more functions (sin, cos, tan, atan, asin, acos, factorial, zeta,
+    <li>Weitere Funktionen (sin, cos, tan, atan, asin, acos, factorial (Fakultät), zeta,
     legendre)</li>
-    <li>limits (like <code>limit(x*log(x), x, 0) -&gt; 0</code>)</li>
-    <li>integration using extended Risch-Norman heuristic</li>
-    <li>polynomials (division, gcd, square free decomposition, groebner
-    bases, factorization)
-    <li>solvers (algebraic, difference and differential equations, and systems
-    of equations)</li>
-    <li>symbolic matrices (determinants, LU decomposition...)</li>
+    <li>Grenzwerte (wie <code>limit(x*log(x), x, 0) -&gt; 0</code>)</li>
+    <li>Integration unter Verwendung erweiterter Risch-Norman-Heuristik</li>
+    <li>Polynome (Division, größter gemeinsamer Teiler, wurzelfreie Zerlegung, Gröbnerbasis, Faktorisierung)
+    <li>Gleichungsauflöser (algebraisch, Differenzen- und Differentialgleichungen, Gleichungssysteme)</li>
+    <li>Symbolische Matrizen (Determinante, LU-Zerlegung ...)</li>
     <li>mpmath (multiprecision floating-point arithmetic)</li>
-    <li>geometric algebra (GA)</li>
-    <li>Pauli and Dirac algebra</li>
-    <li>quantum physics</li>
-    <li>geometry module</li>
-    <li>plotting (2D and 3D)</li>
-    <li>code generation (C, Fortran, LaTeX)</li>
+    <li>Geometrische Algebra (GA)</li>
+    <li>Pauli- und Dirac-Algebra</li>
+    <li>Quantenphysik</li>
+    <li>Geometrie-Modul</li>
+    <li>Plotten (2D und 3D)</li>
+    <li>Codeerzeugung (C, Fortran, LaTeX)</li>
 </ul>
 </p>
 </div>
@@ -64,11 +63,11 @@ Then there are SymPy modules for these tasks:
 {% block sidebar %}
 
 <div class="block">
-  <h3>Download Now</h3>
+  <h3>Jetzt herunterladen</h3>
   <div class="content">
 <p>
-Releases: <a href="http://code.google.com/p/sympy/downloads/list">Google Code downloads</a><br/>
-Latest git version: <a href="http://github.com/sympy/sympy">github.com/sympy/sympy</a>
+Releases: <a href="http://code.google.com/p/sympy/downloads/list">Google Code Downloads</a><br/>
+Aktuellste git version: <a href="http://github.com/sympy/sympy">github.com/sympy/sympy</a>
 </p>
   </div>
 </div>
@@ -94,16 +93,16 @@ available.
   <div class="content">
     <p>
       <ul>
-        <li><a href="http://docs.sympy.org/">Documentation</a></li>
-        <li><a href="http://code.google.com/p/sympy/downloads/list">Downloads (source tarballs)</a></li>
-        <li><a href="http://code.google.com/p/sympy/wiki/DownloadInstallation?tm=2">Downloads (packages for distributions)</a></li>
-        <li><a href="http://groups.google.com/group/sympy">Mailinglist</a></li>
-        <li><a href="http://github.com/sympy/sympy">Source code</a></li>
-        <li><a href="http://code.google.com/p/sympy/issues/list">Issues tracker</a></li>
-        <li><a href="http://code.google.com/p/sympy/">Google Code Page</a></li>
+        <li><a href="http://docs.sympy.org/">Dokumentation</a></li>
+        <li><a href="http://code.google.com/p/sympy/downloads/list">Downloads (Quellcode-Tarballs)</a></li>
+        <li><a href="http://code.google.com/p/sympy/wiki/DownloadInstallation?tm=2">Downloads (Pakete für Distributionen)</a></li>
+        <li><a href="http://groups.google.com/group/sympy">Mailing List</a></li>
+        <li><a href="http://github.com/sympy/sympy">Source Code</a></li>
+        <li><a href="http://code.google.com/p/sympy/issues/list">Issues Tracker</a></li>
+        <li><a href="http://code.google.com/p/sympy/">Seite auf Google Code</a></li>
         <li><a href="http://github.com/sympy/sympy/wiki">Wiki</a></li>
-        <li><a href="http://live.sympy.org/">Try SymPy online now</a></li>
-        <li><a href="http://sympy.blogspot.com/">Official SymPy blog</a></li>
+        <li><a href="http://live.sympy.org/">SymPy online testen</a></li>
+        <li><a href="http://sympy.blogspot.com/">Offizieller SymPy blog</a></li>
         <li><a href="http://planet.sympy.org/">Planet SymPy</a></li>
       </ul>
     </p>
