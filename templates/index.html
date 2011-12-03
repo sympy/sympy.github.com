@@ -5,109 +5,126 @@
 
 {% block content %}
 
-<h2 class="title">About</h2>
+<h2 class="title">{% trans %}About{% endtrans %}</h2>
 <div class="inner">
 <p class="first">
-SymPy is a Python library for symbolic mathematics. It aims to become a
-full-featured computer algebra system (CAS) while keeping the code as simple as
-possible in order to be comprehensible and easily extensible. SymPy is written
-entirely in Python and does not require any external libraries.
+<font size=2>
+{% trans %}SymPy is a Python library for symbolic mathematics. It aims to
+become a full-featured computer algebra system (CAS) while keeping the code as
+simple as possible in order to be comprehensible and easily extensible. SymPy
+is written entirely in Python and does not require any external libraries.{%endtrans %}
+</font>
 </p>
 </div>
 
-<h2 class="title">Features</h2>
+<h2 class="title">{% trans %}Features{% endtrans %}</h2>
 <div class="inner">
 <p class="first">
-SymPy core capabilities include:
+{% trans %}SymPy core capabilities include:{% endtrans %}
 <ul>
-    <li>basic arithmetics <code>*,/,+,-,**</code></li>
-    <li>basic simplification (like <code>a*b*b + 2*b*a*b -&gt; 3*a*b**2)</code></li>
-    <li>expansion (like <code>(a+b)**2 -&gt; a**2 + 2*a*b + b**2</code>)</li>
-    <li>functions (exp, ln, ...)</li>
-    <li>complex numbers (like exp(I*x).expand(complex=True) -&gt;
+    <li>{% trans %}basic arithmetics{% endtrans %} <code>*,/,+,-,**</code></li>
+    <li>{% trans %}basic simplification{% endtrans %} ({% trans %}like{% endtrans %} <code>a*b*b + 2*b*a*b -&gt; 3*a*b**2)</code></li>
+    <li>{% trans %}expansion{% endtrans %} ({% trans %}like{% endtrans %} <code>(a+b)**2 -&gt; a**2 + 2*a*b + b**2</code>)</li>
+    <li>{% trans %}functions{% endtrans %} (exp, ln, ...)</li>
+    <li>{% trans %}complex numbers{% endtrans %} ({% trans %}like{% endtrans %} exp(I*x).expand(complex=True) -&gt;
     cos(x)+I*sin(x))</li>
-    <li>differentiation</li>
-    <li>taylor (laurent) series</li>
-    <li>substitution (like <code>x -&gt; ln(x)</code>, or
+    <li>{% trans %}differentiation{% endtrans %}</li>
+    <li>{% trans %}taylor (laurent) series{% endtrans %}</li>
+    <li>{% trans %}substitution{% endtrans %} ({% trans %}like{% endtrans %} <code>x -&gt; ln(x)</code>, {% trans %}or{% endtrans %}
         <code>sin -&gt; cos</code>)</li>
-    <li>arbitrary precision integers, rationals and floats</li>
-    <li>noncommutative symbols</li>
-    <li>pattern matching</li>
+    <li>{% trans %}arbitrary precision integers, rationals and floats{% endtrans %}</li>
+    <li>{% trans %}noncommutative symbols{% endtrans %}</li>
+    <li>{% trans %}pattern matching{% endtrans %}</li>
 </ul>
 </p>
 <p>
-Then there are SymPy modules for these tasks:
+{% trans %}Then there are SymPy modules for these tasks:{% endtrans %}
 <ul>
-    <li>more functions (sin, cos, tan, atan, asin, acos, factorial, zeta,
-    legendre)</li>
-    <li>limits (like <code>limit(x*log(x), x, 0) -&gt; 0</code>)</li>
-    <li>integration using extended Risch-Norman heuristic</li>
-    <li>polynomials (division, gcd, square free decomposition, groebner
-    bases, factorization)
-    <li>solvers (algebraic, difference and differential equations, and systems
-    of equations)</li>
-    <li>symbolic matrices (determinants, LU decomposition...)</li>
-    <li>mpmath (multiprecision floating-point arithmetic)</li>
-    <li>geometric algebra (GA)</li>
-    <li>Pauli and Dirac algebra</li>
-    <li>quantum physics</li>
-    <li>geometry module</li>
-    <li>plotting (2D and 3D)</li>
-    <li>code generation (C, Fortran, LaTeX)</li>
+    <li>{% trans %}more functions (sin, cos, tan, atan, asin, acos, factorial, zeta,
+    legendre){% endtrans %}</li>
+    <li>{% trans %}limits{% endtrans %} ({% trans %}like{% endtrans %} <code>limit(x*log(x), x, 0) -&gt; 0</code>)</li>
+    <li>{% trans %}integration using extended Risch-Norman heuristic{% endtrans %}</li>
+    <li>{% trans %}polynomials (division, gcd, square free decomposition, groebner
+    bases, factorization){% endtrans %}
+    <li>{% trans %}solvers (algebraic, difference and differential equations, and systems
+    of equations){% endtrans %}</li>
+    <li>{% trans %}symbolic matrices (determinants, LU decomposition...){% endtrans %}</li>
+    <li>{% trans %}mpmath (multiprecision floating-point arithmetic){% endtrans %}</li>
+    <li>{% trans %}geometric algebra (GA){% endtrans %}</li>
+    <li>{% trans %}Pauli and Dirac algebra{% endtrans %}</li>
+    <li>{% trans %}quantum physics{% endtrans %}</li>
+    <li>{% trans %}geometry module{% endtrans %}</li>
+    <li>{% trans %}plotting (2D and 3D){% endtrans %}</li>
+    <li>{% trans %}code generation (C, Fortran, LaTeX){% endtrans %}</li>
 </ul>
 </p>
 </div>
+
 
 {% endblock %}
 
 
 {% block sidebar %}
 
-<div class="block">
-  <h3>Download Now</h3>
-  <div class="content">
-<p>
-Releases: <a href="http://code.google.com/p/sympy/downloads/list">Google Code downloads</a><br/>
-Latest git version: <a href="http://github.com/sympy/sympy">github.com/sympy/sympy</a>
-</p>
-  </div>
+<div id="container">
+<div style="position:relative; float:left; margin: 0;">
+<div style="position:relative; float:left; width:60%; min-width:250px;"> 
 </div>
-
-<div class="block">
-  <h3>News</h3>
-  <div class="content">
-<p>
-<span class="date">29 Jul 2011</span> Version 0.7.1 released (<a href="https://github.com/sympy/sympy/wiki/Release-Notes-for-0.7.1">changes</a>)<br/>
-<span class="date">28 Jun 2011</span> Version 0.7.0 released (<a href="https://github.com/sympy/sympy/wiki/Release-Notes-for-0.7.0">changes</a>)<br/>
-<span class="date">18 Mar 2011</span> SymPy is accepted as a <a href="http://www.google-melange.com/gsoc/org/show/google/gsoc2011/sympy">mentoring organization</a> for Google Summer of Code 2011<br/>
-<span class="date">23 Oct 2010</span> New website launched at sympy.org<br/>
-<span class="date">17 Mar 2010</span> Version 0.6.7 released (<a href="http://code.google.com/p/sympy/wiki/Changes">changes</a>)<br/>
-<span class="date">20 Dec 2009</span> Version 0.6.6 released (<a href="http://code.google.com/p/sympy/wiki/Changes">changes</a>)<br/>
-<span class="date">26 Sep 2009</span> Final page about the <a href="http://code.google.com/p/sympy/wiki/GSoC2009">2009 Google Summer of Code in SymPy</a> is
-available.
-</p>
-  </div>
 </div>
+        <div id="shell"></div>
+<div id="right">
+<div class="right_title">More Information</div>
+        <div id="about"><div class="t"><h3>{% trans %}Downloads{% endtrans %}</h3></div>
+<div class="content">
+<p>
+{% trans %}Releases:{% endtrans %} <a href="http://code.google.com/p/sympy/downloads/list">{% trans %}Google Code downloads{% endtrans %}</a><br/>
+{% trans %}Latest git version:{% endtrans %} <a href="http://github.com/sympy/sympy">github.com/sympy/sympy</a>
+</p>
 
-<div id="quicklinks" class="block">
-  <h3>Quick Links</h3>
-  <div class="content">
+</div>
+    		</div><br/>
+            <div id="example"><div class="t"><h3>{% trans %}Quick Links{% endtrans %}</h3></div>
+<div class="content">
     <p>
       <ul>
-        <li><a href="http://docs.sympy.org/">Documentation</a></li>
-        <li><a href="http://code.google.com/p/sympy/downloads/list">Downloads (source tarballs)</a></li>
-        <li><a href="http://code.google.com/p/sympy/wiki/DownloadInstallation?tm=2">Downloads (packages for distributions)</a></li>
-        <li><a href="http://groups.google.com/group/sympy">Mailinglist</a></li>
-        <li><a href="http://github.com/sympy/sympy">Source code</a></li>
-        <li><a href="http://code.google.com/p/sympy/issues/list">Issues tracker</a></li>
-        <li><a href="http://code.google.com/p/sympy/">Google Code Page</a></li>
-        <li><a href="http://github.com/sympy/sympy/wiki">Wiki</a></li>
-        <li><a href="http://live.sympy.org/">Try SymPy online now</a></li>
-        <li><a href="http://sympy.blogspot.com/">Official SymPy blog</a></li>
-        <li><a href="http://planet.sympy.org/">Planet SymPy</a></li>
+	<font size=3>
+        <li><a href="http://docs.sympy.org/0.7.1/index.html">{% trans %}Documentation{% endtrans %}</a></li>
+        <li><a href="http://docs.sympy.org/0.7.1/tutorial.html">{% trans %}Tutorial{% endtrans %}</a></li>
+        <li><a href="http://code.google.com/p/sympy/downloads/list">{% trans %}Downloads (source tarballs){% endtrans %}</a></li>
+        <li><a href="http://code.google.com/p/sympy/wiki/DownloadInstallation?tm=2">{% trans %}Downloads (packages for distributions){% endtrans %}</a></li>
+        <li><a href="http://groups.google.com/group/sympy">{% trans %}Mailinglist{% endtrans %}</a></li>
+        <li><a href="http://github.com/sympy/sympy">{% trans %}Source code{% endtrans %}</a></li>
+        <li><a href="http://code.google.com/p/sympy/issues/list">{% trans %}Issues tracker{% endtrans %}</a></li>
+        <li><a href="http://code.google.com/p/sympy/">{% trans %}Google Code Page{% endtrans %}</a></li>
+        <li><a href="http://github.com/sympy/sympy/wiki">{% trans %}Wiki{% endtrans %}</a></li>
+        <li><a href="http://live.sympy.org/">{% trans %}Try SymPy online now{% endtrans %}</a></li>
+        <li><a href="http://sympy.blogspot.com/">{% trans %}Official SymPy blog{% endtrans %}</a></li>
+        <li><a href="http://planet.sympy.org/">{% trans %}Planet SymPy{% endtrans %}</a></li>
+	</font>
       </ul>
     </p>
-  </div>
-</div>
 
+			</div>
+			</div>
+			<br/>
+			<div id="other_shells"><div class="t"><h3>{% trans %}News{% endtrans %}</h3></div>
+<div class="content">
+<p>
+<span class="date">29 Jul 2011</span> {% trans v=0.7.1 %}Version {{ v }} released {% endtrans %}(<a href="https://github.com/sympy/sympy/wiki/Release-Notes-for-0.7.1">{% trans %}changes{% endtrans %}</a>)<br/>
+
+<span class="date">28 Jun 2011</span> {% trans v=0.7.0 %}Version{{ v }} released {% endtrans %}(<a href="https://github.com/sympy/sympy/wiki/Release-Notes-for-0.7.0">{% trans %}changes{% endtrans %}</a>)<br/>
+
+<span class="date">18 Mar 2011</span> {% trans %}SymPy is accepted as a{% endtrans %} <a href="http://www.google-melange.com/gsoc/org/show/google/gsoc2011/sympy">{% trans %}mentoring organization{% endtrans %}</a> {% trans %}for Google Summer of Code 2011{% endtrans %}<br/>
+
+<span class="date">17 Mar 2010</span> {% trans v=0.6.7%}Version {{ v }}released {% endtrans %}(<a href="http://code.google.com/p/sympy/wiki/Changes">{% trans %}changes{% endtrans %}</a>)<br/>
+
+<span class="date">20 Dec 2009</span> {% trans v=0.6.6}Version {{ v }} released {% endtrans %}(<a href="http://code.google.com/p/sympy/wiki/Changes">{% trans %}changes{% endtrans %}</a>)<br/>
+
+</p>
+		</div>
+		</div>
+		</div>
+		</div>
+		</div>
+</div>
 {% endblock %}
