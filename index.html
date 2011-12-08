@@ -1,4 +1,3 @@
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
@@ -8,26 +7,7 @@
     <link rel="stylesheet" id="current-theme" href="media/style.css" type="text/css" media="screen" />
 </head>
 <body>
-<script type="text/javascript">
-var x=0;
-var y=0;
-var z=0;
-function stay1()
-	{
-	if (x==0) {document.getElementById("about").id="about2"; x+=1}
-	else {document.getElementById("about2").id="about"; x-=1}
-	}
-function stay2()
-	{
-	if (y==0) {document.getElementById("example").id="example2"; y+=1}
-	else {document.getElementById("example2").id="example"; y-=1}
-	}
-function stay3()
-	{
-	if (z==0) {document.getElementById("other_shells").id="other_shells2"; z+=1}
-	else {document.getElementById("other_shells2").id="other_shells"; z-=1}
-	}
-</script>
+
   <div id="container">
     <div id="header">
       <h1><a href="index.html"> <img src="media/logo.png" style="vertical-align:middle"/> SymPy</a></h1>
@@ -121,18 +101,22 @@ Then there are SymPy modules for these tasks:
           </div>
         </div>
       </div>
-      <div id="sidebar">
-        
 
+      <div id="sidebar">
+      
       </div>
       <div class="clear"></div>
     </div>
   </div>
-
+<div id="container">
+<div style="position:relative; float:left; margin: 0;">
+<div style="position:relative; float:left; width:60%; min-width:250px;"> 
+</div>
+</div>
         <div id="shell"></div>
-</div><div id="right">
+<div id="right">
 <div class="right_title">More Information</div>
-        <div id="about"><div class="t"><h3>Downloads</h3></div><div class="arrow"><img src="arrow.png" width="25" height="25" alt="Arrow"/></div><div class=button><input type="button" value="&nbsp;Stay Open?&nbsp" onclick="stay1()"/></div>
+        <div id="about"><div class="t"><h3>Downloads</h3></div>
 <div class="content">
 <p>
 Releases: <a href="http://code.google.com/p/sympy/downloads/list">Google Code downloads</a><br/>
@@ -141,10 +125,11 @@ Latest git version: <a href="http://github.com/sympy/sympy">github.com/sympy/sym
 
 </div>
 			</div><br/>
-            <div id="example"><div class="t"><h3>Quick Links</h3></div><div class="arrow"><img src="arrow.png" width="25" height="25" alt="Arrow"/></div><div class=button><input type="button" value="&nbsp;Stay Open?&nbsp" onclick="stay2()"/></div>
+            <div id="example"><div class="t"><h3>Quick Links</h3></div>
 <div class="content">
     <p>
       <ul>
+	<font size=3>
         <li><a href="http://docs.sympy.org/0.7.1/index.html">Documentation</a></li>
         <li><a href="http://docs.sympy.org/0.7.1/tutorial.html">Tutorial</a></li>
         <li><a href="http://code.google.com/p/sympy/downloads/list">Downloads (source tarballs)</a></li>
@@ -157,13 +142,14 @@ Latest git version: <a href="http://github.com/sympy/sympy">github.com/sympy/sym
         <li><a href="http://live.sympy.org/">Try SymPy online now</a></li>
         <li><a href="http://sympy.blogspot.com/">Official SymPy blog</a></li>
         <li><a href="http://planet.sympy.org/">Planet SymPy</a></li>
+	</font>
       </ul>
     </p>
 
 			</div>
 			</div>
 			<br/>
-			<div id="other_shells"><div class="t"><h3>News</h3></div><div class="arrow"><img src="arrow.png" width="25" height="25" alt="Arrow"/></div><div class=button><input type="button" value="&nbsp;Stay Open?&nbsp" onclick="stay3()"/></div>
+			<div id="other_shells"><div class="t"><h3>News</h3></div>
 <div class="content">
 <p>
 <span class="date">29 Jul 2011</span> Version 0.7.1 released (<a href="https://github.com/sympy/sympy/wiki/Release-Notes-for-0.7.1">changes</a>)<br/>
@@ -177,6 +163,8 @@ Latest git version: <a href="http://github.com/sympy/sympy">github.com/sympy/sym
 		</div>
 		</div>
 		</div>
+		</div>
+</div>
 		<div id="w3_validator"> <a href="http://validator.w3.org/check?uri=referer"><img
       src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Strict" height="31" width="88" /></a></div>
 
