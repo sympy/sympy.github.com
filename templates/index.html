@@ -8,12 +8,11 @@
 <h2 class="title">{% trans %}About{% endtrans %}</h2>
 <div class="inner">
 <p class="first">
-<font size=2>
 {% trans %}SymPy is a Python library for symbolic mathematics. It aims to
 become a full-featured computer algebra system (CAS) while keeping the code as
 simple as possible in order to be comprehensible and easily extensible. SymPy
-is written entirely in Python and does not require any external libraries.{%endtrans %}
-</font>
+is written entirely in Python and does not require any external libraries.{%
+endtrans %}
 </p>
 </div>
 
@@ -74,22 +73,45 @@ is written entirely in Python and does not require any external libraries.{%endt
         <div id="shell"></div>
 <div id="right">
 <div class="right_title">More Information</div>
-        <div id="about"><div class="t"><h3>{% trans %}Downloads{% endtrans %}</h3></div>
-<div class="content">
+<div id="about"><div class="t">
+<div class="block">
+  <h3>{% trans %}Download Now{% endtrans %}</h3>
+  <div class="content">
 <p>
-{% trans %}Releases:{% endtrans %} <a href="http://code.google.com/p/sympy/downloads/list">{% trans %}Google Code downloads{% endtrans %}</a><br/>
-{% trans %}Latest git version:{% endtrans %} <a href="http://github.com/sympy/sympy">github.com/sympy/sympy</a>
+{% trans %}Releases{% endtrans %}: <a href="http://code.google.com/p/sympy/downloads/list">{% trans %}Google Code downloads{% endtrans %}</a><br/>
+{% trans %}Latest git version{% endtrans %}: <a href="http://github.com/sympy/sympy">github.com/sympy/sympy</a>
 </p>
-
+  </div>
 </div>
-    		</div><br/>
-            <div id="example"><div class="t"><h3>{% trans %}Quick Links{% endtrans %}</h3></div>
-<div class="content">
+</div>
+</div>
+</div>
+<div id="other_shells"><div class="t">
+<div class="block">
+  <h3>{% trans %}News{% endtrans %}</h3>
+  <div class="content">
+<p>
+<span class="date">29 Jul 2011</span> {% trans v='0.7.1' %}Version {{ v }} released{% endtrans %} (<a href="https://github.com/sympy/sympy/wiki/Release-Notes-for-0.7.1">{% trans %}changes{% endtrans %}</a>)<br/>
+<span class="date">28 Jun 2011</span> {% trans v='0.7.0' %}Version {{ v }} released{% endtrans %} (<a href="https://github.com/sympy/sympy/wiki/Release-Notes-for-0.7.0">{% trans %}changes{% endtrans %}</a>)<br/>
+<span class="date">18 Mar 2011</span> {% trans %}SymPy is accepted as a <a href="http://www.google-melange.com/gsoc/org/show/google/gsoc2011/sympy">mentoring organization</a> for Google Summer of Code 2011{% endtrans %}<br/>
+<span class="date">23 Oct 2010</span> {% trans %}New website launched at sympy.org{% endtrans %}<br/>
+<span class="date">17 Mar 2010</span> {% trans v='0.6.7' %}Version {{ v }} released{% endtrans %} (<a href="http://code.google.com/p/sympy/wiki/Changes">{% trans %}changes{% endtrans %}</a>)<br/>
+<span class="date">20 Dec 2009</span> {% trans v='0.6.6' %}Version {{ v }} released{% endtrans %} (<a href="http://code.google.com/p/sympy/wiki/Changes">{% trans %}changes{% endtrans %}</a>)<br/>
+<span class="date">26 Sep 2009</span> {% trans url='http://code.google.com/p/sympy/wiki/GSoC2009' %}Final page about the <a href="{{ url }}">2009 Google Summer of Code in SymPy</a> is available.{% endtrans %}
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="example"><div class="t">
+<div id="quicklinks" class="block">
+  <h3>{% trans %}Quick Links{% endtrans %}</h3>
+  <div class="content">
     <p>
       <ul>
-	<font size=3>
-        <li><a href="http://docs.sympy.org/0.7.1/index.html">{% trans %}Documentation{% endtrans %}</a></li>
-        <li><a href="http://docs.sympy.org/0.7.1/tutorial.html">{% trans %}Tutorial{% endtrans %}</a></li>
+        <font size=3>
+        <li><a href="http://docs.sympy.org/">{% trans %}Documentation{% endtrans %}</a></li>
         <li><a href="http://code.google.com/p/sympy/downloads/list">{% trans %}Downloads (source tarballs){% endtrans %}</a></li>
         <li><a href="http://code.google.com/p/sympy/wiki/DownloadInstallation?tm=2">{% trans %}Downloads (packages for distributions){% endtrans %}</a></li>
         <li><a href="http://groups.google.com/group/sympy">{% trans %}Mailinglist{% endtrans %}</a></li>
@@ -106,25 +128,11 @@ is written entirely in Python and does not require any external libraries.{%endt
 
 			</div>
 			</div>
+			</div>
+			</div>
+			</div>
 			<br/>
-			<div id="other_shells"><div class="t"><h3>{% trans %}News{% endtrans %}</h3></div>
-<div class="content">
-<p>
-<span class="date">29 Jul 2011</span> {% trans v=0.7.1 %}Version {{ v }} released {% endtrans %}(<a href="https://github.com/sympy/sympy/wiki/Release-Notes-for-0.7.1">{% trans %}changes{% endtrans %}</a>)<br/>
 
-<span class="date">28 Jun 2011</span> {% trans v=0.7.0 %}Version{{ v }} released {% endtrans %}(<a href="https://github.com/sympy/sympy/wiki/Release-Notes-for-0.7.0">{% trans %}changes{% endtrans %}</a>)<br/>
-
-<span class="date">18 Mar 2011</span> {% trans %}SymPy is accepted as a{% endtrans %} <a href="http://www.google-melange.com/gsoc/org/show/google/gsoc2011/sympy">{% trans %}mentoring organization{% endtrans %}</a> {% trans %}for Google Summer of Code 2011{% endtrans %}<br/>
-
-<span class="date">17 Mar 2010</span> {% trans v=0.6.7%}Version {{ v }}released {% endtrans %}(<a href="http://code.google.com/p/sympy/wiki/Changes">{% trans %}changes{% endtrans %}</a>)<br/>
-
-<span class="date">20 Dec 2009</span> {% trans v=0.6.6}Version {{ v }} released {% endtrans %}(<a href="http://code.google.com/p/sympy/wiki/Changes">{% trans %}changes{% endtrans %}</a>)<br/>
-
-</p>
-		</div>
-		</div>
-		</div>
-		</div>
-		</div>
+</div>
 </div>
 {% endblock %}

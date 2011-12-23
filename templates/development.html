@@ -1,9 +1,10 @@
 {% from "macros" import video %}
 {% extends "base.html" %}
 
-{% block title %}Development{% endblock %}
+{% block title %}{% trans %}Development{% endtrans %}{% endblock %}
 
 {% block content %}
+
 <h2 class="title">{% trans %}Development{% endtrans %}</h2>
 <div class="inner">
 <p class="first">
@@ -12,7 +13,7 @@ contribute{% endtrans %}:
 <ul>
     <li>
 {% trans %}If you wrote anything interesting using SymPy, please send us a patch with the
-code (see </br> below for more information){% endtrans %}.
+code (see below for more information){% endtrans %}.
 </li>
 
 <li>
@@ -43,7 +44,7 @@ We'll review it and push it in.{% endtrans %}
 <p>
 {% trans %}If you need help with git, github, pull requests, patches, coding, SymPy or
 anything related, just send us an email to the mailinglist
-or ask on IRC (our channel is <a href="irc://irc.freenode.net/sympy">#sympy at freenode</a>), we'll help.{% endtrans %}
+or ask on IRC (our channel is <a href="irc://irc.freenode.net/sympy">#sympy at freenode</a>), we'll help.{% endtrans %
 {% trans %}</br>Also, you can read our instructions
 <a href="https://github.com/sympy/sympy/wiki/Development-workflow">
 how to prepare patches</a> using git and github.{% endtrans %}
@@ -84,47 +85,29 @@ http://docs.sympy.org/0.7.1/aboutus.html#sympy-development-team
 
 {% block sidebar %}
 
-
 <div id="container">
 <div style="position:relative; float:left; margin: 0;">
 <div style="position:relative; float:left; width:60%; min-width:250px;"> 
 </div>
 </div>
-        <div id="shell"></div>
+<div id="shell"></div>
 <div id="right2">
 <div class="right_title">More Information</div>
-        <div id="about"><div class="t"><h3>{% trans %}Git Repository{% endtrans %}</h3></div>
-<div class="content">
-<p>{% trans %}Main git repository{% endtrans %}:</br>
-<code>git clone</code> 
-<code>git://github.com/sympy/sympy.git</code></br>
-{% trans %}Online access{% endtrans %}:
-<a href="https://github.com/sympy/sympy">github.com/sympy/sympy</a>
-</p>
-
-</div>
-    		</div><br/>
-            <div id="example"><div class="t"><h3>{% trans %}Quick Links{% endtrans %}</h3></div>
-<div class="content">
+<div id="about"><div class="t">
+<div class="block">
+  <h3>{% trans %}Git Repository{% endtrans %}</h3>
+  <div class="content">
     <p>
-      <ul>
-	<font size=3>
-        <li><a href="http://docs.sympy.org/0.7.1/index.html">{% trans %}Documentation{% endtrans %}</a></li>
-        <li><a href="http://docs.sympy.org/0.7.1/tutorial.html">{% trans %}Tutorial{% endtrans %}</a></li>
-        <li><a href="http://code.google.com/p/sympy/downloads/list">{% trans %}Downloads (source tarballs){% endtrans %}</a></li>
-        <li><a href="http://code.google.com/p/sympy/wiki/DownloadInstallation?tm=2">{% trans %}Downloads (packages for distributions){% endtrans %}</a></li>
-        <li><a href="http://groups.google.com/group/sympy">{% trans %}Mailinglist{% endtrans %}</a></li>
-        <li><a href="http://github.com/sympy/sympy">{% trans %}Source code{% endtrans %}</a></li>
-        <li><a href="http://code.google.com/p/sympy/issues/list">{% trans %}Issues tracker{% endtrans %}</a></li>
-        <li><a href="http://code.google.com/p/sympy/">{% trans %}Google Code Page{% endtrans %}</a></li>
-        <li><a href="http://github.com/sympy/sympy/wiki">{% trans %}Wiki{% endtrans %}</a></li>
-        <li><a href="http://live.sympy.org/">{% trans %}Try SymPy online now{% endtrans %}</a></li>
-        <li><a href="http://sympy.blogspot.com/">{% trans %}Official SymPy blog{% endtrans %}</a></li>
-        <li><a href="http://planet.sympy.org/">{% trans %}Planet SymPy{% endtrans %}</a></li>
-	</font>
-      </ul>
+    {% trans %}Main git repository{% endtrans %}:<br/>
+    <code>git clone git://github.com/sympy/sympy.git</code>
+    </p>
+    <p>
+    {% trans %}Online access{% endtrans %}: <a href="http://github.com/sympy/sympy">github.com/sympy/sympy</a>
     </p>
 
+			</div>
+			</div>
+			</div>
 			</div>
 			</div>
 			<br/>

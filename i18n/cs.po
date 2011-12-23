@@ -1,0 +1,470 @@
+# Translations template for PROJECT.
+# Copyright (C) 2011 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2011-11-27 14:31-0800\n"
+"PO-Revision-Date: 2011-11-27 14:34-0800\n"
+"Last-Translator: \n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 0.9.6\n"
+
+#: templates/base.html:29
+msgid "Main Page"
+msgstr "Hlavní stránka"
+
+#: templates/base.html:30
+#: templates/download.html:4
+msgid "Download"
+msgstr "Stáhnout"
+
+#: templates/base.html:31
+#: templates/docs.html:4
+#: templates/docs.html:8
+#: templates/index.html:97
+msgid "Documentation"
+msgstr "Dokumentace"
+
+#: templates/base.html:32
+#: templates/support.html:4
+msgid "Support"
+msgstr "Podpora"
+
+#: templates/base.html:33
+#: templates/screenshots.html:4
+msgid "Screenshots"
+msgstr "Screenshoty"
+
+#: templates/base.html:34
+#: templates/development.html:4
+#: templates/development.html:8
+msgid "Development"
+msgstr "Vývoj"
+
+#: templates/base.html:35
+msgid "Online Shell"
+msgstr "Online Konzole"
+
+#: templates/base.html:54
+#, python-format
+msgid "This page is open source. Fork <a href=\"%(url)s\">the project on GitHub</a> to edit it."
+msgstr "Tato stránka je open source. Založte fork <a href=\"%(url)s\">projektu na GitHubu</a> k její editaci."
+
+#: templates/base.html:58
+msgid "Languages"
+msgstr "Jazyky"
+
+#: templates/development.html:11
+msgid ""
+"We are interested in any contribution. There are many ways how you can\n"
+"contribute"
+msgstr "Máme zájem o jakoukoliv pomoc. Je spousta způsobů, jak přispět"
+
+#: templates/development.html:15
+msgid ""
+"If you wrote anything interesting using SymPy, please send us a patch with the\n"
+"code (see below for more information)"
+msgstr "Pokud jste napsali cokoliv zajímavého s pomocí SymPy, prosím pošlete nám patch s tímto kódem (více informací níže)"
+
+#: templates/development.html:20
+msgid ""
+"If you found a bug (or just want to let us know what you think), tell us on the\n"
+"<a href=\"http://groups.google.com/group/sympy\">mailinglist</a>"
+msgstr "Pokud jste objevili chybu (nebo nám jednoduše chcete dát vědět svůj názor),řekněte nám ho na<a href=\"http://groups.google.com/group/sympy\">mailinglistu</a>"
+
+#: templates/development.html:21
+msgid ""
+"You can also\n"
+"add a bug report (or a comment) into the <a href=\"http://code.google.com/p/sympy/issues/list\">issues</a>."
+msgstr "Můžete také přidat hlášení chyby (nebo komentář)k <a href=\"http://code.google.com/p/sympy/issues/list\">problémům</a>."
+
+#: templates/development.html:24
+msgid "You can blog about how you use SymPy"
+msgstr "Můžete blogovat o tom, jak používáte SymPy"
+
+#: templates/development.html:25
+msgid "You can help us write documentation (just send us a patch)"
+msgstr "Můžete nám pomoci psát dokumentaci (stačí poslat patch)"
+
+#: templates/development.html:26
+msgid "You can help people on our <a href=\"http://groups.google.com/group/sympy\">mailinglist</a>"
+msgstr "Můžete pomoci lidem v našem <a href=\"http://groups.google.com/group/sympy\">mailinglistu</a>"
+
+#: templates/development.html:27
+msgid "You can help with reviewing patches"
+msgstr "Můžete pomoci s kontrolou patchů"
+
+#: templates/development.html:28
+msgid "You can send us patches with bug fixes or new features"
+msgstr "Můžete nám poslat patche s opravami chyb nebo novými funkcemi"
+
+#: templates/development.html:32
+msgid "The best way to contribute code or documentation is to send us a patch"
+msgstr "Nejlepší způsob, jak přispět ke kódu nebo k dokumentaci je posláním patche"
+
+#: templates/development.html:36
+msgid "How to Send a Patch"
+msgstr "Jak poslat Patch"
+
+#: templates/development.html:39
+msgid ""
+"The best way is to send a github pull request\n"
+"against the <a href=\"http://github.com/sympy/sympy\">sympy/sympy</a> repository.\n"
+"We'll review it and push it in."
+msgstr "Nejlepší způsob je poslat na github pull request na <a href=\"http://github.com/sympy/sympy\">sympy/sympy</a> repozitář. My ho zkontrolujeme a přidáme."
+
+#: templates/development.html:45
+msgid ""
+"If you need help with git, github, pull requests, patches, coding, SymPy or\n"
+"anything related, just send us an email to the mailinglist\n"
+"or ask on IRC (our channel is <a href=\"irc://irc.freenode.net/sympy\">#sympy at freenode</a>), we'll help."
+msgstr "Pokud potřebujete pomoci s gitem, githubem, pull requesty, patchy,vytvářením kódu, SymPy nebo čímkoliv souvisejícím, jednoduše napište email namailinglistu nebo se zeptejte na IRC (náš kanál je<a href=\"irc://irc.freenode.net/sympy\">#sympy na freenode</a>), my pomůžeme."
+
+#: templates/development.html:48
+msgid ""
+"Also, you can read our instructions\n"
+"<a href=\"https://github.com/sympy/sympy/wiki/Development-workflow\">\n"
+"how to prepare patches</a> using git and github."
+msgstr "Také si můžete přečíst intrukce, <a href=\"https://github.com/sympy/sympy/wiki/Development-workflow\">jak připravovat patche</a> s použitím gitu a githubu."
+
+#: templates/development.html:54
+msgid ""
+"The github pull request is a preferred method, as that makes it easy for us to\n"
+"review and push the code in. That said,\n"
+"you can also clone the latest git repository (see the link on the right), prepare a branch with\n"
+"your code, upload it somewhere (for example <a\n"
+"    href=\"http://github.com/\">github</a>) and send us a link to the <a\n"
+"    href=\"http://groups.google.com/group/sympy-patches\">sympy-patches</a>\n"
+"mailinglist, or you can even send us raw patches --- but it will be more work\n"
+"for us to integrate it."
+msgstr "Github pull request je námi preferovaný způsob, protože je pro nás jednoduchézkontrolovat a zapojit váš kód. Můžete ovšem také naklonovat nejnovějšígit repozitář (viz odkaz vpravo), připravit úsek s vaším kódem, nahrát ho někam(například na <a href=\"http://github.com/\">github</a>) a poslat nám odkaz na<a href=\"http://groups.google.com/group/sympy-patches\">sympy-patches</a>mailinglist nebo nám můžete dokonce poslat přímo samotný patch --- ale dá námpak více práce ho zapojit."
+
+#: templates/development.html:65
+msgid ""
+"SymPy has a broad development team:\n"
+"<a href=\"\n"
+"http://docs.sympy.org/0.7.1/aboutus.html#sympy-development-team\n"
+"\">\n"
+"http://docs.sympy.org/0.7.1/aboutus.html#sympy-development-team\n"
+"</a>, send us a patch and your name will appear there too."
+msgstr "SymPy má početný vývojářský tým: <a href=\"http://docs.sympy.org/0.7.1/aboutus.html#sympy-development-team\">http://docs.sympy.org/0.7.1/aboutus.html#sympy-development-team</a>, pošlete nám patch a vaše jméno se na něm také objeví."
+
+#: templates/development.html:74
+msgid "Sources of the Webpages"
+msgstr "Zdrojový kód webových stránek"
+
+#: templates/development.html:77
+msgid "Sources of these webpages are at"
+msgstr "Zdrojový kód těchto webových stránek je na"
+
+#: templates/development.html:80
+msgid "Feel free to send us patches with improvements."
+msgstr "Nezdráhejte se nám poslat patch s vylepšeními."
+
+#: templates/development.html:89
+msgid "Git Repository"
+msgstr "Git Repozitář"
+
+#: templates/development.html:92
+#: templates/download.html:27
+msgid "Main git repository"
+msgstr "Hlavní git repozitář"
+
+#: templates/development.html:96
+msgid "Online access"
+msgstr "Online přístup"
+
+#: templates/docs.html:11
+#, python-format
+msgid "The documentation is maintained using the <a href=\"%(url)s\">Sphinx</a> Python documentation generator."
+msgstr "Dokumentace je udržovaná pomocí <a href=\"%(url)s\">Sphinx</a> - Pythonský dokumentační generátor."
+
+#: templates/docs.html:13
+msgid "You can find it at"
+msgstr "Můžete ji najít na"
+
+#: templates/download.html:8
+msgid "Source Tarballs (Releases)"
+msgstr "Zdrojový kód (jednotlivá vydání)"
+
+#: templates/download.html:11
+#: templates/download.html:19
+#, fuzzy
+msgid "Downloads"
+msgstr "Stáhnout"
+
+#: templates/download.html:12
+#: templates/download.html:20
+msgid "at Google Code page"
+msgstr "na stránkách Google Code"
+
+#: templates/download.html:16
+msgid "Packages for Distributions"
+msgstr "Balíčky pro distribuce"
+
+#: templates/download.html:24
+msgid "Git Version"
+msgstr "Git verze"
+
+#: templates/download.html:33
+msgid "Browse online"
+msgstr "Hledejte online"
+
+#: templates/index.html:8
+msgid "About"
+msgstr "O SymPy"
+
+#: templates/index.html:11
+msgid ""
+"SymPy is a Python library for symbolic mathematics. It aims to\n"
+"become a full-featured computer algebra system (CAS) while keeping the code as\n"
+"simple as possible in order to be comprehensible and easily extensible. SymPy\n"
+"is written entirely in Python and does not require any external libraries."
+msgstr "SymPy je knihovna jazyka Python pro symbolickou matematiku. Má za cíl stát se kompletním počítačovým algebraickým systémem (CAS, Computer algebra system) a zároveň být co nejjednodušší, aby byla pochopitelná a jednoduše rozšiřitelná. SymPy je napsaná kompletně v jazyce Python a nepotřebuje žádné externí knihovny."
+
+#: templates/index.html:19
+msgid "Features"
+msgstr "Vybavení"
+
+#: templates/index.html:22
+msgid "SymPy core capabilities include:"
+msgstr "Základní funkce SymPy zahrnují:"
+
+#: templates/index.html:24
+msgid "basic arithmetics"
+msgstr "základní aritmetiku"
+
+#: templates/index.html:25
+msgid "basic simplification"
+msgstr "základní zjednodušování"
+
+#: templates/index.html:25
+#: templates/index.html:26
+#: templates/index.html:28
+#: templates/index.html:32
+#: templates/index.html:44
+msgid "like"
+msgstr "jako"
+
+#: templates/index.html:26
+msgid "expansion"
+msgstr "roznásobování"
+
+#: templates/index.html:27
+msgid "functions"
+msgstr "funkce"
+
+#: templates/index.html:28
+msgid "complex numbers"
+msgstr "komplexní čísla"
+
+#: templates/index.html:30
+msgid "differentiation"
+msgstr "derivování"
+
+#: templates/index.html:31
+msgid "taylor (laurent) series"
+msgstr "Taylorova (Laurentova) řada"
+
+#: templates/index.html:32
+msgid "substitution"
+msgstr "substituce"
+
+#: templates/index.html:32
+msgid "or"
+msgstr "nebo"
+
+#: templates/index.html:34
+msgid "arbitrary precision integers, rationals and floats"
+msgstr "libovolná přesnost celých čísel, zlomků a čísel s pohyblivou desetinnou čárkou"
+
+#: templates/index.html:35
+msgid "noncommutative symbols"
+msgstr "nekomutativní symboly"
+
+#: templates/index.html:36
+msgid "pattern matching"
+msgstr "porovnávání vzorků"
+
+#: templates/index.html:40
+msgid "Then there are SymPy modules for these tasks:"
+msgstr "Dále má SymPy moduly pro tyto úlohy"
+
+#: templates/index.html:42
+msgid ""
+"more functions (sin, cos, tan, atan, asin, acos, factorial, zeta,\n"
+"    legendre)"
+msgstr "více funkcí (sin, cos, tan, atan, asin, acos, faktoriál, zeta,     legendre)"
+
+#: templates/index.html:44
+msgid "limits"
+msgstr "limity"
+
+#: templates/index.html:45
+msgid "integration using extended Risch-Norman heuristic"
+msgstr "integrování s využitím rozšířeného Risch-Normanova algoritmu"
+
+#: templates/index.html:46
+msgid ""
+"polynomials (division, gcd, square free decomposition, groebner\n"
+"    bases, factorization)"
+msgstr "polynomy (dělení, nsd, bezčtvercová dekompozice, Gröbnerova báze,  faktorizace)"
+
+#: templates/index.html:48
+msgid ""
+"solvers (algebraic, difference and differential equations, and systems\n"
+"    of equations)"
+msgstr "řešiče (algebraické řešiče, derivace, diferenciální rovnice a soustavy rovnic)"
+
+#: templates/index.html:50
+msgid "symbolic matrices (determinants, LU decomposition...)"
+msgstr "symbolické matice (determinanty, LU dekompozice...)"
+
+#: templates/index.html:51
+msgid "mpmath (multiprecision floating-point arithmetic)"
+msgstr "mpmath (výpočty s libovolnou přesností s pohyblivou desetinnou čárkou)"
+
+#: templates/index.html:52
+msgid "geometric algebra (GA)"
+msgstr "geometrická algebra (GA)"
+
+#: templates/index.html:53
+msgid "Pauli and Dirac algebra"
+msgstr "Pauliho a Diracova algebra"
+
+#: templates/index.html:54
+msgid "quantum physics"
+msgstr "kvantová fyzika"
+
+#: templates/index.html:55
+msgid "geometry module"
+msgstr "geometrický modul"
+
+#: templates/index.html:56
+msgid "plotting (2D and 3D)"
+msgstr "grafy (2D a 3D)"
+
+#: templates/index.html:57
+msgid "code generation (C, Fortran, LaTeX)"
+msgstr "generování kódu (C, Fortran, LaTeX)"
+
+#: templates/index.html:68
+msgid "Download Now"
+msgstr "Ihned stáhnout"
+
+#: templates/index.html:71
+msgid "Releases"
+msgstr "Jednotlivá vydání"
+
+#: templates/index.html:71
+msgid "Google Code downloads"
+msgstr ""
+
+#: templates/index.html:72
+msgid "Latest git version"
+msgstr "Nejnovější git verze"
+
+#: templates/index.html:78
+msgid "News"
+msgstr "Novinky"
+
+#: templates/index.html:81
+#: templates/index.html:82
+#: templates/index.html:85
+#: templates/index.html:86
+#, python-format
+msgid "Version %(v)s released"
+msgstr "Vydaná verze %(v)s"
+
+#: templates/index.html:81
+#: templates/index.html:82
+#: templates/index.html:85
+#: templates/index.html:86
+msgid "changes"
+msgstr "změny"
+
+#: templates/index.html:83
+msgid "SymPy is accepted as a <a href=\"http://www.google-melange.com/gsoc/org/show/google/gsoc2011/sympy\">mentoring organization</a> for Google Summer of Code 2011"
+msgstr "SymPy je přijato jako <a href=\"http://www.google-melange.com/gsoc/org/show/google/gsoc2011/sympy\">mentorující organizace</a> pro Google Summer of Code 2011"
+
+#: templates/index.html:84
+msgid "New website launched at sympy.org"
+msgstr "Spuštěn nový web na sympy.org"
+
+#: templates/index.html:87
+#, python-format
+msgid "Final page about the <a href=\"%(url)s\">2009 Google Summer of Code in SymPy</a> is available."
+msgstr "Je dostupná závěrečná stránka o <a href=\"%(url)s\">2009 Google Summer of Code - SymPy</a>."
+
+#: templates/index.html:93
+msgid "Quick Links"
+msgstr "Rychlé Odkazy"
+
+#: templates/index.html:98
+msgid "Downloads (source tarballs)"
+msgstr "Stáhnout (zdrojový kód tarballs)"
+
+#: templates/index.html:99
+msgid "Downloads (packages for distributions)"
+msgstr "Stáhnout (balíčky pro distribuce)"
+
+#: templates/index.html:100
+msgid "Mailinglist"
+msgstr ""
+
+#: templates/index.html:101
+msgid "Source code"
+msgstr "Zdrojový kód"
+
+#: templates/index.html:102
+msgid "Issues tracker"
+msgstr "Sledování problémů"
+
+#: templates/index.html:103
+msgid "Google Code Page"
+msgstr "Stránka Google Code"
+
+#: templates/index.html:104
+msgid "Wiki"
+msgstr "Wiki"
+
+#: templates/index.html:105
+msgid "Try SymPy online now"
+msgstr "Zkuste SymPy online"
+
+#: templates/index.html:106
+msgid "Official SymPy blog"
+msgstr "Oficiální SymPy blog"
+
+#: templates/index.html:107
+msgid "Planet SymPy"
+msgstr "Planeta SymPy"
+
+#: templates/screenshots.html:8
+msgid "Python Session"
+msgstr "Python"
+
+#: templates/screenshots.html:21
+msgid "ISymPy Session"
+msgstr "ISymPy"
+
+#: templates/support.html:8
+msgid "General"
+msgstr "Obecně"
+
+#: templates/support.html:11
+msgid "Below you can find several ways to get help"
+msgstr "Níže vidíte řadu způsobů, jak získat pomoc"
+
+#: templates/support.html:24
+msgid "More Specific"
+msgstr "Specifičtěji"
+
