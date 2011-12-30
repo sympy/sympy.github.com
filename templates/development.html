@@ -84,7 +84,6 @@ http://docs.sympy.org/0.7.1/aboutus.html#sympy-development-team
 
 
 {% block sidebar %}
-
 <div id="container">
       </div>
       <div class="clear"></div>
@@ -100,23 +99,21 @@ http://docs.sympy.org/0.7.1/aboutus.html#sympy-development-team
 <div class="right_title">More Information</div>
 <div id="about"><div class="t">
 <div class="block">
-  <h3>Git Repository</h3>
+  <h3>{% trans %}Git Repository{% endtrans %}</h3>
   <div class="content">
-  <div id="thetext">
+<div id="thetext">
     <p>
     {% trans %}Main git repository{% endtrans %}:<br/>
     <code>git clone git://github.com/sympy/sympy.git</code>
     </p>
     <p>
-    Online access: <a href="http://github.com/sympy/sympy">github.com/sympy/sympy</a>
+    {% trans %}Online access{% endtrans %}: <a href="http://github.com/sympy/sympy">github.com/sympy/sympy</a>
     </p>
-    </div>
 </div>
-			</div>
-			</div>
-			</div>
-			</div>
-			</div>
-			<br/>
+  </div>
+</div>
+</div>
+</div>
+</div>
 </div>
 {% endblock %}
