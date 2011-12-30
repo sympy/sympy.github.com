@@ -2,7 +2,7 @@
 .gray { color:#a2b0b6; }
 .hightlight { background-color:#d6e7c7; }
 
-a:link, a:visited, a:hover, a:active { color: #66AACC; } 
+a:link, a:visited, a:hover, a:active { color: #81B953; } 
 a:link, a:visited, a:active { text-decoration: none; }
 a:hover { text-decoration: underline; }
 h1, h2, h3 { color: #3B5526; }
@@ -55,7 +55,7 @@ hr {
 -moz-box-shadow: 10px 10px 5px #888;
 -webkit-box-shadow: 10px 10px 5px #888;
 box-shadow: 10px 10px 5px #888;
-width:90%;
+width:85%;
 max-width: 800px;
 min-width: 500px;
 margin-top:10px;
@@ -363,8 +363,8 @@ ul.list li .item .avatar {
 			border-width:1px;
 			border-style:solid;
 			background-color:white;
-			min-width:300px;
-			max-width:300px;
+			min-width:350px;
+			max-width:350px;
 			float:right;
 			margin-top:-712px;
 			margin-right:10px;
@@ -387,8 +387,8 @@ ul.list li .item .avatar {
 			border-width:1px;
 			border-style:solid;
 			background-color:white;
-			min-width:300px;
-			max-width:300px;
+			min-width:350px;
+			max-width:350px;
 			float:right;
 			margin-top:-753px;
 			margin-right:10px;
