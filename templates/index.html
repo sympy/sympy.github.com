@@ -1,3 +1,67 @@
+{% from "macros" import video %}
+{% extends "base.html" %}
+
+{% block title %}SymPy{% endblock %}
+
+{% block content %}
+
+<h2 class="title">{% trans %}About{% endtrans %}</h2>
+<div class="inner">
+<p class="first">
+{% trans %}SymPy is a Python library for symbolic mathematics. It aims to
+become a full-featured computer algebra system (CAS) while keeping the code as
+simple as possible in order to be comprehensible and easily extensible. SymPy
+is written entirely in Python and does not require any external libraries.{%
+endtrans %}
+</p>
+</div>
+
+<h2 class="title">{% trans %}Features{% endtrans %}</h2>
+<div class="inner">
+<p class="first">
+{% trans %}SymPy core capabilities include:{% endtrans %}
+<ul>
+    <li>{% trans %}basic arithmetics{% endtrans %} <code>*,/,+,-,**</code></li>
+    <li>{% trans %}basic simplification{% endtrans %} ({% trans %}like{% endtrans %} <code>a*b*b + 2*b*a*b -&gt; 3*a*b**2)</code></li>
+    <li>{% trans %}expansion{% endtrans %} ({% trans %}like{% endtrans %} <code>(a+b)**2 -&gt; a**2 + 2*a*b + b**2</code>)</li>
+    <li>{% trans %}functions{% endtrans %} (exp, ln, ...)</li>
+    <li>{% trans %}complex numbers{% endtrans %} ({% trans %}like{% endtrans %} exp(I*x).expand(complex=True) -&gt;
+    cos(x)+I*sin(x))</li>
+    <li>{% trans %}differentiation{% endtrans %}</li>
+    <li>{% trans %}taylor (laurent) series{% endtrans %}</li>
+    <li>{% trans %}substitution{% endtrans %} ({% trans %}like{% endtrans %} <code>x -&gt; ln(x)</code>, {% trans %}or{% endtrans %}
+        <code>sin -&gt; cos</code>)</li>
+    <li>{% trans %}arbitrary precision integers, rationals and floats{% endtrans %}</li>
+    <li>{% trans %}noncommutative symbols{% endtrans %}</li>
+    <li>{% trans %}pattern matching{% endtrans %}</li>
+</ul>
+</p>
+<p>
+{% trans %}Then there are SymPy modules for these tasks:{% endtrans %}
+<ul>
+    <li>{% trans %}more functions (sin, cos, tan, atan, asin, acos, factorial, zeta,
+    legendre){% endtrans %}</li>
+    <li>{% trans %}limits{% endtrans %} ({% trans %}like{% endtrans %} <code>limit(x*log(x), x, 0) -&gt; 0</code>)</li>
+    <li>{% trans %}integration using extended Risch-Norman heuristic{% endtrans %}</li>
+    <li>{% trans %}polynomials (division, gcd, square free decomposition, groebner
+    bases, factorization){% endtrans %}
+    <li>{% trans %}solvers (algebraic, difference and differential equations, and systems
+    of equations){% endtrans %}</li>
+    <li>{% trans %}symbolic matrices (determinants, LU decomposition...){% endtrans %}</li>
+    <li>{% trans %}mpmath (multiprecision floating-point arithmetic){% endtrans %}</li>
+    <li>{% trans %}geometric algebra (GA){% endtrans %}</li>
+    <li>{% trans %}Pauli and Dirac algebra{% endtrans %}</li>
+    <li>{% trans %}quantum physics{% endtrans %}</li>
+    <li>{% trans %}geometry module{% endtrans %}</li>
+    <li>{% trans %}plotting (2D and 3D){% endtrans %}</li>
+    <li>{% trans %}code generation (C, Fortran, LaTeX){% endtrans %}</li>
+</ul>
+</p>
+</div>
+
+{% endblock %}
+
+
 {% block sidebar %}
       <div id="sidebar">
       </div>
