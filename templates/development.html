@@ -1,92 +1,202 @@
-{% from "macros" import video %}
-{% extends "base.html" %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Development</title>
+    <link rel="stylesheet" href="../media/base.css" type="text/css" media="screen" />
+    <link rel="stylesheet" id="current-theme" href="../media/style.css" type="text/css" media="screen" />
+</head>
+<body>
+  <div id="container">
+    <div id="header">
+      <h1><a href="index.html"> <img src="../media/logo.png" style="vertical-align:middle"/> SymPy</a></h1>
+    
+      <div id="main-navigation">
+        
+        
+        <ul>
+            <li class=" first"><a href="index.html">Main Page</a></li>
+            <li class=" first"><a href="download.html">Download</a></li>
+            <li class=" first"><a href="docs.html">Documentation</a></li>
+            <li class=" first"><a href="support.html">Support</a></li>
+            <li class=" first"><a href="screenshots.html">Screenshots</a></li>
+            <li class="active first"><a href="development.html">Development</a></li>
+            <li class=" first"><a href="http://live.sympy.org/">Online Shell</a></li>
+        </ul>
+        
+        <div class="clear"></div>
+      </div>
+    </div>
+    <div id="wrapper">
+      <div id="main">
+        <div class="block" id="block-text">
+            <div class="content">
+                
 
-{% block title %}{% trans %}Development{% endtrans %}{% endblock %}
-
-{% block content %}
-
-<h2 class="title">{% trans %}Development{% endtrans %}</h2>
+<h2 class="title">Development</h2>
 <div class="inner">
 <p class="first">
-{% trans %}We are interested in any contribution. There are many ways how you can
-contribute{% endtrans %}:
+We are interested in any contribution. There are many ways how you can
+contribute:
 <ul>
     <li>
-{% trans %}If you wrote anything interesting using SymPy, please send us a patch with the
-code (see below for more information){% endtrans %}.
+If you wrote anything interesting using SymPy, please send us a patch with the
+code (see below for more information).
 </li>
 
 <li>
-{% trans %}If you found a bug (or just want to let us know what you think), tell us on the
-<a href="http://groups.google.com/group/sympy">mailinglist</a>{% endtrans %}. {% trans %}You can also
-add a bug report (or a comment) into the <a href="http://code.google.com/p/sympy/issues/list">issues</a>.{% endtrans %}
+If you found a bug (or just want to let us know what you think), tell us on the
+<a href="http://groups.google.com/group/sympy">mailinglist</a>. You can also
+add a bug report (or a comment) into the <a href="http://code.google.com/p/sympy/issues/list">issues</a>.
 </li>
-<li>{% trans %}You can blog about how you use SymPy{% endtrans %}.</li>
-<li>{% trans %}You can help us write documentation (just send us a patch){% endtrans %}.</li>
-<li>{% trans %}You can help people on our <a href="http://groups.google.com/group/sympy">mailinglist</a>{% endtrans %}.</li>
-<li>{% trans %}You can help with reviewing patches{% endtrans %}.</li>
-<li>{% trans %}You can send us patches with bug fixes or new features{% endtrans %}.</li>
+<li>You can blog about how you use SymPy.</li>
+<li>You can help us write documentation (just send us a patch).</li>
+<li>You can help people on our <a href="http://groups.google.com/group/sympy">mailinglist</a>.</li>
+<li>You can help with reviewing patches.</li>
+<li>You can send us patches with bug fixes or new features.</li>
 </ul>
 </p>
 <p>
-{% trans %}The best way to contribute code or documentation is to send us a patch{% endtrans %}.
+The best way to contribute code or documentation is to send us a patch.
 </p>
 </div>
 
-<h2 class="title">{% trans %}How to Send a Patch{% endtrans %}</h2>
+<h2 class="title">How to Send a Patch</h2>
 <div class="inner">
 <p class="first">
-{% trans %}The best way is to send a github pull request
-against the <a href="http://github.com/sympy/sympy">sympy/sympy</a> repository. </br>
-We'll review it and push it in.{% endtrans %}
+The best way is to send a github pull request
+against the <a href="http://github.com/sympy/sympy">sympy/sympy</a> repository.
+We'll review it and push it in.
 </p>
 
 <p>
-{% trans %}If you need help with git, github, pull requests, patches, coding, SymPy or
+If you need help with git, github, pull requests, patches, coding, SymPy or
 anything related, just send us an email to the mailinglist
-or ask on IRC (our channel is <a href="irc://irc.freenode.net/sympy">&#35sympy at freenode</a>), we'll help.{% endtrans %}
-{% trans %}</br>Also, you can read our instructions
+or ask on IRC (our channel is <a href="irc://irc.freenode.net/sympy">#sympy at freenode</a>), we'll help.
+Also, you can read our instructions
 <a href="https://github.com/sympy/sympy/wiki/Development-workflow">
-how to prepare patches</a> using git and github.{% endtrans %}
+how to prepare patches</a> using git and github.
 </p>
 
 <p>
-{% trans %}The github pull request is a preferred method, as that makes it easy for us to
+The github pull request is a preferred method, as that makes it easy for us to
 review and push the code in. That said,
 you can also clone the latest git repository (see the link on the right), prepare a branch with
 your code, upload it somewhere (for example <a
     href="http://github.com/">github</a>) and send us a link to the <a
     href="http://groups.google.com/group/sympy-patches">sympy-patches</a>
-mailinglist, or you can even send us raw patches </br> --- but it will be more work
-for us to integrate it.{% endtrans %}
+mailinglist, or you can even send us raw patches --- but it will be more work
+for us to integrate it.
 </p>
 
 <p>
-{% trans %}SymPy has a broad development team:
+SymPy has a broad development team:
 <a href="
 http://docs.sympy.org/0.7.1/aboutus.html#sympy-development-team
 ">
 http://docs.sympy.org/0.7.1/aboutus.html#sympy-development-team
-</a>, send us a patch and your name will appear there too.{% endtrans %}
+</a>, send us a patch and your name will appear there too.
 </p>
 
 </div>
-<h2 class="title">{% trans %}Sources of the Webpages{% endtrans %}</h2>
+<h2 class="title">Sources of the Webpages</h2>
 <div class="inner">
 <p class="first">
-{% trans %}Sources of these webpages are at{% endtrans %}:
+Sources of these webpages are at:
 <a href="http://github.com/sympy/sympy.github.com">http://github.com/sympy/sympy.github.com</a>
 </p>
-{% trans %}Feel free to send us patches with improvements.{% endtrans %}
+Feel free to send us patches with improvements.
 </div>
 
-{% endblock %}
 
-
-{% block sidebar %}
-      <div id="sidebar">
-<div id="container">
+            </div>
+        </div>
+        <div id="footer">
+          <div class="block">
+              <p>Copyright &copy; 2011 SymPy Development Team.
+              &nbsp;
+              &nbsp;
+              &nbsp;
+              This page is open source. Fork <a href="https://github.com/sympy/sympy.github.com">the project on GitHub</a> to edit it.
+              &nbsp;
+              &nbsp;
+              &nbsp;
+              Languages (beta):
+              <a href="../cs/index.html">[Cs]</a>,
+              <a href="../de/index.html">[De]</a>,
+              <a href="../en/index.html">[En]</a>,
+              <a href="../ru/index.html">[Ru]</a>
+              </p>
+          </div>
+        </div>
       </div>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="../media/base.css" type="text/css" media="screen" />
+    <link rel="stylesheet" id="current-theme" href="../media/style.css" type="text/css" media="screen" />
+</head>
+<body>
+  <div id="container">
+    <div id="header">
+      <h1><a href="index.html"> <img src="../media/logo.png" style="vertical-align:middle"/> SymPy</a></h1>
+    {#
+      <div id="user-navigation">
+        <ul>
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Settings</a></li>
+          <li><a href="/logout">Logout</a></li>
+        </ul>
+        <div class="clear"></div>
+      </div>
+    #}
+      <div id="main-navigation">
+        {% block navigation %}
+        {# "*_active" variables are automatically substituted in the "generate"
+        script, make sure that "*" is the same as the filename (without an
+        extension) #}
+        <ul>
+            <li class="{{ index_active }} first"><a href="index.html">{% trans %}Main Page{% endtrans %}</a></li>
+            <li class="{{ download_active }} first"><a href="download.html">{% trans %}Download{% endtrans %}</a></li>
+            <li class="{{ docs_active }} first"><a href="docs.html">{% trans %}Documentation{% endtrans %}</a></li>
+            <li class="{{ support_active }} first"><a href="support.html">{% trans %}Support{% endtrans %}</a></li>
+            <li class="{{ screenshots_active }} first"><a href="screenshots.html">{% trans %}Screenshots{% endtrans %}</a></li>
+            <li class="{{ development_active }} first"><a href="development.html">{% trans %}Development{% endtrans %}</a></li>
+            <li class=" first"><a href="http://live.sympy.org/">{% trans %}Online Shell{% endtrans %}</a></li>
+        </ul>
+        {% endblock %}
+        <div class="clear"></div>
+      </div>
+    </div>
+    <div id="wrapper">
+      <div id="main">
+        <div class="block" id="block-text">
+            <div class="content">
+                {% block content %}{% endblock %}
+            </div>
+        </div>
+        <div id="footer">
+          <div class="block">
+              <p>Copyright &copy; 2011 SymPy Development Team.
+              &nbsp;
+              &nbsp;
+              &nbsp;
+              {% trans url='https://github.com/sympy/sympy.github.com' %}This page is open source. Fork <a href="{{ url }}">the project on GitHub</a> to edit it.{% endtrans %}
+              &nbsp;
+              &nbsp;
+              &nbsp;
+              {% trans %}Languages{% endtrans %} (beta):
+              <a href="../cs/index.html">[Cs]</a>,
+              <a href="../de/index.html">[De]</a>,
+              <a href="../en/index.html">[En]</a>,
+              <a href="../ru/index.html">[Ru]</a>
+              </p>
+          </div>
+        </div>
+      </div>
+{% block sidebar %}
       <div class="clear"></div>
     </div>
   </div>
@@ -96,25 +206,72 @@ http://docs.sympy.org/0.7.1/aboutus.html#sympy-development-team
 </div>
 </div>
 <div id="shell"></div>
-<div id="right2">
+<div id="right">
 <div class="right_title">More Information</div>
 <div id="about"><div class="t">
 <div class="block">
-  <h3>Git Repository</h3>
+  <h3>Download Now</h3>
   <div class="content">
 <div id="thetext">
-    <p>
-    Main git repository:<br/>
-    <code>git clone git://github.com/sympy/sympy.git</code>
-    </p>
-    <p>
-    Online access: <a href="http://github.com/sympy/sympy">github.com/sympy/sympy</a>
-    </p>
-</div>
+<p>
+Releases: <a href="http://code.google.com/p/sympy/downloads/list">Google Code downloads</a><br/>
+Latest git version: <a href="http://github.com/sympy/sympy">github.com/sympy/sympy</a>
+</p>
   </div>
 </div>
 </div>
 </div>
 </div>
+<br/>
+            <div id="other_shells"><div class="t">
+<div id="quicklinks" class="block">
+  <h3>Quick Links</h3>
+  <div class="content">
+<div id="thetext">
+    <p>
+      <ul>
+    <font size="3">
+        <li><a href="http://docs.sympy.org/">Documentation</a></li>
+        <li><a href="http://code.google.com/p/sympy/downloads/list">Downloads (source tarballs)</a></li>
+        <li><a href="http://code.google.com/p/sympy/wiki/DownloadInstallation?tm=2">Downloads (packages for distributions)</a></li>
+        <li><a href="http://groups.google.com/group/sympy">Mailinglist</a></li>
+        <li><a href="http://github.com/sympy/sympy">Source code</a></li>
+        <li><a href="http://code.google.com/p/sympy/issues/list">Issues tracker</a></li>
+        <li><a href="http://code.google.com/p/sympy/">Google Code Page</a></li>
+        <li><a href="http://github.com/sympy/sympy/wiki">Wiki</a></li>
+        <li><a href="http://live.sympy.org/">Try SymPy online now</a></li>
+        <li><a href="http://sympy.blogspot.com/">Official SymPy blog</a></li>
+        <li><a href="http://planet.sympy.org/">Planet SymPy</a></li>
+	</font>
 </div>
+      </ul>
+    </p>
+  </div>
+</div>
+
+<br/>
+      </div>
+      <div class="clear"></div>
+    </div>
+<br/>
+<div class="block">
+<div id="example"><div class="t">
+  <h3>News</h3>
+  <div class="content">
+<div id="thetext">
+<p>
+<span class="date">29 Jul 2011</span> Version 0.7.1 released (<a href="https://github.com/sympy/sympy/wiki/Release-Notes-for-0.7.1">changes</a>)<br/>
+<span class="date">28 Jun 2011</span> Version 0.7.0 released (<a href="https://github.com/sympy/sympy/wiki/Release-Notes-for-0.7.0">changes</a>)<br/>
+<span class="date">18 Mar 2011</span> SymPy is accepted as a <a href="http://www.google-melange.com/gsoc/org/show/google/gsoc2011/sympy">mentoring organization</a> for Google Summer of Code 2011<br/>
+<span class="date">23 Oct 2010</span> New website launched at sympy.org<br/>
+<span class="date">17 Mar 2010</span> Version 0.6.7 released (<a href="http://code.google.com/p/sympy/wiki/Changes">changes</a>)<br/>
+<span class="date">20 Dec 2009</span> Version 0.6.6 released (<a href="http://code.google.com/p/sympy/wiki/Changes">changes</a>)<br/>
+<span class="date">26 Sep 2009</span> Final page about the <a href="http://code.google.com/p/sympy/wiki/GSoC2009">2009 Google Summer of Code in SymPy</a> is available.
+</p>
+</div>
+  </div>
+</div>
+</div>
+<br/>
+  </div>
 {% endblock %}
