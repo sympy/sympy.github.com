@@ -162,6 +162,9 @@ padding: 8px 12px;
 #footer .block {  
   color: #FFF;
   background: #3B5526;
+  width:85%;
+  max-width: 800px;
+  min-width: 500px;
 }
 
 #footer .block p {      
