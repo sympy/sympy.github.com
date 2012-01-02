@@ -63,37 +63,46 @@ endtrans %}
 
 
 {% block sidebar %}
-
+<div id="side1">
+      <div class="clear"></div>
+    </div>
+  </div>
+<div id="container">
+<div style="position:relative; float:left; margin: 0;">
+<div style="position:relative; float:left; width:60%; min-width:250px;">
+</div>
+</div>
+<div id="container">
+<div style="position:relative; float:left; margin-top: -100px;">
+<div style="position:relative; float:left; width:300px; height:200px;">
+</div>
+</div>
+<div id="shell"></div>
+<div id="right">
+<div class="right_title">More Information</div>
+<div id="about"><div class="t">
 <div class="block">
   <h3>{% trans %}Download Now{% endtrans %}</h3>
   <div class="content">
+<div id="thetext">
 <p>
 {% trans %}Releases{% endtrans %}: <a href="http://code.google.com/p/sympy/downloads/list">{% trans %}Google Code downloads{% endtrans %}</a><br/>
 {% trans %}Latest git version{% endtrans %}: <a href="http://github.com/sympy/sympy">github.com/sympy/sympy</a>
 </p>
   </div>
 </div>
-
-<div class="block">
-  <h3>{% trans %}News{% endtrans %}</h3>
-  <div class="content">
-<p>
-<span class="date">29 Jul 2011</span> {% trans v='0.7.1' %}Version {{ v }} released{% endtrans %} (<a href="https://github.com/sympy/sympy/wiki/Release-Notes-for-0.7.1">{% trans %}changes{% endtrans %}</a>)<br/>
-<span class="date">28 Jun 2011</span> {% trans v='0.7.0' %}Version {{ v }} released{% endtrans %} (<a href="https://github.com/sympy/sympy/wiki/Release-Notes-for-0.7.0">{% trans %}changes{% endtrans %}</a>)<br/>
-<span class="date">18 Mar 2011</span> {% trans %}SymPy is accepted as a <a href="http://www.google-melange.com/gsoc/org/show/google/gsoc2011/sympy">mentoring organization</a> for Google Summer of Code 2011{% endtrans %}<br/>
-<span class="date">23 Oct 2010</span> {% trans %}New website launched at sympy.org{% endtrans %}<br/>
-<span class="date">17 Mar 2010</span> {% trans v='0.6.7' %}Version {{ v }} released{% endtrans %} (<a href="http://code.google.com/p/sympy/wiki/Changes">{% trans %}changes{% endtrans %}</a>)<br/>
-<span class="date">20 Dec 2009</span> {% trans v='0.6.6' %}Version {{ v }} released{% endtrans %} (<a href="http://code.google.com/p/sympy/wiki/Changes">{% trans %}changes{% endtrans %}</a>)<br/>
-<span class="date">26 Sep 2009</span> {% trans url='http://code.google.com/p/sympy/wiki/GSoC2009' %}Final page about the <a href="{{ url }}">2009 Google Summer of Code in SymPy</a> is available.{% endtrans %}
-</p>
-  </div>
 </div>
-
+</div>
+</div>
+<br/>
+            <div id="other_shells"><div class="t">
 <div id="quicklinks" class="block">
   <h3>{% trans %}Quick Links{% endtrans %}</h3>
   <div class="content">
+<div id="thetext">
     <p>
       <ul>
+    <font size="3">
         <li><a href="http://docs.sympy.org/">{% trans %}Documentation{% endtrans %}</a></li>
         <li><a href="http://code.google.com/p/sympy/downloads/list">{% trans %}Downloads (source tarballs){% endtrans %}</a></li>
         <li><a href="http://code.google.com/p/sympy/wiki/DownloadInstallation?tm=2">{% trans %}Downloads (packages for distributions){% endtrans %}</a></li>
@@ -105,9 +114,37 @@ endtrans %}
         <li><a href="http://live.sympy.org/">{% trans %}Try SymPy online now{% endtrans %}</a></li>
         <li><a href="http://sympy.blogspot.com/">{% trans %}Official SymPy blog{% endtrans %}</a></li>
         <li><a href="http://planet.sympy.org/">{% trans %}Planet SymPy{% endtrans %}</a></li>
+    </font>
+</div>
       </ul>
     </p>
   </div>
 </div>
 
+<br/>
+      </div>
+      <div class="clear"></div>
+    </div>
+<br/>
+<div class="block">
+<div id="example"><div class="t">
+  <h3>{% trans %}News{% endtrans %}</h3>
+  <div class="content">
+<div id="thetext">
+<p>
+<span class="date">29 Jul 2011</span> {% trans v='0.7.1' %}Version {{ v }} released{% endtrans %} (<a href="https://github.com/sympy/sympy/wiki/Release-Notes-for-0.7.1">{% trans %}changes{% endtrans %}</a>)<br/>
+<span class="date">28 Jun 2011</span> {% trans v='0.7.0' %}Version {{ v }} released{% endtrans %} (<a href="https://github.com/sympy/sympy/wiki/Release-Notes-for-0.7.0">{% trans %}changes{% endtrans %}</a>)<br/>
+<span class="date">18 Mar 2011</span> {% trans %}SymPy is accepted as a <a href="http://www.google-melange.com/gsoc/org/show/google/gsoc2011/sympy">mentoring organization</a> for Google Summer of Code 2011{% endtrans %}<br/>
+<span class="date">23 Oct 2010</span> {% trans %}New website launched at sympy.org{% endtrans %}<br/>
+<span class="date">17 Mar 2010</span> {% trans v='0.6.7' %}Version {{ v }} released{% endtrans %} (<a href="http://code.google.com/p/sympy/wiki/Changes">{% trans %}changes{% endtrans %}</a>)<br/>
+<span class="date">20 Dec 2009</span> {% trans v='0.6.6' %}Version {{ v }} released{% endtrans %} (<a href="http://code.google.com/p/sympy/wiki/Changes">{% trans %}changes{% endtrans %}</a>)<br/>
+<span class="date">26 Sep 2009</span> {% trans url='http://code.google.com/p/sympy/wiki/GSoC2009' %}Final page about the <a href="{{ url }}">2009 Google Summer of Code in SymPy</a> is available.{% endtrans %}
+</p>
+</div>
+  </div>
+</div>
+</div>
+<br/>
+  </div>
+  </div>
 {% endblock %}
