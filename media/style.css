@@ -55,7 +55,6 @@ hr {
 -moz-box-shadow: 10px 10px 5px #888;
 -webkit-box-shadow: 10px 10px 5px #888;
 box-shadow: 10px 10px 5px #888;
-width:85%;
 max-width: 800px;
 min-width: 500px;
 margin-top:10px;
@@ -162,7 +161,6 @@ padding: 8px 12px;
 #footer .block {  
   color: #FFF;
   background: #3B5526;
-  width:85%;
   max-width: 800px;
   min-width: 500px;
 }
