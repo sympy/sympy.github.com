@@ -46,45 +46,111 @@ is written entirely in Python and does not require any external libraries.
 
 <h2 class="title">Features</h2>
 <div class="inner">
-<p class="first">
-SymPy core capabilities include:
-<ul>
-    <li>basic arithmetics <code>*,/,+,-,**</code></li>
-    <li>basic simplification (like <code>a*b*b + 2*b*a*b -&gt; 3*a*b**2)</code></li>
-    <li>expansion (like <code>(a+b)**2 -&gt; a**2 + 2*a*b + b**2</code>)</li>
-    <li>functions (exp, ln, ...)</li>
-    <li>complex numbers (like exp(I*x).expand(complex=True) -&gt;
-    cos(x)+I*sin(x))</li>
-    <li>differentiation</li>
-    <li>taylor (laurent) series</li>
-    <li>substitution (like <code>x -&gt; ln(x)</code>, or
-        <code>sin -&gt; cos</code>)</li>
-    <li>arbitrary precision integers, rationals and floats</li>
-    <li>noncommutative symbols</li>
-    <li>pattern matching</li>
-</ul>
-</p>
-<p>
-Then there are SymPy modules for these tasks:
-<ul>
-    <li>more functions (sin, cos, tan, atan, asin, acos, factorial, zeta,
-    legendre)</li>
-    <li>limits (like <code>limit(x*log(x), x, 0) -&gt; 0</code>)</li>
-    <li>integration using extended Risch-Norman heuristic</li>
-    <li>polynomials (division, gcd, square free decomposition, groebner
-    bases, factorization)
-    <li>solvers (algebraic, difference and differential equations, and systems
-    of equations)</li>
-    <li>symbolic matrices (determinants, LU decomposition...)</li>
-    <li>mpmath (multiprecision floating-point arithmetic)</li>
-    <li>geometric algebra (GA)</li>
-    <li>Pauli and Dirac algebra</li>
-    <li>quantum physics</li>
-    <li>geometry module</li>
-    <li>plotting (2D and 3D)</li>
-    <li>code generation (C, Fortran, LaTeX)</li>
-</ul>
-</p>
+  <h3>Core capabilities</h3>
+  <ul>
+    <li><strong>Basic arithmetics:</strong> Support for operators such 
+    as <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>**</code> (power)</li>
+    <li> <strong>Simplification</strong></li>
+    <li><strong>Expansion</strong></li>
+    <li><strong>Functions:</strong> trigonometric, cyclometric, hyperbolic, aera hyperbolic,
+    exponential, roots, logarithms, absolute value, spherical harmonics, factorials and gamma functions, zeta functions, polynomials</li>
+    <li><strong>Substitution</strong></li>
+    <li><strong>Numbers:</strong> arbitraty precision integers, rationals and floats, complex numbers</li>
+    <li><strong>Noncommutative symbols</strong></li>
+    <li><strong>Pattern matching</strong></li>
+  </ul>
+
+  <h3>Polynomials</h3>
+  <ul>
+    <li><strong>Division</strong></li>
+    <li><strong>Greatest Common Divisior, Least Common Multiple</strong></li>
+    <li><strong>Factorization</strong></li>
+    <li><strong>Square-free decomposition</strong></li>
+    <li><strong>Groebner bases</strong></li>
+    <li><strong>Partial fraction decomposition</strong></li>
+  </ul>
+
+  <h3>Calculus</h3>
+  <ul>
+    <li>
+      <strong>Limits:</strong>
+      <code>limit(x*log(x), x, 0) -&gt; 0</code>
+    </li>
+    <li>
+      <strong>Differentiation</strong>
+    </li>
+    <li>
+      <strong>Integration:</strong>
+      It uses extended Risch-Norman heuristic
+    </li>
+    <li><strong>Taylor (Laurent) series</strong></li>
+  </ul>
+
+  <h3>Solving equations</h3>
+  <ul>
+    <li><strong>Polynomials</strong></li>
+    <li><strong>Algebraic Equations</strong></li>
+    <li><strong>Difference and differential Equations</strong></li>
+    <li><strong>Systems of equations</strong></li>
+  </ul>
+
+  <h3>Discrete maths</h3>
+  <ul>
+    <li><strong>Binomial coefficients</strong></li>
+    <li><strong>Sums</strong></li>
+    <li><strong>Products</strong></li>
+    <li><strong>Number theory:</strong> generating prime numbers, smooth numbers, multiplicity, perfect powers, prime factors </li>
+    <li><strong>Logic expressions</strong></li>
+  </ul>
+
+  <h3>Matrices</h3>
+  <ul>
+    <li><strong>Arithmetic operations</strong></li>
+    <li><strong>Vector operations</strong></li>
+    <li><strong>Determinants</strong></li>
+    <li><strong>Inversion</strong></li>
+  </ul>
+
+  <h3>Geometric Algebra</h3> 
+
+  <h3>Geometry</h3>
+  <ul>
+    <li><strong>Entities:</strong> point, line, ray, segment, ellipse, circle, polygon, regular polygon, triangle</li>
+    <li><strong>Intersection</strong></li>
+    <li><strong>Checking tangency</strong></li>
+    <li><strong>Similarity</strong></li>
+  </ul>
+
+  <h3>Plotting</h3>
+  <ul>
+    <li><strong>Coordinate modes</strong></li>
+    <li><strong>Plotting Geometric Entities</strong></li>
+    <li><strong>2D and 3D</strong></li>
+    <li><strong>Interactive interface</strong></li>
+    <li><strong>Colors</strong></li>
+  </ul>
+
+  <h3>Physics</h3>
+  <ul>
+    <li><strong>Units</strong></li>
+    <li><strong>Mechanics</strong></li>
+    <li><strong>Quantum</strong></li>
+    <li><strong>Gaussian Optics</strong></li>
+    <li><strong>Pauli Algebra</strong></li>
+  </ul>
+
+  <h3>Statistics</h3>
+  <ul>
+    <li><strong>Normal distributions</strong></li>
+    <li><strong>Uniform distributions</strong></li>
+    <li><strong>Probability</strong></li>
+  </ul>
+
+  <h3>Printing</h3>
+  <ul>
+    <li><strong>Pretty printing:</strong> ASCII/Unicode pretty printing, LaTeX
+    <li><strong>Code generation:</strong> C, FORTAN, Python</li>
+  </ul>
 </div>
 
 
