@@ -3,19 +3,21 @@
 # This file is distributed under the same license as the PROJECT project.
 #
 # Max Vorob'jov <vmax0770@gmail.com>, 2011.
+# Alexey U. Gudchenko <proga@goodok.ru>, 2012.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2011-11-27 14:31-0800\n"
+"POT-Creation-Date: 2012-01-08 13:00+0400\n"
 "PO-Revision-Date: 2011-12-03 18:50+0400\n"
-"Last-Translator: Max Vorob'job <vmax0770@gmail.com>\n"
+"Last-Translator: Alexey U. Gudchenko <proga@goodok.ru>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 0.9.6\n"
-"Language: ru\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Lokalize 1.2\n"
@@ -29,7 +31,7 @@ msgid "Download"
 msgstr "Скачать"
 
 #: templates/base.html:31 templates/docs.html:4 templates/docs.html:8
-#: templates/index.html:97
+#: templates/index.html:172
 msgid "Documentation"
 msgstr "Документация"
 
@@ -56,8 +58,8 @@ msgid ""
 "This page is open source. Fork <a href=\"%(url)s\">the project on GitHub</a> "
 "to edit it."
 msgstr ""
-"Эта страница с открытым исходным кодом. "
-"Для её редактирования сделайте форк <a href=\"%(url)s\">проекта на GitHub</a>."
+"Эта страница с открытым исходным кодом. Для её редактирования сделайте форк "
+"<a href=\"%(url)s\">проекта на GitHub</a>."
 
 #: templates/base.html:58
 msgid "Languages"
@@ -87,9 +89,8 @@ msgid ""
 "<a href=\"http://groups.google.com/group/sympy\">mailinglist</a>"
 msgstr ""
 "Если вы нашли ошибку (или просто хотите рассказать нам о том, что вы думаете "
-"о SymPy), "
-"пишите в <a href=\"http://groups.google.com/group/sympy\">наш список "
-"рассылки</a>"
+"о SymPy), пишите в <a href=\"http://groups.google.com/group/sympy\">наш "
+"список рассылки</a>"
 
 #: templates/development.html:21
 msgid ""
@@ -97,8 +98,8 @@ msgid ""
 "add a bug report (or a comment) into the <a href=\"http://code.google.com/p/"
 "sympy/issues/list\">issues</a>."
 msgstr ""
-"Также можно отправить отчёт об ошибке (или добавить комментарий) <a "
-"href=\"http://code.google.com/p/sympy/issues/list\">здесь</a>."
+"Также можно отправить отчёт об ошибке (или добавить комментарий) <a href="
+"\"http://code.google.com/p/sympy/issues/list\">здесь</a>."
 
 #: templates/development.html:24
 msgid "You can blog about how you use SymPy"
@@ -113,8 +114,8 @@ msgid ""
 "You can help people on our <a href=\"http://groups.google.com/group/sympy"
 "\">mailinglist</a>"
 msgstr ""
-"Можно помочь людям в нашем <a href=\"http://groups.google.com/group/sympy\">"
-"списке рассылки</a>"
+"Можно помочь людям в нашем <a href=\"http://groups.google.com/group/sympy"
+"\">списке рассылки</a>"
 
 #: templates/development.html:27
 msgid "You can help with reviewing patches"
@@ -140,9 +141,9 @@ msgid ""
 "repository.\n"
 "We'll review it and push it in."
 msgstr ""
-"Лучше всего создать на GitHub запрос на принятие изменений (pull request) "
-"<a href=\"http://github.com/sympy/sympy\">здесь</a>. Мы рассмотрим их и "
-"примем в основную ветку."
+"Лучше всего создать на GitHub запрос на принятие изменений (pull request) <a "
+"href=\"http://github.com/sympy/sympy\">здесь</a>. Мы рассмотрим их и примем "
+"в основную ветку."
 
 #: templates/development.html:45
 msgid ""
@@ -153,10 +154,9 @@ msgid ""
 msgstr ""
 "Если вам нужна помощь в работе с git, github, запросами на принятие "
 "изменений, патчами, написанием кода, с самим SymPy или с чем-то другим, "
-"связанным с разработкой, "
-"просто "
-"задайте свой вопрос в электронном письме в наш список рассылки или в <a "
-"href=\"irc://irc.freenode.net/sympy\">нашем IRC чате</a> - мы поможем."
+"связанным с разработкой, просто задайте свой вопрос в электронном письме в "
+"наш список рассылки или в <a href=\"irc://irc.freenode.net/sympy\">нашем IRC "
+"чате</a> - мы поможем."
 
 #: templates/development.html:48
 msgid ""
@@ -164,9 +164,8 @@ msgid ""
 "<a href=\"https://github.com/sympy/sympy/wiki/Development-workflow\">\n"
 "how to prepare patches</a> using git and github."
 msgstr ""
-"Инструкция по подготовке патчей с помощью git и github находится "
-"<a href=\"https://github.com/sympy/sympy/wiki/Development-workflow\">здесь</a>"
-"."
+"Инструкция по подготовке патчей с помощью git и github находится <a href="
+"\"https://github.com/sympy/sympy/wiki/Development-workflow\">здесь</a>."
 
 #: templates/development.html:54
 msgid ""
@@ -183,17 +182,14 @@ msgid ""
 "for us to integrate it."
 msgstr ""
 "Запрос на принятие изменений в GitHub - наиболее предпочитаемый метод, так "
-"как это "
-"упрощает рассмотрение кода и включение его в репозиторий. Вы можете сделать "
-"это таким образом: "
-"сделать копию последней редакции в репозитории (ссылка справа), создать ветку "
-"со своим кодом, загрузить её куда-нибудь (к примеру, на <a "
-"href=\"http://github.com/\">GitHub</a>) и послать нам в "
-"<a href=\"http://groups.google.com/group/sympy-patches\">список рассылки</a> "
+"как это упрощает рассмотрение кода и включение его в репозиторий. Вы можете "
+"сделать это таким образом: сделать копию последней редакции в репозитории "
+"(ссылка справа), создать ветку со своим кодом, загрузить её куда-нибудь (к "
+"примеру, на <a href=\"http://github.com/\">GitHub</a>) и послать нам в <a "
+"href=\"http://groups.google.com/group/sympy-patches\">список рассылки</a> "
 "ссылку. Еще лучше проследовать инструкции по подготовке патчей, чтобы "
 "отправить нам запрос на внесение изменений. Можно посылать необработаные "
-"патчи, но это займёт больше усилий для "
-"включения в репозиторий."
+"патчи, но это займёт больше усилий для включения в репозиторий."
 
 #: templates/development.html:65
 msgid ""
@@ -204,9 +200,9 @@ msgid ""
 "http://docs.sympy.org/0.7.1/aboutus.html#sympy-development-team\n"
 "</a>, send us a patch and your name will appear there too."
 msgstr ""
-"У SymPy <a href=\"http://docs.sympy.org/0.7.1/aboutus."
-"html#sympy-development-team\">большая команда разработчиков</a>. Пришлите нам "
-"патч и ваше имя окажется в этом же списке."
+"У SymPy <a href=\"http://docs.sympy.org/0.7.1/aboutus.html#sympy-development-"
+"team\">большая команда разработчиков</a>. Пришлите нам патч и ваше имя "
+"окажется в этом же списке."
 
 #: templates/development.html:74
 msgid "Sources of the Webpages"
@@ -220,15 +216,15 @@ msgstr "Исходные коды вебстраниц находятся зде
 msgid "Feel free to send us patches with improvements."
 msgstr "Не стесняйтесь присылать нам патчи с улучшениями."
 
-#: templates/development.html:89
+#: templates/development.html:106
 msgid "Git Repository"
 msgstr "Репозиторий Git"
 
-#: templates/development.html:92 templates/download.html:27
+#: templates/development.html:110 templates/download.html:27
 msgid "Main git repository"
 msgstr "Главный репозиторий Git"
 
-#: templates/development.html:96
+#: templates/development.html:114
 msgid "Online access"
 msgstr "Онлайн-доступ"
 
@@ -283,183 +279,396 @@ msgstr ""
 "SymPy - библиотека Python для символьных вычислений. Она призвана стать "
 "полнофункциональной системой компьютерных расчётов (CAS), но при этом "
 "сохраняет простоту кода и расширяемость. Она полностью написана на Python и "
-"не "
-"требует других внешних библиотек."
+"не требует других внешних библиотек."
 
 #: templates/index.html:19
 msgid "Features"
 msgstr "Функции"
 
-#: templates/index.html:22
-msgid "SymPy core capabilities include:"
-msgstr "Базовые возможности SymPy включают:"
+#: templates/index.html:21
+msgid "Core capabilities"
+msgstr "Основные возможности SymPy:"
 
-#: templates/index.html:24
-msgid "basic arithmetics"
-msgstr "базовую арифметику"
+#: templates/index.html:23
+msgid "Basic arithmetics:"
+msgstr "Базовая арифметика"
+
+#: templates/index.html:23
+msgid ""
+"Support for operators such \n"
+"    as <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, "
+"<code>**</code> (power)"
+msgstr ""
+"Поддержка операторов \n"
+"    <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, "
+"<code>**</code> (power)"
 
 #: templates/index.html:25
-msgid "basic simplification"
-msgstr "базовые упрощения"
-
-#: templates/index.html:25 templates/index.html:26 templates/index.html:28
-#: templates/index.html:32 templates/index.html:44
-msgid "like"
-msgstr "такие, как"
+msgid "Simplification"
+msgstr "Упрощение"
 
 #: templates/index.html:26
-msgid "expansion"
-msgstr "раскрытие выражений"
+msgid "Expansion"
+msgstr "Раскрытие выражений"
 
 #: templates/index.html:27
-msgid "functions"
-msgstr "функции"
+msgid "Functions:"
+msgstr "Функции"
 
-#: templates/index.html:28
-msgid "complex numbers"
-msgstr "операции с комплексными числами"
+#: templates/index.html:27
+msgid ""
+"trigonometric, cyclometric, hyperbolic, aera hyperbolic,\n"
+"    exponential, roots, logarithms, absolute value, spherical harmonics, "
+"factorials and gamma functions, zeta functions, polynomials"
+msgstr ""
+"тригономертрические, цикломатические, гиперболические, aera hyperbolic,\n"
+"    экспоненты, корни, логарифмы, абсолютное значение, сферические функции, "
+"факториалы и Гамма-функция, Дзета-функции, полиномы"
+
+#: templates/index.html:29
+msgid "Substitution"
+msgstr "Подстановки"
 
 #: templates/index.html:30
-msgid "differentiation"
-msgstr "дифференцирование"
+msgid "Numbers:"
+msgstr "Числа:"
 
-#: templates/index.html:31
-msgid "taylor (laurent) series"
-msgstr "ряды Тейлора (Лорана)"
-
-#: templates/index.html:32
-msgid "substitution"
-msgstr "подстановки"
-
-#: templates/index.html:32
-msgid "or"
-msgstr "или"
-
-#: templates/index.html:34
-msgid "arbitrary precision integers, rationals and floats"
+#: templates/index.html:30
+msgid "arbitraty precision integers, rationals and floats, complex numbers"
 msgstr "операции с целыми и действительными числами произвольной точности"
 
-#: templates/index.html:35
-msgid "noncommutative symbols"
-msgstr "некоммутативные выражения"
+#: templates/index.html:31
+msgid "Noncommutative symbols"
+msgstr "Некоммутативные выражения"
 
-#: templates/index.html:36
-msgid "pattern matching"
-msgstr "проверку соответствия выражения шаблону"
+#: templates/index.html:32
+msgid "Pattern matching"
+msgstr "Проверка соответствия выражения шаблону"
+
+#: templates/index.html:35 templates/index.html:63
+msgid "Polynomials"
+msgstr "Многочлены"
+
+#: templates/index.html:37
+msgid "Division"
+msgstr "Деление"
+
+#: templates/index.html:38
+msgid "Greatest Common Divisior, Least Common Multiple"
+msgstr "Наибольший общий делитель, наименьшее общее кратное"
+
+#: templates/index.html:39
+msgid "Factorization"
+msgstr "Разложение на множители"
 
 #: templates/index.html:40
-msgid "Then there are SymPy modules for these tasks:"
-msgstr "Модули SymPy включают поддержку следующего:"
+msgid "Square-free decomposition"
+msgstr "Разложение, свободное от квадратов"
+
+#: templates/index.html:41
+msgid "Groebner bases"
+msgstr "Базис Грёбнера"
 
 #: templates/index.html:42
-msgid ""
-"more functions (sin, cos, tan, atan, asin, acos, factorial, zeta,\n"
-"    legendre)"
-msgstr ""
-"дополнительные функции (sin, cos, tan, atan, asin, acos, factorial, zeta, "
-"legendre)"
-
-#: templates/index.html:44
-msgid "limits"
-msgstr "пределы"
+msgid "Partial fraction decomposition"
+msgstr "Разложение на элементарные дроби"
 
 #: templates/index.html:45
-msgid "integration using extended Risch-Norman heuristic"
-msgstr "интегрирование с использованием алгоритмов Рича-Нормана"
-
-#: templates/index.html:46
-msgid ""
-"polynomials (division, gcd, square free decomposition, groebner\n"
-"    bases, factorization)"
-msgstr ""
-"полиномы (деление, НОД, разложение, свободное от квадратов; базис Грёбнера, "
-"факторизация)"
+msgid "Calculus"
+msgstr "Вычисления"
 
 #: templates/index.html:48
-msgid ""
-"solvers (algebraic, difference and differential equations, and systems\n"
-"    of equations)"
-msgstr ""
-"решение уравнений (алгебраические, разностные, дифференциальные и их системы)"
-
-#: templates/index.html:50
-msgid "symbolic matrices (determinants, LU decomposition...)"
-msgstr "символьные матрицы (определители, LU-разложения...)"
-
-#: templates/index.html:51
-msgid "mpmath (multiprecision floating-point arithmetic)"
-msgstr "вычисления с произвольной точностью для чисел с плавающей точкой"
+msgid "Limits:"
+msgstr "Пределы"
 
 #: templates/index.html:52
-msgid "geometric algebra (GA)"
-msgstr "геометрическая алгебра"
-
-#: templates/index.html:53
-msgid "Pauli and Dirac algebra"
-msgstr "матрицы Паули и Дирака"
-
-#: templates/index.html:54
-msgid "quantum physics"
-msgstr "квантовая физика"
+msgid "Differentiation"
+msgstr "Дифференцирование"
 
 #: templates/index.html:55
-msgid "geometry module"
-msgstr "модуль геометрии"
+msgid "Integration:"
+msgstr "Интегрирование"
 
 #: templates/index.html:56
-msgid "plotting (2D and 3D)"
-msgstr "двух- и трёхмерное постороение графиков"
+msgid "It uses extended Risch-Norman heuristic"
+msgstr "Интегрирование с использованием алгоритмов Рича-Нормана"
 
-#: templates/index.html:57
-msgid "code generation (C, Fortran, LaTeX)"
-msgstr "генерация кода (C, Fortran, LaTeX)"
+#: templates/index.html:58
+msgid "Taylor (Laurent) series"
+msgstr "Ряды Тейлора (Лорана)"
 
-#: templates/index.html:68
+#: templates/index.html:61
+msgid "Solving equations"
+msgstr "Решение уравнений"
+
+#: templates/index.html:64
+msgid "Algebraic Equations"
+msgstr "Алгебраических"
+
+#: templates/index.html:65
+msgid "Difference and differential Equations"
+msgstr "Дифференциальные и разностных"
+
+#: templates/index.html:66
+msgid "Systems of equations"
+msgstr "Систем уравнений"
+
+#: templates/index.html:69
+msgid "Discrete maths"
+msgstr "Дискретная математика"
+
+#: templates/index.html:71
+msgid "Binomial coefficients"
+msgstr "Биномиальные коэффициенты"
+
+#: templates/index.html:72
+msgid "Sums"
+msgstr "Суммы последовательностей"
+
+#: templates/index.html:73
+msgid "Products"
+msgstr "Произведения последовательностей"
+
+#: templates/index.html:74
+msgid "Number theory:"
+msgstr "Теория чисел"
+
+#: templates/index.html:74
+msgid ""
+"generating prime numbers, smooth numbers, multiplicity, perfect powers, "
+"prime factors "
+msgstr ""
+"вычисление простых чисел, гладкие числа, multiplicity, совершенные степени, "
+"простые множители "
+
+#: templates/index.html:75
+msgid "Logic expressions"
+msgstr "Логические выражения"
+
+#: templates/index.html:78
+msgid "Matrices"
+msgstr "Матрицы"
+
+#: templates/index.html:80
+msgid "Arithmetic operations"
+msgstr "Арифметические операции"
+
+#: templates/index.html:81
+msgid "Vector operations"
+msgstr "Операции над векторами"
+
+#: templates/index.html:82
+msgid "Determinants"
+msgstr "Детерминанты"
+
+#: templates/index.html:83
+msgid "Обращение"
+msgstr "Версия Git"
+
+#: templates/index.html:86
+msgid "Geometric Algebra"
+msgstr "Геометрическая алгебра"
+
+#: templates/index.html:88
+msgid "Geometry"
+msgstr "Модуль геометрии"
+
+#: templates/index.html:90
+msgid "Entities:"
+msgstr "Фигуры:"
+
+#: templates/index.html:90
+msgid ""
+"point, line, ray, segment, ellipse, circle, polygon, regular polygon, "
+"triangle"
+msgstr "точка, прямая, луч, сектор, эллипс, окружность, многоугольники, "
+"простой многоугольник, треугольник"
+
+#: templates/index.html:91
+msgid "Intersection"
+msgstr "Пересечение"
+
+#: templates/index.html:92
+msgid "Checking tangency"
+msgstr "Проверка касания"
+
+#: templates/index.html:93
+msgid "Similarity"
+msgstr "Подобие"
+
+#: templates/index.html:96
+msgid "Plotting"
+msgstr "Рисование"
+
+#: templates/index.html:98
+msgid "Coordinate modes"
+msgstr ""
+
+#: templates/index.html:99
+msgid "Plotting Geometric Entities"
+msgstr "Рисование геометрических фигур"
+
+#: templates/index.html:100
+msgid "2D and 3D"
+msgstr "Двух- и трёхмерное построение графиков"
+
+#: templates/index.html:101
+msgid "Interactive interface"
+msgstr "Интерактивный режим"
+
+#: templates/index.html:102
+msgid "Colors"
+msgstr "Поддержка цветов"
+
+#: templates/index.html:105
+msgid "Physics"
+msgstr "Физика"
+
+#: templates/index.html:107
+msgid "Units"
+msgstr "Единицы измерения"
+
+#: templates/index.html:108
+msgid "Mechanics"
+msgstr "Механика"
+
+#: templates/index.html:109
+msgid "Quantum"
+msgstr "Квантовая физика"
+
+#: templates/index.html:110
+msgid "Gaussian Optics"
+msgstr "Оптика"
+
+#: templates/index.html:111
+msgid "Pauli Algebra"
+msgstr "Матрицы Паули и Дирака"
+
+#: templates/index.html:114
+msgid "Statistics"
+msgstr "Статистика"
+
+#: templates/index.html:116
+msgid "Normal distributions"
+msgstr "Пакеты для дистрибутивов"
+
+#: templates/index.html:117
+msgid "Uniform distributions"
+msgstr "Непрерывное равномерное распределение"
+
+#: templates/index.html:118
+msgid "Probability"
+msgstr "Теория вероятностей"
+
+#: templates/index.html:121
+msgid "Printing"
+msgstr "Печать"
+
+#: templates/index.html:123
+msgid "Pretty printing:"
+msgstr "Красивая печать (Pretty-printing)"
+
+#: templates/index.html:123
+msgid "ASCII/Unicode pretty printing, LaTeX"
+msgstr "Печать с использованием ASCII или Unicode символов. Печать в формате LaTeX"
+
+#: templates/index.html:124
+msgid "Code generation:"
+msgstr "Генерация кода"
+
+#: templates/index.html:124
+msgid "C, FORTAN, Python"
+msgstr "C, FORTAN, Python"
+
+#: templates/index.html:151
 msgid "Download Now"
 msgstr "Загрузить сейчас"
 
-#: templates/index.html:71
+#: templates/index.html:155
 msgid "Releases"
 msgstr "Релизы"
 
-#: templates/index.html:71
+#: templates/index.html:155
 msgid "Google Code downloads"
 msgstr "Загрузки на Google Code"
 
-#: templates/index.html:72
+#: templates/index.html:156
 msgid "Latest git version"
 msgstr "Последняя git версия"
 
-#: templates/index.html:78
+#: templates/index.html:166
+msgid "Quick Links"
+msgstr "Быстрые ссылки"
+
+#: templates/index.html:173
+msgid "Downloads (source tarballs)"
+msgstr "Загрузки (архивы с исходными текстами)"
+
+#: templates/index.html:174
+msgid "Downloads (packages for distributions)"
+msgstr "Загрузки (пакеты для дистрибутивов)"
+
+#: templates/index.html:175
+msgid "Mailinglist"
+msgstr "Список рассылки"
+
+#: templates/index.html:176
+msgid "Source code"
+msgstr "Исходный код"
+
+#: templates/index.html:177
+msgid "Issues tracker"
+msgstr "Система отслеживания ошибок"
+
+#: templates/index.html:178
+msgid "Google Code Page"
+msgstr "Страница на Google Code"
+
+#: templates/index.html:179
+msgid "Wiki"
+msgstr "Вики"
+
+#: templates/index.html:180
+msgid "Try SymPy online now"
+msgstr "Попробуйте поработать с SymPy онлайн"
+
+#: templates/index.html:181
+msgid "Official SymPy blog"
+msgstr "Официальный блог SymPy"
+
+#: templates/index.html:182
+msgid "Planet SymPy"
+msgstr "Планета SymPy"
+
+#: templates/index.html:197
 msgid "News"
 msgstr "Новости"
 
-#: templates/index.html:81 templates/index.html:82 templates/index.html:85
-#: templates/index.html:86
+#: templates/index.html:201 templates/index.html:202 templates/index.html:205
+#: templates/index.html:206
 #, python-format
 msgid "Version %(v)s released"
 msgstr "Релиз версии %(v)s"
 
-#: templates/index.html:81 templates/index.html:82 templates/index.html:85
-#: templates/index.html:86
+#: templates/index.html:201 templates/index.html:202 templates/index.html:205
+#: templates/index.html:206
 msgid "changes"
 msgstr "изменения"
 
-#: templates/index.html:83
+#: templates/index.html:203
 msgid ""
 "SymPy is accepted as a <a href=\"http://www.google-melange.com/gsoc/org/show/"
 "google/gsoc2011/sympy\">mentoring organization</a> for Google Summer of Code "
 "2011"
 msgstr ""
-"SymPy стала участником "
-"<a href=\"http://www.google-melange.com/gsoc/org/show/google/gsoc2011/sympy\">"
-"Google Summer of Code 2011</a>"
+"SymPy стала участником <a href=\"http://www.google-melange.com/gsoc/org/show/"
+"google/gsoc2011/sympy\">Google Summer of Code 2011</a>"
 
-#: templates/index.html:84
+#: templates/index.html:204
 msgid "New website launched at sympy.org"
 msgstr "Новый сайт запущен на sympy.org"
 
-#: templates/index.html:87
+#: templates/index.html:207
 #, python-format
 msgid ""
 "Final page about the <a href=\"%(url)s\">2009 Google Summer of Code in "
@@ -467,50 +676,6 @@ msgid ""
 msgstr ""
 "Доступна отчётная страница об участии SymPy в <a href=\"%(url)s\">Google "
 "Summer of Code 2009</a>"
-
-#: templates/index.html:93
-msgid "Quick Links"
-msgstr "Быстрые ссылки"
-
-#: templates/index.html:98
-msgid "Downloads (source tarballs)"
-msgstr "Загрузки (архивы с исходными текстами)"
-
-#: templates/index.html:99
-msgid "Downloads (packages for distributions)"
-msgstr "Загрузки (пакеты для дистрибутивов)"
-
-#: templates/index.html:100
-msgid "Mailinglist"
-msgstr "Список рассылки"
-
-#: templates/index.html:101
-msgid "Source code"
-msgstr "Исходный код"
-
-#: templates/index.html:102
-msgid "Issues tracker"
-msgstr "Система отслеживания ошибок"
-
-#: templates/index.html:103
-msgid "Google Code Page"
-msgstr "Страница на Google Code"
-
-#: templates/index.html:104
-msgid "Wiki"
-msgstr "Вики"
-
-#: templates/index.html:105
-msgid "Try SymPy online now"
-msgstr "Попробуйте поработать с SymPy онлайн"
-
-#: templates/index.html:106
-msgid "Official SymPy blog"
-msgstr "Официальный блог SymPy"
-
-#: templates/index.html:107
-msgid "Planet SymPy"
-msgstr "Планета SymPy"
 
 #: templates/screenshots.html:8
 msgid "Python Session"
@@ -532,4 +697,47 @@ msgstr "Получить помощь можно следующими спосо
 msgid "More Specific"
 msgstr "Также можете прочитать: "
 
+#~ msgid "like"
+#~ msgstr "такие, как"
 
+#~ msgid "complex numbers"
+#~ msgstr "операции с комплексными числами"
+
+#~ msgid "or"
+#~ msgstr "или"
+
+#~ msgid "Then there are SymPy modules for these tasks:"
+#~ msgstr "Модули SymPy включают поддержку следующего:"
+
+#~ msgid ""
+#~ "more functions (sin, cos, tan, atan, asin, acos, factorial, zeta,\n"
+#~ "    legendre)"
+#~ msgstr ""
+#~ "дополнительные функции (sin, cos, tan, atan, asin, acos, factorial, zeta, "
+#~ "legendre)"
+
+#~ msgid ""
+#~ "polynomials (division, gcd, square free decomposition, groebner\n"
+#~ "    bases, factorization)"
+#~ msgstr ""
+#~ "полиномы (деление, НОД, разложение, свободное от квадратов; базис "
+#~ "Грёбнера, факторизация)"
+
+#~ msgid ""
+#~ "solvers (algebraic, difference and differential equations, and systems\n"
+#~ "    of equations)"
+#~ msgstr ""
+#~ "решение уравнений (алгебраические, разностные, дифференциальные и их "
+#~ "системы)"
+
+#~ msgid "symbolic matrices (determinants, LU decomposition...)"
+#~ msgstr "символьные матрицы (определители, LU-разложения...)"
+
+#~ msgid "mpmath (multiprecision floating-point arithmetic)"
+#~ msgstr "вычисления с произвольной точностью для чисел с плавающей точкой"
+
+#~ msgid "quantum physics"
+#~ msgstr "квантовая физика"
+
+#~ msgid "code generation (C, Fortran, LaTeX)"
+#~ msgstr "генерация кода (C, Fortran, LaTeX)"
