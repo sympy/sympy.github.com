@@ -20,26 +20,28 @@ endtrans %}
 <div class="inner">
   <h3>{% trans %}Core capabilities{% endtrans %}</h3>
   <ul>
-    <li><strong>{% trans %}Basic arithmetics:{% endtrans %}</strong> {% trans %}Support for operators such 
+    <li><strong>{% trans %}Basic arithmetic:{% endtrans %}</strong> {% trans %}Support for operators such 
     as <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>**</code> (power){% endtrans %}</li>
     <li> <strong>{% trans %}Simplification{% endtrans %}</strong></li>
     <li><strong>{% trans %}Expansion{% endtrans %}</strong></li>
-    <li><strong>{% trans %}Functions:{% endtrans %}</strong> {% trans %}trigonometric, cyclometric, hyperbolic, aera hyperbolic,
-    exponential, roots, logarithms, absolute value, spherical harmonics, factorials and gamma functions, zeta functions, polynomials{% endtrans %}</li>
+    <li><strong>{% trans %}Functions:{% endtrans %}</strong> {% trans
+    %}trigonometric, hyperbolic, exponential, roots, logarithms, absolute
+    value, spherical harmonics, factorials and gamma functions, zeta
+    functions, polynomials, special functions, ...{% endtrans %}</li>
     <li><strong>{% trans %}Substitution{% endtrans %}</strong></li>
-    <li><strong>{% trans %}Numbers:{% endtrans %}</strong> {% trans %}arbitraty precision integers, rationals and floats, complex numbers{% endtrans %}</li>
+    <li><strong>{% trans %}Numbers:{% endtrans %}</strong> {% trans %}arbitrary precision integers, rationals, and floats{% endtrans %}</li>
     <li><strong>{% trans %}Noncommutative symbols{% endtrans %}</strong></li>
     <li><strong>{% trans %}Pattern matching{% endtrans %}</strong></li>
   </ul>
 
   <h3>{% trans %}Polynomials{% endtrans %}</h3>
   <ul>
-    <li><strong>{% trans %}Division{% endtrans %}</strong></li>
-    <li><strong>{% trans %}Greatest Common Divisior, Least Common Multiple{% endtrans %}</strong></li>
+    <li><strong>{% trans %}Basic arithmetic:{% endtrans %}</strong> {% trans %} division, gcd, ... {% endtrans %}</li>
     <li><strong>{% trans %}Factorization{% endtrans %}</strong></li>
     <li><strong>{% trans %}Square-free decomposition{% endtrans %}</strong></li>
-    <li><strong>{% trans %}Groebner bases{% endtrans %}</strong></li>
+    <li><strong>{% trans %}Gröbner bases{% endtrans %}</strong></li>
     <li><strong>{% trans %}Partial fraction decomposition{% endtrans %}</strong></li>
+    <li><strong>{% trans %}Resultants{% endtrans %}</strong></li>
   </ul>
 
   <h3>{% trans %}Calculus{% endtrans %}</h3>
@@ -60,36 +62,40 @@ endtrans %}
 
   <h3>{% trans %}Solving equations{% endtrans %}</h3>
   <ul>
-    <li><strong>{% trans %}Polynomials{% endtrans %}</strong></li>
-    <li><strong>{% trans %}Algebraic Equations{% endtrans %}</strong></li>
-    <li><strong>{% trans %}Difference and differential Equations{% endtrans %}</strong></li>
+    <li><strong>{% trans %}Polynomial equations{% endtrans %}</strong></li>
+    <li><strong>{% trans %}Algebraic equations{% endtrans %}</strong></li>
+    <li><strong>{% trans %}Differential equations{% endtrans %}</strong></li>
+    <li><strong>{% trans %}Difference equations{% endtrans %}</strong></li>
     <li><strong>{% trans %}Systems of equations{% endtrans %}</strong></li>
   </ul>
 
-  <h3>{% trans %}Discrete maths{% endtrans %}</h3>
+  <h3>{% trans %}Discrete math{% endtrans %}</h3>
   <ul>
     <li><strong>{% trans %}Binomial coefficients{% endtrans %}</strong></li>
-    <li><strong>{% trans %}Sums{% endtrans %}</strong></li>
+    <li><strong>{% trans %}Summations{% endtrans %}</strong></li>
     <li><strong>{% trans %}Products{% endtrans %}</strong></li>
-    <li><strong>{% trans %}Number theory:{% endtrans %}</strong> {% trans %}generating prime numbers, smooth numbers, multiplicity, perfect powers, prime factors {% endtrans %}</li>
+    <li><strong>{% trans %}Number theory:{% endtrans %}</strong> {% trans
+    %}generating prime numbers, primality testing,  integer factorization, ... {% endtrans %}</li>
     <li><strong>{% trans %}Logic expressions{% endtrans %}</strong></li>
   </ul>
 
   <h3>{% trans %}Matrices{% endtrans %}</h3>
   <ul>
-    <li><strong>{% trans %}Arithmetic operations{% endtrans %}</strong></li>
-    <li><strong>{% trans %}Vector operations{% endtrans %}</strong></li>
+    <li><strong>{% trans %}Basic arithmetic{% endtrans %}</strong></li>
+    <li><strong>{% trans %}Eigenvalues/eigenvectors{% endtrans %}</strong></li>
     <li><strong>{% trans %}Determinants{% endtrans %}</strong></li>
     <li><strong>{% trans %}Inversion{% endtrans %}</strong></li>
+    <li><strong>{% trans %}Solving{% endtrans %}</strong></li>
   </ul>
 
   <h3>{% trans %}Geometric Algebra{% endtrans %}</h3> 
 
   <h3>{% trans %}Geometry{% endtrans %}</h3>
   <ul>
-    <li><strong>{% trans %}Entities:{% endtrans %}</strong> {% trans %}point, line, ray, segment, ellipse, circle, polygon, regular polygon, triangle{% endtrans %}</li>
+    <li><strong>{% trans %}points, lines, rays, segments, ellipses, circles,
+    polygons, ...{% endtrans %}</strong></li>
     <li><strong>{% trans %}Intersection{% endtrans %}</strong></li>
-    <li><strong>{% trans %}Checking tangency{% endtrans %}</strong></li>
+    <li><strong>{% trans %}Tangency{% endtrans %}</strong></li>
     <li><strong>{% trans %}Similarity{% endtrans %}</strong></li>
   </ul>
 
@@ -172,7 +178,7 @@ endtrans %}
         <li><a href="http://docs.sympy.org/">{% trans %}Documentation{% endtrans %}</a></li>
         <li><a href="http://code.google.com/p/sympy/downloads/list">{% trans %}Downloads (source tarballs){% endtrans %}</a></li>
         <li><a href="http://code.google.com/p/sympy/wiki/DownloadInstallation?tm=2">{% trans %}Downloads (packages for distributions){% endtrans %}</a></li>
-        <li><a href="http://groups.google.com/group/sympy">{% trans %}Mailinglist{% endtrans %}</a></li>
+        <li><a href="http://groups.google.com/group/sympy">{% trans %}Mailing List{% endtrans %}</a></li>
         <li><a href="http://github.com/sympy/sympy">{% trans %}Source code{% endtrans %}</a></li>
         <li><a href="http://code.google.com/p/sympy/issues/list">{% trans %}Issues tracker{% endtrans %}</a></li>
         <li><a href="http://code.google.com/p/sympy/">{% trans %}Google Code Page{% endtrans %}</a></li>
@@ -214,3 +220,8 @@ endtrans %}
   </div>
   </div>
 {% endblock %}
+
+<!--  LocalWords:  endtrans Noncommutative gcd Gröbner primality LaTeX FORTAN
+ -->
+<!--  LocalWords:  endblock sympy
+ -->
