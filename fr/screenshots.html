@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Скачать</title>
+    <title>Captures d’écran</title>
     <link rel="stylesheet" href="../media/base.css" type="text/css" media="screen" />
     <link rel="stylesheet" id="current-theme" href="../media/style.css" type="text/css" media="screen" />
 </head>
@@ -16,13 +16,13 @@
         
         
         <ul>
-            <li class=" first"><a href="index.html">Главная страница</a></li>
-            <li class="active first"><a href="download.html">Скачать</a></li>
-            <li class=" first"><a href="docs.html">Документация</a></li>
-            <li class=" first"><a href="support.html">Поддержка</a></li>
-            <li class=" first"><a href="screenshots.html">Скриншоты</a></li>
-            <li class=" first"><a href="development.html">Разработка</a></li>
-            <li class=" first"><a href="http://live.sympy.org/">Попробовать Online</a></li>
+            <li class=" first"><a href="index.html">Page Principale</a></li>
+            <li class=" first"><a href="download.html">Télécharger</a></li>
+            <li class=" first"><a href="docs.html">Documentation</a></li>
+            <li class=" first"><a href="support.html">Support</a></li>
+            <li class="active first"><a href="screenshots.html">Captures d’écran</a></li>
+            <li class=" first"><a href="development.html">Développement</a></li>
+            <li class=" first"><a href="http://live.sympy.org/">Shell en ligne</a></li>
         </ul>
         
         <div class="clear"></div>
@@ -34,33 +34,30 @@
             <div class="content">
                 
 
-<h2 class="title">Архивы с исходными кодами (релизы)</h2>
+<h2 class="title">Session Python</h2>
 <div class="inner">
 <p class="first">
-<a href="http://code.google.com/p/sympy/downloads/list">Загрузки</a>
-(на Google Code)
-</p>
-</div>
-
-<h2 class="title">Пакеты для дистрибутивов</h2>
-<div class="inner">
-<p class="first">
-<a href="http://code.google.com/p/sympy/wiki/DownloadInstallation?tm=2">Загрузки</a>
-(на Google Code)
-</p>
-</div>
-
-<h2 class="title">Версия Git</h2>
-<div class="inner">
-<p class="first">
-Главный репозиторий Git:
 <pre>
-git clone git://github.com/sympy/sympy.git
+>>> from sympy import Symbol, cos
+>>> x = Symbol('x')
+>>> e = 1/cos(x)
+>>> print e.series(x, 0, 10)
+1 + (1/2)*x**2 + (5/24)*x**4 + (61/720)*x**6 + (277/8064)*x**8 + O(x**10)
 </pre>
 </p>
-<p>
-Онлайн-просмотр:
-<a href="http://github.com/sympy/sympy">github.com/sympy/sympy</a>
+</div>
+
+<h2 class="title">Session ISymPy</h2>
+<div class="inner">
+<p class="first">
+<pre>
+In [1]: (1/cos(x)).series(x, 0, 10)
+Out[1]: 
+     2      4       6        8           
+    x    5*x    61*x    277*x            
+1 + ── + ──── + ───── + ────── + O(x**10)
+    2     24     720     8064            
+</pre>
 </p>
 </div>
 
@@ -73,11 +70,11 @@ git clone git://github.com/sympy/sympy.git
               &nbsp;
               &nbsp;
               &nbsp;
-              Эта страница с открытым исходным кодом. Для её редактирования сделайте форк <a href="https://github.com/sympy/sympy.github.com">проекта на GitHub</a>.
+              Cette page est open source. Forkez <a href="https://github.com/sympy/sympy.github.com">le projet sur GitHub</a> pour l’éditer.
               &nbsp;
               &nbsp;
               &nbsp;
-              Язык (beta):
+              Langues (beta):
               <a href="../cs/index.html">[Cs]</a>,
               <a href="../de/index.html">[De]</a>,
               <a href="../en/index.html">[En]</a>,
