@@ -23,7 +23,7 @@ msgstr "Página Principal"
 
 #: templates/base.html:30 templates/download.html:4
 msgid "Download"
-msgstr ""
+msgstr "Download"
 
 #: templates/base.html:31 templates/docs.html:4 templates/docs.html:8
 #: templates/index.html:178
@@ -36,7 +36,7 @@ msgstr "Suporte"
 
 #: templates/base.html:33 templates/screenshots.html:4
 msgid "Screenshots"
-msgstr ""
+msgstr "Sreenshots"
 
 #: templates/base.html:34 templates/development.html:4
 #: templates/development.html:8
@@ -54,7 +54,7 @@ msgid ""
 "GitHub</a> to edit it."
 msgstr ""
 "Esta página é open source. Fork <a href=\"%(url)s\">o projeto no "
-"GitHub</a> para editá-lo."
+"GitHub</a> para editá-la."
 
 #: templates/base.html:58
 msgid "Languages"
@@ -65,7 +65,7 @@ msgid ""
 "We are interested in any contribution. There are many ways how you can\n"
 "contribute"
 msgstr ""
-"Nós estamos interessados em qualquer contribuição. Há várias maneiras que\n"
+"Nós estamos interessados em qualquer contribuição. Há várias maneiras em que\n"
 "você pode contribuir"
 
 #: templates/development.html:15
@@ -139,9 +139,8 @@ msgid ""
 "We'll review it and push it in."
 msgstr ""
 "A melhor maneira é mandar um requerimento de pull no github\n"
-"para o <a href=\"http://github.com/sympy/sympy\">sympy/sympy</a> "
-"repositório.\n"
-"Nós iremos revisa-lo e integra-lo ao repositório."
+"para o repositório<a href=\"http://github.com/sympy/sympy\">sympy/sympy</a>. "
+"\nNós iremos revisá-lo e integrá-lo ao repositório."
 
 #: templates/development.html:45
 msgid ""
@@ -155,7 +154,7 @@ msgstr ""
 "Se você precisar de ajuda com git, github, requerimentos de pull, patches, programação, Sympy ou \n" 
 "qualquer coisa relacionada, nos envie um email para lista de emails\n"
 "ou pergunte no IRC (nosso canal é <a "
-"href=\"irc://irc.freenode.net/sympy\">#simpy at freenode</a>), e nós "
+"href=\"irc://irc.freenode.net/sympy\">#sympy no freenode</a>), e nós "
 "ajudaremos."
 
 #: templates/development.html:48
@@ -187,9 +186,9 @@ msgstr ""
 "nós \n"
 "revisar e integrar o código. Sendo assim,\n"
 "você também pode clonar as últimas atualizações no repositório (link à direita),"
-" prepare um branch com\n"
-"seu código, envie para algum lugar (por exemplo <a\n"
-"    href=\"http://github.com/\">github</a>) e nos envie um link para <a\n"
+" preparar um branch com\n"
+"seu código, enviar para algum lugar (por exemplo <a\n"
+"    href=\"http://github.com/\">github</a>) e nos enviar um link para <a\n"
 "    href=\"http://groups.google.com/group/sympy-patches\">sympy-"
 "patches</a>\n"
 "lista de emails, ou nos mandar patches em arquivos --- mais trabalhoso \n"
@@ -213,15 +212,15 @@ msgstr ""
 
 #: templates/development.html:74
 msgid "Sources of the Webpages"
-msgstr "Fontes das Webpages"
+msgstr "As fontes das Webpages"
 
 #: templates/development.html:77
 msgid "Sources of these webpages are at"
-msgstr "Fontes dessas webpages estão em"
+msgstr "As fontes dessas webpages estão em"
 
 #: templates/development.html:80
 msgid "Feel free to send us patches with improvements."
-msgstr "Sinta-se livre para nos enviar patches com melhoras."
+msgstr "Sinta-se livre para nos enviar patches com melhorias."
 
 #: templates/development.html:106
 msgid "Git Repository"
@@ -241,24 +240,24 @@ msgid ""
 "The documentation is maintained using the <a href=\"%(url)s\">Sphinx</a> "
 "Python documentation generator."
 msgstr ""
-"A documentação é mantida usando <a href=\"%(url)s\">Sphinx</a> "
-"Gerador de documentação Python."
+"A documentação é mantida usando <a href=\"%(url)s\">Sphinx</a>, o "
+"gerador de documentação Python."
 
 #: templates/docs.html:13
 msgid "You can find it at"
-msgstr "Você pode acha-lo em"
+msgstr "Você pode achá-lo em"
 
 #: templates/download.html:8
 msgid "Source Tarballs (Releases)"
-msgstr ""
+msgstr "Arquivo com as fontes (Lançamentos)"
 
 #: templates/download.html:11 templates/download.html:19
 msgid "Downloads"
-msgstr ""
+msgstr "Downloads"
 
 #: templates/download.html:12 templates/download.html:20
 msgid "at Google Code page"
-msgstr "em páginas do Google Code"
+msgstr "na página do Google Code"
 
 #: templates/download.html:16
 msgid "Packages for Distributions"
@@ -266,11 +265,11 @@ msgstr "Pacotes para Distribuições"
 
 #: templates/download.html:24
 msgid "Git Version"
-msgstr ""
+msgstr "Versão do git"
 
 #: templates/download.html:33
 msgid "Browse online"
-msgstr ""
+msgstr "Navegue online"
 
 #: templates/index.html:8
 msgid "About"
@@ -285,12 +284,12 @@ msgid ""
 "SymPy\n"
 "is written entirely in Python and does not require any external libraries."
 msgstr ""
-"SymPy é uma livraria Python para matemática simbólica. Almejamos\n"
-"nos tornar um sistema de algebra computacional (CAS) completo mantendo "
+"SymPy é uma biblioteca em Python para matemática simbólica. Almejamos\n"
+"nos tornar um sistema de álgebra computacional (CAS) completo mantendo "
 "o código\n"
-"o mais simples possível para ser compreensível e facilmente extendido. "
+"o mais simples possível para ser compreensível e facilmente estendido. "
 "SymPy\n"
-"é escrito inteiramente em Python e não requer nenhuma outra livraria."
+"é escrito inteiramente em Python e não requer nenhuma outra biblioteca."
 
 #: templates/index.html:19
 msgid "Features"
@@ -302,7 +301,7 @@ msgstr "Capacidades do Core"
 
 #: templates/index.html:23 templates/index.html:39
 msgid "Basic arithmetic:"
-msgstr "Aritimética básica"
+msgstr "Aritmética básica"
 
 #: templates/index.html:23
 msgid ""
@@ -332,8 +331,8 @@ msgid ""
 "    value, spherical harmonics, factorials and gamma functions, zeta\n"
 "    functions, polynomials, special functions, ..."
 msgstr ""
-"trigonométrica, hiperbólica, exponencial, raízes, logarítmos, módulo\n"
-"   harmônicas, fatoriais e funções gamma, zeta, polinômios, funções especiais, ..."
+"trigonométricas, hiperbólicas, exponenciais, raízes, logarítmo, módulo\n"
+"   harmônicas, fatoriais e funções gama, zeta, polinômios, funções especiais, ..."
 
 #: templates/index.html:31
 msgid "Substitution"
@@ -341,11 +340,11 @@ msgstr "Substituição"
 
 #: templates/index.html:32
 msgid "Numbers:"
-msgstr "Números"
+msgstr "Números:"
 
 #: templates/index.html:32
 msgid "arbitrary precision integers, rationals, and floats"
-msgstr "inteiro de precisão arbitrária, racionais e decimais"
+msgstr "inteiro de precisão arbitrária, racionais e de ponto flutuante"
 
 #: templates/index.html:33
 msgid "Noncommutative symbols"
@@ -357,7 +356,7 @@ msgstr "Detecção de padrão"
 
 #: templates/index.html:37
 msgid "Polynomials"
-msgstr "Polinomiais"
+msgstr "Polinômios"
 
 #: templates/index.html:39
 msgid " division, gcd, ... "
@@ -369,7 +368,7 @@ msgstr "Fatoração"
 
 #: templates/index.html:41
 msgid "Square-free decomposition"
-msgstr "Decomposição de raíz"
+msgstr "Decomposição de raiz"
 
 #: templates/index.html:42
 msgid "Gröbner bases"
@@ -377,7 +376,7 @@ msgstr "Bases de Gröbner"
 
 #: templates/index.html:43
 msgid "Partial fraction decomposition"
-msgstr "Decomposição de frações parciais"
+msgstr "Decomposição em frações parciais"
 
 #: templates/index.html:44
 msgid "Resultants"
@@ -401,7 +400,7 @@ msgstr "Integração:"
 
 #: templates/index.html:58
 msgid "It uses extended Risch-Norman heuristic"
-msgstr "Usa heurística de Risch-Norman extendida"
+msgstr "Usa heurística de Risch-Norman estendida"
 
 #: templates/index.html:60
 msgid "Taylor (Laurent) series"
@@ -425,7 +424,7 @@ msgstr "Equações diferenciais"
 
 #: templates/index.html:68
 msgid "Difference equations"
-msgstr "Relação de recorrência"
+msgstr "Relações de recorrência"
 
 #: templates/index.html:69
 msgid "Systems of equations"
@@ -437,7 +436,7 @@ msgstr "Matemática discreta"
 
 #: templates/index.html:74
 msgid "Binomial coefficients"
-msgstr "Coeficiêntes binomiais"
+msgstr "Coeficientes binomiais"
 
 #: templates/index.html:75
 msgid "Summations"
@@ -449,11 +448,11 @@ msgstr "Produtos"
 
 #: templates/index.html:77
 msgid "Number theory:"
-msgstr "Teoria dos números"
+msgstr "Teoria dos números:"
 
 #: templates/index.html:77
 msgid "generating prime numbers, primality testing,  integer factorization, ... "
-msgstr "geração de números primos, testando número primo, fatorização de primos, ..."
+msgstr "geração de números primos, teste de número primo, fatoração de primos, ..."
 
 #: templates/index.html:79
 msgid "Logic expressions"
@@ -469,7 +468,7 @@ msgstr "Aritmética básica"
 
 #: templates/index.html:85
 msgid "Eigenvalues/eigenvectors"
-msgstr "valores próprios/vetores próprios"
+msgstr "Autovalores/autovetores"
 
 #: templates/index.html:86
 msgid "Determinants"
@@ -477,7 +476,7 @@ msgstr "Determinantes"
 
 #: templates/index.html:87
 msgid "Inversion"
-msgstr "Inverção"
+msgstr "Inversão"
 
 #: templates/index.html:88
 msgid "Solving"
@@ -593,7 +592,7 @@ msgstr "Geração de código:"
 
 #: templates/index.html:130
 msgid "C, FORTAN, Python"
-msgstr ""
+msgstr "C, FORTRAN, Python"
 
 #: templates/index.html:157
 msgid "Download Now"
@@ -601,11 +600,11 @@ msgstr "Faça já o Download"
 
 #: templates/index.html:161
 msgid "Releases"
-msgstr ""
+msgstr "Lançamentos"
 
 #: templates/index.html:161
 msgid "Google Code downloads"
-msgstr ""
+msgstr "Downloads no Google Code"
 
 #: templates/index.html:162
 msgid "Latest git version"
@@ -637,11 +636,11 @@ msgstr "Lista de bugs"
 
 #: templates/index.html:184
 msgid "Google Code page"
-msgstr ""
+msgstr "página do Google Code"
 
 #: templates/index.html:185
 msgid "Wiki"
-msgstr ""
+msgstr "Wiki"
 
 #: templates/index.html:186
 msgid "Try SymPy online now"
@@ -677,7 +676,7 @@ msgid ""
 "organization</a> for Google Summer of Code 2011"
 msgstr ""
 "SymPy é aceito como <a href=\"http://www.google-"
-"melange.com/gsoc/org/show/google/gsoc2011/sympy\"> organização "
+"melange.com/gsoc/org/show/google/gsoc2011/sympy\">organização "
 "mentora</a> para o Google Summer of Code 2011"
 
 #: templates/index.html:210
@@ -707,7 +706,7 @@ msgstr "Geral"
 
 #: templates/support.html:11
 msgid "Below you can find several ways to get help"
-msgstr "Abaixo você pode encontrar várias maneiras de ser ajudado"
+msgstr "Abaixo você pode encontrar várias maneiras de obter ajuda"
 
 #: templates/support.html:24
 msgid "More Specific"
