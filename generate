@@ -24,7 +24,7 @@ templates = [
     ]
 
 # Sorted alphabetically:
-languages = ["cs", "de", "en", "fr", "ru"]
+languages = ["cs", "de", "en", "fr", "pt", "ru"]
 
 for language in languages:
     print "Generating '%s' pages" % language
