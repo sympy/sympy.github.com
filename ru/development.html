@@ -1,21 +1,21 @@
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
-<head>
+  <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Разработка</title>
     <link rel="stylesheet" href="../media/base.css" type="text/css" media="screen" />
     <link rel="stylesheet" id="current-theme" href="../media/style.css" type="text/css" media="screen" />
-</head>
-<body>
-  <div id="container">
-    <div id="header">
-      <h1><a href="index.html"> <img src="../media/logo.png" style="vertical-align:middle"/> SymPy</a></h1>
-    
-      <div id="main-navigation">
+  </head>
+  <body>
+    <div id="container">
+      <div id="header">
+        <h1><a href="index.html"> <img src="../media/logo.png" style="vertical-align:middle"/> SymPy</a></h1>
         
-        
-        <ul>
+        <div id="main-navigation">
+          
+          
+          <ul>
             <li class=" first"><a href="index.html">Главная страница</a></li>
             <li class=" first"><a href="download.html">Скачать</a></li>
             <li class=" first"><a href="docs.html">Документация</a></li>
@@ -23,135 +23,157 @@
             <li class=" first"><a href="screenshots.html">Скриншоты</a></li>
             <li class="active first"><a href="development.html">Разработка</a></li>
             <li class=" first"><a href="http://live.sympy.org/">Попробовать Online</a></li>
-        </ul>
-        
-        <div class="clear"></div>
+          </ul>
+          
+          <div class="clear"></div>
+        </div>
       </div>
-    </div>
-    <div id="wrapper">
-      <div id="main">
-        <div class="block" id="block-text">
+      <div id="wrapper">
+        <div id="main">
+          <div class="block" id="block-text">
             <div class="content">
-                
+              
 
 <h2 class="title">Разработка</h2>
 <div class="inner">
-<p class="first">
-Мы заинтересованы в любом содействии. Свой вклад можно внести многими способами:
-<ul>
-    <li>
-Если вы сделали что-нибудь интересное при помощи SymPy, пришлите нам патч с исходным кодом (ниже описано, как).
-</li>
+  <p class="first">
+    We are interested in any contribution. There are many ways how you can
+    contribute:
+    <ul>
+      <li>
+        If you wrote anything interesting using SymPy, please send us a patch with the
+        code (see below for more information).
+      </li>
 
-<li>
-Если вы нашли ошибку (или просто хотите рассказать нам о том, что вы думаете о SymPy), пишите в <a href="http://groups.google.com/group/sympy">наш список рассылки</a>. Также можно отправить отчёт об ошибке (или добавить комментарий) <a href="http://code.google.com/p/sympy/issues/list">здесь</a>.
-</li>
-<li>Можно написать в блоге о том, как вы используете SymPy.</li>
-<li>Можно помочь нам с документацией (просто пришлите патч).</li>
-<li>Можно помочь людям в нашем <a href="http://groups.google.com/group/sympy">списке рассылки</a>.</li>
-<li>Можно помочь нам с рассмотрением патчей.</li>
-<li>Можно послать нам патчи с исправлениями ошибок или добавлением новых функций.</li>
-</ul>
-</p>
-<p>
-Лучший способ внесения своего вклада - прислать нам патч.
-</p>
+      <li>
+        If you found a bug (or just want to let us know what you think), tell us on the
+        <a href="http://groups.google.com/group/sympy">mailinglist</a>. You can also
+        add a bug report (or a comment) into the <a href="http://code.google.com/p/sympy/issues/list">issues</a>.
+      </li>
+      <li>Можно написать в блоге о том, как вы используете SymPy.</li>
+      <li>Можно помочь нам с документацией (просто пришлите патч).</li>
+      <li>Можно помочь людям в нашем <a href="http://groups.google.com/group/sympy">списке рассылки</a>.</li>
+      <li>Можно помочь нам с рассмотрением патчей.</li>
+      <li>Можно послать нам патчи с исправлениями ошибок или добавлением новых функций.</li>
+    </ul>
+  </p>
+  <p>
+    Лучший способ внесения своего вклада - прислать нам патч.
+  </p>
 </div>
 
 <h2 class="title">Как прислать патч</h2>
 <div class="inner">
-<p class="first">
-Лучше всего создать на GitHub запрос на принятие изменений (pull request) <a href="http://github.com/sympy/sympy">здесь</a>. Мы рассмотрим их и примем в основную ветку.
-</p>
+  <p class="first">
+    The best way is to send a github pull request
+    against the <a href="http://github.com/sympy/sympy">sympy/sympy</a> repository.
+    We'll review it and push it in.
+  </p>
 
-<p>
-Если вам нужна помощь в работе с git, github, запросами на принятие изменений, патчами, написанием кода, с самим SymPy или с чем-то другим, связанным с разработкой, просто задайте свой вопрос в электронном письме в наш список рассылки или в <a href="irc://irc.freenode.net/sympy">нашем IRC чате</a> - мы поможем.
-Инструкция по подготовке патчей с помощью git и github находится <a href="https://github.com/sympy/sympy/wiki/Development-workflow">здесь</a>.
-</p>
+  <p>
+    If you need help with git, github, pull requests, patches, coding, SymPy or
+    anything related, just send us an email to the mailinglist
+    or ask on IRC (our channel is <a href="irc://irc.freenode.net/sympy">#sympy at freenode</a>), we'll help.
+    Also, you can read our instructions
+    <a href="https://github.com/sympy/sympy/wiki/Development-workflow">
+      how to prepare patches</a> using git and github.
+  </p>
 
-<p>
-Запрос на принятие изменений в GitHub - наиболее предпочитаемый метод, так как это упрощает рассмотрение кода и включение его в репозиторий. Вы можете сделать это таким образом: сделать копию последней редакции в репозитории (ссылка справа), создать ветку со своим кодом, загрузить её куда-нибудь (к примеру, на <a href="http://github.com/">GitHub</a>) и послать нам в <a href="http://groups.google.com/group/sympy-patches">список рассылки</a> ссылку. Еще лучше проследовать инструкции по подготовке патчей, чтобы отправить нам запрос на внесение изменений. Можно посылать необработаные патчи, но это займёт больше усилий для включения в репозиторий.
-</p>
+  <p>
+    The github pull request is a preferred method, as that makes it easy for us to
+    review and push the code in. That said,
+    you can also clone the latest git repository (see the link on the right), prepare a branch with
+    your code, upload it somewhere (for example <a
+                                                   href="http://github.com/">github</a>) and send us a link to the <a
+                                                                                                                      href="http://groups.google.com/group/sympy-patches">sympy-patches</a>
+    mailinglist, or you can even send us raw patches --- but it will be more work
+    for us to integrate it.
+  </p>
 
-<p>
-У SymPy <a href="http://docs.sympy.org/0.7.1/aboutus.html#sympy-development-team">большая команда разработчиков</a>. Пришлите нам патч и ваше имя окажется в этом же списке.
-</p>
+  <p>
+    SymPy has a broad development team:
+    <a href="
+             http://docs.sympy.org/0.7.1/aboutus.html#sympy-development-team
+             ">
+      http://docs.sympy.org/0.7.1/aboutus.html#sympy-development-team
+    </a>, send us a patch and your name will appear there too.
+  </p>
 
 </div>
 <h2 class="title">Исходные коды вебстраниц</h2>
 <div class="inner">
-<p class="first">
-Исходные коды вебстраниц находятся здесь:
-<a href="http://github.com/sympy/sympy.github.com">http://github.com/sympy/sympy.github.com</a>
-</p>
-Не стесняйтесь присылать нам патчи с улучшениями.
+  <p class="first">
+    Исходные коды вебстраниц находятся здесь:
+    <a href="http://github.com/sympy/sympy.github.com">http://github.com/sympy/sympy.github.com</a>
+  </p>
+  Не стесняйтесь присылать нам патчи с улучшениями.
 </div>
 
 
             </div>
-        </div>
-        <div id="footer">
-          <div class="block">
+          </div>
+          <div id="footer">
+            <div class="block">
               <p>Copyright &copy; 2012 SymPy Development Team.
-              &nbsp;
-              &nbsp;
-              &nbsp;
-              Эта страница с открытым исходным кодом. Для её редактирования сделайте форк <a href="https://github.com/sympy/sympy.github.com">проекта на GitHub</a>.
-              &nbsp;
-              &nbsp;
-              &nbsp;
-              Язык (beta):
-              <a href="../cs/index.html">[Cs]</a>,
-              <a href="../de/index.html">[De]</a>,
-              <a href="../en/index.html">[En]</a>,
-              <a href="../fr/index.html">[Fr]</a>,
-              <a href="../ru/index.html">[Ru]</a>
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                Эта страница с открытым исходным кодом. Для её редактирования сделайте форк <a href="https://github.com/sympy/sympy.github.com">проекта на GitHub</a>.
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                Язык (beta):
+                <a href="../cs/index.html">[Cs]</a>,
+                <a href="../de/index.html">[De]</a>,
+                <a href="../en/index.html">[En]</a>,
+                <a href="../fr/index.html">[Fr]</a>,
+                <a href="../ru/index.html">[Ru]</a>
               </p>
+            </div>
+          </div>
+        </div>
+        <div id="sidebar">
+          
+<div id="side1">
+  <div class="clear"></div>
+</div>
+</div>
+<div id="container">
+  <div style="position:relative; float:left; margin: 0;">
+    <div style="position:relative; float:left; width:60%; min-width:250px;">
+    </div>
+  </div>
+  <div id="container">
+    <div style="position:relative; float:left; margin-top: -100px;">
+      <div style="position:relative; float:left; width:300px; height:200px;">
+      </div>
+    </div>
+    <div id="shell"></div>
+    <div id="right">
+      <div class="right_title">More Information</div>
+      <div id="about"><div class="t">
+          <div class="block">
+            <h3>Репозиторий Git</h3>
+            <div class="content">
+              <div id="thetext">
+                <p>
+                  Главный репозиторий Git:<br/>
+                  <code>git clone git://github.com/sympy/sympy.git</code>
+                </p>
+                <p>
+                  Онлайн-доступ: <a href="http://github.com/sympy/sympy">github.com/sympy/sympy</a>
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div id="sidebar">
-        
-<div id="side1">
-      <div class="clear"></div>
-    </div>
-  </div>
-<div id="container">
-<div style="position:relative; float:left; margin: 0;">
-<div style="position:relative; float:left; width:60%; min-width:250px;">
-</div>
-</div>
-<div id="container">
-<div style="position:relative; float:left; margin-top: -100px;">
-<div style="position:relative; float:left; width:300px; height:200px;">
-</div>
-</div>
-<div id="shell"></div>
-<div id="right">
-<div class="right_title">More Information</div>
-<div id="about"><div class="t">
-<div class="block">
-  <h3>Репозиторий Git</h3>
-  <div class="content">
-<div id="thetext">
-<p>
-Главный репозиторий Git:<br/>
-<code>git clone git://github.com/sympy/sympy.git</code>
-</p>
-<p>
-Онлайн-доступ: <a href="http://github.com/sympy/sympy">github.com/sympy/sympy</a>
-</p>
-  </div>
-</div>
-</div>
-</div>
-</div>
-<br/>
+      <br/>
 
-
+      
+        </div>
+        <div class="clear"></div>
       </div>
-      <div class="clear"></div>
     </div>
-  </div>
-</body>
+  </body>
 </html>
