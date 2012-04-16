@@ -4,7 +4,6 @@ import os
 import hashlib
 from gettext import GNUTranslations
 
-from django.utils.encoding import smart_str
 from jinja2 import Environment, FileSystemLoader
 
 def md5_filter(value):
@@ -42,5 +41,9 @@ for language in languages:
         print "    Processing '%s'" % template
         name = os.path.splitext(template)[0]
         s = t.render({name + "_active": "active"})
-        s = smart_str(s) + "\n"
-        open(os.path.join(language, template), "w").write(s)
+        f = open(os.path.join(language, template), "wb")
+        try:
+          f.write(s.encode("utf-8"))
+          f.write("\n")
+        finally:
+          f.close()
