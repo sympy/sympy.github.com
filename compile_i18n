@@ -7,3 +7,4 @@ msgfmt cs.po -o cs.mo
 msgfmt de.po -o de.mo
 msgfmt fr.po -o fr.mo
 msgfmt ru.po -o ru.mo
+msgfmt zh.po -o zh.mo
