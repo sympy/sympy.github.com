@@ -6,9 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: SymPy-0.1\n"
-"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"Report-Msgid-Bugs-To: lhtlyy@gmail.com\n"
 "POT-Creation-Date: 2012-08-31 12:39+0800\n"
-"PO-Revision-Date: 2012-08-31 19:23+0800\n"
+"PO-Revision-Date: 2012-08-31 20:09+0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -324,8 +324,9 @@ msgid "arbitrary precision integers, rationals, and floats"
 msgstr "任意精度整数，有理数和浮点数"
 
 #: templates/index.html:33
+#, fuzzy
 msgid "Noncommutative symbols"
-msgstr ""
+msgstr "非对易符号"
 
 #: templates/index.html:34
 msgid "Pattern matching"
@@ -345,23 +346,23 @@ msgstr "因式分解"
 
 #: templates/index.html:41
 msgid "Square-free decomposition"
-msgstr ""
+msgstr "无平方分解"
 
 #: templates/index.html:42
 msgid "Gröbner bases"
-msgstr ""
+msgstr "Gröbner 基"
 
 #: templates/index.html:43
 msgid "Partial fraction decomposition"
-msgstr ""
+msgstr "部分分数分解"
 
 #: templates/index.html:44
 msgid "Resultants"
-msgstr ""
+msgstr "合成"
 
 #: templates/index.html:47
 msgid "Calculus"
-msgstr ""
+msgstr "演算"
 
 #: templates/index.html:50
 msgid "Limits:"
@@ -405,98 +406,98 @@ msgstr "差分方程"
 
 #: templates/index.html:69
 msgid "Systems of equations"
-msgstr ""
+msgstr "方程系统"
 
 #: templates/index.html:72
 msgid "Discrete math"
-msgstr ""
+msgstr "离散数学"
 
 #: templates/index.html:74
 msgid "Binomial coefficients"
-msgstr ""
+msgstr "二项式系数"
 
 #: templates/index.html:75
 msgid "Summations"
-msgstr ""
+msgstr "总和"
 
 #: templates/index.html:76
 msgid "Products"
-msgstr ""
+msgstr "积"
 
 #: templates/index.html:77
 msgid "Number theory:"
-msgstr ""
+msgstr "数论："
 
 #: templates/index.html:77
 msgid ""
 "generating prime numbers, primality testing,  integer factorization, ... "
-msgstr ""
+msgstr "产生素数，素性测试，整数分解"
 
 #: templates/index.html:79
 msgid "Logic expressions"
-msgstr ""
+msgstr "逻辑表达式"
 
 #: templates/index.html:82
 msgid "Matrices"
-msgstr ""
+msgstr "矩阵"
 
 #: templates/index.html:84
 msgid "Basic arithmetic"
-msgstr ""
+msgstr "基本算术"
 
 #: templates/index.html:85
 msgid "Eigenvalues/eigenvectors"
-msgstr ""
+msgstr "本征值/本征向量"
 
 #: templates/index.html:86
 msgid "Determinants"
-msgstr ""
+msgstr "行列式"
 
 #: templates/index.html:87
 msgid "Inversion"
-msgstr ""
+msgstr "转置"
 
 #: templates/index.html:88
 msgid "Solving"
-msgstr ""
+msgstr "求解"
 
 #: templates/index.html:91
 msgid "Geometric Algebra"
-msgstr ""
+msgstr "几何代数"
 
 #: templates/index.html:93
 msgid "Geometry"
-msgstr ""
+msgstr "几何学"
 
 #: templates/index.html:95
 msgid ""
 "points, lines, rays, segments, ellipses, circles,\n"
 "        polygons, ..."
-msgstr ""
+msgstr "点，线，射线，线段，椭圆，圆，多边形……"
 
 #: templates/index.html:97
 msgid "Intersection"
-msgstr ""
+msgstr "相交"
 
 #: templates/index.html:98
 msgid "Tangency"
-msgstr ""
+msgstr "相切"
 
 #: templates/index.html:99
 msgid "Similarity"
-msgstr ""
+msgstr "相似"
 
 #: templates/index.html:102
 msgid "Plotting"
-msgstr ""
+msgstr "绘图"
 
 #: templates/index.html:104
 msgid "Coordinate modes"
-msgstr ""
+msgstr "坐标模式"
 
 #: templates/index.html:105
 msgid "Plotting Geometric Entities"
-msgstr ""
+msgstr "绘制几何实体"
 
 #: templates/index.html:106
 msgid "2D and 3D"
@@ -516,55 +517,55 @@ msgstr "物理学"
 
 #: templates/index.html:113
 msgid "Units"
-msgstr ""
+msgstr "单位"
 
 #: templates/index.html:114
 msgid "Mechanics"
-msgstr ""
+msgstr "力学"
 
 #: templates/index.html:115
 msgid "Quantum"
-msgstr ""
+msgstr "量子"
 
 #: templates/index.html:116
 msgid "Gaussian Optics"
-msgstr ""
+msgstr "高斯光学"
 
 #: templates/index.html:117
 msgid "Pauli Algebra"
-msgstr ""
+msgstr "泡利代数"
 
 #: templates/index.html:120
 msgid "Statistics"
-msgstr ""
+msgstr "统计"
 
 #: templates/index.html:122
 msgid "Normal distributions"
-msgstr ""
+msgstr "正态分布"
 
 #: templates/index.html:123
 msgid "Uniform distributions"
-msgstr ""
+msgstr "均匀分布"
 
 #: templates/index.html:124
 msgid "Probability"
-msgstr ""
+msgstr "概率"
 
 #: templates/index.html:127
 msgid "Printing"
-msgstr ""
+msgstr "打印"
 
 #: templates/index.html:129
 msgid "Pretty printing:"
-msgstr ""
+msgstr "漂亮的打印"
 
 #: templates/index.html:129
 msgid "ASCII/Unicode pretty printing, LaTeX"
-msgstr ""
+msgstr "漂亮的ASCII/Unicode打印，LaTeX"
 
 #: templates/index.html:130
 msgid "Code generation:"
-msgstr ""
+msgstr "代码生成"
 
 #: templates/index.html:130
 msgid "C, Fortran, Python"
@@ -572,39 +573,39 @@ msgstr ""
 
 #: templates/index.html:157
 msgid "Download Now"
-msgstr ""
+msgstr "立即下载"
 
 #: templates/index.html:161
 msgid "Releases"
-msgstr ""
+msgstr "版本"
 
 #: templates/index.html:161
 msgid "Google Code downloads"
-msgstr ""
+msgstr "Google Code 下载"
 
 #: templates/index.html:162
 msgid "Latest git version"
-msgstr ""
+msgstr "最新 git 版本"
 
 #: templates/index.html:172
 msgid "Quick Links"
-msgstr ""
+msgstr "快速链接"
 
 #: templates/index.html:179
 msgid "Downloads (source tarballs)"
-msgstr ""
+msgstr "下载(源码包）"
 
 #: templates/index.html:180
 msgid "Downloads (packages for distributions)"
-msgstr ""
+msgstr "下载(发行软件包)"
 
 #: templates/index.html:181
 msgid "Mailing list"
-msgstr ""
+msgstr "邮件列表"
 
 #: templates/index.html:182
 msgid "Source code"
-msgstr ""
+msgstr "源码"
 
 #: templates/index.html:183
 msgid "Issues tracker"
@@ -612,7 +613,7 @@ msgstr ""
 
 #: templates/index.html:184
 msgid "Google Code page"
-msgstr ""
+msgstr "Google Code 页面"
 
 #: templates/index.html:185
 msgid "Wiki"
@@ -628,24 +629,27 @@ msgstr "SymPy官方博客"
 
 #: templates/index.html:188
 msgid "Planet SymPy"
-msgstr "SymPy 星球"
+msgstr "Planet SymPy"
 
 #: templates/index.html:203
 msgid "News"
 msgstr "新闻"
 
 #: templates/index.html:207
+#, fuzzy
 msgid ""
 " SymPy is accepted as a a <a href=\"http://www.google-melange.com/gsoc/org/"
 "show/google/gsoc2012/sympy\">mentoring organization</a> for Google Summer of "
 "Code 2012 "
 msgstr ""
+"SymPy被承认为Google Summer of Code 2012 的aa<a href=\"http://www.google-"
+"melange.com/gsoc/org/show/google/gsoc2012/sympy\">指导组织</a> "
 
 #: templates/index.html:208 templates/index.html:209 templates/index.html:213
 #: templates/index.html:214
 #, python-format
 msgid "Version %(v)s released"
-msgstr ""
+msgstr "版本 %(v)s 发布"
 
 #: templates/index.html:208 templates/index.html:209 templates/index.html:213
 #: templates/index.html:214
@@ -658,10 +662,13 @@ msgid ""
 "google/gsoc2011/sympy\">mentoring organization</a> for Google Summer of Code "
 "2011"
 msgstr ""
+"SymPy被承认为Google Summer of Code 2012 的aa<a href=\"http://www.google-"
+"melange.com/gsoc/org/show/google/gsoc2012/sympy\">指导组织</a> "
 
 #: templates/index.html:211
+#, fuzzy
 msgid "New website launched at sympy.org"
-msgstr ""
+msgstr "新站点在sympy.org"
 
 #: templates/index.html:212
 #, python-format
@@ -669,6 +676,8 @@ msgid ""
 "Final page about the <a href=\"%(url)s\">2010 Google Summer of Code in "
 "SymPy</a> is available."
 msgstr ""
+"关于<a href=\"%(url)s\">2010 Google Summer of Code in SymPy</a> 的最终页面是"
+"有效的。"
 
 #: templates/index.html:215
 #, python-format
@@ -676,6 +685,8 @@ msgid ""
 "Final page about the <a href=\"%(url)s\">2009 Google Summer of Code in "
 "SymPy</a> is available."
 msgstr ""
+"关于<a href=\"%(url)s\">2010 Google Summer of Code in SymPy</a> 的最终页面是"
+"有效的。"
 
 #: templates/screenshots.html:8
 msgid "Python Session"
@@ -687,12 +698,12 @@ msgstr "ISymPy会话"
 
 #: templates/support.html:8
 msgid "General"
-msgstr ""
+msgstr "常规"
 
 #: templates/support.html:11
 msgid "Below you can find several ways to get help"
-msgstr ""
+msgstr "你有以下几种获得帮助的方法"
 
 #: templates/support.html:24
 msgid "More Specific"
-msgstr ""
+msgstr "更具体的"
