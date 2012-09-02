@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: SymPy-0.1\n"
 "Report-Msgid-Bugs-To: lhtlyy@gmail.com\n"
 "POT-Creation-Date: 2012-08-31 12:39+0800\n"
-"PO-Revision-Date: 2012-08-31 20:09+0800\n"
+"PO-Revision-Date: 2012-09-01 11:49+0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -230,7 +230,7 @@ msgstr "你可以在这里找到"
 #: templates/download.html:8
 #, fuzzy
 msgid "Source Tarballs (Releases)"
-msgstr "源码包"
+msgstr "源码包(发布版本)"
 
 #: templates/download.html:11 templates/download.html:19
 msgid "Downloads"
@@ -324,9 +324,8 @@ msgid "arbitrary precision integers, rationals, and floats"
 msgstr "任意精度整数，有理数和浮点数"
 
 #: templates/index.html:33
-#, fuzzy
 msgid "Noncommutative symbols"
-msgstr "非对易符号"
+msgstr "非交换符号"
 
 #: templates/index.html:34
 msgid "Pattern matching"
@@ -569,7 +568,7 @@ msgstr "代码生成"
 
 #: templates/index.html:130
 msgid "C, Fortran, Python"
-msgstr ""
+msgstr "C, Fortran, Python"
 
 #: templates/index.html:157
 msgid "Download Now"
@@ -577,7 +576,7 @@ msgstr "立即下载"
 
 #: templates/index.html:161
 msgid "Releases"
-msgstr "版本"
+msgstr "发布版本"
 
 #: templates/index.html:161
 msgid "Google Code downloads"
@@ -609,7 +608,7 @@ msgstr "源码"
 
 #: templates/index.html:183
 msgid "Issues tracker"
-msgstr ""
+msgstr "Issues tracker"
 
 #: templates/index.html:184
 msgid "Google Code page"
