@@ -20,10 +20,11 @@ templates = [
     "support.html",
     "screenshots.html",
     "development.html",
+    "donate.html",
     ]
 
 # Sorted alphabetically:
-languages = ["cs", "de", "en", "fr", "ru", "zh"]
+languages = ["cs", "de", "en", "fr", "pt", "ru", "zh"]
 
 for language in languages:
     print "Generating '%s' pages" % language
