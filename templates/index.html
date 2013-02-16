@@ -7,13 +7,13 @@
 
 <h2 class="title">{% trans %}About{% endtrans %}</h2>
 <div class="inner">
-<p class="first">
-{% trans %}SymPy is a Python library for symbolic mathematics. It aims to
-become a full-featured computer algebra system (CAS) while keeping the code as
-simple as possible in order to be comprehensible and easily extensible. SymPy
-is written entirely in Python and does not require any external libraries.{%
-endtrans %}
-</p>
+  <p class="first">
+    {% trans %}SymPy is a Python library for symbolic mathematics. It aims to
+    become a full-featured computer algebra system (CAS) while keeping the code as
+    simple as possible in order to be comprehensible and easily extensible. SymPy
+    is written entirely in Python and does not require any external libraries.{%
+    endtrans %}
+  </p>
 </div>
 
 <h2 class="title">{% trans %}Features{% endtrans %}</h2>
@@ -21,13 +21,13 @@ endtrans %}
   <h3>{% trans %}Core capabilities{% endtrans %}</h3>
   <ul>
     <li><strong>{% trans %}Basic arithmetic:{% endtrans %}</strong> {% trans %}Support for operators such
-    as <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>**</code> (power){% endtrans %}</li>
+      as <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>**</code> (power){% endtrans %}</li>
     <li> <strong>{% trans %}Simplification{% endtrans %}</strong></li>
     <li><strong>{% trans %}Expansion{% endtrans %}</strong></li>
     <li><strong>{% trans %}Functions:{% endtrans %}</strong> {% trans
-    %}trigonometric, hyperbolic, exponential, roots, logarithms, absolute
-    value, spherical harmonics, factorials and gamma functions, zeta
-    functions, polynomials, special functions, ...{% endtrans %}</li>
+      %}trigonometric, hyperbolic, exponential, roots, logarithms, absolute
+      value, spherical harmonics, factorials and gamma functions, zeta
+      functions, polynomials, special functions, ...{% endtrans %}</li>
     <li><strong>{% trans %}Substitution{% endtrans %}</strong></li>
     <li><strong>{% trans %}Numbers:{% endtrans %}</strong> {% trans %}arbitrary precision integers, rationals, and floats{% endtrans %}</li>
     <li><strong>{% trans %}Noncommutative symbols{% endtrans %}</strong></li>
@@ -69,13 +69,23 @@ endtrans %}
     <li><strong>{% trans %}Systems of equations{% endtrans %}</strong></li>
   </ul>
 
+  <h3>{% trans %}Combinatorics{% endtrans %}</h3>
+  <ul>
+    <li><strong>{% trans %}Permutations{% endtrans %}</strong></li>
+    <li><strong>{% trans %}Combinations{% endtrans %}</strong></li>
+    <li><strong>{% trans %}Partitions{% endtrans %}</strong></li>
+    <li><strong>{% trans %}Subsets{% endtrans %}</strong></li>
+    <li><strong>{% trans %}Permutation Groups{% endtrans %}</strong>: Polyhedral, Rubik, Symmetric, ...</li>
+    <li><strong>{% trans %}Prufer and Gray Codes{% endtrans %}</strong></li>
+  </ul>
+
   <h3>{% trans %}Discrete math{% endtrans %}</h3>
   <ul>
     <li><strong>{% trans %}Binomial coefficients{% endtrans %}</strong></li>
     <li><strong>{% trans %}Summations{% endtrans %}</strong></li>
     <li><strong>{% trans %}Products{% endtrans %}</strong></li>
     <li><strong>{% trans %}Number theory:{% endtrans %}</strong> {% trans
-    %}generating prime numbers, primality testing,  integer factorization, ... {% endtrans %}</li>
+      %}generating prime numbers, primality testing,  integer factorization, ... {% endtrans %}</li>
     <li><strong>{% trans %}Logic expressions{% endtrans %}</strong></li>
   </ul>
 
@@ -86,6 +96,7 @@ endtrans %}
     <li><strong>{% trans %}Determinants{% endtrans %}</strong></li>
     <li><strong>{% trans %}Inversion{% endtrans %}</strong></li>
     <li><strong>{% trans %}Solving{% endtrans %}</strong></li>
+    <li><strong>{% trans %}Abstract expressions{% endtrans %}</strong></li>
   </ul>
 
   <h3>{% trans %}Geometric Algebra{% endtrans %}</h3>
@@ -93,7 +104,7 @@ endtrans %}
   <h3>{% trans %}Geometry{% endtrans %}</h3>
   <ul>
     <li><strong>{% trans %}points, lines, rays, segments, ellipses, circles,
-    polygons, ...{% endtrans %}</strong></li>
+        polygons, ...{% endtrans %}</strong></li>
     <li><strong>{% trans %}Intersection{% endtrans %}</strong></li>
     <li><strong>{% trans %}Tangency{% endtrans %}</strong></li>
     <li><strong>{% trans %}Similarity{% endtrans %}</strong></li>
@@ -127,7 +138,7 @@ endtrans %}
   <h3>{% trans %}Printing{% endtrans %}</h3>
   <ul>
     <li><strong>{% trans %}Pretty printing:{% endtrans %}</strong> {% trans %}ASCII/Unicode pretty printing, LaTeX{% endtrans  %}
-    <li><strong>{% trans %}Code generation:{% endtrans %}</strong> {% trans %}C, FORTAN, Python{% endtrans %}</li>
+    <li><strong>{% trans %}Code generation:{% endtrans %}</strong> {% trans %}C, Fortran, Python{% endtrans %}</li>
   </ul>
 </div>
 
@@ -136,93 +147,96 @@ endtrans %}
 
 {% block sidebar %}
 <div id="side1">
-      <div class="clear"></div>
+  <div class="clear"></div>
+</div>
+</div>
+<div id="container">
+  <div style="position:relative; float:left; margin: 0;">
+    <div style="position:relative; float:left; width:60%; min-width:250px;">
     </div>
   </div>
-<div id="container">
-<div style="position:relative; float:left; margin: 0;">
-<div style="position:relative; float:left; width:60%; min-width:250px;">
-</div>
-</div>
-<div id="container">
-<div style="position:relative; float:left; margin-top: -100px;">
-<div style="position:relative; float:left; width:300px; height:200px;">
-</div>
-</div>
-<div id="shell"></div>
-<div id="right">
-<div class="right_title">More Information</div>
-<div id="about"><div class="t">
-<div class="block">
-  <h3>{% trans %}Download Now{% endtrans %}</h3>
-  <div class="content">
-<div id="thetext">
-<p>
-{% trans %}Releases{% endtrans %}: <a href="http://code.google.com/p/sympy/downloads/list">{% trans %}Google Code downloads{% endtrans %}</a><br/>
-{% trans %}Latest git version{% endtrans %}: <a href="http://github.com/sympy/sympy">github.com/sympy/sympy</a>
+  <div id="container">
+    <div style="position:relative; float:left; margin-top: -100px;">
+      <div style="position:relative; float:left; width:300px; height:200px;">
+      </div>
+    </div>
+    <div id="shell"></div>
+    <div id="right">
+      <div class="right_title">More Information</div>
+      <div id="about"><div class="t">
+          <div class="block">
+            <h3>{% trans %}Download Now{% endtrans %}</h3>
+            <div class="content">
+              <div id="thetext">
+                <p>
+                  {% trans %}Releases{% endtrans %}: <a href="http://code.google.com/p/sympy/downloads/list">{% trans %}Google Code downloads{% endtrans %}</a><br/>
+                  {% trans %}Latest git version{% endtrans %}: <a href="http://github.com/sympy/sympy">github.com/sympy/sympy</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br/>
+      <div id="other_shells"><div class="t">
+          <div id="quicklinks" class="block">
+            <h3>{% trans %}Quick Links{% endtrans %}</h3>
+            <div class="content">
+              <div id="thetext">
+                <p>
+                  <ul>
+                    <font size="3">
+                      <li><a href="http://docs.sympy.org/">{% trans %}Documentation{% endtrans %}</a></li>
+                      <li><a href="http://code.google.com/p/sympy/downloads/list">{% trans %}Downloads (source tarballs){% endtrans %}</a></li>
+                      <li><a href="http://code.google.com/p/sympy/wiki/DownloadInstallation?tm=2">{% trans %}Downloads (packages for distributions){% endtrans %}</a></li>
+                      <li><a href="http://groups.google.com/group/sympy">{% trans %}Mailing list{% endtrans %}</a></li>
+                      <li><a href="http://github.com/sympy/sympy">{% trans %}Source code{% endtrans %}</a></li>
+                      <li><a href="http://code.google.com/p/sympy/issues/list">{% trans %}Issues tracker{% endtrans %}</a></li>
+                      <li><a href="http://code.google.com/p/sympy/">{% trans %}Google Code page{% endtrans %}</a></li>
+                      <li><a href="http://github.com/sympy/sympy/wiki">{% trans %}Wiki{% endtrans %}</a></li>
+                      <li><a href="http://live.sympy.org/">{% trans %}Try SymPy online now{% endtrans %}</a></li>
+                      <li><a href="http://sympy.blogspot.com/">{% trans %}Official SymPy blog{% endtrans %}</a></li>
+                      <li><a href="http://planet.sympy.org/">{% trans %}Planet SymPy{% endtrans %}</a></li>
+                      <li><a href="http://colabti.org/irclogger/irclogger_logs/sympy">{% trans %}IRC channel logs{% endtrans %}</a></li>
+                    </font>
+              </div>
+              </ul>
 </p>
-  </div>
 </div>
-</div>
-</div>
-</div>
-<br/>
-            <div id="other_shells"><div class="t">
-<div id="quicklinks" class="block">
-  <h3>{% trans %}Quick Links{% endtrans %}</h3>
-  <div class="content">
-<div id="thetext">
-    <p>
-      <ul>
-    <font size="3">
-        <li><a href="http://docs.sympy.org/">{% trans %}Documentation{% endtrans %}</a></li>
-        <li><a href="http://code.google.com/p/sympy/downloads/list">{% trans %}Downloads (source tarballs){% endtrans %}</a></li>
-        <li><a href="http://code.google.com/p/sympy/wiki/DownloadInstallation?tm=2">{% trans %}Downloads (packages for distributions){% endtrans %}</a></li>
-        <li><a href="http://groups.google.com/group/sympy">{% trans %}Mailing list{% endtrans %}</a></li>
-        <li><a href="http://github.com/sympy/sympy">{% trans %}Source code{% endtrans %}</a></li>
-        <li><a href="http://code.google.com/p/sympy/issues/list">{% trans %}Issues tracker{% endtrans %}</a></li>
-        <li><a href="http://code.google.com/p/sympy/">{% trans %}Google Code page{% endtrans %}</a></li>
-        <li><a href="http://github.com/sympy/sympy/wiki">{% trans %}Wiki{% endtrans %}</a></li>
-        <li><a href="http://live.sympy.org/">{% trans %}Try SymPy online now{% endtrans %}</a></li>
-        <li><a href="http://sympy.blogspot.com/">{% trans %}Official SymPy blog{% endtrans %}</a></li>
-        <li><a href="http://planet.sympy.org/">{% trans %}Planet SymPy{% endtrans %}</a></li>
-        <li><a href="http://colabti.org/irclogger/irclogger_logs/sympy">{% trans %}IRC channel logs{% endtrans %}</a></li>
-    </font>
-</div>
-      </ul>
-    </p>
-  </div>
 </div>
 
 <br/>
-      </div>
-      <div class="clear"></div>
-    </div>
+</div>
+<div class="clear"></div>
+</div>
 <br/>
 <div class="block">
-<div id="example"><div class="t">
-  <h3>{% trans %}News{% endtrans %}</h3>
-  <div class="content">
-<div id="thetext">
-<p>
-<span class="date">29 Jul 2011</span> {% trans v='0.7.1' %}Version {{ v }} released{% endtrans %} (<a href="https://github.com/sympy/sympy/wiki/Release-Notes-for-0.7.1">{% trans %}changes{% endtrans %}</a>)<br/>
-<span class="date">28 Jun 2011</span> {% trans v='0.7.0' %}Version {{ v }} released{% endtrans %} (<a href="https://github.com/sympy/sympy/wiki/Release-Notes-for-0.7.0">{% trans %}changes{% endtrans %}</a>)<br/>
-<span class="date">18 Mar 2011</span> {% trans %}SymPy is accepted as a <a href="http://www.google-melange.com/gsoc/org/show/google/gsoc2011/sympy">mentoring organization</a> for Google Summer of Code 2011{% endtrans %}<br/>
-<span class="date">23 Oct 2010</span> {% trans %}New website launched at sympy.org{% endtrans %}<br/>
-<span class="date">17 Mar 2010</span> {% trans v='0.6.7' %}Version {{ v }} released{% endtrans %} (<a href="http://code.google.com/p/sympy/wiki/Changes">{% trans %}changes{% endtrans %}</a>)<br/>
-<span class="date">20 Dec 2009</span> {% trans v='0.6.6' %}Version {{ v }} released{% endtrans %} (<a href="http://code.google.com/p/sympy/wiki/Changes">{% trans %}changes{% endtrans %}</a>)<br/>
-<span class="date">26 Sep 2009</span> {% trans url='http://code.google.com/p/sympy/wiki/GSoC2009' %}Final page about the <a href="{{ url }}">2009 Google Summer of Code in SymPy</a> is available.{% endtrans %}
-</p>
-</div>
+  <div id="example"><div class="t">
+      <h3>{% trans %}News{% endtrans %}</h3>
+      <div class="content">
+        <div id="thetext">
+          <p>
+            <span class="date">16 Oct 2012</span> {% trans v='0.7.2' %}Version {{ v }} released{% endtrans %} (<a href="https://github.com/sympy/sympy/wiki/Release-Notes-for-0.7.2">{% trans %}changes{% endtrans %}</a>)<br/>
+            <span class="date">17 Mar 2012</span> {% trans %} SymPy is accepted as a a <a href="http://www.google-melange.com/gsoc/org/show/google/gsoc2012/sympy">mentoring organization</a> for Google Summer of Code 2012 {% endtrans %} <br/>
+            <span class="date">29 Jul 2011</span> {% trans v='0.7.1' %}Version {{ v }} released{% endtrans %} (<a href="https://github.com/sympy/sympy/wiki/Release-Notes-for-0.7.1">{% trans %}changes{% endtrans %}</a>)<br/>
+            <span class="date">28 Jun 2011</span> {% trans v='0.7.0' %}Version {{ v }} released{% endtrans %} (<a href="https://github.com/sympy/sympy/wiki/Release-Notes-for-0.7.0">{% trans %}changes{% endtrans %}</a>)<br/>
+            <span class="date">18 Mar 2011</span> {% trans %}SymPy is accepted as a <a href="http://www.google-melange.com/gsoc/org/show/google/gsoc2011/sympy">mentoring organization</a> for Google Summer of Code 2011{% endtrans %}<br/>
+            <span class="date">23 Oct 2010</span> {% trans %}New website launched at sympy.org{% endtrans %}<br/>
+            <span class="date">18 Oct 2010</span> {% trans url='https://github.com/sympy/sympy/wiki/GSoC-2010-report' %}Final page about the <a href="{{ url }}">2010 Google Summer of Code in SymPy</a> is available.{% endtrans %}<br/>
+            <span class="date">17 Mar 2010</span> {% trans v='0.6.7' %}Version {{ v }} released{% endtrans %} (<a href="http://code.google.com/p/sympy/wiki/Changes">{% trans %}changes{% endtrans %}</a>)<br/>
+            <span class="date">20 Dec 2009</span> {% trans v='0.6.6' %}Version {{ v }} released{% endtrans %} (<a href="http://code.google.com/p/sympy/wiki/Changes">{% trans %}changes{% endtrans %}</a>)<br/>
+            <span class="date">26 Sep 2009</span> {% trans url='https://github.com/sympy/sympy/wiki/GSoC-2009-report' %}Final page about the <a href="{{ url }}">2009 Google Summer of Code in SymPy</a> is available.{% endtrans %}
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
+  <br/>
 </div>
 </div>
-<br/>
-  </div>
-  </div>
 {% endblock %}
 
 <!--  LocalWords:  endtrans Noncommutative gcd Gröbner primality LaTeX FORTAN
- -->
+  -->
 <!--  LocalWords:  endblock sympy
- -->
+  -->

@@ -1,0 +1,708 @@
+# Translations template for PROJECT.
+# Copyright (C) 2012 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: SymPy-0.1\n"
+"Report-Msgid-Bugs-To: lhtlyy@gmail.com\n"
+"POT-Creation-Date: 2012-08-31 12:39+0800\n"
+"PO-Revision-Date: 2012-09-01 11:49+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 0.9.6\n"
+"X-Poedit-Bookmarks: 50,-1,-1,-1,-1,-1,-1,-1,-1,-1\n"
+
+#: templates/base.html:29
+msgid "Main Page"
+msgstr "主页"
+
+#: templates/base.html:30 templates/download.html:4
+msgid "Download"
+msgstr "下载"
+
+#: templates/base.html:31 templates/docs.html:4 templates/docs.html:8
+#: templates/index.html:178
+msgid "Documentation"
+msgstr "文档"
+
+#: templates/base.html:32 templates/support.html:4
+msgid "Support"
+msgstr "支持"
+
+#: templates/base.html:33 templates/screenshots.html:4
+msgid "Screenshots"
+msgstr "截图"
+
+#: templates/base.html:34 templates/development.html:4
+#: templates/development.html:8
+msgid "Development"
+msgstr "开发"
+
+#: templates/base.html:35
+msgid "Online Shell"
+msgstr "在线控制台"
+
+#: templates/base.html:54
+#, python-format
+msgid ""
+"This page is open source. Fork <a href=\"%(url)s\">the project on GitHub</a> "
+"to edit it."
+msgstr "这个页面是开源的，fork <a href=\"%(url)s\">GitHub上的项目</a>并编辑它"
+
+#: templates/base.html:58
+msgid "Languages"
+msgstr "语言"
+
+#: templates/development.html:11
+msgid ""
+"We are interested in any contribution. There are many ways how you can\n"
+"    contribute"
+msgstr "我们对任何贡献都很欢迎，这里有许多可以参与的方式"
+
+#: templates/development.html:15
+msgid ""
+"If you wrote anything interesting using SymPy, please send us a patch with "
+"the\n"
+"        code (see below for more information)"
+msgstr ""
+"如果你用sympy写了任何有意思的东西，请发给我们代码(参考以下获得更多信息)"
+
+#: templates/development.html:20
+msgid ""
+"If you found a bug (or just want to let us know what you think), tell us on "
+"the\n"
+"        <a href=\"http://groups.google.com/group/sympy\">mailinglist</a>"
+msgstr ""
+"如果你发现一个bug(或者仅仅是想让我们知道您的想法)，在<a href=\"http://groups."
+"google.com/group/sympy\">邮件列表</a>上告诉我们"
+
+#: templates/development.html:21
+msgid ""
+"You can also\n"
+"        add a bug report (or a comment) into the <a href=\"http://code."
+"google.com/p/sympy/issues/list\">issues</a>."
+msgstr ""
+"你也可以在<a href=\"http://code.google.com/p/sympy/issues/list\">issues</a>添"
+"加一个bug报告(或者评论)。"
+
+#: templates/development.html:24
+msgid "You can blog about how you use SymPy"
+msgstr "你可以发表你如何使用SymPy的博文"
+
+#: templates/development.html:25
+msgid "You can help us write documentation (just send us a patch)"
+msgstr "你可以帮助我们写文档(或者仅仅发给我们一个补丁)"
+
+#: templates/development.html:26
+msgid ""
+"You can help people on our <a href=\"http://groups.google.com/group/sympy"
+"\">mailinglist</a>"
+msgstr ""
+"你可以在<a href=\"http://groups.google.com/group/sympy\">邮件列表</a>上帮助他"
+"人"
+
+#: templates/development.html:27
+msgid "You can help with reviewing patches"
+msgstr "你可以帮助检查补丁"
+
+#: templates/development.html:28
+msgid "You can send us patches with bug fixes or new features"
+msgstr "你可以提供bug修复和新特性的补丁"
+
+#: templates/development.html:32
+msgid "The best way to contribute code or documentation is to send us a patch"
+msgstr "最好的贡献代码和文档的方式是提交给我们补丁"
+
+#: templates/development.html:36
+msgid "How to Send a Patch"
+msgstr "如何提交补丁"
+
+#: templates/development.html:39
+msgid ""
+"The best way is to send a github pull request\n"
+"    against the <a href=\"http://github.com/sympy/sympy\">sympy/sympy</a> "
+"repository.\n"
+"    We'll review it and push it in."
+msgstr ""
+"最好的方法是向<a href=\"http://github.com/sympy/sympy\">sympy/sympy仓库</a>提"
+"交一个github的pull request"
+
+#: templates/development.html:45
+msgid ""
+"If you need help with git, github, pull requests, patches, coding, SymPy or\n"
+"    anything related, just send us an email to the mailinglist\n"
+"    or ask on IRC (our channel is <a href=\"irc://irc.freenode.net/sympy"
+"\">#sympy at freenode</a>), we'll help."
+msgstr ""
+"如果需要有关SymPy的任何git、github、pull request、补丁、编码的帮助，只要在邮"
+"件列表中发一封邮件。或者在irc上询问。(我们的频道是<a href=\"irc://irc."
+"freenode.net/sympy\">#sympy at freenode</a>)。我们将提供帮助。"
+
+#: templates/development.html:48
+msgid ""
+"Also, you can read our instructions\n"
+"    <a href=\"https://github.com/sympy/sympy/wiki/Development-workflow\">\n"
+"      how to prepare patches</a> using git and github."
+msgstr ""
+"你也可以在 <a href=\"https://github.com/sympy/sympy/wiki/Development-workflow"
+"\">如何准备补丁</a>阅读使用git和github的指南,"
+
+#: templates/development.html:54
+msgid ""
+"The github pull request is a preferred method, as that makes it easy for us "
+"to\n"
+"    review and push the code in. That said,\n"
+"    you can also clone the latest git repository (see the link on the "
+"right), prepare a branch with\n"
+"    your code, upload it somewhere (for example <a\n"
+"                                                   href=\"http://github.com/"
+"\">github</a>) and send us a link to the <a\n"
+"                                                                                                                      href="
+"\"http://groups.google.com/group/sympy-patches\">sympy-patches</a>\n"
+"    mailinglist, or you can even send us raw patches --- but it will be more "
+"work\n"
+"    for us to integrate it."
+msgstr ""
+"github的pull request是最优的方法，因为这让我们评论和更新代码很容易。就是说，"
+"你可以克隆最新的git仓库(看右边的链接)，用你的代码开启一个分支，上传到例如<a "
+"href=\"http://github.com/\">github</a>)或者在<a href=\"http://groups.google."
+"com/group/sympy-patches\">sympy-patches</a>邮件列表上发给我们一个链接。甚至把"
+"原始补丁文件发给我们——但这将耗费我们更多的精力来集成它。"
+
+#: templates/development.html:65
+msgid ""
+"SymPy has a broad development team:\n"
+"    <a href=\"\n"
+"             http://docs.sympy.org/0.7.1/aboutus.html#sympy-development-"
+"team\n"
+"             \">\n"
+"      http://docs.sympy.org/0.7.1/aboutus.html#sympy-development-team\n"
+"    </a>, send us a patch and your name will appear there too."
+msgstr ""
+"SymPy有一个广大的开发团队：\n"
+"<a href=\"\n"
+"             http://docs.sympy.org/0.7.1/aboutus.html#sympy-development-"
+"team\n"
+"             \">\n"
+"      http://docs.sympy.org/0.7.1/aboutus.html#sympy-development-team\n"
+"    </a>, 发给我们一个补丁，你的名字也将出现在这里"
+
+#: templates/development.html:74
+msgid "Sources of the Webpages"
+msgstr "页面源码"
+
+#: templates/development.html:77
+msgid "Sources of these webpages are at"
+msgstr "这个页面的源码在"
+
+#: templates/development.html:80
+msgid "Feel free to send us patches with improvements."
+msgstr "请自由地发送给我们改善的补丁。"
+
+#: templates/development.html:106
+msgid "Git Repository"
+msgstr "Git仓库"
+
+#: templates/development.html:110 templates/download.html:27
+msgid "Main git repository"
+msgstr "主git仓库"
+
+#: templates/development.html:114
+msgid "Online access"
+msgstr "在线入口"
+
+#: templates/docs.html:11
+#, python-format
+msgid ""
+"The documentation is maintained using the <a href=\"%(url)s\">Sphinx</a> "
+"Python documentation generator."
+msgstr "这个文档使用 <a href=\"%(url)s\">Sphinx</a> Python文档生成器维护。"
+
+#: templates/docs.html:13
+msgid "You can find it at"
+msgstr "你可以在这里找到"
+
+#: templates/download.html:8
+#, fuzzy
+msgid "Source Tarballs (Releases)"
+msgstr "源码包(发布版本)"
+
+#: templates/download.html:11 templates/download.html:19
+msgid "Downloads"
+msgstr "下载"
+
+#: templates/download.html:12 templates/download.html:20
+msgid "at Google Code page"
+msgstr "在google code页面"
+
+#: templates/download.html:16
+msgid "Packages for Distributions"
+msgstr "发布的软件包"
+
+#: templates/download.html:24
+msgid "Git Version"
+msgstr "git版本"
+
+#: templates/download.html:33
+msgid "Browse online"
+msgstr "在线浏览"
+
+#: templates/index.html:8
+msgid "About"
+msgstr "关于"
+
+#: templates/index.html:11
+msgid ""
+"SymPy is a Python library for symbolic mathematics. It aims to\n"
+"    become a full-featured computer algebra system (CAS) while keeping the "
+"code as\n"
+"    simple as possible in order to be comprehensible and easily extensible. "
+"SymPy\n"
+"    is written entirely in Python and does not require any external "
+"libraries."
+msgstr ""
+"SymPy是一个符号数学Python库。它的目标是成为一个全功能的计算机代数系统，同时保"
+"持代码的精简而易于理解和课扩展。SymPy完全由Python写成，不需要任何外部库。"
+
+#: templates/index.html:19
+msgid "Features"
+msgstr "特性"
+
+#: templates/index.html:21
+msgid "Core capabilities"
+msgstr "核心能力"
+
+#: templates/index.html:23 templates/index.html:39
+msgid "Basic arithmetic:"
+msgstr "基本算术："
+
+#: templates/index.html:23
+msgid ""
+"Support for operators such\n"
+"      as <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, "
+"<code>**</code> (power)"
+msgstr ""
+"支持的运算符有像<code>+</code>, <code>-</code>, <code>*</code>, <code>/</"
+"code>, <code>**</code> (幂)"
+
+#: templates/index.html:25
+msgid "Simplification"
+msgstr "化简"
+
+#: templates/index.html:26
+msgid "Expansion"
+msgstr "展开"
+
+#: templates/index.html:27
+msgid "Functions:"
+msgstr "函数："
+
+#: templates/index.html:27
+msgid ""
+"trigonometric, hyperbolic, exponential, roots, logarithms, absolute\n"
+"      value, spherical harmonics, factorials and gamma functions, zeta\n"
+"      functions, polynomials, special functions, ..."
+msgstr ""
+"三角，双曲线，指数，根式，对数，绝对值，球谐函数，阶乘，伽马函数，zeta函数，"
+"多项式，特殊函数……"
+
+#: templates/index.html:31
+msgid "Substitution"
+msgstr "代换"
+
+#: templates/index.html:32
+msgid "Numbers:"
+msgstr "数："
+
+#: templates/index.html:32
+msgid "arbitrary precision integers, rationals, and floats"
+msgstr "任意精度整数，有理数和浮点数"
+
+#: templates/index.html:33
+msgid "Noncommutative symbols"
+msgstr "非交换符号"
+
+#: templates/index.html:34
+msgid "Pattern matching"
+msgstr "模式匹配"
+
+#: templates/index.html:37
+msgid "Polynomials"
+msgstr "多项式"
+
+#: templates/index.html:39
+msgid " division, gcd, ... "
+msgstr "除法，最大公约数……"
+
+#: templates/index.html:40
+msgid "Factorization"
+msgstr "因式分解"
+
+#: templates/index.html:41
+msgid "Square-free decomposition"
+msgstr "无平方分解"
+
+#: templates/index.html:42
+msgid "Gröbner bases"
+msgstr "Gröbner 基"
+
+#: templates/index.html:43
+msgid "Partial fraction decomposition"
+msgstr "部分分数分解"
+
+#: templates/index.html:44
+msgid "Resultants"
+msgstr "合成"
+
+#: templates/index.html:47
+msgid "Calculus"
+msgstr "演算"
+
+#: templates/index.html:50
+msgid "Limits:"
+msgstr "极限："
+
+#: templates/index.html:54
+msgid "Differentiation"
+msgstr "微分"
+
+#: templates/index.html:57
+msgid "Integration:"
+msgstr "积分："
+
+#: templates/index.html:58
+msgid "It uses extended Risch-Norman heuristic"
+msgstr "它使用了扩展Risch-Norman启发算法"
+
+#: templates/index.html:60
+msgid "Taylor (Laurent) series"
+msgstr "泰勒(洛朗)级数"
+
+#: templates/index.html:63
+msgid "Solving equations"
+msgstr "解方程"
+
+#: templates/index.html:65
+msgid "Polynomial equations"
+msgstr "多项式方程"
+
+#: templates/index.html:66
+msgid "Algebraic equations"
+msgstr "代数方程"
+
+#: templates/index.html:67
+msgid "Differential equations"
+msgstr "微分方程"
+
+#: templates/index.html:68
+msgid "Difference equations"
+msgstr "差分方程"
+
+#: templates/index.html:69
+msgid "Systems of equations"
+msgstr "方程系统"
+
+#: templates/index.html:72
+msgid "Discrete math"
+msgstr "离散数学"
+
+#: templates/index.html:74
+msgid "Binomial coefficients"
+msgstr "二项式系数"
+
+#: templates/index.html:75
+msgid "Summations"
+msgstr "总和"
+
+#: templates/index.html:76
+msgid "Products"
+msgstr "积"
+
+#: templates/index.html:77
+msgid "Number theory:"
+msgstr "数论："
+
+#: templates/index.html:77
+msgid ""
+"generating prime numbers, primality testing,  integer factorization, ... "
+msgstr "产生素数，素性测试，整数分解"
+
+#: templates/index.html:79
+msgid "Logic expressions"
+msgstr "逻辑表达式"
+
+#: templates/index.html:82
+msgid "Matrices"
+msgstr "矩阵"
+
+#: templates/index.html:84
+msgid "Basic arithmetic"
+msgstr "基本算术"
+
+#: templates/index.html:85
+msgid "Eigenvalues/eigenvectors"
+msgstr "本征值/本征向量"
+
+#: templates/index.html:86
+msgid "Determinants"
+msgstr "行列式"
+
+#: templates/index.html:87
+msgid "Inversion"
+msgstr "转置"
+
+#: templates/index.html:88
+msgid "Solving"
+msgstr "求解"
+
+#: templates/index.html:91
+msgid "Geometric Algebra"
+msgstr "几何代数"
+
+#: templates/index.html:93
+msgid "Geometry"
+msgstr "几何学"
+
+#: templates/index.html:95
+msgid ""
+"points, lines, rays, segments, ellipses, circles,\n"
+"        polygons, ..."
+msgstr "点，线，射线，线段，椭圆，圆，多边形……"
+
+#: templates/index.html:97
+msgid "Intersection"
+msgstr "相交"
+
+#: templates/index.html:98
+msgid "Tangency"
+msgstr "相切"
+
+#: templates/index.html:99
+msgid "Similarity"
+msgstr "相似"
+
+#: templates/index.html:102
+msgid "Plotting"
+msgstr "绘图"
+
+#: templates/index.html:104
+msgid "Coordinate modes"
+msgstr "坐标模式"
+
+#: templates/index.html:105
+msgid "Plotting Geometric Entities"
+msgstr "绘制几何实体"
+
+#: templates/index.html:106
+msgid "2D and 3D"
+msgstr "二维和三维"
+
+#: templates/index.html:107
+msgid "Interactive interface"
+msgstr "交互界面"
+
+#: templates/index.html:108
+msgid "Colors"
+msgstr "彩色"
+
+#: templates/index.html:111
+msgid "Physics"
+msgstr "物理学"
+
+#: templates/index.html:113
+msgid "Units"
+msgstr "单位"
+
+#: templates/index.html:114
+msgid "Mechanics"
+msgstr "力学"
+
+#: templates/index.html:115
+msgid "Quantum"
+msgstr "量子"
+
+#: templates/index.html:116
+msgid "Gaussian Optics"
+msgstr "高斯光学"
+
+#: templates/index.html:117
+msgid "Pauli Algebra"
+msgstr "泡利代数"
+
+#: templates/index.html:120
+msgid "Statistics"
+msgstr "统计"
+
+#: templates/index.html:122
+msgid "Normal distributions"
+msgstr "正态分布"
+
+#: templates/index.html:123
+msgid "Uniform distributions"
+msgstr "均匀分布"
+
+#: templates/index.html:124
+msgid "Probability"
+msgstr "概率"
+
+#: templates/index.html:127
+msgid "Printing"
+msgstr "打印"
+
+#: templates/index.html:129
+msgid "Pretty printing:"
+msgstr "漂亮的打印"
+
+#: templates/index.html:129
+msgid "ASCII/Unicode pretty printing, LaTeX"
+msgstr "漂亮的ASCII/Unicode打印，LaTeX"
+
+#: templates/index.html:130
+msgid "Code generation:"
+msgstr "代码生成"
+
+#: templates/index.html:130
+msgid "C, Fortran, Python"
+msgstr "C, Fortran, Python"
+
+#: templates/index.html:157
+msgid "Download Now"
+msgstr "立即下载"
+
+#: templates/index.html:161
+msgid "Releases"
+msgstr "发布版本"
+
+#: templates/index.html:161
+msgid "Google Code downloads"
+msgstr "Google Code 下载"
+
+#: templates/index.html:162
+msgid "Latest git version"
+msgstr "最新 git 版本"
+
+#: templates/index.html:172
+msgid "Quick Links"
+msgstr "快速链接"
+
+#: templates/index.html:179
+msgid "Downloads (source tarballs)"
+msgstr "下载(源码包）"
+
+#: templates/index.html:180
+msgid "Downloads (packages for distributions)"
+msgstr "下载(发行软件包)"
+
+#: templates/index.html:181
+msgid "Mailing list"
+msgstr "邮件列表"
+
+#: templates/index.html:182
+msgid "Source code"
+msgstr "源码"
+
+#: templates/index.html:183
+msgid "Issues tracker"
+msgstr "Issues tracker"
+
+#: templates/index.html:184
+msgid "Google Code page"
+msgstr "Google Code 页面"
+
+#: templates/index.html:185
+msgid "Wiki"
+msgstr "维基"
+
+#: templates/index.html:186
+msgid "Try SymPy online now"
+msgstr "立即在线尝试SymPy"
+
+#: templates/index.html:187
+msgid "Official SymPy blog"
+msgstr "SymPy官方博客"
+
+#: templates/index.html:188
+msgid "Planet SymPy"
+msgstr "Planet SymPy"
+
+#: templates/index.html:203
+msgid "News"
+msgstr "新闻"
+
+#: templates/index.html:207
+#, fuzzy
+msgid ""
+" SymPy is accepted as a a <a href=\"http://www.google-melange.com/gsoc/org/"
+"show/google/gsoc2012/sympy\">mentoring organization</a> for Google Summer of "
+"Code 2012 "
+msgstr ""
+"SymPy被承认为Google Summer of Code 2012 的aa<a href=\"http://www.google-"
+"melange.com/gsoc/org/show/google/gsoc2012/sympy\">指导组织</a> "
+
+#: templates/index.html:208 templates/index.html:209 templates/index.html:213
+#: templates/index.html:214
+#, python-format
+msgid "Version %(v)s released"
+msgstr "版本 %(v)s 发布"
+
+#: templates/index.html:208 templates/index.html:209 templates/index.html:213
+#: templates/index.html:214
+msgid "changes"
+msgstr "变更"
+
+#: templates/index.html:210
+msgid ""
+"SymPy is accepted as a <a href=\"http://www.google-melange.com/gsoc/org/show/"
+"google/gsoc2011/sympy\">mentoring organization</a> for Google Summer of Code "
+"2011"
+msgstr ""
+"SymPy被承认为Google Summer of Code 2012 的aa<a href=\"http://www.google-"
+"melange.com/gsoc/org/show/google/gsoc2012/sympy\">指导组织</a> "
+
+#: templates/index.html:211
+#, fuzzy
+msgid "New website launched at sympy.org"
+msgstr "新站点在sympy.org"
+
+#: templates/index.html:212
+#, python-format
+msgid ""
+"Final page about the <a href=\"%(url)s\">2010 Google Summer of Code in "
+"SymPy</a> is available."
+msgstr ""
+"关于<a href=\"%(url)s\">2010 Google Summer of Code in SymPy</a> 的最终页面是"
+"有效的。"
+
+#: templates/index.html:215
+#, python-format
+msgid ""
+"Final page about the <a href=\"%(url)s\">2009 Google Summer of Code in "
+"SymPy</a> is available."
+msgstr ""
+"关于<a href=\"%(url)s\">2010 Google Summer of Code in SymPy</a> 的最终页面是"
+"有效的。"
+
+#: templates/screenshots.html:8
+msgid "Python Session"
+msgstr "Python会话"
+
+#: templates/screenshots.html:21
+msgid "ISymPy Session"
+msgstr "ISymPy会话"
+
+#: templates/support.html:8
+msgid "General"
+msgstr "常规"
+
+#: templates/support.html:11
+msgid "Below you can find several ways to get help"
+msgstr "你有以下几种获得帮助的方法"
+
+#: templates/support.html:24
+msgid "More Specific"
+msgstr "更具体的"

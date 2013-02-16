@@ -407,8 +407,7 @@ ul.list li .item .avatar {
 			}
 
 			#about{
-			padding: 0px 5px 5px 5px;
-			height:35px;
+			padding: 0px 5px 0px 5px;
 			overflow:hidden;
 			-moz-transition: all .5s ease-out;
 			-webkit-transition: all .5s ease-out;
@@ -427,7 +426,6 @@ ul.list li .item .avatar {
 			-webkit-border-bottom-right-radius: 4px;
 			}
 			#about{
-			height:115px;
 			overflow:hidden;
 			       -moz-transition: all .5s ease-in;
 			-webkit-transition: all .5s ease-in;
@@ -435,8 +433,7 @@ ul.list li .item .avatar {
 			transition: all .5s ease-in;
 			}
 			#other_shells{
-			padding: 0px 5px 5px 5px;
-			height:35px;
+			padding: 0px 5px 0px 5px;
 			overflow:hidden;
 			-moz-transition: all .5s ease-out;
 			-webkit-transition: all .5s ease-out;
@@ -455,7 +452,6 @@ ul.list li .item .avatar {
 			-webkit-border-bottom-right-radius: 4px;
 			}
 			#other_shells {
-			height:275px;
 			overflow:hidden;
 			       -moz-transition: all .5s ease-in;
 			-webkit-transition: all .5s ease-in;
@@ -463,8 +459,7 @@ ul.list li .item .avatar {
 			transition: all .5s ease-in;
 			}
 			#example {
-			padding: 0px 5px 5px 5px;
-			height:35px;
+			padding: 0px 5px 0px 5px;
 			overflow:hidden;
 			-moz-transition: all .5s ease-out;
 			-webkit-transition: all .5s ease-out;
@@ -483,7 +478,6 @@ ul.list li .item .avatar {
 			-webkit-border-bottom-right-radius: 4px;
 			}
 			#example {
-			height:225px;
 			overflow:hidden;
 			       -moz-transition: all .5s ease-in;
 			-webkit-transition: all .5s ease-in;

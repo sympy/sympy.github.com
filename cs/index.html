@@ -1,44 +1,49 @@
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
-<head>
+  <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>SymPy</title>
     <link rel="stylesheet" href="../media/base.css" type="text/css" media="screen" />
     <link rel="stylesheet" id="current-theme" href="../media/style.css" type="text/css" media="screen" />
-</head>
-<body>
-  <div id="container">
-    <div id="header">
-      <h1><a href="index.html"> <img src="../media/logo.png" style="vertical-align:middle"/> SymPy</a></h1>
-    
-      <div id="main-navigation">
+  </head>
+  <body>
+    <div id="container">
+      <div id="header">
+        <h1><a href="index.html"> <img src="../media/logo.png"
+        style="vertical-align:middle" height="78" width="100"/> SymPy</a></h1>
         
-        
-        <ul>
+        <div id="main-navigation">
+          
+          
+          <ul>
             <li class="active first"><a href="index.html">Hlavní stránka</a></li>
             <li class=" first"><a href="download.html">Stáhnout</a></li>
             <li class=" first"><a href="docs.html">Dokumentace</a></li>
             <li class=" first"><a href="support.html">Podpora</a></li>
             <li class=" first"><a href="screenshots.html">Screenshoty</a></li>
             <li class=" first"><a href="development.html">Vývoj</a></li>
+            <li class=" first"><a href="donate.html">Donate</a></li>
             <li class=" first"><a href="http://live.sympy.org/">Online Konzole</a></li>
-        </ul>
-        
-        <div class="clear"></div>
+          </ul>
+          
+          <div class="clear"></div>
+        </div>
       </div>
-    </div>
-    <div id="wrapper">
-      <div id="main">
-        <div class="block" id="block-text">
+      <div id="wrapper">
+        <div id="main">
+          <div class="block" id="block-text">
             <div class="content">
-                
+              
 
 <h2 class="title">O SymPy</h2>
 <div class="inner">
-<p class="first">
-SymPy je knihovna jazyka Python pro symbolickou matematiku. Má za cíl stát se kompletním počítačovým algebraickým systémem (CAS, Computer algebra system) a zároveň být co nejjednodušší, aby byla pochopitelná a jednoduše rozšiřitelná. SymPy je napsaná kompletně v jazyce Python a nepotřebuje žádné externí knihovny.
-</p>
+  <p class="first">
+    SymPy is a Python library for symbolic mathematics. It aims to
+    become a full-featured computer algebra system (CAS) while keeping the code as
+    simple as possible in order to be comprehensible and easily extensible. SymPy
+    is written entirely in Python and does not require any external libraries.
+  </p>
 </div>
 
 <h2 class="title">Vybavení</h2>
@@ -46,12 +51,12 @@ SymPy je knihovna jazyka Python pro symbolickou matematiku. Má za cíl stát se
   <h3>Core capabilities</h3>
   <ul>
     <li><strong>Basic arithmetic:</strong> Support for operators such
-    as <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>**</code> (power)</li>
+      as <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>**</code> (power)</li>
     <li> <strong>Simplification</strong></li>
     <li><strong>Expansion</strong></li>
     <li><strong>Functions:</strong> trigonometric, hyperbolic, exponential, roots, logarithms, absolute
-    value, spherical harmonics, factorials and gamma functions, zeta
-    functions, polynomials, special functions, ...</li>
+      value, spherical harmonics, factorials and gamma functions, zeta
+      functions, polynomials, special functions, ...</li>
     <li><strong>Substitution</strong></li>
     <li><strong>Numbers:</strong> arbitrary precision integers, rationals, and floats</li>
     <li><strong>Noncommutative symbols</strong></li>
@@ -93,6 +98,16 @@ SymPy je knihovna jazyka Python pro symbolickou matematiku. Má za cíl stát se
     <li><strong>Systems of equations</strong></li>
   </ul>
 
+  <h3>Combinatorics</h3>
+  <ul>
+    <li><strong>Permutations</strong></li>
+    <li><strong>Combinations</strong></li>
+    <li><strong>Partitions</strong></li>
+    <li><strong>Subsets</strong></li>
+    <li><strong>Permutation Groups</strong>: Polyhedral, Rubik, Symmetric, ...</li>
+    <li><strong>Prufer and Gray Codes</strong></li>
+  </ul>
+
   <h3>Discrete math</h3>
   <ul>
     <li><strong>Binomial coefficients</strong></li>
@@ -109,6 +124,7 @@ SymPy je knihovna jazyka Python pro symbolickou matematiku. Má za cíl stát se
     <li><strong>Determinants</strong></li>
     <li><strong>Inversion</strong></li>
     <li><strong>Solving</strong></li>
+    <li><strong>Abstract expressions</strong></li>
   </ul>
 
   <h3>Geometric Algebra</h3>
@@ -116,7 +132,7 @@ SymPy je knihovna jazyka Python pro symbolickou matematiku. Má za cíl stát se
   <h3>Geometry</h3>
   <ul>
     <li><strong>points, lines, rays, segments, ellipses, circles,
-    polygons, ...</strong></li>
+        polygons, ...</strong></li>
     <li><strong>Intersection</strong></li>
     <li><strong>Tangency</strong></li>
     <li><strong>Similarity</strong></li>
@@ -150,124 +166,129 @@ SymPy je knihovna jazyka Python pro symbolickou matematiku. Má za cíl stát se
   <h3>Printing</h3>
   <ul>
     <li><strong>Pretty printing:</strong> ASCII/Unicode pretty printing, LaTeX
-    <li><strong>Code generation:</strong> C, FORTAN, Python</li>
+    <li><strong>Code generation:</strong> C, Fortran, Python</li>
   </ul>
 </div>
 
 
             </div>
-        </div>
-        <div id="footer">
-          <div class="block">
-              <p>Copyright &copy; 2011 SymPy Development Team.
-              &nbsp;
-              &nbsp;
-              &nbsp;
-              Tato stránka je open source. Založte fork <a href="https://github.com/sympy/sympy.github.com">projektu na GitHubu</a> k její editaci.
-              &nbsp;
-              &nbsp;
-              &nbsp;
-              Jazyky (beta):
-              <a href="../cs/index.html">[Cs]</a>,
-              <a href="../de/index.html">[De]</a>,
-              <a href="../en/index.html">[En]</a>,
-              <a href="../fr/index.html">[Fr]</a>,
-              <a href="../ru/index.html">[Ru]</a>
+          </div>
+          <div id="footer">
+            <div class="block">
+              <p>Copyright &copy; 2013 SymPy Development Team.
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                Tato stránka je open source. Založte fork <a href="https://github.com/sympy/sympy.github.com">projektu na GitHubu</a> k její editaci.
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                Jazyky (beta):
+                <a href="../cs/index.html">[Cs]</a>,
+                <a href="../de/index.html">[De]</a>,
+                <a href="../en/index.html">[En]</a>,
+                <a href="../fr/index.html">[Fr]</a>,
+                <a href="../pt/index.html">[Pt]</a>,
+                <a href="../ru/index.html">[Ru]</a>,
+                <a href="../zh/index.html">[Zh]</a>
               </p>
+            </div>
+          </div>
+        </div>
+        <div id="sidebar">
+          
+<div id="side1">
+  <div class="clear"></div>
+</div>
+</div>
+<div id="container">
+  <div style="position:relative; float:left; margin: 0;">
+    <div style="position:relative; float:left; width:60%; min-width:250px;">
+    </div>
+  </div>
+  <div id="container">
+    <div style="position:relative; float:left; margin-top: -100px;">
+      <div style="position:relative; float:left; width:300px; height:200px;">
+      </div>
+    </div>
+    <div id="shell"></div>
+    <div id="right">
+      <div class="right_title">More Information</div>
+      <div id="about"><div class="t">
+          <div class="block">
+            <h3>Ihned stáhnout</h3>
+            <div class="content">
+              <div id="thetext">
+                <p>
+                  Jednotlivá vydání: <a href="http://code.google.com/p/sympy/downloads/list">Google Code downloads</a><br/>
+                  Nejnovější git verze: <a href="http://github.com/sympy/sympy">github.com/sympy/sympy</a>
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div id="sidebar">
-        
-<div id="side1">
-      <div class="clear"></div>
-    </div>
-  </div>
-<div id="container">
-<div style="position:relative; float:left; margin: 0;">
-<div style="position:relative; float:left; width:60%; min-width:250px;">
-</div>
-</div>
-<div id="container">
-<div style="position:relative; float:left; margin-top: -100px;">
-<div style="position:relative; float:left; width:300px; height:200px;">
-</div>
-</div>
-<div id="shell"></div>
-<div id="right">
-<div class="right_title">More Information</div>
-<div id="about"><div class="t">
-<div class="block">
-  <h3>Ihned stáhnout</h3>
-  <div class="content">
-<div id="thetext">
-<p>
-Jednotlivá vydání: <a href="http://code.google.com/p/sympy/downloads/list">Google Code downloads</a><br/>
-Nejnovější git verze: <a href="http://github.com/sympy/sympy">github.com/sympy/sympy</a>
+      <br/>
+      <div id="other_shells"><div class="t">
+          <div id="quicklinks" class="block">
+            <h3>Rychlé Odkazy</h3>
+            <div class="content">
+              <div id="thetext">
+                <p>
+                  <ul>
+                    <font size="3">
+                      <li><a href="http://docs.sympy.org/">Dokumentace</a></li>
+                      <li><a href="http://code.google.com/p/sympy/downloads/list">Stáhnout (zdrojový kód tarballs)</a></li>
+                      <li><a href="http://code.google.com/p/sympy/wiki/DownloadInstallation?tm=2">Stáhnout (balíčky pro distribuce)</a></li>
+                      <li><a href="http://groups.google.com/group/sympy">Mailing list</a></li>
+                      <li><a href="http://github.com/sympy/sympy">Zdrojový kód</a></li>
+                      <li><a href="http://code.google.com/p/sympy/issues/list">Sledování problémů</a></li>
+                      <li><a href="http://code.google.com/p/sympy/">Google Code page</a></li>
+                      <li><a href="http://github.com/sympy/sympy/wiki">Wiki</a></li>
+                      <li><a href="http://live.sympy.org/">Zkuste SymPy online</a></li>
+                      <li><a href="http://sympy.blogspot.com/">Oficiální SymPy blog</a></li>
+                      <li><a href="http://planet.sympy.org/">Planeta SymPy</a></li>
+                      <li><a href="http://colabti.org/irclogger/irclogger_logs/sympy">IRC channel logs</a></li>
+                    </font>
+              </div>
+              </ul>
 </p>
-  </div>
 </div>
-</div>
-</div>
-</div>
-<br/>
-            <div id="other_shells"><div class="t">
-<div id="quicklinks" class="block">
-  <h3>Rychlé Odkazy</h3>
-  <div class="content">
-<div id="thetext">
-    <p>
-      <ul>
-    <font size="3">
-        <li><a href="http://docs.sympy.org/">Dokumentace</a></li>
-        <li><a href="http://code.google.com/p/sympy/downloads/list">Stáhnout (zdrojový kód tarballs)</a></li>
-        <li><a href="http://code.google.com/p/sympy/wiki/DownloadInstallation?tm=2">Stáhnout (balíčky pro distribuce)</a></li>
-        <li><a href="http://groups.google.com/group/sympy">Mailing list</a></li>
-        <li><a href="http://github.com/sympy/sympy">Zdrojový kód</a></li>
-        <li><a href="http://code.google.com/p/sympy/issues/list">Sledování problémů</a></li>
-        <li><a href="http://code.google.com/p/sympy/">Google Code page</a></li>
-        <li><a href="http://github.com/sympy/sympy/wiki">Wiki</a></li>
-        <li><a href="http://live.sympy.org/">Zkuste SymPy online</a></li>
-        <li><a href="http://sympy.blogspot.com/">Oficiální SymPy blog</a></li>
-        <li><a href="http://planet.sympy.org/">Planeta SymPy</a></li>
-        <li><a href="http://colabti.org/irclogger/irclogger_logs/sympy">IRC channel logs</a></li>
-    </font>
-</div>
-      </ul>
-    </p>
-  </div>
 </div>
 
 <br/>
-      </div>
-      <div class="clear"></div>
-    </div>
+</div>
+<div class="clear"></div>
+</div>
 <br/>
 <div class="block">
-<div id="example"><div class="t">
-  <h3>Novinky</h3>
-  <div class="content">
-<div id="thetext">
-<p>
-<span class="date">29 Jul 2011</span> Vydaná verze 0.7.1 (<a href="https://github.com/sympy/sympy/wiki/Release-Notes-for-0.7.1">změny</a>)<br/>
-<span class="date">28 Jun 2011</span> Vydaná verze 0.7.0 (<a href="https://github.com/sympy/sympy/wiki/Release-Notes-for-0.7.0">změny</a>)<br/>
-<span class="date">18 Mar 2011</span> SymPy je přijato jako <a href="http://www.google-melange.com/gsoc/org/show/google/gsoc2011/sympy">mentorující organizace</a> pro Google Summer of Code 2011<br/>
-<span class="date">23 Oct 2010</span> Spuštěn nový web na sympy.org<br/>
-<span class="date">17 Mar 2010</span> Vydaná verze 0.6.7 (<a href="http://code.google.com/p/sympy/wiki/Changes">změny</a>)<br/>
-<span class="date">20 Dec 2009</span> Vydaná verze 0.6.6 (<a href="http://code.google.com/p/sympy/wiki/Changes">změny</a>)<br/>
-<span class="date">26 Sep 2009</span> Je dostupná závěrečná stránka o <a href="http://code.google.com/p/sympy/wiki/GSoC2009">2009 Google Summer of Code - SymPy</a>.
-</p>
-</div>
-  </div>
-</div>
-</div>
-<br/>
-  </div>
-  </div>
-
+  <div id="example"><div class="t">
+      <h3>Novinky</h3>
+      <div class="content">
+        <div id="thetext">
+          <p>
+            <span class="date">16 Oct 2012</span> Vydaná verze 0.7.2 (<a href="https://github.com/sympy/sympy/wiki/Release-Notes-for-0.7.2">změny</a>)<br/>
+            <span class="date">17 Mar 2012</span>  SymPy is accepted as a a <a href="http://www.google-melange.com/gsoc/org/show/google/gsoc2012/sympy">mentoring organization</a> for Google Summer of Code 2012  <br/>
+            <span class="date">29 Jul 2011</span> Vydaná verze 0.7.1 (<a href="https://github.com/sympy/sympy/wiki/Release-Notes-for-0.7.1">změny</a>)<br/>
+            <span class="date">28 Jun 2011</span> Vydaná verze 0.7.0 (<a href="https://github.com/sympy/sympy/wiki/Release-Notes-for-0.7.0">změny</a>)<br/>
+            <span class="date">18 Mar 2011</span> SymPy je přijato jako <a href="http://www.google-melange.com/gsoc/org/show/google/gsoc2011/sympy">mentorující organizace</a> pro Google Summer of Code 2011<br/>
+            <span class="date">23 Oct 2010</span> Spuštěn nový web na sympy.org<br/>
+            <span class="date">18 Oct 2010</span> Final page about the <a href="https://github.com/sympy/sympy/wiki/GSoC-2010-report">2010 Google Summer of Code in SymPy</a> is available.<br/>
+            <span class="date">17 Mar 2010</span> Vydaná verze 0.6.7 (<a href="http://code.google.com/p/sympy/wiki/Changes">změny</a>)<br/>
+            <span class="date">20 Dec 2009</span> Vydaná verze 0.6.6 (<a href="http://code.google.com/p/sympy/wiki/Changes">změny</a>)<br/>
+            <span class="date">26 Sep 2009</span> Je dostupná závěrečná stránka o <a href="https://github.com/sympy/sympy/wiki/GSoC-2009-report">2009 Google Summer of Code - SymPy</a>.
+          </p>
+        </div>
       </div>
-      <div class="clear"></div>
     </div>
   </div>
-</body>
+  <br/>
+</div>
+</div>
+
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+  </body>
 </html>
