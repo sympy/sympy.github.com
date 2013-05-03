@@ -11,7 +11,7 @@ a { -moz-outline: none; }
 body {
   font-size: 16px;
   color: #222;
-  background: #ebfadf;
+  background: #eee;
   font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
 }
 
@@ -27,7 +27,7 @@ hr {
 #header h1{
   padding: 10px 0;
   font-family: "Gentium Basic", "Times New Roman", serif;
-  
+  font-weight: 700;
 }
 
 #header h1 a:link, #header h1 a:active, 
