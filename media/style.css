@@ -9,16 +9,14 @@ h1, h2, h3 { color: #3B5526; }
 a { -moz-outline: none; }
 
 body {
+  font-size: 16px;
   color: #222;
   background: #ebfadf;
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+}
 
-  background: -moz-linear-gradient(left, #ebfadf, #EEEEEE);
-
-  background: -webkit-gradient(linear,left top, right top, from(#ebfadf), to(#EEEEEE));
-
-  filter: progid:DXImageTransform.Microsoft.Gradient(StartColorStr='#ebfadf', EndColorStr='#EEEEEE', GradientType=0);
-
-  font-family: helvetica, arial, sans-serif;
+p {
+  line-height: 125%;
 }
 
 hr {
@@ -26,14 +24,10 @@ hr {
   color: #f0f0ee;
 }
 
-#header {
-
-}
-
 #header h1{
   padding: 10px 0;
-  font-weight: bold;
-
+  font-family: "Gentium Basic", "Times New Roman", serif;
+  
 }
 
 #header h1 a:link, #header h1 a:active, 
@@ -93,8 +87,7 @@ margin-top:10px;
 
 #main-navigation ul li a {
   padding: 6px 10px 6px 10px;
-  font-weight: bold;
-  font-size: 1.1em;
+  font-size: 1em;
 }
 
 #main-navigation ul li.active {
@@ -490,11 +483,11 @@ ul.list li .item .avatar {
 	float:left;
 	}
 	.right_title {
-	font-size:35px;
-	font-weight:bold;
-	font-family: "Raleway";
-	text-align:center;
-	margin-bottom:15px;
+	  font-size:35px;
+	  font-family: "Source Sans Pro", Helvetica, sans-serif;
+      font-weight: 200;
+	  text-align:center;
+	  margin-bottom:15px;
 	}
 
 	.content {

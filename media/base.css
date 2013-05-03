@@ -9,11 +9,6 @@ hr {height: 1px; border: 0; }
 p { margin: 15px 0;}
 a img { border: none; }
 
-body {
-  font-size: 12px;
-  font-family: sans-serif;
-}
-
 #container {
   min-width: 960px;
 }
@@ -95,7 +90,7 @@ body {
 }
 
 #main .block .content .inner {
-  padding: 0 15px 15px;
+  padding: 0 15px;
 }
 
 #main .main p.first {
