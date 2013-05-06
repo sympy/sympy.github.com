@@ -24,7 +24,6 @@ a img { border: none; }
 
 #header h1 {
   margin: 0;
-  padding: 10px 0;
   font-size: 35px;
 }
 
@@ -52,32 +51,19 @@ a img { border: none; }
 }
 
 #sidebar {
-  width: 30%;
   float: right;
+  padding: 10px 10px 10px 10px;
+  width: 350px;
+  margin-top: 1px;
 }
 
-#sidebar h3 {
-  padding: 10px 15px;
-  margin: 0;
-  font-size: 13px;
+#quick_links ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-#sidebar .block {
-  margin-bottom: 20px;
-  padding-bottom: 10px;
-}
-
-#sidebar .block .content {
-  padding: 0 15px;
-}
-
-#sidebar ul.navigation li a:link, #sidebar ul.navigation li a:visited {
-  display: block;
-  padding: 10px 15px;
-}
-
-#sidebar .block .sidebar-block, #sidebar .notice {
-  padding:10px;
+#quick_links ul li {
+  margin: 0.25em 0;
 }
 
 #wrapper {
@@ -87,6 +73,10 @@ a img { border: none; }
 #main .block {
   margin-bottom: 20px;
   padding-top: 1px;
+}
+
+#main .block .content {
+  padding-bottom: 15px;
 }
 
 #main .block .content .inner {
@@ -152,23 +142,10 @@ a img { border: none; }
   padding-bottom: 20px;
 }
 
-/* pagination */
-
-.pagination a, .pagination span {
-  padding: 2px 5px;
-  margin-right: 5px;
-  display: block;
-  float: left;
-  border-style: solid;
-  border-width: 1px;
-}
-
-.pagination span.current {
-  font-weight: bold;
-}
-
-.pagination a {
-  text-decoration: none;
+#search-gamma {
+  position: absolute;
+  right: 20px;
+  top: 0px;
 }
 
 /* tables */
