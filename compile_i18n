@@ -9,3 +9,4 @@ msgfmt fr.po -o fr.mo
 msgfmt pt.po -o pt.mo
 msgfmt ru.po -o ru.mo
 msgfmt zh.po -o zh.mo
+msgfmt es.po -o es.mo

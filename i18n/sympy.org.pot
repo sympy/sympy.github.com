@@ -1,0 +1,799 @@
+# Translations template for PROJECT.
+# Copyright (C) 2013 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2013.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2013-05-02 18:52-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 0.9.6\n"
+
+#: templates/base.html:31
+msgid "Main Page"
+msgstr ""
+
+#: templates/base.html:32 templates/download.html:4
+msgid "Download"
+msgstr ""
+
+#: templates/base.html:33 templates/docs.html:4 templates/docs.html:8
+#: templates/index.html:199
+msgid "Documentation"
+msgstr ""
+
+#: templates/base.html:34 templates/support.html:4
+msgid "Support"
+msgstr ""
+
+#: templates/base.html:35 templates/screenshots.html:4
+msgid "Screenshots"
+msgstr ""
+
+#: templates/base.html:36 templates/development.html:4
+#: templates/development.html:8
+msgid "Development"
+msgstr ""
+
+#: templates/base.html:37 templates/donate.html:4
+msgid "Donate"
+msgstr ""
+
+#: templates/base.html:38
+msgid "Online Shell"
+msgstr ""
+
+#: templates/base.html:57
+#, python-format
+msgid ""
+"This page is open source. Fork <a href=\"%(url)s\">the project on "
+"GitHub</a> to edit it."
+msgstr ""
+
+#: templates/base.html:61
+msgid "Languages"
+msgstr ""
+
+#: templates/development.html:11
+msgid ""
+"We are interested in any contribution. There are many ways how you can\n"
+"    contribute"
+msgstr ""
+
+#: templates/development.html:15
+msgid ""
+"If you wrote anything interesting using SymPy, please send us a patch "
+"with the\n"
+"        code (see below for more information)"
+msgstr ""
+
+#: templates/development.html:20
+msgid ""
+"If you found a bug (or just want to let us know what you think), tell us "
+"on the\n"
+"        <a href=\"http://groups.google.com/group/sympy\">mailinglist</a>"
+msgstr ""
+
+#: templates/development.html:21
+msgid ""
+"You can also\n"
+"        add a bug report (or a comment) into the <a "
+"href=\"http://code.google.com/p/sympy/issues/list\">issues</a>."
+msgstr ""
+
+#: templates/development.html:24
+msgid "You can blog about how you use SymPy"
+msgstr ""
+
+#: templates/development.html:25
+msgid "You can help us write documentation (just send us a patch)"
+msgstr ""
+
+#: templates/development.html:26
+msgid ""
+"You can help people on our <a "
+"href=\"http://groups.google.com/group/sympy\">mailinglist</a>"
+msgstr ""
+
+#: templates/development.html:27
+msgid "You can help with reviewing patches"
+msgstr ""
+
+#: templates/development.html:28
+msgid "You can send us patches with bug fixes or new features"
+msgstr ""
+
+#: templates/development.html:32
+msgid "The best way to contribute code or documentation is to send us a patch"
+msgstr ""
+
+#: templates/development.html:36
+msgid "How to Send a Patch"
+msgstr ""
+
+#: templates/development.html:39
+msgid ""
+"The best way is to send a github pull request\n"
+"    against the <a href=\"http://github.com/sympy/sympy\">sympy/sympy</a>"
+" repository.\n"
+"    We'll review it and push it in."
+msgstr ""
+
+#: templates/development.html:45
+msgid ""
+"If you need help with git, github, pull requests, patches, coding, SymPy "
+"or\n"
+"    anything related, just send us an email to the mailinglist\n"
+"    or ask on IRC (our channel is <a "
+"href=\"irc://irc.freenode.net/sympy\">#sympy at freenode</a>), we'll "
+"help."
+msgstr ""
+
+#: templates/development.html:48
+msgid ""
+"Also, you can read our instructions\n"
+"    <a href=\"https://github.com/sympy/sympy/wiki/Development-workflow\">"
+"\n"
+"      how to prepare patches</a> using git and github."
+msgstr ""
+
+#: templates/development.html:54
+msgid ""
+"The github pull request is a preferred method, as that makes it easy for "
+"us to\n"
+"    review and push the code in. That said,\n"
+"    you can also clone the latest git repository (see the link on the "
+"right), prepare a branch with\n"
+"    your code, upload it somewhere (for example <a\n"
+"                                                   "
+"href=\"http://github.com/\">github</a>) and send us a link to the <a\n"
+""
+"                                                                                                                      "
+"href=\"http://groups.google.com/group/sympy-patches\">sympy-patches</a>\n"
+"    mailinglist, or you can even send us raw patches --- but it will be "
+"more work\n"
+"    for us to integrate it."
+msgstr ""
+
+#: templates/development.html:65
+msgid ""
+"SymPy has a broad development team:\n"
+"    <a href=\"\n"
+"             http://docs.sympy.org/0.7.1/aboutus.html#sympy-development-"
+"team\n"
+"             \">\n"
+"      http://docs.sympy.org/0.7.1/aboutus.html#sympy-development-team\n"
+"    </a>, send us a patch and your name will appear there too."
+msgstr ""
+
+#: templates/development.html:74
+msgid "Sources of the Webpages"
+msgstr ""
+
+#: templates/development.html:77
+msgid "Sources of these webpages are at"
+msgstr ""
+
+#: templates/development.html:80
+msgid "Feel free to send us patches with improvements."
+msgstr ""
+
+#: templates/development.html:106
+msgid "Git Repository"
+msgstr ""
+
+#: templates/development.html:110 templates/download.html:27
+msgid "Main git repository"
+msgstr ""
+
+#: templates/development.html:114
+msgid "Online access"
+msgstr ""
+
+#: templates/docs.html:11
+#, python-format
+msgid ""
+"The documentation is maintained using the <a href=\"%(url)s\">Sphinx</a> "
+"Python documentation generator."
+msgstr ""
+
+#: templates/docs.html:13
+msgid "You can find it at"
+msgstr ""
+
+#: templates/donate.html:8
+msgid "Support SymPy Development"
+msgstr ""
+
+#: templates/donate.html:11
+#, python-format
+msgid ""
+"SymPy will always be 100% open source software, free for all to use\n"
+"and released under the liberal terms of the modified BSD license.\n"
+msgstr ""
+
+#: templates/donate.html:16
+msgid "You can donate any amount here:"
+msgstr ""
+
+#: templates/donate.html:25
+msgid ""
+"\n"
+"All donations will be used strictly to fund SymPy development, by "
+"supporting\n"
+"tasks such as developer sprints, improved documentation, fixing bugs and "
+"paying\n"
+"for hosting costs for services such as the\n"
+"<a href=\"http://live.sympy.org/\">SymPy Online Shell</a>."
+msgstr ""
+
+#: templates/donate.html:32
+#, python-format
+msgid ""
+"\n"
+"Our donations are managed by the\n"
+"<a href=\"http://numfocus.org/\">NumFOCUS</a>\n"
+"foundation, which passes 100% of your contribution to the SymPy project.\n"
+"NumFOCUS is a 501(c)3 non-profit foundation, so if you are subject to US "
+"Tax\n"
+"law, your contributions will be tax-deductible.\n"
+msgstr ""
+
+#: templates/download.html:8
+msgid "Source Tarballs (Releases)"
+msgstr ""
+
+#: templates/download.html:11 templates/download.html:19
+msgid "Downloads"
+msgstr ""
+
+#: templates/download.html:12 templates/download.html:20
+msgid "at Google Code page"
+msgstr ""
+
+#: templates/download.html:16
+msgid "Packages for Distributions"
+msgstr ""
+
+#: templates/download.html:24
+msgid "Git Version"
+msgstr ""
+
+#: templates/download.html:33
+msgid "Browse online"
+msgstr ""
+
+#: templates/index.html:8
+msgid "About"
+msgstr ""
+
+#: templates/index.html:11
+msgid ""
+"SymPy is a Python library for symbolic mathematics. It aims to\n"
+"    become a full-featured computer algebra system (CAS) while keeping "
+"the code as\n"
+"    simple as possible in order to be comprehensible and easily "
+"extensible. SymPy\n"
+"    is written entirely in Python and does not require any external "
+"libraries."
+msgstr ""
+
+#: templates/index.html:18
+msgid "Google Summer of Code (GSoC) 2013"
+msgstr ""
+
+#: templates/index.html:21
+msgid ""
+"SymPy is a mentoring organization for GSoC 2013.\n"
+"  Apply now, the deadline is May 2, 2013. See the\n"
+"  <a\n"
+"      "
+"href=\"https://plus.google.com/u/0/116872266504964122381/posts/VPk3FQQYPAA\">G+"
+"\n"
+"      announcement</a> for links and information how to apply."
+msgstr ""
+
+#: templates/index.html:29
+msgid "Features"
+msgstr ""
+
+#: templates/index.html:31
+msgid "Core capabilities"
+msgstr ""
+
+#: templates/index.html:33 templates/index.html:49
+msgid "Basic arithmetic:"
+msgstr ""
+
+#: templates/index.html:33
+msgid ""
+"Support for operators such\n"
+"      as <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, "
+"<code>**</code> (power)"
+msgstr ""
+
+#: templates/index.html:35
+msgid "Simplification"
+msgstr ""
+
+#: templates/index.html:36
+msgid "Expansion"
+msgstr ""
+
+#: templates/index.html:37
+msgid "Functions:"
+msgstr ""
+
+#: templates/index.html:37
+msgid ""
+"trigonometric, hyperbolic, exponential, roots, logarithms, absolute\n"
+"      value, spherical harmonics, factorials and gamma functions, zeta\n"
+"      functions, polynomials, special functions, ..."
+msgstr ""
+
+#: templates/index.html:41
+msgid "Substitution"
+msgstr ""
+
+#: templates/index.html:42
+msgid "Numbers:"
+msgstr ""
+
+#: templates/index.html:42
+msgid "arbitrary precision integers, rationals, and floats"
+msgstr ""
+
+#: templates/index.html:43
+msgid "Noncommutative symbols"
+msgstr ""
+
+#: templates/index.html:44
+msgid "Pattern matching"
+msgstr ""
+
+#: templates/index.html:47
+msgid "Polynomials"
+msgstr ""
+
+#: templates/index.html:49
+msgid " division, gcd, ... "
+msgstr ""
+
+#: templates/index.html:50
+msgid "Factorization"
+msgstr ""
+
+#: templates/index.html:51
+msgid "Square-free decomposition"
+msgstr ""
+
+#: templates/index.html:52
+msgid "Gröbner bases"
+msgstr ""
+
+#: templates/index.html:53
+msgid "Partial fraction decomposition"
+msgstr ""
+
+#: templates/index.html:54
+msgid "Resultants"
+msgstr ""
+
+#: templates/index.html:57
+msgid "Calculus"
+msgstr ""
+
+#: templates/index.html:60
+msgid "Limits:"
+msgstr ""
+
+#: templates/index.html:64
+msgid "Differentiation"
+msgstr ""
+
+#: templates/index.html:67
+msgid "Integration:"
+msgstr ""
+
+#: templates/index.html:68
+msgid "It uses extended Risch-Norman heuristic"
+msgstr ""
+
+#: templates/index.html:70
+msgid "Taylor (Laurent) series"
+msgstr ""
+
+#: templates/index.html:73
+msgid "Solving equations"
+msgstr ""
+
+#: templates/index.html:75
+msgid "Polynomial equations"
+msgstr ""
+
+#: templates/index.html:76
+msgid "Algebraic equations"
+msgstr ""
+
+#: templates/index.html:77
+msgid "Differential equations"
+msgstr ""
+
+#: templates/index.html:78
+msgid "Difference equations"
+msgstr ""
+
+#: templates/index.html:79
+msgid "Systems of equations"
+msgstr ""
+
+#: templates/index.html:82
+msgid "Combinatorics"
+msgstr ""
+
+#: templates/index.html:84
+msgid "Permutations"
+msgstr ""
+
+#: templates/index.html:85
+msgid "Combinations"
+msgstr ""
+
+#: templates/index.html:86
+msgid "Partitions"
+msgstr ""
+
+#: templates/index.html:87
+msgid "Subsets"
+msgstr ""
+
+#: templates/index.html:88
+msgid "Permutation Groups"
+msgstr ""
+
+#: templates/index.html:89
+msgid "Prufer and Gray Codes"
+msgstr ""
+
+#: templates/index.html:92
+msgid "Discrete math"
+msgstr ""
+
+#: templates/index.html:94
+msgid "Binomial coefficients"
+msgstr ""
+
+#: templates/index.html:95
+msgid "Summations"
+msgstr ""
+
+#: templates/index.html:96
+msgid "Products"
+msgstr ""
+
+#: templates/index.html:97
+msgid "Number theory:"
+msgstr ""
+
+#: templates/index.html:97
+msgid "generating prime numbers, primality testing,  integer factorization, ... "
+msgstr ""
+
+#: templates/index.html:99
+msgid "Logic expressions"
+msgstr ""
+
+#: templates/index.html:102
+msgid "Matrices"
+msgstr ""
+
+#: templates/index.html:104
+msgid "Basic arithmetic"
+msgstr ""
+
+#: templates/index.html:105
+msgid "Eigenvalues/eigenvectors"
+msgstr ""
+
+#: templates/index.html:106
+msgid "Determinants"
+msgstr ""
+
+#: templates/index.html:107
+msgid "Inversion"
+msgstr ""
+
+#: templates/index.html:108
+msgid "Solving"
+msgstr ""
+
+#: templates/index.html:109
+msgid "Abstract expressions"
+msgstr ""
+
+#: templates/index.html:112
+msgid "Geometric Algebra"
+msgstr ""
+
+#: templates/index.html:114
+msgid "Geometry"
+msgstr ""
+
+#: templates/index.html:116
+msgid ""
+"points, lines, rays, segments, ellipses, circles,\n"
+"        polygons, ..."
+msgstr ""
+
+#: templates/index.html:118
+msgid "Intersection"
+msgstr ""
+
+#: templates/index.html:119
+msgid "Tangency"
+msgstr ""
+
+#: templates/index.html:120
+msgid "Similarity"
+msgstr ""
+
+#: templates/index.html:123
+msgid "Plotting"
+msgstr ""
+
+#: templates/index.html:125
+msgid "Coordinate modes"
+msgstr ""
+
+#: templates/index.html:126
+msgid "Plotting Geometric Entities"
+msgstr ""
+
+#: templates/index.html:127
+msgid "2D and 3D"
+msgstr ""
+
+#: templates/index.html:128
+msgid "Interactive interface"
+msgstr ""
+
+#: templates/index.html:129
+msgid "Colors"
+msgstr ""
+
+#: templates/index.html:132
+msgid "Physics"
+msgstr ""
+
+#: templates/index.html:134
+msgid "Units"
+msgstr ""
+
+#: templates/index.html:135
+msgid "Mechanics"
+msgstr ""
+
+#: templates/index.html:136
+msgid "Quantum"
+msgstr ""
+
+#: templates/index.html:137
+msgid "Gaussian Optics"
+msgstr ""
+
+#: templates/index.html:138
+msgid "Pauli Algebra"
+msgstr ""
+
+#: templates/index.html:141
+msgid "Statistics"
+msgstr ""
+
+#: templates/index.html:143
+msgid "Normal distributions"
+msgstr ""
+
+#: templates/index.html:144
+msgid "Uniform distributions"
+msgstr ""
+
+#: templates/index.html:145
+msgid "Probability"
+msgstr ""
+
+#: templates/index.html:148
+msgid "Printing"
+msgstr ""
+
+#: templates/index.html:150
+msgid "Pretty printing:"
+msgstr ""
+
+#: templates/index.html:150
+msgid "ASCII/Unicode pretty printing, LaTeX"
+msgstr ""
+
+#: templates/index.html:151
+msgid "Code generation:"
+msgstr ""
+
+#: templates/index.html:151
+msgid "C, Fortran, Python"
+msgstr ""
+
+#: templates/index.html:178
+msgid "Download Now"
+msgstr ""
+
+#: templates/index.html:182
+msgid "Releases"
+msgstr ""
+
+#: templates/index.html:182
+msgid "Google Code downloads"
+msgstr ""
+
+#: templates/index.html:183
+msgid "Latest git version"
+msgstr ""
+
+#: templates/index.html:193
+msgid "Quick Links"
+msgstr ""
+
+#: templates/index.html:200
+msgid "Downloads (source tarballs)"
+msgstr ""
+
+#: templates/index.html:201
+msgid "Downloads (packages for distributions)"
+msgstr ""
+
+#: templates/index.html:202
+msgid "Mailing list"
+msgstr ""
+
+#: templates/index.html:203
+msgid "Source code"
+msgstr ""
+
+#: templates/index.html:204
+msgid "Issues tracker"
+msgstr ""
+
+#: templates/index.html:205
+msgid "Google Code page"
+msgstr ""
+
+#: templates/index.html:206
+msgid "Wiki"
+msgstr ""
+
+#: templates/index.html:207
+msgid "Try SymPy online now"
+msgstr ""
+
+#: templates/index.html:208
+msgid "Official SymPy blog"
+msgstr ""
+
+#: templates/index.html:209
+msgid "Planet SymPy"
+msgstr ""
+
+#: templates/index.html:210
+msgid "IRC channel logs"
+msgstr ""
+
+#: templates/index.html:225
+msgid "News"
+msgstr ""
+
+#: templates/index.html:229
+msgid ""
+" SymPy is accepted as a <a href=\"http://www.google-"
+"melange.com/gsoc/org/show/google/gsoc2013/sympy\">mentoring "
+"organization</a> for Google Summer of Code 2013 "
+msgstr ""
+
+#: templates/index.html:230 templates/index.html:232 templates/index.html:233
+#: templates/index.html:237 templates/index.html:238
+#, python-format
+msgid "Version %(v)s released"
+msgstr ""
+
+#: templates/index.html:230 templates/index.html:232 templates/index.html:233
+#: templates/index.html:237 templates/index.html:238
+msgid "changes"
+msgstr ""
+
+#: templates/index.html:231
+msgid ""
+" SymPy is accepted as a <a href=\"http://www.google-"
+"melange.com/gsoc/org/show/google/gsoc2012/sympy\">mentoring "
+"organization</a> for Google Summer of Code 2012 "
+msgstr ""
+
+#: templates/index.html:234
+msgid ""
+"SymPy is accepted as a <a href=\"http://www.google-"
+"melange.com/gsoc/org/show/google/gsoc2011/sympy\">mentoring "
+"organization</a> for Google Summer of Code 2011"
+msgstr ""
+
+#: templates/index.html:235
+msgid "New website launched at sympy.org"
+msgstr ""
+
+#: templates/index.html:236
+#, python-format
+msgid ""
+"Final page about the <a href=\"%(url)s\">2010 Google Summer of Code in "
+"SymPy</a> is available."
+msgstr ""
+
+#: templates/index.html:239
+#, python-format
+msgid ""
+"Final page about the <a href=\"%(url)s\">2009 Google Summer of Code in "
+"SymPy</a> is available."
+msgstr ""
+
+#: templates/screenshots.html:8
+msgid "Python Session"
+msgstr ""
+
+#: templates/screenshots.html:21
+msgid "ISymPy Session"
+msgstr ""
+
+#: templates/support.html:8
+msgid "General"
+msgstr ""
+
+#: templates/support.html:11
+msgid "Below you can find several ways to get help"
+msgstr ""
+
+#: templates/support.html:15
+msgid " SymPy <a href=\"http://docs.sympy.org\">Documentation</a>"
+msgstr ""
+
+#: templates/support.html:16
+msgid " Main <a href=\"http://groups.google.com/group/sympy\">mailinglist</a> "
+msgstr ""
+
+#: templates/support.html:17
+msgid "<a href=\"http://code.google.com/p/sympy/issues/list\">Issues tracker</a>."
+msgstr ""
+
+#: templates/support.html:19
+msgid ""
+"IRC channel: <a href=\"irc://irc.freenode.net/sympy\">#sympy at freenode</a>. "
+"Note that this channel is <a href=\"http://colabti."
+"org/irclogger/irclogger_logs/sympy\">logged</a>."
+msgstr ""
+
+#: templates/support.html:24
+msgid "More Specific"
+msgstr ""
+
+#: templates/support.html:28
+msgid " SymPy <a href=\"http://docs.sympy.org/0.7.1/tutorial.html\">tutorial</a> "
+msgstr ""
+
+#: templates/support.html:29
+msgid " Main <a href=\"https://github.com/sympy/sympy/wiki/Faq\">FAQ</a> "
+msgstr ""
+
+#: templates/support.html:30
+msgid "<a href=\"http://docs.sympy.org/0.7.1/gotchas.html\">Gotchas and Pitfalls</a>"
+msgstr ""
