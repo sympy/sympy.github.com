@@ -1,80 +1,79 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{% block title %}{% endblock %}</title>
-    <link rel="stylesheet" href="/static/css/base.css" type="text/css" media="screen" />
-    <link rel="stylesheet" id="current-theme" href="/static/css/style.css" type="text/css" media="screen" />
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Gentium+Basic" rel="stylesheet" type="text/css" />
-    <link rel="icon" href="/static/SymPy-Favicon.ico" />
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-    <script type="text/javascript" src="/static/javascript/main.js"></script>
-  </head>
-  <body>
-    <div id="container">
-      <div id="header">
-        <h1><a href="index.html"> <img src="/static/images/logo.png" alt="SymPy Logo" /> SymPy</a></h1>
-        <div id="mobile-menu"></div>
-        <div id="main-navigation">
-          {% block navigation %}
-          {# "*_active" variables are automatically substituted in the "generate"
-          script, make sure that "*" is the same as the filename (without an
-          extension) #}
-          <ul>
-            <li class="{{ index_active }}"><a href="index.html">{% trans %}Main Page{% endtrans %}</a></li>
-            <li class="{{ download_active }}"><a href="download.html">{% trans %}Download{% endtrans %}</a></li>
-            <li class="{{ docs_active }}"><a href="http://docs.sympy.org">{% trans %}Documentation{% endtrans %}</a></li>
-            <li class="{{ support_active }}"><a href="support.html">{% trans %}Support{% endtrans %}</a></li>
-            <li class="{{ screenshots_active }}"><a href="screenshots.html">{% trans %}Screenshots{% endtrans %}</a></li>
-            <li class="{{ development_active }}"><a href="development.html">{% trans %}Development{% endtrans %}</a></li>
-            <li class="{{ donate_active }}"><a href="donate.html">{% trans %}Donate{% endtrans %}</a></li>
-            <li><a href="http://live.sympy.org/">{% trans %}Online Shell{% endtrans %}</a></li>
-          </ul>
-          {% endblock %}
-          <div class="clear"></div>
-        </div>
-      </div>
-      <div id="wrapper">
-        <div id="main">
-          <div class="block" id="block-text">
-            <div class="content">
-              {% block content %}{% endblock %}
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>{% block title %}{% endblock %}</title>
+        <link rel="stylesheet" href="/static/css/base.css" type="text/css" media="screen" />
+        <link rel="stylesheet" id="current-theme" href="/static/css/style.css" type="text/css" media="screen" />
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Gentium+Basic" rel="stylesheet" type="text/css" />
+        <link rel="icon" href="/static/SymPy-Favicon.ico" />
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+        <script type="text/javascript" src="/static/javascript/main.js"></script>
+    </head>
+    <body>
+        <div id="container">
+            <div id="header">
+                <h1><a href="index.html"> <img src="/static/images/logo.png" alt="SymPy Logo" /> SymPy</a></h1>
+                <div id="mobile-menu"></div>
+                <div id="main-navigation">
+                    {% block navigation %}
+                    {# "*_active" variables are automatically substituted in the "generate"
+                    script, make sure that "*" is the same as the filename (without an
+                    extension) #}
+                    <ul>
+                        <li class="{{ index_active }}"><a href="index.html">{% trans %}Main Page{% endtrans %}</a></li>
+                        <li class="{{ download_active }}"><a href="download.html">{% trans %}Download{% endtrans %}</a></li>
+                        <li class="{{ docs_active }}"><a href="http://docs.sympy.org">{% trans %}Documentation{% endtrans %}</a></li>
+                        <li class="{{ support_active }}"><a href="support.html">{% trans %}Support{% endtrans %}</a></li>
+                        <li class="{{ screenshots_active }}"><a href="screenshots.html">{% trans %}Screenshots{% endtrans %}</a></li>
+                        <li class="{{ development_active }}"><a href="development.html">{% trans %}Development{% endtrans %}</a></li>
+                        <li class="{{ donate_active }}"><a href="donate.html">{% trans %}Donate{% endtrans %}</a></li>
+                        <li><a href="http://live.sympy.org/">{% trans %}Online Shell{% endtrans %}</a></li>
+                    </ul>
+                    {% endblock %}
+                    <div class="clear"></div>
+                </div>
             </div>
-          </div>
-          <div id="footer">
-            <div class="block">
-              <p>Copyright &copy; 2013 SymPy Development Team. </p>
-              <p>
-                {% trans url='https://github.com/sympy/sympy.github.com' %}This page is open source. Fork <a href="{{ url }}">the project on GitHub</a> to edit it.{% endtrans %}
-                </p>
-              <p>
-                {% trans %}Languages{% endtrans %} (beta):
-                <a href="../cs/index.html">[Cs]</a>,
-                <a href="../de/index.html">[De]</a>,
-                <a href="../en/index.html">[En]</a>,
-                <a href="../es/index.html">[Es]</a>,
-                <a href="../fr/index.html">[Fr]</a>,
-                <a href="../pt/index.html">[Pt]</a>,
-                <a href="../ru/index.html">[Ru]</a>,
-                <a href="../zh/index.html">[Zh]</a>
-              </p>
+            <div id="wrapper">
+                <div id="main">
+                    <div class="block" id="block-text">
+                        <div class="content">
+                            {% block content %}{% endblock %}
+                        </div>
+                    </div>
+                    <div id="footer">
+                        <div class="block">
+                            <p>Copyright &copy; 2013 SymPy Development Team. </p>
+                            <p>
+                                {% trans url='https://github.com/sympy/sympy.github.com' %}This page is open source. Fork <a href="{{ url }}">the project on GitHub</a> to edit it.{% endtrans %}
+                            </p>
+                            <p>
+                                {% trans %}Languages{% endtrans %} (beta):
+                                <a href="../cs/index.html">[Cs]</a>,
+                                <a href="../de/index.html">[De]</a>,
+                                <a href="../en/index.html">[En]</a>,
+                                <a href="../fr/index.html">[Fr]</a>,
+                                <a href="../pt/index.html">[Pt]</a>,
+                                <a href="../ru/index.html">[Ru]</a>,
+                                <a href="../zh/index.html">[Zh]</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="sidebar">
+                    <div id="search-gamma" class="sidebar_card">
+                        <h3>{% trans %} Compute with Gamma {% endtrans %}</h3>
+                        <form method="get" action="http://www.sympygamma.com/input/" target="_blank">
+                            <input type="text" name="i" placeholder="{% trans %}example: integrate(1 / (1 + x^2)){% endtrans %}" />
+                            <button>{% trans %} Compute {% endtrans %}</button>
+                        </form>
+                    </div>
+                    {% block sidebar %}
+                    {% endblock %}
+                </div>
+                <div class="clear"></div>
             </div>
-          </div>
         </div>
-        <div id="sidebar">
-            <div id="search-gamma" class="sidebar_card">
-                <h3>{% trans %} Compute with Gamma {% endtrans %}</h3>
-                <form method="get" action="http://www.sympygamma.com/input/" target="_blank">
-                    <input type="text" name="i" placeholder="{% trans %}example: integrate(1 / (1 + x^2)){% endtrans %}" />
-                    <button>{% trans %} Compute {% endtrans %}</button>
-                </form>
-            </div>
-          {% block sidebar %}
-          {% endblock %}
-        </div>
-        <div class="clear"></div>
-      </div>
-    </div>
-  </body>
+    </body>
 </html>
