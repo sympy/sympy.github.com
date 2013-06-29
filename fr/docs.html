@@ -3,30 +3,32 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Documentation</title>
-    <link rel="stylesheet" href="../media/base.css" type="text/css" media="screen" />
-    <link rel="stylesheet" id="current-theme" href="../media/style.css" type="text/css" media="screen" />
-    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700|Gentium+Basic:700" rel="stylesheet" type="text/css" />
-    <link rel="icon" href="../media/SymPy-Favicon.ico" />
+    <link rel="stylesheet" href="/static/css/base.css" type="text/css" media="screen" />
+    <link rel="stylesheet" id="current-theme" href="/static/css/style.css" type="text/css" media="screen" />
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Gentium+Basic" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="/static/SymPy-Favicon.ico" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <script type="text/javascript" src="/static/javascript/main.js"></script>
   </head>
   <body>
     <div id="container">
       <div id="header">
-        <h1><a href="index.html"> <img src="../media/logo.png"
-        style="vertical-align:middle" height="78" width="100"/> SymPy</a></h1>
-        
+        <h1><a href="index.html"> <img src="/static/images/logo.png" alt="SymPy Logo" /> SymPy</a></h1>
+        <div id="mobile-menu"></div>
         <div id="main-navigation">
           
           
           <ul>
-            <li class=" first"><a href="index.html">Page Principale</a></li>
-            <li class=" first"><a href="download.html">Télécharger</a></li>
-            <li class="active first"><a href="http://docs.sympy.org">Documentation</a></li>
-            <li class=" first"><a href="support.html">Support</a></li>
-            <li class=" first"><a href="screenshots.html">Captures d’écran</a></li>
-            <li class=" first"><a href="development.html">Développement</a></li>
-            <li class=" first"><a href="donate.html">Donate</a></li>
-            <li class=" first"><a href="http://live.sympy.org/">Shell en ligne</a></li>
+            <li class=""><a href="index.html">Page Principale</a></li>
+            <li class=""><a href="download.html">Télécharger</a></li>
+            <li class="active"><a href="http://docs.sympy.org">Documentation</a></li>
+            <li class=""><a href="support.html">Support</a></li>
+            <li class=""><a href="screenshots.html">Captures d’écran</a></li>
+            <li class=""><a href="development.html">Développement</a></li>
+            <li class=""><a href="donate.html">Donate</a></li>
+            <li><a href="http://live.sympy.org/">Shell en ligne</a></li>
           </ul>
           
           <div class="clear"></div>
@@ -52,14 +54,11 @@ Vous le trouverez à l'adresse: <a href="http://docs.sympy.org/">docs.sympy.org<
           </div>
           <div id="footer">
             <div class="block">
-              <p>Copyright &copy; 2013 SymPy Development Team.
-                &nbsp;
-                &nbsp;
-                &nbsp;
+              <p>Copyright &copy; 2013 SymPy Development Team. </p>
+              <p>
                 Cette page est open source. Forkez <a href="https://github.com/sympy/sympy.github.com">le projet sur GitHub</a> pour l’éditer.
-                &nbsp;
-                &nbsp;
-                &nbsp;
+                </p>
+              <p>
                 Langues (beta):
                 <a href="../cs/index.html">[Cs]</a>,
                 <a href="../de/index.html">[De]</a>,
@@ -74,6 +73,13 @@ Vous le trouverez à l'adresse: <a href="http://docs.sympy.org/">docs.sympy.org<
           </div>
         </div>
         <div id="sidebar">
+            <div id="search-gamma" class="sidebar_card">
+                <h3> Compute with Gamma </h3>
+                <form method="get" action="http://www.sympygamma.com/input/" target="_blank">
+                    <input type="text" name="i" placeholder="example: integrate(1 / (1 + x^2))" />
+                    <button> Compute </button>
+                </form>
+            </div>
           
           
         </div>
