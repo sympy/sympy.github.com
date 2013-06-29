@@ -67,12 +67,26 @@
       as <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>**</code> (power)</a></li>
     <li> <strong>Упрощение</strong>
     <a href="http://www.sympygamma.com/input/?i=simplify%28cos%28x%29cos%28y%29+-+sin%28x%29sin%28y%29%29">Trigonometry</a>, <a href="http://www.sympygamma.com/input/?i=simplify%28%282x%2B3%29%2810x-5%29%2F%282x-1%29%29">Polynomials</a></li>
-    <li><strong>Раскрытие выражений</strong></li>
-    <li><strong>Функции</strong> trigonometric, hyperbolic, exponential, roots, logarithms, absolute
-      value, spherical harmonics, factorials and gamma functions, zeta
-      functions, polynomials, special functions, ...</li>
-    <li><strong>Подстановки</strong></li>
-    <li><strong>Числа:</strong> arbitrary precision integers, rationals, and floats</li>
+    <li><strong>Expansion:</strong>
+        <a href="http://www.sympygamma.com/input/?i=expand%28%285x+%2B+3%29*%281-x%29*%281%2B6x%29%29"> of a polynomial </a></li>
+    <li><strong>Функции</strong>
+        <a href="http://www.sympygamma.com/input/?i=%281+-+sin%5E2+x%29%2F%281+%2B+tan%5E2+x%29">trigonometric</a>,
+        <a href="http://www.sympygamma.com/input/?i=sinh%5E2+x+%2B+cosh%5E2+x">hyperbolic</a>,
+        <a href="http://www.sympygamma.com/input/?i=exp%28x%29+%2F+%281+%2B+exp%282x%29%29">exponential</a>,
+        <a href="http://www.sympygamma.com/input/?i=root%28x%2C+7%29+**+2">roots</a>,
+        <a href="http://www.sympygamma.com/input/?i=log%28-25%29">logarithms</a>,
+        <a href="http://www.sympygamma.com/input/?i=Abs%281+%2B+3I%29">absolute value</a>,
+        <a href="http://www.sympygamma.com/input/?i=Ylm%281%2C+-1%2C+theta%2C+phi%29">spherical harmonics</a>,
+        <a href="http://www.sympygamma.com/input/?i=gamma%2841%2F2%29+%2B+16%21%21">factorials and gamma functions</a>,
+        <a href="http://www.sympygamma.com/input/?i=zeta%284%29">zeta functions</a>,
+        <a href="http://www.sympygamma.com/input/?i=x**7+-+x**5+%2B+4x**3+%2B+1">polynomials</a>,
+        <a href="http://live.sympy.org/?evaluate=from%20sympy.abc%20import%20n%2Ca%2Cb%2Cx%0A%23--%0Ajacobi(0%2C%20a%2C%20b%2C%20x)%0A%23--%0Ajacobi(1%2C%20a%2C%20b%2C%20x)%0A%23--%0Ajacobi(2%2C%20a%2C%20b%2C%20x)%0A%23--%0Ajacobi(n%2C%20a%2C%20a%2C%20x)%0A%23--%0Ajacobi(n%2C%20a%2C%20b%2C%200)%0A%23--%0Aconjugate(jacobi(n%2C%20a%2C%20b%2C%20x))%0A%23--%0Aerf(I*oo)%0A%23--%0ADiracDelta(x**2%20%2B%20x%20-%202).simplify(x)%0A%23--%0A">special functions</a>,
+        ...</li>
+    <li><strong>Substitution:</strong> <a href="http://www.sympygamma.com/input/?i=%28exp%28x%29+%2F+%281+%2B+exp%282x%29%29%29.subs%28exp%28x%29%2C+u%29">example</a></li>
+    <li><strong>Числа:</strong>
+        <a href="http://www.sympygamma.com/input/?i=100%21">arbitrary precision integers</a>,
+        <a href="http://www.sympygamma.com/input/?i=0.%5B13579%5D">rationals</a>,
+        <a href="http://www.sympygamma.com/input/?i=exp%2820%21%29">and floats</a></li>
     <li><strong>Некоммутативные выражения</strong></li>
     <li><strong>Проверка соответствия выражения шаблону</strong></li>
   </ul>
@@ -91,7 +105,7 @@
   <ul>
     <li>
       <strong>Пределы</strong>
-      <code>limit(x*log(x), x, 0) -&gt; 0</code>
+      <a href="http://www.sympygamma.com/input/?i=limit%28x*log%28x%29%2C+x%2C+0%29">limit(x*log(x), x, 0) -&gt; 0</a>
     </li>
     <li>
       <strong>Дифференцирование</strong>
