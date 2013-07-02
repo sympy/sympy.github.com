@@ -1,44 +1,44 @@
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>SymPy</title>
-    <link rel="stylesheet" href="/static/css/base.css" type="text/css" media="screen" />
-    <link rel="stylesheet" id="current-theme" href="/static/css/style.css" type="text/css" media="screen" />
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Gentium+Basic" rel="stylesheet" type="text/css" />
-    <link rel="icon" href="/static/SymPy-Favicon.ico" />
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-    <script type="text/javascript" src="/static/javascript/main.js"></script>
-  </head>
-  <body>
-    <div id="container">
-      <div id="header">
-        <h1><a href="index.html"> <img src="/static/images/logo.png" alt="SymPy Logo" /> SymPy</a></h1>
-        <div id="mobile-menu"></div>
-        <div id="main-navigation">
-          
-          
-          <ul>
-            <li class="active"><a href="index.html">主页</a></li>
-            <li class=""><a href="download.html">下载</a></li>
-            <li class=""><a href="http://docs.sympy.org">文档</a></li>
-            <li class=""><a href="support.html">支持</a></li>
-            <li class=""><a href="screenshots.html">截图</a></li>
-            <li class=""><a href="development.html">开发</a></li>
-            <li class=""><a href="donate.html">Donate</a></li>
-            <li><a href="http://live.sympy.org/">在线控制台</a></li>
-          </ul>
-          
-          <div class="clear"></div>
-        </div>
-      </div>
-      <div id="wrapper">
-        <div id="main">
-          <div class="block" id="block-text">
-            <div class="content">
-              
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <title>SymPy</title>
+        <link rel="stylesheet" href="/static/css/base.css" type="text/css" media="screen" />
+        <link rel="stylesheet" id="current-theme" href="/static/css/style.css" type="text/css" media="screen" />
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Gentium+Basic" rel="stylesheet" type="text/css" />
+        <link rel="icon" href="/static/SymPy-Favicon.ico" />
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+        <script type="text/javascript" src="/static/javascript/main.js"></script>
+    </head>
+    <body>
+        <div id="container">
+            <div id="header">
+                <h1><a href="index.html"> <img src="/static/images/logo.png" alt="SymPy Logo" /> SymPy</a></h1>
+                <button id="mobile-menu"></button>
+                <div id="main-navigation">
+                    
+                    
+                    <ul>
+                        <li class="active"><a href="index.html">主页</a></li>
+                        <li class=""><a href="download.html">下载</a></li>
+                        <li class=""><a href="http://docs.sympy.org">文档</a></li>
+                        <li class=""><a href="support.html">支持</a></li>
+                        <li class=""><a href="screenshots.html">截图</a></li>
+                        <li class=""><a href="development.html">开发</a></li>
+                        <li class=""><a href="donate.html">Donate</a></li>
+                        <li><a href="http://live.sympy.org/">在线控制台</a></li>
+                    </ul>
+                    
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div id="wrapper">
+                <div id="main">
+                    <div class="block" id="block-text">
+                        <div class="content">
+                            
 
 <h2 class="title">关于</h2>
 <div class="inner">
@@ -66,6 +66,7 @@
     <li><strong>Expansion:</strong>
         <a href="http://www.sympygamma.com/input/?i=expand%28%285x+%2B+3%29*%281-x%29*%281%2B6x%29%29"> of a polynomial </a></li>
     <li><strong>函数：</strong>
+        
         <a href="http://www.sympygamma.com/input/?i=%281+-+sin%5E2+x%29%2F%281+%2B+tan%5E2+x%29">trigonometric</a>,
         <a href="http://www.sympygamma.com/input/?i=sinh%5E2+x+%2B+cosh%5E2+x">hyperbolic</a>,
         <a href="http://www.sympygamma.com/input/?i=exp%28x%29+%2F+%281+%2B+exp%282x%29%29">exponential</a>,
@@ -76,13 +77,16 @@
         <a href="http://www.sympygamma.com/input/?i=gamma%2841%2F2%29+%2B+16%21%21">factorials and gamma functions</a>,
         <a href="http://www.sympygamma.com/input/?i=zeta%284%29">zeta functions</a>,
         <a href="http://www.sympygamma.com/input/?i=x**7+-+x**5+%2B+4x**3+%2B+1">polynomials</a>,
-        <a href="http://live.sympy.org/?evaluate=from%20sympy.abc%20import%20n%2Ca%2Cb%2Cx%0A%23--%0Ajacobi(0%2C%20a%2C%20b%2C%20x)%0A%23--%0Ajacobi(1%2C%20a%2C%20b%2C%20x)%0A%23--%0Ajacobi(2%2C%20a%2C%20b%2C%20x)%0A%23--%0Ajacobi(n%2C%20a%2C%20a%2C%20x)%0A%23--%0Ajacobi(n%2C%20a%2C%20b%2C%200)%0A%23--%0Aconjugate(jacobi(n%2C%20a%2C%20b%2C%20x))%0A%23--%0Aerf(I*oo)%0A%23--%0ADiracDelta(x**2%20%2B%20x%20-%202).simplify(x)%0A%23--%0A">special functions</a>,
-        ...</li>
+        <a href="http://live.sympy.org/?evaluate=from%20sympy.abc%20import%20n%2Ca%2Cb%2Cx%0A%23--%0Ajacobi(0%2C%20a%2C%20b%2C%20x)%0A%23--%0Ajacobi(1%2C%20a%2C%20b%2C%20x)%0A%23--%0Ajacobi(2%2C%20a%2C%20b%2C%20x)%0A%23--%0Ajacobi(n%2C%20a%2C%20a%2C%20x)%0A%23--%0Ajacobi(n%2C%20a%2C%20b%2C%200)%0A%23--%0Aconjugate(jacobi(n%2C%20a%2C%20b%2C%20x))%0A%23--%0Aerf(I*oo)%0A%23--%0ADiracDelta(x**2%20%2B%20x%20-%202).simplify(x)%0A%23--%0A">special functions</a>, ...
+    </li>
     <li><strong>Substitution:</strong> <a href="http://www.sympygamma.com/input/?i=%28exp%28x%29+%2F+%281+%2B+exp%282x%29%29%29.subs%28exp%28x%29%2C+u%29">example</a></li>
     <li><strong>数：</strong>
+        
         <a href="http://www.sympygamma.com/input/?i=100%21">arbitrary precision integers</a>,
         <a href="http://www.sympygamma.com/input/?i=0.%5B13579%5D">rationals</a>,
-        <a href="http://www.sympygamma.com/input/?i=exp%2820%21%29">and floats</a></li>
+        <a href="http://www.sympygamma.com/input/?i=exp%2820%21%29">and floats</a>
+        
+    </li>
     <li><strong>非交换符号</strong></li>
     <li><strong>模式匹配</strong></li>
   </ul>
@@ -194,37 +198,36 @@
 </div>
 
 
-            </div>
-          </div>
-          <div id="footer">
-            <div class="block">
-              <p>Copyright &copy; 2013 SymPy Development Team. </p>
-              <p>
-                这个页面是开源的，fork <a href="https://github.com/sympy/sympy.github.com">GitHub上的项目</a>并编辑它
-                </p>
-              <p>
-                语言 (beta):
-                <a href="../cs/index.html">[Cs]</a>,
-                <a href="../de/index.html">[De]</a>,
-                <a href="../en/index.html">[En]</a>,
-                <a href="../es/index.html">[Es]</a>,
-                <a href="../fr/index.html">[Fr]</a>,
-                <a href="../pt/index.html">[Pt]</a>,
-                <a href="../ru/index.html">[Ru]</a>,
-                <a href="../zh/index.html">[Zh]</a>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div id="sidebar">
-            <div id="search-gamma" class="sidebar_card">
-                <h3> Compute with Gamma </h3>
-                <form method="get" action="http://www.sympygamma.com/input/" target="_blank">
-                    <input type="text" name="i" placeholder="example: integrate(1 / (1 + x^2))" />
-                    <button> Compute </button>
-                </form>
-            </div>
-          
+                        </div>
+                    </div>
+                    <div id="footer">
+                        <div class="block">
+                            <p>Copyright &copy; 2013 SymPy Development Team. </p>
+                            <p>
+                                这个页面是开源的，fork <a href="https://github.com/sympy/sympy.github.com">GitHub上的项目</a>并编辑它
+                            </p>
+                            <p>
+                                语言 (beta):
+                                <a href="../cs/index.html">[Cs]</a>,
+                                <a href="../de/index.html">[De]</a>,
+                                <a href="../en/index.html">[En]</a>,
+                                <a href="../fr/index.html">[Fr]</a>,
+                                <a href="../pt/index.html">[Pt]</a>,
+                                <a href="../ru/index.html">[Ru]</a>,
+                                <a href="../zh/index.html">[Zh]</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="sidebar">
+                    <div id="search-gamma" class="sidebar_card">
+                        <h3> Compute with Gamma </h3>
+                        <form method="get" action="http://www.sympygamma.com/input/" target="_blank">
+                            <input type="text" name="i" placeholder="example: integrate(1 / (1 + x^2))" />
+                            <button> Compute </button>
+                        </form>
+                    </div>
+                    
 <div id="about" class="sidebar_card">
     <h3>立即下载</h3>
     <p>
@@ -277,9 +280,9 @@
     </p>
 </div>
 
+                </div>
+                <div class="clear"></div>
+            </div>
         </div>
-        <div class="clear"></div>
-      </div>
-    </div>
-  </body>
+    </body>
 </html>

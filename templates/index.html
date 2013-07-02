@@ -37,23 +37,42 @@
     %}</strong>
         <a href="http://www.sympygamma.com/input/?i=expand%28%285x+%2B+3%29*%281-x%29*%281%2B6x%29%29">{% trans %} of a polynomial {% endtrans %}</a></li>
     <li><strong>{% trans %}Functions:{% endtrans %}</strong>
-        <a href="http://www.sympygamma.com/input/?i=%281+-+sin%5E2+x%29%2F%281+%2B+tan%5E2+x%29">{% trans %}trigonometric{% endtrans %}</a>,
-        <a href="http://www.sympygamma.com/input/?i=sinh%5E2+x+%2B+cosh%5E2+x">{% trans %}hyperbolic{% endtrans %}</a>,
-        <a href="http://www.sympygamma.com/input/?i=exp%28x%29+%2F+%281+%2B+exp%282x%29%29">{% trans %}exponential{% endtrans %}</a>,
-        <a href="http://www.sympygamma.com/input/?i=root%28x%2C+7%29+**+2">{% trans %}roots{% endtrans %}</a>,
-        <a href="http://www.sympygamma.com/input/?i=log%28-25%29">{% trans %}logarithms{% endtrans %}</a>,
-        <a href="http://www.sympygamma.com/input/?i=Abs%281+%2B+3I%29">{% trans %}absolute value{% endtrans %}</a>,
-        <a href="http://www.sympygamma.com/input/?i=Ylm%281%2C+-1%2C+theta%2C+phi%29">{% trans %}spherical harmonics{% endtrans %}</a>,
-        <a href="http://www.sympygamma.com/input/?i=gamma%2841%2F2%29+%2B+16%21%21">{% trans %}factorials and gamma functions{% endtrans %}</a>,
-        <a href="http://www.sympygamma.com/input/?i=zeta%284%29">{% trans %}zeta functions{% endtrans %}</a>,
-        <a href="http://www.sympygamma.com/input/?i=x**7+-+x**5+%2B+4x**3+%2B+1">{% trans %}polynomials{% endtrans %}</a>,
-        <a href="http://live.sympy.org/?evaluate=from%20sympy.abc%20import%20n%2Ca%2Cb%2Cx%0A%23--%0Ajacobi(0%2C%20a%2C%20b%2C%20x)%0A%23--%0Ajacobi(1%2C%20a%2C%20b%2C%20x)%0A%23--%0Ajacobi(2%2C%20a%2C%20b%2C%20x)%0A%23--%0Ajacobi(n%2C%20a%2C%20a%2C%20x)%0A%23--%0Ajacobi(n%2C%20a%2C%20b%2C%200)%0A%23--%0Aconjugate(jacobi(n%2C%20a%2C%20b%2C%20x))%0A%23--%0Aerf(I*oo)%0A%23--%0ADiracDelta(x**2%20%2B%20x%20-%202).simplify(x)%0A%23--%0A">{% trans %}special functions{% endtrans %}</a>,
-        {% trans %}...{% endtrans %}</li>
+        {% trans
+        trig='http://www.sympygamma.com/input/?i=%281+-+sin%5E2+x%29%2F%281+%2B+tan%5E2+x%29',
+        hyperbolic='http://www.sympygamma.com/input/?i=sinh%5E2+x+%2B+cosh%5E2+x',
+        exponential='http://www.sympygamma.com/input/?i=exp%28x%29+%2F+%281+%2B+exp%282x%29%29',
+        root='http://www.sympygamma.com/input/?i=root%28x%2C+7%29+**+2',
+        logarithm='http://www.sympygamma.com/input/?i=log%28-25%29',
+        abs='http://www.sympygamma.com/input/?i=Abs%281+%2B+3I%29',
+        spherical='http://www.sympygamma.com/input/?i=Ylm%281%2C+-1%2C+theta%2C+phi%29',
+        factorial='http://www.sympygamma.com/input/?i=gamma%2841%2F2%29+%2B+16%21%21',
+        zeta='http://www.sympygamma.com/input/?i=zeta%284%29',
+        polynomial='http://www.sympygamma.com/input/?i=x**7+-+x**5+%2B+4x**3+%2B+1',
+        special='http://live.sympy.org/?evaluate=from%20sympy.abc%20import%20n%2Ca%2Cb%2Cx%0A%23--%0Ajacobi(0%2C%20a%2C%20b%2C%20x)%0A%23--%0Ajacobi(1%2C%20a%2C%20b%2C%20x)%0A%23--%0Ajacobi(2%2C%20a%2C%20b%2C%20x)%0A%23--%0Ajacobi(n%2C%20a%2C%20a%2C%20x)%0A%23--%0Ajacobi(n%2C%20a%2C%20b%2C%200)%0A%23--%0Aconjugate(jacobi(n%2C%20a%2C%20b%2C%20x))%0A%23--%0Aerf(I*oo)%0A%23--%0ADiracDelta(x**2%20%2B%20x%20-%202).simplify(x)%0A%23--%0A' %}
+        <a href="{{ trig }}">trigonometric</a>,
+        <a href="{{ hyperbolic }}">hyperbolic</a>,
+        <a href="{{ exponential }}">exponential</a>,
+        <a href="{{ root }}">roots</a>,
+        <a href="{{ logarithm }}">logarithms</a>,
+        <a href="{{ abs }}">absolute value</a>,
+        <a href="{{ spherical }}">spherical harmonics</a>,
+        <a href="{{ factorial }}">factorials and gamma functions</a>,
+        <a href="{{ zeta }}">zeta functions</a>,
+        <a href="{{ polynomial }}">polynomials</a>,
+        <a href="{{ special }}">special functions</a>, ...{% endtrans %}
+    </li>
     <li><strong>{% trans %}Substitution:{% endtrans %}</strong> <a href="http://www.sympygamma.com/input/?i=%28exp%28x%29+%2F+%281+%2B+exp%282x%29%29%29.subs%28exp%28x%29%2C+u%29">{% trans %}example{% endtrans %}</a></li>
     <li><strong>{% trans %}Numbers:{% endtrans %}</strong>
-        <a href="http://www.sympygamma.com/input/?i=100%21">{% trans %}arbitrary precision integers{% endtrans %}</a>,
-        <a href="http://www.sympygamma.com/input/?i=0.%5B13579%5D">{% trans %}rationals{% endtrans %}</a>,
-        <a href="http://www.sympygamma.com/input/?i=exp%2820%21%29">{% trans %}and floats{% endtrans %}</a></li>
+        {% trans
+        integer='http://www.sympygamma.com/input/?i=100%21',
+        rational='http://www.sympygamma.com/input/?i=0.%5B13579%5D',
+        float='http://www.sympygamma.com/input/?i=exp%2820%21%29'
+        %}
+        <a href="{{ integer }}">arbitrary precision integers</a>,
+        <a href="{{ rational }}">rationals</a>,
+        <a href="{{ float }}">and floats</a>
+        {% endtrans %}
+    </li>
     <li><strong>{% trans %}Noncommutative symbols{% endtrans %}</strong></li>
     <li><strong>{% trans %}Pattern matching{% endtrans %}</strong></li>
   </ul>
