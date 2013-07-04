@@ -15,7 +15,7 @@
         <div id="container">
             <div id="header">
                 <h1><a href="index.html"> <img src="/static/images/logo.png" alt="SymPy Logo" /> SymPy</a></h1>
-                <button id="mobile-menu"></button>
+                <div id="mobile-menu"></div>
                 <div id="main-navigation">
                     {% block navigation %}
                     {# "*_active" variables are automatically substituted in the "generate"
@@ -26,7 +26,6 @@
                         <li class="{{ download_active }}"><a href="download.html">{% trans %}Download{% endtrans %}</a></li>
                         <li class="{{ docs_active }}"><a href="http://docs.sympy.org">{% trans %}Documentation{% endtrans %}</a></li>
                         <li class="{{ support_active }}"><a href="support.html">{% trans %}Support{% endtrans %}</a></li>
-                        <li class="{{ screenshots_active }}"><a href="screenshots.html">{% trans %}Screenshots{% endtrans %}</a></li>
                         <li class="{{ development_active }}"><a href="development.html">{% trans %}Development{% endtrans %}</a></li>
                         <li class="{{ donate_active }}"><a href="donate.html">{% trans %}Donate{% endtrans %}</a></li>
                         <li><a href="http://live.sympy.org/">{% trans %}Online Shell{% endtrans %}</a></li>
