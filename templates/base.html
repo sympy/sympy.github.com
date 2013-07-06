@@ -68,6 +68,30 @@
                             <button>{% trans %} Compute {% endtrans %}</button>
                         </form>
                     </div>
+                    <div id="about" class="sidebar_card">
+                        <h3>{% trans %}Download Now{% endtrans %}</h3>
+                        <p>
+                            {% trans %}Releases{% endtrans %}: <a href="http://code.google.com/p/sympy/downloads/list">{% trans %}Google Code downloads{% endtrans %}</a><br/>
+                            {% trans %}Latest git version{% endtrans %}: <a href="http://github.com/sympy/sympy">github.com/sympy/sympy</a>
+                        </p>
+                    </div>
+                    <div id="quick_links" class="sidebar_card">
+                        <h3>{% trans %}Quick Links{% endtrans %}</h3>
+                        <ul>
+                            <li><a href="http://docs.sympy.org/">{% trans %}Documentation{% endtrans %}</a></li>
+                            <li><a href="http://code.google.com/p/sympy/downloads/list">{% trans %}Downloads (source tarballs){% endtrans %}</a></li>
+                            <li><a href="http://code.google.com/p/sympy/wiki/DownloadInstallation?tm=2">{% trans %}Downloads (packages for distributions){% endtrans %}</a></li>
+                            <li><a href="http://groups.google.com/group/sympy">{% trans %}Mailing list{% endtrans %}</a></li>
+                            <li><a href="http://github.com/sympy/sympy">{% trans %}Source code{% endtrans %}</a></li>
+                            <li><a href="http://code.google.com/p/sympy/issues/list">{% trans %}Issues tracker{% endtrans %}</a></li>
+                            <li><a href="http://code.google.com/p/sympy/">{% trans %}Google Code page{% endtrans %}</a></li>
+                            <li><a href="http://github.com/sympy/sympy/wiki">{% trans %}Wiki{% endtrans %}</a></li>
+                            <li><a href="http://live.sympy.org/">{% trans %}Try SymPy online now{% endtrans %}</a></li>
+                            <li><a href="http://sympy.blogspot.com/">{% trans %}Official SymPy blog{% endtrans %}</a></li>
+                            <li><a href="http://planet.sympy.org/">{% trans %}Planet SymPy{% endtrans %}</a></li>
+                            <li><a href="http://colabti.org/irclogger/irclogger_logs/sympy">{% trans %}IRC channel logs{% endtrans %}</a></li>
+                        </ul>
+                    </div>
                     {% block sidebar %}
                     {% endblock %}
                 </div>
