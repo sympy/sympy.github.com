@@ -1,7 +1,10 @@
 #! /usr/bin/env python
 
 import os
+import babel
+import babel.dates
 import hashlib
+import datetime
 from gettext import GNUTranslations
 
 from jinja2 import Environment, FileSystemLoader
@@ -9,9 +12,14 @@ from jinja2 import Environment, FileSystemLoader
 def md5_filter(value):
     return hashlib.md5(value).hexdigest()
 
+def format_datetime(year, month, day):
+    return babel.dates.format_date(datetime.date(year, month, day),
+                                   locale=env.globals["locale"])
+
 env = Environment(loader=FileSystemLoader('templates'),
         extensions=['jinja2.ext.i18n'])
 env.filters["md5"] = md5_filter
+env.globals["datetime"] = format_datetime
 
 templates = [
     "index.html",
@@ -28,6 +36,7 @@ languages = ["cs", "de", "en", "fr", "pt", "ru", "zh", "es"]
 for language in languages:
     print "Generating '%s' pages" % language
 
+    env.globals["locale"] = language
     if language == "en":
         # The templates are written in English, so they don't need to be
         # translated
