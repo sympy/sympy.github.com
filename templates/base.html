@@ -4,6 +4,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
         <title>{% block title %}{% endblock %}</title>
+        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet" />
         <link rel="stylesheet" href="/static/css/base.css" type="text/css" media="screen" />
         <link rel="stylesheet" id="current-theme" href="/static/css/style.css" type="text/css" media="screen" />
         <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Gentium+Basic" rel="stylesheet" type="text/css" />
@@ -15,7 +16,7 @@
         <div id="container">
             <div id="header">
                 <h1><a href="index.html"> <img src="/static/images/logo.png" alt="SymPy Logo" /> SymPy</a></h1>
-                <div id="mobile-menu"></div>
+                <div id="mobile-menu"><i class="icon-ellipsis-vertical"></i></div>
                 <div id="main-navigation">
                     {% block navigation %}
                     {# "*_active" variables are automatically substituted in the "generate"
@@ -24,11 +25,11 @@
                     <ul>
                         <li class="{{ index_active }}"><a href="index.html">{% trans %}Main Page{% endtrans %}</a></li>
                         <li class="{{ download_active }}"><a href="download.html">{% trans %}Download{% endtrans %}</a></li>
-                        <li class="{{ docs_active }}"><a href="http://docs.sympy.org">{% trans %}Documentation{% endtrans %}</a></li>
+                        <li class="{{ docs_active }}"><a href="http://docs.sympy.org">{% trans %}Documentation{% endtrans %} <i class="icon-external-link-sign"></i></a></li>
                         <li class="{{ support_active }}"><a href="support.html">{% trans %}Support{% endtrans %}</a></li>
                         <li class="{{ development_active }}"><a href="development.html">{% trans %}Development{% endtrans %}</a></li>
                         <li class="{{ donate_active }}"><a href="donate.html">{% trans %}Donate{% endtrans %}</a></li>
-                        <li><a href="http://live.sympy.org/">{% trans %}Online Shell{% endtrans %}</a></li>
+                        <li><a href="http://live.sympy.org/">{% trans %}Online Shell{% endtrans %} <i class="icon-external-link-sign"></i></a></li>
                     </ul>
                     {% endblock %}
                     <div class="clear"></div>
