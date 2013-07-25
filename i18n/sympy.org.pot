@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-07-25 17:08+0400\n"
+"POT-Creation-Date: 2013-07-26 01:02+0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -190,7 +190,7 @@ msgstr ""
 msgid "Git Repository"
 msgstr ""
 
-#: templates/development.html:110 templates/download.html:22
+#: templates/development.html:110 templates/download.html:21
 msgid "Main git repository"
 msgstr ""
 
@@ -259,15 +259,11 @@ msgstr ""
 msgid "Old downloads"
 msgstr ""
 
-#: templates/download.html:15
-msgid "at Google Code page"
-msgstr ""
-
-#: templates/download.html:19
+#: templates/download.html:18
 msgid "Git Version"
 msgstr ""
 
-#: templates/download.html:28
+#: templates/download.html:27
 msgid "Browse online"
 msgstr ""
 
