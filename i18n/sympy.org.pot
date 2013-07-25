@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-05-02 18:52-0500\n"
+"POT-Creation-Date: 2013-07-25 17:08+0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,48 +17,48 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 0.9.6\n"
 
-#: templates/base.html:31
+#: templates/base.html:32
 msgid "Main Page"
 msgstr ""
 
-#: templates/base.html:32 templates/download.html:4
+#: templates/base.html:33 templates/download.html:4
 msgid "Download"
 msgstr ""
 
-#: templates/base.html:33 templates/docs.html:4 templates/docs.html:8
-#: templates/index.html:199
+#: templates/base.html:34 templates/docs.html:4 templates/docs.html:8
+#: templates/index.html:198
 msgid "Documentation"
 msgstr ""
 
-#: templates/base.html:34 templates/support.html:4
+#: templates/base.html:35 templates/support.html:4
 msgid "Support"
 msgstr ""
 
-#: templates/base.html:35 templates/screenshots.html:4
+#: templates/base.html:36 templates/screenshots.html:4
 msgid "Screenshots"
 msgstr ""
 
-#: templates/base.html:36 templates/development.html:4
+#: templates/base.html:37 templates/development.html:4
 #: templates/development.html:8
 msgid "Development"
 msgstr ""
 
-#: templates/base.html:37 templates/donate.html:4
+#: templates/base.html:38 templates/donate.html:4
 msgid "Donate"
 msgstr ""
 
-#: templates/base.html:38
+#: templates/base.html:39
 msgid "Online Shell"
 msgstr ""
 
-#: templates/base.html:57
+#: templates/base.html:58
 #, python-format
 msgid ""
 "This page is open source. Fork <a href=\"%(url)s\">the project on "
 "GitHub</a> to edit it."
 msgstr ""
 
-#: templates/base.html:61
+#: templates/base.html:62
 msgid "Languages"
 msgstr ""
 
@@ -190,7 +190,7 @@ msgstr ""
 msgid "Git Repository"
 msgstr ""
 
-#: templates/development.html:110 templates/download.html:27
+#: templates/development.html:110 templates/download.html:22
 msgid "Main git repository"
 msgstr ""
 
@@ -251,23 +251,23 @@ msgstr ""
 msgid "Source Tarballs (Releases)"
 msgstr ""
 
-#: templates/download.html:11 templates/download.html:19
+#: templates/download.html:11
 msgid "Downloads"
 msgstr ""
 
-#: templates/download.html:12 templates/download.html:20
+#: templates/download.html:14
+msgid "Old downloads"
+msgstr ""
+
+#: templates/download.html:15
 msgid "at Google Code page"
 msgstr ""
 
-#: templates/download.html:16
-msgid "Packages for Distributions"
-msgstr ""
-
-#: templates/download.html:24
+#: templates/download.html:19
 msgid "Git Version"
 msgstr ""
 
-#: templates/download.html:33
+#: templates/download.html:28
 msgid "Browse online"
 msgstr ""
 
@@ -293,454 +293,440 @@ msgstr ""
 #: templates/index.html:21
 msgid ""
 "SymPy is a mentoring organization for GSoC 2013.\n"
-"  Apply now, the deadline is May 2, 2013. See the\n"
-"  <a\n"
-"      "
-"href=\"https://plus.google.com/u/0/116872266504964122381/posts/VPk3FQQYPAA\">G+"
-"\n"
-"      announcement</a> for links and information how to apply."
+"  See\n"
+"  <a href=\"http://www.google-"
+"melange.com/gsoc/org/google/gsoc2013/sympy\">here</a>\n"
+"      for links and information on the accepted projects."
 msgstr ""
 
-#: templates/index.html:29
+#: templates/index.html:28
 msgid "Features"
 msgstr ""
 
-#: templates/index.html:31
+#: templates/index.html:30
 msgid "Core capabilities"
 msgstr ""
 
-#: templates/index.html:33 templates/index.html:49
+#: templates/index.html:32 templates/index.html:48
 msgid "Basic arithmetic:"
 msgstr ""
 
-#: templates/index.html:33
+#: templates/index.html:32
 msgid ""
 "Support for operators such\n"
 "      as <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, "
 "<code>**</code> (power)"
 msgstr ""
 
-#: templates/index.html:35
+#: templates/index.html:34
 msgid "Simplification"
 msgstr ""
 
-#: templates/index.html:36
+#: templates/index.html:35
 msgid "Expansion"
 msgstr ""
 
-#: templates/index.html:37
+#: templates/index.html:36
 msgid "Functions:"
 msgstr ""
 
-#: templates/index.html:37
+#: templates/index.html:36
 msgid ""
 "trigonometric, hyperbolic, exponential, roots, logarithms, absolute\n"
 "      value, spherical harmonics, factorials and gamma functions, zeta\n"
 "      functions, polynomials, special functions, ..."
 msgstr ""
 
-#: templates/index.html:41
+#: templates/index.html:40
 msgid "Substitution"
 msgstr ""
 
-#: templates/index.html:42
+#: templates/index.html:41
 msgid "Numbers:"
 msgstr ""
 
-#: templates/index.html:42
+#: templates/index.html:41
 msgid "arbitrary precision integers, rationals, and floats"
 msgstr ""
 
-#: templates/index.html:43
+#: templates/index.html:42
 msgid "Noncommutative symbols"
 msgstr ""
 
-#: templates/index.html:44
+#: templates/index.html:43
 msgid "Pattern matching"
 msgstr ""
 
-#: templates/index.html:47
+#: templates/index.html:46
 msgid "Polynomials"
 msgstr ""
 
-#: templates/index.html:49
+#: templates/index.html:48
 msgid " division, gcd, ... "
 msgstr ""
 
-#: templates/index.html:50
+#: templates/index.html:49
 msgid "Factorization"
 msgstr ""
 
-#: templates/index.html:51
+#: templates/index.html:50
 msgid "Square-free decomposition"
 msgstr ""
 
-#: templates/index.html:52
+#: templates/index.html:51
 msgid "Gröbner bases"
 msgstr ""
 
-#: templates/index.html:53
+#: templates/index.html:52
 msgid "Partial fraction decomposition"
 msgstr ""
 
-#: templates/index.html:54
+#: templates/index.html:53
 msgid "Resultants"
 msgstr ""
 
-#: templates/index.html:57
+#: templates/index.html:56
 msgid "Calculus"
 msgstr ""
 
-#: templates/index.html:60
+#: templates/index.html:59
 msgid "Limits:"
 msgstr ""
 
-#: templates/index.html:64
+#: templates/index.html:63
 msgid "Differentiation"
 msgstr ""
 
-#: templates/index.html:67
+#: templates/index.html:66
 msgid "Integration:"
 msgstr ""
 
-#: templates/index.html:68
+#: templates/index.html:67
 msgid "It uses extended Risch-Norman heuristic"
 msgstr ""
 
-#: templates/index.html:70
+#: templates/index.html:69
 msgid "Taylor (Laurent) series"
 msgstr ""
 
-#: templates/index.html:73
+#: templates/index.html:72
 msgid "Solving equations"
 msgstr ""
 
-#: templates/index.html:75
+#: templates/index.html:74
 msgid "Polynomial equations"
 msgstr ""
 
-#: templates/index.html:76
+#: templates/index.html:75
 msgid "Algebraic equations"
 msgstr ""
 
-#: templates/index.html:77
+#: templates/index.html:76
 msgid "Differential equations"
 msgstr ""
 
-#: templates/index.html:78
+#: templates/index.html:77
 msgid "Difference equations"
 msgstr ""
 
-#: templates/index.html:79
+#: templates/index.html:78
 msgid "Systems of equations"
 msgstr ""
 
-#: templates/index.html:82
+#: templates/index.html:81
 msgid "Combinatorics"
 msgstr ""
 
-#: templates/index.html:84
+#: templates/index.html:83
 msgid "Permutations"
 msgstr ""
 
-#: templates/index.html:85
+#: templates/index.html:84
 msgid "Combinations"
 msgstr ""
 
-#: templates/index.html:86
+#: templates/index.html:85
 msgid "Partitions"
 msgstr ""
 
-#: templates/index.html:87
+#: templates/index.html:86
 msgid "Subsets"
 msgstr ""
 
-#: templates/index.html:88
+#: templates/index.html:87
 msgid "Permutation Groups"
 msgstr ""
 
-#: templates/index.html:89
+#: templates/index.html:88
 msgid "Prufer and Gray Codes"
 msgstr ""
 
-#: templates/index.html:92
+#: templates/index.html:91
 msgid "Discrete math"
 msgstr ""
 
-#: templates/index.html:94
+#: templates/index.html:93
 msgid "Binomial coefficients"
 msgstr ""
 
-#: templates/index.html:95
+#: templates/index.html:94
 msgid "Summations"
 msgstr ""
 
-#: templates/index.html:96
+#: templates/index.html:95
 msgid "Products"
 msgstr ""
 
-#: templates/index.html:97
+#: templates/index.html:96
 msgid "Number theory:"
 msgstr ""
 
-#: templates/index.html:97
+#: templates/index.html:96
 msgid "generating prime numbers, primality testing,  integer factorization, ... "
 msgstr ""
 
-#: templates/index.html:99
+#: templates/index.html:98
 msgid "Logic expressions"
 msgstr ""
 
-#: templates/index.html:102
+#: templates/index.html:101
 msgid "Matrices"
 msgstr ""
 
-#: templates/index.html:104
+#: templates/index.html:103
 msgid "Basic arithmetic"
 msgstr ""
 
-#: templates/index.html:105
+#: templates/index.html:104
 msgid "Eigenvalues/eigenvectors"
 msgstr ""
 
-#: templates/index.html:106
+#: templates/index.html:105
 msgid "Determinants"
 msgstr ""
 
-#: templates/index.html:107
+#: templates/index.html:106
 msgid "Inversion"
 msgstr ""
 
-#: templates/index.html:108
+#: templates/index.html:107
 msgid "Solving"
 msgstr ""
 
-#: templates/index.html:109
+#: templates/index.html:108
 msgid "Abstract expressions"
 msgstr ""
 
-#: templates/index.html:112
+#: templates/index.html:111
 msgid "Geometric Algebra"
 msgstr ""
 
-#: templates/index.html:114
+#: templates/index.html:113
 msgid "Geometry"
 msgstr ""
 
-#: templates/index.html:116
+#: templates/index.html:115
 msgid ""
 "points, lines, rays, segments, ellipses, circles,\n"
 "        polygons, ..."
 msgstr ""
 
-#: templates/index.html:118
+#: templates/index.html:117
 msgid "Intersection"
 msgstr ""
 
-#: templates/index.html:119
+#: templates/index.html:118
 msgid "Tangency"
 msgstr ""
 
-#: templates/index.html:120
+#: templates/index.html:119
 msgid "Similarity"
 msgstr ""
 
-#: templates/index.html:123
+#: templates/index.html:122
 msgid "Plotting"
 msgstr ""
 
-#: templates/index.html:125
+#: templates/index.html:124
 msgid "Coordinate modes"
 msgstr ""
 
-#: templates/index.html:126
+#: templates/index.html:125
 msgid "Plotting Geometric Entities"
 msgstr ""
 
-#: templates/index.html:127
+#: templates/index.html:126
 msgid "2D and 3D"
 msgstr ""
 
-#: templates/index.html:128
+#: templates/index.html:127
 msgid "Interactive interface"
 msgstr ""
 
-#: templates/index.html:129
+#: templates/index.html:128
 msgid "Colors"
 msgstr ""
 
-#: templates/index.html:132
+#: templates/index.html:131
 msgid "Physics"
 msgstr ""
 
-#: templates/index.html:134
+#: templates/index.html:133
 msgid "Units"
 msgstr ""
 
-#: templates/index.html:135
+#: templates/index.html:134
 msgid "Mechanics"
 msgstr ""
 
-#: templates/index.html:136
+#: templates/index.html:135
 msgid "Quantum"
 msgstr ""
 
-#: templates/index.html:137
+#: templates/index.html:136
 msgid "Gaussian Optics"
 msgstr ""
 
-#: templates/index.html:138
+#: templates/index.html:137
 msgid "Pauli Algebra"
 msgstr ""
 
-#: templates/index.html:141
+#: templates/index.html:140
 msgid "Statistics"
 msgstr ""
 
-#: templates/index.html:143
+#: templates/index.html:142
 msgid "Normal distributions"
 msgstr ""
 
-#: templates/index.html:144
+#: templates/index.html:143
 msgid "Uniform distributions"
 msgstr ""
 
-#: templates/index.html:145
+#: templates/index.html:144
 msgid "Probability"
 msgstr ""
 
-#: templates/index.html:148
+#: templates/index.html:147
 msgid "Printing"
 msgstr ""
 
-#: templates/index.html:150
+#: templates/index.html:149
 msgid "Pretty printing:"
 msgstr ""
 
-#: templates/index.html:150
+#: templates/index.html:149
 msgid "ASCII/Unicode pretty printing, LaTeX"
 msgstr ""
 
-#: templates/index.html:151
+#: templates/index.html:150
 msgid "Code generation:"
 msgstr ""
 
-#: templates/index.html:151
+#: templates/index.html:150
 msgid "C, Fortran, Python"
 msgstr ""
 
-#: templates/index.html:178
+#: templates/index.html:177
 msgid "Download Now"
 msgstr ""
 
-#: templates/index.html:182
-msgid "Releases"
+#: templates/index.html:181
+msgid "Latest Version"
 msgstr ""
 
 #: templates/index.html:182
-msgid "Google Code downloads"
+msgid "Development Version"
 msgstr ""
 
-#: templates/index.html:183
-msgid "Latest git version"
-msgstr ""
-
-#: templates/index.html:193
+#: templates/index.html:192
 msgid "Quick Links"
 msgstr ""
 
-#: templates/index.html:200
+#: templates/index.html:199
 msgid "Downloads (source tarballs)"
 msgstr ""
 
-#: templates/index.html:201
-msgid "Downloads (packages for distributions)"
-msgstr ""
-
-#: templates/index.html:202
+#: templates/index.html:200
 msgid "Mailing list"
 msgstr ""
 
-#: templates/index.html:203
+#: templates/index.html:201
 msgid "Source code"
 msgstr ""
 
-#: templates/index.html:204
+#: templates/index.html:202
 msgid "Issues tracker"
 msgstr ""
 
-#: templates/index.html:205
-msgid "Google Code page"
-msgstr ""
-
-#: templates/index.html:206
+#: templates/index.html:203
 msgid "Wiki"
 msgstr ""
 
-#: templates/index.html:207
+#: templates/index.html:204
 msgid "Try SymPy online now"
 msgstr ""
 
-#: templates/index.html:208
+#: templates/index.html:205
 msgid "Official SymPy blog"
 msgstr ""
 
-#: templates/index.html:209
+#: templates/index.html:206
 msgid "Planet SymPy"
 msgstr ""
 
-#: templates/index.html:210
+#: templates/index.html:207
 msgid "IRC channel logs"
 msgstr ""
 
-#: templates/index.html:225
+#: templates/index.html:222
 msgid "News"
 msgstr ""
 
-#: templates/index.html:229
+#: templates/index.html:226 templates/index.html:228 templates/index.html:230
+#: templates/index.html:231 templates/index.html:235 templates/index.html:236
+#, python-format
+msgid "Version %(v)s released"
+msgstr ""
+
+#: templates/index.html:226 templates/index.html:228 templates/index.html:230
+#: templates/index.html:231 templates/index.html:235 templates/index.html:236
+msgid "changes"
+msgstr ""
+
+#: templates/index.html:227
 msgid ""
 " SymPy is accepted as a <a href=\"http://www.google-"
 "melange.com/gsoc/org/show/google/gsoc2013/sympy\">mentoring "
 "organization</a> for Google Summer of Code 2013 "
 msgstr ""
 
-#: templates/index.html:230 templates/index.html:232 templates/index.html:233
-#: templates/index.html:237 templates/index.html:238
-#, python-format
-msgid "Version %(v)s released"
-msgstr ""
-
-#: templates/index.html:230 templates/index.html:232 templates/index.html:233
-#: templates/index.html:237 templates/index.html:238
-msgid "changes"
-msgstr ""
-
-#: templates/index.html:231
+#: templates/index.html:229
 msgid ""
 " SymPy is accepted as a <a href=\"http://www.google-"
 "melange.com/gsoc/org/show/google/gsoc2012/sympy\">mentoring "
 "organization</a> for Google Summer of Code 2012 "
 msgstr ""
 
-#: templates/index.html:234
+#: templates/index.html:232
 msgid ""
 "SymPy is accepted as a <a href=\"http://www.google-"
 "melange.com/gsoc/org/show/google/gsoc2011/sympy\">mentoring "
 "organization</a> for Google Summer of Code 2011"
 msgstr ""
 
-#: templates/index.html:235
+#: templates/index.html:233
 msgid "New website launched at sympy.org"
 msgstr ""
 
-#: templates/index.html:236
+#: templates/index.html:234
 #, python-format
 msgid ""
 "Final page about the <a href=\"%(url)s\">2010 Google Summer of Code in "
 "SymPy</a> is available."
 msgstr ""
 
-#: templates/index.html:239
+#: templates/index.html:237
 #, python-format
 msgid ""
 "Final page about the <a href=\"%(url)s\">2009 Google Summer of Code in "
@@ -777,9 +763,9 @@ msgstr ""
 
 #: templates/support.html:19
 msgid ""
-"IRC channel: <a href=\"irc://irc.freenode.net/sympy\">#sympy at freenode</a>. "
-"Note that this channel is <a href=\"http://colabti."
-"org/irclogger/irclogger_logs/sympy\">logged</a>."
+"IRC channel: <a href=\"irc://irc.freenode.net/sympy\">#sympy at "
+"freenode</a>. Note that this channel is <a "
+"href=\"http://colabti.org/irclogger/irclogger_logs/sympy\">logged</a>."
 msgstr ""
 
 #: templates/support.html:24
@@ -795,5 +781,8 @@ msgid " Main <a href=\"https://github.com/sympy/sympy/wiki/Faq\">FAQ</a> "
 msgstr ""
 
 #: templates/support.html:30
-msgid "<a href=\"http://docs.sympy.org/0.7.1/gotchas.html\">Gotchas and Pitfalls</a>"
+msgid ""
+"<a href=\"http://docs.sympy.org/0.7.1/gotchas.html\">Gotchas and "
+"Pitfalls</a>"
 msgstr ""
+
