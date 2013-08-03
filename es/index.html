@@ -1,42 +1,44 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <title>SymPy</title>
-    <link rel="stylesheet" href="../media/base.css" type="text/css" media="screen" />
-    <link rel="stylesheet" id="current-theme" href="../media/style.css" type="text/css" media="screen" />
-    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700|Gentium+Basic:700" rel="stylesheet" type="text/css" />
-    <link rel="icon" href="../media/SymPy-Favicon.ico" />
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <!-- <link rel="stylesheet" href="/static/css/base.css" type="text/css" media="screen" /> -->
+    <!-- <link rel="stylesheet" id="current-theme" href="/static/css/style.css" type="text/css" media="screen" /> -->
+    <link rel="stylesheet" href="/static/external/css/reset.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/static/external/css/responsive-gs-12col.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/static/css/base.css" type="text/css" media="screen" />
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Gentium+Basic" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="/static/SymPy-Favicon.ico" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <script type="text/javascript" src="/static/javascript/main.js"></script>
   </head>
   <body>
-    <div id="container">
-      <div id="header">
-        <h1><a href="index.html"> <img src="../media/logo.png"
-        style="vertical-align:middle" height="78" width="100"/> SymPy</a></h1>
+    <div class="container">
+      <header>
+        <h1><a href="index.html"> <img src="/static/images/logo.png" alt="SymPy Logo" /> SymPy</a></h1>
+        <div id="mobile-menu"><i class="icon-ellipsis-vertical"></i></div>
+      </header>
+      <nav id="main-navigation" class="row">
         
-        <div id="main-navigation">
+        
+        <ul>
+          <li class="active"><a href="index.html">Página Principal</a></li>
+          <li class=""><a href="download.html">Descarga</a></li>
+          <li class=""><a href="http://docs.sympy.org">Documentación <i class="icon-external-link-sign"></i></a></li>
+          <li class=""><a href="support.html">Soporte</a></li>
+          <li class=""><a href="development.html">Desarrollo</a></li>
+          <li class=""><a href="donate.html">Donar</a></li>
+          <li><a href="http://live.sympy.org/">Terminal Online <i class="icon-external-link-sign"></i></a></li>
+        </ul>
+        
+      </nav>
+      <section class="row" id="main">
+        <article id="content" class="col span_7 clr small_span_4">
           
-          
-          <ul>
-            <li class="active first"><a href="index.html">Página Principal</a></li>
-            <li class=" first"><a href="download.html">Descarga</a></li>
-            <li class=" first"><a href="http://docs.sympy.org">Documentación</a></li>
-            <li class=" first"><a href="support.html">Soporte</a></li>
-            <li class=" first"><a href="screenshots.html">Imágenes</a></li>
-            <li class=" first"><a href="development.html">Desarrollo</a></li>
-            <li class=" first"><a href="donate.html">Donar</a></li>
-            <li class=" first"><a href="http://live.sympy.org/">Terminal Online</a></li>
-          </ul>
-          
-          <div class="clear"></div>
-        </div>
-      </div>
-      <div id="wrapper">
-        <div id="main">
-          <div class="block" id="block-text">
-            <div class="content">
-              
 
 <h2 class="title">Acerca de</h2>
 <div class="inner">
@@ -61,15 +63,34 @@
 <div class="inner">
   <h3>Capacidades principales</h3>
   <ul>
-    <li><strong>Aritmética básica</strong> Soporte para operadores tales
-      como <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>**</code> (potencia)</li>
-    <li> <strong>Simplificación</strong></li>
-    <li><strong>Expansión</strong></li>
-    <li><strong>Funciones:</strong> trigonometría, hipérbolas, exponencial, raíces, logaritmos, valor
-      absoluto, armónicos esféricos, factoriales y funciones gamma, funciones
-      zeta, polinomios, funciones especiales, ...</li>
-    <li><strong>Sustitución</strong></li>
-    <li><strong>Números:</strong> integers de precisión arbitraria, racionales, y floats</li>
+    <li><strong>Aritmética básica</strong> <a href="http://www.sympygamma.com/input/?i=23+pi+%2B+20%21+%2F+%283**5%29+-+2">Soporte para operadores tales
+      como <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>**</code> (potencia)</a></li>
+    <li> <strong>Simplificación</strong>
+    <a href="http://www.sympygamma.com/input/?i=simplify%28cos%28x%29cos%28y%29+-+sin%28x%29sin%28y%29%29">Trigonometry</a>, <a href="http://www.sympygamma.com/input/?i=simplify%28%282x%2B3%29%2810x-5%29%2F%282x-1%29%29">Polynomials</a></li>
+    <li><strong>Expansion:</strong>
+        <a href="http://www.sympygamma.com/input/?i=expand%28%285x+%2B+3%29*%281-x%29*%281%2B6x%29%29"> of a polynomial </a></li>
+    <li><strong>Funciones:</strong>
+        
+        <a href="http://www.sympygamma.com/input/?i=%281+-+sin%5E2+x%29%2F%281+%2B+tan%5E2+x%29">trigonometric</a>,
+        <a href="http://www.sympygamma.com/input/?i=sinh%5E2+x+%2B+cosh%5E2+x">hyperbolic</a>,
+        <a href="http://www.sympygamma.com/input/?i=exp%28x%29+%2F+%281+%2B+exp%282x%29%29">exponential</a>,
+        <a href="http://www.sympygamma.com/input/?i=root%28x%2C+7%29+**+2">roots</a>,
+        <a href="http://www.sympygamma.com/input/?i=log%28-25%29">logarithms</a>,
+        <a href="http://www.sympygamma.com/input/?i=Abs%281+%2B+3I%29">absolute value</a>,
+        <a href="http://www.sympygamma.com/input/?i=Ylm%281%2C+-1%2C+theta%2C+phi%29">spherical harmonics</a>,
+        <a href="http://www.sympygamma.com/input/?i=gamma%2841%2F2%29+%2B+16%21%21">factorials and gamma functions</a>,
+        <a href="http://www.sympygamma.com/input/?i=zeta%284%29">zeta functions</a>,
+        <a href="http://www.sympygamma.com/input/?i=x**7+-+x**5+%2B+4x**3+%2B+1">polynomials</a>,
+        <a href="http://live.sympy.org/?evaluate=from%20sympy.abc%20import%20n%2Ca%2Cb%2Cx%0A%23--%0Ajacobi(0%2C%20a%2C%20b%2C%20x)%0A%23--%0Ajacobi(1%2C%20a%2C%20b%2C%20x)%0A%23--%0Ajacobi(2%2C%20a%2C%20b%2C%20x)%0A%23--%0Ajacobi(n%2C%20a%2C%20a%2C%20x)%0A%23--%0Ajacobi(n%2C%20a%2C%20b%2C%200)%0A%23--%0Aconjugate(jacobi(n%2C%20a%2C%20b%2C%20x))%0A%23--%0Aerf(I*oo)%0A%23--%0ADiracDelta(x**2%20%2B%20x%20-%202).simplify(x)%0A%23--%0A">special functions</a>, ...
+    </li>
+    <li><strong>Substitution:</strong> <a href="http://www.sympygamma.com/input/?i=%28exp%28x%29+%2F+%281+%2B+exp%282x%29%29%29.subs%28exp%28x%29%2C+u%29">example</a></li>
+    <li><strong>Números:</strong>
+        
+        <a href="http://www.sympygamma.com/input/?i=100%21">arbitrary precision integers</a>,
+        <a href="http://www.sympygamma.com/input/?i=0.%5B13579%5D">rationals</a>,
+        <a href="http://www.sympygamma.com/input/?i=exp%2820%21%29">and floats</a>
+        
+    </li>
     <li><strong>Símbolos no-conmutativos</strong></li>
     <li><strong>Comparación de patrones</strong></li>
   </ul>
@@ -88,7 +109,7 @@
   <ul>
     <li>
       <strong>Límites:</strong>
-      <code>limit(x*log(x), x, 0) -&gt; 0</code>
+      <a href="http://www.sympygamma.com/input/?i=limit%28x*log%28x%29%2C+x%2C+0%29">limit(x*log(x), x, 0) -&gt; 0</a>
     </li>
     <li>
       <strong>Derivadas</strong>
@@ -182,125 +203,86 @@
 </div>
 
 
-            </div>
+        </article>
+        <div id="spacer" class="col span_1 clr small_span_0">&nbsp;</div>
+        <aside id="sidebar" class="col span_4 clr small_span_2">
+          <div id="search-gamma" class="sidebar_card">
+            <h3> Compute with Gamma </h3>
+            <form method="get" action="http://www.sympygamma.com/input/" target="_blank">
+              <input type="text" name="i" />
+              <button>Compute</button>
+            </form>
           </div>
-          <div id="footer">
-            <div class="block">
-              <p>Copyright &copy; 2013 SymPy Development Team.
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                Esta página es código abierto. Haz Fork a <a href="https://github.com/sympy/sympy.github.com">este proyecto en Github</a> para editarlo
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                Idiomas (beta):
-                <a href="../cs/index.html">[Cs]</a>,
-                <a href="../de/index.html">[De]</a>,
-                <a href="../en/index.html">[En]</a>,
-                <a href="../es/index.html">[Es]</a>,
-                <a href="../fr/index.html">[Fr]</a>,
-                <a href="../pt/index.html">[Pt]</a>,
-                <a href="../ru/index.html">[Ru]</a>,
-                <a href="../zh/index.html">[Zh]</a>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div id="sidebar">
-          
-<div id="side1">
-  <div class="clear"></div>
-</div>
-</div>
-<div id="container">
-  <div style="position:relative; float:left; margin: 0;">
-    <div style="position:relative; float:left; width:60%; min-width:250px;">
-    </div>
-  </div>
-  <div id="container">
-    <div style="position:relative; float:left; margin-top: -100px;">
-      <div style="position:relative; float:left; width:300px; height:200px;">
-      </div>
-    </div>
-    <div id="shell"></div>
-    <div id="right">
-      <div class="right_title">More Information</div>
-      <div id="about"><div class="t">
-          <div class="block">
+          <div id="about" class="sidebar_card">
             <h3>Descarga Ahora</h3>
-            <div class="content">
-              <div id="thetext">
-                <p>
-                  <a href="https://github.com/sympy/sympy/releases">Latest Version</a><br/>
-                  <a href="http://github.com/sympy/sympy">Development Version</a>
-                </p>
-              </div>
-            </div>
+            <p>
+              <a href="https://github.com/sympy/sympy/releases">Latest Version</a><br/>
+              <a href="http://github.com/sympy/sympy">Development Version</a>
+            </p>
           </div>
-        </div>
-      </div>
-      <br/>
-      <div id="other_shells"><div class="t">
-          <div id="quicklinks" class="block">
+          <div id="quick_links" class="sidebar_card">
             <h3>Links Rápidos</h3>
-            <div class="content">
-              <div id="thetext">
-                <p>
-                  <ul>
-                    <font size="3">
-                      <li><a href="http://docs.sympy.org/">Documentación</a></li>
-                      <li><a href="https://github.com/sympy/sympy/releases">Descargas (fuentes tar)</a></li>
-                      <li><a href="http://groups.google.com/group/sympy">Lista de correos</a></li>
-                      <li><a href="http://github.com/sympy/sympy">Código fuente</a></li>
-                      <li><a href="http://code.google.com/p/sympy/issues/list">Seguimiento de errores</a></li>
-                      <li><a href="http://github.com/sympy/sympy/wiki">Wiki</a></li>
-                      <li><a href="http://live.sympy.org/">Prueba SymPy online ahora</a></li>
-                      <li><a href="http://sympy.blogspot.com/">Blog Oficial de SymPy</a></li>
-                      <li><a href="http://planet.sympy.org/">Planeta SymPy</a></li>
-                      <li><a href="http://colabti.org/irclogger/irclogger_logs/sympy">Registros del canal IRC</a></li>
-                    </font>
-              </div>
-              </ul>
-</p>
-</div>
+            <ul>
+              <li><a href="http://docs.sympy.org/">Documentación</a></li>
+              <li><a href="https://github.com/sympy/sympy/releases">Descargas (fuentes tar)</a></li>
+              <li><a href="http://groups.google.com/group/sympy">Lista de correos</a></li>
+              <li><a href="http://github.com/sympy/sympy">Código fuente</a></li>
+              <li><a href="http://code.google.com/p/sympy/issues/list">Seguimiento de errores</a></li>
+              <li><a href="http://github.com/sympy/sympy/wiki">Wiki</a></li>
+              <li><a href="http://live.sympy.org/">Prueba SymPy online ahora</a></li>
+              <li><a href="http://sympy.blogspot.com/">Blog Oficial de SymPy</a></li>
+              <li><a href="http://planet.sympy.org/">Planeta SymPy</a></li>
+              <li><a href="http://colabti.org/irclogger/irclogger_logs/sympy">Registros del canal IRC</a></li>
+            </ul>
+          </div>
+          
+<div class="sidebar_card">
+    <h3>Noticias</h3>
+    <p>
+        <span class="date">13/07/2013</span> Versión 0.7.3 lanzada (<a href="https://github.com/sympy/sympy/wiki/Release-Notes-for-0.7.3">cambios</a>)<br/>
+    </p><p>
+        <span class="date">08/04/2013</span>  SymPy es una <a href="http://www.google-melange.com/gsoc/org/show/google/gsoc2013/sympy">organización aceptada</a> para Google Summer of Code 2013  <br/>
+    </p><p>
+        <span class="date">16/10/2012</span> Versión 0.7.2 lanzada (<a href="https://github.com/sympy/sympy/wiki/Release-Notes-for-0.7.2">cambios</a>)<br/>
+    </p><p>
+        <span class="date">17/03/2012</span> SymPy es una <a href="http://www.google-melange.com/gsoc/org/show/google/gsoc2012/sympy">organización aceptada</a> para Google Summer of Code 2012  <br/>
+    </p><p>
+        <span class="date">29/07/2011</span> Versión 0.7.1 lanzada (<a href="https://github.com/sympy/sympy/wiki/Release-Notes-for-0.7.1">cambios</a>)<br/>
+    </p><p>
+        <span class="date">28/06/2011</span> Versión 0.7.0 lanzada (<a href="https://github.com/sympy/sympy/wiki/Release-Notes-for-0.7.0">cambios</a>)<br/>
+    </p><p>
+        <span class="date">18/03/2011</span> SymPy es una <a href="http://www.google-melange.com/gsoc/org/show/google/gsoc2011/sympy">organización aceptada</a> para Google Summer of Code 2011<br/>
+    </p><p>
+        <span class="date">23/10/2010</span> Nueva página web lanzada en sympy.org<br/>
+    </p><p>
+        <span class="date">18/10/2010</span> La página final acerca de <a href="https://github.com/sympy/sympy/wiki/GSoC-2010-report">Google Summer of Code 2010 en SymPy</a> está disponible.<br/>
+    </p><p>
+        <span class="date">17/03/2010</span> Versión 0.6.7 lanzada (<a href="http://code.google.com/p/sympy/wiki/Changes">cambios</a>)<br/>
+    </p><p>
+        <span class="date">20/12/2009</span> Versión 0.6.6 lanzada (<a href="http://code.google.com/p/sympy/wiki/Changes">cambios</a>)<br/>
+    </p><p>
+        <span class="date">26/09/2009</span> La página final acerca de <a href="https://github.com/sympy/sympy/wiki/GSoC-2009-report">Google Summer of Code 2009 en SymPy</a> está disponible.
+    </p>
 </div>
 
-<br/>
-</div>
-<div class="clear"></div>
-</div>
-<br/>
-<div class="block">
-  <div id="example"><div class="t">
-      <h3>Noticias</h3>
-      <div class="content">
-        <div id="thetext">
-          <p>
-            <span class="date">13 July 2013</span> Versión 0.7.3 lanzada (<a href="https://github.com/sympy/sympy/wiki/Release-Notes-for-0.7.3">cambios</a>)<br/>
-            <span class="date">8 Apr 2013</span>  SymPy es una <a href="http://www.google-melange.com/gsoc/org/show/google/gsoc2013/sympy">organización aceptada</a> para Google Summer of Code 2013  <br/>
-            <span class="date">16 Oct 2012</span> Versión 0.7.2 lanzada (<a href="https://github.com/sympy/sympy/wiki/Release-Notes-for-0.7.2">cambios</a>)<br/>
-            <span class="date">17 Mar 2012</span> SymPy es una <a href="http://www.google-melange.com/gsoc/org/show/google/gsoc2012/sympy">organización aceptada</a> para Google Summer of Code 2012  <br/>
-            <span class="date">29 Jul 2011</span> Versión 0.7.1 lanzada (<a href="https://github.com/sympy/sympy/wiki/Release-Notes-for-0.7.1">cambios</a>)<br/>
-            <span class="date">28 Jun 2011</span> Versión 0.7.0 lanzada (<a href="https://github.com/sympy/sympy/wiki/Release-Notes-for-0.7.0">cambios</a>)<br/>
-            <span class="date">18 Mar 2011</span> SymPy es una <a href="http://www.google-melange.com/gsoc/org/show/google/gsoc2011/sympy">organización aceptada</a> para Google Summer of Code 2011<br/>
-            <span class="date">23 Oct 2010</span> Nueva página web lanzada en sympy.org<br/>
-            <span class="date">18 Oct 2010</span> La página final acerca de <a href="https://github.com/sympy/sympy/wiki/GSoC-2010-report">Google Summer of Code 2010 en SymPy</a> está disponible.<br/>
-            <span class="date">17 Mar 2010</span> Versión 0.6.7 lanzada (<a href="http://code.google.com/p/sympy/wiki/Changes">cambios</a>)<br/>
-            <span class="date">20 Dec 2009</span> Versión 0.6.6 lanzada (<a href="http://code.google.com/p/sympy/wiki/Changes">cambios</a>)<br/>
-            <span class="date">26 Sep 2009</span> La página final acerca de <a href="https://github.com/sympy/sympy/wiki/GSoC-2009-report">Google Summer of Code 2009 en SymPy</a> está disponible.
-          </p>
-        </div>
-      </div>
-    </div>
+      </aside>
+    </section>
+    <footer class="row">
+      <p>Copyright &copy; 2013 SymPy Development Team. </p>
+      <p>
+        Esta página es código abierto. Haz Fork a <a href="https://github.com/sympy/sympy.github.com">este proyecto en Github</a> para editarlo
+      </p>
+      <p>
+        Idiomas (beta):
+        <a href="../cs/index.html">[Cs]</a>,
+        <a href="../de/index.html">[De]</a>,
+        <a href="../en/index.html">[En]</a>,
+        <a href="../fr/index.html">[Fr]</a>,
+        <a href="../pt/index.html">[Pt]</a>,
+        <a href="../ru/index.html">[Ru]</a>,
+        <a href="../zh/index.html">[Zh]</a>
+      </p>
+    </footer>
   </div>
-  <br/>
-</div>
-</div>
-
-        </div>
-        <div class="clear"></div>
-      </div>
-    </div>
-  </body>
+</body>
 </html>
