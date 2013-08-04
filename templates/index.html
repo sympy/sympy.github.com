@@ -29,16 +29,50 @@
 <div class="inner">
   <h3>{% trans %}Core capabilities{% endtrans %}</h3>
   <ul>
-    <li><strong>{% trans %}Basic arithmetic:{% endtrans %}</strong> {% trans %}Support for operators such
-      as <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>**</code> (power){% endtrans %}</li>
-    <li> <strong>{% trans %}Simplification{% endtrans %}</strong></li>
-    <li><strong>{% trans %}Expansion{% endtrans %}</strong></li>
-    <li><strong>{% trans %}Functions:{% endtrans %}</strong> {% trans
-      %}trigonometric, hyperbolic, exponential, roots, logarithms, absolute
-      value, spherical harmonics, factorials and gamma functions, zeta
-      functions, polynomials, special functions, ...{% endtrans %}</li>
-    <li><strong>{% trans %}Substitution{% endtrans %}</strong></li>
-    <li><strong>{% trans %}Numbers:{% endtrans %}</strong> {% trans %}arbitrary precision integers, rationals, and floats{% endtrans %}</li>
+    <li><strong>{% trans %}Basic arithmetic:{% endtrans %}</strong> <a href="http://www.sympygamma.com/input/?i=23+pi+%2B+20%21+%2F+%283**5%29+-+2">{% trans %}Support for operators such
+      as <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>**</code> (power){% endtrans %}</a></li>
+    <li> <strong>{% trans %}Simplification{% endtrans %}</strong>
+    <a href="http://www.sympygamma.com/input/?i=simplify%28cos%28x%29cos%28y%29+-+sin%28x%29sin%28y%29%29">{% trans %}Trigonometry{% endtrans %}</a>, <a href="http://www.sympygamma.com/input/?i=simplify%28%282x%2B3%29%2810x-5%29%2F%282x-1%29%29">{% trans %}Polynomials</a>{% endtrans %}</li>
+    <li><strong>{% trans %}Expansion:{% endtrans
+    %}</strong>
+        <a href="http://www.sympygamma.com/input/?i=expand%28%285x+%2B+3%29*%281-x%29*%281%2B6x%29%29">{% trans %} of a polynomial {% endtrans %}</a></li>
+    <li><strong>{% trans %}Functions:{% endtrans %}</strong>
+        {% trans
+        trig='http://www.sympygamma.com/input/?i=%281+-+sin%5E2+x%29%2F%281+%2B+tan%5E2+x%29',
+        hyperbolic='http://www.sympygamma.com/input/?i=sinh%5E2+x+%2B+cosh%5E2+x',
+        exponential='http://www.sympygamma.com/input/?i=exp%28x%29+%2F+%281+%2B+exp%282x%29%29',
+        root='http://www.sympygamma.com/input/?i=root%28x%2C+7%29+**+2',
+        logarithm='http://www.sympygamma.com/input/?i=log%28-25%29',
+        abs='http://www.sympygamma.com/input/?i=Abs%281+%2B+3I%29',
+        spherical='http://www.sympygamma.com/input/?i=Ylm%281%2C+-1%2C+theta%2C+phi%29',
+        factorial='http://www.sympygamma.com/input/?i=gamma%2841%2F2%29+%2B+16%21%21',
+        zeta='http://www.sympygamma.com/input/?i=zeta%284%29',
+        polynomial='http://www.sympygamma.com/input/?i=x**7+-+x**5+%2B+4x**3+%2B+1',
+        special='http://live.sympy.org/?evaluate=from%20sympy.abc%20import%20n%2Ca%2Cb%2Cx%0A%23--%0Ajacobi(0%2C%20a%2C%20b%2C%20x)%0A%23--%0Ajacobi(1%2C%20a%2C%20b%2C%20x)%0A%23--%0Ajacobi(2%2C%20a%2C%20b%2C%20x)%0A%23--%0Ajacobi(n%2C%20a%2C%20a%2C%20x)%0A%23--%0Ajacobi(n%2C%20a%2C%20b%2C%200)%0A%23--%0Aconjugate(jacobi(n%2C%20a%2C%20b%2C%20x))%0A%23--%0Aerf(I*oo)%0A%23--%0ADiracDelta(x**2%20%2B%20x%20-%202).simplify(x)%0A%23--%0A' %}
+        <a href="{{ trig }}">trigonometric</a>,
+        <a href="{{ hyperbolic }}">hyperbolic</a>,
+        <a href="{{ exponential }}">exponential</a>,
+        <a href="{{ root }}">roots</a>,
+        <a href="{{ logarithm }}">logarithms</a>,
+        <a href="{{ abs }}">absolute value</a>,
+        <a href="{{ spherical }}">spherical harmonics</a>,
+        <a href="{{ factorial }}">factorials and gamma functions</a>,
+        <a href="{{ zeta }}">zeta functions</a>,
+        <a href="{{ polynomial }}">polynomials</a>,
+        <a href="{{ special }}">special functions</a>, ...{% endtrans %}
+    </li>
+    <li><strong>{% trans %}Substitution:{% endtrans %}</strong> <a href="http://www.sympygamma.com/input/?i=%28exp%28x%29+%2F+%281+%2B+exp%282x%29%29%29.subs%28exp%28x%29%2C+u%29">{% trans %}example{% endtrans %}</a></li>
+    <li><strong>{% trans %}Numbers:{% endtrans %}</strong>
+        {% trans
+        integer='http://www.sympygamma.com/input/?i=100%21',
+        rational='http://www.sympygamma.com/input/?i=0.%5B13579%5D',
+        float='http://www.sympygamma.com/input/?i=exp%2820%21%29'
+        %}
+        <a href="{{ integer }}">arbitrary precision integers</a>,
+        <a href="{{ rational }}">rationals</a>,
+        <a href="{{ float }}">and floats</a>
+        {% endtrans %}
+    </li>
     <li><strong>{% trans %}Noncommutative symbols{% endtrans %}</strong></li>
     <li><strong>{% trans %}Pattern matching{% endtrans %}</strong></li>
   </ul>
@@ -57,7 +91,7 @@
   <ul>
     <li>
       <strong>{% trans %}Limits:{% endtrans %}</strong>
-      <code>limit(x*log(x), x, 0) -&gt; 0</code>
+      <a href="http://www.sympygamma.com/input/?i=limit%28x*log%28x%29%2C+x%2C+0%29">limit(x*log(x), x, 0) -&gt; 0</a>
     </li>
     <li>
       <strong>{% trans %}Differentiation{% endtrans %}</strong>
@@ -155,93 +189,33 @@
 
 
 {% block sidebar %}
-<div id="side1">
-  <div class="clear"></div>
-</div>
-</div>
-<div id="container">
-  <div style="position:relative; float:left; margin: 0;">
-    <div style="position:relative; float:left; width:60%; min-width:250px;">
-    </div>
-  </div>
-  <div id="container">
-    <div style="position:relative; float:left; margin-top: -100px;">
-      <div style="position:relative; float:left; width:300px; height:200px;">
-      </div>
-    </div>
-    <div id="shell"></div>
-    <div id="right">
-      <div class="right_title">More Information</div>
-      <div id="about"><div class="t">
-          <div class="block">
-            <h3>{% trans %}Download Now{% endtrans %}</h3>
-            <div class="content">
-              <div id="thetext">
-                <p>
-                  <a href="https://github.com/sympy/sympy/releases">{% trans %}Latest Version{% endtrans %}</a><br/>
-                  <a href="http://github.com/sympy/sympy">{% trans %}Development Version{% endtrans %}</a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <br/>
-      <div id="other_shells"><div class="t">
-          <div id="quicklinks" class="block">
-            <h3>{% trans %}Quick Links{% endtrans %}</h3>
-            <div class="content">
-              <div id="thetext">
-                <p>
-                  <ul>
-                    <font size="3">
-                      <li><a href="http://docs.sympy.org/">{% trans %}Documentation{% endtrans %}</a></li>
-                      <li><a href="https://github.com/sympy/sympy/releases">{% trans %}Downloads (source tarballs){% endtrans %}</a></li>
-                      <li><a href="http://groups.google.com/group/sympy">{% trans %}Mailing list{% endtrans %}</a></li>
-                      <li><a href="http://github.com/sympy/sympy">{% trans %}Source code{% endtrans %}</a></li>
-                      <li><a href="http://code.google.com/p/sympy/issues/list">{% trans %}Issues tracker{% endtrans %}</a></li>
-                      <li><a href="http://github.com/sympy/sympy/wiki">{% trans %}Wiki{% endtrans %}</a></li>
-                      <li><a href="http://live.sympy.org/">{% trans %}Try SymPy online now{% endtrans %}</a></li>
-                      <li><a href="http://sympy.blogspot.com/">{% trans %}Official SymPy blog{% endtrans %}</a></li>
-                      <li><a href="http://planet.sympy.org/">{% trans %}Planet SymPy{% endtrans %}</a></li>
-                      <li><a href="http://colabti.org/irclogger/irclogger_logs/sympy">{% trans %}IRC channel logs{% endtrans %}</a></li>
-                    </font>
-              </div>
-              </ul>
-</p>
-</div>
-</div>
-
-<br/>
-</div>
-<div class="clear"></div>
-</div>
-<br/>
-<div class="block">
-  <div id="example"><div class="t">
-      <h3>{% trans %}News{% endtrans %}</h3>
-      <div class="content">
-        <div id="thetext">
-          <p>
-            <span class="date">13 July 2013</span> {% trans v='0.7.3' %}Version {{ v }} released{% endtrans %} (<a href="https://github.com/sympy/sympy/wiki/Release-Notes-for-0.7.3">{% trans %}changes{% endtrans %}</a>)<br/>
-            <span class="date">8 Apr 2013</span> {% trans %} SymPy is accepted as a <a href="http://www.google-melange.com/gsoc/org/show/google/gsoc2013/sympy">mentoring organization</a> for Google Summer of Code 2013 {% endtrans %} <br/>
-            <span class="date">16 Oct 2012</span> {% trans v='0.7.2' %}Version {{ v }} released{% endtrans %} (<a href="https://github.com/sympy/sympy/wiki/Release-Notes-for-0.7.2">{% trans %}changes{% endtrans %}</a>)<br/>
-            <span class="date">17 Mar 2012</span> {% trans %} SymPy is accepted as a <a href="http://www.google-melange.com/gsoc/org/show/google/gsoc2012/sympy">mentoring organization</a> for Google Summer of Code 2012 {% endtrans %} <br/>
-            <span class="date">29 Jul 2011</span> {% trans v='0.7.1' %}Version {{ v }} released{% endtrans %} (<a href="https://github.com/sympy/sympy/wiki/Release-Notes-for-0.7.1">{% trans %}changes{% endtrans %}</a>)<br/>
-            <span class="date">28 Jun 2011</span> {% trans v='0.7.0' %}Version {{ v }} released{% endtrans %} (<a href="https://github.com/sympy/sympy/wiki/Release-Notes-for-0.7.0">{% trans %}changes{% endtrans %}</a>)<br/>
-            <span class="date">18 Mar 2011</span> {% trans %}SymPy is accepted as a <a href="http://www.google-melange.com/gsoc/org/show/google/gsoc2011/sympy">mentoring organization</a> for Google Summer of Code 2011{% endtrans %}<br/>
-            <span class="date">23 Oct 2010</span> {% trans %}New website launched at sympy.org{% endtrans %}<br/>
-            <span class="date">18 Oct 2010</span> {% trans url='https://github.com/sympy/sympy/wiki/GSoC-2010-report' %}Final page about the <a href="{{ url }}">2010 Google Summer of Code in SymPy</a> is available.{% endtrans %}<br/>
-            <span class="date">17 Mar 2010</span> {% trans v='0.6.7' %}Version {{ v }} released{% endtrans %} (<a href="http://code.google.com/p/sympy/wiki/Changes">{% trans %}changes{% endtrans %}</a>)<br/>
-            <span class="date">20 Dec 2009</span> {% trans v='0.6.6' %}Version {{ v }} released{% endtrans %} (<a href="http://code.google.com/p/sympy/wiki/Changes">{% trans %}changes{% endtrans %}</a>)<br/>
-            <span class="date">26 Sep 2009</span> {% trans url='https://github.com/sympy/sympy/wiki/GSoC-2009-report' %}Final page about the <a href="{{ url }}">2009 Google Summer of Code in SymPy</a> is available.{% endtrans %}
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <br/>
-</div>
+<div class="sidebar_card">
+    <h3>{% trans %}News{% endtrans %}</h3>
+    <p>
+        <span class="date">{{ datetime(2013, 7, 13) }}</span> {% trans v='0.7.3' %}Version {{ v }} released{% endtrans %} (<a href="https://github.com/sympy/sympy/wiki/Release-Notes-for-0.7.3">{% trans %}changes{% endtrans %}</a>)<br/>
+    </p><p>
+        <span class="date">{{ datetime(2013, 4, 8) }}</span> {% trans %} SymPy is accepted as a <a href="http://www.google-melange.com/gsoc/org/show/google/gsoc2013/sympy">mentoring organization</a> for Google Summer of Code 2013 {% endtrans %} <br/>
+    </p><p>
+        <span class="date">{{ datetime(2012, 10, 16) }}</span> {% trans v='0.7.2' %}Version {{ v }} released{% endtrans %} (<a href="https://github.com/sympy/sympy/wiki/Release-Notes-for-0.7.2">{% trans %}changes{% endtrans %}</a>)<br/>
+    </p><p>
+        <span class="date">{{ datetime(2012, 3, 17) }}</span> {% trans %} SymPy is accepted as a <a href="http://www.google-melange.com/gsoc/org/show/google/gsoc2012/sympy">mentoring organization</a> for Google Summer of Code 2012 {% endtrans %} <br/>
+    </p><p>
+        <span class="date">{{ datetime(2011, 7, 29) }}</span> {% trans v='0.7.1' %}Version {{ v }} released{% endtrans %} (<a href="https://github.com/sympy/sympy/wiki/Release-Notes-for-0.7.1">{% trans %}changes{% endtrans %}</a>)<br/>
+    </p><p>
+        <span class="date">{{ datetime(2011, 6, 28) }}</span> {% trans v='0.7.0' %}Version {{ v }} released{% endtrans %} (<a href="https://github.com/sympy/sympy/wiki/Release-Notes-for-0.7.0">{% trans %}changes{% endtrans %}</a>)<br/>
+    </p><p>
+        <span class="date">{{ datetime(2011, 3, 18) }}</span> {% trans %}SymPy is accepted as a <a href="http://www.google-melange.com/gsoc/org/show/google/gsoc2011/sympy">mentoring organization</a> for Google Summer of Code 2011{% endtrans %}<br/>
+    </p><p>
+        <span class="date">{{ datetime(2010, 10, 23) }}</span> {% trans %}New website launched at sympy.org{% endtrans %}<br/>
+    </p><p>
+        <span class="date">{{ datetime(2010, 10, 18) }}</span> {% trans url='https://github.com/sympy/sympy/wiki/GSoC-2010-report' %}Final page about the <a href="{{ url }}">2010 Google Summer of Code in SymPy</a> is available.{% endtrans %}<br/>
+    </p><p>
+        <span class="date">{{ datetime(2010, 3, 17) }}</span> {% trans v='0.6.7' %}Version {{ v }} released{% endtrans %} (<a href="http://code.google.com/p/sympy/wiki/Changes">{% trans %}changes{% endtrans %}</a>)<br/>
+    </p><p>
+        <span class="date">{{ datetime(2009, 12, 20) }}</span> {% trans v='0.6.6' %}Version {{ v }} released{% endtrans %} (<a href="http://code.google.com/p/sympy/wiki/Changes">{% trans %}changes{% endtrans %}</a>)<br/>
+    </p><p>
+        <span class="date">{{ datetime(2009, 9, 26) }}</span> {% trans url='https://github.com/sympy/sympy/wiki/GSoC-2009-report' %}Final page about the <a href="{{ url }}">2009 Google Summer of Code in SymPy</a> is available.{% endtrans %}
+    </p>
 </div>
 {% endblock %}
 
