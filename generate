@@ -34,7 +34,7 @@ templates = [
 languages = ["cs", "de", "en", "fr", "pt", "ru", "zh", "es"]
 
 for language in languages:
-    print "Generating '%s' pages" % language
+    print("Generating '%s' pages" % language)
 
     env.globals["locale"] = language
     if language == "en":
@@ -42,17 +42,17 @@ for language in languages:
         # translated
         env.install_null_translations()
     else:
-        translations = GNUTranslations(open("i18n/%s.mo" % language))
+        translations = GNUTranslations(open("i18n/%s.mo" % language, 'rb'))
         env.install_gettext_translations(translations)
 
     for template in templates:
         t = env.get_template(template)
-        print "    Processing '%s'" % template
+        print("    Processing '%s'" % template)
         name = os.path.splitext(template)[0]
         s = t.render({name + "_active": "active"})
         f = open(os.path.join(language, template), "wb")
         try:
           f.write(s.encode("utf-8"))
-          f.write("\n")
+          f.write(bytes("\n", 'utf-8'))
         finally:
           f.close()
