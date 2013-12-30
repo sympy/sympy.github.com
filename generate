@@ -53,6 +53,6 @@ for language in languages:
         f = open(os.path.join(language, template), "wb")
         try:
           f.write(s.encode("utf-8"))
-          f.write(bytes("\n", 'utf-8'))
+          f.write(b"\n")
         finally:
           f.close()
