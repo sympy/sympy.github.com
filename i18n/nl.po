@@ -1,72 +1,135 @@
 # Translations template for PROJECT.
-# Copyright (C) 2013 ORGANIZATION
+# Copyright (C) 2014 ORGANIZATION
 # This file is distributed under the same license as the PROJECT project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2013.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2014.
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-07-26 01:02+0400\n"
+"POT-Creation-Date: 2014-02-01 15:56+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 0.9.6\n"
+"Generated-By: Babel 1.3\n"
 
-#: templates/base.html:32
+#: templates/base.html:30
 msgid "Main Page"
-msgstr ""
+msgstr "Hoofdpagina"
 
-#: templates/base.html:33 templates/download.html:4
+#: templates/base.html:31 templates/download.html:4
 msgid "Download"
 msgstr ""
 
-#: templates/base.html:34 templates/docs.html:4 templates/docs.html:8
-#: templates/index.html:198
+#: templates/base.html:32 templates/base.html:63 templates/docs.html:4
+#: templates/docs.html:8
 msgid "Documentation"
-msgstr ""
+msgstr "Documentatie"
 
-#: templates/base.html:35 templates/support.html:4
+#: templates/base.html:33 templates/support.html:4
 msgid "Support"
-msgstr ""
+msgstr "Ondersteuning"
 
-#: templates/base.html:36 templates/screenshots.html:4
-msgid "Screenshots"
-msgstr ""
-
-#: templates/base.html:37 templates/development.html:4
+#: templates/base.html:34 templates/development.html:4
 #: templates/development.html:8
 msgid "Development"
-msgstr ""
+msgstr "Ontwikkeling"
 
-#: templates/base.html:38 templates/donate.html:4
+#: templates/base.html:35 templates/donate.html:4
 msgid "Donate"
-msgstr ""
+msgstr "Doneer"
 
-#: templates/base.html:39
+#: templates/base.html:36
 msgid "Online Shell"
 msgstr ""
 
-#: templates/base.html:58
+#: templates/base.html:47
+msgid " Compute with Gamma "
+msgstr "Uitrekenen met Gamma"
+
+#: templates/base.html:50
+msgid "Compute"
+msgstr "Uitrekenen"
+
+#: templates/base.html:54
+msgid "Download Now"
+msgstr "Nu Downloaden"
+
+#: templates/base.html:56
+msgid "Latest Version"
+msgstr "Laatste Versie"
+
+#: templates/base.html:57
+msgid "Development Version"
+msgstr "Ontwikkelingsversie"
+
+#: templates/base.html:61
+msgid "Quick Links"
+msgstr ""
+
+#: templates/base.html:64
+msgid "Downloads (source tarballs)"
+msgstr ""
+
+#: templates/base.html:65
+msgid "Mailing list"
+msgstr ""
+
+#: templates/base.html:66
+msgid "Source code"
+msgstr "Broncode"
+
+#: templates/base.html:67
+msgid "Issues tracker"
+msgstr ""
+
+#: templates/base.html:68
+msgid "Wiki"
+msgstr ""
+
+#: templates/base.html:69
+msgid "Try SymPy online now"
+msgstr "Probeer Sympy nu online uit"
+
+#: templates/base.html:70
+msgid "Official SymPy blog"
+msgstr "Officiele Sympy blog"
+
+#: templates/base.html:71
+msgid "Planet SymPy"
+msgstr ""
+
+#: templates/base.html:72
+msgid "IRC channel logs"
+msgstr "IRC kanaal log"
+
+#: templates/base.html:76
+msgid "Follow Us"
+msgstr "Volg Ons"
+
+#: templates/base.html:107
 #, python-format
 msgid ""
 "This page is open source. Fork <a href=\"%(url)s\">the project on "
 "GitHub</a> to edit it."
 msgstr ""
+"Deze pagina is open source. Fork <a href=\"%(url)s\"> het project op "
+"GitHub</a> om het aan te passen."
 
-#: templates/base.html:62
+#: templates/base.html:110
 msgid "Languages"
-msgstr ""
+msgstr "Talen"
 
 #: templates/development.html:11
 msgid ""
 "We are interested in any contribution. There are many ways how you can\n"
 "    contribute"
-msgstr ""
+msgstr "We zijn in iedere bijdrage geinteresseerd. Er zijn veel manieren \n"
+"om een bijdrage te leveren."
 
 #: templates/development.html:15
 msgid ""
@@ -74,13 +137,17 @@ msgid ""
 "with the\n"
 "        code (see below for more information)"
 msgstr ""
+"Als je iets interessants gemaakt hebt met SymPy, stuur ons dan graag"
+"een patch op met de code (zie hieronder voor meer informatie)."
 
 #: templates/development.html:20
 msgid ""
 "If you found a bug (or just want to let us know what you think), tell us "
 "on the\n"
 "        <a href=\"http://groups.google.com/group/sympy\">mailinglist</a>"
-msgstr ""
+msgstr "Als je een bug vindt (of je wilt over bepaalde issues je gedachten delen), "
+"laat het ons weten via de "
+"<a href=\"http://groups.google.com/group/sympy\">mailinglist</a>"
 
 #: templates/development.html:21
 msgid ""
@@ -88,36 +155,41 @@ msgid ""
 "        add a bug report (or a comment) into the <a "
 "href=\"http://code.google.com/p/sympy/issues/list\">issues</a>."
 msgstr ""
+"Je kunt ook een bug rapport (of opmerking) toevoegen aan de  "
+"href=\"http://code.google.com/p/sympy/issues/list\">issues</a> zelf."
 
 #: templates/development.html:24
 msgid "You can blog about how you use SymPy"
-msgstr ""
+msgstr "Je kunt bloggen over hoe je SymPy gebruikt."
 
 #: templates/development.html:25
 msgid "You can help us write documentation (just send us a patch)"
-msgstr ""
+msgstr "Je kunt ons helpen met het schrijven van documentatie "
+"(door ons gewoon een patch toe te sturen)."
 
 #: templates/development.html:26
 msgid ""
 "You can help people on our <a "
 "href=\"http://groups.google.com/group/sympy\">mailinglist</a>"
-msgstr ""
+msgstr "Je kunt mensen op onze "
+"<a href=\"http://groups.google.com/group/sympy\">mailinglist</a> helpen."
 
 #: templates/development.html:27
 msgid "You can help with reviewing patches"
-msgstr ""
+msgstr "Je kunt ons helpen met het herzien van patches."
 
 #: templates/development.html:28
 msgid "You can send us patches with bug fixes or new features"
-msgstr ""
+msgstr "Je kunt ons patches toesturen met bugfixes of nieuwe programmaonderdelen."
 
 #: templates/development.html:32
 msgid "The best way to contribute code or documentation is to send us a patch"
-msgstr ""
+msgstr "De beste manier om code of documentatie bij te dragen, is door ons een"
+"patch toe te sturen."
 
 #: templates/development.html:36
 msgid "How to Send a Patch"
-msgstr ""
+msgstr "Hoe je een Patch opstuurt"
 
 #: templates/development.html:39
 msgid ""
@@ -126,6 +198,9 @@ msgid ""
 " repository.\n"
 "    We'll review it and push it in."
 msgstr ""
+"De beste manier om een Patch op te sturen, is via een GitHub Pull Request"
+"voor de <a href=\"http://github.com/sympy/sympy\">sympy/sympy</a> repository."
+
 
 #: templates/development.html:45
 msgid ""
@@ -136,6 +211,11 @@ msgid ""
 "href=\"irc://irc.freenode.net/sympy\">#sympy at freenode</a>), we'll "
 "help."
 msgstr ""
+"Als je hulp nodig hebt met git, github, pull requests, patches, "
+"programmeerwerk, Sympy of andere gerelateerde zaken, stuur ons dan een "
+"email via de mailinglist of vraag het ons op IRC (ons kanaal is "
+"<a href=\"irc://irc.freenode.net/sympy\">#sympy at freenode</a>), we "
+"zullen helpen."
 
 #: templates/development.html:48
 msgid ""
@@ -144,6 +224,9 @@ msgid ""
 "\n"
 "      how to prepare patches</a> using git and github."
 msgstr ""
+"Je kunt ook onze instructies lezen "
+"<a href=\"https://github.com/sympy/sympy/wiki/Development-workflow\">"
+"wat git and github betreft."
 
 #: templates/development.html:54
 msgid ""
@@ -162,6 +245,15 @@ msgid ""
 "more work\n"
 "    for us to integrate it."
 msgstr ""
+"Onze voorkeur gaat uit naar de GitHub Pull Request methode, dit maakt het "
+"voor ons makkelijk om code te bekijken en de code toe te voegen."
+"Je kunt de meest recente git repository clonen (zie de link rechts), een branch 
+creeren met jouw code en deze ergens uploaden "
+"(naar <a href=\"http://github.com/\">github</a> bijvoorbeeld)."
+"Vervolgens kun je ons een link sturen naar de "
+"<a href=\"http://groups.google.com/group/sympy-patches\">sympy-patches</a>"
+"mailinglist, of ons de 'raw' patches sturen -- dit is echter meer werk voor ons,"
+"wat betreft de integratie."
 
 #: templates/development.html:65
 msgid ""
@@ -176,27 +268,27 @@ msgstr ""
 
 #: templates/development.html:74
 msgid "Sources of the Webpages"
-msgstr ""
+msgstr "Broncode van de Webpagina's"
 
 #: templates/development.html:77
 msgid "Sources of these webpages are at"
-msgstr ""
+msgstr "De broncode van deze webpagina's zijn hier te vinden"
 
 #: templates/development.html:80
 msgid "Feel free to send us patches with improvements."
-msgstr ""
+msgstr "Voel je vrij om ons patches op te sturen met verbeteringen."
 
-#: templates/development.html:106
+#: templates/development.html:89
 msgid "Git Repository"
 msgstr ""
 
-#: templates/development.html:110 templates/download.html:21
+#: templates/development.html:91 templates/download.html:21
 msgid "Main git repository"
 msgstr ""
 
-#: templates/development.html:114
+#: templates/development.html:95
 msgid "Online access"
-msgstr ""
+msgstr "Online toegang"
 
 #: templates/docs.html:11
 #, python-format
@@ -282,459 +374,420 @@ msgid ""
 "libraries."
 msgstr ""
 
-#: templates/index.html:18
-msgid "Google Summer of Code (GSoC) 2013"
-msgstr ""
-
-#: templates/index.html:21
-msgid ""
-"SymPy is a mentoring organization for GSoC 2013.\n"
-"  See\n"
-"  <a href=\"http://www.google-"
-"melange.com/gsoc/org/google/gsoc2013/sympy\">here</a>\n"
-"      for links and information on the accepted projects."
-msgstr ""
-
-#: templates/index.html:28
+#: templates/index.html:19
 msgid "Features"
 msgstr ""
 
-#: templates/index.html:30
+#: templates/index.html:21
 msgid "Core capabilities"
 msgstr ""
 
-#: templates/index.html:32 templates/index.html:48
+#: templates/index.html:23 templates/index.html:73
 msgid "Basic arithmetic:"
 msgstr ""
 
-#: templates/index.html:32
+#: templates/index.html:23
 msgid ""
 "Support for operators such\n"
 "      as <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, "
 "<code>**</code> (power)"
 msgstr ""
 
-#: templates/index.html:34
+#: templates/index.html:25
 msgid "Simplification"
 msgstr ""
 
-#: templates/index.html:35
-msgid "Expansion"
+#: templates/index.html:26
+msgid "Trigonometry"
 msgstr ""
 
-#: templates/index.html:36
+#: templates/index.html:26
+msgid "Polynomials</a>"
+msgstr ""
+
+#: templates/index.html:27
+msgid "Expansion:"
+msgstr ""
+
+#: templates/index.html:29
+msgid " of a polynomial "
+msgstr ""
+
+#: templates/index.html:30
 msgid "Functions:"
 msgstr ""
 
-#: templates/index.html:36
+#: templates/index.html:31
+#, python-format
 msgid ""
-"trigonometric, hyperbolic, exponential, roots, logarithms, absolute\n"
-"      value, spherical harmonics, factorials and gamma functions, zeta\n"
-"      functions, polynomials, special functions, ..."
+"\n"
+"        <a href=\"%(trig)s\">trigonometric</a>,\n"
+"        <a href=\"%(hyperbolic)s\">hyperbolic</a>,\n"
+"        <a href=\"%(exponential)s\">exponential</a>,\n"
+"        <a href=\"%(root)s\">roots</a>,\n"
+"        <a href=\"%(logarithm)s\">logarithms</a>,\n"
+"        <a href=\"%(abs)s\">absolute value</a>,\n"
+"        <a href=\"%(spherical)s\">spherical harmonics</a>,\n"
+"        <a href=\"%(factorial)s\">factorials and gamma functions</a>,\n"
+"        <a href=\"%(zeta)s\">zeta functions</a>,\n"
+"        <a href=\"%(polynomial)s\">polynomials</a>,\n"
+"        <a href=\"%(special)s\">special functions</a>, ..."
 msgstr ""
 
-#: templates/index.html:40
-msgid "Substitution"
+#: templates/index.html:55
+msgid "Substitution:"
 msgstr ""
 
-#: templates/index.html:41
-msgid "Numbers:"
-msgstr ""
-
-#: templates/index.html:41
-msgid "arbitrary precision integers, rationals, and floats"
-msgstr ""
-
-#: templates/index.html:42
-msgid "Noncommutative symbols"
-msgstr ""
-
-#: templates/index.html:43
-msgid "Pattern matching"
-msgstr ""
-
-#: templates/index.html:46
-msgid "Polynomials"
-msgstr ""
-
-#: templates/index.html:48
-msgid " division, gcd, ... "
-msgstr ""
-
-#: templates/index.html:49
-msgid "Factorization"
-msgstr ""
-
-#: templates/index.html:50
-msgid "Square-free decomposition"
-msgstr ""
-
-#: templates/index.html:51
-msgid "Gröbner bases"
-msgstr ""
-
-#: templates/index.html:52
-msgid "Partial fraction decomposition"
-msgstr ""
-
-#: templates/index.html:53
-msgid "Resultants"
+#: templates/index.html:55
+msgid "example"
 msgstr ""
 
 #: templates/index.html:56
-msgid "Calculus"
+msgid "Numbers:"
 msgstr ""
 
-#: templates/index.html:59
-msgid "Limits:"
-msgstr ""
-
-#: templates/index.html:63
-msgid "Differentiation"
-msgstr ""
-
-#: templates/index.html:66
-msgid "Integration:"
+#: templates/index.html:57
+#, python-format
+msgid ""
+"\n"
+"        <a href=\"%(integer)s\">arbitrary precision integers</a>,\n"
+"        <a href=\"%(rational)s\">rationals</a>,\n"
+"        <a href=\"%(float)s\">and floats</a>\n"
+"        "
 msgstr ""
 
 #: templates/index.html:67
-msgid "It uses extended Risch-Norman heuristic"
+msgid "Noncommutative symbols"
 msgstr ""
 
-#: templates/index.html:69
-msgid "Taylor (Laurent) series"
+#: templates/index.html:68
+msgid "Pattern matching"
 msgstr ""
 
-#: templates/index.html:72
-msgid "Solving equations"
+#: templates/index.html:71
+msgid "Polynomials"
+msgstr ""
+
+#: templates/index.html:73
+msgid " division, gcd, ... "
 msgstr ""
 
 #: templates/index.html:74
-msgid "Polynomial equations"
+msgid "Factorization"
 msgstr ""
 
 #: templates/index.html:75
-msgid "Algebraic equations"
+msgid "Square-free decomposition"
 msgstr ""
 
 #: templates/index.html:76
-msgid "Differential equations"
+msgid "Gröbner bases"
 msgstr ""
 
 #: templates/index.html:77
-msgid "Difference equations"
+msgid "Partial fraction decomposition"
 msgstr ""
 
 #: templates/index.html:78
-msgid "Systems of equations"
+msgid "Resultants"
 msgstr ""
 
 #: templates/index.html:81
-msgid "Combinatorics"
-msgstr ""
-
-#: templates/index.html:83
-msgid "Permutations"
+msgid "Calculus"
 msgstr ""
 
 #: templates/index.html:84
-msgid "Combinations"
-msgstr ""
-
-#: templates/index.html:85
-msgid "Partitions"
-msgstr ""
-
-#: templates/index.html:86
-msgid "Subsets"
-msgstr ""
-
-#: templates/index.html:87
-msgid "Permutation Groups"
+msgid "Limits:"
 msgstr ""
 
 #: templates/index.html:88
-msgid "Prufer and Gray Codes"
+msgid "Differentiation"
 msgstr ""
 
 #: templates/index.html:91
-msgid "Discrete math"
+msgid "Integration:"
 msgstr ""
 
-#: templates/index.html:93
-msgid "Binomial coefficients"
+#: templates/index.html:92
+msgid "It uses extended Risch-Norman heuristic"
 msgstr ""
 
 #: templates/index.html:94
-msgid "Summations"
+msgid "Taylor (Laurent) series"
 msgstr ""
 
-#: templates/index.html:95
-msgid "Products"
+#: templates/index.html:97
+msgid "Solving equations"
 msgstr ""
 
-#: templates/index.html:96
-msgid "Number theory:"
+#: templates/index.html:99
+msgid "Polynomial equations"
 msgstr ""
 
-#: templates/index.html:96
-msgid "generating prime numbers, primality testing,  integer factorization, ... "
-msgstr ""
-
-#: templates/index.html:98
-msgid "Logic expressions"
+#: templates/index.html:100
+msgid "Algebraic equations"
 msgstr ""
 
 #: templates/index.html:101
-msgid "Matrices"
+msgid "Differential equations"
+msgstr ""
+
+#: templates/index.html:102
+msgid "Difference equations"
 msgstr ""
 
 #: templates/index.html:103
-msgid "Basic arithmetic"
-msgstr ""
-
-#: templates/index.html:104
-msgid "Eigenvalues/eigenvectors"
-msgstr ""
-
-#: templates/index.html:105
-msgid "Determinants"
+msgid "Systems of equations"
 msgstr ""
 
 #: templates/index.html:106
-msgid "Inversion"
-msgstr ""
-
-#: templates/index.html:107
-msgid "Solving"
+msgid "Combinatorics"
 msgstr ""
 
 #: templates/index.html:108
-msgid "Abstract expressions"
+msgid "Permutations"
+msgstr ""
+
+#: templates/index.html:109
+msgid "Combinations"
+msgstr ""
+
+#: templates/index.html:110
+msgid "Partitions"
 msgstr ""
 
 #: templates/index.html:111
-msgid "Geometric Algebra"
+msgid "Subsets"
+msgstr ""
+
+#: templates/index.html:112
+msgid "Permutation Groups"
 msgstr ""
 
 #: templates/index.html:113
+msgid "Prufer and Gray Codes"
+msgstr ""
+
+#: templates/index.html:116
+msgid "Discrete math"
+msgstr ""
+
+#: templates/index.html:118
+msgid "Binomial coefficients"
+msgstr ""
+
+#: templates/index.html:119
+msgid "Summations"
+msgstr ""
+
+#: templates/index.html:120
+msgid "Products"
+msgstr ""
+
+#: templates/index.html:121
+msgid "Number theory:"
+msgstr ""
+
+#: templates/index.html:121
+msgid "generating prime numbers, primality testing,  integer factorization, ... "
+msgstr ""
+
+#: templates/index.html:123
+msgid "Logic expressions"
+msgstr ""
+
+#: templates/index.html:126
+msgid "Matrices"
+msgstr ""
+
+#: templates/index.html:128
+msgid "Basic arithmetic"
+msgstr ""
+
+#: templates/index.html:129
+msgid "Eigenvalues/eigenvectors"
+msgstr ""
+
+#: templates/index.html:130
+msgid "Determinants"
+msgstr ""
+
+#: templates/index.html:131
+msgid "Inversion"
+msgstr ""
+
+#: templates/index.html:132
+msgid "Solving"
+msgstr ""
+
+#: templates/index.html:133
+msgid "Abstract expressions"
+msgstr ""
+
+#: templates/index.html:136
+msgid "Geometric Algebra"
+msgstr ""
+
+#: templates/index.html:138
 msgid "Geometry"
 msgstr ""
 
-#: templates/index.html:115
+#: templates/index.html:140
 msgid ""
 "points, lines, rays, segments, ellipses, circles,\n"
 "        polygons, ..."
 msgstr ""
 
-#: templates/index.html:117
+#: templates/index.html:142
 msgid "Intersection"
 msgstr ""
 
-#: templates/index.html:118
+#: templates/index.html:143
 msgid "Tangency"
 msgstr ""
 
-#: templates/index.html:119
+#: templates/index.html:144
 msgid "Similarity"
 msgstr ""
 
-#: templates/index.html:122
+#: templates/index.html:147
 msgid "Plotting"
 msgstr ""
 
-#: templates/index.html:124
+#: templates/index.html:149
 msgid "Coordinate modes"
 msgstr ""
 
-#: templates/index.html:125
+#: templates/index.html:150
 msgid "Plotting Geometric Entities"
 msgstr ""
 
-#: templates/index.html:126
+#: templates/index.html:151
 msgid "2D and 3D"
 msgstr ""
 
-#: templates/index.html:127
+#: templates/index.html:152
 msgid "Interactive interface"
 msgstr ""
 
-#: templates/index.html:128
+#: templates/index.html:153
 msgid "Colors"
 msgstr ""
 
-#: templates/index.html:131
+#: templates/index.html:156
 msgid "Physics"
 msgstr ""
 
-#: templates/index.html:133
+#: templates/index.html:158
 msgid "Units"
 msgstr ""
 
-#: templates/index.html:134
+#: templates/index.html:159
 msgid "Mechanics"
 msgstr ""
 
-#: templates/index.html:135
+#: templates/index.html:160
 msgid "Quantum"
 msgstr ""
 
-#: templates/index.html:136
+#: templates/index.html:161
 msgid "Gaussian Optics"
 msgstr ""
 
-#: templates/index.html:137
+#: templates/index.html:162
 msgid "Pauli Algebra"
 msgstr ""
 
-#: templates/index.html:140
+#: templates/index.html:165
 msgid "Statistics"
 msgstr ""
 
-#: templates/index.html:142
+#: templates/index.html:167
 msgid "Normal distributions"
 msgstr ""
 
-#: templates/index.html:143
+#: templates/index.html:168
 msgid "Uniform distributions"
 msgstr ""
 
-#: templates/index.html:144
+#: templates/index.html:169
 msgid "Probability"
 msgstr ""
 
-#: templates/index.html:147
+#: templates/index.html:172
 msgid "Printing"
 msgstr ""
 
-#: templates/index.html:149
+#: templates/index.html:174
 msgid "Pretty printing:"
 msgstr ""
 
-#: templates/index.html:149
+#: templates/index.html:174
 msgid "ASCII/Unicode pretty printing, LaTeX"
 msgstr ""
 
-#: templates/index.html:150
+#: templates/index.html:175
 msgid "Code generation:"
 msgstr ""
 
-#: templates/index.html:150
+#: templates/index.html:175
 msgid "C, Fortran, Python"
 msgstr ""
 
-#: templates/index.html:177
-msgid "Download Now"
-msgstr ""
-
-#: templates/index.html:181
-msgid "Latest Version"
-msgstr ""
-
-#: templates/index.html:182
-msgid "Development Version"
-msgstr ""
-
-#: templates/index.html:192
-msgid "Quick Links"
-msgstr ""
-
-#: templates/index.html:199
-msgid "Downloads (source tarballs)"
-msgstr ""
-
-#: templates/index.html:200
-msgid "Mailing list"
-msgstr ""
-
-#: templates/index.html:201
-msgid "Source code"
-msgstr ""
-
-#: templates/index.html:202
-msgid "Issues tracker"
-msgstr ""
-
-#: templates/index.html:203
-msgid "Wiki"
-msgstr ""
-
-#: templates/index.html:204
-msgid "Try SymPy online now"
-msgstr ""
-
-#: templates/index.html:205
-msgid "Official SymPy blog"
-msgstr ""
-
-#: templates/index.html:206
-msgid "Planet SymPy"
-msgstr ""
-
-#: templates/index.html:207
-msgid "IRC channel logs"
-msgstr ""
-
-#: templates/index.html:222
+#: templates/index.html:184
 msgid "News"
 msgstr ""
 
-#: templates/index.html:226 templates/index.html:228 templates/index.html:230
-#: templates/index.html:231 templates/index.html:235 templates/index.html:236
+#: templates/index.html:186 templates/index.html:188 templates/index.html:190
+#: templates/index.html:194 templates/index.html:198 templates/index.html:200
+#: templates/index.html:208 templates/index.html:210
 #, python-format
 msgid "Version %(v)s released"
 msgstr ""
 
-#: templates/index.html:226 templates/index.html:228 templates/index.html:230
-#: templates/index.html:231 templates/index.html:235 templates/index.html:236
+#: templates/index.html:186 templates/index.html:188 templates/index.html:190
+#: templates/index.html:194 templates/index.html:198 templates/index.html:200
+#: templates/index.html:208 templates/index.html:210
 msgid "changes"
 msgstr ""
 
-#: templates/index.html:227
+#: templates/index.html:192
 msgid ""
 " SymPy is accepted as a <a href=\"http://www.google-"
 "melange.com/gsoc/org/show/google/gsoc2013/sympy\">mentoring "
 "organization</a> for Google Summer of Code 2013 "
 msgstr ""
 
-#: templates/index.html:229
+#: templates/index.html:196
 msgid ""
 " SymPy is accepted as a <a href=\"http://www.google-"
 "melange.com/gsoc/org/show/google/gsoc2012/sympy\">mentoring "
 "organization</a> for Google Summer of Code 2012 "
 msgstr ""
 
-#: templates/index.html:232
+#: templates/index.html:202
 msgid ""
 "SymPy is accepted as a <a href=\"http://www.google-"
 "melange.com/gsoc/org/show/google/gsoc2011/sympy\">mentoring "
 "organization</a> for Google Summer of Code 2011"
 msgstr ""
 
-#: templates/index.html:233
+#: templates/index.html:204
 msgid "New website launched at sympy.org"
 msgstr ""
 
-#: templates/index.html:234
+#: templates/index.html:206
 #, python-format
 msgid ""
 "Final page about the <a href=\"%(url)s\">2010 Google Summer of Code in "
 "SymPy</a> is available."
 msgstr ""
 
-#: templates/index.html:237
+#: templates/index.html:212
 #, python-format
 msgid ""
 "Final page about the <a href=\"%(url)s\">2009 Google Summer of Code in "
 "SymPy</a> is available."
-msgstr ""
-
-#: templates/screenshots.html:8
-msgid "Python Session"
-msgstr ""
-
-#: templates/screenshots.html:21
-msgid "ISymPy Session"
 msgstr ""
 
 #: templates/support.html:8
