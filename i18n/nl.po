@@ -129,7 +129,7 @@ msgid ""
 "We are interested in any contribution. There are many ways how you can\n"
 "    contribute"
 msgstr "We zijn in iedere bijdrage geinteresseerd. Er zijn veel manieren \n"
-"om een bijdrage te leveren."
+"om een bijdrage te leveren"
 
 #: templates/development.html:15
 msgid ""
@@ -137,8 +137,8 @@ msgid ""
 "with the\n"
 "        code (see below for more information)"
 msgstr ""
-"Als je iets interessants gemaakt hebt met SymPy, stuur ons dan graag"
-"een patch op met de code (zie hieronder voor meer informatie)."
+"Als je iets interessants gemaakt hebt met SymPy, stuur ons dan graag "
+"een patch op met de code (zie hieronder voor meer informatie)"
 
 #: templates/development.html:20
 msgid ""
@@ -156,36 +156,36 @@ msgid ""
 "href=\"http://code.google.com/p/sympy/issues/list\">issues</a>."
 msgstr ""
 "Je kunt ook een bug rapport (of opmerking) toevoegen aan de  "
-"href=\"http://code.google.com/p/sympy/issues/list\">issues</a> zelf."
+"<a href=\"http://code.google.com/p/sympy/issues/list\">issues</a> zelf."
 
 #: templates/development.html:24
 msgid "You can blog about how you use SymPy"
-msgstr "Je kunt bloggen over hoe je SymPy gebruikt."
+msgstr "Je kunt bloggen over hoe je SymPy gebruikt"
 
 #: templates/development.html:25
 msgid "You can help us write documentation (just send us a patch)"
 msgstr "Je kunt ons helpen met het schrijven van documentatie "
-"(door ons gewoon een patch toe te sturen)."
+"(door ons gewoon een patch toe te sturen)"
 
 #: templates/development.html:26
 msgid ""
 "You can help people on our <a "
 "href=\"http://groups.google.com/group/sympy\">mailinglist</a>"
 msgstr "Je kunt mensen op onze "
-"<a href=\"http://groups.google.com/group/sympy\">mailinglist</a> helpen."
+"<a href=\"http://groups.google.com/group/sympy\">mailinglist</a> helpen"
 
 #: templates/development.html:27
 msgid "You can help with reviewing patches"
-msgstr "Je kunt ons helpen met het herzien van patches."
+msgstr "Je kunt ons helpen met het herzien van patches"
 
 #: templates/development.html:28
 msgid "You can send us patches with bug fixes or new features"
-msgstr "Je kunt ons patches toesturen met bugfixes of nieuwe programmaonderdelen."
+msgstr "Je kunt ons patches toesturen met bugfixes of nieuwe programmaonderdelen"
 
 #: templates/development.html:32
 msgid "The best way to contribute code or documentation is to send us a patch"
-msgstr "De beste manier om code of documentatie bij te dragen, is door ons een"
-"patch toe te sturen."
+msgstr "De beste manier om code of documentatie bij te dragen, is door ons een "
+"patch toe te sturen"
 
 #: templates/development.html:36
 msgid "How to Send a Patch"
@@ -212,7 +212,7 @@ msgid ""
 "help."
 msgstr ""
 "Als je hulp nodig hebt met git, github, pull requests, patches, "
-"programmeerwerk, Sympy of andere gerelateerde zaken, stuur ons dan een "
+"code schrijven, Sympy of andere gerelateerde zaken, stuur ons dan een "
 "email via de mailinglist of vraag het ons op IRC (ons kanaal is "
 "<a href=\"irc://irc.freenode.net/sympy\">#sympy at freenode</a>), we "
 "zullen helpen."
@@ -224,9 +224,9 @@ msgid ""
 "\n"
 "      how to prepare patches</a> using git and github."
 msgstr ""
-"Je kunt ook onze instructies lezen "
-"<a href=\"https://github.com/sympy/sympy/wiki/Development-workflow\">"
-"wat git and github betreft."
+"Je kunt ook onze instructies "
+"<a href=\"https://github.com/sympy/sympy/wiki/Development-workflow\">Hoe bereid je een patch</a>"
+" met git and github lezen."
 
 #: templates/development.html:54
 msgid ""
@@ -246,13 +246,13 @@ msgid ""
 "    for us to integrate it."
 msgstr ""
 "Onze voorkeur gaat uit naar de GitHub Pull Request methode, dit maakt het "
-"voor ons makkelijk om code te bekijken en de code toe te voegen."
-"Je kunt de meest recente git repository clonen (zie de link rechts), een branch 
-creeren met jouw code en deze ergens uploaden "
+"voor ons makkelijk om code te bekijken en de code toe te voegen. "
+"Je kunt de meest recente git repository clonen (zie de link rechts), een branch "
+"creeren met jouw code en deze ergens uploaden "
 "(naar <a href=\"http://github.com/\">github</a> bijvoorbeeld)."
 "Vervolgens kun je ons een link sturen naar de "
-"<a href=\"http://groups.google.com/group/sympy-patches\">sympy-patches</a>"
-"mailinglist, of ons de 'raw' patches sturen -- dit is echter meer werk voor ons,"
+"<a href=\"http://groups.google.com/group/sympy-patches\">sympy-patches</a> "
+"mailinglist, of ons de raw patches sturen -- dit is echter meer werk voor ons "
 "wat betreft de integratie."
 
 #: templates/development.html:65
@@ -265,6 +265,10 @@ msgid ""
 "      http://docs.sympy.org/0.7.1/aboutus.html#sympy-development-team\n"
 "    </a>, send us a patch and your name will appear there too."
 msgstr ""
+"SymPy heeft een breed team aan ontwikkelaars: "
+"<a href=\"http://docs.sympy.org/0.7.1/aboutus.html#sympy-development-team\">"
+"http://docs.sympy.org/0.7.1/aboutus.html#sympy-development-team</a>, "
+"stuur ons een patch en je naam zal daar ook verschijnen."
 
 #: templates/development.html:74
 msgid "Sources of the Webpages"
@@ -284,7 +288,7 @@ msgstr ""
 
 #: templates/development.html:91 templates/download.html:21
 msgid "Main git repository"
-msgstr ""
+msgstr "Hoofd git repository"
 
 #: templates/development.html:95
 msgid "Online access"
@@ -303,7 +307,7 @@ msgstr ""
 
 #: templates/donate.html:8
 msgid "Support SymPy Development"
-msgstr ""
+msgstr "Steun de ontwikkeling van SymPy"
 
 #: templates/donate.html:11
 #, python-format
