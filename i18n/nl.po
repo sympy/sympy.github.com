@@ -365,11 +365,11 @@ msgstr ""
 
 #: templates/download.html:14
 msgid "Old downloads"
-msgstr ""
+msgstr "Oude downloads"
 
 #: templates/download.html:18
 msgid "Git Version"
-msgstr ""
+msgstr "Git Versie"
 
 #: templates/download.html:27
 msgid "Browse online"
