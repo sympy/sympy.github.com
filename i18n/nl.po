@@ -176,7 +176,7 @@ msgstr "Je kunt mensen op onze "
 
 #: templates/development.html:27
 msgid "You can help with reviewing patches"
-msgstr "Je kunt ons helpen met het herzien van patches"
+msgstr "Je kunt ons helpen met het beoordelen van patches"
 
 #: templates/development.html:28
 msgid "You can send us patches with bug fixes or new features"
@@ -185,7 +185,7 @@ msgstr "Je kunt ons patches toesturen met bugfixes of nieuwe programmaonderdelen
 #: templates/development.html:32
 msgid "The best way to contribute code or documentation is to send us a patch"
 msgstr "De beste manier om code of documentatie bij te dragen, is door ons een "
-"patch toe te sturen"
+"patch op te sturen"
 
 #: templates/development.html:36
 msgid "How to Send a Patch"
@@ -225,7 +225,7 @@ msgid ""
 "      how to prepare patches</a> using git and github."
 msgstr ""
 "Je kunt ook onze instructies "
-"<a href=\"https://github.com/sympy/sympy/wiki/Development-workflow\">Hoe bereid je een patch</a>"
+"<a href=\"https://github.com/sympy/sympy/wiki/Development-workflow\">Hoe bereid je een patch voor</a>"
 " met git and github lezen."
 
 #: templates/development.html:54
@@ -246,9 +246,9 @@ msgid ""
 "    for us to integrate it."
 msgstr ""
 "Onze voorkeur gaat uit naar de GitHub Pull Request methode, dit maakt het "
-"voor ons makkelijk om code te bekijken en de code toe te voegen. "
+"voor ons makkelijk om je code te bekijken en de code toe te voegen. "
 "Je kunt de meest recente git repository clonen (zie de link rechts), een branch "
-"creeren met jouw code en deze ergens uploaden "
+"creëren met jouw code en deze ergens uploaden "
 "(naar <a href=\"http://github.com/\">github</a> bijvoorbeeld)."
 "Vervolgens kun je ons een link sturen naar de "
 "<a href=\"http://groups.google.com/group/sympy-patches\">sympy-patches</a> "
@@ -268,7 +268,7 @@ msgstr ""
 "SymPy heeft een breed team aan ontwikkelaars: "
 "<a href=\"http://docs.sympy.org/0.7.1/aboutus.html#sympy-development-team\">"
 "http://docs.sympy.org/0.7.1/aboutus.html#sympy-development-team</a>, "
-"stuur ons een patch en je naam zal daar ook verschijnen."
+"stuur ons een patch en je naam zal daar ook genoemd worden."
 
 #: templates/development.html:74
 msgid "Sources of the Webpages"
@@ -276,7 +276,7 @@ msgstr "Broncode van de Webpagina's"
 
 #: templates/development.html:77
 msgid "Sources of these webpages are at"
-msgstr "De broncode van deze webpagina's zijn hier te vinden"
+msgstr "De broncode van deze webpagina's is hier te vinden"
 
 #: templates/development.html:80
 msgid "Feel free to send us patches with improvements."
@@ -300,10 +300,12 @@ msgid ""
 "The documentation is maintained using the <a href=\"%(url)s\">Sphinx</a> "
 "Python documentation generator."
 msgstr ""
+"De documentatie wordt beheerd met de <a href=\"%(url)s\">Sphinx</a>"
+"Python documentatie generator."
 
 #: templates/docs.html:13
 msgid "You can find it at"
-msgstr ""
+msgstr "De documentatie is hier te vinden"
 
 #: templates/donate.html:8
 msgid "Support SymPy Development"
@@ -403,7 +405,7 @@ msgstr ""
 
 #: templates/index.html:23 templates/index.html:73
 msgid "Basic arithmetic:"
-msgstr "Basale rekenkunde:"
+msgstr "Rekenen:"
 
 #: templates/index.html:23
 msgid ""
@@ -455,6 +457,18 @@ msgid ""
 "        <a href=\"%(polynomial)s\">polynomials</a>,\n"
 "        <a href=\"%(special)s\">special functions</a>, ..."
 msgstr ""
+"\n"
+"        <a href=\"%(trig)s\">goniometrische functies</a>,\n"
+"        <a href=\"%(hyperbolic)s\">hyperbolische functies</a>,\n"
+"        <a href=\"%(exponential)s\">exponentiële functies</a>,\n"
+"        <a href=\"%(root)s\">nulpunten</a>,\n"
+"        <a href=\"%(logarithm)s\">logaritmische functies</a>,\n"
+"        <a href=\"%(abs)s\">absolute waarden</a>,\n"
+"        <a href=\"%(spherical)s\">sferische harmoniek</a>,\n"
+"        <a href=\"%(factorial)s\">faculteiten en gamma functies</a>,\n"
+"        <a href=\"%(zeta)s\">zeta functies</a>,\n"
+"        <a href=\"%(polynomial)s\">polynomen</a>,\n"
+"        <a href=\"%(special)s\">speciale functies</a>, ..."
 
 #: templates/index.html:55
 msgid "Substitution:"
@@ -477,6 +491,11 @@ msgid ""
 "        <a href=\"%(float)s\">and floats</a>\n"
 "        "
 msgstr ""
+"\n"
+"        <a href=\"%(integer)s\">gehele getallen met arbitraire precisie</a>,\n"
+"        <a href=\"%(rational)s\">rationale getallen</a>,\n"
+"        <a href=\"%(float)s\">en floats</a>\n"
+"        "
 
 #: templates/index.html:67
 msgid "Noncommutative symbols"
@@ -484,7 +503,7 @@ msgstr "Niet-commutatieve symbolen"
 
 #: templates/index.html:68
 msgid "Pattern matching"
-msgstr ""
+msgstr "Patronen zoeken"
 
 #: templates/index.html:71
 msgid "Polynomials"
@@ -496,23 +515,23 @@ msgstr " delen, grootste gemene deler, ..."
 
 #: templates/index.html:74
 msgid "Factorization"
-msgstr "Ontbinden in factoren"
+msgstr "Factoren ontbinden"
 
 #: templates/index.html:75
 msgid "Square-free decomposition"
-msgstr ""
+msgstr "Kwadraatvrije decompositie"
 
 #: templates/index.html:76
 msgid "Gröbner bases"
-msgstr "Gröbner-basis"
+msgstr ""
 
 #: templates/index.html:77
 msgid "Partial fraction decomposition"
-msgstr ""
+msgstr "Breuksplitsingen"
 
 #: templates/index.html:78
 msgid "Resultants"
-msgstr ""
+msgstr "Resultanten"
 
 #: templates/index.html:81
 msgid "Calculus"
@@ -532,11 +551,11 @@ msgstr "Integratie:"
 
 #: templates/index.html:92
 msgid "It uses extended Risch-Norman heuristic"
-msgstr ""
+msgstr "Maakt gebruikt van Risch-Norman heuristiek"
 
 #: templates/index.html:94
 msgid "Taylor (Laurent) series"
-msgstr "Taylor (Laurent) reeks"
+msgstr "Taylor (Laurent) reeksen"
 
 #: templates/index.html:97
 msgid "Solving equations"
@@ -548,7 +567,7 @@ msgstr "Polynoom vergelijkingen"
 
 #: templates/index.html:100
 msgid "Algebraic equations"
-msgstr "Algebraische vergelijkingen"
+msgstr "Algebraïsche vergelijkingen"
 
 #: templates/index.html:101
 msgid "Differential equations"
@@ -596,7 +615,7 @@ msgstr "Discrete wiskunde"
 
 #: templates/index.html:118
 msgid "Binomial coefficients"
-msgstr "Binomiaal coefficienten"
+msgstr "Binomiaalcoëfficiënten"
 
 #: templates/index.html:119
 msgid "Summations"
@@ -608,11 +627,11 @@ msgstr "Producten"
 
 #: templates/index.html:121
 msgid "Number theory:"
-msgstr "Getal theorie:"
+msgstr "Getaltheorie:"
 
 #: templates/index.html:121
 msgid "generating prime numbers, primality testing,  integer factorization, ... "
-msgstr "genereren van priemgetallen, priemgetal toetsen, ontbinding in priemfactoren, ..."
+msgstr "genereren van priemgetallen, toetsen van priemgetallen, ontbinden in priemfactoren, ..."
 
 #: templates/index.html:123
 msgid "Logic expressions"
@@ -659,6 +678,8 @@ msgid ""
 "points, lines, rays, segments, ellipses, circles,\n"
 "        polygons, ..."
 msgstr ""
+"punten, lijnen, lijnstukken, segmenten, ellipsen, cirkels,\n"
+"        veelhoeken, ..."
 
 #: templates/index.html:142
 msgid "Intersection"
@@ -686,7 +707,7 @@ msgstr "Het plotten van meetkundige entiteiten"
 
 #: templates/index.html:151
 msgid "2D and 3D"
-msgstr ""
+msgstr "2D en 3D"
 
 #: templates/index.html:152
 msgid "Interactive interface"
