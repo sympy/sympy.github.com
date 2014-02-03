@@ -97,7 +97,7 @@ msgstr "Probeer Sympy nu online uit"
 
 #: templates/base.html:70
 msgid "Official SymPy blog"
-msgstr "Officiele Sympy blog"
+msgstr "Officiële Sympy blog"
 
 #: templates/base.html:71
 msgid "Planet SymPy"
@@ -128,7 +128,7 @@ msgstr "Talen"
 msgid ""
 "We are interested in any contribution. There are many ways how you can\n"
 "    contribute"
-msgstr "We zijn in iedere bijdrage geinteresseerd. Er zijn veel manieren \n"
+msgstr "We zijn in iedere bijdrage geïnteresseerd. Er zijn veel manieren \n"
 "om een bijdrage te leveren"
 
 #: templates/development.html:15
