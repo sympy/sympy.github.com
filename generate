@@ -23,6 +23,7 @@ env.globals["datetime"] = format_datetime
 
 templates = [
     "index.html",
+    "features.html",
     "download.html",
     "docs.html",
     "support.html",

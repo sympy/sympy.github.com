@@ -1,0 +1,354 @@
+{% extends "base.html" %}
+
+{% block title %}{% trans %}Features{% endtrans %}{% endblock %}
+
+{% block content %}
+
+<h2 class="title">{% trans %}Features{% endtrans %}</h2>
+<div class="inner">
+    <div class="dropdown">
+        <h3>{% trans %}Core capabilities{% endtrans %}</h3>
+        <div>
+            <p><a href="http://docs.sympy.org/latest/modules/core.html">{% trans %}Documentation{% endtrans %}</a></p>
+            <ul>
+                <li><strong>{% trans %}Basic arithmetic:{% endtrans %}</strong> <a href="http://www.sympygamma.com/input/?i=23+pi+%2B+20%21+%2F+%283**5%29+-+2">{% trans %}Support for operators such
+                    as <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>**</code> (power){% endtrans %}</a></li>
+                <li> <strong>{% trans %}Simplification{% endtrans %}</strong>
+                    <a href="http://www.sympygamma.com/input/?i=simplify%28cos%28x%29cos%28y%29+-+sin%28x%29sin%28y%29%29">{% trans %}Trigonometry{% endtrans %}</a>, <a href="http://www.sympygamma.com/input/?i=simplify%28%282x%2B3%29%2810x-5%29%2F%282x-1%29%29">{% trans %}Polynomials</a>{% endtrans %}</li>
+                <li><strong>{% trans %}Expansion:{% endtrans
+                    %}</strong>
+                    <a href="http://www.sympygamma.com/input/?i=expand%28%285x+%2B+3%29*%281-x%29*%281%2B6x%29%29">{% trans %} of a polynomial {% endtrans %}</a></li>
+                <li><strong>{% trans %}Functions:{% endtrans %}</strong>
+                    {% trans
+                    trig='http://www.sympygamma.com/input/?i=%281+-+sin%5E2+x%29%2F%281+%2B+tan%5E2+x%29',
+                    hyperbolic='http://www.sympygamma.com/input/?i=sinh%5E2+x+%2B+cosh%5E2+x',
+                    exponential='http://www.sympygamma.com/input/?i=exp%28x%29+%2F+%281+%2B+exp%282x%29%29',
+                    root='http://www.sympygamma.com/input/?i=root%28x%2C+7%29+**+2',
+                    logarithm='http://www.sympygamma.com/input/?i=log%28-25%29',
+                    abs='http://www.sympygamma.com/input/?i=Abs%281+%2B+3I%29',
+                    spherical='http://www.sympygamma.com/input/?i=Ylm%281%2C+-1%2C+theta%2C+phi%29',
+                    factorial='http://www.sympygamma.com/input/?i=gamma%2841%2F2%29+%2B+16%21%21',
+                    zeta='http://www.sympygamma.com/input/?i=zeta%284%29',
+                    polynomial='http://www.sympygamma.com/input/?i=x**7+-+x**5+%2B+4x**3+%2B+1',
+                    special='http://live.sympy.org/?evaluate=from%20sympy.abc%20import%20n%2Ca%2Cb%2Cx%0A%23--%0Ajacobi(0%2C%20a%2C%20b%2C%20x)%0A%23--%0Ajacobi(1%2C%20a%2C%20b%2C%20x)%0A%23--%0Ajacobi(2%2C%20a%2C%20b%2C%20x)%0A%23--%0Ajacobi(n%2C%20a%2C%20a%2C%20x)%0A%23--%0Ajacobi(n%2C%20a%2C%20b%2C%200)%0A%23--%0Aconjugate(jacobi(n%2C%20a%2C%20b%2C%20x))%0A%23--%0Aerf(I*oo)%0A%23--%0ADiracDelta(x**2%20%2B%20x%20-%202).simplify(x)%0A%23--%0A' %}
+                    <a href="{{ trig }}">trigonometric</a>,
+                    <a href="{{ hyperbolic }}">hyperbolic</a>,
+                    <a href="{{ exponential }}">exponential</a>,
+                    <a href="{{ root }}">roots</a>,
+                    <a href="{{ logarithm }}">logarithms</a>,
+                    <a href="{{ abs }}">absolute value</a>,
+                    <a href="{{ spherical }}">spherical harmonics</a>,
+                    <a href="{{ factorial }}">factorials and gamma functions</a>,
+                    <a href="{{ zeta }}">zeta functions</a>,
+                    <a href="{{ polynomial }}">polynomials</a>,
+                    <a href="{{ special }}">special functions</a>, ...{% endtrans %}
+                </li>
+                <li><strong>{% trans %}Substitution:{% endtrans %}</strong> <a href="http://www.sympygamma.com/input/?i=%28exp%28x%29+%2F+%281+%2B+exp%282x%29%29%29.subs%28exp%28x%29%2C+u%29">{% trans %}example{% endtrans %}</a></li>
+                <li><strong>{% trans %}Numbers:{% endtrans %}</strong>
+                    {% trans
+                    integer='http://www.sympygamma.com/input/?i=100%21',
+                    rational='http://www.sympygamma.com/input/?i=0.%5B13579%5D',
+                    float='http://www.sympygamma.com/input/?i=exp%2820%21%29'
+                    %}
+                    <a href="{{ integer }}">arbitrary precision integers</a>,
+                    <a href="{{ rational }}">rationals</a>,
+                    <a href="{{ float }}">and floats</a>
+                    {% endtrans %}
+                </li>
+                <li><strong>{% trans %}Noncommutative symbols{% endtrans %}</strong></li>
+                <li><strong>{% trans %}Pattern matching{% endtrans %}</strong></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <h3>{% trans %}Polynomials{% endtrans %}</h3>
+        <div>
+            <p><a href="http://docs.sympy.org/latest/modules/polys/index.html">{% trans %}Documentation{% endtrans %}</a></p>
+            <ul>
+                <li><strong>{% trans %}Basic arithmetic:{% endtrans %}</strong> {% trans %} division, gcd, ... {% endtrans %}</li>
+                <li><strong>{% trans %}Factorization{% endtrans %}</strong></li>
+                <li><strong>{% trans %}Square-free decomposition{% endtrans %}</strong></li>
+                <li><strong>{% trans %}Gröbner bases{% endtrans %}</strong></li>
+                <li><strong>{% trans %}Partial fraction decomposition{% endtrans %}</strong></li>
+                <li><strong>{% trans %}Resultants{% endtrans %}</strong></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <h3>{% trans %}Calculus{% endtrans %}</h3>
+        <div>
+            <p><a href="http://docs.sympy.org/latest/modules/integrals/integrals.html">{% trans %}Integration Documentation{% endtrans %}</a></p>
+            <ul>
+                <li>
+                    <strong>{% trans %}Limits:{% endtrans %}</strong>
+                    <a href="http://www.sympygamma.com/input/?i=limit%28x*log%28x%29%2C+x%2C+0%29">limit(x*log(x), x, 0) -&gt; 0</a>
+                </li>
+                <li>
+                    <strong>{% trans %}Differentiation{% endtrans %}</strong>
+                </li>
+                <li>
+                    <strong>{% trans %}Integration:{% endtrans %}</strong>
+                    {% trans %}It uses extended Risch-Norman heuristic{% endtrans %}
+                </li>
+                <li><strong>{% trans %}Taylor (Laurent) series{% endtrans %}</strong></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <h3>{% trans %}Solving equations{% endtrans %}</h3>
+        <div>
+            <p><a href="http://docs.sympy.org/latest/modules/solvers/solvers.html">{% trans %}Documentation{% endtrans %}</a></p>
+            <ul>
+                <li><strong>{% trans %}Polynomial equations{% endtrans %}</strong></li>
+                <li><strong>{% trans %}Algebraic equations{% endtrans %}</strong></li>
+                <li><strong>{% trans %}Differential equations{% endtrans %}</strong></li>
+                <li><strong>{% trans %}Difference equations{% endtrans %}</strong></li>
+                <li><strong>{% trans %}Systems of equations{% endtrans %}</strong></li>
+                <li><strong>{% trans %}Diophantine equations:{% endtrans %}</strong> <a href="http://www.sympygamma.com/input/?i=diophantine%28x%2A%2A2%20-%204%2Ax%2Ay%20%2B%208%2Ay%2A%2A2%20-%203%2Ax%20%2B%207%2Ay%20-%205%29">x<sup>2</sup> &#8722; 4xy + 8y<sup>2</sup> &#8722; 3x + 7y = 5</a>, <a href="http://www.sympygamma.com/input/?i=diophantine%282%2Ax%20%2B%203%2Ay%20-%205%29">2x + 3y = 5</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <h3>{% trans %}Combinatorics{% endtrans %}</h3>
+        <div>
+            <p><a href="http://docs.sympy.org/latest/modules/combinatorics/index.html">{% trans %}Documentation{% endtrans %}</a></p>
+            <ul>
+                <li><strong>{% trans %}Permutations{% endtrans %}</strong></li>
+                <li><strong>{% trans %}Combinations{% endtrans %}</strong></li>
+                <li><strong>{% trans %}Partitions{% endtrans %}</strong></li>
+                <li><strong>{% trans %}Subsets{% endtrans %}</strong></li>
+                <li><strong>{% trans %}Permutation Groups{% endtrans %}</strong>: Polyhedral, Rubik, Symmetric, ...</li>
+                <li><strong>{% trans %}Prufer and Gray Codes{% endtrans %}</strong></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <h3>{% trans %}Discrete math{% endtrans %}</h3>
+        <div>
+            <ul>
+                <li><strong>{% trans %}Binomial coefficients{% endtrans %}</strong></li>
+                <li><strong>{% trans %}Summations{% endtrans %}</strong></li>
+                <li><strong>{% trans %}Products{% endtrans %}</strong></li>
+                <li><strong>{% trans %}Number theory:{% endtrans %}</strong> {% trans
+                    %}generating prime numbers, primality testing,  integer factorization, Diophantine equation solving... {% endtrans %}</li>
+                <li><strong>{% trans %}Logic expressions{% endtrans %}</strong></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <h3>{% trans %}Matrices{% endtrans %}</h3>
+        <div>
+            <p><a href="http://docs.sympy.org/latest/modules/matrices/index.html">{% trans %}Documentation{% endtrans %}</a></p>
+            <ul>
+                <li><strong>{% trans %}Basic arithmetic{% endtrans %}</strong></li>
+                <li><strong>{% trans %}Eigenvalues/eigenvectors{% endtrans %}</strong></li>
+                <li><strong>{% trans %}Determinants{% endtrans %}</strong></li>
+                <li><strong>{% trans %}Inversion{% endtrans %}</strong></li>
+                <li><strong>{% trans %}Solving{% endtrans %}</strong></li>
+                <li><strong>{% trans %}Abstract expressions{% endtrans %}</strong></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <h3>{% trans %}Geometric Algebra{% endtrans %}</h3>
+        <div>
+            <p><a href="http://docs.sympy.org/latest/modules/galgebra/index.html">{% trans %}Documentation{% endtrans %}</a></p>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <h3>{% trans %}Geometry{% endtrans %}</h3>
+        <div>
+            <p><a href="http://docs.sympy.org/latest/modules/geometry.html">{% trans %}Documentation{% endtrans %}</a></p>
+            <ul>
+                <li><strong>{% trans %}points, lines, rays, segments, ellipses, circles,
+                    polygons, ...{% endtrans %}</strong></li>
+                <li><strong>{% trans %}Intersection{% endtrans %}</strong></li>
+                <li><strong>{% trans %}Tangency{% endtrans %}</strong></li>
+                <li><strong>{% trans %}Similarity{% endtrans %}</strong></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <h3>{% trans %}Plotting{% endtrans %}</h3>
+        <div>
+            <p><a href="http://docs.sympy.org/latest/modules/plotting.html">{% trans %}Documentation{% endtrans %}</a></p>
+            <ul>
+                <li><strong>{% trans %}Coordinate modes{% endtrans %}</strong></li>
+                <li><strong>{% trans %}Plotting Geometric Entities{% endtrans %}</strong></li>
+                <li><strong>{% trans %}2D and 3D{% endtrans %}</strong></li>
+                <li><strong>{% trans %}Interactive interface{% endtrans %}</strong></li>
+                <li><strong>{% trans %}Colors{% endtrans %}</strong></li>
+                <li><strong>{% trans %}Matplotlib support{% endtrans %}</strong></li>
+            </ul>
+
+            <section class="gallery">
+                <figure>
+                    <img src="/static/images/main_features_examples/plotting1.png"
+                         alt="{% trans %}SymPy plot of sin(2 sin(2 sin(x))) with matplotlib{% endtrans %}" />
+                    <figcaption><code>plot(sin(2*sin(2*sin(x))))</code></figcaption>
+                </figure>
+                <figure>
+                    <img src="/static/images/main_features_examples/plotting2.png"
+                         alt="{% trans %}SymPy plot of x, x^2, and x^3 from x = -5 to 5{% endtrans %}" />
+                    <figcaption><code>plot(x, x**2, x**3, (x, -5, 5))</code></figcaption>
+                </figure>
+                <figure>
+                    <img src="/static/images/main_features_examples/plotting3.png"
+                         alt="{% trans %}SymPy parametric plot of x=cos(u), y=sin(u), u from -5 to 5{% endtrans %}" />
+                    <figcaption><code>plot_parametric(cos(u), sin(u), (u, -5, 5))</code></figcaption>
+                </figure>
+                <figure>
+                    <img src="/static/images/main_features_examples/plotting4.png"
+                         alt="{% trans %}SymPy 3D surface plot of xy, x from -5 to 5, y from 5 to 5{% endtrans %}" />
+                    <figcaption><code>plot3d(x*y, (x, -5, 5), (y, -5, 5))</code></figcaption>
+                </figure>
+                <figure>
+                    <img src="/static/images/main_features_examples/plotting5.png"
+                         alt="{% trans %}SymPy 3D parametric line plot of x=cos(u), y=sin(u), z=u, u from -5 to 5{% endtrans %}" />
+                    <figcaption><code>plot3d_parametric_line(cos(u), sin(u), u, (u, -5, 5))</code></figcaption>
+                </figure>
+                <figure>
+                    <img src="/static/images/main_features_examples/plotting6.png"
+                         alt="{% trans %}SymPy 3D parametric surface plot of x=cos(u+v), y=sin(u-v), z=u-v, u and v from -5 to 5{% endtrans %}" />
+                    <figcaption><code>plot3d_parametric_surface(cos(u + v), sin(u - v), u - v, (u, -5, 5), (v, -5, 5))</code></figcaption>
+                </figure>
+                <figure>
+                    <img src="/static/images/main_features_examples/plotting7.png"
+                         alt="{% trans %}SymPy implicit plot of x^2 + y^2 = 5{% endtrans %}" />
+                    <figcaption><code>plot_implicit(Eq(x**2 + y**2, 5))</code></figcaption>
+                </figure>
+                <figure>
+                    <img src="/static/images/main_features_examples/plotting8.png"
+                         alt="{% trans %}SymPy implicit plot of y &gt; x^2{% endtrans %}" />
+                    <figcaption><code>plot_implicit(y > x**2)</code></figcaption>
+                </figure>
+                <figure>
+                    <img src="/static/images/main_features_examples/plotting9.png"
+                         alt="{% trans %}SymPy implicit plot of y &gt; x (logical and) y &gt; -x{% endtrans %}" />
+                    <figcaption><code>plot_implicit(And(y &gt; x, y &gt; -x))</code></figcaption>
+                </figure>
+                <figure>
+                    <img src="/static/images/main_features_examples/plotting10.png"
+                         alt="{% trans %}Matplotlib interactive interface of SymPy 3D parametric surface plot of x=cos(u+v), y=sin(u-v), z=u-v, u and v from -5 to 5{% endtrans %}" />
+                    <figcaption><code>plot3d_parametric_surface(cos(u + v), sin(u - v), u - v, (u, -5, 5), (v, -5, 5))</code></figcaption>
+                </figure>
+                <figure>
+                    <img src="/static/images/main_features_examples/plotting11.png"
+                         alt="{% trans %}SymPy Gamma plot of x=cos(t), y=sin(t){% endtrans %}" />
+                    <figcaption>{% trans %}SymPy Gamma plot{% endtrans %}</figcaption>
+                </figure>
+            </section>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <h3>{% trans %}Physics{% endtrans %}</h3>
+        <div>
+            <p><a href="http://docs.sympy.org/latest/modules/physics/index.html">{% trans %}Documentation{% endtrans %}</a></p>
+            <ul>
+                <li><strong>{% trans %}Units{% endtrans %}</strong></li>
+                <li><strong>{% trans %}Mechanics{% endtrans %}</strong></li>
+                <li><strong>{% trans %}Quantum{% endtrans %}</strong></li>
+                <li><strong>{% trans %}Gaussian Optics{% endtrans %}</strong></li>
+                <li><strong>{% trans %}Pauli Algebra{% endtrans %}</strong></li>
+            </ul>
+
+            <h4>{% trans %}IPython Notebook Examples{% endtrans %}</h4>
+            <ul>
+                <li><a href="http://nbviewer.ipython.org/github/PythonDynamics/pydy_examples/blob/master/tutorials/beginner.ipynb">{% trans %}Beginner Tutorial for SymPy Mechanics{% endtrans %}</a></li>
+                <li><a href="http://nbviewer.ipython.org/github/PythonDynamics/pydy_examples/blob/master/mass_spring_damper/mass_spring_damper.ipynb">{% trans %}Deriving the Mass-Spring-Damper System with SymPy{% endtrans %}</a></li>
+                <li><a href="http://nbviewer.ipython.org/gist/rpmuller/5843312">{% trans %}Quantum Circuit Plotting with SymPy{% endtrans %}</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <h3>{% trans %}Statistics{% endtrans %}</h3>
+        <div>
+            <p><a href="http://docs.sympy.org/latest/modules/stats.html">{% trans %}Documentation{% endtrans %}</a></p>
+            <ul>
+              <li><strong>{% trans %}Random variable types:{% endtrans %}</strong>
+                <ul>
+                  <li><strong>{% trans %}Normal distributions{% endtrans %}</strong></li>
+                  <li><strong>{% trans %}Uniform distributions{% endtrans %}</strong></li>
+                  <li><strong>{% trans %}Bernoulli distributions{% endtrans %}</strong></li>
+                  <li><strong>{% trans %}Binomial distributions{% endtrans %}</strong></li>
+                  <li><strong>{% trans %}Hypergeometric distributions{% endtrans %}</strong></li>
+                  <li><a href="http://docs.sympy.org/latest/modules/stats.html#random-variable-types">{% trans %}More&hellip;{% endtrans %}</a>
+                </ul>
+              </li>
+              <li><strong>{% trans %}Probability{% endtrans %}</strong></li>
+              <li><strong>{% trans %}Expected value and variance{% endtrans %}</strong></li>
+              <li><strong>{% trans %}Probability density{% endtrans %}</strong></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <h3>{% trans %}Cryptography{% endtrans %}</h3>
+        <div>
+            <p><a href="http://docs.sympy.org/latest/modules/crypto.html">{% trans %}Documentation{% endtrans %}</a></p>
+            <ul>
+              <li><strong>{% trans %}Shift cipher{% endtrans %}</strong></li>
+              <li><strong>{% trans %}Affine cipher{% endtrans %}</strong></></li>
+              <li><strong>{% trans %}Bifid ciphers{% endtrans %}</strong></></li>
+              <li><strong>{% trans %}Vigenere’s cipher{% endtrans %}</strong></></li>
+              <li><strong>{% trans %}Substitution ciphers{% endtrans %}</strong></></li>
+              <li><strong>{% trans %}Hill’s cipher{% endtrans %}</strong></></li>
+              <li><strong>{% trans %}RSA{% endtrans %}</strong></></li>
+              <li><strong>{% trans %}Kid RSA{% endtrans %}</strong></></li>
+              <li><strong>{% trans %}Linear feedback shift registers{% endtrans %}</strong></></li>
+              <li><strong>{% trans %}ElGamal encryption{% endtrans %}</strong></></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <h3>{% trans %}Parsing{% endtrans %}</h3>
+        <div>
+            <p><a href="http://docs.sympy.org/latest/modules/parsing.html">{% trans %}Documentation{% endtrans %}</a></p>
+            <ul>
+                <li><strong>{% trans %}Conversion from Python objects to SymPy objects{% endtrans %}</strong></li>
+                <li><strong>{% trans %}Optional implicit multiplication and function application parsing{% endtrans %}</strong></li>
+                <li><strong>{% trans %}Limited Mathematica and Maxima parsing:{% endtrans %}</strong> <a href="http://live.sympy.org/?evaluate=from%20sympy.parsing.mathematica%20import%20mathematica%0A%23--%0Afrom%20sympy.parsing.maxima%20import%20parse_maxima%0A%23--%0Amathematica(%27Sin%5Bx%5D%27)%0A%23--%0Aparse_maxima(%27sqrt(x%5E2)%27)%0A%23--%0A">{% trans %}example on SymPy Live{% endtrans %}</a></li>
+                <li><strong>{% trans %}Custom parsing transformations{% endtrans %}</strong></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <h3>{% trans %}Printing{% endtrans %}</h3>
+        <div>
+            <p><a href="http://docs.sympy.org/latest/modules/printing.html">{% trans %}Documentation{% endtrans %}</a></p>
+            <ul>
+                <li><strong>{% trans %}Pretty printing:{% endtrans %}</strong> {% trans %}ASCII/Unicode pretty printing, LaTeX{% endtrans %}</li>
+                <li><strong>{% trans %}Code generation:{% endtrans %}</strong> {% trans %}C, Fortran, Python{% endtrans %}</li>
+                <li><strong>{% trans %}<a href="http://deeplearning.net/software/theano/">Theano</a> interaction{% endtrans %}</strong></li>
+            </ul>
+
+            <section class="gallery">
+                <figure>
+                    <img src="/static/images/main_features_examples/printing1.png"
+                         alt="{% trans %}Unicode printing in a Python shell{% endtrans %}" />
+                    <figcaption>{% trans %}Unicode printing{% endtrans %}</figcaption>
+                </figure>
+                <figure>
+                    <img src="/static/images/main_features_examples/printing2.png"
+                         alt="{% trans %}LaTeX printing in an IPython notebook{% endtrans %}" />
+                    <figcaption>{% trans %}LaTeX printing{% endtrans %}</figcaption>
+                </figure>
+            </section>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

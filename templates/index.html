@@ -3,18 +3,27 @@
 
 {% block title %}SymPy{% endblock %}
 
-{% block content %}
+{% block main %}
 
-<h2 class="title">{% trans %}About{% endtrans %}</h2>
-<div class="inner">
-  <p class="first">
-    {% trans %}SymPy is a Python library for symbolic mathematics. It aims to
-    become a full-featured computer algebra system (CAS) while keeping the code as
-    simple as possible in order to be comprehensible and easily extensible. SymPy
-    is written entirely in Python and does not require any external libraries.{%
-    endtrans %}
-  </p>
-</div>
+<section id="banner">
+  <h2 class="title">{% trans %}About{% endtrans %}</h2>
+  <div class="inner">
+    <p class="first">
+      {% trans %}SymPy is a Python library for symbolic mathematics. It aims to
+      become a full-featured computer algebra system (CAS) while keeping the code as
+      simple as possible in order to be comprehensible and easily extensible. SymPy
+      is written entirely in Python and does not require any external libraries.{%
+      endtrans %}
+    </p>
+
+    <section id="get-started">
+    <p>{% trans %}<a href="http://docs.sympy.org/latest/tutorial/index.html">Get started with the tutorial</a>{% endtrans %} {% trans %}<a href="https://github.com/sympy/sympy/releases">Download Now</a>{% endtrans %}</p>
+  </div>
+</section>
+
+{% endblock %}
+
+{% block content %}
 <h2 class="title">{% trans %}Google Summer of Code (GSoC) 2013{% endtrans %}</h2>
 <div class="inner">
   <p class="first">
@@ -25,164 +34,16 @@
   </p>
 </div>
 
-<h2 class="title">{% trans %}Features{% endtrans %}</h2>
+<h2 class="title">{% trans %}Why SymPy{% endtrans %}</h2>
 <div class="inner">
-  <h3>{% trans %}Core capabilities{% endtrans %}</h3>
-  <ul>
-    <li><strong>{% trans %}Basic arithmetic:{% endtrans %}</strong> <a href="http://www.sympygamma.com/input/?i=23+pi+%2B+20%21+%2F+%283**5%29+-+2">{% trans %}Support for operators such
-      as <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>**</code> (power){% endtrans %}</a></li>
-    <li> <strong>{% trans %}Simplification{% endtrans %}</strong>
-    <a href="http://www.sympygamma.com/input/?i=simplify%28cos%28x%29cos%28y%29+-+sin%28x%29sin%28y%29%29">{% trans %}Trigonometry{% endtrans %}</a>, <a href="http://www.sympygamma.com/input/?i=simplify%28%282x%2B3%29%2810x-5%29%2F%282x-1%29%29">{% trans %}Polynomials</a>{% endtrans %}</li>
-    <li><strong>{% trans %}Expansion:{% endtrans
-    %}</strong>
-        <a href="http://www.sympygamma.com/input/?i=expand%28%285x+%2B+3%29*%281-x%29*%281%2B6x%29%29">{% trans %} of a polynomial {% endtrans %}</a></li>
-    <li><strong>{% trans %}Functions:{% endtrans %}</strong>
-        {% trans
-        trig='http://www.sympygamma.com/input/?i=%281+-+sin%5E2+x%29%2F%281+%2B+tan%5E2+x%29',
-        hyperbolic='http://www.sympygamma.com/input/?i=sinh%5E2+x+%2B+cosh%5E2+x',
-        exponential='http://www.sympygamma.com/input/?i=exp%28x%29+%2F+%281+%2B+exp%282x%29%29',
-        root='http://www.sympygamma.com/input/?i=root%28x%2C+7%29+**+2',
-        logarithm='http://www.sympygamma.com/input/?i=log%28-25%29',
-        abs='http://www.sympygamma.com/input/?i=Abs%281+%2B+3I%29',
-        spherical='http://www.sympygamma.com/input/?i=Ylm%281%2C+-1%2C+theta%2C+phi%29',
-        factorial='http://www.sympygamma.com/input/?i=gamma%2841%2F2%29+%2B+16%21%21',
-        zeta='http://www.sympygamma.com/input/?i=zeta%284%29',
-        polynomial='http://www.sympygamma.com/input/?i=x**7+-+x**5+%2B+4x**3+%2B+1',
-        special='http://live.sympy.org/?evaluate=from%20sympy.abc%20import%20n%2Ca%2Cb%2Cx%0A%23--%0Ajacobi(0%2C%20a%2C%20b%2C%20x)%0A%23--%0Ajacobi(1%2C%20a%2C%20b%2C%20x)%0A%23--%0Ajacobi(2%2C%20a%2C%20b%2C%20x)%0A%23--%0Ajacobi(n%2C%20a%2C%20a%2C%20x)%0A%23--%0Ajacobi(n%2C%20a%2C%20b%2C%200)%0A%23--%0Aconjugate(jacobi(n%2C%20a%2C%20b%2C%20x))%0A%23--%0Aerf(I*oo)%0A%23--%0ADiracDelta(x**2%20%2B%20x%20-%202).simplify(x)%0A%23--%0A' %}
-        <a href="{{ trig }}">trigonometric</a>,
-        <a href="{{ hyperbolic }}">hyperbolic</a>,
-        <a href="{{ exponential }}">exponential</a>,
-        <a href="{{ root }}">roots</a>,
-        <a href="{{ logarithm }}">logarithms</a>,
-        <a href="{{ abs }}">absolute value</a>,
-        <a href="{{ spherical }}">spherical harmonics</a>,
-        <a href="{{ factorial }}">factorials and gamma functions</a>,
-        <a href="{{ zeta }}">zeta functions</a>,
-        <a href="{{ polynomial }}">polynomials</a>,
-        <a href="{{ special }}">special functions</a>, ...{% endtrans %}
-    </li>
-    <li><strong>{% trans %}Substitution:{% endtrans %}</strong> <a href="http://www.sympygamma.com/input/?i=%28exp%28x%29+%2F+%281+%2B+exp%282x%29%29%29.subs%28exp%28x%29%2C+u%29">{% trans %}example{% endtrans %}</a></li>
-    <li><strong>{% trans %}Numbers:{% endtrans %}</strong>
-        {% trans
-        integer='http://www.sympygamma.com/input/?i=100%21',
-        rational='http://www.sympygamma.com/input/?i=0.%5B13579%5D',
-        float='http://www.sympygamma.com/input/?i=exp%2820%21%29'
-        %}
-        <a href="{{ integer }}">arbitrary precision integers</a>,
-        <a href="{{ rational }}">rationals</a>,
-        <a href="{{ float }}">and floats</a>
-        {% endtrans %}
-    </li>
-    <li><strong>{% trans %}Noncommutative symbols{% endtrans %}</strong></li>
-    <li><strong>{% trans %}Pattern matching{% endtrans %}</strong></li>
-  </ul>
-
-  <h3>{% trans %}Polynomials{% endtrans %}</h3>
-  <ul>
-    <li><strong>{% trans %}Basic arithmetic:{% endtrans %}</strong> {% trans %} division, gcd, ... {% endtrans %}</li>
-    <li><strong>{% trans %}Factorization{% endtrans %}</strong></li>
-    <li><strong>{% trans %}Square-free decomposition{% endtrans %}</strong></li>
-    <li><strong>{% trans %}Gröbner bases{% endtrans %}</strong></li>
-    <li><strong>{% trans %}Partial fraction decomposition{% endtrans %}</strong></li>
-    <li><strong>{% trans %}Resultants{% endtrans %}</strong></li>
-  </ul>
-
-  <h3>{% trans %}Calculus{% endtrans %}</h3>
-  <ul>
-    <li>
-      <strong>{% trans %}Limits:{% endtrans %}</strong>
-      <a href="http://www.sympygamma.com/input/?i=limit%28x*log%28x%29%2C+x%2C+0%29">limit(x*log(x), x, 0) -&gt; 0</a>
-    </li>
-    <li>
-      <strong>{% trans %}Differentiation{% endtrans %}</strong>
-    </li>
-    <li>
-      <strong>{% trans %}Integration:{% endtrans %}</strong>
-      {% trans %}It uses extended Risch-Norman heuristic{% endtrans %}
-    </li>
-    <li><strong>{% trans %}Taylor (Laurent) series{% endtrans %}</strong></li>
-  </ul>
-
-  <h3>{% trans %}Solving equations{% endtrans %}</h3>
-  <ul>
-    <li><strong>{% trans %}Polynomial equations{% endtrans %}</strong></li>
-    <li><strong>{% trans %}Algebraic equations{% endtrans %}</strong></li>
-    <li><strong>{% trans %}Differential equations{% endtrans %}</strong></li>
-    <li><strong>{% trans %}Difference equations{% endtrans %}</strong></li>
-    <li><strong>{% trans %}Systems of equations{% endtrans %}</strong></li>
-  </ul>
-
-  <h3>{% trans %}Combinatorics{% endtrans %}</h3>
-  <ul>
-    <li><strong>{% trans %}Permutations{% endtrans %}</strong></li>
-    <li><strong>{% trans %}Combinations{% endtrans %}</strong></li>
-    <li><strong>{% trans %}Partitions{% endtrans %}</strong></li>
-    <li><strong>{% trans %}Subsets{% endtrans %}</strong></li>
-    <li><strong>{% trans %}Permutation Groups{% endtrans %}</strong>: Polyhedral, Rubik, Symmetric, ...</li>
-    <li><strong>{% trans %}Prufer and Gray Codes{% endtrans %}</strong></li>
-  </ul>
-
-  <h3>{% trans %}Discrete math{% endtrans %}</h3>
-  <ul>
-    <li><strong>{% trans %}Binomial coefficients{% endtrans %}</strong></li>
-    <li><strong>{% trans %}Summations{% endtrans %}</strong></li>
-    <li><strong>{% trans %}Products{% endtrans %}</strong></li>
-    <li><strong>{% trans %}Number theory:{% endtrans %}</strong> {% trans
-      %}generating prime numbers, primality testing,  integer factorization, ... {% endtrans %}</li>
-    <li><strong>{% trans %}Logic expressions{% endtrans %}</strong></li>
-  </ul>
-
-  <h3>{% trans %}Matrices{% endtrans %}</h3>
-  <ul>
-    <li><strong>{% trans %}Basic arithmetic{% endtrans %}</strong></li>
-    <li><strong>{% trans %}Eigenvalues/eigenvectors{% endtrans %}</strong></li>
-    <li><strong>{% trans %}Determinants{% endtrans %}</strong></li>
-    <li><strong>{% trans %}Inversion{% endtrans %}</strong></li>
-    <li><strong>{% trans %}Solving{% endtrans %}</strong></li>
-    <li><strong>{% trans %}Abstract expressions{% endtrans %}</strong></li>
-  </ul>
-
-  <h3>{% trans %}Geometric Algebra{% endtrans %}</h3>
-
-  <h3>{% trans %}Geometry{% endtrans %}</h3>
-  <ul>
-    <li><strong>{% trans %}points, lines, rays, segments, ellipses, circles,
-        polygons, ...{% endtrans %}</strong></li>
-    <li><strong>{% trans %}Intersection{% endtrans %}</strong></li>
-    <li><strong>{% trans %}Tangency{% endtrans %}</strong></li>
-    <li><strong>{% trans %}Similarity{% endtrans %}</strong></li>
-  </ul>
-
-  <h3>{% trans %}Plotting{% endtrans %}</h3>
-  <ul>
-    <li><strong>{% trans %}Coordinate modes{% endtrans %}</strong></li>
-    <li><strong>{% trans %}Plotting Geometric Entities{% endtrans %}</strong></li>
-    <li><strong>{% trans %}2D and 3D{% endtrans %}</strong></li>
-    <li><strong>{% trans %}Interactive interface{% endtrans %}</strong></li>
-    <li><strong>{% trans %}Colors{% endtrans %}</strong></li>
-  </ul>
-
-  <h3>{% trans %}Physics{% endtrans %}</h3>
-  <ul>
-    <li><strong>{% trans %}Units{% endtrans %}</strong></li>
-    <li><strong>{% trans %}Mechanics{% endtrans %}</strong></li>
-    <li><strong>{% trans %}Quantum{% endtrans %}</strong></li>
-    <li><strong>{% trans %}Gaussian Optics{% endtrans %}</strong></li>
-    <li><strong>{% trans %}Pauli Algebra{% endtrans %}</strong></li>
-  </ul>
-
-  <h3>{% trans %}Statistics{% endtrans %}</h3>
-  <ul>
-    <li><strong>{% trans %}Normal distributions{% endtrans %}</strong></li>
-    <li><strong>{% trans %}Uniform distributions{% endtrans %}</strong></li>
-    <li><strong>{% trans %}Probability{% endtrans %}</strong></li>
-  </ul>
-
-  <h3>{% trans %}Printing{% endtrans %}</h3>
-  <ul>
-    <li><strong>{% trans %}Pretty printing:{% endtrans %}</strong> {% trans %}ASCII/Unicode pretty printing, LaTeX{% endtrans  %}
-    <li><strong>{% trans %}Code generation:{% endtrans %}</strong> {% trans %}C, Fortran, Python{% endtrans %}</li>
-  </ul>
+    <p>{% trans %}SymPy is&hellip;{% endtrans %}</p>
+    <ul>
+        <li><strong>{% trans %}Free:{% endtrans %}</strong> {% trans %} Lorem ipsum {% endtrans %}</li>
+        <li><strong>{% trans %}Python-based:{% endtrans %}</strong> {% trans %} Lorem ipsum {% endtrans %}</li>
+        <li><strong>{% trans %}Lightweight:{% endtrans %}</strong> {% trans %} Lorem ipsum {% endtrans %}</li>
+        <li><strong>{% trans %}A library:{% endtrans %}</strong> {% trans %} Lorem ipsum {% endtrans %}</li>
+    </ul>
+    <p>{% trans %}<a href="features.html">See SymPy's features</a>{% endtrans %}</p>
 </div>
 
 {% endblock %}
