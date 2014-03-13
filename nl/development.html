@@ -4,7 +4,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <title>Download</title>
+    <title>Ontwikkeling</title>
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet" type="text/css" />
     <!-- <link rel="stylesheet" href="/static/css/base.css" type="text/css" media="screen" /> -->
     <!-- <link rel="stylesheet" id="current-theme" href="/static/css/style.css" type="text/css" media="screen" /> -->
@@ -26,12 +26,12 @@
         
         
         <ul>
-          <li class=""><a href="index.html">Hauptseite</a></li>
-          <li class="active"><a href="download.html">Download</a></li>
-          <li class=""><a href="http://docs.sympy.org">Dokumentation <i class="icon-external-link-sign"></i></a></li>
-          <li class=""><a href="support.html">Unterstützung</a></li>
-          <li class=""><a href="development.html">Entwicklung</a></li>
-          <li class=""><a href="donate.html">Donate</a></li>
+          <li class=""><a href="index.html">Hoofdpagina</a></li>
+          <li class=""><a href="download.html">Download</a></li>
+          <li class=""><a href="http://docs.sympy.org">Documentatie <i class="icon-external-link-sign"></i></a></li>
+          <li class=""><a href="support.html">Ondersteuning</a></li>
+          <li class="active"><a href="development.html">Ontwikkeling</a></li>
+          <li class=""><a href="donate.html">Doneer</a></li>
           <li><a href="http://live.sympy.org/">Online Shell <i class="icon-external-link-sign"></i></a></li>
         </ul>
         
@@ -40,28 +40,58 @@
         <article id="content" class="col span_7 clr small_span_4">
           
 
-<h2 class="title">Source Tarballs (Releases)</h2>
+<h2 class="title">Ontwikkeling</h2>
 <div class="inner">
   <p class="first">
-    <a href="https://github.com/sympy/sympy/releases">Downloads</a>
+    We zijn in iedere bijdrage geïnteresseerd. Er zijn veel manieren 
+om een bijdrage te leveren:
+    <ul>
+      <li>
+        Als je iets interessants gemaakt hebt met SymPy, stuur ons dan graag een patch op met de code (zie hieronder voor meer informatie).
+      </li>
+
+      <li>
+        Als je een bug vindt (of je wilt over bepaalde issues je gedachten delen), laat het ons weten via de <a href="http://groups.google.com/group/sympy">mailinglist</a>. Je kunt ook een bug rapport (of opmerking) toevoegen aan de  <a href="http://code.google.com/p/sympy/issues/list">issues</a> zelf.
+      </li>
+      <li>Je kunt bloggen over hoe je SymPy gebruikt.</li>
+      <li>Je kunt ons helpen met het schrijven van documentatie (door ons gewoon een patch toe te sturen).</li>
+      <li>Je kunt mensen op onze <a href="http://groups.google.com/group/sympy">mailinglist</a> helpen.</li>
+      <li>Je kunt ons helpen met het beoordelen van patches.</li>
+      <li>Je kunt ons patches toesturen met bugfixes of nieuwe programmaonderdelen.</li>
+    </ul>
   </p>
-  <p class="small">
-    <a href="http://code.google.com/p/sympy/downloads/list">Old downloads</a>
+  <p>
+    De beste manier om code of documentatie bij te dragen, is door ons een patch op te sturen.
   </p>
 </div>
 
-<h2 class="title">Git Version</h2>
+<h2 class="title">Hoe je een Patch opstuurt</h2>
 <div class="inner">
   <p class="first">
-    Main git repository:
-    <pre>
-      git clone git://github.com/sympy/sympy.git
-    </pre>
+    De beste manier om een Patch op te sturen, is via een GitHub Pull Requestvoor de <a href="http://github.com/sympy/sympy">sympy/sympy</a> repository.
   </p>
+
   <p>
-    Browse online:
-    <a href="http://github.com/sympy/sympy">github.com/sympy/sympy</a>
+    Als je hulp nodig hebt met git, github, pull requests, patches, code schrijven, Sympy of andere gerelateerde zaken, stuur ons dan een email via de mailinglist of vraag het ons op IRC (ons kanaal is <a href="irc://irc.freenode.net/sympy">#sympy at freenode</a>), we zullen helpen.
+    Je kunt ook onze instructies <a href="https://github.com/sympy/sympy/wiki/Development-workflow">Hoe bereid je een patch voor</a> met git and github lezen.
   </p>
+
+  <p>
+    Onze voorkeur gaat uit naar de GitHub Pull Request methode, dit maakt het voor ons makkelijk om je code te bekijken en de code toe te voegen. Je kunt de meest recente git repository clonen (zie de link rechts), een branch creëren met jouw code en deze ergens uploaden (naar <a href="http://github.com/">github</a> bijvoorbeeld).Vervolgens kun je ons een link sturen naar de <a href="http://groups.google.com/group/sympy-patches">sympy-patches</a> mailinglist, of ons de raw patches sturen -- dit is echter meer werk voor ons wat betreft de integratie.
+  </p>
+
+  <p>
+    SymPy heeft een breed team aan ontwikkelaars: <a href="http://docs.sympy.org/0.7.1/aboutus.html#sympy-development-team">http://docs.sympy.org/0.7.1/aboutus.html#sympy-development-team</a>, stuur ons een patch en je naam zal daar ook genoemd worden.
+  </p>
+
+</div>
+<h2 class="title">Broncode van de Webpagina's</h2>
+<div class="inner">
+  <p class="first">
+    De broncode van deze webpagina's is hier te vinden:
+    <a href="http://github.com/sympy/sympy.github.com">http://github.com/sympy/sympy.github.com</a>
+  </p>
+  Voel je vrij om ons patches op te sturen met verbeteringen.
 </div>
 
 
@@ -69,37 +99,37 @@
         <div id="spacer" class="col span_1 clr small_span_0">&nbsp;</div>
         <aside id="sidebar" class="col span_4 clr small_span_2">
           <div id="search-gamma" class="sidebar_card">
-            <h3> Compute with Gamma </h3>
+            <h3>Uitrekenen met Gamma</h3>
             <form method="get" action="http://www.sympygamma.com/input/" target="_blank">
               <input type="text" name="i" />
-              <button>Compute</button>
+              <button>Uitrekenen</button>
             </form>
           </div>
           <div id="about" class="sidebar_card">
-            <h3>Download Now</h3>
+            <h3>Nu Downloaden</h3>
             <p>
-              <a href="https://github.com/sympy/sympy/releases">Latest Version</a><br/>
-              <a href="http://github.com/sympy/sympy">Development Version</a>
+              <a href="https://github.com/sympy/sympy/releases">Laatste Versie</a><br/>
+              <a href="http://github.com/sympy/sympy">Ontwikkelingsversie</a>
             </p>
           </div>
           <div id="quick_links" class="sidebar_card">
             <h3>Quick Links</h3>
             <ul>
-              <li><a href="http://docs.sympy.org/">Dokumentation</a></li>
+              <li><a href="http://docs.sympy.org/">Documentatie</a></li>
               <li><a href="https://github.com/sympy/sympy/releases">Downloads (source tarballs)</a></li>
               <li><a href="http://groups.google.com/group/sympy">Mailing list</a></li>
-              <li><a href="http://github.com/sympy/sympy">Source code</a></li>
-              <li><a href="https://github.com/sympy/sympy/issues/">Issues tracker</a></li>
+              <li><a href="http://github.com/sympy/sympy">Broncode</a></li>
+              <li><a href="http://code.google.com/p/sympy/issues/list">Issues tracker</a></li>
               <li><a href="http://github.com/sympy/sympy/wiki">Wiki</a></li>
-              <li><a href="http://live.sympy.org/">Try SymPy online now</a></li>
-              <li><a href="http://sympy.blogspot.com/">Official SymPy blog</a></li>
+              <li><a href="http://live.sympy.org/">Probeer Sympy nu online uit</a></li>
+              <li><a href="http://sympy.blogspot.com/">Officiële Sympy blog</a></li>
               <li><a href="http://planet.sympy.org/">Planet SymPy</a></li>
               <li><a href="https://gitter.im/sympy/sympy">Chat (Gitter)</a></li>
-              <li><a href="http://colabti.org/irclogger/irclogger_logs/sympy">IRC channel logs</a></li>
+              <li><a href="http://colabti.org/irclogger/irclogger_logs/sympy">IRC kanaal log</a></li>
             </ul>
           </div>
           <div id="social" class="sidebar_card">
-            <h3>Follow Us<h3>
+            <h3>Volg Ons<h3>
                 <!-- Place this tag where you want the widget to render. -->
                 <div class="g-follow" data-annotation="bubble"
                 data-height="24"
@@ -124,16 +154,27 @@
                 'script', 'twitter-wjs');</script>
           </div>
           
-          
+
+<div id="about" class="sidebar_card">
+    <h3>Git Repository</h3>
+    <p>
+        Hoofd git repository:<br/>
+        <code>git clone git://github.com/sympy/sympy.git</code>
+    </p>
+    <p>
+        Online toegang: <a href="http://github.com/sympy/sympy">github.com/sympy/sympy</a>
+    </p>
+</div>
+
       </aside>
     </section>
     <footer class="row">
       <p>Copyright &copy; 2013 SymPy Development Team. </p>
       <p>
-        This page is open source. Fork <a href="https://github.com/sympy/sympy.github.com">the project on GitHub</a> to edit it.
+        Deze pagina is open source. Fork <a href="https://github.com/sympy/sympy.github.com"> het project op GitHub</a> om het aan te passen.
       </p>
       <p>
-        Languages (beta):
+        Talen (beta):
         <a href="../cs/index.html">[Cs]</a>,
         <a href="../de/index.html">[De]</a>,
         <a href="../en/index.html">[En]</a>,
