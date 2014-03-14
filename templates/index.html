@@ -5,6 +5,19 @@
 
 {% block content %}
 
+
+<h2 class="title">{% trans %}GSoC{% endtrans %}</h2>
+<div class="inner">
+  <p class="first">
+    {% trans %}SymPy has been accepted into Google Summer of Code again. See
+    our <a href="https://github.com/sympy/sympy/wiki/gsoc-2014-ideas">ideas
+    page</a>. If you are a college student and are interested in applying
+    please read
+    our <a href="https://github.com/sympy/sympy/wiki/gsoc-2014-application-template">application
+    template</a>.{% endtrans %}
+    </p>
+  </div>
+
 <h2 class="title">{% trans %}About{% endtrans %}</h2>
 <div class="inner">
   <p class="first">
@@ -183,6 +196,10 @@
 <div class="sidebar_card">
     <h3>{% trans %}News{% endtrans %}</h3>
     <p>
+        <span class="date">{{ datetime(2014, 2, 14) }}</span> {% trans %} SymPy is accepted as a <a href="http://www.google-melange.com/gsoc/org2/google/gsoc2014/sympy">mentoring organization</a> for Google Summer of Code 2014 {% endtrans %} <br/>
+    </p><p>
+        <span class="date">{{ datetime(2014, 2, 22) }}</span> {% trans v='0.7.5' %}Version {{ v }} released{% endtrans %} (<a href="https://github.com/sympy/sympy/wiki/Release-Notes-for-0.7.5">{% trans %}changes{% endtrans %}</a>)<br/>
+    </p><p>
         <span class="date">{{ datetime(2013, 12, 15) }}</span> {% trans v='0.7.4.1' %}Version {{ v }} released{% endtrans %} (<a href="https://github.com/sympy/sympy/wiki/Release-Notes-for-0.7.4.1">{% trans %}changes{% endtrans %}</a>)<br/>
     </p><p>
         <span class="date">{{ datetime(2013, 12, 9) }}</span> {% trans v='0.7.4' %}Version {{ v }} released{% endtrans %} (<a href="https://github.com/sympy/sympy/wiki/Release-Notes-for-0.7.4">{% trans %}changes{% endtrans %}</a>)<br/>

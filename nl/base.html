@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <title>Donate</title>
+    <title>{% block title %}{% endblock %}</title>
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet" type="text/css" />
     <!-- <link rel="stylesheet" href="/static/css/base.css" type="text/css" media="screen" /> -->
     <!-- <link rel="stylesheet" id="current-theme" href="/static/css/style.css" type="text/css" media="screen" /> -->
@@ -23,93 +22,58 @@
         <div id="mobile-menu"><i class="icon-ellipsis-vertical"></i></div>
       </header>
       <nav id="main-navigation" class="row">
-        
-        
+        {% block navigation %}
+        {# "*_active" variables are automatically substituted in the "generate"
+        script, make sure that "*" is the same as the filename (without an
+        extension) #}
         <ul>
-          <li class=""><a href="index.html">Página Principal</a></li>
-          <li class=""><a href="download.html">Download</a></li>
-          <li class=""><a href="http://docs.sympy.org">Documentação <i class="icon-external-link-sign"></i></a></li>
-          <li class=""><a href="support.html">Suporte</a></li>
-          <li class=""><a href="development.html">Desenvolvimento</a></li>
-          <li class="active"><a href="donate.html">Donate</a></li>
-          <li><a href="http://live.sympy.org/">Terminal Online <i class="icon-external-link-sign"></i></a></li>
+          <li class="{{ index_active }}"><a href="index.html">{% trans %}Main Page{% endtrans %}</a></li>
+          <li class="{{ download_active }}"><a href="download.html">{% trans %}Download{% endtrans %}</a></li>
+          <li class="{{ docs_active }}"><a href="http://docs.sympy.org">{% trans %}Documentation{% endtrans %} <i class="icon-external-link-sign"></i></a></li>
+          <li class="{{ support_active }}"><a href="support.html">{% trans %}Support{% endtrans %}</a></li>
+          <li class="{{ development_active }}"><a href="development.html">{% trans %}Development{% endtrans %}</a></li>
+          <li class="{{ donate_active }}"><a href="donate.html">{% trans %}Donate{% endtrans %}</a></li>
+          <li><a href="http://live.sympy.org/">{% trans %}Online Shell{% endtrans %} <i class="icon-external-link-sign"></i></a></li>
         </ul>
-        
+        {% endblock %}
       </nav>
       <section class="row" id="main">
         <article id="content" class="col span_7 clr small_span_4">
-          
-
-<h2 class="title">Support SymPy Development</h2>
-<div class="inner">
-<p class="first">
-SymPy will always be 100% open source software, free for all to use
-and released under the liberal terms of the modified BSD license.
-
-</p>
-<p class="second">
-You can donate any amount here:
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="XKSAZ7DA6E4LL">
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form>
-</p>
-<p>
-
-All donations will be used strictly to fund SymPy development, by supporting
-tasks such as developer sprints, improved documentation, fixing bugs and paying
-for hosting costs for services such as the
-<a href="http://live.sympy.org/">SymPy Online Shell</a>.
-</p>
-<p>
-
-Our donations are managed by the
-<a href="http://numfocus.org/">NumFOCUS</a>
-foundation, which passes 100% of your contribution to the SymPy project.
-NumFOCUS is a 501(c)3 non-profit foundation, so if you are subject to US Tax
-law, your contributions will be tax-deductible.
-
-</p>
-</div>
-
-
+          {% block content %}{% endblock %}
         </article>
         <div id="spacer" class="col span_1 clr small_span_0">&nbsp;</div>
         <aside id="sidebar" class="col span_4 clr small_span_2">
           <div id="search-gamma" class="sidebar_card">
-            <h3> Compute with Gamma </h3>
+            <h3>{% trans %} Compute with Gamma {% endtrans %}</h3>
             <form method="get" action="http://www.sympygamma.com/input/" target="_blank">
               <input type="text" name="i" />
-              <button>Compute</button>
+              <button>{% trans %}Compute{% endtrans %}</button>
             </form>
           </div>
           <div id="about" class="sidebar_card">
-            <h3>Faça já o Download</h3>
+            <h3>{% trans %}Download Now{% endtrans %}</h3>
             <p>
-              <a href="https://github.com/sympy/sympy/releases">Latest Version</a><br/>
-              <a href="http://github.com/sympy/sympy">Development Version</a>
+              <a href="https://github.com/sympy/sympy/releases">{% trans %}Latest Version{% endtrans %}</a><br/>
+              <a href="http://github.com/sympy/sympy">{% trans %}Development Version{% endtrans %}</a>
             </p>
           </div>
           <div id="quick_links" class="sidebar_card">
-            <h3>Links rápidos</h3>
+            <h3>{% trans %}Quick Links{% endtrans %}</h3>
             <ul>
-              <li><a href="http://docs.sympy.org/">Documentação</a></li>
-              <li><a href="https://github.com/sympy/sympy/releases">Downloads (código em tarballs)</a></li>
-              <li><a href="http://groups.google.com/group/sympy">Lista de emails</a></li>
-              <li><a href="http://github.com/sympy/sympy">Código fonte</a></li>
-              <li><a href="https://github.com/sympy/sympy/issues/">Lista de bugs</a></li>
-              <li><a href="http://github.com/sympy/sympy/wiki">Wiki</a></li>
-              <li><a href="http://live.sympy.org/">Experimente SymPy online agora</a></li>
-              <li><a href="http://sympy.blogspot.com/">Blog oficial do SymPy</a></li>
-              <li><a href="http://planet.sympy.org/">Planeta SymPy</a></li>
-              <li><a href="https://gitter.im/sympy/sympy">Chat (Gitter)</a></li>
-              <li><a href="http://colabti.org/irclogger/irclogger_logs/sympy">IRC channel logs</a></li>
+              <li><a href="http://docs.sympy.org/">{% trans %}Documentation{% endtrans %}</a></li>
+              <li><a href="https://github.com/sympy/sympy/releases">{% trans %}Downloads (source tarballs){% endtrans %}</a></li>
+              <li><a href="http://groups.google.com/group/sympy">{% trans %}Mailing list{% endtrans %}</a></li>
+              <li><a href="http://github.com/sympy/sympy">{% trans %}Source code{% endtrans %}</a></li>
+              <li><a href="http://code.google.com/p/sympy/issues/list">{% trans %}Issues tracker{% endtrans %}</a></li>
+              <li><a href="http://github.com/sympy/sympy/wiki">{% trans %}Wiki{% endtrans %}</a></li>
+              <li><a href="http://live.sympy.org/">{% trans %}Try SymPy online now{% endtrans %}</a></li>
+              <li><a href="http://sympy.blogspot.com/">{% trans %}Official SymPy blog{% endtrans %}</a></li>
+              <li><a href="http://planet.sympy.org/">{% trans %}Planet SymPy{% endtrans %}</a></li>
+              <li><a href="http://colabti.org/irclogger/irclogger_logs/sympy">{% trans %}IRC channel logs{% endtrans %}</a></li>
             </ul>
           </div>
           <div id="social" class="sidebar_card">
-            <h3>Follow Us<h3>
+            <h3>{% trans %}Follow Us{% endtrans %}<h3>
                 <!-- Place this tag where you want the widget to render. -->
                 <div class="g-follow" data-annotation="bubble"
                 data-height="24"
@@ -133,17 +97,17 @@ law, your contributions will be tax-deductible.
                 js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,
                 'script', 'twitter-wjs');</script>
           </div>
-          
-          
+          {% block sidebar %}
+          {% endblock %}
       </aside>
     </section>
     <footer class="row">
       <p>Copyright &copy; 2013 SymPy Development Team. </p>
       <p>
-        Esta página é open source. Fork <a href="https://github.com/sympy/sympy.github.com">o projeto no GitHub</a> para editá-la.
+        {% trans url='https://github.com/sympy/sympy.github.com' %}This page is open source. Fork <a href="{{ url }}">the project on GitHub</a> to edit it.{% endtrans %}
       </p>
       <p>
-        Idiomas (beta):
+        {% trans %}Languages{% endtrans %} (beta):
         <a href="../cs/index.html">[Cs]</a>,
         <a href="../de/index.html">[De]</a>,
         <a href="../en/index.html">[En]</a>,
