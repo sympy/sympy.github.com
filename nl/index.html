@@ -27,6 +27,7 @@
         
         <ul>
           <li class="active"><a href="index.html">Hoofdpagina</a></li>
+          <li class=""><a href="features.html">Features</a></li>
           <li class=""><a href="download.html">Download</a></li>
           <li class=""><a href="http://docs.sympy.org">Documentatie <i class="icon-external-link-sign"></i></a></li>
           <li class=""><a href="support.html">Ondersteuning</a></li>
@@ -37,9 +38,27 @@
         
       </nav>
       <section class="row" id="main">
-        <article id="content" class="col span_7 clr small_span_4">
+        <div class="col span_7 clr small_span_4">
           
 
+<section id="banner">
+  <h2 class="title">Over SymPy</h2>
+  <div class="inner">
+    <p class="first">
+      SymPy is a Python library for symbolic mathematics. It aims to
+      become a full-featured computer algebra system (CAS) while keeping the code as
+      simple as possible in order to be comprehensible and easily extensible. SymPy
+      is written entirely in Python and does not require any external libraries.
+    </p>
+
+    <section id="get-started">
+    <p><a href="http://docs.sympy.org/latest/tutorial/index.html">Get started with the tutorial</a> <a href="https://github.com/sympy/sympy/releases">Download Now</a></p>
+  </div>
+</section>
+
+
+          <article id="content">
+            
 
 <h2 class="title">GSoC</h2>
 <div class="inner">
@@ -53,157 +72,21 @@
     </p>
   </div>
 
-<h2 class="title">Over SymPy</h2>
+<h2 class="title">Why SymPy</h2>
 <div class="inner">
-  <p class="first">
-    SymPy is een Python bibliotheek voor symbolische wiskunde. Het beoogt een volledig computer algebra systeem (CAS) te worden, waarbij de code zo eenvoudig mogelijk wordt gehouden om de code begrijpbaar en uitbreidbaar te houden.
-  </p>
-</div>
-
-<h2 class="title">Features</h2>
-<div class="inner">
-  <h3>Core capabilities</h3>
-  <ul>
-    <li><strong>Rekenen:</strong> <a href="http://www.sympygamma.com/input/?i=23+pi+%2B+20%21+%2F+%283**5%29+-+2">Ondersteuning voor operatoren zoals<code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>**</code> (machtsverheffen)</a></li>
-    <li> <strong>Vereenvoudigingen</strong>
-    <a href="http://www.sympygamma.com/input/?i=simplify%28cos%28x%29cos%28y%29+-+sin%28x%29sin%28y%29%29">Goniometrie</a>, <a href="http://www.sympygamma.com/input/?i=simplify%28%282x%2B3%29%2810x-5%29%2F%282x-1%29%29">Polynomen</li>
-    <li><strong>Uitbreidingen:</strong>
-        <a href="http://www.sympygamma.com/input/?i=expand%28%285x+%2B+3%29*%281-x%29*%281%2B6x%29%29">van polynomen</a></li>
-    <li><strong>Functies:</strong>
-        
-        <a href="http://www.sympygamma.com/input/?i=%281+-+sin%5E2+x%29%2F%281+%2B+tan%5E2+x%29">goniometrische functies</a>,
-        <a href="http://www.sympygamma.com/input/?i=sinh%5E2+x+%2B+cosh%5E2+x">hyperbolische functies</a>,
-        <a href="http://www.sympygamma.com/input/?i=exp%28x%29+%2F+%281+%2B+exp%282x%29%29">exponentiële functies</a>,
-        <a href="http://www.sympygamma.com/input/?i=root%28x%2C+7%29+**+2">nulpunten</a>,
-        <a href="http://www.sympygamma.com/input/?i=log%28-25%29">logaritmische functies</a>,
-        <a href="http://www.sympygamma.com/input/?i=Abs%281+%2B+3I%29">absolute waarden</a>,
-        <a href="http://www.sympygamma.com/input/?i=Ylm%281%2C+-1%2C+theta%2C+phi%29">sferische harmoniek</a>,
-        <a href="http://www.sympygamma.com/input/?i=gamma%2841%2F2%29+%2B+16%21%21">faculteiten en gamma functies</a>,
-        <a href="http://www.sympygamma.com/input/?i=zeta%284%29">zeta functies</a>,
-        <a href="http://www.sympygamma.com/input/?i=x**7+-+x**5+%2B+4x**3+%2B+1">polynomen</a>,
-        <a href="http://live.sympy.org/?evaluate=from%20sympy.abc%20import%20n%2Ca%2Cb%2Cx%0A%23--%0Ajacobi(0%2C%20a%2C%20b%2C%20x)%0A%23--%0Ajacobi(1%2C%20a%2C%20b%2C%20x)%0A%23--%0Ajacobi(2%2C%20a%2C%20b%2C%20x)%0A%23--%0Ajacobi(n%2C%20a%2C%20a%2C%20x)%0A%23--%0Ajacobi(n%2C%20a%2C%20b%2C%200)%0A%23--%0Aconjugate(jacobi(n%2C%20a%2C%20b%2C%20x))%0A%23--%0Aerf(I*oo)%0A%23--%0ADiracDelta(x**2%20%2B%20x%20-%202).simplify(x)%0A%23--%0A">speciale functies</a>, ...
-    </li>
-    <li><strong>Substituties:</strong> <a href="http://www.sympygamma.com/input/?i=%28exp%28x%29+%2F+%281+%2B+exp%282x%29%29%29.subs%28exp%28x%29%2C+u%29">voorbeeld</a></li>
-    <li><strong>Getallen:</strong>
-        
-        <a href="http://www.sympygamma.com/input/?i=100%21">gehele getallen met arbitraire precisie</a>,
-        <a href="http://www.sympygamma.com/input/?i=0.%5B13579%5D">rationale getallen</a>,
-        <a href="http://www.sympygamma.com/input/?i=exp%2820%21%29">en floats</a>
-        
-    </li>
-    <li><strong>Niet-commutatieve symbolen</strong></li>
-    <li><strong>Patronen zoeken</strong></li>
-  </ul>
-
-  <h3>Polynomen</h3>
-  <ul>
-    <li><strong>Rekenen:</strong>  delen, grootste gemene deler, ...</li>
-    <li><strong>Factoren ontbinden</strong></li>
-    <li><strong>Kwadraatvrije decompositie</strong></li>
-    <li><strong>Gröbner bases</strong></li>
-    <li><strong>Breuksplitsingen</strong></li>
-    <li><strong>Resultanten</strong></li>
-  </ul>
-
-  <h3>Analyse</h3>
-  <ul>
-    <li>
-      <strong>Limieten</strong>
-      <a href="http://www.sympygamma.com/input/?i=limit%28x*log%28x%29%2C+x%2C+0%29">limit(x*log(x), x, 0) -&gt; 0</a>
-    </li>
-    <li>
-      <strong>Afgeleiden nemen</strong>
-    </li>
-    <li>
-      <strong>Integratie:</strong>
-      Maakt gebruikt van Risch-Norman heuristiek
-    </li>
-    <li><strong>Taylor (Laurent) reeksen</strong></li>
-  </ul>
-
-  <h3>Vergelijkingen oplossen</h3>
-  <ul>
-    <li><strong>Polynoom vergelijkingen</strong></li>
-    <li><strong>Algebraïsche vergelijkingen</strong></li>
-    <li><strong>Differentiaalvergelijkingen</strong></li>
-    <li><strong>Differentievergelijkingen</strong></li>
-    <li><strong>Stelsels van vergelijkingen</strong></li>
-  </ul>
-
-  <h3>Combinatoriek</h3>
-  <ul>
-    <li><strong>Permutaties</strong></li>
-    <li><strong>Combinaties</strong></li>
-    <li><strong>Partities</strong></li>
-    <li><strong>Deelverzamelingen</strong></li>
-    <li><strong>Permutatiegroepen</strong>: Polyhedral, Rubik, Symmetric, ...</li>
-    <li><strong>Prufer and Gray Codes</strong></li>
-  </ul>
-
-  <h3>Discrete wiskunde</h3>
-  <ul>
-    <li><strong>Binomiaalcoëfficiënten</strong></li>
-    <li><strong>Sommaties</strong></li>
-    <li><strong>Producten</strong></li>
-    <li><strong>Getaltheorie:</strong> genereren van priemgetallen, toetsen van priemgetallen, ontbinden in priemfactoren, ...</li>
-    <li><strong>Logische uitdrukkingen</strong></li>
-  </ul>
-
-  <h3>Matrices</h3>
-  <ul>
-    <li><strong>Rekenoperaties</strong></li>
-    <li><strong>Eigenwaarden/eigenvectoren</strong></li>
-    <li><strong>Determinanten</strong></li>
-    <li><strong>Inversie</strong></li>
-    <li><strong>Oplossen</strong></li>
-    <li><strong>Abstracte uitdrukkingen</strong></li>
-  </ul>
-
-  <h3>Meetkundige Algebra</h3>
-
-  <h3>Meetkunde</h3>
-  <ul>
-    <li><strong>punten, lijnen, lijnstukken, segmenten, ellipsen, cirkels,
-        veelhoeken, ...</strong></li>
-    <li><strong>Doorsnede</strong></li>
-    <li><strong>Raking</strong></li>
-    <li><strong>Gelijkvormigheid</strong></li>
-  </ul>
-
-  <h3>Plotten</h3>
-  <ul>
-    <li><strong>Coordinate modes</strong></li>
-    <li><strong>Het plotten van meetkundige entiteiten</strong></li>
-    <li><strong>2D en 3D</strong></li>
-    <li><strong>Interactieve interface</strong></li>
-    <li><strong>Kleuren</strong></li>
-  </ul>
-
-  <h3>Natuurkunde</h3>
-  <ul>
-    <li><strong>Eenheden</strong></li>
-    <li><strong>Mechanica</strong></li>
-    <li><strong>Quantum</strong></li>
-    <li><strong>Gaussische Optica</strong></li>
-    <li><strong>Pauli Algebra</strong></li>
-  </ul>
-
-  <h3>Statistiek</h3>
-  <ul>
-    <li><strong>Normale distributies</strong></li>
-    <li><strong>Uniforme distributies</strong></li>
-    <li><strong>Waarschijnlijkheid</strong></li>
-  </ul>
-
-  <h3>Printen</h3>
-  <ul>
-    <li><strong>Netjes printen:</strong> ASCII/Unicode pretty printing, LaTeX
-    <li><strong>Genereren van code:</strong> C, Fortran, Python</li>
-  </ul>
+    <p>SymPy is&hellip;</p>
+    <ul>
+        <li><strong>Free:</strong>  Licensed under BSD, SymPy is free both as in speech and as in beer. </li>
+        <li><strong>Python-based:</strong>  SymPy is written entirely in Python and uses Python for its language. </li>
+        <li><strong>Lightweight:</strong>  SymPy does not require any external libraries, making it easy to use. </li>
+        <li><strong>A library:</strong>  Beyond use as an interactive tool, SymPy can be embedded in other applications and extended with custom functions. </li>
+    </ul>
+    <p><a href="features.html">See SymPy's features</a></p>
 </div>
 
 
-        </article>
+          </article>
+        </div>
         <div id="spacer" class="col span_1 clr small_span_0">&nbsp;</div>
         <aside id="sidebar" class="col span_4 clr small_span_2">
           <div id="search-gamma" class="sidebar_card">

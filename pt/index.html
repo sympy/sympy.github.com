@@ -27,6 +27,7 @@
         
         <ul>
           <li class="active"><a href="index.html">Página Principal</a></li>
+          <li class=""><a href="features.html">Recursos</a></li>
           <li class=""><a href="download.html">Download</a></li>
           <li class=""><a href="http://docs.sympy.org">Documentação <i class="icon-external-link-sign"></i></a></li>
           <li class=""><a href="support.html">Suporte</a></li>
@@ -37,9 +38,27 @@
         
       </nav>
       <section class="row" id="main">
-        <article id="content" class="col span_7 clr small_span_4">
+        <div class="col span_7 clr small_span_4">
           
 
+<section id="banner">
+  <h2 class="title">Sobre</h2>
+  <div class="inner">
+    <p class="first">
+      SymPy is a Python library for symbolic mathematics. It aims to
+      become a full-featured computer algebra system (CAS) while keeping the code as
+      simple as possible in order to be comprehensible and easily extensible. SymPy
+      is written entirely in Python and does not require any external libraries.
+    </p>
+
+    <section id="get-started">
+    <p><a href="http://docs.sympy.org/latest/tutorial/index.html">Get started with the tutorial</a> <a href="https://github.com/sympy/sympy/releases">Download Now</a></p>
+  </div>
+</section>
+
+
+          <article id="content">
+            
 
 <h2 class="title">GSoC</h2>
 <div class="inner">
@@ -53,161 +72,21 @@
     </p>
   </div>
 
-<h2 class="title">Sobre</h2>
+<h2 class="title">Why SymPy</h2>
 <div class="inner">
-  <p class="first">
-    SymPy is a Python library for symbolic mathematics. It aims to
-    become a full-featured computer algebra system (CAS) while keeping the code as
-    simple as possible in order to be comprehensible and easily extensible. SymPy
-    is written entirely in Python and does not require any external libraries.
-  </p>
-</div>
-
-<h2 class="title">Recursos</h2>
-<div class="inner">
-  <h3>Capacidades do Core</h3>
-  <ul>
-    <li><strong>Aritmética básica</strong> <a href="http://www.sympygamma.com/input/?i=23+pi+%2B+20%21+%2F+%283**5%29+-+2">Support for operators such
-      as <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>**</code> (power)</a></li>
-    <li> <strong>Simplificação</strong>
-    <a href="http://www.sympygamma.com/input/?i=simplify%28cos%28x%29cos%28y%29+-+sin%28x%29sin%28y%29%29">Trigonometry</a>, <a href="http://www.sympygamma.com/input/?i=simplify%28%282x%2B3%29%2810x-5%29%2F%282x-1%29%29">Polynomials</a></li>
-    <li><strong>Expansion:</strong>
-        <a href="http://www.sympygamma.com/input/?i=expand%28%285x+%2B+3%29*%281-x%29*%281%2B6x%29%29"> of a polynomial </a></li>
-    <li><strong>Funções:</strong>
-        
-        <a href="http://www.sympygamma.com/input/?i=%281+-+sin%5E2+x%29%2F%281+%2B+tan%5E2+x%29">trigonometric</a>,
-        <a href="http://www.sympygamma.com/input/?i=sinh%5E2+x+%2B+cosh%5E2+x">hyperbolic</a>,
-        <a href="http://www.sympygamma.com/input/?i=exp%28x%29+%2F+%281+%2B+exp%282x%29%29">exponential</a>,
-        <a href="http://www.sympygamma.com/input/?i=root%28x%2C+7%29+**+2">roots</a>,
-        <a href="http://www.sympygamma.com/input/?i=log%28-25%29">logarithms</a>,
-        <a href="http://www.sympygamma.com/input/?i=Abs%281+%2B+3I%29">absolute value</a>,
-        <a href="http://www.sympygamma.com/input/?i=Ylm%281%2C+-1%2C+theta%2C+phi%29">spherical harmonics</a>,
-        <a href="http://www.sympygamma.com/input/?i=gamma%2841%2F2%29+%2B+16%21%21">factorials and gamma functions</a>,
-        <a href="http://www.sympygamma.com/input/?i=zeta%284%29">zeta functions</a>,
-        <a href="http://www.sympygamma.com/input/?i=x**7+-+x**5+%2B+4x**3+%2B+1">polynomials</a>,
-        <a href="http://live.sympy.org/?evaluate=from%20sympy.abc%20import%20n%2Ca%2Cb%2Cx%0A%23--%0Ajacobi(0%2C%20a%2C%20b%2C%20x)%0A%23--%0Ajacobi(1%2C%20a%2C%20b%2C%20x)%0A%23--%0Ajacobi(2%2C%20a%2C%20b%2C%20x)%0A%23--%0Ajacobi(n%2C%20a%2C%20a%2C%20x)%0A%23--%0Ajacobi(n%2C%20a%2C%20b%2C%200)%0A%23--%0Aconjugate(jacobi(n%2C%20a%2C%20b%2C%20x))%0A%23--%0Aerf(I*oo)%0A%23--%0ADiracDelta(x**2%20%2B%20x%20-%202).simplify(x)%0A%23--%0A">special functions</a>, ...
-    </li>
-    <li><strong>Substitution:</strong> <a href="http://www.sympygamma.com/input/?i=%28exp%28x%29+%2F+%281+%2B+exp%282x%29%29%29.subs%28exp%28x%29%2C+u%29">example</a></li>
-    <li><strong>Números:</strong>
-        
-        <a href="http://www.sympygamma.com/input/?i=100%21">arbitrary precision integers</a>,
-        <a href="http://www.sympygamma.com/input/?i=0.%5B13579%5D">rationals</a>,
-        <a href="http://www.sympygamma.com/input/?i=exp%2820%21%29">and floats</a>
-        
-    </li>
-    <li><strong>Símbolos não comutativos</strong></li>
-    <li><strong>Detecção de padrão</strong></li>
-  </ul>
-
-  <h3>Polinômios</h3>
-  <ul>
-    <li><strong>Aritmética básica</strong> divisão, mdc</li>
-    <li><strong>Fatoração</strong></li>
-    <li><strong>Decomposição de raiz</strong></li>
-    <li><strong>Bases de Gröbner</strong></li>
-    <li><strong>Decomposição em frações parciais</strong></li>
-    <li><strong>Resultantes</strong></li>
-  </ul>
-
-  <h3>Cálculo</h3>
-  <ul>
-    <li>
-      <strong>Limites:</strong>
-      <a href="http://www.sympygamma.com/input/?i=limit%28x*log%28x%29%2C+x%2C+0%29">limit(x*log(x), x, 0) -&gt; 0</a>
-    </li>
-    <li>
-      <strong>Diferenciação</strong>
-    </li>
-    <li>
-      <strong>Integração:</strong>
-      Usa heurística de Risch-Norman estendida
-    </li>
-    <li><strong>Séries de Taylor (Laurent)</strong></li>
-  </ul>
-
-  <h3>Resolução de equações</h3>
-  <ul>
-    <li><strong>Equações polinomiais</strong></li>
-    <li><strong>Equações algébricas</strong></li>
-    <li><strong>Equações diferenciais</strong></li>
-    <li><strong>Relações de recorrência</strong></li>
-    <li><strong>Sistemas de equações</strong></li>
-  </ul>
-
-  <h3>Combinatorics</h3>
-  <ul>
-    <li><strong>Permutations</strong></li>
-    <li><strong>Combinations</strong></li>
-    <li><strong>Partitions</strong></li>
-    <li><strong>Subsets</strong></li>
-    <li><strong>Permutation Groups</strong>: Polyhedral, Rubik, Symmetric, ...</li>
-    <li><strong>Prufer and Gray Codes</strong></li>
-  </ul>
-
-  <h3>Matemática discreta</h3>
-  <ul>
-    <li><strong>Coeficientes binomiais</strong></li>
-    <li><strong>Somatórios</strong></li>
-    <li><strong>Produtos</strong></li>
-    <li><strong>Teoria dos números:</strong> geração de números primos, teste de número primo, fatoração de primos, ...</li>
-    <li><strong>Expressões lógicas</strong></li>
-  </ul>
-
-  <h3>Matrizes</h3>
-  <ul>
-    <li><strong>Aritmética básica</strong></li>
-    <li><strong>Autovalores/autovetores</strong></li>
-    <li><strong>Determinantes</strong></li>
-    <li><strong>Inversão</strong></li>
-    <li><strong>Resolução</strong></li>
-    <li><strong>Abstract expressions</strong></li>
-  </ul>
-
-  <h3>Geometria analítica</h3>
-
-  <h3>Geometria</h3>
-  <ul>
-    <li><strong>points, lines, rays, segments, ellipses, circles,
-        polygons, ...</strong></li>
-    <li><strong>Interseção</strong></li>
-    <li><strong>Tangência</strong></li>
-    <li><strong>Similaridade</strong></li>
-  </ul>
-
-  <h3>Desenhar gráficos</h3>
-  <ul>
-    <li><strong>Modos de coordenadas</strong></li>
-    <li><strong>Desenhando entidades geométricas</strong></li>
-    <li><strong>2D e 3D</strong></li>
-    <li><strong>Interface interativa</strong></li>
-    <li><strong>Cores</strong></li>
-  </ul>
-
-  <h3>Física</h3>
-  <ul>
-    <li><strong>Unidades</strong></li>
-    <li><strong>Mecânica</strong></li>
-    <li><strong>Quântica</strong></li>
-    <li><strong>Óptica Gaussiana</strong></li>
-    <li><strong>Álgebra de Pauli</strong></li>
-  </ul>
-
-  <h3>Estatística</h3>
-  <ul>
-    <li><strong>Distribuições normais</strong></li>
-    <li><strong>Distribuições uniformes</strong></li>
-    <li><strong>Probabilidade</strong></li>
-  </ul>
-
-  <h3>Escrita</h3>
-  <ul>
-    <li><strong>Escrita enfeitada</strong> Escrita em ASCII/Unicode, LaTeX
-    <li><strong>Geração de código:</strong> C, Fortran, Python</li>
-  </ul>
+    <p>SymPy is&hellip;</p>
+    <ul>
+        <li><strong>Free:</strong>  Licensed under BSD, SymPy is free both as in speech and as in beer. </li>
+        <li><strong>Python-based:</strong>  SymPy is written entirely in Python and uses Python for its language. </li>
+        <li><strong>Lightweight:</strong>  SymPy does not require any external libraries, making it easy to use. </li>
+        <li><strong>A library:</strong>  Beyond use as an interactive tool, SymPy can be embedded in other applications and extended with custom functions. </li>
+    </ul>
+    <p><a href="features.html">See SymPy's features</a></p>
 </div>
 
 
-        </article>
+          </article>
+        </div>
         <div id="spacer" class="col span_1 clr small_span_0">&nbsp;</div>
         <aside id="sidebar" class="col span_4 clr small_span_2">
           <div id="search-gamma" class="sidebar_card">
