@@ -28,6 +28,7 @@
         extension) #}
         <ul>
           <li class="{{ index_active }}"><a href="index.html">{% trans %}Main Page{% endtrans %}</a></li>
+          <li class="{{ features_active }}"><a href="features.html">{% trans %}Features{% endtrans %}</a></li>
           <li class="{{ download_active }}"><a href="download.html">{% trans %}Download{% endtrans %}</a></li>
           <li class="{{ docs_active }}"><a href="http://docs.sympy.org">{% trans %}Documentation{% endtrans %} <i class="icon-external-link-sign"></i></a></li>
           <li class="{{ support_active }}"><a href="support.html">{% trans %}Support{% endtrans %}</a></li>
@@ -38,9 +39,12 @@
         {% endblock %}
       </nav>
       <section class="row" id="main">
-        <article id="content" class="col span_7 clr small_span_4">
-          {% block content %}{% endblock %}
-        </article>
+        <div class="col span_7 clr small_span_4">
+          {% block main %}{% endblock %}
+          <article id="content">
+            {% block content %}{% endblock %}
+          </article>
+        </div>
         <div id="spacer" class="col span_1 clr small_span_0">&nbsp;</div>
         <aside id="sidebar" class="col span_4 clr small_span_2">
           <div id="search-gamma" class="sidebar_card">

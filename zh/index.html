@@ -27,6 +27,7 @@
         
         <ul>
           <li class="active"><a href="index.html">主页</a></li>
+          <li class=""><a href="features.html">特性</a></li>
           <li class=""><a href="download.html">下载</a></li>
           <li class=""><a href="http://docs.sympy.org">文档 <i class="icon-external-link-sign"></i></a></li>
           <li class=""><a href="support.html">支持</a></li>
@@ -37,9 +38,27 @@
         
       </nav>
       <section class="row" id="main">
-        <article id="content" class="col span_7 clr small_span_4">
+        <div class="col span_7 clr small_span_4">
           
 
+<section id="banner">
+  <h2 class="title">关于</h2>
+  <div class="inner">
+    <p class="first">
+      SymPy is a Python library for symbolic mathematics. It aims to
+      become a full-featured computer algebra system (CAS) while keeping the code as
+      simple as possible in order to be comprehensible and easily extensible. SymPy
+      is written entirely in Python and does not require any external libraries.
+    </p>
+
+    <section id="get-started">
+    <p><a href="http://docs.sympy.org/latest/tutorial/index.html">Get started with the tutorial</a> <a href="https://github.com/sympy/sympy/releases">Download Now</a></p>
+  </div>
+</section>
+
+
+          <article id="content">
+            
 
 <h2 class="title">GSoC</h2>
 <div class="inner">
@@ -53,156 +72,21 @@
     </p>
   </div>
 
-<h2 class="title">关于</h2>
+<h2 class="title">Why SymPy</h2>
 <div class="inner">
-  <p class="first">
-    SymPy是一个符号数学Python库。它的目标是成为一个全功能的计算机代数系统，同时保持代码的精简而易于理解和课扩展。SymPy完全由Python写成，不需要任何外部库。
-  </p>
-</div>
-
-<h2 class="title">特性</h2>
-<div class="inner">
-  <h3>核心能力</h3>
-  <ul>
-    <li><strong>基本算术：</strong> <a href="http://www.sympygamma.com/input/?i=23+pi+%2B+20%21+%2F+%283**5%29+-+2">支持的运算符有像<code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>**</code> (幂)</a></li>
-    <li> <strong>化简</strong>
-    <a href="http://www.sympygamma.com/input/?i=simplify%28cos%28x%29cos%28y%29+-+sin%28x%29sin%28y%29%29">Trigonometry</a>, <a href="http://www.sympygamma.com/input/?i=simplify%28%282x%2B3%29%2810x-5%29%2F%282x-1%29%29">Polynomials</a></li>
-    <li><strong>Expansion:</strong>
-        <a href="http://www.sympygamma.com/input/?i=expand%28%285x+%2B+3%29*%281-x%29*%281%2B6x%29%29"> of a polynomial </a></li>
-    <li><strong>函数：</strong>
-        
-        <a href="http://www.sympygamma.com/input/?i=%281+-+sin%5E2+x%29%2F%281+%2B+tan%5E2+x%29">trigonometric</a>,
-        <a href="http://www.sympygamma.com/input/?i=sinh%5E2+x+%2B+cosh%5E2+x">hyperbolic</a>,
-        <a href="http://www.sympygamma.com/input/?i=exp%28x%29+%2F+%281+%2B+exp%282x%29%29">exponential</a>,
-        <a href="http://www.sympygamma.com/input/?i=root%28x%2C+7%29+**+2">roots</a>,
-        <a href="http://www.sympygamma.com/input/?i=log%28-25%29">logarithms</a>,
-        <a href="http://www.sympygamma.com/input/?i=Abs%281+%2B+3I%29">absolute value</a>,
-        <a href="http://www.sympygamma.com/input/?i=Ylm%281%2C+-1%2C+theta%2C+phi%29">spherical harmonics</a>,
-        <a href="http://www.sympygamma.com/input/?i=gamma%2841%2F2%29+%2B+16%21%21">factorials and gamma functions</a>,
-        <a href="http://www.sympygamma.com/input/?i=zeta%284%29">zeta functions</a>,
-        <a href="http://www.sympygamma.com/input/?i=x**7+-+x**5+%2B+4x**3+%2B+1">polynomials</a>,
-        <a href="http://live.sympy.org/?evaluate=from%20sympy.abc%20import%20n%2Ca%2Cb%2Cx%0A%23--%0Ajacobi(0%2C%20a%2C%20b%2C%20x)%0A%23--%0Ajacobi(1%2C%20a%2C%20b%2C%20x)%0A%23--%0Ajacobi(2%2C%20a%2C%20b%2C%20x)%0A%23--%0Ajacobi(n%2C%20a%2C%20a%2C%20x)%0A%23--%0Ajacobi(n%2C%20a%2C%20b%2C%200)%0A%23--%0Aconjugate(jacobi(n%2C%20a%2C%20b%2C%20x))%0A%23--%0Aerf(I*oo)%0A%23--%0ADiracDelta(x**2%20%2B%20x%20-%202).simplify(x)%0A%23--%0A">special functions</a>, ...
-    </li>
-    <li><strong>Substitution:</strong> <a href="http://www.sympygamma.com/input/?i=%28exp%28x%29+%2F+%281+%2B+exp%282x%29%29%29.subs%28exp%28x%29%2C+u%29">example</a></li>
-    <li><strong>数：</strong>
-        
-        <a href="http://www.sympygamma.com/input/?i=100%21">arbitrary precision integers</a>,
-        <a href="http://www.sympygamma.com/input/?i=0.%5B13579%5D">rationals</a>,
-        <a href="http://www.sympygamma.com/input/?i=exp%2820%21%29">and floats</a>
-        
-    </li>
-    <li><strong>非交换符号</strong></li>
-    <li><strong>模式匹配</strong></li>
-  </ul>
-
-  <h3>多项式</h3>
-  <ul>
-    <li><strong>基本算术：</strong> 除法，最大公约数……</li>
-    <li><strong>因式分解</strong></li>
-    <li><strong>无平方分解</strong></li>
-    <li><strong>Gröbner 基</strong></li>
-    <li><strong>部分分数分解</strong></li>
-    <li><strong>合成</strong></li>
-  </ul>
-
-  <h3>演算</h3>
-  <ul>
-    <li>
-      <strong>极限：</strong>
-      <a href="http://www.sympygamma.com/input/?i=limit%28x*log%28x%29%2C+x%2C+0%29">limit(x*log(x), x, 0) -&gt; 0</a>
-    </li>
-    <li>
-      <strong>微分</strong>
-    </li>
-    <li>
-      <strong>积分：</strong>
-      它使用了扩展Risch-Norman启发算法
-    </li>
-    <li><strong>泰勒(洛朗)级数</strong></li>
-  </ul>
-
-  <h3>解方程</h3>
-  <ul>
-    <li><strong>多项式方程</strong></li>
-    <li><strong>代数方程</strong></li>
-    <li><strong>微分方程</strong></li>
-    <li><strong>差分方程</strong></li>
-    <li><strong>方程系统</strong></li>
-  </ul>
-
-  <h3>Combinatorics</h3>
-  <ul>
-    <li><strong>Permutations</strong></li>
-    <li><strong>Combinations</strong></li>
-    <li><strong>Partitions</strong></li>
-    <li><strong>Subsets</strong></li>
-    <li><strong>Permutation Groups</strong>: Polyhedral, Rubik, Symmetric, ...</li>
-    <li><strong>Prufer and Gray Codes</strong></li>
-  </ul>
-
-  <h3>离散数学</h3>
-  <ul>
-    <li><strong>二项式系数</strong></li>
-    <li><strong>总和</strong></li>
-    <li><strong>积</strong></li>
-    <li><strong>数论：</strong> 产生素数，素性测试，整数分解</li>
-    <li><strong>逻辑表达式</strong></li>
-  </ul>
-
-  <h3>矩阵</h3>
-  <ul>
-    <li><strong>基本算术</strong></li>
-    <li><strong>本征值/本征向量</strong></li>
-    <li><strong>行列式</strong></li>
-    <li><strong>转置</strong></li>
-    <li><strong>求解</strong></li>
-    <li><strong>Abstract expressions</strong></li>
-  </ul>
-
-  <h3>几何代数</h3>
-
-  <h3>几何学</h3>
-  <ul>
-    <li><strong>点，线，射线，线段，椭圆，圆，多边形……</strong></li>
-    <li><strong>相交</strong></li>
-    <li><strong>相切</strong></li>
-    <li><strong>相似</strong></li>
-  </ul>
-
-  <h3>绘图</h3>
-  <ul>
-    <li><strong>坐标模式</strong></li>
-    <li><strong>绘制几何实体</strong></li>
-    <li><strong>二维和三维</strong></li>
-    <li><strong>交互界面</strong></li>
-    <li><strong>彩色</strong></li>
-  </ul>
-
-  <h3>物理学</h3>
-  <ul>
-    <li><strong>单位</strong></li>
-    <li><strong>力学</strong></li>
-    <li><strong>量子</strong></li>
-    <li><strong>高斯光学</strong></li>
-    <li><strong>泡利代数</strong></li>
-  </ul>
-
-  <h3>统计</h3>
-  <ul>
-    <li><strong>正态分布</strong></li>
-    <li><strong>均匀分布</strong></li>
-    <li><strong>概率</strong></li>
-  </ul>
-
-  <h3>打印</h3>
-  <ul>
-    <li><strong>漂亮的打印</strong> 漂亮的ASCII/Unicode打印，LaTeX
-    <li><strong>代码生成</strong> C, Fortran, Python</li>
-  </ul>
+    <p>SymPy is&hellip;</p>
+    <ul>
+        <li><strong>Free:</strong>  Licensed under BSD, SymPy is free both as in speech and as in beer. </li>
+        <li><strong>Python-based:</strong>  SymPy is written entirely in Python and uses Python for its language. </li>
+        <li><strong>Lightweight:</strong>  SymPy does not require any external libraries, making it easy to use. </li>
+        <li><strong>A library:</strong>  Beyond use as an interactive tool, SymPy can be embedded in other applications and extended with custom functions. </li>
+    </ul>
+    <p><a href="features.html">See SymPy's features</a></p>
 </div>
 
 
-        </article>
+          </article>
+        </div>
         <div id="spacer" class="col span_1 clr small_span_0">&nbsp;</div>
         <aside id="sidebar" class="col span_4 clr small_span_2">
           <div id="search-gamma" class="sidebar_card">
