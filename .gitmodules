@@ -1,3 +1,3 @@
 [submodule "static"]
 	path = static
-	url = git://github.com/sympy/sympy-web-static.git
+	url = https://github.com/sympy/sympy-web-static.git
