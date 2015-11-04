@@ -1,0 +1,1218 @@
+# Translations template for PROJECT.
+# Copyright (C) 2015 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2015.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: sympy.github.com\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2015-10-14 15:17+0100\n"
+"PO-Revision-Date: 2015-11-04 13:59+0100\n"
+"Last-Translator: Juha Remes <jremes@outlook.com>\n"
+"Language-Team: Juha Remes <jremes@outlook.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 1.3\n"
+"X-Generator: Poedit 1.5.4\n"
+"Language: Finnish\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#: templates/base.html:30
+msgid "Main Page"
+msgstr "Pääsivu"
+
+#: templates/base.html:31 templates/features.html:3 templates/features.html:7
+msgid "Features"
+msgstr "Ominaisuudet"
+
+#: templates/base.html:32 templates/download.html:4
+msgid "Download"
+msgstr "Lataa"
+
+#: templates/base.html:33 templates/base.html:67 templates/docs.html:4
+#: templates/docs.html:8 templates/features.html:12 templates/features.html:67
+#: templates/features.html:103 templates/features.html:118
+#: templates/features.html:147 templates/features.html:162
+#: templates/features.html:169 templates/features.html:183
+#: templates/features.html:256 templates/features.html:277
+#: templates/features.html:299 templates/features.html:318
+#: templates/features.html:331
+msgid "Documentation"
+msgstr "Dokumentaatio"
+
+#: templates/base.html:34 templates/support.html:4
+msgid "Support"
+msgstr "Tuki"
+
+#: templates/base.html:35 templates/development.html:4
+#: templates/development.html:8
+msgid "Development"
+msgstr "Kehitys"
+
+#: templates/base.html:36 templates/donate.html:4
+msgid "Donate"
+msgstr "Lahjoita"
+
+#: templates/base.html:37
+msgid "Online Shell"
+msgstr "Online-komentokehoite"
+
+#: templates/base.html:51
+msgid " Compute with Gamma "
+msgstr "Laske Gamman avulla"
+
+#: templates/base.html:54
+msgid "Compute"
+msgstr "Laske"
+
+#: templates/base.html:58
+msgid "Download Now"
+msgstr "Lataa nyt"
+
+#: templates/base.html:60
+msgid "Latest Version"
+msgstr "Uusin versio"
+
+#: templates/base.html:61
+msgid "Development Version"
+msgstr "Kehitysversio"
+
+#: templates/base.html:65
+msgid "Quick Links"
+msgstr "Pikalinkit"
+
+#: templates/base.html:68
+msgid "Downloads (source tarballs)"
+msgstr "Lataukset (lähdekoodin tarball-tiedostot)"
+
+#: templates/base.html:69
+msgid "Mailing list"
+msgstr "Postituslista"
+
+#: templates/base.html:70
+msgid "Source code"
+msgstr "Lähdekoodi"
+
+#: templates/base.html:71
+msgid "Issues tracker"
+msgstr "Bugiseuranta"
+
+#: templates/base.html:72
+msgid "Wiki"
+msgstr "Wiki"
+
+#: templates/base.html:73
+msgid "Try SymPy online now"
+msgstr "Kokeile SymPyn online-versiota"
+
+#: templates/base.html:74
+msgid "Official SymPy blog"
+msgstr "Virallinen SymPy-blogi"
+
+#: templates/base.html:75
+msgid "Planet SymPy"
+msgstr "Planet SymPy - blogi"
+
+#: templates/base.html:76
+msgid "Chat (Gitter)"
+msgstr "Gitter-Chat"
+
+#: templates/base.html:77
+msgid "IRC channel logs"
+msgstr "IRC-kanavan lokitiedostot"
+
+#: templates/base.html:81
+msgid "Follow Us"
+msgstr "Seuraa meitä"
+
+#: templates/base.html:112
+#, python-format
+msgid ""
+"This page is open source. Fork <a href=\"%(url)s\">the project on GitHub</a> "
+"to edit it."
+msgstr ""
+"Tämä sivu on avointa lähdekoodia. Forkkaa <a href=\"%(url)s\">projekti "
+"GitHubissa</a> editoidaksesi sitä."
+
+#: templates/base.html:115
+msgid "Languages"
+msgstr "Kielet"
+
+#: templates/development.html:11
+msgid ""
+"We are interested in any contribution. There are many ways how you can\n"
+"    contribute"
+msgstr ""
+"Me olemme kiinnostuneita mistä tahansa avustuksesta. On olemassa monta tapaa "
+"jolla voit\n"
+"      avustaa"
+
+#: templates/development.html:15
+msgid ""
+"If you wrote anything interesting using SymPy, please send us a patch with "
+"the\n"
+"        code (see below for more information)"
+msgstr ""
+"Mikäli kirjoitit jotakin kiinnostavaa SymPy-ohjelmistolla, ole hyvä ja "
+"lähetä meille patch\n"
+"         lähdekoodilla (ole hyvä ja katso lisätiedot alla)"
+
+#: templates/development.html:20
+msgid ""
+"If you found a bug (or just want to let us know what you think), tell us on "
+"the\n"
+"        <a href=\"http://groups.google.com/group/sympy\">mailinglist</a>"
+msgstr ""
+"Mikäli havaitsit bugin (tai haluat meidän tietävän mitä ajattelet), kerro "
+"meille\n"
+"         <a href=\"http://groups.google.com/group/sympy\">postituslistalla</"
+"a>"
+
+#: templates/development.html:21
+msgid ""
+"You can also\n"
+"        add a bug report (or a comment) into the <a href=\"https://github."
+"com/sympy/sympy/issues/\">issues</a>."
+msgstr ""
+"Voit myös\n"
+"        lisätä bugiraportin (tai kommentin) tällä <a href=\"https://github."
+"com/sympy/sympy/issues/\">sivulla</a>."
+
+#: templates/development.html:24
+msgid "You can blog about how you use SymPy"
+msgstr "Voit blogata kuinka käytät SymPy-ohjelmistoa"
+
+#: templates/development.html:25
+msgid "You can help us write documentation (just send us a patch)"
+msgstr ""
+"Voit avustaa meitä kirjoittamaan dokumentaatiota (lähettämällä meille "
+"patchin)"
+
+#: templates/development.html:26
+msgid ""
+"You can help people on our <a href=\"http://groups.google.com/group/sympy"
+"\">mailinglist</a>"
+msgstr ""
+"Voit avustaa ihmisiä <a href=\"http://groups.google.com/group/sympy"
+"\">postituslistalla</a>"
+
+#: templates/development.html:27
+msgid "You can help with reviewing patches"
+msgstr "Voit avustaa meitä tarkistamalla patcheja"
+
+#: templates/development.html:28
+msgid "You can send us patches with bug fixes or new features"
+msgstr ""
+"Voit lähettää meille patcheja joissa on bugikorjauksia tai uusia "
+"ominaisuuksia"
+
+#: templates/development.html:32
+msgid "The best way to contribute code or documentation is to send us a patch"
+msgstr ""
+"Paras tapa avustaa lahjoittamalla lähdekoodia tai dokumentaatiota on "
+"lähettämällä meille patchin"
+
+#: templates/development.html:36
+msgid "How to Send a Patch"
+msgstr "Kuinka lähettää patchi"
+
+#: templates/development.html:39
+msgid ""
+"The best way is to send a github pull request\n"
+"    against the <a href=\"http://github.com/sympy/sympy\">sympy/sympy</a> "
+"repository.\n"
+"    We'll review it and push it in."
+msgstr ""
+"Paras tapa on lähettää meille pull request\n"
+"    <a href=\"http://github.com/sympy/sympy\">sympy/sympy</a> repositoryyn.\n"
+"    Me arvioimme ja yhdistämme sen."
+
+#: templates/development.html:45
+msgid ""
+"If you need help with git, github, pull requests, patches, coding, SymPy or\n"
+"    anything related, just send us an email to the <a href=\"https://groups."
+"google.com/forum/#!forum/sympy\">mailinglist</a>\n"
+"    or ask on <a href=\"https://gitter.im/sympy/sympy\">Gitter</a>, we'll be "
+"happy to help."
+msgstr ""
+"Mikäli tarvitset apua gitin, githubin, pull requestien, patchien, "
+"ohjelmoinnin, SymPyn tai\n"
+"    minkä tahansa muun asiaan liittyvän kanssa, ole hyvä ja lähetä e-mail <a "
+"href=\"https://groups.google.com/forum/#!forum/sympy\">postituslistalle</a>\n"
+"    tai kysy <a href=\"https://gitter.im/sympy/sympy\">Gitterissä</a>, "
+"autamme mielellämme."
+
+#: templates/development.html:48
+msgid ""
+"Also, you can read our instructions\n"
+"    <a href=\"https://github.com/sympy/sympy/wiki/Development-workflow\">\n"
+"      how to prepare patches</a> using git and github."
+msgstr ""
+"Lisäksi voit lukea ohjeet\n"
+"    <a href=\"https://github.com/sympy/sympy/wiki/Development-workflow\">\n"
+"     kuinka valmistella patcheja</a> käyttäen gitia ja githubia."
+
+#: templates/development.html:54
+msgid ""
+"The github pull request is a preferred method, as that makes it easy for us "
+"to\n"
+"    review and push the code in. That said,\n"
+"    you can also clone the latest git repository (see the link on the "
+"right), prepare a branch with\n"
+"    your code, upload it somewhere (for example <a\n"
+"                                                   href=\"http://github.com/"
+"\">github</a>) and send us a link to the <a\n"
+"                                                                                                                      href="
+"\"https://groups.google.com/forum/#!forum/sympy\">sympy</a>\n"
+"    mailinglist, or you can even send us raw patches --- but it will be more "
+"work\n"
+"    for us to integrate it."
+msgstr ""
+"Githubin pull request meille mieluisin tapa, koska se tekee meille helpoksi\n"
+"    arvioida ja yhdistää lähdekoodia. Joten,\n"
+"    voit lisäksi kloonata viimeisimmän git-repon (ks. linkki oikealla), "
+"valmistella haaran jossa\n"
+"    koodisi sijaitsee, ladata sen jonnekin (esimerkiksi <a\n"
+"                                                   href=\"http://github.com/"
+"\">github</a>) ja lähettää meille linkin <a\n"
+"                                                                                                                      href="
+"\"https://groups.google.com/forum/#!forum/sympy\">sympy</a>\n"
+"    postituslistalle, tai voit jopa lähettää meille raakapatcheja --- mutta "
+"se tietää meille työtä\n"
+"    koska meidän pitää integroida muutokset."
+
+#: templates/development.html:65
+msgid ""
+"SymPy has a broad <a href=\"http://docs.sympy.org/dev/aboutus.html#sympy-"
+"development-team\">development team</a>, send us a patch and your name will "
+"appear there too."
+msgstr ""
+"SymPy-projektilla on laaja <a href=\"http://docs.sympy.org/dev/aboutus."
+"html#sympy-development-team\">kehitystiimi</a>, lähetä meille patchi ja "
+"sinun nimesi ilmestyy kehitystiimiimme."
+
+#: templates/development.html:69
+msgid "Sources of the Webpages"
+msgstr "Sivustojen lähdekoodi"
+
+#: templates/development.html:72
+msgid "Sources of these webpages are at"
+msgstr "Näiden sivujen lähdekoodi on osoitteessa"
+
+#: templates/development.html:75
+msgid "Feel free to send us patches with improvements."
+msgstr "Voit lähettää meille parannuksia sisältäviä patcheja vapaasti."
+
+#: templates/development.html:84
+msgid "Git Repository"
+msgstr "Git-repo"
+
+#: templates/development.html:86 templates/download.html:21
+msgid "Main git repository"
+msgstr "Gitin päärepo"
+
+#: templates/development.html:90
+msgid "Online access"
+msgstr "Online-pääsy"
+
+#: templates/docs.html:11
+#, python-format
+msgid ""
+"The documentation is maintained using the <a href=\"%(url)s\">Sphinx</a> "
+"Python documentation generator."
+msgstr ""
+"Dokumentaatiotamme ylläpidetään käytämme <a href=\"%(url)s\">Sphinx</a> "
+"Python dokumentaatiogeneraattoria."
+
+#: templates/docs.html:13
+msgid "You can find it at"
+msgstr "Voit löytää sen osoitteesta"
+
+#: templates/donate.html:8
+msgid "Support SymPy Development"
+msgstr "Tue SymPyn kehitystä"
+
+# xgettext:no-python-format
+#: templates/donate.html:11
+#, python-format
+msgid ""
+"SymPy will always be 100% open source software, free for all to use\n"
+"and released under the liberal terms of the modified BSD license.\n"
+msgstr ""
+"SymPy tulee aina olemaan 100% avoimen lähdekoodin ohjelmisto, vapaa kaikkien "
+"käytettäväksi\n"
+"ja julkaistu modifioidun BSD-lisenssin liberaaleilla termeillä.\n"
+
+#: templates/donate.html:16
+msgid "You can donate any amount here:"
+msgstr "Voit lahjoittaa minkä tahansa rahasumman täällä:"
+
+#: templates/donate.html:25
+msgid ""
+"\n"
+"All donations will be used strictly to fund SymPy development, by "
+"supporting\n"
+"tasks such as developer sprints, improved documentation, fixing bugs and "
+"paying\n"
+"for hosting costs for services such as the\n"
+"<a href=\"http://live.sympy.org/\">SymPy Online Shell</a>."
+msgstr ""
+"\n"
+"Kaikki lahjoitukset tullaan käyttämään vain SymPy-kehityksen rahoittamiseen "
+"tukemalla\n"
+"tehtäviä kuten kehitys-sprintit, parannettu dokumentaatio, bugikorjaukset ja "
+"maksamalla\n"
+"kulut palveluille kuten esimerkiksi\n"
+"<a href=\"http://live.sympy.org/\">SymPy Online</a>."
+
+# xgettext:no-python-format
+#: templates/donate.html:32
+#, python-format
+msgid ""
+"\n"
+"Our donations are managed by the\n"
+"<a href=\"http://numfocus.org/\">NumFOCUS</a>\n"
+"foundation, which passes 100% of your contribution to the SymPy project.\n"
+"NumFOCUS is a 501(c)3 non-profit foundation, so if you are subject to US "
+"Tax\n"
+"law, your contributions will be tax-deductible.\n"
+msgstr ""
+"\n"
+"Lahjoituksiamme hoitaa\n"
+"<a href=\"http://numfocus.org/\">NumFOCUS</a>\n"
+"säätiö, joka antaa 100% lahjoituksista SymPyn hyväksi.\n"
+"NumFOCUS on 501(c)3 voittoa tavoittelematon säätiö, joten jos olet USA:n "
+"verolain\n"
+"alainen, lahjoitukset voidaan vähentää verotuksessa.\n"
+
+#: templates/download.html:8
+msgid "Source Tarballs (Releases)"
+msgstr "Lähdekoodin tarball-arkistot (Julkaisu)"
+
+#: templates/download.html:11
+msgid "Downloads"
+msgstr "Lataukset"
+
+#: templates/download.html:14
+msgid "Old downloads"
+msgstr "Vanhat lataukset"
+
+#: templates/download.html:18
+msgid "Git Version"
+msgstr "Git-versio"
+
+#: templates/download.html:27
+msgid "Browse online"
+msgstr "Online-selaus"
+
+#: templates/features.html:10
+msgid "Core capabilities"
+msgstr "Ydinominaisuudet"
+
+#: templates/features.html:14 templates/features.html:69
+msgid "Basic arithmetic:"
+msgstr "Perusaritmetiikka:"
+
+#: templates/features.html:14
+msgid ""
+"Support for operators such\n"
+"                    as <code>+</code>, <code>-</code>, <code>*</code>, "
+"<code>/</code>, <code>**</code> (power)"
+msgstr ""
+"Tukee operaattoreita kuten\n"
+"                    esimerkiksi <code>+</code>, <code>-</code>, <code>*</"
+"code>, <code>/</code>, <code>**</code> (potenssi)"
+
+#: templates/features.html:16
+msgid "Simplification"
+msgstr "Sievennys"
+
+#: templates/features.html:17
+msgid "Trigonometry"
+msgstr "Trigonometria"
+
+#: templates/features.html:17
+msgid "Polynomials</a>"
+msgstr "Polynomit"
+
+#: templates/features.html:18
+msgid "Expansion:"
+msgstr "Laajennus:"
+
+#: templates/features.html:20
+msgid " of a polynomial "
+msgstr "polynomin"
+
+#: templates/features.html:21
+msgid "Functions:"
+msgstr "Funktiot:"
+
+#: templates/features.html:22
+#, python-format
+msgid ""
+"\n"
+"                    <a href=\"%(trig)s\">trigonometric</a>,\n"
+"                    <a href=\"%(hyperbolic)s\">hyperbolic</a>,\n"
+"                    <a href=\"%(exponential)s\">exponential</a>,\n"
+"                    <a href=\"%(root)s\">roots</a>,\n"
+"                    <a href=\"%(logarithm)s\">logarithms</a>,\n"
+"                    <a href=\"%(abs)s\">absolute value</a>,\n"
+"                    <a href=\"%(spherical)s\">spherical harmonics</a>,\n"
+"                    <a href=\"%(factorial)s\">factorials and gamma "
+"functions</a>,\n"
+"                    <a href=\"%(zeta)s\">zeta functions</a>,\n"
+"                    <a href=\"%(polynomial)s\">polynomials</a>,\n"
+"                    <a href=\"%(special)s\">special functions</a>, ..."
+msgstr ""
+"\n"
+"                    <a href=\"%(trig)s\">trigonometriset</a>,\n"
+"                    <a href=\"%(hyperbolic)s\">hyperboliset</a>,\n"
+"                    <a href=\"%(exponential)s\">eksponentit</a>,\n"
+"                    <a href=\"%(root)s\">juuret</a>,\n"
+"                    <a href=\"%(logarithm)s\">logaritmit</a>,\n"
+"                    <a href=\"%(abs)s\">itseisarvot</a>,\n"
+"                    <a href=\"%(spherical)s\">harmoniset pallofunktiot</a>,\n"
+"                    <a href=\"%(factorial)s\">kertomat ja gammafunktiot</"
+"a>,\n"
+"                    <a href=\"%(zeta)s\">zeta-funktiot</a>,\n"
+"                    <a href=\"%(polynomial)s\">polynomit</a>,\n"
+"                    <a href=\"%(special)s\">erikoisfunktiot</a>, ..."
+
+#: templates/features.html:46
+msgid "Substitution:"
+msgstr "Sijoitus:"
+
+#: templates/features.html:46
+msgid "example"
+msgstr "esimerkki"
+
+#: templates/features.html:47
+msgid "Numbers:"
+msgstr "Numerot:"
+
+#: templates/features.html:48
+#, python-format
+msgid ""
+"\n"
+"                    <a href=\"%(integer)s\">arbitrary precision integers</"
+"a>,\n"
+"                    <a href=\"%(rational)s\">rationals</a>,\n"
+"                    <a href=\"%(float)s\">and floats</a>\n"
+"                    "
+msgstr ""
+"\n"
+"                    <a href=\"%(integer)s\">mielivaltaisen tarkat "
+"kokonaisluvut</a>,\n"
+"                    <a href=\"%(rational)s\">rationaaliluvut</a>,\n"
+"                    <a href=\"%(float)s\">ja liukuluvut</a>\n"
+"                    "
+
+#: templates/features.html:58
+msgid "Noncommutative symbols"
+msgstr "Ei-kommutoivat symbolit"
+
+#: templates/features.html:59
+msgid "Pattern matching"
+msgstr "Kuvion täsmäys"
+
+#: templates/features.html:65
+msgid "Polynomials"
+msgstr "Polynomit"
+
+#: templates/features.html:69
+msgid " division, gcd, ... "
+msgstr "jaollisuus, syt, ..."
+
+#: templates/features.html:70
+msgid "Factorization"
+msgstr "Tekijöihin jakaminen"
+
+#: templates/features.html:71
+msgid "Square-free decomposition"
+msgstr "Neliövapaa hajotelma"
+
+#: templates/features.html:72
+msgid "Gröbner bases"
+msgstr "Gröbner-kannat"
+
+#: templates/features.html:73
+msgid "Partial fraction decomposition"
+msgstr "Osittaismurtohajotelma"
+
+#: templates/features.html:74
+msgid "Resultants"
+msgstr "Resultantit"
+
+#: templates/features.html:80
+msgid "Calculus"
+msgstr "Differentiaalilaskenta"
+
+#: templates/features.html:82
+msgid "Integration Documentation"
+msgstr "Integraatiodokumentit"
+
+#: templates/features.html:85
+msgid "Limits:"
+msgstr "Raja-arvot"
+
+#: templates/features.html:89
+msgid "Differentiation"
+msgstr "Derivointi:"
+
+#: templates/features.html:92
+msgid "Integration:"
+msgstr "Integrointi:"
+
+#: templates/features.html:93
+msgid "It uses extended Risch-Norman heuristic"
+msgstr "Se käyttää laajennettua Risch-Norman - heuristiikkaa"
+
+#: templates/features.html:95
+msgid "Taylor (Laurent) series"
+msgstr "Taylor (Laurent) - sarjat"
+
+#: templates/features.html:101
+msgid "Solving equations"
+msgstr "Yhtälönratkaisu"
+
+#: templates/features.html:105
+msgid "Polynomial equations"
+msgstr "Polynomiyhtälöt"
+
+#: templates/features.html:106
+msgid "Algebraic equations"
+msgstr "Algebralliset yhtälöt"
+
+#: templates/features.html:107
+msgid "Differential equations"
+msgstr "Differentiaaliyhtälöt"
+
+#: templates/features.html:108
+msgid "Difference equations"
+msgstr "Differenssiyhtälöt"
+
+#: templates/features.html:109
+msgid "Systems of equations"
+msgstr "Yhtälöryhmät"
+
+#: templates/features.html:110
+msgid "Diophantine equations:"
+msgstr "Diofantoksen yhtälöt"
+
+#: templates/features.html:116
+msgid "Combinatorics"
+msgstr "Kombinatoriikka"
+
+#: templates/features.html:120
+msgid "Permutations"
+msgstr "Permutaatiot"
+
+#: templates/features.html:121
+msgid "Combinations"
+msgstr "Kombinaatiot"
+
+#: templates/features.html:122
+msgid "Partitions"
+msgstr "Ositukset"
+
+#: templates/features.html:123
+msgid "Subsets"
+msgstr "Aliryhmät"
+
+#: templates/features.html:124
+msgid "Permutation Groups"
+msgstr "Permutaatioryhmät"
+
+#: templates/features.html:125
+msgid "Prufer and Gray Codes"
+msgstr "Prufer ja Gray - koodit"
+
+#: templates/features.html:131
+msgid "Discrete math"
+msgstr "Diskreetti matematiikka"
+
+#: templates/features.html:134
+msgid "Binomial coefficients"
+msgstr "Binomikertoimet"
+
+#: templates/features.html:135
+msgid "Summations"
+msgstr "Summat"
+
+#: templates/features.html:136
+msgid "Products"
+msgstr "Tulot"
+
+#: templates/features.html:137
+msgid "Number theory:"
+msgstr "Lukuteoria:"
+
+#: templates/features.html:137
+msgid ""
+"generating prime numbers, primality testing,  integer factorization, "
+"Diophantine equation solving... "
+msgstr ""
+"alkulukujen generointi, alkulukutestit, kokonaislukuhajotelmat, diofantoksen "
+"yhtälöt..."
+
+#: templates/features.html:139
+msgid "Logic expressions"
+msgstr "Loogiset lauseet"
+
+#: templates/features.html:145
+msgid "Matrices"
+msgstr "Matriisit"
+
+#: templates/features.html:149
+msgid "Basic arithmetic"
+msgstr "Perusaritmetiikka"
+
+#: templates/features.html:150
+msgid "Eigenvalues/eigenvectors"
+msgstr "Ominaisarvot ja ominaisvektorit"
+
+#: templates/features.html:151
+msgid "Determinants"
+msgstr "Determinantit"
+
+#: templates/features.html:152
+msgid "Inversion"
+msgstr "Inversiot"
+
+#: templates/features.html:153
+msgid "Solving"
+msgstr "Ratkaiseminen"
+
+#: templates/features.html:154
+msgid "Abstract expressions"
+msgstr "Abstraktit lausekkeet"
+
+#: templates/features.html:160
+msgid "Geometric Algebra"
+msgstr "Geometrinen algebra"
+
+#: templates/features.html:167
+msgid "Geometry"
+msgstr "Geometria"
+
+#: templates/features.html:171
+msgid ""
+"points, lines, rays, segments, ellipses, circles,\n"
+"                    polygons, ..."
+msgstr ""
+"pisteet, suorat, säteet, segmentit, ellipsit, ympyrät,\n"
+"                    monikulmiot, ..."
+
+#: templates/features.html:173
+msgid "Intersection"
+msgstr "Leikkaus"
+
+#: templates/features.html:174
+msgid "Tangency"
+msgstr "Tangentti"
+
+#: templates/features.html:175
+msgid "Similarity"
+msgstr "Samankaltaisuus"
+
+#: templates/features.html:181
+msgid "Plotting"
+msgstr "Kuvaajien piirtäminen"
+
+#: templates/features.html:185
+msgid "Coordinate modes"
+msgstr "Koordinaattimallit"
+
+#: templates/features.html:186
+msgid "Plotting Geometric Entities"
+msgstr "Geometristen kappaleiden piirtäminen"
+
+#: templates/features.html:187
+msgid "2D and 3D"
+msgstr "2D ja 3D"
+
+#: templates/features.html:188
+msgid "Interactive interface"
+msgstr "Interaktiivinen rajapinta"
+
+#: templates/features.html:189
+msgid "Colors"
+msgstr "Värit"
+
+#: templates/features.html:190
+msgid "Matplotlib support"
+msgstr "Matplotlib-tuki"
+
+#: templates/features.html:196
+msgid "SymPy plot of sin(2 sin(2 sin(x))) with matplotlib"
+msgstr "Funktion sin(2 sin(2 sin(x))) SymPy-kuvaaja matplotlibin avulla"
+
+#: templates/features.html:201
+msgid "SymPy plot of x, x^2, and x^3 from x = -5 to 5"
+msgstr "Funktioiden x, x^2, ja x^3 SymPy-kuvaajat x = -5 ja 5 välillä"
+
+#: templates/features.html:206
+msgid "SymPy parametric plot of x=cos(u), y=sin(u), u from -5 to 5"
+msgstr "Parametrinen x = cos(u), y = sin(u) SymPy-kuvaaja välillä -5, 5"
+
+#: templates/features.html:211
+msgid "SymPy 3D surface plot of xy, x from -5 to 5, y from 5 to 5"
+msgstr ""
+"Funktioiden xy, x SymPy 3D-kuvaaja, x välillä -5 ja 5 ja y välillä 5 ja 5"
+
+#: templates/features.html:216
+msgid ""
+"SymPy 3D parametric line plot of x=cos(u), y=sin(u), z=u, u from -5 to 5"
+msgstr ""
+"3D-parametrinen käyrän x = cos(u), y = sin(u), z = u SymPy - kuvaaja välillä "
+"-5, 5"
+
+#: templates/features.html:221
+msgid ""
+"SymPy 3D parametric surface plot of x=cos(u+v), y=sin(u-v), z=u-v, u and v "
+"from -5 to 5"
+msgstr ""
+"3D parametrinen SymPy - kuvaaja pinnalle x = cos(u + v), y = sin(u - v), z = "
+"u - v jossa u, v välillä -5, 5"
+
+#: templates/features.html:226
+msgid "SymPy implicit plot of x^2 + y^2 = 5"
+msgstr "Implisiittinen SymPy - kuvaaja käyrälle x^2 + y^2 = 5"
+
+#: templates/features.html:231
+msgid "SymPy implicit plot of y &gt; x^2"
+msgstr "Implisiittinen SymPy-kuvaaja y &gt; x^2"
+
+#: templates/features.html:236
+msgid "SymPy implicit plot of y &gt; x (logical and) y &gt; -x"
+msgstr "Implisiittinen SymPy-kuvaaja y &gt; x (looginen ja) y & gt; -x"
+
+#: templates/features.html:241
+msgid ""
+"Matplotlib interactive interface of SymPy 3D parametric surface plot of "
+"x=cos(u+v), y=sin(u-v), z=u-v, u and v from -5 to 5"
+msgstr ""
+"Interaktiivinen matplotlib-rajapinta 3D-parametriselle SymPy-pinnalle x=cos(u"
+"+v), y = sin(u-v), z=u-v, u ja v välillä -5, 5"
+
+#: templates/features.html:246
+msgid "SymPy Gamma plot of x=cos(t), y=sin(t)"
+msgstr "SymPy Gamma-kuvaaja x=cos(t), y=sin(t)"
+
+#: templates/features.html:247
+msgid "SymPy Gamma plot"
+msgstr "SymPy Gamma - kuvaaja"
+
+#: templates/features.html:254
+msgid "Physics"
+msgstr "Fysiikka"
+
+#: templates/features.html:258
+msgid "Units"
+msgstr "Yksiköt"
+
+#: templates/features.html:259
+msgid "Mechanics"
+msgstr "Mekaniikka"
+
+#: templates/features.html:260
+msgid "Quantum"
+msgstr "Kvanttimekaniikka"
+
+#: templates/features.html:261
+msgid "Gaussian Optics"
+msgstr "Gaussin optiikka"
+
+#: templates/features.html:262
+msgid "Pauli Algebra"
+msgstr "Paulin algebra"
+
+#: templates/features.html:265
+msgid "IPython Notebook Examples"
+msgstr "IPython - esimerkkimuistiot"
+
+#: templates/features.html:267
+msgid "Beginner Tutorial for SymPy Mechanics"
+msgstr "Aloittelijan opas SymPy-mekaniikalle"
+
+#: templates/features.html:268
+msgid "Deriving the Mass-Spring-Damper System with SymPy"
+msgstr "Massa-Jousi-Vaimennin - järjestelmän johtaminen SymPyn avulla"
+
+#: templates/features.html:269
+msgid "Quantum Circuit Plotting with SymPy"
+msgstr "Kvanttipiirien kuvaaminen SymPyn avulla"
+
+#: templates/features.html:275
+msgid "Statistics"
+msgstr "Tilastotiede"
+
+#: templates/features.html:279
+msgid "Random variable types:"
+msgstr "Satunnaismuuttujien tyypit:"
+
+#: templates/features.html:281
+msgid "Normal distributions"
+msgstr "Normaalijakaumat"
+
+#: templates/features.html:282
+msgid "Uniform distributions"
+msgstr "Tasajakaumat"
+
+#: templates/features.html:283
+msgid "Bernoulli distributions"
+msgstr "Bernoulli-jakaumat"
+
+#: templates/features.html:284
+msgid "Binomial distributions"
+msgstr "Binomijakaumat"
+
+#: templates/features.html:285
+msgid "Hypergeometric distributions"
+msgstr "Hypergeometriset jakaumat"
+
+#: templates/features.html:286
+msgid "More&hellip;"
+msgstr "Lisää&hellip;"
+
+#: templates/features.html:289
+msgid "Probability"
+msgstr "Todennäköisyys"
+
+#: templates/features.html:290
+msgid "Expected value and variance"
+msgstr "Odotusarvo ja varianssi"
+
+#: templates/features.html:291
+msgid "Probability density"
+msgstr "Todennäköisyyden tiheysfunktio"
+
+#: templates/features.html:297
+msgid "Cryptography"
+msgstr "Kryptografia"
+
+#: templates/features.html:301
+msgid "Shift cipher"
+msgstr "Siirtosalaus"
+
+#: templates/features.html:302
+msgid "Affine cipher"
+msgstr "Affiini salaus"
+
+#: templates/features.html:303
+msgid "Bifid ciphers"
+msgstr "Bifid-salaus"
+
+#: templates/features.html:304
+msgid "Vigenere’s cipher"
+msgstr "Vinegeren salaus"
+
+#: templates/features.html:305
+msgid "Substitution ciphers"
+msgstr "Korvaussalaus"
+
+#: templates/features.html:306
+msgid "Hill’s cipher"
+msgstr "Hillin salaus"
+
+#: templates/features.html:307
+msgid "RSA"
+msgstr "RSA"
+
+#: templates/features.html:308
+msgid "Kid RSA"
+msgstr "Kid RSA"
+
+#: templates/features.html:309
+msgid "Linear feedback shift registers"
+msgstr "Vaihtorekisterien lineaarinen palaute"
+
+#: templates/features.html:310
+msgid "ElGamal encryption"
+msgstr "ElGamal-salaus"
+
+#: templates/features.html:316
+msgid "Parsing"
+msgstr "Jäsennys"
+
+#: templates/features.html:320
+msgid "Conversion from Python objects to SymPy objects"
+msgstr "Python-olioiden kääntäminen SymPy-olioiksi"
+
+#: templates/features.html:321
+msgid "Optional implicit multiplication and function application parsing"
+msgstr ""
+"Valinnainen implisiittinen moninkertaistuminen ja funktion sovellusjäsennys"
+
+#: templates/features.html:322
+msgid "Limited Mathematica and Maxima parsing:"
+msgstr "Rajoitettu Mathematica ja Maxima - jäsennys"
+
+#: templates/features.html:322
+msgid "example on SymPy Live"
+msgstr "esimerkki SymPy-livessä"
+
+#: templates/features.html:323
+msgid "Custom parsing transformations"
+msgstr "Kustomoidut jäsennysmuutokset"
+
+#: templates/features.html:329
+msgid "Printing"
+msgstr "Tulostaminen"
+
+#: templates/features.html:333
+msgid "Pretty printing:"
+msgstr "Kaunis tulostaminen:"
+
+#: templates/features.html:333
+msgid "ASCII/Unicode pretty printing, LaTeX"
+msgstr "ASCII/Unicode kaunis tulostaminen, LaTeX"
+
+#: templates/features.html:334
+msgid "Code generation:"
+msgstr "Koodin generointi:"
+
+#: templates/features.html:334
+msgid "C, Fortran, Python"
+msgstr "C, Fortran, Python"
+
+#: templates/features.html:335
+msgid ""
+"<a href=\"http://deeplearning.net/software/theano/\">Theano</a> interaction"
+msgstr ""
+"<a href=\"http://deeplearning.net/software/theano/\">Theano</a> interaktiot"
+
+#: templates/features.html:341
+msgid "Unicode printing in a Python shell"
+msgstr "Unicode-tulostaminen Python-komentokehoitteella"
+
+#: templates/features.html:342
+msgid "Unicode printing"
+msgstr "Unicode-tulostaminen"
+
+#: templates/features.html:346
+msgid "LaTeX printing in an IPython notebook"
+msgstr "LaTeX-tulostaminen IPython - muistiossa"
+
+#: templates/features.html:347
+msgid "LaTeX printing"
+msgstr "LaTeX-tulostaminen"
+
+#: templates/index.html:9
+msgid "About"
+msgstr "Tietoja"
+
+#: templates/index.html:12
+msgid ""
+"SymPy is a Python library for symbolic mathematics. It aims to\n"
+"      become a full-featured computer algebra system (CAS) while keeping the "
+"code as\n"
+"      simple as possible in order to be comprehensible and easily "
+"extensible. SymPy\n"
+"      is written entirely in Python and does not require any external "
+"libraries."
+msgstr ""
+"SymPy on symboliseen matematiikkaan tarkoitettu Python-kirjasto. Se pyrkii\n"
+"      tulemaan täysien omainsuuksien laskentaohjelmistoksi (CAS) pitäen "
+"koodin\n"
+"      mahdollisimman yksinkertaisena ollakseen ymmärrettävä ja helposti "
+"laajennettava. SymPy\n"
+"      on kirjoitettu kokonaan Python-ohjelmointikielellä eikä vaadi "
+"ylimääräisiä kirjastoja."
+
+#: templates/index.html:20
+msgid ""
+"<a href=\"http://docs.sympy.org/latest/tutorial/index.html\">Get started "
+"with the tutorial</a>"
+msgstr ""
+"<a href=\"http://docs.sympy.org/latest/tutorial/index.html\">Pääse alkuun "
+"tutoriaaleilla</a>"
+
+#: templates/index.html:20
+msgid "<a href=\"https://github.com/sympy/sympy/releases\">Download Now</a>"
+msgstr "<a href=\"https://github.com/sympy/sympy/releases\">Lataa nyt</a>"
+
+#: templates/index.html:28
+msgid "Why SymPy"
+msgstr "Miksi SymPy"
+
+#: templates/index.html:30
+msgid "SymPy is&hellip;"
+msgstr "SymPy on&hellip;"
+
+#: templates/index.html:32
+msgid "Free:"
+msgstr "Vapaa:"
+
+#: templates/index.html:32
+msgid " Licensed under BSD, SymPy is free both as in speech and as in beer. "
+msgstr "Lisensioitu BSD-lisenssillä, SymPy on vapaa ja ilmainen"
+
+#: templates/index.html:33
+msgid "Python-based:"
+msgstr "Python-ohjelmointikieleen perustuva:"
+
+#: templates/index.html:33
+msgid " SymPy is written entirely in Python and uses Python for its language. "
+msgstr "SymPy on kirjoitettu kokonaan Pythonilla ja käyttää Pythonia kielenään"
+
+#: templates/index.html:34
+msgid "Lightweight:"
+msgstr "Kevyt:"
+
+#: templates/index.html:34
+msgid " SymPy does not require any external libraries, making it easy to use. "
+msgstr "SymPy ei tarvitse ulkoisia kirjastoja joten se on helppo käyttää."
+
+#: templates/index.html:35
+msgid "A library:"
+msgstr "Kirjasto:"
+
+#: templates/index.html:35
+msgid ""
+" Beyond use as an interactive tool, SymPy can be embedded in other "
+"applications and extended with custom functions. "
+msgstr ""
+"Interaktiivisen työkalun lisäksi SymPy voidaan liittää muihin sovelluksiin "
+"ja sitä voidaan laajentaa kustomoiduilla funktioilla"
+
+#: templates/index.html:37
+msgid "<a href=\"features.html\">See SymPy's features</a>"
+msgstr "<a href=\"features.html\">SymPyn ominaisuudet</a>"
+
+#: templates/index.html:45
+msgid "News"
+msgstr "Uutisia"
+
+#: templates/index.html:47 templates/index.html:51 templates/index.html:53
+#: templates/index.html:55 templates/index.html:57 templates/index.html:61
+#: templates/index.html:65 templates/index.html:67 templates/index.html:75
+#: templates/index.html:77
+#, python-format
+msgid "Version %(v)s released"
+msgstr "Versio %(v)s julkaistu"
+
+#: templates/index.html:47 templates/index.html:51 templates/index.html:53
+#: templates/index.html:55 templates/index.html:57 templates/index.html:61
+#: templates/index.html:65 templates/index.html:67 templates/index.html:75
+#: templates/index.html:77
+msgid "changes"
+msgstr "muutokset"
+
+#: templates/index.html:49
+msgid ""
+" SymPy is accepted as a <a href=\"http://www.google-melange.com/gsoc/org2/"
+"google/gsoc2014/sympy\">mentoring organization</a> for Google Summer of Code "
+"2014 "
+msgstr ""
+" SymPy on hyväksytty <a href=\"http://www.google-melange.com/gsoc/org2/"
+"google/gsoc2014/sympy\">mentorointiorganisaatio</a> Google Summer of Code "
+"2014 - ohjelmalle"
+
+#: templates/index.html:59
+msgid ""
+" SymPy is accepted as a <a href=\"http://www.google-melange.com/gsoc/org/"
+"show/google/gsoc2013/sympy\">mentoring organization</a> for Google Summer of "
+"Code 2013 "
+msgstr ""
+" SymPy on hyväksytty <a href=\"http://www.google-melange.com/gsoc/org/show/"
+"google/gsoc2013/sympy\">mentorointiorganisaatio</a> Google Summer of Code "
+"2013 - ohjelmalle"
+
+#: templates/index.html:63
+msgid ""
+" SymPy is accepted as a <a href=\"http://www.google-melange.com/gsoc/org/"
+"show/google/gsoc2012/sympy\">mentoring organization</a> for Google Summer of "
+"Code 2012 "
+msgstr ""
+" SymPy on hyväksytty <a href=\"http://www.google-melange.com/gsoc/org/show/"
+"google/gsoc2012/sympy\">mentorointiorganisaatio</a> Google Summer of Code "
+"2012 - ohjelmalle"
+
+#: templates/index.html:69
+msgid ""
+"SymPy is accepted as a <a href=\"http://www.google-melange.com/gsoc/org/show/"
+"google/gsoc2011/sympy\">mentoring organization</a> for Google Summer of Code "
+"2011"
+msgstr ""
+"SymPy on hyväksytty <a href=\"http://www.google-melange.com/gsoc/org/show/"
+"google/gsoc2011/sympy\">mentorointiorganisaatio</a> Google Summer of Code "
+"2011 - ohjelmalle"
+
+#: templates/index.html:71
+msgid "New website launched at sympy.org"
+msgstr "Uusi Internet-sivusto julkaistu osoitteessa sympy.org"
+
+#: templates/index.html:73
+#, python-format
+msgid ""
+"Final page about the <a href=\"%(url)s\">2010 Google Summer of Code in "
+"SymPy</a> is available."
+msgstr ""
+"Lopullinen <a href=\"%(url)s\">SymPyn 2010 Google Summer of Code</a> - sivu "
+"on julkaistu"
+
+#: templates/index.html:79
+#, python-format
+msgid ""
+"Final page about the <a href=\"%(url)s\">2009 Google Summer of Code in "
+"SymPy</a> is available."
+msgstr ""
+"Lopullinen <a href=\"%(url)s\">SymPyn 2009 Google Summer of Code</a> - sivu "
+"on julkaistu"
+
+#: templates/support.html:8
+msgid "General"
+msgstr "Yleistä"
+
+#: templates/support.html:11
+msgid "Below you can find several ways to get help"
+msgstr "Alla olevista linkeistä voit löytää useita tapoja saada apua"
+
+#: templates/support.html:15
+msgid " SymPy <a href=\"http://docs.sympy.org\">Documentation</a>"
+msgstr " SymPy <a href=\"http://docs.sympy.org\">dokumentaatio</a>"
+
+#: templates/support.html:16
+msgid " Main <a href=\"http://groups.google.com/group/sympy\">mailinglist</a> "
+msgstr ""
+" Pääasiallinen <a href=\"http://groups.google.com/group/sympy"
+"\">postituslista</a> "
+
+#: templates/support.html:17
+msgid "<a href=\"https://github.com/sympy/sympy/issues/\">Issues tracker</a>."
+msgstr "<a href=\"https://github.com/sympy/sympy/issues/\">Bugienseuraaja</a>."
+
+#: templates/support.html:19
+msgid ""
+"IRC channel: <a href=\"irc://irc.freenode.net/sympy\">#sympy at freenode</"
+"a>. Note that this channel is <a href=\"http://colabti.org/irclogger/"
+"irclogger_logs/sympy\">logged</a>."
+msgstr ""
+"IRC-kanava: <a href=\"irc://irc.freenode.net/sympy\">#sympy freenode-"
+"verkossa</a>. Huomaathan että tämä kanava on <a href=\"http://colabti.org/"
+"irclogger/irclogger_logs/sympy\">logattu</a>."
+
+#: templates/support.html:24
+msgid "More Specific"
+msgstr "Tarkemmin"
+
+#: templates/support.html:28
+msgid ""
+" SymPy <a href=\"http://docs.sympy.org/0.7.1/tutorial.html\">tutorial</a> "
+msgstr ""
+" SymPy <a href=\"http://docs.sympy.org/0.7.1/tutorial.html\">tutoriaali</a> "
+
+#: templates/support.html:29
+msgid " Main <a href=\"https://github.com/sympy/sympy/wiki/Faq\">FAQ</a> "
+msgstr ""
+"Pääasiallinen <a href=\"https://github.com/sympy/sympy/wiki/Faq\">FAQ</a> "
+
+#: templates/support.html:30
+msgid ""
+"<a href=\"http://docs.sympy.org/0.7.1/gotchas.html\">Gotchas and Pitfalls</a>"
+msgstr ""
+"<a href=\"http://docs.sympy.org/0.7.1/gotchas.html\">Kompastuskiviä ja "
+"Sudenkuoppia</a>"
