@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>Ominaisuudet</title>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <!-- <link rel="stylesheet" href="/static/css/base.css" type="text/css" media="screen" /> -->
+    <!-- <link rel="stylesheet" id="current-theme" href="/static/css/style.css" type="text/css" media="screen" /> -->
+    <link rel="stylesheet" href="/static/external/css/reset.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/static/external/css/responsive-gs-12col.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/static/css/base.css" type="text/css" media="screen" />
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Gentium+Basic" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="/static/SymPy-Favicon.ico" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <script type="text/javascript" src="/static/javascript/main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1><a href="index.html"> <img src="/static/images/logo.png" alt="SymPy Logo" /> SymPy</a></h1>
+        <div id="mobile-menu"><i class="icon-ellipsis-vertical"></i></div>
+      </header>
+      <nav id="main-navigation" class="row">
+        
+        
+        <ul>
+          <li class=""><a href="index.html">Pääsivu</a></li>
+          <li class="active"><a href="features.html">Ominaisuudet</a></li>
+          <li class=""><a href="download.html">Lataa</a></li>
+          <li class=""><a href="http://docs.sympy.org">Dokumentaatio <i class="icon-external-link-sign"></i></a></li>
+          <li class=""><a href="support.html">Tuki</a></li>
+          <li class=""><a href="development.html">Kehitys</a></li>
+          <li class=""><a href="donate.html">Lahjoita</a></li>
+          <li><a href="http://live.sympy.org/">Online-komentokehoite <i class="icon-external-link-sign"></i></a></li>
+        </ul>
+        
+      </nav>
+      <section class="row" id="main">
+        <div class="col span_7 clr small_span_4">
+          
+          <article id="content">
+            
+
+<h2 class="title">Ominaisuudet</h2>
+<div class="inner">
+    <div class="dropdown">
+        <h3>Ydinominaisuudet</h3>
+        <div>
+            <p><a href="http://docs.sympy.org/latest/modules/core.html">Dokumentaatio</a></p>
+            <ul>
+                <li><strong>Perusaritmetiikka:</strong> <a href="http://www.sympygamma.com/input/?i=23+pi+%2B+20%21+%2F+%283**5%29+-+2">Tukee operaattoreita kuten
+                    esimerkiksi <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>**</code> (potenssi)</a></li>
+                <li> <strong>Sievennys</strong>
+                    <a href="http://www.sympygamma.com/input/?i=simplify%28cos%28x%29cos%28y%29+-+sin%28x%29sin%28y%29%29">Trigonometria</a>, <a href="http://www.sympygamma.com/input/?i=simplify%28%282x%2B3%29%2810x-5%29%2F%282x-1%29%29">Polynomit</li>
+                <li><strong>Laajennus:</strong>
+                    <a href="http://www.sympygamma.com/input/?i=expand%28%285x+%2B+3%29*%281-x%29*%281%2B6x%29%29">polynomin</a></li>
+                <li><strong>Funktiot:</strong>
+                    
+                    <a href="http://www.sympygamma.com/input/?i=%281+-+sin%5E2+x%29%2F%281+%2B+tan%5E2+x%29">trigonometriset</a>,
+                    <a href="http://www.sympygamma.com/input/?i=sinh%5E2+x+%2B+cosh%5E2+x">hyperboliset</a>,
+                    <a href="http://www.sympygamma.com/input/?i=exp%28x%29+%2F+%281+%2B+exp%282x%29%29">eksponentit</a>,
+                    <a href="http://www.sympygamma.com/input/?i=root%28x%2C+7%29+**+2">juuret</a>,
+                    <a href="http://www.sympygamma.com/input/?i=log%28-25%29">logaritmit</a>,
+                    <a href="http://www.sympygamma.com/input/?i=Abs%281+%2B+3I%29">itseisarvot</a>,
+                    <a href="http://www.sympygamma.com/input/?i=Ylm%281%2C+-1%2C+theta%2C+phi%29">harmoniset pallofunktiot</a>,
+                    <a href="http://www.sympygamma.com/input/?i=gamma%2841%2F2%29+%2B+16%21%21">kertomat ja gammafunktiot</a>,
+                    <a href="http://www.sympygamma.com/input/?i=zeta%284%29">zeta-funktiot</a>,
+                    <a href="http://www.sympygamma.com/input/?i=x**7+-+x**5+%2B+4x**3+%2B+1">polynomit</a>,
+                    <a href="http://live.sympy.org/?evaluate=from%20sympy.abc%20import%20n%2Ca%2Cb%2Cx%0A%23--%0Ajacobi(0%2C%20a%2C%20b%2C%20x)%0A%23--%0Ajacobi(1%2C%20a%2C%20b%2C%20x)%0A%23--%0Ajacobi(2%2C%20a%2C%20b%2C%20x)%0A%23--%0Ajacobi(n%2C%20a%2C%20a%2C%20x)%0A%23--%0Ajacobi(n%2C%20a%2C%20b%2C%200)%0A%23--%0Aconjugate(jacobi(n%2C%20a%2C%20b%2C%20x))%0A%23--%0Aerf(I*oo)%0A%23--%0ADiracDelta(x**2%20%2B%20x%20-%202).simplify(x)%0A%23--%0A">erikoisfunktiot</a>, ...
+                </li>
+                <li><strong>Sijoitus:</strong> <a href="http://www.sympygamma.com/input/?i=%28exp%28x%29+%2F+%281+%2B+exp%282x%29%29%29.subs%28exp%28x%29%2C+u%29">esimerkki</a></li>
+                <li><strong>Numerot:</strong>
+                    
+                    <a href="http://www.sympygamma.com/input/?i=100%21">mielivaltaisen tarkat kokonaisluvut</a>,
+                    <a href="http://www.sympygamma.com/input/?i=0.%5B13579%5D">rationaaliluvut</a>,
+                    <a href="http://www.sympygamma.com/input/?i=exp%2820%21%29">ja liukuluvut</a>
+                    
+                </li>
+                <li><strong>Ei-kommutoivat symbolit</strong></li>
+                <li><strong>Kuvion täsmäys</strong></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <h3>Polynomit</h3>
+        <div>
+            <p><a href="http://docs.sympy.org/latest/modules/polys/index.html">Dokumentaatio</a></p>
+            <ul>
+                <li><strong>Perusaritmetiikka:</strong> jaollisuus, syt, ...</li>
+                <li><strong>Tekijöihin jakaminen</strong></li>
+                <li><strong>Neliövapaa hajotelma</strong></li>
+                <li><strong>Gröbner-kannat</strong></li>
+                <li><strong>Osittaismurtohajotelma</strong></li>
+                <li><strong>Resultantit</strong></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <h3>Differentiaalilaskenta</h3>
+        <div>
+            <p><a href="http://docs.sympy.org/latest/modules/integrals/integrals.html">Integraatiodokumentit</a></p>
+            <ul>
+                <li>
+                    <strong>Raja-arvot</strong>
+                    <a href="http://www.sympygamma.com/input/?i=limit%28x*log%28x%29%2C+x%2C+0%29">limit(x*log(x), x, 0) -&gt; 0</a>
+                </li>
+                <li>
+                    <strong>Derivointi:</strong>
+                </li>
+                <li>
+                    <strong>Integrointi:</strong>
+                    Se käyttää laajennettua Risch-Norman - heuristiikkaa
+                </li>
+                <li><strong>Taylor (Laurent) - sarjat</strong></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <h3>Yhtälönratkaisu</h3>
+        <div>
+            <p><a href="http://docs.sympy.org/latest/modules/solvers/solvers.html">Dokumentaatio</a></p>
+            <ul>
+                <li><strong>Polynomiyhtälöt</strong></li>
+                <li><strong>Algebralliset yhtälöt</strong></li>
+                <li><strong>Differentiaaliyhtälöt</strong></li>
+                <li><strong>Differenssiyhtälöt</strong></li>
+                <li><strong>Yhtälöryhmät</strong></li>
+                <li><strong>Diofantoksen yhtälöt</strong> <a href="http://www.sympygamma.com/input/?i=diophantine%28x%2A%2A2%20-%204%2Ax%2Ay%20%2B%208%2Ay%2A%2A2%20-%203%2Ax%20%2B%207%2Ay%20-%205%29">x<sup>2</sup> &#8722; 4xy + 8y<sup>2</sup> &#8722; 3x + 7y = 5</a>, <a href="http://www.sympygamma.com/input/?i=diophantine%282%2Ax%20%2B%203%2Ay%20-%205%29">2x + 3y = 5</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <h3>Kombinatoriikka</h3>
+        <div>
+            <p><a href="http://docs.sympy.org/latest/modules/combinatorics/index.html">Dokumentaatio</a></p>
+            <ul>
+                <li><strong>Permutaatiot</strong></li>
+                <li><strong>Kombinaatiot</strong></li>
+                <li><strong>Ositukset</strong></li>
+                <li><strong>Aliryhmät</strong></li>
+                <li><strong>Permutaatioryhmät</strong>: Polyhedral, Rubik, Symmetric, ...</li>
+                <li><strong>Prufer ja Gray - koodit</strong></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <h3>Diskreetti matematiikka</h3>
+        <div>
+            <ul>
+                <li><strong>Binomikertoimet</strong></li>
+                <li><strong>Summat</strong></li>
+                <li><strong>Tulot</strong></li>
+                <li><strong>Lukuteoria:</strong> alkulukujen generointi, alkulukutestit, kokonaislukuhajotelmat, diofantoksen yhtälöt...</li>
+                <li><strong>Loogiset lauseet</strong></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <h3>Matriisit</h3>
+        <div>
+            <p><a href="http://docs.sympy.org/latest/modules/matrices/index.html">Dokumentaatio</a></p>
+            <ul>
+                <li><strong>Perusaritmetiikka</strong></li>
+                <li><strong>Ominaisarvot ja ominaisvektorit</strong></li>
+                <li><strong>Determinantit</strong></li>
+                <li><strong>Inversiot</strong></li>
+                <li><strong>Ratkaiseminen</strong></li>
+                <li><strong>Abstraktit lausekkeet</strong></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <h3>Geometrinen algebra</h3>
+        <div>
+            <p><a href="http://docs.sympy.org/latest/modules/galgebra/index.html">Dokumentaatio</a></p>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <h3>Geometria</h3>
+        <div>
+            <p><a href="http://docs.sympy.org/latest/modules/geometry.html">Dokumentaatio</a></p>
+            <ul>
+                <li><strong>pisteet, suorat, säteet, segmentit, ellipsit, ympyrät,
+                    monikulmiot, ...</strong></li>
+                <li><strong>Leikkaus</strong></li>
+                <li><strong>Tangentti</strong></li>
+                <li><strong>Samankaltaisuus</strong></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <h3>Kuvaajien piirtäminen</h3>
+        <div>
+            <p><a href="http://docs.sympy.org/latest/modules/plotting.html">Dokumentaatio</a></p>
+            <ul>
+                <li><strong>Koordinaattimallit</strong></li>
+                <li><strong>Geometristen kappaleiden piirtäminen</strong></li>
+                <li><strong>2D ja 3D</strong></li>
+                <li><strong>Interaktiivinen rajapinta</strong></li>
+                <li><strong>Värit</strong></li>
+                <li><strong>Matplotlib-tuki</strong></li>
+            </ul>
+
+            <section class="gallery">
+                <figure>
+                    <img src="/static/images/main_features_examples/plotting1.png"
+                         alt="Funktion sin(2 sin(2 sin(x))) SymPy-kuvaaja matplotlibin avulla" />
+                    <figcaption><code>plot(sin(2*sin(2*sin(x))))</code></figcaption>
+                </figure>
+                <figure>
+                    <img src="/static/images/main_features_examples/plotting2.png"
+                         alt="Funktioiden x, x^2, ja x^3 SymPy-kuvaajat x = -5 ja 5 välillä" />
+                    <figcaption><code>plot(x, x**2, x**3, (x, -5, 5))</code></figcaption>
+                </figure>
+                <figure>
+                    <img src="/static/images/main_features_examples/plotting3.png"
+                         alt="Parametrinen x = cos(u), y = sin(u) SymPy-kuvaaja välillä -5, 5" />
+                    <figcaption><code>plot_parametric(cos(u), sin(u), (u, -5, 5))</code></figcaption>
+                </figure>
+                <figure>
+                    <img src="/static/images/main_features_examples/plotting4.png"
+                         alt="Funktioiden xy, x SymPy 3D-kuvaaja, x välillä -5 ja 5 ja y välillä 5 ja 5" />
+                    <figcaption><code>plot3d(x*y, (x, -5, 5), (y, -5, 5))</code></figcaption>
+                </figure>
+                <figure>
+                    <img src="/static/images/main_features_examples/plotting5.png"
+                         alt="3D-parametrinen käyrän x = cos(u), y = sin(u), z = u SymPy - kuvaaja välillä -5, 5" />
+                    <figcaption><code>plot3d_parametric_line(cos(u), sin(u), u, (u, -5, 5))</code></figcaption>
+                </figure>
+                <figure>
+                    <img src="/static/images/main_features_examples/plotting6.png"
+                         alt="3D parametrinen SymPy - kuvaaja pinnalle x = cos(u + v), y = sin(u - v), z = u - v jossa u, v välillä -5, 5" />
+                    <figcaption><code>plot3d_parametric_surface(cos(u + v), sin(u - v), u - v, (u, -5, 5), (v, -5, 5))</code></figcaption>
+                </figure>
+                <figure>
+                    <img src="/static/images/main_features_examples/plotting7.png"
+                         alt="Implisiittinen SymPy - kuvaaja käyrälle x^2 + y^2 = 5" />
+                    <figcaption><code>plot_implicit(Eq(x**2 + y**2, 5))</code></figcaption>
+                </figure>
+                <figure>
+                    <img src="/static/images/main_features_examples/plotting8.png"
+                         alt="Implisiittinen SymPy-kuvaaja y &gt; x^2" />
+                    <figcaption><code>plot_implicit(y > x**2)</code></figcaption>
+                </figure>
+                <figure>
+                    <img src="/static/images/main_features_examples/plotting9.png"
+                         alt="Implisiittinen SymPy-kuvaaja y &gt; x (looginen ja) y & gt; -x" />
+                    <figcaption><code>plot_implicit(And(y &gt; x, y &gt; -x))</code></figcaption>
+                </figure>
+                <figure>
+                    <img src="/static/images/main_features_examples/plotting10.png"
+                         alt="Interaktiivinen matplotlib-rajapinta 3D-parametriselle SymPy-pinnalle x=cos(u+v), y = sin(u-v), z=u-v, u ja v välillä -5, 5" />
+                    <figcaption><code>plot3d_parametric_surface(cos(u + v), sin(u - v), u - v, (u, -5, 5), (v, -5, 5))</code></figcaption>
+                </figure>
+                <figure>
+                    <img src="/static/images/main_features_examples/plotting11.png"
+                         alt="SymPy Gamma-kuvaaja x=cos(t), y=sin(t)" />
+                    <figcaption>SymPy Gamma - kuvaaja</figcaption>
+                </figure>
+            </section>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <h3>Fysiikka</h3>
+        <div>
+            <p><a href="http://docs.sympy.org/latest/modules/physics/index.html">Dokumentaatio</a></p>
+            <ul>
+                <li><strong>Yksiköt</strong></li>
+                <li><strong>Mekaniikka</strong></li>
+                <li><strong>Kvanttimekaniikka</strong></li>
+                <li><strong>Gaussin optiikka</strong></li>
+                <li><strong>Paulin algebra</strong></li>
+            </ul>
+
+            <h4>IPython - esimerkkimuistiot</h4>
+            <ul>
+                <li><a href="http://nbviewer.ipython.org/github/pydy/pydy/blob/master/examples/tutorials/beginner.ipynb">Aloittelijan opas SymPy-mekaniikalle</a></li>
+                <li><a href="http://nbviewer.ipython.org/urls/raw2.github.com/PythonDynamics/pydy_examples/master/mass_spring_damper/mass_spring_damper.ipynb">Massa-Jousi-Vaimennin - järjestelmän johtaminen SymPyn avulla</a></li>
+                <li><a href="http://nbviewer.ipython.org/gist/rpmuller/5843312">Kvanttipiirien kuvaaminen SymPyn avulla</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <h3>Tilastotiede</h3>
+        <div>
+            <p><a href="http://docs.sympy.org/latest/modules/stats.html">Dokumentaatio</a></p>
+            <ul>
+              <li><strong>Satunnaismuuttujien tyypit:</strong>
+                <ul>
+                  <li><strong>Normaalijakaumat</strong></li>
+                  <li><strong>Tasajakaumat</strong></li>
+                  <li><strong>Bernoulli-jakaumat</strong></li>
+                  <li><strong>Binomijakaumat</strong></li>
+                  <li><strong>Hypergeometriset jakaumat</strong></li>
+                  <li><a href="http://docs.sympy.org/latest/modules/stats.html#random-variable-types">Lisää&hellip;</a>
+                </ul>
+              </li>
+              <li><strong>Todennäköisyys</strong></li>
+              <li><strong>Odotusarvo ja varianssi</strong></li>
+              <li><strong>Todennäköisyyden tiheysfunktio</strong></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <h3>Kryptografia</h3>
+        <div>
+            <p><a href="http://docs.sympy.org/latest/modules/crypto.html">Dokumentaatio</a></p>
+            <ul>
+              <li><strong>Siirtosalaus</strong></li>
+              <li><strong>Affiini salaus</strong></></li>
+              <li><strong>Bifid-salaus</strong></></li>
+              <li><strong>Vinegeren salaus</strong></></li>
+              <li><strong>Korvaussalaus</strong></></li>
+              <li><strong>Hillin salaus</strong></></li>
+              <li><strong>RSA</strong></></li>
+              <li><strong>Kid RSA</strong></></li>
+              <li><strong>Vaihtorekisterien lineaarinen palaute</strong></></li>
+              <li><strong>ElGamal-salaus</strong></></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <h3>Jäsennys</h3>
+        <div>
+            <p><a href="http://docs.sympy.org/latest/modules/parsing.html">Dokumentaatio</a></p>
+            <ul>
+                <li><strong>Python-olioiden kääntäminen SymPy-olioiksi</strong></li>
+                <li><strong>Valinnainen implisiittinen moninkertaistuminen ja funktion sovellusjäsennys</strong></li>
+                <li><strong>Rajoitettu Mathematica ja Maxima - jäsennys</strong> <a href="http://live.sympy.org/?evaluate=from%20sympy.parsing.mathematica%20import%20mathematica%0A%23--%0Afrom%20sympy.parsing.maxima%20import%20parse_maxima%0A%23--%0Amathematica(%27Sin%5Bx%5D%27)%0A%23--%0Aparse_maxima(%27sqrt(x%5E2)%27)%0A%23--%0A">esimerkki SymPy-livessä</a></li>
+                <li><strong>Kustomoidut jäsennysmuutokset</strong></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <h3>Tulostaminen</h3>
+        <div>
+            <p><a href="http://docs.sympy.org/latest/modules/printing.html">Dokumentaatio</a></p>
+            <ul>
+                <li><strong>Kaunis tulostaminen:</strong> ASCII/Unicode kaunis tulostaminen, LaTeX</li>
+                <li><strong>Koodin generointi:</strong> C, Fortran, Python</li>
+                <li><strong><a href="http://deeplearning.net/software/theano/">Theano</a> interaktiot</strong></li>
+            </ul>
+
+            <section class="gallery">
+                <figure>
+                    <img src="/static/images/main_features_examples/printing1.png"
+                         alt="Unicode-tulostaminen Python-komentokehoitteella" />
+                    <figcaption>Unicode-tulostaminen</figcaption>
+                </figure>
+                <figure>
+                    <img src="/static/images/main_features_examples/printing2.png"
+                         alt="LaTeX-tulostaminen IPython - muistiossa" />
+                    <figcaption>LaTeX-tulostaminen</figcaption>
+                </figure>
+            </section>
+        </div>
+    </div>
+</div>
+
+
+          </article>
+        </div>
+        <div id="spacer" class="col span_1 clr small_span_0">&nbsp;</div>
+        <aside id="sidebar" class="col span_4 clr small_span_2">
+          <div id="search-gamma" class="sidebar_card">
+            <h3>Laske Gamman avulla</h3>
+            <form method="get" action="http://www.sympygamma.com/input/" target="_blank">
+              <input type="text" name="i" />
+              <button>Laske</button>
+            </form>
+          </div>
+          <div id="about" class="sidebar_card">
+            <h3>Lataa nyt</h3>
+            <p>
+              <a href="https://github.com/sympy/sympy/releases">Uusin versio</a><br/>
+              <a href="http://github.com/sympy/sympy">Kehitysversio</a>
+            </p>
+          </div>
+          <div id="quick_links" class="sidebar_card">
+            <h3>Pikalinkit</h3>
+            <ul>
+              <li><a href="http://docs.sympy.org/">Dokumentaatio</a></li>
+              <li><a href="https://github.com/sympy/sympy/releases">Lataukset (lähdekoodin tarball-tiedostot)</a></li>
+              <li><a href="http://groups.google.com/group/sympy">Postituslista</a></li>
+              <li><a href="http://github.com/sympy/sympy">Lähdekoodi</a></li>
+              <li><a href="https://github.com/sympy/sympy/issues/">Bugiseuranta</a></li>
+              <li><a href="http://github.com/sympy/sympy/wiki">Wiki</a></li>
+              <li><a href="http://live.sympy.org/">Kokeile SymPyn online-versiota</a></li>
+              <li><a href="http://sympy.blogspot.com/">Virallinen SymPy-blogi</a></li>
+              <li><a href="http://planet.sympy.org/">Planet SymPy - blogi</a></li>
+              <li><a href="https://gitter.im/sympy/sympy">Gitter-Chat</a></li>
+              <li><a href="http://colabti.org/irclogger/irclogger_logs/sympy">IRC-kanavan lokitiedostot</a></li>
+            </ul>
+          </div>
+          <div id="social" class="sidebar_card">
+            <h3>Seuraa meitä<h3>
+                <!-- Place this tag where you want the widget to render. -->
+                <div class="g-follow" data-annotation="bubble"
+                data-height="24"
+                data-href="https://plus.google.com/116872266504964122381"
+                data-rel="publisher"></div>
+
+                <!-- Place this tag after the last widget tag. -->
+                <script type="text/javascript">
+                    (function() {
+                        var po = document.createElement('script'); po.type =
+                        'text/javascript'; po.async = true;
+                        po.src = 'https://apis.google.com/js/plusone.js';
+                        var s = document.getElementsByTagName('script')[0];
+                        s.parentNode.insertBefore(po, s);
+                      })();
+                    </script>
+                <a href="https://twitter.com/sympy"
+                class="twitter-follow-button" data-show-count="false"
+                data-size="large">Follow @sympy</a>
+                <script>!function(d,s,id){var
+                js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,
+                'script', 'twitter-wjs');</script>
+          </div>
+          
+          
+      </aside>
+    </section>
+    <footer class="row">
+      <p>Copyright &copy; 2015 SymPy Development Team. </p>
+      <p>
+        Tämä sivu on avointa lähdekoodia. Forkkaa <a href="https://github.com/sympy/sympy.github.com">projekti GitHubissa</a> editoidaksesi sitä.
+      </p>
+      <p>
+        Kielet (beta):
+        <a href="../cs/index.html">[Cs]</a>,
+        <a href="../de/index.html">[De]</a>,
+        <a href="../en/index.html">[En]</a>,
+        <a href="../fr/index.html">[Fr]</a>,
+        <a href="../nl/index.html">[Nl]</a>,
+        <a href="../pt/index.html">[Pt]</a>,
+        <a href="../ru/index.html">[Ru]</a>,
+        <a href="../zh/index.html">[Zh]</a>
+      </p>
+    </footer>
+  </div>
+</body>
+</html>
