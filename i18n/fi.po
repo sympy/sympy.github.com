@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: sympy.github.com\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-10-14 15:17+0100\n"
-"PO-Revision-Date: 2015-11-05 11:21+0100\n"
+"PO-Revision-Date: 2015-11-05 17:46+0100\n"
 "Last-Translator: Juha Remes <jremes@outlook.com>\n"
 "Language-Team: Juha Remes <jremes@outlook.com>\n"
 "MIME-Version: 1.0\n"
@@ -113,7 +113,7 @@ msgstr "Virallinen SymPy-blogi"
 
 #: templates/base.html:75
 msgid "Planet SymPy"
-msgstr "Planet SymPy - blogi"
+msgstr "Planet SymPy-blogi"
 
 #: templates/base.html:76
 msgid "Chat (Gitter)"
@@ -156,7 +156,7 @@ msgid ""
 "        code (see below for more information)"
 msgstr ""
 "Mikäli kirjoitit jotakin kiinnostavaa SymPy-ohjelmistolla, ole hyvä ja "
-"lähetä meille korjaustiedost\n"
+"lähetä meille muutostiedosto\n"
 "         lähdekoodilla (ole hyvä ja katso lisätiedot alla)"
 
 #: templates/development.html:20
@@ -274,7 +274,7 @@ msgstr ""
 "Githubin talletuspyyntö on meille mieluisin tapa, koska se tekee meille "
 "helpoksi\n"
 "    arvioida ja yhdistää lähdekoodia. Joten,\n"
-"    voit lisäksi kloonata viimeisimmän git-säilön (ks. linkki oikealla), "
+"    myös voit kloonata viimeisimmän git-säilön (ks. linkki oikealla), "
 "valmistella haaran jossa\n"
 "    koodisi sijaitsee, ladata sen jonnekin (esimerkiksi <a\n"
 "                                                   href=\"http://github.com/"
@@ -292,8 +292,8 @@ msgid ""
 "appear there too."
 msgstr ""
 "SymPy-projektilla on laaja <a href=\"http://docs.sympy.org/dev/aboutus."
-"html#sympy-development-team\">kehitystiimi</a>, lähetä meille "
-"korjaustiedosto ja sinun nimesi ilmestyy kehitystiimiimme."
+"html#sympy-development-team\">kehitystiimi</a>, lähetä meille muutostiedosto "
+"ja sinun nimesi ilmestyy kehitystiimiimme."
 
 #: templates/development.html:69
 msgid "Sources of the Webpages"
@@ -305,7 +305,7 @@ msgstr "Näiden sivujen lähdekoodi on osoitteessa"
 
 #: templates/development.html:75
 msgid "Feel free to send us patches with improvements."
-msgstr "Voit lähettää meille parannuksia sisältäviä muutostiedostoja vapaasti."
+msgstr "Älä epäröi lähettää meille parannuksia sisältäviä muutostiedostoja."
 
 #: templates/development.html:84
 msgid "Git Repository"
@@ -345,7 +345,7 @@ msgid ""
 msgstr ""
 "SymPy tulee aina olemaan 100% avoimen lähdekoodin ohjelmisto, vapaa kaikkien "
 "käytettäväksi\n"
-"ja julkaistu muokatun BSD-lisenssin sallivilla ehdoilla.\n"
+"ja julkaistu sallivilla muokatun BSD-lisenssin ehdoilla.\n"
 
 #: templates/donate.html:16
 msgid "You can donate any amount here:"
@@ -437,7 +437,7 @@ msgstr "Trigonometria"
 
 #: templates/features.html:17
 msgid "Polynomials</a>"
-msgstr "Polynomit"
+msgstr "Polynomit</a>"
 
 #: templates/features.html:18
 msgid "Expansion:"
@@ -525,7 +525,7 @@ msgstr "Polynomit"
 
 #: templates/features.html:69
 msgid " division, gcd, ... "
-msgstr "jaollisuus, syt, ..."
+msgstr "jaollisuus, syt, ... "
 
 #: templates/features.html:70
 msgid "Factorization"
@@ -569,7 +569,7 @@ msgstr "Integrointi:"
 
 #: templates/features.html:93
 msgid "It uses extended Risch-Norman heuristic"
-msgstr "Se käyttää laajennettua Risch-Norman - heuristiikkaa"
+msgstr "Se käyttää laajennettua Risch-Norman-heuristiikkaa"
 
 #: templates/features.html:95
 msgid "Taylor (Laurent) series"
@@ -621,7 +621,7 @@ msgstr "Ositukset"
 
 #: templates/features.html:123
 msgid "Subsets"
-msgstr "Aliryhmät"
+msgstr "Osajoukot"
 
 #: templates/features.html:124
 msgid "Permutation Groups"
@@ -681,7 +681,7 @@ msgstr "Determinantit"
 
 #: templates/features.html:152
 msgid "Inversion"
-msgstr "Inversiot"
+msgstr "Käänteismatriisit"
 
 #: templates/features.html:153
 msgid "Solving"
