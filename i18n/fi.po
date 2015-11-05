@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: sympy.github.com\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-10-14 15:17+0100\n"
-"PO-Revision-Date: 2015-11-05 17:51+0100\n"
+"PO-Revision-Date: 2015-11-05 19:19+0100\n"
 "Last-Translator: Juha Remes <jremes@outlook.com>\n"
 "Language-Team: Juha Remes <jremes@outlook.com>\n"
 "MIME-Version: 1.0\n"
@@ -661,7 +661,7 @@ msgstr ""
 
 #: templates/features.html:139
 msgid "Logic expressions"
-msgstr "Loogiset lauseet"
+msgstr "Loogiset lausekkeet"
 
 #: templates/features.html:145
 msgid "Matrices"
@@ -713,7 +713,7 @@ msgstr "Leikkaus"
 
 #: templates/features.html:174
 msgid "Tangency"
-msgstr "Tangentti"
+msgstr "Tangentit"
 
 #: templates/features.html:175
 msgid "Similarity"
@@ -966,7 +966,7 @@ msgstr "Tulostaminen"
 
 #: templates/features.html:333
 msgid "Pretty printing:"
-msgstr "Kaunis tulostaminen:"
+msgstr "Tyylikäs tulostaminen:"
 
 #: templates/features.html:333
 msgid "ASCII/Unicode pretty printing, LaTeX"
@@ -984,7 +984,7 @@ msgstr "C, Fortran, Python"
 msgid ""
 "<a href=\"http://deeplearning.net/software/theano/\">Theano</a> interaction"
 msgstr ""
-"<a href=\"http://deeplearning.net/software/theano/\">Theano</a> interaktiot"
+"<a href=\"http://deeplearning.net/software/theano/\">Theanon</a> käyttö"
 
 #: templates/features.html:341
 msgid "Unicode printing in a Python shell"
@@ -1017,8 +1017,7 @@ msgid ""
 "libraries."
 msgstr ""
 "SymPy on symboliseen matematiikkaan tarkoitettu Python-kirjasto. Se pyrkii\n"
-"      tulemaan täysien omainsuuksien laskentaohjelmistoksi (CAS) pitäen "
-"koodin\n"
+"      tulemaan  täydelliseksi laskentaohjelmistoksi (CAS) pitäen koodin\n"
 "      mahdollisimman yksinkertaisena ollakseen ymmärrettävä ja helposti "
 "laajennettava. SymPy\n"
 "      on kirjoitettu kokonaan Python-ohjelmointikielellä eikä vaadi "
@@ -1030,7 +1029,7 @@ msgid ""
 "with the tutorial</a>"
 msgstr ""
 "<a href=\"http://docs.sympy.org/latest/tutorial/index.html\">Pääse alkuun "
-"tutoriaaleilla</a>"
+"aloitusoppaalla</a>"
 
 #: templates/index.html:20
 msgid "<a href=\"https://github.com/sympy/sympy/releases\">Download Now</a>"
@@ -1067,7 +1066,7 @@ msgstr "Kevyt:"
 #: templates/index.html:34
 msgid " SymPy does not require any external libraries, making it easy to use. "
 msgstr ""
-"Ainoa ulkoinen kirjasto jonka SymPy tarvitsee on NumPy, joten se on helppo "
+"Ainoa ulkoinen kirjasto jonka SymPy tarvitsee on mpmath, joten se on helppo "
 "käyttää."
 
 #: templates/index.html:35
