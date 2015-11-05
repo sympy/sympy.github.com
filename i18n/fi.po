@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: sympy.github.com\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-10-14 15:17+0100\n"
-"PO-Revision-Date: 2015-11-04 16:51+0100\n"
+"PO-Revision-Date: 2015-11-05 11:21+0100\n"
 "Last-Translator: Juha Remes <jremes@outlook.com>\n"
 "Language-Team: Juha Remes <jremes@outlook.com>\n"
 "MIME-Version: 1.0\n"
@@ -133,8 +133,8 @@ msgid ""
 "This page is open source. Fork <a href=\"%(url)s\">the project on GitHub</a> "
 "to edit it."
 msgstr ""
-"Tämä sivu on avointa lähdekoodia. Forkkaa <a href=\"%(url)s\">projekti "
-"GitHubissa</a> editoidaksesi sitä."
+"Tämä sivu on avointa lähdekoodia. Luo haara <a href=\"%(url)s\">projektista "
+"GitHubissa</a> muokataksesi sitä."
 
 #: templates/base.html:115
 msgid "Languages"
@@ -188,7 +188,7 @@ msgstr "Voit blogata kuinka käytät SymPy-ohjelmistoa"
 msgid "You can help us write documentation (just send us a patch)"
 msgstr ""
 "Voit avustaa meitä kirjoittamaan dokumentaatiota (lähettämällä meille "
-"korjaustiedoston)"
+"muutostiedoston)"
 
 #: templates/development.html:26
 msgid ""
@@ -200,23 +200,23 @@ msgstr ""
 
 #: templates/development.html:27
 msgid "You can help with reviewing patches"
-msgstr "Voit avustaa meitä tarkistamalla korjaustiedostoja"
+msgstr "Voit avustaa meitä tarkistamalla muutostiedostoja"
 
 #: templates/development.html:28
 msgid "You can send us patches with bug fixes or new features"
 msgstr ""
-"Voit lähettää meille korjaustiedostoja joissa on bugikorjauksia tai uusia "
+"Voit lähettää meille muutostiedostoja joissa on bugikorjauksia tai uusia "
 "ominaisuuksia"
 
 #: templates/development.html:32
 msgid "The best way to contribute code or documentation is to send us a patch"
 msgstr ""
 "Paras tapa avustaa lahjoittamalla lähdekoodia tai dokumentaatiota on "
-"lähettämällä meille korjaustiedoston"
+"lähettämällä meille muutostiedoston"
 
 #: templates/development.html:36
 msgid "How to Send a Patch"
-msgstr "Kuinka lähettää korjaustiedosto"
+msgstr "Kuinka lähettää muutostiedosto"
 
 #: templates/development.html:39
 msgid ""
@@ -225,8 +225,9 @@ msgid ""
 "repository.\n"
 "    We'll review it and push it in."
 msgstr ""
-"Paras tapa on lähettää meille pull request\n"
-"    <a href=\"http://github.com/sympy/sympy\">sympy/sympy</a> repositoryyn.\n"
+"Paras tapa on lähettää meille talletuspyynnön\n"
+"    <a href=\"http://github.com/sympy/sympy\">sympy/sympy</a> "
+"keskussäilöön.\n"
 "    Me arvioimme ja yhdistämme sen."
 
 #: templates/development.html:45
@@ -237,7 +238,7 @@ msgid ""
 "    or ask on <a href=\"https://gitter.im/sympy/sympy\">Gitter</a>, we'll be "
 "happy to help."
 msgstr ""
-"Mikäli tarvitset apua gitin, githubin, pull requestien, korjaustiedostojen, "
+"Mikäli tarvitset apua gitin, githubin, talletuspyyntöjen, muutostiedostojen, "
 "ohjelmoinnin, SymPyn tai\n"
 "    minkä tahansa muun asiaan liittyvän kanssa, ole hyvä ja lähetä e-mail <a "
 "href=\"https://groups.google.com/forum/#!forum/sympy\">postituslistalle</a>\n"
@@ -252,7 +253,7 @@ msgid ""
 msgstr ""
 "Lisäksi voit lukea ohjeet\n"
 "    <a href=\"https://github.com/sympy/sympy/wiki/Development-workflow\">\n"
-"     kuinka valmistella korjaustiedostoja</a> käyttäen gitia ja githubia."
+"     kuinka valmistella muutostiedostoja</a> käyttäen gitia ja githubia."
 
 #: templates/development.html:54
 msgid ""
@@ -270,16 +271,17 @@ msgid ""
 "work\n"
 "    for us to integrate it."
 msgstr ""
-"Githubin pull request meille mieluisin tapa, koska se tekee meille helpoksi\n"
+"Githubin talletuspyyntö on meille mieluisin tapa, koska se tekee meille "
+"helpoksi\n"
 "    arvioida ja yhdistää lähdekoodia. Joten,\n"
-"    voit lisäksi kloonata viimeisimmän git-repon (ks. linkki oikealla), "
+"    voit lisäksi kloonata viimeisimmän git-säilön (ks. linkki oikealla), "
 "valmistella haaran jossa\n"
 "    koodisi sijaitsee, ladata sen jonnekin (esimerkiksi <a\n"
 "                                                   href=\"http://github.com/"
 "\">github</a>) ja lähettää meille linkin <a\n"
 "                                                                                                                      href="
 "\"https://groups.google.com/forum/#!forum/sympy\">sympy</a>\n"
-"    postituslistalle, tai voit jopa lähettää meille raakakorjaustiedostoja "
+"    postituslistalle, tai voit jopa lähettää meille raakamuutostiedostoja "
 "--- mutta se tietää meille työtä\n"
 "    koska meidän pitää integroida muutokset."
 
@@ -303,8 +305,7 @@ msgstr "Näiden sivujen lähdekoodi on osoitteessa"
 
 #: templates/development.html:75
 msgid "Feel free to send us patches with improvements."
-msgstr ""
-"Voit lähettää meille parannuksia sisältäviä korjaustiedostoja vapaasti."
+msgstr "Voit lähettää meille parannuksia sisältäviä muutostiedostoja vapaasti."
 
 #: templates/development.html:84
 msgid "Git Repository"
@@ -312,7 +313,7 @@ msgstr "Git-repo"
 
 #: templates/development.html:86 templates/download.html:21
 msgid "Main git repository"
-msgstr "Gitin päärepo"
+msgstr "Gitin pääsäilö"
 
 #: templates/development.html:90
 msgid "Online access"
@@ -324,7 +325,7 @@ msgid ""
 "The documentation is maintained using the <a href=\"%(url)s\">Sphinx</a> "
 "Python documentation generator."
 msgstr ""
-"Dokumentaatiotamme ylläpidetään käytämme <a href=\"%(url)s\">Sphinx</a> "
+"Dokumentaatiotamme ylläpidetään käyttäen <a href=\"%(url)s\">Sphinx</a> "
 "Python dokumentaatiogeneraattoria."
 
 #: templates/docs.html:13
@@ -344,7 +345,7 @@ msgid ""
 msgstr ""
 "SymPy tulee aina olemaan 100% avoimen lähdekoodin ohjelmisto, vapaa kaikkien "
 "käytettäväksi\n"
-"ja julkaistu modifioidun BSD-lisenssin liberaaleilla termeillä.\n"
+"ja julkaistu muokatun BSD-lisenssin sallivilla ehdoilla.\n"
 
 #: templates/donate.html:16
 msgid "You can donate any amount here:"
@@ -512,7 +513,7 @@ msgstr ""
 
 #: templates/features.html:58
 msgid "Noncommutative symbols"
-msgstr "Ei-kommutoivat symbolit"
+msgstr "Epävaihdannaiset"
 
 #: templates/features.html:59
 msgid "Pattern matching"
@@ -532,15 +533,15 @@ msgstr "Tekijöihin jakaminen"
 
 #: templates/features.html:71
 msgid "Square-free decomposition"
-msgstr "Neliövapaa hajotelma"
+msgstr "Neliötön hajotelma"
 
 #: templates/features.html:72
 msgid "Gröbner bases"
-msgstr "Gröbner-kannat"
+msgstr "Gröbnerin kannat"
 
 #: templates/features.html:73
 msgid "Partial fraction decomposition"
-msgstr "Osittaismurtohajotelma"
+msgstr "Osamurtohajotelma"
 
 #: templates/features.html:74
 msgid "Resultants"
@@ -552,7 +553,7 @@ msgstr "Differentiaalilaskenta"
 
 #: templates/features.html:82
 msgid "Integration Documentation"
-msgstr "Integraatiodokumentit"
+msgstr "Integrointidokumentit"
 
 #: templates/features.html:85
 msgid "Limits:"
@@ -628,7 +629,7 @@ msgstr "Permutaatioryhmät"
 
 #: templates/features.html:125
 msgid "Prufer and Gray Codes"
-msgstr "Prufer ja Gray - koodit"
+msgstr "Prüfer ja Gray - koodit"
 
 #: templates/features.html:131
 msgid "Discrete math"
@@ -716,7 +717,7 @@ msgstr "Tangentti"
 
 #: templates/features.html:175
 msgid "Similarity"
-msgstr "Samankaltaisuus"
+msgstr "Yhdenmuotoisuus"
 
 #: templates/features.html:181
 msgid "Plotting"
@@ -957,7 +958,7 @@ msgstr "esimerkki SymPy-livessä"
 
 #: templates/features.html:323
 msgid "Custom parsing transformations"
-msgstr "Kustomoidut jäsennysmuutokset"
+msgstr "Sovitetut jäsennysmuutokset"
 
 #: templates/features.html:329
 msgid "Printing"
@@ -1065,7 +1066,9 @@ msgstr "Kevyt:"
 
 #: templates/index.html:34
 msgid " SymPy does not require any external libraries, making it easy to use. "
-msgstr "SymPy ei tarvitse ulkoisia kirjastoja joten se on helppo käyttää."
+msgstr ""
+"Ainoa ulkoinen kirjasto jonka SymPy tarvitsee on NumPy, joten se on helppo "
+"käyttää."
 
 #: templates/index.html:35
 msgid "A library:"
