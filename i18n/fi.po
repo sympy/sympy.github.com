@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: sympy.github.com\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-10-14 15:17+0100\n"
-"PO-Revision-Date: 2015-11-05 19:19+0100\n"
+"PO-Revision-Date: 2015-11-06 16:52+0100\n"
 "Last-Translator: Juha Remes <jremes@outlook.com>\n"
 "Language-Team: Juha Remes <jremes@outlook.com>\n"
 "MIME-Version: 1.0\n"
@@ -666,6 +666,10 @@ msgstr "Loogiset lausekkeet"
 #: templates/features.html:145
 msgid "Matrices"
 msgstr "Matriisit"
+
+#: templates/features.html:146
+msgid "Polyhedral, Rubik, Symmetric, ..."
+msgstr "Symmetriset ja monitahokasryhmät, Rubikin ryhmä, ..."
 
 #: templates/features.html:149
 msgid "Basic arithmetic"
