@@ -3,39 +3,44 @@
 
 {% block title %}{% trans %}Donate{% endtrans %}{% endblock %}
 
+{% block main %}
+<section id="banner">
+  <h2 class="title">{% trans %}Support SymPy Development{% endtrans %}</h2>
+  <div class="inner">
+    <p class="first">
+      {% trans %} All donations will be used strictly to fund SymPy development, by supporting
+tasks such as developer sprints, improved documentation, fixing bugs, and paying
+for hosting costs for services such as the
+<a href="http://live.sympy.org/">SymPy Online Shell</a>.{% endtrans %}
+
+    </p>
+
+    <section id="get-started">
+    <p>{% trans
+    %}<a href="https://www.flipcause.com/secure/cause_pdetails/MjI2Mw==">DONATE
+    NOW</a> {% endtrans %}</p>
+  </div>
+</section>
+
+{% endblock %}
+
 {% block content %}
 
 <h2 class="title">{% trans %}Support SymPy Development{% endtrans %}</h2>
 <div class="inner">
 <p class="first">
-{% trans %}SymPy will always be 100% open source software, free for all to use
+{% trans %}SymPy will always be 100% open source software, free for all to use,
 and released under the liberal terms of the modified BSD license.
 {% endtrans %}
 </p>
+
 <p class="second">
-{% trans %}You can donate any amount here:{% endtrans %}
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="XKSAZ7DA6E4LL">
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form>
-</p>
-<p>
-{% trans %}
-All donations will be used strictly to fund SymPy development, by supporting
-tasks such as developer sprints, improved documentation, fixing bugs and paying
-for hosting costs for services such as the
-<a href="http://live.sympy.org/">SymPy Online Shell</a>.{% endtrans %}
-</p>
-<p>
 {% trans %}
 Our donations are managed by the
-<a href="http://numfocus.org/">NumFOCUS</a>
-foundation, which passes 100% of your contribution to the SymPy project.
-NumFOCUS is a 501(c)3 non-profit foundation, so if you are subject to US Tax
-law, your contributions will be tax-deductible.
-{% endtrans %}
+<a href="http://numfocus.org/">NumFOCUS</a> foundation, which your
+contribution to the SymPy project.  NumFOCUS is a 501(c)3 non-profit
+foundation, so if you are subject to US Tax law, your contributions will be
+tax-deductible.  {% endtrans %}
 </p>
 </div>
 
