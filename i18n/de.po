@@ -419,7 +419,7 @@ msgid "Source code"
 msgstr ""
 
 #: templates/index.html:102
-msgid "Issues tracker"
+msgid "Issue tracker"
 msgstr ""
 
 #: templates/index.html:103
