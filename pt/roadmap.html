@@ -31,8 +31,8 @@
           <li class=""><a href="download.html">Download</a></li>
           <li class=""><a href="http://docs.sympy.org">Documentação <i class="icon-external-link-sign"></i></a></li>
           <li class=""><a href="support.html">Suporte</a></li>
-          <li class="active"><a href="development.html">Desenvolvimento</a></li>
-          <li class=""><a href="roadmap.html">Roadmap</a></li>
+          <li class=""><a href="development.html">Desenvolvimento</a></li>
+          <li class="active"><a href="roadmap.html">Roadmap</a></li>
           <li class=""><a href="donate.html">Donate</a></li>
           <li><a href="http://live.sympy.org/">Terminal Online <i class="icon-external-link-sign"></i></a></li>
         </ul>
@@ -44,74 +44,104 @@
           <article id="content">
             
 
-<h2 class="title">Desenvolvimento</h2>
+<h1 class="title">Roadmap</h2>
 <div class="inner">
   <p class="first">
-    We are interested in any contribution. There are many ways how you can
-    contribute:
-    <ul>
-      <li>
-        If you wrote anything interesting using SymPy, please send us a patch with the
-        code (see below for more information).
-      </li>
-
-      <li>
-        If you found a bug (or just want to let us know what you think), tell us on the
-        <a href="http://groups.google.com/group/sympy">mailinglist</a>. You can also
-        add a bug report (or a comment) into the <a href="https://github.com/sympy/sympy/issues/">issues</a>.
-      </li>
-      <li>Você pode blogar sobre como usa o SymPy.</li>
-      <li>Você pode nos ajudar a escrever documentação (apenas mande um patch).</li>
-      <li>Voce pode ajudar outras pessoas na <a href="http://groups.google.com/group/sympy">lista de emails</a>.</li>
-      <li>Você pode ajudar a revisar patches.</li>
-      <li>Você pode nos enviar patches com correções de bugs ou novos recursos.</li>
-    </ul>
+    Broadly speaking, any form of poorly symbolic mathematical computation is
+    in scope for SymPy. However, there are a few things we plan to focus our
+    development efforts on.
   </p>
-  <p>
-    A melhor maneira de contribuir com código ou documentação é mandando patches.
+
+<h3 class="title">The Assumptions System</h3>
+<div class="inner">
+  <p class="first">
+    The assumptions system handles how SymPy assumptions on expressions and
+    does logical inference and simplification based on those assumptions. The
+    SymPy assumptions system is currently in a state of disarray, as there is
+    a "new" system and an "old" system that need to be properly merged.
+    However, because assumptions affect every part of the codebase, this is a
+    challenging task.
   </p>
 </div>
 
-<h2 class="title">Como mandar um Patch</h2>
+
+<h3 class="title">Code Generation</h3>
 <div class="inner">
   <p class="first">
-    The best way is to send a github pull request
-    against the <a href="http://github.com/sympy/sympy">sympy/sympy</a> repository.
-    We'll review it and push it in.
+    Code generation refers to the task of converting
+      SymPy expressions into another language, for the purposes of fast
+      numerical evaluation. The goal with code generation is to be able to use
+      SymPy to model a problem symbolically, and then seamlessly convert that
+      symbolic model into fast code that can be numerically evaluated on real
+      data. Our goal with code generation is to make that translation as
+      seamless as possible, through things like the higher level abstractions
+      that reduce the amount of work needed by the end user,
+      an optimization pipeline, which would allow SymPy to take advantage of
+      its mathematical knowledge to create faster and more accurate code, and
+      more tools to help solve domain specific problems.
   </p>
-
-  <p>
-    If you need help with git, github, pull requests, patches, coding, SymPy or
-    anything related, just send us an email to the <a href="https://groups.google.com/forum/#!forum/sympy">mailinglist</a>
-    or ask on <a href="https://gitter.im/sympy/sympy">Gitter</a>, we'll be happy to help.
-    Also, you can read our instructions
-    <a href="https://github.com/sympy/sympy/wiki/Development-workflow">
-      how to prepare patches</a> using git and github.
-  </p>
-
-  <p>
-    The github pull request is a preferred method, as that makes it easy for us to
-    review and push the code in. That said,
-    you can also clone the latest git repository (see the link on the right), prepare a branch with
-    your code, upload it somewhere (for example <a
-                                                   href="http://github.com/">github</a>) and send us a link to the <a
-                                                                                                                      href="https://groups.google.com/forum/#!forum/sympy">sympy</a>
-    mailinglist, or you can even send us raw patches --- but it will be more work
-    for us to integrate it.
-  </p>
-
-  <p>
-    SymPy has a broad <a href="http://docs.sympy.org/dev/aboutus.html#sympy-development-team">development team</a>, send us a patch and your name will appear there too.
-  </p>
-
 </div>
-<h2 class="title">As fontes das Webpages</h2>
+
+
+<h3 class="title">Performance</h3>
 <div class="inner">
   <p class="first">
-    As fontes dessas webpages estão em:
-    <a href="http://github.com/sympy/sympy.github.com">http://github.com/sympy/sympy.github.com</a>
+    Performance is an important aspect in symbolic
+      computation. SymPy often suffers in terms of performance due to it being
+      written in pure Python. There are a few ways that SymPy can be made more
+      performant. One is to more carefully benchmark and profile SymPy code,
+      so that inefficiencies can be rooted out. This includes tooling to
+      prevent performance regressions from ever occurring in the first place.
+      Another is to have an fast symbolic core that can be optionally plugged
+      in to make SymPy's core operations faster. The plan is to use
+      the <a href="https://github.com/symengine/symengine">SymEngine</a>
+      library as an optional fast symbolic core for SymPy. SymEngine is a
+      symbolic library written in C++, with an emphasis on performance. A
+      third way SymPy can be made more performant is by implementing faster
+      symbolic algorithms for various computations.
   </p>
-  Sinta-se livre para nos enviar patches com melhorias.
+</div>
+
+
+
+<h3 class="title">SymPy Live and SymPy Gamma</h3>
+<div class="inner">
+  <p class="first">
+    <a href="http://live.sympy.org/">SymPy Live</a> is a web
+      application that runs a full Python session with SymPy in the browser.
+      It is also used in
+      the <a href="http://docs.sympy.org/latest/index.html">SymPy
+      documentation</a> to allow readers to interactively play with the
+      documentation examples. The backend of SymPy Live needs modernization,
+      and there are several improvements for frontend as
+      well.<p><p><a href="http://gamma.sympy.org/">SymPy Gamma</a> is a web
+      application that takes a mathematical formula and performance
+      many useful calculations on it, such as plotting, solving, simplifying,
+      and symbolic integration. The goal of SymPy Gamma is to be an open
+      source competitor to things
+      like <a href="http://wolframalpha.com/">WolframAlpha</a>. We aim to
+      improve SymPy Gamma by adding more useful computations to the output,
+      and by improving the parsing so that users do not need to know SymPy
+      syntax to use it.
+  </p>
+</div>
+
+
+<h3 class="title">General Algorithmic Improvements</h3>
+<div class="inner">
+  <p class="first">
+    SymPy depends on a large array
+      of symbolic computation algorithms to work. Many algorithms are already
+      implemented, but quite a few are not. These include things like improved
+      algorithms for symbolic integration, summations, simplification,
+      polynomial manipulation, and equation solving, among many others.
+      Improved algorithms will both increase the number of symbolic
+      computations that SymPy is able to successfully compute, and, in many
+      cases, greatly improve the performance of existing algorithms. A good
+      resource for the sorts of things we want to implement is
+      our <a href="https://github.com/sympy/sympy/wiki/GSoC-2017-Ideas">Google
+      Summer of Code ideas page</a>.
+  </p>
 </div>
 
 
