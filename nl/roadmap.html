@@ -47,7 +47,7 @@
 <h1 class="title">Roadmap</h2>
 <div class="inner">
   <p class="first">
-    Broadly speaking, any form of poorly symbolic mathematical computation is
+    Broadly speaking, any form of purley symbolic mathematical computation is
     in scope for SymPy. However, there are a few things we plan to focus our
     development efforts on.
   </p>
@@ -55,12 +55,13 @@
 <h3 class="title">The Assumptions System</h3>
 <div class="inner">
   <p class="first">
-    The assumptions system handles how SymPy assumptions on expressions and
-    does logical inference and simplification based on those assumptions. The
-    SymPy assumptions system is currently in a state of disarray, as there is
-    a "new" system and an "old" system that need to be properly merged.
-    However, because assumptions affect every part of the codebase, this is a
-    challenging task.
+    The assumptions system handles how SymPy makes assumptions on
+    expressions and does logical inference and simplification based on those
+    assumptions (for instance, assuming an expression is "positive" or
+    "integer"). The SymPy assumptions system is currently in a state of
+    disarray, as there is a "new" system and an "old" system that need to be
+    properly merged. However, because assumptions affect every part of the
+    codebase, this is a challenging task.
   </p>
 </div>
 
@@ -68,17 +69,17 @@
 <h3 class="title">Code Generation</h3>
 <div class="inner">
   <p class="first">
-    Code generation refers to the task of converting
-      SymPy expressions into another language, for the purposes of fast
-      numerical evaluation. The goal with code generation is to be able to use
-      SymPy to model a problem symbolically, and then seamlessly convert that
-      symbolic model into fast code that can be numerically evaluated on real
-      data. Our goal with code generation is to make that translation as
-      seamless as possible, through things like the higher level abstractions
-      that reduce the amount of work needed by the end user,
-      an optimization pipeline, which would allow SymPy to take advantage of
-      its mathematical knowledge to create faster and more accurate code, and
-      more tools to help solve domain specific problems.
+    Code generation refers to the task of converting SymPy
+      expressions into another language, such as C or Fortran, for the
+      purposes of fast numerical evaluation. The goal with code generation is
+      to be able to use SymPy to model a problem symbolically, and then
+      seamlessly convert that symbolic model into fast code that can be
+      numerically evaluated on real data. Our roadmap for code generation is
+      to make that translation as seamless as possible, through things like
+      higher level abstractions that reduce the amount of work needed by the
+      end user, an optimization pipeline, which would allow SymPy to take
+      advantage of its mathematical knowledge to create faster and more
+      accurate code, and more tools to help solve domain specific problems.
   </p>
 </div>
 
@@ -86,19 +87,19 @@
 <h3 class="title">Performance</h3>
 <div class="inner">
   <p class="first">
-    Performance is an important aspect in symbolic
-      computation. SymPy often suffers in terms of performance due to it being
-      written in pure Python. There are a few ways that SymPy can be made more
+    Performance is an important aspect in symbolic computation.
+      SymPy often suffers in terms of performance due to it being written in
+      pure Python. There are a few ways that SymPy can be made more
       performant. One is to more carefully benchmark and profile SymPy code,
       so that inefficiencies can be rooted out. This includes tooling to
       prevent performance regressions from ever occurring in the first place.
-      Another is to have an fast symbolic core that can be optionally plugged
-      in to make SymPy's core operations faster. The plan is to use
+      Second is to have a fast symbolic core that can be optionally plugged in
+      to make SymPy's core operations faster. The plan is to use
       the <a href="https://github.com/symengine/symengine">SymEngine</a>
       library as an optional fast symbolic core for SymPy. SymEngine is a
       symbolic library written in C++, with an emphasis on performance. A
       third way SymPy can be made more performant is by implementing faster
-      symbolic algorithms for various computations.
+      symbolic algorithms for various computations (see below).
   </p>
 </div>
 
@@ -108,21 +109,20 @@
 <div class="inner">
   <p class="first">
     <a href="http://live.sympy.org/">SymPy Live</a> is a web
-      application that runs a full Python session with SymPy in the browser.
-      It is also used in
+      application that runs a full SymPy Python session in the browser. It can
+      be used standalone, and is also used in
       the <a href="http://docs.sympy.org/latest/index.html">SymPy
-      documentation</a> to allow readers to interactively play with the
+      documentation</a> to allow readers to interactively evaluate the
       documentation examples. The backend of SymPy Live needs modernization,
-      and there are several improvements for frontend as
+      and there are several possible improvements for the frontend as
       well.<p><p><a href="http://gamma.sympy.org/">SymPy Gamma</a> is a web
-      application that takes a mathematical formula and performance
-      many useful calculations on it, such as plotting, solving, simplifying,
-      and symbolic integration. The goal of SymPy Gamma is to be an open
-      source competitor to things
-      like <a href="http://wolframalpha.com/">WolframAlpha</a>. We aim to
-      improve SymPy Gamma by adding more useful computations to the output,
-      and by improving the parsing so that users do not need to know SymPy
-      syntax to use it.
+      application that takes a mathematical formula and performs many useful
+      calculations on it, such as plotting, solving, simplifying, and symbolic
+      integration. The goal of SymPy Gamma is to be an open source competitor
+      to things like <a href="http://wolframalpha.com/">WolframAlpha</a>. We
+      aim to improve SymPy Gamma by adding more useful computations to the
+      output, and by improving the parsing so that users do not need to know
+      SymPy syntax to use it.
   </p>
 </div>
 
