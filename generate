@@ -28,6 +28,7 @@ templates = [
     "docs.html",
     "support.html",
     "development.html",
+    "roadmap.html",
     "donate.html",
     ]
 
