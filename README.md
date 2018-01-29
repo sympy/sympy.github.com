@@ -22,6 +22,20 @@ modifications should be made to the
 [`sources`](https://github.com/sympy/sympy.github.com/tree/sources) branch. The
 `master` branch is generated automatically.
 
+Note that all files at the root of the `sources` branch are synced to the
+`master` branch. If you want to add additional files that are not translated,
+they can be added there. But consider:
+
+- Any page with content should be added to `templates` so that it can be
+translated.
+
+- Any images should be added to `media`. Any styling changes should be added to
+
+- Any styling changes should be made in
+  the [sympy-web-static](https://github.com/sympy/sympy-web-static)
+  repository. This repository is added as a submodule in the `static`
+  directory.
+
 ## Translations
 
 The web pages for each language are generated into the `cs`, `de`, `en`
