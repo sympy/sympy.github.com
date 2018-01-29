@@ -51,6 +51,7 @@ for language in languages:
         print("    Processing '%s'" % template)
         name = os.path.splitext(template)[0]
         s = t.render({name + "_active": "active"})
+        os.makedirs(language, exist_ok=True)
         f = open(os.path.join(language, template), "wb")
         try:
           f.write(s.encode("utf-8"))

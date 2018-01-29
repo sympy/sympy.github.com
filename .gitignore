@@ -4,3 +4,13 @@
 *.tmp
 *~
 .DS_Store
+
+cs/
+de/
+en/
+es/
+fr/
+nl/
+pt/
+ru/
+zh/
