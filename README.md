@@ -15,7 +15,7 @@ You need to install jinja2 (http://jinja.pocoo.org/) and Babel
 (http://pypi.python.org/pypi/Babel).
 
 The website is generated automatically on [Travis
-CI](https://travis-ci.org/sympy/sympy.github.com) using. The pages are served
+CI](https://travis-ci.org/sympy/sympy.github.com). The pages are served
 using GitHub pages from the
 [`master`](https://github.com/sympy/sympy.github.com/tree/master) branch. All
 modifications should be made to the
