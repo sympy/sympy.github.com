@@ -3,8 +3,12 @@ env:
     # Doctr deploy key for sympy/sympy.github.com
     - secure: "mPi/pjnsoaI+yKDrZmYx31UtGVrkh6Z8IbYSEDwowmPWYzaRgp7fvyj6UfzowOAlR43razqnWOZhkizOiUUChQnMCQrcV1OAfaXsMpf4Xvqn9JBytZeKgksTkyegBAlqnW56+RDvz4cUldBusrOiVC2hEHsffLbwcGH9ARMfoTc="
 
+language: python
+python:
+  - "3.6"
+
 script:
   - set -e
+  - pip install doctr jinja2 babel
   - ./generate
-  - pip install doctr
   - doctr deploy --built-docs . .
