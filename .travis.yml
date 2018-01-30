@@ -11,4 +11,4 @@ script:
   - set -e
   - pip install doctr jinja2 babel
   - ./generate
-  - doctr deploy --built-docs . .
+  - doctr deploy --branch-whitelist sources --built-docs . .
