@@ -9,6 +9,7 @@ python:
 
 script:
   - set -e
-  - pip install doctr jinja2 babel
+  - pip install jinja2 babel
+  - pip install -e git+https://github.com/drdoctr/doctr@built-docs-curdir
   - ./generate
   - doctr deploy --branch-whitelist sources --built-docs . .
