@@ -10,6 +10,6 @@ python:
 script:
   - set -e
   - pip install jinja2 babel
-  - pip install git+https://github.com/drdoctr/doctr@built-docs-curdir
+  - pip install git+https://github.com/drdoctr/doctr@exclude
   - ./generate
-  - doctr deploy --branch-whitelist sources --built-docs . .
+  - doctr deploy --branch-whitelist sources --exclude static --built-docs . .
