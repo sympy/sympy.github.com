@@ -14,12 +14,12 @@ output with
 You need to install jinja2 (http://jinja.pocoo.org/) and Babel
 (http://pypi.python.org/pypi/Babel).
 
-To see the output, you will need to run a HTTP server. The easiest way to do
-this is to run
+To see the output with styling, you will need to run a HTTP server. The
+easiest way to do this is to run
 
     python -m http.server
 
-and then open 0.0.0.0:8000 in your browser.
+and then open [0.0.0.0:8000](0.0.0.0:8000) in your browser.
 
 The website is generated automatically on [Travis
 CI](https://travis-ci.org/sympy/sympy.github.com). The pages are served
