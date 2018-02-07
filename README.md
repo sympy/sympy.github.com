@@ -1,5 +1,8 @@
 # SymPy Website
 
+[![Build
+Status](https://travis-ci.org/sympy/sympy.github.com.svg?branch=sources)](https://travis-ci.org/sympy/sympy.github.com)
+
 This is the SymPy website served at:
 
 http://sympy.org/
