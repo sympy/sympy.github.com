@@ -9,7 +9,6 @@ python:
 
 script:
   - set -e
-  - pip install jinja2 babel
-  - pip install git+https://github.com/drdoctr/doctr@exclude
+  - pip install jinja2 babel doctr
   - ./generate
   - doctr deploy --branch-whitelist sources --exclude static --built-docs . .
