@@ -9,6 +9,7 @@
 ./cs/download.html
 ./cs/features.html
 ./cs/index.html
+./cs/roadmap.html
 ./cs/support.html
 ./de/development.html
 ./de/docs.html
@@ -16,6 +17,7 @@
 ./de/download.html
 ./de/features.html
 ./de/index.html
+./de/roadmap.html
 ./de/support.html
 ./development.html
 ./docs.html
@@ -27,6 +29,7 @@
 ./en/download.html
 ./en/features.html
 ./en/index.html
+./en/roadmap.html
 ./en/support.html
 ./es/development.html
 ./es/docs.html
@@ -34,6 +37,7 @@
 ./es/download.html
 ./es/features.html
 ./es/index.html
+./es/roadmap.html
 ./es/support.html
 ./extract_i18n_text
 ./features.html
@@ -43,6 +47,7 @@
 ./fr/download.html
 ./fr/features.html
 ./fr/index.html
+./fr/roadmap.html
 ./fr/support.html
 ./generate
 ./github_deploy_key_sympy_sympy_github_com.enc
@@ -75,6 +80,7 @@
 ./nl/download.html
 ./nl/features.html
 ./nl/index.html
+./nl/roadmap.html
 ./nl/support.html
 ./pt/development.html
 ./pt/docs.html
@@ -82,6 +88,7 @@
 ./pt/download.html
 ./pt/features.html
 ./pt/index.html
+./pt/roadmap.html
 ./pt/support.html
 ./ru/development.html
 ./ru/docs.html
@@ -89,6 +96,7 @@
 ./ru/download.html
 ./ru/features.html
 ./ru/index.html
+./ru/roadmap.html
 ./ru/support.html
 ./screenshots.html
 ./support.html
@@ -100,6 +108,7 @@
 ./templates/features.html
 ./templates/index.html
 ./templates/macros
+./templates/roadmap.html
 ./templates/support.html
 ./zh/development.html
 ./zh/docs.html
@@ -107,4 +116,5 @@
 ./zh/download.html
 ./zh/features.html
 ./zh/index.html
+./zh/roadmap.html
 ./zh/support.html
