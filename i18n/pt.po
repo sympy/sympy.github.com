@@ -1,53 +1,135 @@
 # Translations template for PROJECT.
-# Copyright (C) 2012 ORGANIZATION
+# Copyright (C) 2018 ORGANIZATION
 # This file is distributed under the same license as the PROJECT project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2012-02-16 22:16-0300\n"
+"POT-Creation-Date: 2018-09-21 11:02-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Last-Translator: Paulo Augusto Silva <p13lgst@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 0.9.6\n"
+"Generated-By: Babel 2.6.0\n"
 
-#: templates/base.html:29
+#: templates/base.html:30
 msgid "Main Page"
 msgstr "Página Principal"
 
-#: templates/base.html:30 templates/download.html:4
+#: templates/base.html:31 templates/features.html:3 templates/features.html:7
+msgid "Features"
+msgstr "Recursos"
+
+#: templates/base.html:32 templates/download.html:4
 msgid "Download"
 msgstr "Download"
 
-#: templates/base.html:31 templates/docs.html:4 templates/docs.html:8
-#: templates/index.html:178
+#: templates/base.html:33 templates/base.html:68 templates/docs.html:4
+#: templates/docs.html:8 templates/features.html:12 templates/features.html:67
+#: templates/features.html:103 templates/features.html:118
+#: templates/features.html:147 templates/features.html:162
+#: templates/features.html:169 templates/features.html:183
+#: templates/features.html:256 templates/features.html:277
+#: templates/features.html:299 templates/features.html:318
+#: templates/features.html:331
 msgid "Documentation"
 msgstr "Documentação"
 
-#: templates/base.html:32 templates/support.html:4
+#: templates/base.html:34 templates/support.html:4
 msgid "Support"
 msgstr "Suporte"
 
-#: templates/base.html:33 templates/screenshots.html:4
-msgid "Screenshots"
-msgstr "Sreenshots"
-
-#: templates/base.html:34 templates/development.html:4
-#: templates/development.html:8
+#: templates/base.html:35 templates/development.html:4
+#: templates/development.html:8 templates/roadmap.html:4
 msgid "Development"
 msgstr "Desenvolvimento"
 
-#: templates/base.html:35
+#: templates/base.html:36 templates/roadmap.html:8
+msgid "Roadmap"
+msgstr "Roadmap"
+
+#: templates/base.html:37 templates/donate.html:4
+msgid "Donate"
+msgstr "Doar"
+
+#: templates/base.html:38
 msgid "Online Shell"
 msgstr "Terminal Online"
 
-#: templates/base.html:54
+#: templates/base.html:52
+msgid " Compute with Gamma "
+msgstr " Calcular com Gamma "
+
+#: templates/base.html:55
+msgid "Compute"
+msgstr "Calcular"
+
+#: templates/base.html:59
+msgid "Download Now"
+msgstr "Faça o Download Agora"
+
+#: templates/base.html:61
+msgid "Latest Version"
+msgstr "Última Versão"
+
+#: templates/base.html:62
+msgid "Development Version"
+msgstr "Versão de Desenvolvimento"
+
+#: templates/base.html:66
+msgid "Quick Links"
+msgstr "Links Rápidos"
+
+#: templates/base.html:69
+msgid "Downloads (source tarballs)"
+msgstr "Downloads (código em tarballs)"
+
+#: templates/base.html:70
+msgid "Mailing list"
+msgstr "Lista de emails"
+
+#: templates/base.html:71
+msgid "Source code"
+msgstr "Código fonte"
+
+#: templates/base.html:72
+msgid "Issues tracker"
+msgstr "Lista de bugs"
+
+#: templates/base.html:73
+msgid "Wiki"
+msgstr "Wiki"
+
+#: templates/base.html:74
+msgid "Introduction to contributing"
+msgstr "Introdução para contribuir"
+
+#: templates/base.html:75
+msgid "Try SymPy online now"
+msgstr "Tente SymPy online agora"
+
+#: templates/base.html:76
+msgid "Planet SymPy"
+msgstr "Planeta SymPy"
+
+#: templates/base.html:77
+msgid "Chat (Gitter)"
+msgstr "Chat (Gitter)"
+
+#: templates/base.html:78
+msgid "IRC channel logs"
+msgstr "Logs do canal IRC"
+
+#: templates/base.html:82
+msgid "Follow Us"
+msgstr "Nos Siga"
+
+#: templates/base.html:113
 #, python-format
 msgid ""
 "This page is open source. Fork <a href=\"%(url)s\">the project on "
@@ -56,64 +138,62 @@ msgstr ""
 "Esta página é open source. Fork <a href=\"%(url)s\">o projeto no "
 "GitHub</a> para editá-la."
 
-#: templates/base.html:58
+#: templates/base.html:116
 msgid "Languages"
-msgstr "Idiomas"
+msgstr "Linguagens"
 
 #: templates/development.html:11
 msgid ""
 "We are interested in any contribution. There are many ways how you can\n"
-"contribute"
+"    contribute"
 msgstr ""
-"Nós estamos interessados em qualquer contribuição. Há várias maneiras em que\n"
-"você pode contribuir"
+"Nós estamos interessados em qualquer contribuição. Há várias maneiras em\n"
+"    que você pode contribuir"
 
 #: templates/development.html:15
 msgid ""
 "If you wrote anything interesting using SymPy, please send us a patch "
 "with the\n"
-"code (see below for more information)"
+"        code (see below for more information)"
 msgstr ""
-"Se você escreveu qualquer coisa interessante usando SymPy, por favor nos envie um patch "
-"com o\n"
-"código (mais informações abaixo)"
+"Se você escreveu qualquer coisa interessante usando SymPy, por favor nos "
+"envie um patch com o\n"
+"        código (mais informações abaixo)"
 
 #: templates/development.html:20
 msgid ""
 "If you found a bug (or just want to let us know what you think), tell us "
 "on the\n"
-"<a href=\"http://groups.google.com/group/sympy\">mailinglist</a>"
+"        <a href=\"https://groups.google.com/group/sympy\">mailinglist</a>"
 msgstr ""
-"Se você achou um bug (ou apenas quer nos dar alguma opinião), conte-nos "
-"pela \n"
-"<a href=\"http://groups.google.com/group/sympy\">lista de emails</a>"
-
+"Se você encontrou um bug (ou só quer nos dar uma opinião), conte-nos "
+"pela\n"
+"        <a href=\"https://groups.google.com/group/sympy\">lista de emails</a>"
 
 #: templates/development.html:21
 msgid ""
 "You can also\n"
-"add a bug report (or a comment) into the <a "
-"href=\"http://code.google.com/p/sympy/issues/list\">issues</a>."
+"        add a bug report (or a comment) into the <a "
+"href=\"https://github.com/sympy/sympy/issues/\">issues</a>."
 msgstr ""
-"Voce pode também\n"
-"adicionar um bug (ou comentário) na <a "
-"href=\"http://code.google.com/p/sympy/issues/list\">lista de problemas</a>."
+"Você também pode adicionar um bug (ou comentário) na <a "
+"href=\"https://github.com/sympy/sympy/issues/\">lista de problemas</a>."
 
 #: templates/development.html:24
 msgid "You can blog about how you use SymPy"
-msgstr "Você pode blogar sobre como usa o SymPy"
+msgstr "Como você pode blogar sobre como usar o SymPy"
 
 #: templates/development.html:25
 msgid "You can help us write documentation (just send us a patch)"
-msgstr "Você pode nos ajudar a escrever documentação (apenas mande um patch)"
+msgstr "Você pode nos ajudar a escrever a documentação (apenas mande um patch)"
 
 #: templates/development.html:26
 msgid ""
 "You can help people on our <a "
-"href=\"http://groups.google.com/group/sympy\">mailinglist</a>"
+"href=\"https://groups.google.com/group/sympy\">mailinglist</a>"
 msgstr ""
-"Voce pode ajudar outras pessoas na <a "
-"href=\"http://groups.google.com/group/sympy\">lista de emails</a>"
+"Você pode ajudar outras pessoas na nossa <a "
+"href=\"https://groups.google.com/group/sympy\">lista de emails</a>"
 
 #: templates/development.html:27
 msgid "You can help with reviewing patches"
@@ -125,112 +205,111 @@ msgstr "Você pode nos enviar patches com correções de bugs ou novos recursos"
 
 #: templates/development.html:32
 msgid "The best way to contribute code or documentation is to send us a patch"
-msgstr "A melhor maneira de contribuir com código ou documentação é mandando patches"
+msgstr "O melhor jeito de contribuir dom código ou documentação é mandando um patch"
 
 #: templates/development.html:36
 msgid "How to Send a Patch"
-msgstr "Como mandar um Patch"
+msgstr "Como Mandar um Patch"
 
 #: templates/development.html:39
 msgid ""
 "The best way is to send a github pull request\n"
-"against the <a href=\"http://github.com/sympy/sympy\">sympy/sympy</a> "
-"repository.\n"
-"We'll review it and push it in."
+"    against the <a "
+"href=\"https://github.com/sympy/sympy\">sympy/sympy</a> repository.\n"
+"    We'll review it and push it in."
 msgstr ""
-"A melhor maneira é mandar um requerimento de pull no github\n"
-"para o repositório<a href=\"http://github.com/sympy/sympy\">sympy/sympy</a>. "
-"\nNós iremos revisá-lo e integrá-lo ao repositório."
+"A melhor maneira é enviando um pull request\n"
+"    para o repositório <a "
+"href=\"https://github.com/sympy/sympy\">sympy/sympy</a>.\n"
+"    Nós iremos revisá-lo e integrá-lo"
 
 #: templates/development.html:45
 msgid ""
 "If you need help with git, github, pull requests, patches, coding, SymPy "
 "or\n"
-"anything related, just send us an email to the mailinglist\n"
-"or ask on IRC (our channel is <a "
-"href=\"irc://irc.freenode.net/sympy\">#sympy at freenode</a>), we'll "
-"help."
+"    anything related, just send us an email to the <a "
+"href=\"https://groups.google.com/forum/#!forum/sympy\">mailinglist</a>\n"
+"    or ask on <a href=\"https://gitter.im/sympy/sympy\">Gitter</a>, we'll"
+" be happy to help."
 msgstr ""
-"Se você precisar de ajuda com git, github, requerimentos de pull, patches, programação, Sympy ou \n" 
-"qualquer coisa relacionada, nos envie um email para lista de emails\n"
-"ou pergunte no IRC (nosso canal é <a "
-"href=\"irc://irc.freenode.net/sympy\">#sympy no freenode</a>), e nós "
-"ajudaremos."
+"Se você precisa de ajuda com git, github, pull requests, patches, "
+"programação, SymPy ou\n"
+"    qualquer coisa relacionada, nos envie um email para a <a "
+"href=\"https://groups.google.com/forum/#!forum/sympy\">mailinglist</a>\n"
+"    ou pergunte no <a href=\"https://gitter.im/sympy/sympy\">Gitter</a>, nós"
+" estaremos felizes em ajudar."
 
 #: templates/development.html:48
 msgid ""
 "Also, you can read our instructions\n"
-"<a href=\"https://github.com/sympy/sympy/wiki/Development-workflow\">\n"
-"how to prepare patches</a> using git and github."
+"    <a href=\"https://github.com/sympy/sympy/wiki/Development-workflow\">"
+"\n"
+"      how to prepare patches</a> using git and github."
 msgstr ""
-"Além disso, você pode ler nossas instruções\n"
-"<a href=\"https://github.com/sympy/sympy/wiki/Development-workflow\">\n"
-"como preparar patches</a> usando git e github."
+"Além disso, você pode ler nossas instruções em\n"
+"    <a href=\"https://github.com/sympy/sympy/wiki/Development-workflow\">"
+"\n"
+"      como preparar patches</a> usando git e github."
 
 #: templates/development.html:54
 msgid ""
 "The github pull request is a preferred method, as that makes it easy for "
 "us to\n"
-"review and push the code in. That said,\n"
-"you can also clone the latest git repository (see the link on the right),"
-" prepare a branch with\n"
-"your code, upload it somewhere (for example <a\n"
-"    href=\"http://github.com/\">github</a>) and send us a link to the <a\n"
-"    href=\"http://groups.google.com/group/sympy-patches\">sympy-"
-"patches</a>\n"
-"mailinglist, or you can even send us raw patches --- but it will be more "
-"work\n"
-"for us to integrate it."
+"    review and push the code in. That said,\n"
+"    you can also clone the latest git repository (see the link on the "
+"right), prepare a branch with\n"
+"    your code, upload it somewhere (for example <a "
+"href=\"https://github.com/\">github</a>) and send us a link\n"
+"    to the <a "
+"href=\"https://groups.google.com/forum/#!forum/sympy\">sympy</a>\n"
+"    mailinglist, or you can even send us raw patches --- but it will be "
+"more work\n"
+"    for us to integrate it."
 msgstr ""
-"O requerimento de pull no github é o método ideal, assim facilitando para "
-"nós \n"
-"revisar e integrar o código. Sendo assim,\n"
-"você também pode clonar as últimas atualizações no repositório (link à direita),"
-" preparar um branch com\n"
-"seu código, enviar para algum lugar (por exemplo <a\n"
-"    href=\"http://github.com/\">github</a>) e nos enviar um link para <a\n"
-"    href=\"http://groups.google.com/group/sympy-patches\">sympy-"
-"patches</a>\n"
-"lista de emails, ou nos mandar patches em arquivos --- mais trabalhoso \n"
-"para nós integrarmos."
+"O pull request no github é um método ideal, assim facilitando para nós \n"
+"    revisarmos e integrar o código. Sendo assim,\n"
+"    você também pode clonar as últimas atualizações no repositório (link "
+"à direita), preparar um branch com\n"
+"    seu código, enviar para algum lugar (por exemplo <a "
+"href=\"https://github.com/\">github</a>) e nos envie um link\n"
+"    para <a "
+"href=\"https://groups.google.com/forum/#!forum/sympy\">sympy</a>\n"
+"    lista de emails, ou você pode até nos enviar patches em arquivos --- mas será "
+"mais trabalhoso\n"
+"    para nós inegrarmos."
 
-#: templates/development.html:65
+#: templates/development.html:64
 msgid ""
-"SymPy has a broad development team:\n"
-"<a href=\"\n"
-"http://docs.sympy.org/0.7.1/aboutus.html#sympy-development-team\n"
-"\">\n"
-"http://docs.sympy.org/0.7.1/aboutus.html#sympy-development-team\n"
-"</a>, send us a patch and your name will appear there too."
+"SymPy has a broad <a href=\"https://docs.sympy.org/dev/aboutus.html"
+"#sympy-development-team\">development team</a>, send us a patch and your "
+"name will appear there too."
 msgstr ""
-"SymPy tem um grande time de desenvolvimento:\n"
-"<a href=\"\n"
-"http://docs.sympy.org/0.7.1/aboutus.html#sympy-development-team\n"
-"\">\n"
-"http://docs.sympy.org/0.7.1/aboutus.html#sympy-development-team\n"
-"</a>, nos envie um patch e seu nome aparecerá lá também."
+"SymPy tem um grande <a href=\"https://docs.sympy.org/dev/aboutus.html"
+"#sympy-development-team\">time de desenvolvimento</a>, nos envie um patch e seu "
+"nome aparecerá la tambem."
+
+#: templates/development.html:68
+msgid "Sources of the Webpages"
+msgstr "Fontes das Páginas Web"
+
+#: templates/development.html:71
+msgid "Sources of these webpages are at"
+msgstr "As fontes dessas páginas web estão em"
 
 #: templates/development.html:74
-msgid "Sources of the Webpages"
-msgstr "As fontes das Webpages"
-
-#: templates/development.html:77
-msgid "Sources of these webpages are at"
-msgstr "As fontes dessas webpages estão em"
-
-#: templates/development.html:80
 msgid "Feel free to send us patches with improvements."
 msgstr "Sinta-se livre para nos enviar patches com melhorias."
 
-#: templates/development.html:106
+#: templates/development.html:83 templates/roadmap.html:126
 msgid "Git Repository"
 msgstr "Repositório Git"
 
-#: templates/development.html:110 templates/download.html:27
+#: templates/development.html:85 templates/download.html:21
+#: templates/roadmap.html:128
 msgid "Main git repository"
 msgstr "Repositório git principal"
 
-#: templates/development.html:114
+#: templates/development.html:89 templates/roadmap.html:132
 msgid "Online access"
 msgstr "Acesso online"
 
@@ -240,465 +319,1283 @@ msgid ""
 "The documentation is maintained using the <a href=\"%(url)s\">Sphinx</a> "
 "Python documentation generator."
 msgstr ""
-"A documentação é mantida usando <a href=\"%(url)s\">Sphinx</a>, o "
+"A documentação é mantida usando <a href=\"%(url)s\">Sphinx</a>, o"
 "gerador de documentação Python."
 
 #: templates/docs.html:13
 msgid "You can find it at"
-msgstr "Você pode achá-lo em"
+msgstr "Você pode encontrá-la em"
+
+#: templates/donate.html:8 templates/donate.html:29
+msgid "Support SymPy Development"
+msgstr "Suporte o Desenvolvimento do SymPy"
+
+#: templates/donate.html:11
+msgid ""
+" All donations will be used strictly to fund SymPy development, by "
+"supporting\n"
+"tasks such as developer sprints, improved documentation, fixing bugs, and"
+" paying\n"
+"for hosting costs for services such as the\n"
+"<a href=\"https://live.sympy.org/\">SymPy Online Shell</a>."
+msgstr ""
+" Todas as doações serão usadas estritamente para financiar o desenvolvimento "
+"do SymPy, apoiando tarefas como corridas de desenvolvedores, documentação melhorada, "
+"correções de bugs, e pagamentos\n"
+"de custo de host para serviços como o\n"
+"<a href=\"https://live.sympy.org/\">Terminal Online do SymPy</a>."
+
+#: templates/donate.html:19
+msgid ""
+"<a "
+"href=\"https://www.flipcause.com/secure/cause_pdetails/MjI2Mw==\">DONATE"
+"\n"
+"    NOW</a> "
+msgstr ""
+"<a "
+"href=\"https://www.flipcause.com/secure/cause_pdetails/MjI2Mw==\">DOE"
+"\n"
+"    AGORA</a> "
+
+#: templates/donate.html:32
+#, python-format
+msgid ""
+"SymPy will always be 100% open source software, free for all to use,\n"
+"and released under the liberal terms of the modified BSD license.\n"
+msgstr ""
+"SymPy sempre será um software 100% open source, livre para todos usarem,\n"
+"e lançado sobre os termos liberais do licença BSD modificada.\n"
+
+
+#: templates/donate.html:38
+msgid ""
+"\n"
+"Our donations are managed by the\n"
+"<a href=\"https://numfocus.org/\">NumFOCUS</a> foundation, which your\n"
+"contribution to the SymPy project.  NumFOCUS is a 501(c)3 non-profit\n"
+"foundation, so if you are subject to US Tax law, your contributions will "
+"be\n"
+"tax-deductible.  "
+msgstr ""
+"\n"
+"Nossas doações são gerenciadas pela fundação\n"
+"<a href=\"https://numfocus.org/\">NumFOCUS</a>, que é sua\n"
+"contribuição para o projeto SymPy. NumFOCUS é uma fundação sem fins\n"
+"lucrativos, então se você está sujeito à Lei Tributária dos EUA, suas contribuições "
+"serão\n"
+"dedutível de imposto.  "
 
 #: templates/download.html:8
 msgid "Source Tarballs (Releases)"
 msgstr "Arquivo com as fontes (Lançamentos)"
 
-#: templates/download.html:11 templates/download.html:19
+#: templates/download.html:11
 msgid "Downloads"
 msgstr "Downloads"
 
-#: templates/download.html:12 templates/download.html:20
-msgid "at Google Code page"
-msgstr "na página do Google Code"
+#: templates/download.html:14
+msgid "Old downloads"
+msgstr "Downloads antigos"
 
-#: templates/download.html:16
-msgid "Packages for Distributions"
-msgstr "Pacotes para Distribuições"
-
-#: templates/download.html:24
+#: templates/download.html:18
 msgid "Git Version"
 msgstr "Versão do git"
 
-#: templates/download.html:33
+#: templates/download.html:27
 msgid "Browse online"
-msgstr "Navegue online"
+msgstr "Explore online"
 
-#: templates/index.html:8
-msgid "About"
-msgstr "Sobre"
-
-#: templates/index.html:11
-msgid ""
-"SymPy is a Python library for symbolic mathematics. It aims to\n"
-"become a full-featured computer algebra system (CAS) while keeping the "
-"code as\n"
-"simple as possible in order to be comprehensible and easily extensible. "
-"SymPy\n"
-"is written entirely in Python and does not require any external libraries."
-msgstr ""
-"SymPy é uma biblioteca em Python para matemática simbólica. Almejamos\n"
-"nos tornar um sistema de álgebra computacional (CAS) completo mantendo "
-"o código\n"
-"o mais simples possível para ser compreensível e facilmente estendido. "
-"SymPy\n"
-"é escrito inteiramente em Python e não requer nenhuma outra biblioteca."
-
-#: templates/index.html:19
-msgid "Features"
-msgstr "Recursos"
-
-#: templates/index.html:21
+#: templates/features.html:10
 msgid "Core capabilities"
-msgstr "Capacidades do Core"
+msgstr "Capacidades Principais"
 
-#: templates/index.html:23 templates/index.html:39
+#: templates/features.html:14 templates/features.html:69
 msgid "Basic arithmetic:"
-msgstr "Aritmética básica"
+msgstr "Aritimética Básica"
 
-#: templates/index.html:23
+#: templates/features.html:14
 msgid ""
 "Support for operators such\n"
-"    as <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, "
-"<code>**</code> (power)"
+"                    as <code>+</code>, <code>-</code>, <code>*</code>, "
+"<code>/</code>, <code>**</code> (power)"
 msgstr ""
-"Suporte de operadores como\n"
-"    <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, "
-"<code>**</code> (potência)"
+"Suporta operações como\n"
+"                    <code>+</code>, <code>-</code>, <code>*</code>, "
+"<code>/</code>, <code>**</code> (exponenciação)"
 
-#: templates/index.html:25
+#: templates/features.html:16
 msgid "Simplification"
 msgstr "Simplificação"
 
-#: templates/index.html:26
-msgid "Expansion"
-msgstr "Expansão"
+#: templates/features.html:17
+msgid "Trigonometry"
+msgstr "Trigonometria"
 
-#: templates/index.html:27
+#: templates/features.html:17
+msgid "Polynomials</a>"
+msgstr "Polinômios"
+
+#: templates/features.html:18
+msgid "Expansion:"
+msgstr "Expansão:"
+
+#: templates/features.html:20
+msgid " of a polynomial "
+msgstr " de um polinômio "
+
+#: templates/features.html:21
 msgid "Functions:"
 msgstr "Funções:"
 
-#: templates/index.html:27
+#: templates/features.html:22
+#, python-format
 msgid ""
-"trigonometric, hyperbolic, exponential, roots, logarithms, absolute\n"
-"    value, spherical harmonics, factorials and gamma functions, zeta\n"
-"    functions, polynomials, special functions, ..."
+"\n"
+"                    <a href=\"%(trig)s\">trigonometric</a>,\n"
+"                    <a href=\"%(hyperbolic)s\">hyperbolic</a>,\n"
+"                    <a href=\"%(exponential)s\">exponential</a>,\n"
+"                    <a href=\"%(root)s\">roots</a>,\n"
+"                    <a href=\"%(logarithm)s\">logarithms</a>,\n"
+"                    <a href=\"%(abs)s\">absolute value</a>,\n"
+"                    <a href=\"%(spherical)s\">spherical harmonics</a>,\n"
+"                    <a href=\"%(factorial)s\">factorials and gamma "
+"functions</a>,\n"
+"                    <a href=\"%(zeta)s\">zeta functions</a>,\n"
+"                    <a href=\"%(polynomial)s\">polynomials</a>,\n"
+"                    <a href=\"%(special)s\">special functions</a>, ..."
 msgstr ""
-"trigonométricas, hiperbólicas, exponenciais, raízes, logarítmo, módulo\n"
-"   harmônicas, fatoriais e funções gama, zeta, polinômios, funções especiais, ..."
+"\n"
+"                    <a href=\"%(trig)s\">trigonométrica</a>,\n"
+"                    <a href=\"%(hyperbolic)s\">hiperbólica</a>,\n"
+"                    <a href=\"%(exponential)s\">exponencial</a>,\n"
+"                    <a href=\"%(root)s\">raízes</a>,\n"
+"                    <a href=\"%(logarithm)s\">logarítimos</a>,\n"
+"                    <a href=\"%(abs)s\">valor absoluto</a>,\n"
+"                    <a href=\"%(spherical)s\">harmônicos esféricos</a>,\n"
+"                    <a href=\"%(factorial)s\">fatoriais and funções "
+"gamma</a>,\n"
+"                    <a href=\"%(zeta)s\">funções zeta</a>,\n"
+"                    <a href=\"%(polynomial)s\">polinômios</a>,\n"
+"                    <a href=\"%(special)s\">funções especiais</a>, ..."
 
-#: templates/index.html:31
-msgid "Substitution"
-msgstr "Substituição"
+#: templates/features.html:46
+msgid "Substitution:"
+msgstr "Substituição:"
 
-#: templates/index.html:32
+#: templates/features.html:46
+msgid "example"
+msgstr "exemplo"
+
+#: templates/features.html:47
 msgid "Numbers:"
-msgstr "Números:"
+msgstr "Números"
 
-#: templates/index.html:32
-msgid "arbitrary precision integers, rationals, and floats"
-msgstr "inteiro de precisão arbitrária, racionais e de ponto flutuante"
+#: templates/features.html:48
+#, python-format
+msgid ""
+"\n"
+"                    <a href=\"%(integer)s\">arbitrary precision "
+"integers</a>,\n"
+"                    <a href=\"%(rational)s\">rationals</a>,\n"
+"                    <a href=\"%(float)s\">and floats</a>\n"
+"                    "
+msgstr ""
+"\n"
+"                    <a href=\"%(integer)s\">inteiros de precisão "
+"arbitrária</a>,\n"
+"                    <a href=\"%(rational)s\">racionais</a>\n"
+"                    <a href=\"%(float)s\">e floats</a>\n"
+"                    "
 
-#: templates/index.html:33
+#: templates/features.html:58
 msgid "Noncommutative symbols"
 msgstr "Símbolos não comutativos"
 
-#: templates/index.html:34
+#: templates/features.html:59
 msgid "Pattern matching"
-msgstr "Detecção de padrão"
+msgstr "Detecção de Padrões"
 
-#: templates/index.html:37
+#: templates/features.html:65
 msgid "Polynomials"
 msgstr "Polinômios"
 
-#: templates/index.html:39
+#: templates/features.html:69
 msgid " division, gcd, ... "
-msgstr "divisão, mdc"
+msgstr " divisão, gcd (mdc), ..."
 
-#: templates/index.html:40
+#: templates/features.html:70
 msgid "Factorization"
-msgstr "Fatoração"
+msgstr "Fatorização"
 
-#: templates/index.html:41
+#: templates/features.html:71
 msgid "Square-free decomposition"
 msgstr "Decomposição de raiz"
 
-#: templates/index.html:42
+#: templates/features.html:72
 msgid "Gröbner bases"
 msgstr "Bases de Gröbner"
 
-#: templates/index.html:43
+#: templates/features.html:73
 msgid "Partial fraction decomposition"
 msgstr "Decomposição em frações parciais"
 
-#: templates/index.html:44
+#: templates/features.html:74
 msgid "Resultants"
 msgstr "Resultantes"
 
-#: templates/index.html:47
+#: templates/features.html:80
 msgid "Calculus"
 msgstr "Cálculo"
 
-#: templates/index.html:50
-msgid "Limits:"
-msgstr "Limites:"
+#: templates/features.html:82
+msgid "Integration Documentation"
+msgstr ""
 
-#: templates/index.html:54
+#: templates/features.html:85
+msgid "Limits:"
+msgstr "Limites"
+
+#: templates/features.html:89
 msgid "Differentiation"
 msgstr "Diferenciação"
 
-#: templates/index.html:57
+#: templates/features.html:92
 msgid "Integration:"
-msgstr "Integração:"
+msgstr "Integração"
 
-#: templates/index.html:58
+#: templates/features.html:93
 msgid "It uses extended Risch-Norman heuristic"
 msgstr "Usa heurística de Risch-Norman estendida"
 
-#: templates/index.html:60
+#: templates/features.html:95
 msgid "Taylor (Laurent) series"
 msgstr "Séries de Taylor (Laurent)"
 
-#: templates/index.html:63
+#: templates/features.html:101
 msgid "Solving equations"
-msgstr "Resolução de equações"
+msgstr "Resolvendo equações"
 
-#: templates/index.html:65
+#: templates/features.html:105
 msgid "Polynomial equations"
 msgstr "Equações polinomiais"
 
-#: templates/index.html:66
+#: templates/features.html:106
 msgid "Algebraic equations"
-msgstr "Equações algébricas"
+msgstr "Equações Algébricas"
 
-#: templates/index.html:67
+#: templates/features.html:107
 msgid "Differential equations"
 msgstr "Equações diferenciais"
 
-#: templates/index.html:68
+#: templates/features.html:108
 msgid "Difference equations"
-msgstr "Relações de recorrência"
+msgstr "Relação de recorrência"
 
-#: templates/index.html:69
+#: templates/features.html:109
 msgid "Systems of equations"
 msgstr "Sistemas de equações"
 
-#: templates/index.html:72
+#: templates/features.html:110
+msgid "Diophantine equations:"
+msgstr "Equações diofantinas"
+
+#: templates/features.html:116
+msgid "Combinatorics"
+msgstr "Combinatória"
+
+#: templates/features.html:120
+msgid "Permutations"
+msgstr "Permutações"
+
+#: templates/features.html:121
+msgid "Combinations"
+msgstr "Combinações"
+
+#: templates/features.html:122
+msgid "Partitions"
+msgstr "Partições"
+
+#: templates/features.html:123
+msgid "Subsets"
+msgstr "Subconjuntos"
+
+#: templates/features.html:124
+msgid "Permutation Groups"
+msgstr "Grupos de permutação"
+
+#: templates/features.html:125
+msgid "Prufer and Gray Codes"
+msgstr "Código de Pruger e Gray"
+
+#: templates/features.html:131
 msgid "Discrete math"
 msgstr "Matemática discreta"
 
-#: templates/index.html:74
+#: templates/features.html:134
 msgid "Binomial coefficients"
 msgstr "Coeficientes binomiais"
 
-#: templates/index.html:75
+#: templates/features.html:135
 msgid "Summations"
 msgstr "Somatórios"
 
-#: templates/index.html:76
+#: templates/features.html:136
 msgid "Products"
 msgstr "Produtos"
 
-#: templates/index.html:77
+#: templates/features.html:137
 msgid "Number theory:"
-msgstr "Teoria dos números:"
+msgstr "Teoria dos Números"
 
-#: templates/index.html:77
-msgid "generating prime numbers, primality testing,  integer factorization, ... "
-msgstr "geração de números primos, teste de número primo, fatoração de primos, ..."
+#: templates/features.html:137
+msgid ""
+"generating prime numbers, primality testing,  integer factorization, "
+"Diophantine equation solving... "
+msgstr ""
+"geração de números primos, teste de número primo, fatoração de inteiros, "
+"resolução de equação diofantina... "
 
-#: templates/index.html:79
+#: templates/features.html:139
 msgid "Logic expressions"
-msgstr "Expressões lógicas"
+msgstr "Expressões Lógicas"
 
-#: templates/index.html:82
+#: templates/features.html:145
 msgid "Matrices"
 msgstr "Matrizes"
 
-#: templates/index.html:84
+#: templates/features.html:149
 msgid "Basic arithmetic"
 msgstr "Aritmética básica"
 
-#: templates/index.html:85
+#: templates/features.html:150
 msgid "Eigenvalues/eigenvectors"
 msgstr "Autovalores/autovetores"
 
-#: templates/index.html:86
+#: templates/features.html:151
 msgid "Determinants"
 msgstr "Determinantes"
 
-#: templates/index.html:87
+#: templates/features.html:152
 msgid "Inversion"
 msgstr "Inversão"
 
-#: templates/index.html:88
+#: templates/features.html:153
 msgid "Solving"
 msgstr "Resolução"
 
-#: templates/index.html:91
-msgid "Geometric Algebra"
-msgstr "Geometria analítica"
+#: templates/features.html:154
+msgid "Abstract expressions"
+msgstr "Expressões abstratas"
 
-#: templates/index.html:93
+#: templates/features.html:160
+msgid "Geometric Algebra"
+msgstr "Algebra Geométrica"
+
+#: templates/features.html:167
 msgid "Geometry"
 msgstr "Geometria"
 
-#: templates/index.html:95
+#: templates/features.html:171
 msgid ""
 "points, lines, rays, segments, ellipses, circles,\n"
-"    polygons, ..."
+"                    polygons, ..."
 msgstr ""
-"pontos, retas, raios, segmentos, elipses, círculos,\n"
-"     polígonos, ..."
+"pontos, linhas, raios, segmentos, elipses, círculos,\n"
+"                    polígonos, ..."
 
-#: templates/index.html:97
+#: templates/features.html:173
 msgid "Intersection"
 msgstr "Interseção"
 
-#: templates/index.html:98
+#: templates/features.html:174
 msgid "Tangency"
 msgstr "Tangência"
 
-#: templates/index.html:99
+#: templates/features.html:175
 msgid "Similarity"
 msgstr "Similaridade"
 
-#: templates/index.html:102
+#: templates/features.html:181
 msgid "Plotting"
 msgstr "Desenhar gráficos"
 
-#: templates/index.html:104
+#: templates/features.html:185
 msgid "Coordinate modes"
 msgstr "Modos de coordenadas"
 
-#: templates/index.html:105
+#: templates/features.html:186
 msgid "Plotting Geometric Entities"
 msgstr "Desenhando entidades geométricas"
 
-#: templates/index.html:106
+#: templates/features.html:187
 msgid "2D and 3D"
 msgstr "2D e 3D"
 
-#: templates/index.html:107
+#: templates/features.html:188
 msgid "Interactive interface"
 msgstr "Interface interativa"
 
-#: templates/index.html:108
+#: templates/features.html:189
 msgid "Colors"
 msgstr "Cores"
 
-#: templates/index.html:111
+#: templates/features.html:190
+msgid "Matplotlib support"
+msgstr "Suporte à Matplotlib"
+
+#: templates/features.html:196
+msgid "SymPy plot of sin(2 sin(2 sin(x))) with matplotlib"
+msgstr "Gráfico SymPy de sin(2 sin(2 sin(x))) com matplotlib"
+
+#: templates/features.html:201
+msgid "SymPy plot of x, x^2, and x^3 from x = -5 to 5"
+msgstr "Gráfico SymPy de x, x^2 e x^3 de x = -5 até 5"
+
+#: templates/features.html:206
+msgid "SymPy parametric plot of x=cos(u), y=sin(u), u from -5 to 5"
+msgstr "Gráfico paramétrico de x=cos(u), y=sin(u), u de -5 até 5"
+
+#: templates/features.html:211
+msgid "SymPy 3D surface plot of xy, x from -5 to 5, y from 5 to 5"
+msgstr "Gráfico SymPy da superfície 3D de xy, x de -5 até 5, y de -5 até 5"
+
+#: templates/features.html:216
+msgid "SymPy 3D parametric line plot of x=cos(u), y=sin(u), z=u, u from -5 to 5"
+msgstr "Gráfico SymPy da linha paramétrica de x=cos(u), y=sin(u), z=u, u de -5 até 5"
+
+#: templates/features.html:221
+msgid ""
+"SymPy 3D parametric surface plot of x=cos(u+v), y=sin(u-v), z=u-v, u and "
+"v from -5 to 5"
+msgstr ""
+"Gráfico SymPy da superfície paramétrica de x=cos(u+v), y=sin(u-v), z=u-v, u e "
+"v de -5 até 5"
+
+#: templates/features.html:226
+msgid "SymPy implicit plot of x^2 + y^2 = 5"
+msgstr "Gráfico SymPy implícito de x^2 + y^3 = 5"
+
+#: templates/features.html:231
+msgid "SymPy implicit plot of y &gt; x^2"
+msgstr "Gráfico SymPy implícito de y &gt; x^2"
+
+#: templates/features.html:236
+msgid "SymPy implicit plot of y &gt; x (logical and) y &gt; -x"
+msgstr "Gráfico SymPy implícito de y &gt; x (e lógico) y &gt; -x"
+
+#: templates/features.html:241
+msgid ""
+"Matplotlib interactive interface of SymPy 3D parametric surface plot of "
+"x=cos(u+v), y=sin(u-v), z=u-v, u and v from -5 to 5"
+msgstr ""
+"Interface interativa do Matplotlip no gráfico SymPy da superfície paramétrica de "
+"x=cos(u+v), y=sin(u-v), z=u-v, u e v de -5 até 5"
+
+#: templates/features.html:246
+msgid "SymPy Gamma plot of x=cos(t), y=sin(t)"
+msgstr "Gráfico SymPy Gamma de x=cos(t), y=sin(t)"
+
+#: templates/features.html:247
+msgid "SymPy Gamma plot"
+msgstr "Gráfico SymPy Gamma"
+
+#: templates/features.html:254
 msgid "Physics"
 msgstr "Física"
 
-#: templates/index.html:113
+#: templates/features.html:258
 msgid "Units"
 msgstr "Unidades"
 
-#: templates/index.html:114
+#: templates/features.html:259
 msgid "Mechanics"
 msgstr "Mecânica"
 
-#: templates/index.html:115
+#: templates/features.html:260
 msgid "Quantum"
-msgstr "Quântica"
+msgstr "Física Quântica"
 
-#: templates/index.html:116
+#: templates/features.html:261
 msgid "Gaussian Optics"
 msgstr "Óptica Gaussiana"
 
-#: templates/index.html:117
+#: templates/features.html:262
 msgid "Pauli Algebra"
 msgstr "Álgebra de Pauli"
 
-#: templates/index.html:120
+#: templates/features.html:265
+msgid "IPython Notebook Examples"
+msgstr "Exemplos de IPython Notebooks"
+
+#: templates/features.html:267
+msgid "Beginner Tutorial for SymPy Mechanics"
+msgstr "Tutorial de Mecânica em SymPy para Iniciantes"
+
+#: templates/features.html:268
+msgid "Deriving the Mass-Spring-Damper System with SymPy"
+msgstr "Derivando o Sistema Massa-Mola-Amortecedor com SymPy"
+
+#: templates/features.html:269
+msgid "Quantum Circuit Plotting with SymPy"
+msgstr "Desenhando Gráficos de Circuito Quântico com SymPy"
+
+#: templates/features.html:275
 msgid "Statistics"
 msgstr "Estatística"
 
-#: templates/index.html:122
+#: templates/features.html:279
+msgid "Random variable types:"
+msgstr "Tipos de variável aleatória:"
+
+#: templates/features.html:281
 msgid "Normal distributions"
 msgstr "Distribuições normais"
 
-#: templates/index.html:123
+#: templates/features.html:282
 msgid "Uniform distributions"
 msgstr "Distribuições uniformes"
 
-#: templates/index.html:124
+#: templates/features.html:283
+msgid "Bernoulli distributions"
+msgstr "Distribuições de Bernoulli"
+
+#: templates/features.html:284
+msgid "Binomial distributions"
+msgstr "Distribuições Binomiais"
+
+#: templates/features.html:285
+msgid "Hypergeometric distributions"
+msgstr "Distribuições Hipergeométricas"
+
+#: templates/features.html:286
+msgid "More&hellip;"
+msgstr "Mais&hellip;"
+
+#: templates/features.html:289
 msgid "Probability"
 msgstr "Probabilidade"
 
-#: templates/index.html:127
+#: templates/features.html:290
+msgid "Expected value and variance"
+msgstr "Valor esperado e variância"
+
+#: templates/features.html:291
+msgid "Probability density"
+msgstr "Densidade de probabilidade"
+
+#: templates/features.html:297
+msgid "Cryptography"
+msgstr "Criptografia"
+
+#: templates/features.html:301
+msgid "Shift cipher"
+msgstr "Cifra de Troca (Cífra de César)"
+
+#: templates/features.html:302
+msgid "Affine cipher"
+msgstr "Cifra"
+
+#: templates/features.html:303
+msgid "Bifid ciphers"
+msgstr "Cifra de Bifid"
+
+#: templates/features.html:304
+msgid "Vigenere’s cipher"
+msgstr "Cifra de Vigenere"
+
+#: templates/features.html:305
+msgid "Substitution ciphers"
+msgstr "Cifras de Substituição"
+
+#: templates/features.html:306
+msgid "Hill’s cipher"
+msgstr "Cifra de Hill"
+
+#: templates/features.html:307
+msgid "RSA"
+msgstr "RSA"
+
+#: templates/features.html:308
+msgid "Kid RSA"
+msgstr "Kid RSA"
+
+#: templates/features.html:309
+msgid "Linear feedback shift registers"
+msgstr "Registrador de deslocamento com realimentação linear"
+
+#: templates/features.html:310
+msgid "ElGamal encryption"
+msgstr "Criptografia ElGamal"
+
+#: templates/features.html:316
+msgid "Parsing"
+msgstr "Análise Sintática"
+
+#: templates/features.html:320
+msgid "Conversion from Python objects to SymPy objects"
+msgstr "Conversão de objetos Python para objetos SymPy"
+
+#: templates/features.html:321
+msgid "Optional implicit multiplication and function application parsing"
+msgstr "Multiplicação implícita opcional e análise de aplicativo de função"
+
+#: templates/features.html:322
+msgid "Limited Mathematica and Maxima parsing:"
+msgstr "Análise sintática limitada de Mathematica e Maxima:"
+
+#: templates/features.html:322
+msgid "example on SymPy Live"
+msgstr "exemplo em SymPy Live"
+
+#: templates/features.html:323
+msgid "Custom parsing transformations"
+msgstr "Transformações peronalizadas de análises"
+
+#: templates/features.html:329
 msgid "Printing"
-msgstr "Escrita"
+msgstr "Impressão"
 
-#: templates/index.html:129
+#: templates/features.html:333
 msgid "Pretty printing:"
-msgstr "Escrita enfeitada"
+msgstr "Impressão bonita"
 
-#: templates/index.html:129
+#: templates/features.html:333
 msgid "ASCII/Unicode pretty printing, LaTeX"
-msgstr "Escrita em ASCII/Unicode, LaTeX"
+msgstr "Impressão bonita de ASCII/Unicode, LaTeX"
 
-#: templates/index.html:130
+#: templates/features.html:334
 msgid "Code generation:"
 msgstr "Geração de código:"
 
-#: templates/index.html:130
-msgid "C, FORTAN, Python"
-msgstr "C, FORTRAN, Python"
+#: templates/features.html:334
+msgid "C, Fortran, Python"
+msgstr "C, Fortran, Python"
 
-#: templates/index.html:157
-msgid "Download Now"
-msgstr "Faça já o Download"
+#: templates/features.html:335
+msgid ""
+"<a href=\"https://deeplearning.net/software/theano/\">Theano</a> "
+"interaction"
+msgstr ""
+"Interação com "
+"<a href=\"https://deeplearning.net/software/theano/\">Theano</a>"
 
-#: templates/index.html:161
-msgid "Releases"
-msgstr "Lançamentos"
+#: templates/features.html:341
+msgid "Unicode printing in a Python shell"
+msgstr "Impressão Unicode em um terminal Python"
 
-#: templates/index.html:161
-msgid "Google Code downloads"
-msgstr "Downloads no Google Code"
+#: templates/features.html:342
+msgid "Unicode printing"
+msgstr "Impressão Unicode"
 
-#: templates/index.html:162
-msgid "Latest git version"
-msgstr "Última versão no git"
+#: templates/features.html:346
+msgid "LaTeX printing in an IPython notebook"
+msgstr "Impressão LaTeX em um IPython notebook"
 
-#: templates/index.html:172
-msgid "Quick Links"
-msgstr "Links rápidos"
+#: templates/features.html:347
+msgid "LaTeX printing"
+msgstr "Impressão Latex"
 
-#: templates/index.html:179
-msgid "Downloads (source tarballs)"
-msgstr "Downloads (código em tarballs)"
+#: templates/index.html:9
+msgid "About"
+msgstr "Sobre"
 
-#: templates/index.html:180
-msgid "Downloads (packages for distributions)"
-msgstr "Downloads (pacotes de distribuições)"
+#: templates/index.html:12
+msgid ""
+"SymPy is a Python library for symbolic mathematics. It aims to\n"
+"      become a full-featured computer algebra system (CAS) while keeping "
+"the code as\n"
+"      simple as possible in order to be comprehensible and easily "
+"extensible. SymPy\n"
+"      is written entirely in Python."
+msgstr ""
+"SymPy é uma biblioteca Python para matemática simbólica. Almejamos\n"
+"      nos tornar um sistema de álgebra computacional (CAS) completo mantendo "
+"o código o\n"
+"      mais simples possível para ser compreensível e fácilmente "
+"estendido. SymPy\n"
+"      é escrito inteiramente em Python."
 
-#: templates/index.html:181
-msgid "Mailing list"
-msgstr "Lista de emails"
+#: templates/index.html:20
+msgid ""
+"<a href=\"https://docs.sympy.org/latest/tutorial/index.html\">Get started"
+" with the tutorial</a>"
+msgstr ""
+"<a href=\"https://docs.sympy.org/latest/tutorial/index.html\">Comece"
+" com o tutorial</a>"
 
-#: templates/index.html:182
-msgid "Source code"
-msgstr "Código fonte"
+#: templates/index.html:20
+msgid "<a href=\"https://github.com/sympy/sympy/releases\">Download Now</a>"
+msgstr "<a href=\"https://github.com/sympy/sympy/releases\">Faça o Download Agora</a>"
 
-#: templates/index.html:183
-msgid "Issues tracker"
-msgstr "Lista de bugs"
+#: templates/index.html:28
+msgid "Why SymPy"
+msgstr "Porque SymPy"
 
-#: templates/index.html:184
-msgid "Google Code page"
-msgstr "página do Google Code"
+#: templates/index.html:30
+msgid "SymPy is&hellip;"
+msgstr "O SymPy é&hellip;"
 
-#: templates/index.html:185
-msgid "Wiki"
-msgstr "Wiki"
+#: templates/index.html:32
+msgid "Free:"
+msgstr "Grátis"
 
-#: templates/index.html:186
-msgid "Try SymPy online now"
-msgstr "Experimente SymPy online agora"
+#: templates/index.html:32
+msgid " Licensed under BSD, SymPy is free both as in speech and as in beer. "
+msgstr " Licenciado sobre BSD, SymPy é grátis tanto na fala quanto na cerveja. "
 
-#: templates/index.html:187
-msgid "Official SymPy blog"
-msgstr "Blog oficial do SymPy"
+#: templates/index.html:33
+msgid "Python-based:"
+msgstr "Baseado em Python:"
 
-#: templates/index.html:188
-msgid "Planet SymPy"
-msgstr "Planeta SymPy"
+#: templates/index.html:33
+msgid " SymPy is written entirely in Python and uses Python for its language. "
+msgstr "SymPy é escrito completamente em Python e usa Python para sua linguagem. "
 
-#: templates/index.html:203
+#: templates/index.html:34
+msgid "Lightweight:"
+msgstr "Leve:"
+
+#: templates/index.html:34
+msgid ""
+"\n"
+"        SymPy only depends on <a href=\"http://mpmath.org/\">mpmath</a>, "
+"a pure Python library for arbitrary\n"
+"        floating point arithmetic, making it easy to use. "
+msgstr ""
+"\n"
+"        SymPy somente depende em <a href=\"http://mpmath.org/\">mpmath</a>, "
+"uma biblioteca Python pura para aritimética\n"
+"        arbitrária de ponto flutuante, fazendo-o fácil de usar. "
+
+#: templates/index.html:37
+msgid "A library:"
+msgstr "Uma biblioteca:"
+
+#: templates/index.html:37
+msgid ""
+" Beyond use as an interactive tool, SymPy can be embedded in other "
+"applications and extended with custom functions. "
+msgstr ""
+" Acima do uso como uma ferramenta interativa, SymPy pode ser embutido em outros "
+"applicativos e extendido com funções personalizadas. "
+
+#: templates/index.html:39
+msgid "<a href=\"features.html\">See SymPy's features</a>"
+msgstr "<a href=\"features.html\">Veja os recursos do SymPy</a>"
+
+#: templates/index.html:42
+msgid "Projects using SymPy"
+msgstr "Projetos usando SymPy"
+
+#: templates/index.html:45
+msgid ""
+"This is an (incomplete) list of projects that use SymPy. If you use SymPy"
+" in\n"
+"your project, please let us know on our <a "
+"href=\"https://groups.google.com/forum/#!forum/sympy\">mailinglist</a>, "
+"so that we can add your\n"
+"project here as well."
+msgstr ""
+"Esta é uma lista (incompleta) de projetos que usam o SymPy. Se você usa o SymPy"
+" em\n"
+"seu projeto, por favor nos informe na nossa <a "
+"href=\"https://groups.google.com/forum/#!forum/sympy\">lista de emails</a>, "
+"para nós podermos adicionar o seu\n"
+"projeto aqui também."
+
+#: templates/index.html:49
+msgid "Cadabra"
+msgstr "Cadabra"
+
+#: templates/index.html:50
+msgid ""
+" Tensor algebra and (quantum)\n"
+"  field theory system using SymPy for scalar algebra. "
+msgstr ""
+" Álgebra tensorial e sistema\n"
+"  de teoria (quântica) de campos usando SymPy para álgebra escalar. "
+
+#: templates/index.html:52
+msgid "SageMath"
+msgstr "SageMath"
+
+#: templates/index.html:53
+msgid ""
+" Open source mathematics system that\n"
+"  includes SymPy. "
+msgstr ""
+" Sistema de matemática open source que\n"
+"  inclui SymPy. "
+
+#: templates/index.html:55
+msgid "PyDy"
+msgstr "PyDy"
+
+#: templates/index.html:55
+msgid " Multibody dynamics in Python. "
+msgstr " Dinâmica multicorpo em Python"
+
+#: templates/index.html:56
+msgid "galgebra"
+msgstr "galgebra"
+
+#: templates/index.html:56
+msgid " Geometric algebra (previously sympy.galgebra). "
+msgstr " Algebra Geométrica (préviamente sympy.galgebra). "
+
+#: templates/index.html:57
+msgid "yt"
+msgstr "yt"
+
+#: templates/index.html:58
+msgid ""
+" Python package for analyzing and visualizing\n"
+"  volumetric data (<a href=\"https://unyt.readthedocs.io\">unyt</a>, the "
+"yt unit system, uses SymPy). "
+msgstr ""
+" Pacote Python para analizar e vizualizar\n"
+"  dados volumétricos (<a href=\"https://unyt.readthedocs.io\">unyt</a>, o "
+"sistema de unidades yt, usa o SymPy). "
+
+#: templates/index.html:60
+msgid "SfePy"
+msgstr "SfePy"
+
+#: templates/index.html:60
+msgid " Simple finite elements in Python. "
+msgstr " Elementos finitos simples em Python. "
+
+#: templates/index.html:61
+msgid "Quameon"
+msgstr "Quaemon"
+
+#: templates/index.html:61
+msgid " Quantum Monte Carlo in Python. "
+msgstr " Monte Carlo quântico em Python. "
+
+#: templates/index.html:62
+msgid "Lcapy"
+msgstr "Lcapy"
+
+#: templates/index.html:62
+msgid " Experimental Python package for teaching linear circuit analysis. "
+msgstr " Pacote experimental Python para ensino de análise de circuito linear. "
+
+#: templates/index.html:63
+msgid "Quantum Programming in Python"
+msgstr "Programação Quântica em Python"
+
+#: templates/index.html:63
+msgid " Quantum 1D Simple Harmonic Oscillator and Quantum Mapping Gate. "
+msgstr " Ocilador Harmônico Quântico Simples Monodimensional e Portão de Mapeamento Quântico. "
+
+#: templates/index.html:64
+msgid "LaTeX Expression project"
+msgstr "Projeto LaTeX Expression"
+
+#: templates/index.html:64
+msgid ""
+" Easy LaTeX typesetting of algebraic expressions in symbolic form with "
+"automatic substitution and result computation). "
+msgstr ""
+" Formatação LaTeX fácil de expressões algébricas na forma simbólica com "
+"sugestão automática e cálculo do resultado. "
+
+#: templates/index.html:66
+msgid "Symbolic statistical modeling"
+msgstr "Modelamento Estatístico Simbólico"
+
+#: templates/index.html:67
+msgid " Adding statistical operations to complex physical models. "
+msgstr " Adicionando operações estatísticas à modelos físicos completos. "
+
+#: templates/index.html:69
+msgid "OctSymPy"
+msgstr "OctSymPy"
+
+#: templates/index.html:69
+msgid " A Symbolic Package for Octave using SymPy "
+msgstr " Um Pacote Simbólico para Octave usando SymPy. "
+
+#: templates/index.html:70
+msgid "pyodesys"
+msgstr "pyodesys"
+
+#: templates/index.html:70
+msgid " Straightforward numerical integration of ODE systems from Python. "
+msgstr " Integração numérica de sistemas ODE direto do Python. "
+
+#: templates/index.html:71
+msgid "pyneqsys"
+msgstr "pyneqsys"
+
+#: templates/index.html:71
+msgid " Solve symbolically defined systems of non-linear equations numerically. "
+msgstr " Resolve numericamente os sistemas definidos simbolicamente de equações não lineares. "
+
+#: templates/index.html:72
+msgid "ChemPy"
+msgstr "ChemPy"
+
+#: templates/index.html:72
+msgid " A package useful for chemistry written in Python. "
+msgstr " Um pacote útil para química escrito em Python. "
+
+#: templates/index.html:73
+msgid "Spyder"
+msgstr "Spyder"
+
+#: templates/index.html:73
+msgid ""
+" The Scientific Python Development Environment, a Python equivalent to "
+"Rstudio or MATLAB; full SymPy support can be enabled in Spyder's <a "
+"href=\"https://docs.spyder-ide.org/ipythonconsole.html\">IPython "
+"Consoles</a>. "
+msgstr ""
+" O Ambiente de Desenvolvimento Científico com Python, um Python equivalente a "
+"Rstudio ou MATLAB; Suporte completo ao SymPy pode ser ativado no <a "
+"href=\"https://docs.spyder-ide.org/ipythonconsole.html\">Console "
+"IPython</a> do Spyder. "
+
+#: templates/index.html:83
 msgid "News"
 msgstr "Notícias"
 
-#: templates/index.html:207 templates/index.html:208 templates/index.html:211
-#: templates/index.html:212
+#: templates/index.html:85 templates/index.html:87 templates/index.html:89
+#: templates/index.html:91 templates/index.html:93 templates/index.html:95
+#: templates/index.html:99 templates/index.html:101 templates/index.html:103
+#: templates/index.html:105 templates/index.html:109 templates/index.html:113
+#: templates/index.html:115 templates/index.html:123 templates/index.html:125
 #, python-format
 msgid "Version %(v)s released"
 msgstr "Versão %(v)s lançada"
 
-#: templates/index.html:207 templates/index.html:208 templates/index.html:211
-#: templates/index.html:212
+#: templates/index.html:85 templates/index.html:87 templates/index.html:89
+#: templates/index.html:91 templates/index.html:93 templates/index.html:95
+#: templates/index.html:99 templates/index.html:101 templates/index.html:103
+#: templates/index.html:105 templates/index.html:109 templates/index.html:113
+#: templates/index.html:115 templates/index.html:123 templates/index.html:125
 msgid "changes"
 msgstr "mudanças"
 
-#: templates/index.html:209
+#: templates/index.html:97
 msgid ""
-"SymPy is accepted as a <a href=\"http://www.google-"
-"melange.com/gsoc/org/show/google/gsoc2011/sympy\">mentoring "
-"organization</a> for Google Summer of Code 2011"
+" SymPy is accepted as a <a href=\"https://www.google-"
+"melange.com/archive/gsoc/2014/orgs/sympy\">mentoring organization</a> for"
+" Google Summer of Code 2014 "
 msgstr ""
-"SymPy é aceito como <a href=\"http://www.google-"
-"melange.com/gsoc/org/show/google/gsoc2011/sympy\">organização "
-"mentora</a> para o Google Summer of Code 2011"
+" O SymPy é aceito como uma <a href=\"https://www.google-"
+"melange.com/archive/gsoc/2014/orgs/sympy\">organização mentora</a> para o"
+" Google Summer of Code 2014"
 
-#: templates/index.html:210
+#: templates/index.html:107
+msgid ""
+" SymPy is accepted as a <a href=\"https://www.google-"
+"melange.com/archive/gsoc/2013/orgs/sympy\">mentoring organization</a> for"
+" Google Summer of Code 2013 "
+msgstr ""
+" O SymPy é aceito como uma <a href=\"https://www.google-"
+"melange.com/archive/gsoc/2013/orgs/sympy\">organização mentora</a> para o"
+" Google Summer of Code 2013"
+
+
+#: templates/index.html:111
+msgid ""
+" SymPy is accepted as a <a href=\"https://www.google-"
+"melange.com/archive/gsoc/2012/orgs/sympy\">mentoring organization</a> for"
+" Google Summer of Code 2012 "
+msgstr ""
+" O SymPy é aceito como uma <a href=\"https://www.google-"
+"melange.com/archive/gsoc/2012/orgs/sympy\">organização mentora</a> para o"
+" Google Summer of Code 2012"
+
+
+#: templates/index.html:117
+msgid ""
+"SymPy is accepted as a <a href=\"https://www.google-"
+"melange.com/archive/gsoc/2011/orgs/sympy\">mentoring organization</a> for"
+" Google Summer of Code 2011"
+msgstr ""
+" O SymPy é aceito como uma <a href=\"https://www.google-"
+"melange.com/archive/gsoc/2011/orgs/sympy\">organização mentora</a> para o"
+" Google Summer of Code 2011"
+
+
+#: templates/index.html:119
 msgid "New website launched at sympy.org"
 msgstr "Novo website lançado em sympy.org"
 
-#: templates/index.html:213
+#: templates/index.html:121
+#, python-format
+msgid ""
+"Final page about the <a href=\"%(url)s\">2010 Google Summer of Code in "
+"SymPy</a> is available."
+msgstr ""
+"Página final sobre o <a href=\"%(url)s\">2010 Google Summer of Code do "
+"SymPy</a> está disponível."
+
+#: templates/index.html:127
 #, python-format
 msgid ""
 "Final page about the <a href=\"%(url)s\">2009 Google Summer of Code in "
 "SymPy</a> is available."
 msgstr ""
-"Página final sobre <a href=\"%(url)s\">2009 Google Summer of Code do "
+"Página final sobre o <a href=\"%(url)s\">2009 Google Summer of Code do "
 "SymPy</a> está disponível."
 
-#: templates/screenshots.html:8
-msgid "Python Session"
-msgstr "Sessão Python"
+#: templates/roadmap.html:11
+msgid ""
+"Broadly speaking, any form of purely symbolic mathematical computation is"
+"\n"
+"    in scope for SymPy. However, there are a few things we plan to focus "
+"our\n"
+"    development efforts on."
+msgstr ""
+"De um modo geral, qualquer forma de computação matemática puramente simbólica está"
+"\n"
+"    no objetivo do SymPy. No entanto, há algumas coisas que nós planejamos focar "
+"nossos\n"
+"    esforços de desenvolvimento."
 
-#: templates/screenshots.html:21
-msgid "ISymPy Session"
-msgstr "Sessão ISymPy"
+#: templates/roadmap.html:16
+msgid "The Assumptions System"
+msgstr "O Sistema de Suposições"
+
+#: templates/roadmap.html:19
+msgid ""
+"The assumptions system handles how SymPy makes assumptions on\n"
+"    expressions and does logical inference and simplification based on "
+"those\n"
+"    assumptions (for instance, assuming an expression is \"positive\" or\n"
+"    \"integer\"). The SymPy assumptions system is currently in a state of"
+"\n"
+"    disarray, as there is a \"new\" system and an \"old\" system that "
+"need to be\n"
+"    properly merged. However, because assumptions affect every part of "
+"the\n"
+"    codebase, this is a challenging task."
+msgstr ""
+"O sisema de suposições manipula como o SymPy faz as suposições em\n"
+"    expressões e tem uma interferência lógica e simplificações baseadas "
+"nessas\n"
+"    suposições (por exemplo, supondo que uma expressão é \"positiva\" ou\n"
+"    \"inteira\"). O sistema de suposições do SymPy está atualmente em um estado de"
+"\n"
+"    desordem, como tem um sistema \"novo\" e um sistema \"antigo\" que "
+"precisam ser\n"
+"    mesclados adequadamente. No entanto, como as suposições afetam todas as partes "
+"da\n"
+"    base do código, essa é uma tarefa desafiadora. "
+
+#: templates/roadmap.html:30
+msgid "Code Generation"
+msgstr "Geração de Código"
+
+#: templates/roadmap.html:33
+msgid ""
+"Code generation refers to the task of converting SymPy\n"
+"      expressions into another language, such as C or Fortran, for the\n"
+"      purposes of fast numerical evaluation. The goal with code "
+"generation is\n"
+"      to be able to use SymPy to model a problem symbolically, and then\n"
+"      seamlessly convert that symbolic model into fast code that can be\n"
+"      numerically evaluated on real data. Our roadmap for code generation"
+" is\n"
+"      to make that translation as seamless as possible, through things "
+"like\n"
+"      higher level abstractions that reduce the amount of work needed by "
+"the\n"
+"      end user, an optimization pipeline, which would allow SymPy to take"
+"\n"
+"      advantage of its mathematical knowledge to create faster and more\n"
+"      accurate code, and more tools to help solve domain specific "
+"problems."
+msgstr ""
+"Geração de código refere à tarefa de converter expressões\n"
+"      SymPy em outta linguagem, como C ou Fortran, com o\n"
+"      propósito de calculos numéricos rápidos. O objetivo com geração "
+"de código é\n"
+"      ser capaz de usar SymPy para modelar um problema simbolicamente, e então\n"
+"      converter esse modelo simbólico em código rápido que pode ser\n"
+"      calculado numericamente em dados reais. Nossa roadmap para geração de código"
+" é\n"
+"      fazer essa tradução o mais simples possível, atrávez de coisas "
+"como\n"
+"      abstrações de alto nível que reduzem a quantidade de trabalho necessária "
+"pelo\n"
+"      usuário final, uma segmentação de instruções de optimização, que permitiria o SymPy tomar"
+"\n"
+"      vantagem de todo seu conhecimento matemático para criar código mais ráṕido\n"
+"      e mais correto, e mais ferramentas para ajudar resolver problemas de domínio "
+"específico."
+
+
+#: templates/roadmap.html:49
+msgid "Performance"
+msgstr "Desempenho"
+
+#: templates/roadmap.html:52
+msgid ""
+"Performance is an important aspect in symbolic computation.\n"
+"      SymPy often suffers in terms of performance due to it being written"
+" in\n"
+"      pure Python. There are a few ways that SymPy can be made more\n"
+"      performant. One is to more carefully benchmark and profile SymPy "
+"code,\n"
+"      so that inefficiencies can be rooted out. This includes tooling to\n"
+"      prevent performance regressions from ever occurring in the first "
+"place.\n"
+"      Second is to have a fast symbolic core that can be optionally "
+"plugged in\n"
+"      to make SymPy's core operations faster. The plan is to use\n"
+"      the <a "
+"href=\"https://github.com/symengine/symengine\">SymEngine</a>\n"
+"      library as an optional fast symbolic core for SymPy. SymEngine is a"
+"\n"
+"      symbolic library written in C++, with an emphasis on performance. A"
+"\n"
+"      third way SymPy can be made more performant is by implementing "
+"faster\n"
+"      symbolic algorithms for various computations (see below)."
+msgstr ""
+"Desempenho é um aspecto importante em computação simbólica.\n"
+"      O SymPy geralmente sofre em termos de desempenho devido a ser escrito"
+" em\n"
+"      Python puro. Há alguns modos que SymPy pode obter melhor\n"
+"      desempenho. Um deles é fazer um benchmark e um perfil mais cuidadoso do "
+"código SymPy,\n"
+"      para que as ineficiencias possam ser erradicadas. Isso inclui ferramentas para\n"
+"      evitar regressões de desempenho de ocorrer em primeiro "
+"lugar.\n"
+"      O segundo é ter um núcleo simbólico rápido que pode ser opcionalmente "
+"conectado\n"
+"      para fazer as operações do núcleo do SymPy mais rápidas. O plano é usar\n"
+"      a biblioteca <a "
+"href=\"https://github.com/symengine/symengine\">SymEngine</a>\n"
+"      como um núcleo simbólico rápido opicional para o SymPy. A SymEngine é uma"
+"\n"
+"      biblioteca simbólica escrita em C++, com uma ênfase em desempenho. Um"
+"\n"
+"      terceiro modo de deixar o SymPy com melor desempenho é implementando "
+"algorítmos\n"
+"      simbólicos mais rápidos para vários cálculos (veja abaixo)."
+
+#: templates/roadmap.html:70
+msgid "SymPy Live and SymPy Gamma"
+msgstr "SymPy Live e SymPy Gamma"
+
+#: templates/roadmap.html:73
+msgid ""
+"<a href=\"https://live.sympy.org/\">SymPy Live</a> is a web\n"
+"      application that runs a full SymPy Python session in the browser. "
+"It can\n"
+"      be used standalone, and is also used in\n"
+"      the <a href=\"https://docs.sympy.org/latest/index.html\">SymPy\n"
+"      documentation</a> to allow readers to interactively evaluate the\n"
+"      documentation examples. The backend of SymPy Live needs "
+"modernization,\n"
+"      and there are several possible improvements for the frontend as\n"
+"      well.<p><p><a href=\"https://gamma.sympy.org/\">SymPy Gamma</a> is "
+"a web\n"
+"      application that takes a mathematical formula and performs many "
+"useful\n"
+"      calculations on it, such as plotting, solving, simplifying, and "
+"symbolic\n"
+"      integration. The goal of SymPy Gamma is to be an open source "
+"competitor\n"
+"      to things like <a "
+"href=\"https://wolframalpha.com/\">WolframAlpha</a>. We\n"
+"      aim to improve SymPy Gamma by adding more useful computations to "
+"the\n"
+"      output, and by improving the parsing so that users do not need to "
+"know\n"
+"      SymPy syntax to use it."
+msgstr ""
+"O <a href=\"https://live.sympy.org/\">SymPy Live</a> é um aplicativo\n"
+"      web que roda uma sessão SymPy Python completa no navegador. "
+"Ele pode\n"
+"      ser usado sozinho, e também é usado na\n"
+"      <a href=\"https://docs.sympy.org/latest/index.html\">Documentação\n"
+"      SymPy</a> para permitir que leitores calculem interativamente os\n"
+"      exemplos da documentação. O backend do SymPy Live precisa ser "
+"modernizado,\n"
+"      e há várias melhorias no frontend também.\n"
+"      <p><p>O <a href=\"https://gamma.sympy.org/\">SymPy Gamma</a> é "
+"um aplicativo\n"
+"      web que recebe uma fórmula matemática e faz muitos "
+"cálculos\n"
+"      úteis nela, como desenhar o gráfico, resolver, simplificar, e "
+"inegração\n"
+"      simbólica. A meta do SymPy Gamma é ser um competidor open "
+"source\n"
+"      de coisas como <a "
+"href=\"https://wolframalpha.com/\">WolframAlpha</a>. Nós\n"
+"      almejamos melhorar o SymPy Gamma adicionando mais calculos úteis "
+"à\n"
+"      saída, melhorando a análise de sintaxe para que os usuários nçao precisam "
+"saber\n"
+"      a sintaxe do SymPy para usá-lo."
+
+#: templates/roadmap.html:92
+msgid "Algorithmic Improvements"
+msgstr "Melhorias Algorítmicas"
+
+#: templates/roadmap.html:95
+msgid ""
+"SymPy depends on a large array\n"
+"      of symbolic computation algorithms to work. Many algorithms are "
+"already\n"
+"      implemented, but quite a few are not. These include things like "
+"improved\n"
+"      algorithms for symbolic integration, summations, simplification,\n"
+"      polynomial manipulation, and equation solving, among many others.\n"
+"      Improved algorithms will both increase the number of symbolic\n"
+"      computations that SymPy is able to successfully compute, and, in "
+"many\n"
+"      cases, greatly improve the performance of existing algorithms. A "
+"good\n"
+"      resource for the sorts of things we want to implement is\n"
+"      our <a "
+"href=\"https://github.com/sympy/sympy/wiki/GSoC-2017-Ideas\">Google\n"
+"      Summer of Code ideas page</a>."
+msgstr ""
+"O SymPy depende numa vasta lista\n"
+"      algorítmos de computação simbólica para funcionar. Muitos algorítmos já "
+"foram\n"
+"      implementados, mãs alguns não. Esses incluem coisas como "
+"algorítmos\n"
+"      melhorados para integração simbólica, somatórios, simplificação,\n"
+"      manipulação polinomial, e resolução de equação, entre muitos outros.\n"
+"      Algorítimos melhorados irão melhorar o número de cálculos "
+"      simbólivos que o SymPy é capaz de calcular com sucesso, e em "
+"muitos\n"
+"      casos melhorar muito o desempenho de um algorítmo existente. Um "
+"bom\n"
+"      recurso para os tipos de coisas que queremos implementar é\n"
+"      nossa <a "
+"href=\"https://github.com/sympy/sympy/wiki/GSoC-2017-Ideas\">Página\n"
+"      de ideias Google Summer of Code</a>."
+
+
+#: templates/roadmap.html:110
+msgid "General Improvements"
+msgstr "Melhorias Gerais"
+
+#: templates/roadmap.html:113
+msgid ""
+"Aside from the above specific items, we are always aiming to\n"
+"    improve SymPy in many ways. This includes things like <ul><li>fixing "
+"bugs</li><li>better\n"
+"    documentation</li><li>improved development tooling</li><li>new "
+"features</li><li>better\n"
+"    community outreach</li></ul>"
+msgstr ""
+"Além dos itens especificados acima, nós estamos sempre almejando em\n"
+"    melhorar o SymPy em diversas maeiras. Isso inclui coisas como: <ul><li>corrigindo "
+"bugs</li><li>melhor\n"
+"    documentação</li><li>ferramentas de desenvolvimento melhoradas</li><li>novos "
+"recursos</li><li>melhor\n"
+"    alcance da comunidade</li></ul>"
 
 #: templates/support.html:8
 msgid "General"
@@ -706,9 +1603,62 @@ msgstr "Geral"
 
 #: templates/support.html:11
 msgid "Below you can find several ways to get help"
-msgstr "Abaixo você pode encontrar várias maneiras de obter ajuda"
+msgstr "Abaixo você encontra vários modos de obter ajuda"
 
-#: templates/support.html:24
+#: templates/support.html:15
+msgid " SymPy <a href=\"https://docs.sympy.org\">Documentation</a>"
+msgstr " <a href=\"https://docs.sympy.org\">Documentação</a> do SymPy"
+
+#: templates/support.html:16
+msgid ""
+" Main <a "
+"href=\"https://groups.google.com/forum/#!forum/sympy\">mailinglist</a> "
+msgstr ""
+" <a href=\"https://groups.google.com/forum/#!forum/sympy\">mailinglist</a> "
+"Principal "
+
+#: templates/support.html:17
+msgid " <a href=\"https://github.com/sympy/sympy/issues/\">Issue tracker</a>."
+msgstr " <a href=\"https://github.com/sympy/sympy/issues/\">Rastreador de problemas</a>."
+
+#: templates/support.html:19
+msgid ""
+"Gitter channel: <a href=\"https://gitter.im/sympy/sympy\">#sympy at "
+"Gitter</a>."
+msgstr ""
+"Canal no Gitter: <a href=\"https://gitter.im/sympy/sympy\">#sympy no "
+"Gitter</a>."
+
+#: templates/support.html:20
+msgid ""
+"Stack Overflow: <a "
+"href=\"https://stackoverflow.com/questions/tagged/sympy\">[sympy] "
+"tag</a>."
+msgstr ""
+"Stack Overflow: <a "
+"href=\"https://stackoverflow.com/questions/tagged/sympy\">tag "
+"[sympy]</a>."
+
+#: templates/support.html:25
 msgid "More Specific"
 msgstr "Mais específico"
 
+#: templates/support.html:29
+msgid ""
+" SymPy <a "
+"href=\"https://docs.sympy.org/latest/tutorial/index.html\">tutorial</a> "
+msgstr ""
+"<a href=\"https://docs.sympy.org/latest/tutorial/index.html\">Tutorial do "
+"SymPy</a> "
+
+#: templates/support.html:30
+msgid " Main <a href=\"https://github.com/sympy/sympy/wiki/Faq\">FAQ</a> "
+msgstr " <a href=\"https://github.com/sympy/sympy/wiki/Faq\">FAQ</a> principal"
+
+#: templates/support.html:31
+msgid ""
+"<a href=\"https://docs.sympy.org/latest/gotchas.html\">Gotchas and "
+"Pitfalls</a>"
+msgstr ""
+"<a href=\"https://docs.sympy.org/latest/gotchas.html\">Armadilhas e "
+"Pegadinhas</a>"
