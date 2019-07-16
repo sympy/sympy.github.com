@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-06-19 14:38-0500\n"
+"POT-Creation-Date: 2019-07-15 18:44-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -653,19 +653,19 @@ msgid "SymPy plot of sin(2 sin(2 sin(x))) with matplotlib"
 msgstr ""
 
 #: templates/features.html:194
-msgid "SymPy plot of x, x^2, and x^3, x from -5 to 5"
+msgid "SymPy plot of x, x^2, and x^3, from x = -5 to 5"
 msgstr ""
 
 #: templates/features.html:199
-msgid "SymPy parametric plot of x=cos(u), y=sin(u), u from -5 to 5"
+msgid "SymPy parametric plot of x=cos(u), y=sin(u), from u = -5 to 5"
 msgstr ""
 
 #: templates/features.html:204
-msgid "SymPy 3D surface plot of xy, x from -5 to 5, y from -5 to 5"
+msgid "SymPy 3D surface plot of xy, from x = -5 to 5, from y = -5 to 5"
 msgstr ""
 
 #: templates/features.html:209
-msgid "SymPy 3D parametric line plot of x=cos(u), y=sin(u), z=u, u from -5 to 5"
+msgid "SymPy 3D parametric line plot of x=cos(u), y=sin(u), z=u, from u = -5 to 5"
 msgstr ""
 
 #: templates/features.html:214
