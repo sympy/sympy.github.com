@@ -28,13 +28,13 @@
         <ul>
           <li class=""><a href="index.html">Página Principal</a></li>
           <li class=""><a href="features.html">Características</a></li>
-          <li class=""><a href="download.html">Descarga</a></li>
+          <li class=""><a href="download.html">Descargar</a></li>
           <li class=""><a href="https://docs.sympy.org">Documentación <i class="icon-external-link-sign"></i></a></li>
           <li class=""><a href="support.html">Soporte</a></li>
           <li class=""><a href="development.html">Desarrollo</a></li>
-          <li class="active"><a href="roadmap.html">Roadmap</a></li>
+          <li class="active"><a href="roadmap.html">Hoja de ruta</a></li>
           <li class=""><a href="donate.html">Donar</a></li>
-          <li><a href="https://live.sympy.org/">Terminal Online <i class="icon-external-link-sign"></i></a></li>
+          <li><a href="https://live.sympy.org/">Terminal en línea <i class="icon-external-link-sign"></i></a></li>
         </ul>
         
       </nav>
@@ -44,114 +44,122 @@
           <article id="content">
             
 
-<h1 class="title">Roadmap</h2>
+<h1 class="title">Hoja de ruta</h2>
 <div class="inner">
   <p class="first">
-    Broadly speaking, any form of purely symbolic mathematical computation is
-    in scope for SymPy. However, there are a few things we plan to focus our
-    development efforts on.
+    En términos generales, cualquier forma de cálculo matemático simbólico está
+    dentro del alcance de SymPy. Sin embargo, hay algunas cosas en las que
+    planeamos enfocar nuestros esfuerzos de desarrollo.
   </p>
 
-<h3 class="title">The Assumptions System</h3>
+<h3 class="title">Sistema de Suposiciones (assumptions)</h3>
 <div class="inner">
   <p class="first">
-    The assumptions system handles how SymPy makes assumptions on
-    expressions and does logical inference and simplification based on those
-    assumptions (for instance, assuming an expression is "positive" or
-    "integer"). The SymPy assumptions system is currently in a state of
-    disarray, as there is a "new" system and an "old" system that need to be
-    properly merged. However, because assumptions affect every part of the
-    codebase, this is a challenging task.
-  </p>
-</div>
-
-
-<h3 class="title">Code Generation</h3>
-<div class="inner">
-  <p class="first">
-    Code generation refers to the task of converting SymPy
-      expressions into another language, such as C or Fortran, for the
-      purposes of fast numerical evaluation. The goal with code generation is
-      to be able to use SymPy to model a problem symbolically, and then
-      seamlessly convert that symbolic model into fast code that can be
-      numerically evaluated on real data. Our roadmap for code generation is
-      to make that translation as seamless as possible, through things like
-      higher level abstractions that reduce the amount of work needed by the
-      end user, an optimization pipeline, which would allow SymPy to take
-      advantage of its mathematical knowledge to create faster and more
-      accurate code, and more tools to help solve domain specific problems.
+    El sistema de supuestos (assumptions) maneja la forma en la que SymPy
+    hace suposiciones en las expresiones y hace inferencias y simplificaciones
+    basadas en esos supuestos (por ejemplo, suponiendo que una expresión es
+    "positiva" o "entera"). El sistema de suposiciones de SymPy se encuentra
+    actualmente en un estado de desorden, ya que hay un sistema "nuevo" y un
+    sistema "antiguo" que deben fusionarse correctamente. Sin embargo, esta es
+    una tarea desafiante.
   </p>
 </div>
 
 
-<h3 class="title">Performance</h3>
+<h3 class="title">Generación de código</h3>
 <div class="inner">
   <p class="first">
-    Performance is an important aspect in symbolic computation.
-      SymPy often suffers in terms of performance due to it being written in
-      pure Python. There are a few ways that SymPy can be made more
-      performant. One is to more carefully benchmark and profile SymPy code,
-      so that inefficiencies can be rooted out. This includes tooling to
-      prevent performance regressions from ever occurring in the first place.
-      Second is to have a fast symbolic core that can be optionally plugged in
-      to make SymPy's core operations faster. The plan is to use
-      the <a href="https://github.com/symengine/symengine">SymEngine</a>
-      library as an optional fast symbolic core for SymPy. SymEngine is a
-      symbolic library written in C++, with an emphasis on performance. A
-      third way SymPy can be made more performant is by implementing faster
-      symbolic algorithms for various computations (see below).
+    La generación de código se refiere a la tarea de convertir expresiones
+      de SymPy a otros lenguajes, como C o Fortran, con el fin de realizar
+      una evaluación numérica rápida. El objetivo de la generación de
+      código es poder utilizar SymPy para modelar un problema
+      simbólicamente y luego convertir ese modelo simbólico en un
+      código rápido que se puede evaluar numéricamente para datos
+      reales. Nuestra hoja de ruta para la generación de código es hacer
+      que la traducción sea lo más fluida posible, a través de elementos
+      como abstracciones de nivel superior que reducen la cantidad de
+      trabajo que necesita el usuario final, pipeline de optimización, que
+      permitiría a SymPy aprovechar sus conocimientos matemáticos
+      para crear código más rápido y preciso, y más herramientas para
+      aydar a resolver problemas de dominio específico.
+  </p>
+</div>
+
+
+<h3 class="title">Rendimiento</h3>
+<div class="inner">
+  <p class="first">
+    El rendimiento es un aspecto importante en el cálculo simbólico.
+     SymPy a menudo sufre en términos de rendimiento
+     debido a que está escrito en Python puro. Hay algunas
+     maneras en que SymPy puede hacerse más eficiente. Una de
+     ellas es evaluar y perfilar más cuidadosamente el código de
+     SymPy, para que las ineficiencias puedan ser eliminadas.
+     Esto incluye herramientas para evitar que ocurran regresiones
+     de rendimiento en primer lugar. Lo segundo es tener un núcleo
+     simbólico rápido que se pueda conectar opcionalmente para
+     que las operaciones centrales de SymPy sean más rápidas.
+      El plan es utilizar la biblioteca
+     <a href="https://github.com/symengine/symengine">SymEngine</a>
+     como un núcleo simbólico rápido opcional para SymPy.
+     SymEngine es una biblioteca simbólica escrita en C++,
+     con énfasis en el rendimiento. Una tercera forma en que SymPy
+     puede ser más eficiente es mediante la implementación de
+     algoritmos simbólicos más rápidos para varios cálculos
+     (ver más abajo).
   </p>
 </div>
 
 
 
-<h3 class="title">SymPy Live and SymPy Gamma</h3>
+<h3 class="title">SymPy Live y SymPy Gamma</h3>
 <div class="inner">
   <p class="first">
-    <a href="https://live.sympy.org/">SymPy Live</a> is a web
-      application that runs a full SymPy Python session in the browser. It can
-      be used standalone, and is also used in
-      the <a href="https://docs.sympy.org/latest/index.html">SymPy
-      documentation</a> to allow readers to interactively evaluate the
-      documentation examples. The backend of SymPy Live needs modernization,
-      and there are several possible improvements for the frontend as
-      well.<p><p><a href="https://gamma.sympy.org/">SymPy Gamma</a> is a web
-      application that takes a mathematical formula and performs many useful
-      calculations on it, such as plotting, solving, simplifying, and symbolic
-      integration. The goal of SymPy Gamma is to be an open source competitor
-      to things like <a href="https://wolframalpha.com/">WolframAlpha</a>. We
-      aim to improve SymPy Gamma by adding more useful computations to the
-      output, and by improving the parsing so that users do not need to know
-      SymPy syntax to use it.
+    <a href="https://live.sympy.org/">SymPy Live</a> es una aplicación web
+      que corre una sesión completa de SymPy en el navegador. Puede
+      usarse de forma independiente, y también se usa en la
+      <a href="https://docs.sympy.org/latest/index.html">Documentación
+      de SymPy</a>  para permitir a los lectores evaluar los ejemplos
+      de la documentación de forma interactiva. El backend de SymPy
+      necesita modernización y hay varias mejoras posibles para el
+      frontend también.<p><p><a href="https://gamma.sympy.org/">SymPy Gamma</a>
+      es una aplicación web que recibe una fórmula matemática y realiza
+      muchos cálculos útiles con ella, como graficación, solución,
+      simplificación, e integración simbólica. El objetivo de SymPy Gamma es
+      ser un competidor de código abierto para productos como
+      <a href="https://wolframalpha.com/">WolframAlpha</a>. Nuestro objetivo
+      es mejorar SymPy Gamma agregando cálculos más útiles a la salida y
+      mejorar el análisis para que los usuarios no necesiten conocer la
+      sintaxis de SymPy para usarla.
   </p>
 </div>
 
 
-<h3 class="title">Algorithmic Improvements</h3>
+<h3 class="title">Mejoras Algorítmicas</h3>
 <div class="inner">
   <p class="first">
-    SymPy depends on a large array
-      of symbolic computation algorithms to work. Many algorithms are already
-      implemented, but quite a few are not. These include things like improved
-      algorithms for symbolic integration, summations, simplification,
-      polynomial manipulation, and equation solving, among many others.
-      Improved algorithms will both increase the number of symbolic
-      computations that SymPy is able to successfully compute, and, in many
-      cases, greatly improve the performance of existing algorithms. A good
-      resource for the sorts of things we want to implement is
-      our <a href="https://github.com/sympy/sympy/wiki/GSoC-2017-Ideas">Google
-      Summer of Code ideas page</a>.
+    SymPy depende de una gran variedad de
+      algoritmos de computación simbólica para funcionar. Muchos algoritmos
+      ya están implementados, pero algunos no lo están. Estos incluyen cosas
+      como algoritmos mejorados para integración simbólica, sumas,
+      simplificación, manipulación polinómica y resolución de ecuaciones,
+      entre muchos otros. Los algoritmos mejorados aumentarán el número de
+      cálculos simbólicos que SymPy puede calcular con éxito y, en muchos
+      casos, mejorarán en gran medida el rendimiento de los algoritmos
+      existentes. Un buen recurso para el tipo de cosas que queremos
+      implementar es nuestra <a href="https://github.com/sympy/sympy/wiki/GSoC-2017-Ideas">
+      página de ideas de Google Summer of Code </a> .
   </p>
 </div>
 
 
-<h3 class="title">General Improvements</h3>
+<h3 class="title">Mejoras generales</h3>
 <div class="inner">
   <p class="first">
-    Aside from the above specific items, we are always aiming to
-    improve SymPy in many ways. This includes things like <ul><li>fixing bugs</li><li>better
-    documentation</li><li>improved development tooling</li><li>new features</li><li>better
-    community outreach</li></ul>
+    Además de los aspectos específicos anteriores, siempre
+    apuntamos a mejorar SymPy de muchas maneras. Esto incluye cosas como <ul><li>corregir bugs</li>
+    <li>mejor documentación</li><li>herramientas de desarrollo mejoradas</li><li>nuevas funcionalidades
+    </li><li>mayor acercamiento a la comunidad</li></ul>
   </p>
 </div>
 
@@ -161,37 +169,37 @@
         <div id="spacer" class="col span_1 clr small_span_0">&nbsp;</div>
         <aside id="sidebar" class="col span_4 clr small_span_2">
           <div id="search-gamma" class="sidebar_card">
-            <h3> Compute with Gamma </h3>
+            <h3> Calcular con Gamma </h3>
             <form method="get" action="https://www.sympygamma.com/input/" target="_blank">
               <input type="text" name="i" />
-              <button>Compute</button>
+              <button>Calcular</button>
             </form>
           </div>
           <div id="about" class="sidebar_card">
-            <h3>Descarga Ahora</h3>
+            <h3>Descargar Ahora</h3>
             <p>
-              <a href="https://github.com/sympy/sympy/releases">Latest Version</a><br/>
-              <a href="https://github.com/sympy/sympy">Development Version</a>
+              <a href="https://github.com/sympy/sympy/releases">Última Versión</a><br/>
+              <a href="https://github.com/sympy/sympy">Versión de Desarrollo</a>
             </p>
           </div>
           <div id="quick_links" class="sidebar_card">
-            <h3>Links Rápidos</h3>
+            <h3>Enlaces Rápidos</h3>
             <ul>
               <li><a href="https://docs.sympy.org/">Documentación</a></li>
-              <li><a href="https://github.com/sympy/sympy/releases">Descargas (fuentes tar)</a></li>
+              <li><a href="https://github.com/sympy/sympy/releases">Descargas (fuentes)</a></li>
               <li><a href="https://groups.google.com/group/sympy">Lista de correos</a></li>
               <li><a href="https://github.com/sympy/sympy">Código fuente</a></li>
-              <li><a href="https://github.com/sympy/sympy/issues/">Seguimiento de errores</a></li>
+              <li><a href="https://github.com/sympy/sympy/issues/">Rastreador de problemas</a></li>
               <li><a href="https://github.com/sympy/sympy/wiki">Wiki</a></li>
-              <li><a href="https://github.com/sympy/sympy/wiki/introduction-to-contributing">Introduction to contributing</a></li>
+              <li><a href="https://github.com/sympy/sympy/wiki/introduction-to-contributing">Introducción a la contribución</a></li>
               <li><a href="https://live.sympy.org/">Prueba SymPy online ahora</a></li>
-              <li><a href="https://planet.sympy.org/">Planeta SymPy</a></li>
+              <li><a href="https://planet.sympy.org/">Planet SymPy</a></li>
               <li><a href="https://gitter.im/sympy/sympy">Chat (Gitter)</a></li>
-              <li><a href="http://colabti.org/irclogger/irclogger_logs/sympy">Registros del canal IRC</a></li>
+              <li><a href="http://colabti.org/irclogger/irclogger_logs/sympy">Archivos del canal IRC</a></li>
             </ul>
           </div>
           <div id="social" class="sidebar_card">
-            <h3>Follow Us<h3>
+            <h3>Síguenos<h3>
                 <!-- Place this tag where you want the widget to render. -->
                 <div class="g-follow" data-annotation="bubble"
                 data-height="24"
@@ -220,11 +228,11 @@
 <div id="about" class="sidebar_card">
     <h3>Repositorio Git</h3>
     <p>
-        Repositorio Git Principal:<br/>
+        Repositorio git principal:<br/>
         <code>git clone git://github.com/sympy/sympy.git</code>
     </p>
     <p>
-        Acceso Online: <a href="https://github.com/sympy/sympy">github.com/sympy/sympy</a>
+        Acceso en línea: <a href="https://github.com/sympy/sympy">github.com/sympy/sympy</a>
     </p>
 </div>
 
@@ -233,13 +241,14 @@
     <footer class="row">
       <p>Copyright &copy; 2018 SymPy Development Team. </p>
       <p>
-        Esta página es código abierto. Haz Fork a <a href="https://github.com/sympy/sympy.github.com">este proyecto en Github</a> para editarlo
+        Esta página es de código abierto. Haz fork a <a href="https://github.com/sympy/sympy.github.com">este proyecto en GitHub</a> para editarlo.
       </p>
       <p>
         Idiomas (beta):
         <a href="../cs/index.html">[Cs]</a>,
         <a href="../de/index.html">[De]</a>,
         <a href="../en/index.html">[En]</a>,
+        <a href="../es/index.html">[Es]</a>,
         <a href="../fr/index.html">[Fr]</a>,
         <a href="../nl/index.html">[Nl]</a>,
         <a href="../pt/index.html">[Pt]</a>,
