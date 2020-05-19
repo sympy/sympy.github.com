@@ -1125,7 +1125,7 @@ msgstr "galgebra"
 
 #: templates/index.html:60
 msgid " Geometric algebra (previously sympy.galgebra). "
-msgstr " Geometría algebraica (anteriormente sympy.galgebra). "
+msgstr " Álgebra Geométrica (anteriormente sympy.galgebra). "
 
 #: templates/index.html:63
 msgid "LaTeX Expression project"
