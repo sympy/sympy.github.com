@@ -39,7 +39,7 @@ they can be added there. But consider:
 - Any page with content should be added to `templates` so that it can be
 translated.
 
-- Any images should be added to `media`. Any styling changes should be added to
+- Any images should be added to `media`.
 
 - Any styling changes should be made in
   the [sympy-web-static](https://github.com/sympy/sympy-web-static)
