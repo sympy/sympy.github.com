@@ -141,7 +141,6 @@
 ./templates/macros
 ./templates/roadmap.html
 ./templates/support.html
-./test
 ./zh/development.html
 ./zh/docs.html
 ./zh/donate.html
