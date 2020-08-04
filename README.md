@@ -27,13 +27,13 @@ and then open [0.0.0.0:8000](0.0.0.0:8000) in your browser.
 The website is generated automatically on [Travis
 CI](https://travis-ci.org/sympy/sympy.github.com). The pages are served
 using GitHub pages from the
-[`gh-pages`](https://github.com/sympy/sympy.github.com/tree/gh-pages) branch. All
+[`master`](https://github.com/sympy/sympy.github.com/tree/master) branch. All
 modifications should be made to the
 [`sources`](https://github.com/sympy/sympy.github.com/tree/sources) branch. The
-`gh-pages` branch is generated automatically.
+`master` branch is generated automatically.
 
 Note that all files at the root of the `sources` branch are synced to the
-`gh-pages` branch. If you want to add additional files that are not translated,
+`master` branch. If you want to add additional files that are not translated,
 they can be added there. But consider:
 
 - Any page with content should be added to `templates` so that it can be
