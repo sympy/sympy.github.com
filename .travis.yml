@@ -11,4 +11,4 @@ script:
   - set -e
   - pip install jinja2 babel doctr
   - ./generate
-  - doctr deploy --branch-whitelist sources --exclude static --built-docs . .
+  - doctr deploy --deploy-branch-name gh-pages --branch-whitelist sources --exclude static --built-docs . .
