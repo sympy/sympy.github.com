@@ -1,5 +1,6 @@
-{% from "macros" import video %}
 {% extends "base.html" %}
+{% from "macros" import video %}
+
 
 {% block title %}SymPy{% endblock %}
 
@@ -17,7 +18,8 @@
     </p>
 
     <section id="get-started">
-    <p>{% trans %}<a href="https://docs.sympy.org/latest/tutorial/index.html">Get started with the tutorial</a>{% endtrans %} {% trans %}<a href="https://github.com/sympy/sympy/releases">Download Now</a>{% endtrans %}</p>
+      <p>{% trans %}<a href="https://docs.sympy.org/latest/tutorial/index.html">Get started with the tutorial</a>{% endtrans %} {% trans %}<a href="https://github.com/sympy/sympy/releases">Download Now</a>{% endtrans %}</p>
+    </section>
   </div>
 </section>
 
@@ -148,12 +150,29 @@ project here as well.{% endtrans %}</p>
 <div class="sidebar_card">
     <h3>{% trans %}News{% endtrans %}</h3>
     <p>
+        <span class="date">{{ datetime(2020, 12, 12) }}</span> {% trans v='1.7.1' %}Version {{ v }} released{% endtrans %} (<a href="https://github.com/sympy/sympy/wiki/Release-Notes-for-1.7.1">{% trans %}changes{% endtrans %}</a>)<br/>
+    </p>
+    <p>
+        <span class="date">{{ datetime(2020, 11, 29) }}</span> {% trans v='1.7' %}Version {{ v }} released{% endtrans %} (<a href="https://github.com/sympy/sympy/wiki/Release-Notes-for-1.7">{% trans %}changes{% endtrans %}</a>)<br/>
+    </p>
+    <p>
+        <span class="date">{{ datetime(2020, 08, 9) }}</span> {% trans v='1.6.2' %}Version {{ v }} released{% endtrans %} (<a href="https://github.com/sympy/sympy/wiki/Release-Notes-for-1.6.2">{% trans %}changes{% endtrans %}</a>)<br/>
+    </p>
+    <p>
+        <span class="date">{{ datetime(2020, 07, 2) }}</span> {% trans v='1.6.1' %}Version {{ v }} released{% endtrans %} (<a href="https://github.com/sympy/sympy/wiki/Release-Notes-for-1.6.1">{% trans %}changes{% endtrans %}</a>)<br/>
+    </p>
+    <p>
+        <span class="date">{{ datetime(2020, 05, 24) }}</span> {% trans v='1.6' %}Version {{ v }} released{% endtrans %} (<a href="https://github.com/sympy/sympy/wiki/Release-Notes-for-1.6">{% trans %}changes{% endtrans %}</a>)<br/>
+    </p>
+    <p>
         <span class="date">{{ datetime(2019, 12, 21) }}</span> {% trans v='1.5.1' %}Version {{ v }} released{% endtrans %} (<a href="https://github.com/sympy/sympy/wiki/Release-Notes-for-1.5.1">{% trans %}changes{% endtrans %}</a>)<br/>
     </p><p>
         <span class="date">{{ datetime(2019, 12, 9) }}</span> {% trans v='1.5' %}Version {{ v }} released{% endtrans %} (<a href="https://github.com/sympy/sympy/wiki/Release-Notes-for-1.5">{% trans %}changes{% endtrans %}</a>)<br/>
     </p><p>
         <span class="date">{{ datetime(2019, 4, 10) }}</span> {% trans v='1.4' %}Version {{ v }} released{% endtrans %} (<a href="https://github.com/sympy/sympy/wiki/Release-Notes-for-1.4">{% trans %}changes{% endtrans %}</a>)<br/>
-    </p><p>
+    </p>
+    <!--
+    <p>
         <span class="date">{{ datetime(2018, 9, 14) }}</span> {% trans v='1.3' %}Version {{ v }} released{% endtrans %} (<a href="https://github.com/sympy/sympy/wiki/Release-Notes-for-1.3">{% trans %}changes{% endtrans %}</a>)<br/>
     </p><p>
         <span class="date">{{ datetime(2018, 7, 9) }}</span> {% trans v='1.2' %}Version {{ v }} released{% endtrans %} (<a href="https://github.com/sympy/sympy/wiki/Release-Notes-for-1.2">{% trans %}changes{% endtrans %}</a>)<br/>
@@ -198,6 +217,7 @@ project here as well.{% endtrans %}</p>
     </p><p>
         <span class="date">{{ datetime(2009, 9, 26) }}</span> {% trans url='https://github.com/sympy/sympy/wiki/GSoC-2009-report' %}Final page about the <a href="{{ url }}">2009 Google Summer of Code in SymPy</a> is available.{% endtrans %}
     </p>
+    -->
 </div>
 {% endblock %}
 
