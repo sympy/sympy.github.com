@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block title %}SymPy Live{% endblock %}
+
+{% block content %}
+<h1>SymPy Live</h1>
+<iframe
+    src="https://jupyterlite.github.io/demo/repl/?toolbar=1&kernel=python&code=from%20sympy%20import%20*&code=x,%20y,%20z,%20t%20=%20symbols(%27x%20y%20z%20t%27)&code=k,%20m,%20n%20=%20symbols(%27k%20m%20n%27,%20integer=True)&code=f,%20g,%20h%20=%20symbols(%27f%20g%20h%27,%20cls=Function)"
+    width="100%"
+    height="500px"
+>
+</iframe>
+
+<div id="example" class="sidebar_card">
+    <a id="#example">
+        <div class="clickable_top">
+            <h3>Example session</h3>
+        </div>
+    </a>
+    <div class="content">
+        <pre class="executable">
+&gt;&gt;&gt; expr = (x + y)**5
+&gt;&gt;&gt; expand(expr)
+$$ x^5 + 5 x^4 y + 10 x^3 y^2 + 10 x^2 y^3 + 5 x y^4 + y^5 $$
+&gt;&gt;&gt; sin(x).series(x, 0, 5)
+$$ x - \frac16 x^3 + O(x^5) $$</pre>
+
+        More information can be found at <a href="https://docs.sympy.org/">https://docs.sympy.org/</a>.
+
+
+    </div>
+</div>
+{% endblock %}
+
