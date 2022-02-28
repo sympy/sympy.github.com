@@ -591,7 +591,7 @@ msgstr "Teilmengen"
 
 #: templates/features.html:124
 msgid "Permutation Groups"
-msgstr "Permutationengruppen"
+msgstr "Permutationsgruppen"
 
 #: templates/features.html:125
 msgid "Prufer and Gray Codes"
