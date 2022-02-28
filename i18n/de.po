@@ -523,7 +523,7 @@ msgstr "Integrationsdokumentation"
 
 #: templates/features.html:85
 msgid "Limits:"
-msgstr "Begrenzungen:"
+msgstr "Grenzwerte:"
 
 #: templates/features.html:89
 msgid "Differentiation"
