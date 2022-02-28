@@ -511,7 +511,7 @@ msgstr "Teilbruchzerlegung"
 
 #: templates/features.html:74
 msgid "Resultants"
-msgstr "Resultate"
+msgstr "Resultanten"
 
 #: templates/features.html:80
 msgid "Calculus"
