@@ -95,7 +95,7 @@ msgstr "Mailingliste"
 
 #: templates/base.html:71
 msgid "Source code"
-msgstr "Quellcode"
+msgstr "Quelltext"
 
 #: templates/base.html:72
 msgid "Issues tracker"
@@ -135,8 +135,7 @@ msgid ""
 "This page is open source. Fork <a href=\"%(url)s\">the project on GitHub</a> "
 "to edit it."
 msgstr ""
-"Diese Seite ist quelloffen. Forke <a href=\"%(url)s\">das Projekt auf GitHub</a> "
-"um es zu bearbeiten."
+"Diese Seite ist quelloffen. Um sie zu bearbeiten, lege einen Fork <a href=\"%(url)s\">des Projekts auf GitHub</a> an."
 
 #: templates/base.html:116
 msgid "Languages"
@@ -148,7 +147,7 @@ msgid ""
 "    contribute"
 msgstr ""
 "Wir sind an allen Beiträgen interessiert. Es gibt viele Möglichkeiten, wie\n"
-"    du mithelfen kannst."
+"    du beitragen kannst."
 
 #: templates/development.html:15
 msgid ""
@@ -197,7 +196,7 @@ msgstr ""
 
 #: templates/development.html:27
 msgid "You can help with reviewing patches"
-msgstr "Du kannst beim Code Review helfen"
+msgstr "Du kannst helfen, Patches zu evaluieren."
 
 #: templates/development.html:28
 msgid "You can send us patches with bug fixes or new features"
@@ -232,9 +231,9 @@ msgid ""
 "    or ask on <a href=\"https://gitter.im/sympy/sympy\">Gitter</a>, we'll be "
 "happy to help."
 msgstr ""
-"Wenn du Hilfe mit git, github, Pull Requests, Patches, Coding, SymPy oder "
-"etwas\n"
-"    in Bezug auf dieses Projekt hast, sende uns einfach eine E-Mail an die "
+"Wenn du Hilfe zu git, github, Pull Requests, Patches, Coding, SymPy oder "
+"weiterem benötigst,\n"
+"    sende uns einfach eine E-Mail an die "
 "<a href=\"https://groups.google.com/forum/#!forum/sympy\">Mailingliste</a>\n"
 "    oder frag uns auf <a href=\"https://gitter.im/sympy/sympy\">Gitter</a>, "
 "wir werden uns freuen, dir zu helfen."
@@ -289,11 +288,11 @@ msgstr ""
 
 #: templates/development.html:68
 msgid "Sources of the Webpages"
-msgstr "Quellcode der Webseite"
+msgstr "Quelltext der Webseite"
 
 #: templates/development.html:71
 msgid "Sources of these webpages are at"
-msgstr "Quellcode dieser Webseite ist hier"
+msgstr "Quelltext dieser Webseite ist hier"
 
 #: templates/development.html:74
 msgid "Feel free to send us patches with improvements."
@@ -306,7 +305,7 @@ msgstr ""
 #: templates/development.html:85 templates/download.html:21
 #: templates/roadmap.html:128
 msgid "Main git repository"
-msgstr "Hauptgit-Repository"
+msgstr "Haupt-Git-Repository"
 
 #: templates/development.html:89 templates/roadmap.html:132
 msgid "Online access"
@@ -400,7 +399,7 @@ msgstr "Kernfunktionalitäten"
 
 #: templates/features.html:14 templates/features.html:69
 msgid "Basic arithmetic:"
-msgstr "Basisrechnungen:"
+msgstr "Grundlegende Arithmetik:"
 
 #: templates/features.html:14
 msgid ""
@@ -426,7 +425,7 @@ msgstr "Polynome</a>"
 
 #: templates/features.html:18
 msgid "Expansion:"
-msgstr "Erweiterung:"
+msgstr "Ausmultiplizieren:"
 
 #: templates/features.html:20
 msgid " of a polynomial "
@@ -456,7 +455,7 @@ msgstr ""
 
 #: templates/features.html:46
 msgid "Substitution:"
-msgstr "Ersetzung:"
+msgstr "Substitution:"
 
 #: templates/features.html:46
 msgid "example"
@@ -483,7 +482,7 @@ msgstr "Nichtkommutative Symbole"
 
 #: templates/features.html:59
 msgid "Pattern matching"
-msgstr "Muster-Erkennung"
+msgstr "Mustererkennung"
 
 #: templates/features.html:65
 msgid "Polynomials"
@@ -491,7 +490,7 @@ msgstr "Polynome"
 
 #: templates/features.html:69
 msgid " division, gcd, ... "
-msgstr " Division, GCD, ... "
+msgstr " Division, ggT, ... "
 
 #: templates/features.html:70
 msgid "Factorization"
@@ -519,7 +518,7 @@ msgstr ""
 
 #: templates/features.html:82
 msgid "Integration Documentation"
-msgstr "Integrationsdokumentation"
+msgstr "Dokumentation zur Integration"
 
 #: templates/features.html:85
 msgid "Limits:"
@@ -527,7 +526,7 @@ msgstr "Grenzwerte:"
 
 #: templates/features.html:89
 msgid "Differentiation"
-msgstr "Differenzierung"
+msgstr "Differentiation"
 
 #: templates/features.html:92
 msgid "Integration:"
@@ -555,11 +554,11 @@ msgstr "Algebraische Gleichungen"
 
 #: templates/features.html:107
 msgid "Differential equations"
-msgstr "Differenzial Gleichungen"
+msgstr "Differentialgleichungen"
 
 #: templates/features.html:108
 msgid "Difference equations"
-msgstr "Differenzielle Gleichungen"
+msgstr "Differenzengleichungen"
 
 #: templates/features.html:109
 msgid "Systems of equations"
@@ -595,7 +594,7 @@ msgstr "Permutationsgruppen"
 
 #: templates/features.html:125
 msgid "Prufer and Gray Codes"
-msgstr "Prufer- und Gray-Codes"
+msgstr "Prüfer- und Gray-Codes"
 
 #: templates/features.html:131
 msgid "Discrete math"
@@ -615,7 +614,7 @@ msgstr "Produkte"
 
 #: templates/features.html:137
 msgid "Number theory:"
-msgstr "Nummern-Theorie:"
+msgstr "Zahlentheorie:"
 
 #: templates/features.html:137
 msgid ""
@@ -627,7 +626,7 @@ msgstr ""
 
 #: templates/features.html:139
 msgid "Logic expressions"
-msgstr "Logik-Ausdrücke"
+msgstr "Logische Ausdrücke"
 
 #: templates/features.html:145
 msgid "Matrices"
@@ -635,7 +634,7 @@ msgstr "Matrizen"
 
 #: templates/features.html:149
 msgid "Basic arithmetic"
-msgstr "Grundlegende Mathematik"
+msgstr "Grundlegende Rechenoperationen"
 
 #: templates/features.html:150
 msgid "Eigenvalues/eigenvectors"
@@ -666,7 +665,7 @@ msgid ""
 "points, lines, rays, segments, ellipses, circles,\n"
 "                    polygons, ..."
 msgstr ""
-"Punkte, Geraden, Strahlen, Segmente, Ellipsen, Kreise,\n"
+"Punkte, Geraden, Strahlen, Strecken, Ellipsen, Kreise,\n"
 "                    Polygone, ..."
 
 #: templates/features.html:166
@@ -699,7 +698,7 @@ msgstr "2D und 3D"
 
 #: templates/features.html:181
 msgid "Interactive interface"
-msgstr "Interaktives Interface"
+msgstr "Interaktive Benutzeroberfläche"
 
 #: templates/features.html:182
 msgid "Colors"
@@ -785,7 +784,7 @@ msgstr ""
 
 #: templates/features.html:254
 msgid "Gaussian Optics"
-msgstr "Gauss-Optik"
+msgstr "Gaußsche Optik"
 
 #: templates/features.html:255
 msgid "Pauli Algebra"
@@ -805,7 +804,7 @@ msgstr "Ableitung des Mass-Spring-Damper Systems mit SymPy"
 
 #: templates/features.html:262
 msgid "Quantum Circuit Plotting with SymPy"
-msgstr ""
+msgstr "Darstellung von Quantenschaltkreisen mit SymPy"
 
 #: templates/features.html:268
 msgid "Statistics"
@@ -821,11 +820,11 @@ msgstr "Normalverteilungen"
 
 #: templates/features.html:275
 msgid "Uniform distributions"
-msgstr "Uniformverteilungen"
+msgstr "Gleichverteilungen"
 
 #: templates/features.html:276
 msgid "Bernoulli distributions"
-msgstr "Bernoulliverteilungen"
+msgstr "Bernoulli-Verteilungen"
 
 #: templates/features.html:277
 msgid "Binomial distributions"
@@ -857,15 +856,15 @@ msgstr "Kryptographie"
 
 #: templates/features.html:294
 msgid "Shift cipher"
-msgstr "Verschiebungscipher"
+msgstr "Verschiebungschiffre"
 
 #: templates/features.html:295
 msgid "Affine cipher"
-msgstr "Affine Cipher"
+msgstr "Affine Chiffre"
 
 #: templates/features.html:296
 msgid "Bifid ciphers"
-msgstr "Bifid Ciphers"
+msgstr "Bifid-Chiffre"
 
 #: templates/features.html:297
 msgid "Vigenere’s cipher"
@@ -873,11 +872,11 @@ msgstr "Vigenere’s Cipher"
 
 #: templates/features.html:298
 msgid "Substitution ciphers"
-msgstr "Substitution Ciphers"
+msgstr "Ersetzungschiffren"
 
 #: templates/features.html:299
 msgid "Hill’s cipher"
-msgstr "Hill’s Cipher"
+msgstr "Hill-Chiffre"
 
 #: templates/features.html:300
 msgid "RSA"
@@ -893,7 +892,7 @@ msgstr ""
 
 #: templates/features.html:303
 msgid "ElGamal encryption"
-msgstr ""
+msgstr "Elgamal-Verschlüsselung"
 
 #: templates/features.html:309
 msgid "Parsing"
