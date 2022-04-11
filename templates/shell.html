@@ -3,9 +3,19 @@
 {% block title %}SymPy Live{% endblock %}
 
 {% block content %}
+
+{% set host = "https://jupyterlite.github.io" %}
+{% set path = "demo/repl/" %}
+{% set query = "?toolbar=1&kernel=python" %}
+{% set code1 = "from sympy import *" %}
+{% set code2 = "x, y, z, t = symbols('x y z t')" %}
+{% set code3 = "k, m, n = symbols('k m n', integer=True)" %}
+{% set code4 = "f, g, h = symbols('f g h', cls=Function)" %}
+{% set initcode = "\n".join([code1, code2, code3, code4]) %}
+
 <h1>SymPy Live</h1>
 <iframe
-    src="https://jupyterlite.github.io/demo/repl/?toolbar=1&kernel=python&code=from%20sympy%20import%20*&code=x,%20y,%20z,%20t%20=%20symbols(%27x%20y%20z%20t%27)&code=k,%20m,%20n%20=%20symbols(%27k%20m%20n%27,%20integer=True)&code=f,%20g,%20h%20=%20symbols(%27f%20g%20h%27,%20cls=Function)"
+    src="{{ host }}/{{ path }}{{ query }}&code={{ initcode|urlencode }}"
     width="100%"
     height="500px"
 >
@@ -21,9 +31,9 @@
         <pre class="executable">
 &gt;&gt;&gt; expr = (x + y)**5
 &gt;&gt;&gt; expand(expr)
-$$ x^5 + 5 x^4 y + 10 x^3 y^2 + 10 x^2 y^3 + 5 x y^4 + y^5 $$
-&gt;&gt;&gt; sin(x).series(x, 0, 5)
-$$ x - \frac16 x^3 + O(x^5) $$</pre>
+x**5 + 5*x**4*y + 10*x**3*y**2 + 10*x**2*y**3 + 5*x*y**4 + y**5
+&gt;&gt;&gt; sin(x).series(x, 0, 7)
+x - x**3/6 + x**5/120 + O(x**7)</pre>
 
         More information can be found at <a href="https://docs.sympy.org/">https://docs.sympy.org/</a>.
 
