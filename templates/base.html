@@ -48,6 +48,7 @@
         </div>
         <div id="spacer" class="col span_1 clr small_span_0">&nbsp;</div>
         <aside id="sidebar" class="col span_4 clr small_span_2">
+          {% block sidebar %}
           <div id="search-gamma" class="sidebar_card">
             <h3>{% trans %} Compute with Gamma {% endtrans %}</h3>
             <form method="get" action="https://www.sympygamma.com/input/" target="_blank">
@@ -103,7 +104,8 @@
                 js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,
                 'script', 'twitter-wjs');</script>
           </div>
-          {% block sidebar %}
+          {% endblock %}
+          {% block sidebarextra %}
           {% endblock %}
       </aside>
     </section>
