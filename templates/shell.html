@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 
-{% set loading_overlay_duration = 18000 %}
+{% set loading_overlay_duration = 3000 %}
+{% set loading_message_duration = 10000 %}
 {% set host = "https://sympy.github.io" %}
 {% set path = "live/repl/" %}
 {% set query = "?toolbar=1&kernel=python" %}
@@ -21,17 +22,20 @@
 
 {% block extrahead %}
 
-<!-- loading overlay -->
+<!-- loading overlay and info message -->
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/gasparesganga-jquery-loading-overlay@2.1.7/dist/loadingoverlay.min.js"></script>
 <script>
   $(document).ready(function() {
     $.LoadingOverlay("show", {
-      text: "SymPy live shell is loading...",
+      text: "Loading SymPy live shell...",
       textResizeFactor: 0.2
     });
     setTimeout(function(){
       $.LoadingOverlay("hide");
     }, {{ loading_overlay_duration }});
+    setTimeout(function(){
+      $('#loading_message').hide();
+    }, {{ loading_message_duration }});
   });
 </script>
 
@@ -92,6 +96,15 @@
 
 {% block content %}
 
+  <div id="loading_message" class="sidebar_card">
+    <div class="content">
+      <p>
+        {% trans %}Note it can take up to 30 seconds before the shell finishes loading and is ready to run commands.{% endtrans %}    
+      </p>
+    </div>
+  </div>
+
+
 
   <h1>SymPy Live</h1>
 
@@ -107,8 +120,7 @@
       <h3>Instructions</h3>
       <div class="content">
         <p>
-          Press <b>SHIFT</b> + <b>ENTER</b> to run the code.<br>
-          On mobile, use the play button (triangle) in the toolbar to run the code.
+          {% trans %}Press ENTER to run the code or use the Run button in the toolbar.{% endtrans %}
         </p>
       </div>
   </div>
@@ -136,7 +148,6 @@
   <p>
     {% trans %}SymPy Live shell allows you to use SymPy in the browser without the need to install anything on your computer.{% endtrans %}
   </p>
-
   <p>
     {% trans %}The following commands are executed by default:{% endtrans %}
     <pre>
@@ -148,10 +159,7 @@
   </p>
   <p>
     {% trans %}SymPy Live shell is powered by{% endtrans %} <a href="https://jupyterlite.readthedocs.io/en/latest/">JupyterLite</a>.
-  </p>
-
-  <p>
-    {% trans %}Note it can take up to 30 seconds before the shell loads and becomes available for using interactively.{% endtrans %}    
+    {% trans %}It can take up to 30 seconds before the shell code and libraries load completely and become available for using interactively.{% endtrans %}    
   </p>
 </div>
 
@@ -192,7 +200,6 @@
     <li><a href="https://github.com/sympy/sympy/issues/">{% trans %}Issues tracker{% endtrans %}</a></li>
     <li><a href="https://github.com/sympy/sympy/wiki">{% trans %}Wiki{% endtrans %}</a></li>
     <li><a href="https://github.com/sympy/sympy/wiki/introduction-to-contributing">{% trans %}Introduction to contributing{% endtrans %}</a></li>
-    <li><a href="https://live.sympy.org/">{% trans %}Try SymPy online now{% endtrans %}</a></li>
     <li><a href="https://planet.sympy.org/">{% trans %}Planet SymPy{% endtrans %}</a></li>
     <li><a href="https://gitter.im/sympy/sympy">{% trans %}Chat (Gitter){% endtrans %}</a></li>
     <li><a href="http://colabti.org/irclogger/irclogger_logs/sympy">{% trans %}IRC channel logs{% endtrans %}</a></li>
