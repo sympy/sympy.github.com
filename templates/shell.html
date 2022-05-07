@@ -1,7 +1,6 @@
 {% extends "base.html" %}
 
-{% set loading_overlay_duration = 3000 %}
-{% set loading_message_duration = 10000 %}
+
 {% set host = "https://sympy.github.io" %}
 {% set path = "live/repl/" %}
 {% set query = "?toolbar=1&kernel=python" %}
@@ -16,29 +15,7 @@
 {% block title %}SymPy Live{% endblock %}
 
 
-
-
-
-
 {% block extrahead %}
-
-<!-- loading overlay and info message -->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/gasparesganga-jquery-loading-overlay@2.1.7/dist/loadingoverlay.min.js"></script>
-<script>
-  $(document).ready(function() {
-    $.LoadingOverlay("show", {
-      text: "Loading SymPy live shell...",
-      textResizeFactor: 0.2
-    });
-    setTimeout(function(){
-      $.LoadingOverlay("hide");
-    }, {{ loading_overlay_duration }});
-    setTimeout(function(){
-      $('#loading_message').hide();
-    }, {{ loading_message_duration }});
-  });
-</script>
-
 
 <!-- MathJax 3 -->
 <script>window.MathJax = {"tex": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]]}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
@@ -82,29 +59,13 @@
   });
 </script>
 
-
 {% endblock %}
 
 
 
 
 
-
-
-
-
-
 {% block content %}
-
-  <div id="loading_message" class="sidebar_card">
-    <div class="content">
-      <p>
-        {% trans %}Note it can take up to 30 seconds before the shell finishes loading and is ready to run commands.{% endtrans %}    
-      </p>
-    </div>
-  </div>
-
-
 
   <h1>SymPy Live</h1>
 
@@ -122,21 +83,13 @@
         <p>
           {% trans %}Press ENTER to run the code or use the Run button in the toolbar.{% endtrans %}
         </p>
+        <p id="loading_message">
+          {% trans %}Note it can take up to 30 seconds before the shell finishes loading and is ready to run commands.{% endtrans %}    
+        </p>
       </div>
   </div>
 
-
 {% endblock %}
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -164,7 +117,6 @@
 </div>
 
 
-
 <div id="examples" class="sidebar_card">
     <h3>Example session</h3>
     <div class="content">
@@ -188,7 +140,6 @@
 </div>
 
 
-
 <div id="quick_links" class="sidebar_card">
   <h3>{% trans %}Quick Links{% endtrans %}</h3>
   <ul>
@@ -207,9 +158,3 @@
 </div>
 
 {% endblock %}
-
-
-
-
-
-
