@@ -1,0 +1,160 @@
+{% extends "base.html" %}
+
+
+{% set host = "https://www.sympy.org" %}
+{% set path = "live/repl/" %}
+{% set query = "?toolbar=1&kernel=python" %}
+{% set code1 = "from sympy import *" %}
+{% set code2 = "init_printing()" %}
+{% set code3 = "x, y, z, t = symbols('x y z t')" %}
+{% set code4 = "k, m, n = symbols('k m n', integer=True)" %}
+{% set code5 = "f, g, h = symbols('f g h', cls=Function)" %}
+{% set initcode = "\n".join([code1, code2, code3, code4, code5]) %}
+
+
+{% block title %}SymPy Live{% endblock %}
+
+
+{% block extrahead %}
+
+<!-- MathJax 3 -->
+<script>window.MathJax = {"tex": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]]}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+<script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+<!-- handler for evaluate commands -->
+<script>
+  function getURLParameter(name) {
+    return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search)||[,""])[1].replace(/\+/g, '%20'))||null;
+  }
+
+  function statementsToCodes(statements) {
+    var statements = statements
+        .replace('\r\n', '\n')
+        .replace('\r', '\n')
+        .split(/#--[^\n]*/);
+    var codes = [];
+    for (const idx in statements) {
+      statement = statements[idx].trim()
+      if (statement) {
+        codes.push(statement);
+      }
+    }
+    return codes;
+  }
+
+  $(document).ready(function() {
+    // default iframe src with SymPy initcode
+    var iframe_src = "{{ host }}/{{ path }}{{ query }}&code={{ initcode|urlencode }}";
+    // check if we have additional statements to evaluate in the query string
+    var statements = getURLParameter('evaluate');
+    if (statements) {
+      codes = statementsToCodes(statements);
+      console.log(codes);
+      for (const idx in codes) {
+        iframe_src += '&code=' + encodeURIComponent(codes[idx]);
+      }
+    }
+    $('#live-iframe').prop("src", iframe_src);
+  });
+</script>
+
+{% endblock %}
+
+
+
+
+
+{% block content %}
+
+  <h1>SymPy Live</h1>
+
+  <iframe
+      id="live-iframe"
+      src=""
+      width="100%"
+      height="500px"
+  >
+  </iframe>
+
+  <div id="usage" class="sidebar_card">
+      <h3>Instructions</h3>
+      <div class="content">
+        <p>
+          {% trans %}Press ENTER to run the code or use the Run button in the toolbar.{% endtrans %}
+        </p>
+        <p id="loading_message">
+          {% trans %}Note it can take up to 30 seconds before the shell finishes loading and is ready to run commands.{% endtrans %}    
+        </p>
+      </div>
+  </div>
+
+{% endblock %}
+
+
+
+
+{% block sidebar %}
+
+<div id="about_shell" class="sidebar_card">
+  <h3>{% trans %}About this page{% endtrans %}</h3>
+  <p>
+    {% trans %}SymPy Live shell allows you to use SymPy in the browser without the need to install anything on your computer.{% endtrans %}
+  </p>
+  <p>
+    {% trans %}The following commands are executed by default:{% endtrans %}
+    <pre>
+[1]: from sympy import *
+     x, y, z, t = symbols('x y z t')
+     k, m, n = symbols('k m n', integer=True)
+     f, g, h = symbols('f g h', cls=Function)
+    </pre>
+  </p>
+  <p>
+    {% trans %}SymPy Live shell is powered by{% endtrans %} <a href="https://jupyterlite.readthedocs.io/en/latest/">JupyterLite</a>.
+    {% trans %}It can take up to 30 seconds before the shell code and libraries load completely and become available for using interactively.{% endtrans %}    
+  </p>
+</div>
+
+
+<div id="examples" class="sidebar_card">
+    <h3>Example session</h3>
+    <div class="content">
+      <p>
+        <code>[2]: expr = (x + y)**3</code>
+      </p>
+      <p>
+        <code>[3]: expand(expr)</code><br>
+        <code>[3]: </code>\(x^{3} + 3 x^{2} y + 3 x y^{2} + y^{3}\)<br>
+      </p>
+      <p>
+        <code>[4]: sin(x).series(x, 0, 7)</code><br>
+        <code>[4]: </code>\(x - \frac{x^{3}}{6} + \frac{x^{5}}{120} + O\left(x^{7}\right)\)<br>
+      </p>
+
+      <p>
+        {% trans %}Read the tutorial in the SymPy docs to learn more about SymPy{% endtrans %}: 
+        <a href="https://docs.sympy.org/tutorial/">{% trans %}SymPy Tutorial{% endtrans %}</a>.
+      </p>
+  </div>
+</div>
+
+
+<div id="quick_links" class="sidebar_card">
+  <h3>{% trans %}Quick Links{% endtrans %}</h3>
+  <ul>
+    <li><a href="https://docs.sympy.org/tutorial/">{% trans %}SymPy Tutorial{% endtrans %}</a></li>
+    <li><a href="https://docs.sympy.org/">{% trans %}Documentation{% endtrans %}</a></li>
+    <li><a href="https://github.com/sympy/sympy/releases">{% trans %}Downloads (source tarballs){% endtrans %}</a></li>
+    <li><a href="https://groups.google.com/group/sympy">{% trans %}Mailing list{% endtrans %}</a></li>
+    <li><a href="https://github.com/sympy/sympy">{% trans %}Source code{% endtrans %}</a></li>
+    <li><a href="https://github.com/sympy/sympy/issues/">{% trans %}Issues tracker{% endtrans %}</a></li>
+    <li><a href="https://github.com/sympy/sympy/wiki">{% trans %}Wiki{% endtrans %}</a></li>
+    <li><a href="https://github.com/sympy/sympy/wiki/introduction-to-contributing">{% trans %}Introduction to contributing{% endtrans %}</a></li>
+    <li><a href="https://planet.sympy.org/">{% trans %}Planet SymPy{% endtrans %}</a></li>
+    <li><a href="https://gitter.im/sympy/sympy">{% trans %}Chat (Gitter){% endtrans %}</a></li>
+    <li><a href="http://colabti.org/irclogger/irclogger_logs/sympy">{% trans %}IRC channel logs{% endtrans %}</a></li>
+  </ul>
+</div>
+
+{% endblock %}
