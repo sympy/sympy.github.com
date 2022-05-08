@@ -30,6 +30,7 @@ templates = [
     "development.html",
     "roadmap.html",
     "donate.html",
+    "shell.html",
     ]
 
 # Sorted alphabetically:
