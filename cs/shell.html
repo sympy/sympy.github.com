@@ -44,7 +44,7 @@
 
   $(document).ready(function() {
     // default iframe src with SymPy initcode
-    var iframe_src = "https://sympy.github.io/live/repl/?toolbar=1&kernel=python&code=from%20sympy%20import%20%2A%0Ainit_printing%28%29%0Ax%2C%20y%2C%20z%2C%20t%20%3D%20symbols%28%27x%20y%20z%20t%27%29%0Ak%2C%20m%2C%20n%20%3D%20symbols%28%27k%20m%20n%27%2C%20integer%3DTrue%29%0Af%2C%20g%2C%20h%20%3D%20symbols%28%27f%20g%20h%27%2C%20cls%3DFunction%29";
+    var iframe_src = "https://www.sympy.org/live/repl/?toolbar=1&kernel=python&code=from%20sympy%20import%20%2A%0Ainit_printing%28%29%0Ax%2C%20y%2C%20z%2C%20t%20%3D%20symbols%28%27x%20y%20z%20t%27%29%0Ak%2C%20m%2C%20n%20%3D%20symbols%28%27k%20m%20n%27%2C%20integer%3DTrue%29%0Af%2C%20g%2C%20h%20%3D%20symbols%28%27f%20g%20h%27%2C%20cls%3DFunction%29";
     // check if we have additional statements to evaluate in the query string
     var statements = getURLParameter('evaluate');
     if (statements) {
