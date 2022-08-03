@@ -62,3 +62,5 @@ with the translation in the i18n directory. Compile it using
 Then add the language in the generate script, generate the pages and commit the
 generated files. Don't forget to add the new language in the `base.html` so that
 one can switch into it.
+
+#I would love to contribute to SymPy Too !
