@@ -33,8 +33,12 @@ templates = [
     "shell.html",
     ]
 
+BASE_URL_PREFIX = os.path.join('/', os.environ.get('BASE_URL_PREFIX', ''))
+STATIC_PATH = f"{BASE_URL_PREFIX}/static"
+
 # Sorted alphabetically:
 languages = ["cs", "de", "en", "fr", "nl", "pt", "ru", "zh", "es"]
+print(f"STATIC_PATH: {STATIC_PATH}")
 
 for language in languages:
     print("Generating '%s' pages" % language)
@@ -50,9 +54,14 @@ for language in languages:
 
     for template in templates:
         t = env.get_template(template)
-        print("    Processing '%s'" % template)
+        print("Processing '%s'" % template)
         name = os.path.splitext(template)[0]
-        s = t.render({name + "_active": "active"})
+        s = t.render(
+            {
+                name + "_active": "active",
+                "static_path": STATIC_PATH
+            }
+        )
         os.makedirs(os.path.join('build', language), exist_ok=True)
         f = open(os.path.join('build', language, template), "wb")
         try:

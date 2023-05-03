@@ -1,0 +1,44 @@
+name: Build
+
+on:
+  push:
+    branches: [ "sources" ]
+
+env:
+  # Set this in the github variables, when deploying on fork
+  # for proper relative paths
+  BASE_URL_PREFIX: ${{ vars.BASE_URL_PREFIX }}
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3.5.2
+
+    - name: Checkout submodules
+      run: git submodule update --init --recursive
+    - name: Setup Python
+      uses: actions/setup-python@v4.6.0
+      with:
+        python-version: 3.11
+
+    - name: Install dependencies
+      run: |
+        set -e
+        pip install jinja2 babel doctr
+
+    - name: Generate Docs
+      run: |
+        ./generate
+
+    - name: Copy all build files to root
+      run:  cp build/* . -r
+
+    - name: Deploy 🚀
+      if: github.ref == 'refs/heads/sources'
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        folder: .
