@@ -3,7 +3,8 @@ name: Build
 on:
   push:
     branches: [ "sources" ]
-
+  pull_request:
+    branches: [ "sources" ]
 env:
   # Set this in the github variables, when deploying on fork
   # for proper relative paths
