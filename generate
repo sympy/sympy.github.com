@@ -59,7 +59,8 @@ for language in languages:
         s = t.render(
             {
                 name + "_active": "active",
-                "static_path": STATIC_PATH
+                "static_path": STATIC_PATH,
+                "copyright_year": datetime.datetime.utcnow().year
             }
         )
         os.makedirs(os.path.join('build', language), exist_ok=True)
