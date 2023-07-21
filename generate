@@ -9,15 +9,18 @@ from gettext import GNUTranslations
 
 from jinja2 import Environment, FileSystemLoader
 
+
 def md5_filter(value):
     return hashlib.md5(value).hexdigest()
+
 
 def format_datetime(year, month, day):
     return babel.dates.format_date(datetime.date(year, month, day),
                                    locale=env.globals["locale"])
 
+
 env = Environment(loader=FileSystemLoader('templates'),
-        extensions=['jinja2.ext.i18n'])
+                  extensions=['jinja2.ext.i18n'])
 env.filters["md5"] = md5_filter
 env.globals["datetime"] = format_datetime
 
@@ -31,10 +34,14 @@ templates = [
     "roadmap.html",
     "donate.html",
     "shell.html",
-    ]
+]
+
+BASE_URL_PREFIX = os.path.join('/', os.environ.get('BASE_URL_PREFIX', ''))
+STATIC_PATH = f"{BASE_URL_PREFIX}/static"
 
 # Sorted alphabetically:
 languages = ["cs", "de", "en", "fr", "nl", "pt", "ru", "zh", "es"]
+print(f"STATIC_PATH: {STATIC_PATH}")
 
 for language in languages:
     print("Generating '%s' pages" % language)
@@ -50,13 +57,19 @@ for language in languages:
 
     for template in templates:
         t = env.get_template(template)
-        print("    Processing '%s'" % template)
+        print("Processing '%s'" % template)
         name = os.path.splitext(template)[0]
-        s = t.render({name + "_active": "active"})
+        s = t.render(
+            {
+                name + "_active": "active",
+                "static_path": STATIC_PATH,
+                "copyright_year": datetime.datetime.utcnow().year
+            }
+        )
         os.makedirs(os.path.join('build', language), exist_ok=True)
         f = open(os.path.join('build', language, template), "wb")
         try:
-          f.write(s.encode("utf-8"))
-          f.write(b"\n")
+            f.write(s.encode("utf-8"))
+            f.write(b"\n")
         finally:
-          f.close()
+            f.close()
