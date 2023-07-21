@@ -5,4 +5,14 @@
 *~
 .DS_Store
 
+cs/
+de/
+en/
+es/
+fr/
+nl/
+pt/
+ru/
+zh/
+
 i18n/sympy.org.pot

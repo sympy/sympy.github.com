@@ -1,0 +1,14 @@
+env:
+  global:
+    # Doctr deploy key for sympy/sympy.github.com
+    - secure: "mPi/pjnsoaI+yKDrZmYx31UtGVrkh6Z8IbYSEDwowmPWYzaRgp7fvyj6UfzowOAlR43razqnWOZhkizOiUUChQnMCQrcV1OAfaXsMpf4Xvqn9JBytZeKgksTkyegBAlqnW56+RDvz4cUldBusrOiVC2hEHsffLbwcGH9ARMfoTc="
+
+language: python
+python:
+  - "3.6"
+
+script:
+  - set -e
+  - pip install jinja2 babel doctr
+  - ./generate
+  - doctr deploy --deploy-branch-name gh-pages --branch-whitelist sources --exclude static --built-docs . .
