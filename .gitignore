@@ -4,5 +4,3 @@
 *.tmp
 *~
 .DS_Store
-
-i18n/sympy.org.pot
