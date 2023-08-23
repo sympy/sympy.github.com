@@ -37,7 +37,7 @@ templates = [
 ]
 
 BASE_URL_PREFIX = os.path.join('/', os.environ.get('BASE_URL_PREFIX', ''))
-STATIC_PATH = f"{BASE_URL_PREFIX}/static"
+STATIC_PATH = os.path.join(BASE_URL_PREFIX, "static")
 
 # Sorted alphabetically:
 languages = ["cs", "de", "en", "fr", "nl", "pt", "ru", "zh", "es"]
