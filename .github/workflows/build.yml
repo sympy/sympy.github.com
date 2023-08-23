@@ -1,9 +1,8 @@
 name: Build
 
 on:
-  # Temporarily disabled due to broken builds. See https://github.com/sympy/sympy.github.com/pull/187
-  # push:
-  #   branches: [ "sources" ]
+  push:
+     branches: [ "sources" ]
   pull_request:
     branches: [ "sources" ]
 env:
