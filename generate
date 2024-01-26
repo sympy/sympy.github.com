@@ -63,7 +63,7 @@ for language in languages:
             {
                 name + "_active": "active",
                 "static_path": STATIC_PATH,
-                "copyright_year": datetime.datetime.utcnow().year
+                "copyright_year": datetime.datetime.today().year
             }
         )
         os.makedirs(os.path.join('build', language), exist_ok=True)
