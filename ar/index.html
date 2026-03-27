@@ -1,0 +1,306 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ar">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>SymPy</title>
+    <link rel="stylesheet" href="../media/base.css" type="text/css" media="screen" />
+    <link rel="stylesheet" id="current-theme" href="../media/style.css" type="text/css" media="screen" />
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700|Gentium+Basic:700" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="../media/SymPy-Favicon.ico" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="header">
+        <h1><a href="index.html"> <img src="../media/logo.png"
+        style="vertical-align:middle" height="78" width="100"/> SymPy</a></h1>
+        
+        <div id="main-navigation">
+          
+          
+          <ul>
+            <li class="active first"><a href="index.html">الصفحة الرئيسية</a></li>
+            <li class=" first"><a href="download.html">تحميل</a></li>
+            <li class=" first"><a href="http://docs.sympy.org">دليل المستخدم</a></li>
+            <li class=" first"><a href="support.html">الدعم الفني</a></li>
+            <li class=" first"><a href="screenshots.html">أمثلة</a></li>
+            <li class=" first"><a href="development.html">المطورون</a></li>
+            <li class=" first"><a href="donate.html">مساعدة مالية</a></li>
+            <li class=" first"><a href="http://live.sympy.org/">الاستخدام المباشر</a></li>
+          </ul>
+          
+          <div class="clear"></div>
+        </div>
+      </div>
+      <div id="wrapper">
+        <div id="main">
+          <div class="block" id="block-text">
+            <div class="content">
+              
+
+<h2 class="title">تعريف Sympy</h2>
+<div class="inner">
+  <p class="first">
+   هي مكتبة بيثون للرياضيات الرمزية تهدف إلى أن نكون نظام كمبيوتر كامل المواصفات للجبر  مع المحفاظ على البساطة بقدر الإمكان من أجل أن تكون مفهومة وقابلة للتوسيع بسهولة .تم كتابة وتطور هذه المكتبة بلغة البيثون دون اي إعتماد على أي مكتبات أخرى.
+  </p>
+</div>
+<h2 class="title">Google Summer of Code (GSoC) 2013</h2>
+<div class="inner" >
+  <p class="first">
+  SymPy is a mentoring organization for GSoC 2013.
+  Apply now, the deadline is May 2, 2013. See the
+  <a
+      href="https://plus.google.com/u/0/116872266504964122381/posts/VPk3FQQYPAA">G+
+      announcement</a> for links and information how to apply.
+  </p>
+</div>
+
+<h2 class="title">  مزايا المكتبة</h2>
+<div class="inner" >
+  <h3>الاساسيات الرياضية</h3>
+  <ul>
+    <li><strong>Basic arithmetic:</strong> Support for operators such
+      as <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>**</code> (power)</li>
+    <li> <strong>Simplification</strong></li>
+    <li><strong>Expansion</strong></li>
+    <li><strong>Functions:</strong> trigonometric, hyperbolic, exponential, roots, logarithms, absolute
+      value, spherical harmonics, factorials and gamma functions, zeta
+      functions, polynomials, special functions, ...</li>
+    <li><strong>Substitution</strong></li>
+    <li><strong>Numbers:</strong> arbitrary precision integers, rationals, and floats</li>
+    <li><strong>Noncommutative symbols</strong></li>
+    <li><strong>Pattern matching</strong></li>
+  </ul>
+
+  <h3>المعادلات متعدد الحدود</h3>
+  <ul>
+    <li><strong>Basic arithmetic:</strong>  division, gcd, ... </li>
+    <li><strong>Factorization</strong></li>
+    <li><strong>Square-free decomposition</strong></li>
+    <li><strong>Gröbner bases</strong></li>
+    <li><strong>Partial fraction decomposition</strong></li>
+    <li><strong>Resultants</strong></li>
+  </ul>
+
+  <h3>حساب التفاضل والتكامل</h3>
+  <ul>
+    <li>
+      <strong>Limits:</strong>
+      <code>limit(x*log(x), x, 0) -&gt; 0</code>
+    </li>
+    <li>
+      <strong>Direvatives</strong>
+    </li>
+    <li>
+      <strong>Integration:</strong>
+      It uses extended Risch-Norman heuristic
+    </li>
+    <li><strong>Taylor (Laurent) series</strong></li>
+  </ul>
+
+  <h3>Solving equations</h3>
+  <ul>
+    <li><strong>Polynomial equations</strong></li>
+    <li><strong>Algebraic equations</strong></li>
+    <li><strong>Differential equations</strong></li>
+    <li><strong>Difference equations</strong></li>
+    <li><strong>Systems of equations</strong></li>
+  </ul>
+
+  <h3>توافقيات</h3>
+  <ul>
+    <li><strong>Permutations</strong></li>
+    <li><strong>Combinations</strong></li>
+    <li><strong>Partitions</strong></li>
+    <li><strong>Subsets</strong></li>
+    <li><strong>Permutation Groups</strong>: Polyhedral, Rubik, Symmetric, ...</li>
+    <li><strong>Prufer and Gray Codes</strong></li>
+  </ul>
+
+  <h3>الوياضيات المتقطعة</h3>
+  <ul>
+    <li><strong>Binomial coefficients</strong></li>
+    <li><strong>Summations</strong></li>
+    <li><strong>Products</strong></li>
+    <li><strong>Number theory:</strong> generating prime numbers, primality testing,  integer factorization, ... </li>
+    <li><strong>Logic expressions</strong></li>
+  </ul>
+
+  <h3>المصفوفات</h3>
+  <ul>
+    <li><strong>Basic arithmetic</strong></li>
+    <li><strong>Eigenvalues/eigenvectors</strong></li>
+    <li><strong>Determinants</strong></li>
+    <li><strong>Inversion</strong></li>
+    <li><strong>Solving</strong></li>
+    <li><strong>Abstract expressions</strong></li>
+  </ul>
+
+  <h3>الجبر الهندسي</h3>
+
+  <h3>علم الهندسة</h3>
+  <ul>
+    <li><strong>points, lines, rays, segments, ellipses, circles,
+        polygons, ...</strong></li>
+    <li><strong>Intersection</strong></li>
+    <li><strong>Tangency</strong></li>
+    <li><strong>Similarity</strong></li>
+  </ul>
+
+  <h3>الرسم</h3>
+  <ul>
+    <li><strong>Coordinate modes</strong></li>
+    <li><strong>Plotting Geometric Entities</strong></li>
+    <li><strong>2D and 3D</strong></li>
+    <li><strong>Interactive interface</strong></li>
+    <li><strong>Colors</strong></li>
+  </ul>
+
+  <h3>فيزياء</h3>
+  <ul>
+    <li><strong>Units</strong></li>
+    <li><strong>Mechanics</strong></li>
+    <li><strong>Quantum</strong></li>
+    <li><strong>Gaussian Optics</strong></li>
+    <li><strong>Pauli Algebra</strong></li>
+  </ul>
+
+  <h3>إحصائيات</h3>
+  <ul>
+    <li><strong>Normal distributions</strong></li>
+    <li><strong>Uniform distributions</strong></li>
+    <li><strong>Probability</strong></li>
+  </ul>
+
+  <h3>الطباعة</h3>
+  <ul>
+    <li><strong>Pretty printing:</strong> ASCII/Unicode pretty printing, LaTeX
+    <li><strong>Code generation:</strong> C, Fortran, Python</li>
+  </ul>
+</div>
+
+
+            </div>
+          </div>
+          <div id="footer">
+            <div class="block">
+              <p>Copyright &copy; 2013 SymPy Development Team.
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                This page is open source. Fork <a href="https://github.com/sympy/sympy.github.com">the project on GitHub</a> to edit it.
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                لغات اخرى (beta):
+                <a href="../cs/index.html">[Cs]</a>,
+                <a href="../de/index.html">[De]</a>,
+                <a href="../en/index.html">[En]</a>,
+                <a href="../es/index.html">[Es]</a>,
+                <a href="../fr/index.html">[Fr]</a>,
+                <a href="../pt/index.html">[Pt]</a>,
+                <a href="../ru/index.html">[Ru]</a>,
+                <a href="../zh/index.html">[Zh]</a>,
+                <a href="../ar/index.html">[Ar]</a>,
+              </p>
+            </div>
+          </div>
+        </div>
+        <div id="sidebar">
+          
+<div id="side1">
+  <div class="clear"></div>
+</div>
+</div>
+<div id="container">
+  <div style="position:relative; float:left; margin: 0;">
+    <div style="position:relative; float:left; width:60%; min-width:250px;">
+    </div>
+  </div>
+  <div id="container">
+    <div style="position:relative; float:left; margin-top: -100px;">
+      <div style="position:relative; float:left; width:300px; height:200px;">
+      </div>
+    </div>
+    <div id="shell"></div>
+    <div id="right">
+      <div class="right_title">معلومات اخرى</div>
+      <div id="about"><div class="t">
+          <div class="block">
+            <h3>التحميل المباشر</h3>
+            <div class="content">
+              <div id="thetext">
+                <p>
+                  تحميل: <a href="http://code.google.com/p/sympy/downloads/list">Google Code</a><br/>
+                  اخر اصدار: <a href="http://github.com/sympy/sympy">github.com/sympy/sympy</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br/>
+      <div id="other_shells"><div class="t">
+          <div id="quicklinks" class="block">
+            <h3>وصلات سريعة</h3>
+            <div class="content">
+              <div id="thetext">
+                <p>
+                  <ul>
+                    <font size="3">
+                      <li><a href="http://docs.sympy.org/">دليل المستخدم</a></li>
+                      <li><a href="http://code.google.com/p/sympy/downloads/list">التحميل (source tarballs)</a></li>
+                      <li><a href="http://code.google.com/p/sympy/wiki/DownloadInstallation?tm=2">التحميل (packages for distributions)</a></li>
+                      <li><a href="http://groups.google.com/group/sympy">Mailing list</a></li>
+                      <li><a href="http://github.com/sympy/sympy">Source code</a></li>
+                      <li><a href="http://code.google.com/p/sympy/issues/list">مشاكل الفنية</a></li>
+                      <li><a href="http://code.google.com/p/sympy/">صفحة Google Code</a></li>
+                      <li><a href="http://github.com/sympy/sympy/wiki">ويكي</a></li>
+                      <li><a href="http://live.sympy.org/">جرب SymPy الان</a></li>
+                      <li><a href="http://sympy.blogspot.com/">Official SymPy blog</a></li>
+                      <li><a href="http://planet.sympy.org/">Planet SymPy</a></li>
+                      <li><a href="http://colabti.org/irclogger/irclogger_logs/sympy">IRC channel logs</a></li>
+                    </font>
+              </div>
+              </ul>
+</p>
+</div>
+</div>
+
+<br/>
+</div>
+<div class="clear"></div>
+</div>
+<br/>
+<div class="block">
+  <div id="example"><div class="t">
+      <h3>اخر الاخبار</h3>
+      <div class="content">
+        <div id="thetext">
+          <p>
+            <span class="date">8 Apr 2013</span>  SymPy is accepted as a <a href="http://www.google-melange.com/gsoc/org/show/google/gsoc2013/sympy">mentoring organization</a> for Google Summer of Code 2013  <br/>
+            <span class="date">16 Oct 2012</span> Version 0.7.2 released (<a href="https://github.com/sympy/sympy/wiki/Release-Notes-for-0.7.2">changes</a>)<br/>
+            <span class="date">17 Mar 2012</span>  SymPy is accepted as a <a href="http://www.google-melange.com/gsoc/org/show/google/gsoc2012/sympy">mentoring organization</a> for Google Summer of Code 2012  <br/>
+            <span class="date">29 Jul 2011</span> Version 0.7.1 released (<a href="https://github.com/sympy/sympy/wiki/Release-Notes-for-0.7.1">changes</a>)<br/>
+            <span class="date">28 Jun 2011</span> Version 0.7.0 released (<a href="https://github.com/sympy/sympy/wiki/Release-Notes-for-0.7.0">changes</a>)<br/>
+            <span class="date">18 Mar 2011</span> SymPy is accepted as a <a href="http://www.google-melange.com/gsoc/org/show/google/gsoc2011/sympy">mentoring organization</a> for Google Summer of Code 2011<br/>
+            <span class="date">23 Oct 2010</span> New website launched at sympy.org<br/>
+            <span class="date">18 Oct 2010</span> Final page about the <a href="https://github.com/sympy/sympy/wiki/GSoC-2010-report">2010 Google Summer of Code in SymPy</a> is available.<br/>
+            <span class="date">17 Mar 2010</span> Version 0.6.7 released (<a href="http://code.google.com/p/sympy/wiki/Changes">changes</a>)<br/>
+            <span class="date">20 Dec 2009</span> Version 0.6.6 released (<a href="http://code.google.com/p/sympy/wiki/Changes">changes</a>)<br/>
+            <span class="date">26 Sep 2009</span> Final page about the <a href="https://github.com/sympy/sympy/wiki/GSoC-2009-report">2009 Google Summer of Code in SymPy</a> is available.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br/>
+</div>
+</div>
+
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+  </body>
+</html>
