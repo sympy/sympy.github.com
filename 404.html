@@ -1,11 +1,82 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page Not Found</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 600px;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #ff4757;
+            margin: 0 0 20px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #666;
+        }
+
+        a {
+            text-decoration: none;
+            color: #3498db;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #1d78c0;
+        }
+
+        .go-back {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .go-back:hover {
+            background: #1d78c0;
+        }
+
+        .error-symbol {
+            font-size: 5rem;
+            color: #ff4757;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Page Not Found</h1>
-    <p>Go to <a href="http://sympy.org/">http://sympy.org/</a>.</p>
+    <div class="container">
+        <div class="error-symbol">🚫</div>
+        <h1>404 - Page Not Found</h1>
+        <p>Oops! The page you're looking for doesn't exist.</p>
+        <p>Go to <a href="http://sympy.org/">SymPy Homepage</a> or use the button below.</p>
+        <button class="go-back" onclick="window.location.href='http://sympy.org/'">Back to Homepage</button>
+    </div>
 </body>
 </html>
